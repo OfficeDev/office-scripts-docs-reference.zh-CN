@@ -1,0 +1,158 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLineFormat:class'
+    summary: 封装线条元素的格式设置选项。
+    name: Excel.ChartLineFormat
+    fullName: Excel.ChartLineFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLineFormat#clear:member(1)'
+      - 'excel!Excel.ChartLineFormat#color:member'
+      - 'excel!Excel.ChartLineFormat#context:member'
+      - 'excel!Excel.ChartLineFormat#lineStyle:member'
+      - 'excel!Excel.ChartLineFormat#load:member(1)'
+      - 'excel!Excel.ChartLineFormat#load:member(2)'
+      - 'excel!Excel.ChartLineFormat#set:member(1)'
+      - 'excel!Excel.ChartLineFormat#weight:member'
+  - uid: 'excel!Excel.ChartLineFormat#clear:member(1)'
+    summary: 清除图表元素的线条格式。
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ChartLineFormat#color:member'
+    summary: 表示图表中的线条颜色的 HTML 颜色代码。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartLineFormat#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartLineFormat#lineStyle:member'
+    summary: 代表线条样式。 有关详细信息，请参阅 ChartLineStyle。
+    name: lineStyle
+    fullName: lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineStyle: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot";'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
+  - uid: 'excel!Excel.ChartLineFormat#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLineFormat#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartLineFormat;
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartLineFormat#set:member(1)'
+    summary: 基于现有加载的对象同时设置该对象的多个属性。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartLineFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartLineFormat:class'
+  - uid: 'excel!Excel.ChartLineFormat#weight:member'
+    summary: 表示线条的粗细（以磅为单位）。
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
+    name: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+    fullName: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartLineStyle:enum'
+        name: Excel.ChartLineStyle
+        fullName: Excel.ChartLineStyle
+      - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
+        fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
+  - uid: 'excel!Excel.ChartLineFormat:class'
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat

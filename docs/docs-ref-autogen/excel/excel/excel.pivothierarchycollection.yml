@@ -1,0 +1,136 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotHierarchyCollection:class'
+    summary: 代表属于数据透视表的所有 PivotHierarchies 的集合。
+    name: Excel.PivotHierarchyCollection
+    fullName: Excel.PivotHierarchyCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.PivotHierarchyCollection#context:member'
+      - 'excel!Excel.PivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.PivotHierarchyCollection#getItem:member(1)'
+      - 'excel!Excel.PivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotHierarchyCollection#items:member'
+      - 'excel!Excel.PivotHierarchyCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotHierarchyCollection#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotHierarchyCollection#getCount:member(1)'
+    summary: 获取集合中的透视层级结构的数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchyCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.PivotHierarchyCollection#getItem:member(1)'
+    summary: 按名称或 ID 获取 PivotHierarchy。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.PivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 PivotHierarchy 的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.PivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 按名称获取 PivotHierarchy。 如果 PivotHierarchy 不存在，则返回 Null 对象。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.PivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchy:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 PivotHierarchy 的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.PivotHierarchyCollection#items:member'
+    summary: 获取此集合中已加载的子项。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.PivotHierarchy[];'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchyCollection#items~0:complex'
+  - uid: 'excel!Excel.PivotHierarchyCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchyCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.PivotHierarchyCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.PivotHierarchy:class'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchyCollection#items~0:complex'
+    name: 'Excel.PivotHierarchy[]'
+    fullName: 'Excel.PivotHierarchy[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotHierarchy:class'
+        name: Excel.PivotHierarchy
+        fullName: Excel.PivotHierarchy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.PivotHierarchyCollection:class'
+    name: PivotHierarchyCollection
+    fullName: Excel.PivotHierarchyCollection

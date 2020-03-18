@@ -1,0 +1,135 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+    summary: 代表数据栏的正一侧的条件格式 DataBar 格式。
+    name: Excel.ConditionalDataBarPositiveFormat
+    fullName: Excel.ConditionalDataBarPositiveFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#context:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(2)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(1)'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
+    summary: '代表\#RRGGBB （例如 "FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线条颜色的 HTML 颜色代码。 "" （空字符串）如果没有边框存在或未设置。'
+    name: borderColor
+    fullName: borderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
+    summary: '代表\#RRGGBB 的填充颜色的 HTML 颜色代码（例如 "FFA500"）或命名的 HTML 颜色（例如 "橙色"）。'
+    name: fillColor
+    fullName: fillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fillColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
+    summary: 该布尔值表示 DataBar 是否具有渐变。
+    name: gradientFill
+    fullName: gradientFill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientFill: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalDataBarPositiveFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalDataBarPositiveFormat;
+      return:
+        type:
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(1)'
+    summary: 基于现有加载的对象同时设置该对象的多个属性。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ConditionalDataBarPositiveFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+    name: ConditionalDataBarPositiveFormat
+    fullName: Excel.ConditionalDataBarPositiveFormat

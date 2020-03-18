@@ -1,0 +1,150 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableStyle:class'
+    summary: 表示通过数据透视表区域定义样式元素的数据透视表样式。
+    name: Excel.PivotTableStyle
+    fullName: Excel.PivotTableStyle
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableStyle#context:member'
+      - 'excel!Excel.PivotTableStyle#delete:member(1)'
+      - 'excel!Excel.PivotTableStyle#duplicate:member(1)'
+      - 'excel!Excel.PivotTableStyle#load:member(1)'
+      - 'excel!Excel.PivotTableStyle#load:member(2)'
+      - 'excel!Excel.PivotTableStyle#name:member'
+      - 'excel!Excel.PivotTableStyle#readOnly:member'
+      - 'excel!Excel.PivotTableStyle#set:member(1)'
+  - uid: 'excel!Excel.PivotTableStyle#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotTableStyle#delete:member(1)'
+    summary: 删除 PivotTableStyle。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PivotTableStyle#duplicate:member(1)'
+    summary: 使用所有样式元素的副本创建此 PivotTableStyle 的副本。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): Excel.PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:class'
+        description: 与此 PivotTableStyle 重复的新 PivotTableStyle 对象。
+  - uid: 'excel!Excel.PivotTableStyle#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTableStyle#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PivotTableStyle;
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.PivotTableStyle#name:member'
+    summary: 获取 PivotTableStyle 的名称。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTableStyle#readOnly:member'
+    summary: 指定此 PivotTableStyle 对象是否为只读。 只读。
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotTableStyle#set:member(1)'
+    summary: 基于现有加载的对象同时设置该对象的多个属性。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotTableStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.PivotTableStyle:class'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.PivotTableStyle:class'
+    name: PivotTableStyle
+    fullName: Excel.PivotTableStyle

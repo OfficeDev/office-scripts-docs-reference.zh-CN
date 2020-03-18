@@ -1,0 +1,144 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Image:class'
+    summary: 代表工作表中的图像。 若要获取相应的 Shape 对象，请使用 Image. Shape。
+    name: Excel.Image
+    fullName: Excel.Image
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.Image#context:member'
+      - 'excel!Excel.Image#format:member'
+      - 'excel!Excel.Image#id:member'
+      - 'excel!Excel.Image#load:member(1)'
+      - 'excel!Excel.Image#load:member(2)'
+      - 'excel!Excel.Image#shape:member'
+  - uid: 'excel!Excel.Image#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Image#format:member'
+    summary: 返回图像的格式。 只读。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";'
+      return:
+        type:
+          - 'excel!Excel.Image#format~0:complex'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let image = sheet.shapes.getItem("Image").image;
+              image.load("format");
+              await context.sync();
+
+              console.log("The image's format is: " + image.format);
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Image#id:member'
+    summary: 表示图像对象的形状标识符。 只读。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Image#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Image;'
+      return:
+        type:
+          - 'excel!Excel.Image:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Image#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Image;
+      return:
+        type:
+          - 'excel!Excel.Image:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Image#shape:member'
+    summary: 返回与图像关联的形状对象。 只读。
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Excel.Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:class'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.Image#format~0:complex'
+    name: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
+    fullName: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
+    spec.typeScript:
+      - uid: 'excel!Excel.PictureFormat:enum'
+        name: Excel.PictureFormat
+        fullName: Excel.PictureFormat
+      - name: ' | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
+        fullName: ' | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
+  - uid: 'excel!Excel.Image:class'
+    name: Image
+    fullName: Excel.Image
+  - uid: 'excel!Excel.Shape:class'
+    name: Shape
+    fullName: Excel.Shape

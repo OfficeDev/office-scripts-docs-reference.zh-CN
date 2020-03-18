@@ -1,0 +1,198 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.HeaderFooterGroup:class'
+    name: Excel.HeaderFooterGroup
+    fullName: Excel.HeaderFooterGroup
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.HeaderFooterGroup#context:member'
+      - 'excel!Excel.HeaderFooterGroup#defaultForAllPages:member'
+      - 'excel!Excel.HeaderFooterGroup#evenPages:member'
+      - 'excel!Excel.HeaderFooterGroup#firstPage:member'
+      - 'excel!Excel.HeaderFooterGroup#load:member(1)'
+      - 'excel!Excel.HeaderFooterGroup#load:member(2)'
+      - 'excel!Excel.HeaderFooterGroup#oddPages:member'
+      - 'excel!Excel.HeaderFooterGroup#set:member(1)'
+      - 'excel!Excel.HeaderFooterGroup#state:member'
+      - 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
+      - 'excel!Excel.HeaderFooterGroup#useSheetScale:member'
+  - uid: 'excel!Excel.HeaderFooterGroup#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.HeaderFooterGroup#defaultForAllPages:member'
+    summary: 常规页眉/页脚，除非指定偶数页/奇数页或首页，否则适用于所有页面，
+    name: defaultForAllPages
+    fullName: defaultForAllPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly defaultForAllPages: Excel.HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:class'
+  - uid: 'excel!Excel.HeaderFooterGroup#evenPages:member'
+    summary: 用于偶数页的页眉/页脚，需要为奇数页指定奇数页页眉/页脚。
+    name: evenPages
+    fullName: evenPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly evenPages: Excel.HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:class'
+  - uid: 'excel!Excel.HeaderFooterGroup#firstPage:member'
+    summary: 首页的页眉/页脚，为所有其他页使用常规或偶数页/奇数页页眉/页脚。
+    name: firstPage
+    fullName: firstPage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly firstPage: Excel.HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:class'
+  - uid: 'excel!Excel.HeaderFooterGroup#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.HeaderFooterGroup;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooterGroup:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.HeaderFooterGroup#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.HeaderFooterGroup;
+      return:
+        type:
+          - 'excel!Excel.HeaderFooterGroup:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.HeaderFooterGroup#oddPages:member'
+    summary: 用于奇数页的页眉/页脚，需要为偶数页指定偶数页页眉/页脚。
+    name: oddPages
+    fullName: oddPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly oddPages: Excel.HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:class'
+  - uid: 'excel!Excel.HeaderFooterGroup#set:member(1)'
+    summary: 基于现有加载的对象同时设置该对象的多个属性。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.HeaderFooterGroup): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.HeaderFooterGroup:class'
+  - uid: 'excel!Excel.HeaderFooterGroup#state:member'
+    summary: 获取或设置所设置的页眉/页脚的状态。 有关详细信息，请参阅 Excel.HeaderFooterState。
+    name: state
+    fullName: state
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'state: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooterGroup#state~0:complex'
+  - uid: 'excel!Excel.HeaderFooterGroup#useSheetMargins:member'
+    summary: 获取或设置一个标记，指示页眉/页脚是否与工作表的页面布局选项中设置的页边距对齐。
+    name: useSheetMargins
+    fullName: useSheetMargins
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useSheetMargins: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.HeaderFooterGroup#useSheetScale:member'
+    summary: 获取或设置一个标记，指示是否应按照工作表的页面布局选项中设置的页面缩放百分比来缩放页眉/页脚。
+    name: useSheetScale
+    fullName: useSheetScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useSheetScale: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.HeaderFooter:class'
+    name: HeaderFooter
+    fullName: Excel.HeaderFooter
+  - uid: 'excel!Excel.HeaderFooterGroup:class'
+    name: HeaderFooterGroup
+    fullName: Excel.HeaderFooterGroup
+  - uid: 'excel!Excel.HeaderFooterGroup#state~0:complex'
+    name: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+    fullName: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+    spec.typeScript:
+      - uid: 'excel!Excel.HeaderFooterState:enum'
+        name: Excel.HeaderFooterState
+        fullName: Excel.HeaderFooterState
+      - name: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'
+        fullName: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'

@@ -1,0 +1,231 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartCollection:class'
+    summary: 工作表中的所有 chart 对象的集合。
+    name: Excel.ChartCollection
+    fullName: Excel.ChartCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#add:member(2)'
+      - 'excel!Excel.ChartCollection#context:member'
+      - 'excel!Excel.ChartCollection#count:member'
+      - 'excel!Excel.ChartCollection#getCount:member(1)'
+      - 'excel!Excel.ChartCollection#getItem:member(1)'
+      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
+      - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.ChartCollection#items:member'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
+    summary: 创建新图表。
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: 'add(type, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: type
+          description: 表示图表的类型。 有关详细信息，请参阅 ChartType。
+          type:
+            - 'excel!Excel.ChartType:enum'
+        - id: sourceData
+          description: 对应于源数据的 Range 对象。
+          type:
+            - 'excel!Excel.Range:class'
+        - id: seriesBy
+          description: 可选。 指定列或行在图表上用作数据系列的方式。 有关详细信息，请参阅 ChartSeriesBy。
+          type:
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#add:member(2)'
+    summary: 创建新图表。
+    name: 'add(typeString, sourceData, seriesBy)'
+    fullName: 'add(typeString, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: typeString
+          description: 表示图表的类型。 有关详细信息，请参阅 ChartType。
+          type:
+            - '"Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
+        - id: sourceData
+          description: 对应于源数据的 Range 对象。
+          type:
+            - 'excel!Excel.Range:class'
+        - id: seriesBy
+          description: 可选。 指定列或行在图表上用作数据系列的方式。 有关详细信息，请参阅 ChartSeriesBy。
+          type:
+            - '"Auto" | "Columns" | "Rows"'
+  - uid: 'excel!Excel.ChartCollection#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartCollection#count:member'
+    summary: 返回工作表中的图表数。只读。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartCollection#getCount:member(1)'
+    summary: 返回工作表中的图表数。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.ChartCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
+    summary: 使用图表名称获取图表。 如果存在多个名称相同的图表，将返回第一个图表。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的图表的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
+    summary: 根据其在集合中的位置获取图表。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的对象的索引值。 从零开始编制索引。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+    summary: 使用图表名称获取图表。 如果存在多个名称相同的图表，将返回第一个图表。 如果图表不存在，将返回一个 null 对象。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的图表的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#items:member'
+    summary: 获取此集合中已加载的子项。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Chart[];'
+      return:
+        type:
+          - 'excel!Excel.ChartCollection#items~0:complex'
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartCollection;'
+      return:
+        type:
+          - 'excel!Excel.ChartCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Chart:class'
+    name: Chart
+    fullName: Excel.Chart
+  - uid: 'excel!Excel.ChartType:enum'
+    name: ChartType
+    fullName: Excel.ChartType
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: ChartSeriesBy
+    fullName: Excel.ChartSeriesBy
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.ChartCollection#items~0:complex'
+    name: 'Excel.Chart[]'
+    fullName: 'Excel.Chart[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Chart:class'
+        name: Excel.Chart
+        fullName: Excel.Chart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.ChartCollection:class'
+    name: ChartCollection
+    fullName: Excel.ChartCollection

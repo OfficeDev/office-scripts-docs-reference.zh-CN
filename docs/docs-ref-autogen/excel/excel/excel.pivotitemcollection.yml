@@ -1,0 +1,136 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotItemCollection:class'
+    summary: 代表与其父透视字段相关的所有 PivotItems 的集合。
+    name: Excel.PivotItemCollection
+    fullName: Excel.PivotItemCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.PivotItemCollection#context:member'
+      - 'excel!Excel.PivotItemCollection#getCount:member(1)'
+      - 'excel!Excel.PivotItemCollection#getItem:member(1)'
+      - 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotItemCollection#items:member'
+      - 'excel!Excel.PivotItemCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotItemCollection#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotItemCollection#getCount:member(1)'
+    summary: 获取集合中的 PivotItems 的数目。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.PivotItemCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.PivotItemCollection#getItem:member(1)'
+    summary: 按其名称或 id 获取 PivotItem。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.PivotItem;'
+      return:
+        type:
+          - 'excel!Excel.PivotItem:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 PivotItem 的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+    summary: 按名称获取 PivotItem。 如果 PivotItem 不存在，则将返回一个 null 对象。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.PivotItem;'
+      return:
+        type:
+          - 'excel!Excel.PivotItem:class'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 PivotItem 的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.PivotItemCollection#items:member'
+    summary: 获取此集合中已加载的子项。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.PivotItem[];'
+      return:
+        type:
+          - 'excel!Excel.PivotItemCollection#items~0:complex'
+  - uid: 'excel!Excel.PivotItemCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotItemCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.PivotItemCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.PivotItem:class'
+    name: PivotItem
+    fullName: Excel.PivotItem
+  - uid: 'excel!Excel.PivotItemCollection#items~0:complex'
+    name: 'Excel.PivotItem[]'
+    fullName: 'Excel.PivotItem[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotItem:class'
+        name: Excel.PivotItem
+        fullName: Excel.PivotItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.PivotItemCollection:class'
+    name: PivotItemCollection
+    fullName: Excel.PivotItemCollection

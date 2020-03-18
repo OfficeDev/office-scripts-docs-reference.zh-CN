@@ -1,0 +1,452 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Table:class'
+    summary: '表示 Excel 表格。 若要了解有关表对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理表](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.'
+    name: Excel.Table
+    fullName: Excel.Table
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.Table#autoFilter:member'
+      - 'excel!Excel.Table#clearFilters:member(1)'
+      - 'excel!Excel.Table#columns:member'
+      - 'excel!Excel.Table#context:member'
+      - 'excel!Excel.Table#convertToRange:member(1)'
+      - 'excel!Excel.Table#delete:member(1)'
+      - 'excel!Excel.Table#getDataBodyRange:member(1)'
+      - 'excel!Excel.Table#getHeaderRowRange:member(1)'
+      - 'excel!Excel.Table#getRange:member(1)'
+      - 'excel!Excel.Table#getTotalRowRange:member(1)'
+      - 'excel!Excel.Table#highlightFirstColumn:member'
+      - 'excel!Excel.Table#highlightLastColumn:member'
+      - 'excel!Excel.Table#id:member'
+      - 'excel!Excel.Table#legacyId:member'
+      - 'excel!Excel.Table#load:member(1)'
+      - 'excel!Excel.Table#load:member(2)'
+      - 'excel!Excel.Table#name:member'
+      - 'excel!Excel.Table#reapplyFilters:member(1)'
+      - 'excel!Excel.Table#rows:member'
+      - 'excel!Excel.Table#set:member(1)'
+      - 'excel!Excel.Table#showBandedColumns:member'
+      - 'excel!Excel.Table#showBandedRows:member'
+      - 'excel!Excel.Table#showFilterButton:member'
+      - 'excel!Excel.Table#showHeaders:member'
+      - 'excel!Excel.Table#showTotals:member'
+      - 'excel!Excel.Table#sort:member'
+      - 'excel!Excel.Table#style:member'
+      - 'excel!Excel.Table#worksheet:member'
+  - uid: 'excel!Excel.Table#autoFilter:member'
+    summary: 表示表格的 AutoFilter 对象。 只读。
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly autoFilter: Excel.AutoFilter;'
+      return:
+        type:
+          - 'excel!Excel.AutoFilter:class'
+  - uid: 'excel!Excel.Table#clearFilters:member(1)'
+    summary: 清除当前表上应用的所有筛选器。
+    name: clearFilters()
+    fullName: clearFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Table#columns:member'
+    summary: 表示表中所有列的集合。 只读。
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columns: Excel.TableColumnCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableColumnCollection:class'
+  - uid: 'excel!Excel.Table#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Table#convertToRange:member(1)'
+    summary: 将表转换为普通单元格区域。 保留所有数据。
+    name: convertToRange()
+    fullName: convertToRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertToRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Table#delete:member(1)'
+    summary: 删除表。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Table#getDataBodyRange:member(1)'
+    summary: 获取与表的数据体相关的 range 对象。
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Table#getHeaderRowRange:member(1)'
+    summary: 获取与表的标头行相关的 range 对象。
+    name: getHeaderRowRange()
+    fullName: getHeaderRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Table#getRange:member(1)'
+    summary: 获取与整个表相关的 range 对象。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Table#getTotalRowRange:member(1)'
+    summary: 获取与表的总计行相关的 range 对象。
+    name: getTotalRowRange()
+    fullName: getTotalRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Table#highlightFirstColumn:member'
+    summary: 指明第一列是否包含特殊格式。
+    name: highlightFirstColumn
+    fullName: highlightFirstColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightFirstColumn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#highlightLastColumn:member'
+    summary: 指明最后一列是否包含特殊格式。
+    name: highlightLastColumn
+    fullName: highlightLastColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightLastColumn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#id:member'
+    summary: 返回用于唯一标识指定工作簿中表的值。即使表被重命名，标识符的值仍然相同。只读。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#legacyId:member'
+    summary: 返回一个数字 id。
+    name: legacyId
+    fullName: legacyId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly legacyId: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Table#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Table;
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Table#name:member'
+    summary: '表的名称。 在设置表的名称时，必须遵循 "[重命名 Excel 表" 一](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)文中指定的准则。'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#reapplyFilters:member(1)'
+    summary: 重新应用当前表上的所有筛选器。
+    name: reapplyFilters()
+    fullName: reapplyFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapplyFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Table#rows:member'
+    summary: 表示表中所有行的集合。 只读。
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rows: Excel.TableRowCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableRowCollection:class'
+  - uid: 'excel!Excel.Table#set:member(1)'
+    summary: 基于现有加载的对象同时设置该对象的多个属性。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Table): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.Table:class'
+  - uid: 'excel!Excel.Table#showBandedColumns:member'
+    summary: 指明列是否采用镶边格式来以不同的方式突出显示奇数列与偶数列，让表更易于阅读。
+    name: showBandedColumns
+    fullName: showBandedColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBandedColumns: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showBandedRows:member'
+    summary: 指明行是否采用镶边格式来以不同的方式突出显示奇数行与偶数行，让表更易于阅读。
+    name: showBandedRows
+    fullName: showBandedRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBandedRows: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showFilterButton:member'
+    summary: 指明是否在每个列标题的顶部显示筛选器按钮。仅当 table 中包含标题行时，才允许设定此设置。
+    name: showFilterButton
+    fullName: showFilterButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showFilterButton: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showHeaders:member'
+    summary: 指示标头行是否可见。 该值可以设置为显示或删除标头行。
+    name: showHeaders
+    fullName: showHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeaders: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showTotals:member'
+    summary: 指示总计行是否可见。 该值可以设置为显示或删除总计行。
+    name: showTotals
+    fullName: showTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#sort:member'
+    summary: 表示表的排序。 只读。
+    name: sort
+    fullName: sort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sort: Excel.TableSort;'
+      return:
+        type:
+          - 'excel!Excel.TableSort:class'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          // Get the current worksheet.
+          let workbook = context.workbook;
+          let worksheets = workbook.worksheets;
+          let selectedSheet = worksheets.getActiveWorksheet();
+
+          // Create a table with the used cells.
+          let usedRange = selectedSheet.getUsedRange();
+          let newTable = selectedSheet.tables.add(usedRange, true);
+
+          // Sort the table using the first column.
+          newTable.sort.apply([{ key: 0, ascending: true }]);
+          ```
+  - uid: 'excel!Excel.Table#style:member'
+    summary: 表示表格样式的常量值。 可能的值为： "TableStyleLight1" 到 "TableStyleLight21"、"TableStyleMedium1" 通过 "TableStyleMedium28"、"TableStyleDark1" 到 "TableStyleDark11"。 还可以指定工作簿中显示的用户定义的自定义样式。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#worksheet:member'
+    summary: 包含当前表格的工作表。 只读。
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Excel.Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:class'
+references:
+  - uid: 'excel!Excel.AutoFilter:class'
+    name: AutoFilter
+    fullName: Excel.AutoFilter
+  - uid: 'excel!Excel.TableColumnCollection:class'
+    name: TableColumnCollection
+    fullName: Excel.TableColumnCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.Table:class'
+    name: Table
+    fullName: Excel.Table
+  - uid: 'excel!Excel.TableRowCollection:class'
+    name: TableRowCollection
+    fullName: Excel.TableRowCollection
+  - uid: 'excel!Excel.TableSort:class'
+    name: TableSort
+    fullName: Excel.TableSort
+  - uid: 'excel!Excel.Worksheet:class'
+    name: Worksheet
+    fullName: Excel.Worksheet
