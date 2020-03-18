@@ -1,0 +1,368 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTitle:class'
+    summary: 表示图表的图表标题对象。
+    name: Excel.ChartTitle
+    fullName: Excel.ChartTitle
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTitle#context:member'
+      - 'excel!Excel.ChartTitle#format:member'
+      - 'excel!Excel.ChartTitle#getSubstring:member(1)'
+      - 'excel!Excel.ChartTitle#height:member'
+      - 'excel!Excel.ChartTitle#horizontalAlignment:member'
+      - 'excel!Excel.ChartTitle#left:member'
+      - 'excel!Excel.ChartTitle#load:member(1)'
+      - 'excel!Excel.ChartTitle#load:member(2)'
+      - 'excel!Excel.ChartTitle#overlay:member'
+      - 'excel!Excel.ChartTitle#position:member'
+      - 'excel!Excel.ChartTitle#set:member(1)'
+      - 'excel!Excel.ChartTitle#setFormula:member(1)'
+      - 'excel!Excel.ChartTitle#showShadow:member'
+      - 'excel!Excel.ChartTitle#text:member'
+      - 'excel!Excel.ChartTitle#textOrientation:member'
+      - 'excel!Excel.ChartTitle#top:member'
+      - 'excel!Excel.ChartTitle#verticalAlignment:member'
+      - 'excel!Excel.ChartTitle#visible:member'
+      - 'excel!Excel.ChartTitle#width:member'
+  - uid: 'excel!Excel.ChartTitle#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTitle#format:member'
+    summary: 表示图表标题的格式，包括填充和字体格式。 只读。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartTitleFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartTitleFormat:class'
+  - uid: 'excel!Excel.ChartTitle#getSubstring:member(1)'
+    summary: 获取图表标题的子字符串。 换行符 "<!-- -->\\<!-- -->n ' 也计算一个字符。
+    name: 'getSubstring(start, length)'
+    fullName: 'getSubstring(start, length)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubstring(start: number, length: number): Excel.ChartFormatString;'
+      return:
+        type:
+          - 'excel!Excel.ChartFormatString:class'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let chart = sheet.charts.getItemAt(0);
+
+              // Get first seven characters of the title and color them green.
+              chart.title.getSubstring(0, 7).font.color = "Yellow";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: start
+          description: 要检索的子字符串的起始位置。 位置从0开始。
+          type:
+            - number
+        - id: length
+          description: 要检索的子字符串的长度。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartTitle#height:member'
+    summary: 返回图表标题的高度，以磅为单位。 如果图表标题不可见，则为 Null。 只读。
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTitle#horizontalAlignment:member'
+    summary: 表示图表标题水平对齐。
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed";'
+      return:
+        type:
+          - 'excel!Excel.ChartTitle#horizontalAlignment~0:complex'
+  - uid: 'excel!Excel.ChartTitle#left:member'
+    summary: 表示图表标题左边缘到图表区域左边缘的距离，以磅为单位。 如果图表标题不可见，则为 Null。
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTitle#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartTitle;'
+      return:
+        type:
+          - 'excel!Excel.ChartTitle:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartTitle#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartTitle;
+      return:
+        type:
+          - 'excel!Excel.ChartTitle:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartTitle#overlay:member'
+    summary: 表示图表标题是否将叠加在图表上的布尔值。
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTitle#position:member'
+    summary: 表示图表标题的位置。 有关详细信息，请参阅 ChartTitlePosition。
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";'
+      return:
+        type:
+          - 'excel!Excel.ChartTitle#position~0:complex'
+  - uid: 'excel!Excel.ChartTitle#set:member(1)'
+    summary: 基于现有加载的对象同时设置该对象的多个属性。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartTitle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartTitle:class'
+  - uid: 'excel!Excel.ChartTitle#setFormula:member(1)'
+    summary: 设置一个字符串值，用于表示采用 A1 表示法的图表标题的公式。
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: 一个字符串，表示要设置的公式。
+          type:
+            - string
+  - uid: 'excel!Excel.ChartTitle#showShadow:member'
+    summary: 表示一个布尔值，用于确定图表标题是否具有阴影。
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTitle#text:member'
+    summary: 表示图表的标题文本。
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTitle#textOrientation:member'
+    summary: 表示图表标题的文本方向。 此值应是 -90 到 90 或 180（垂直文本）之间的整数。
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let title = sheet.charts.getItemAt(0).title;
+              title.textOrientation = -45;
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ChartTitle#top:member'
+    summary: 表示图表标题上边缘到图表区域顶部的距离，以磅为单位。 如果图表标题不可见，则为 Null。
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTitle#verticalAlignment:member'
+    summary: 表示图表标题垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - 'excel!Excel.ChartTitle#verticalAlignment~0:complex'
+  - uid: 'excel!Excel.ChartTitle#visible:member'
+    summary: 表示图表标题对象是否可见的布尔值。
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTitle#width:member'
+    summary: 返回图表标题的宽度，以磅为单位。 如果图表标题不可见，则为 Null。 只读。
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartTitleFormat:class'
+    name: ChartTitleFormat
+    fullName: Excel.ChartTitleFormat
+  - uid: 'excel!Excel.ChartFormatString:class'
+    name: ChartFormatString
+    fullName: Excel.ChartFormatString
+  - uid: 'excel!Excel.ChartTitle#horizontalAlignment~0:complex'
+    name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+    fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+        name: Excel.ChartTextHorizontalAlignment
+        fullName: Excel.ChartTextHorizontalAlignment
+      - name: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
+        fullName: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
+  - uid: 'excel!Excel.ChartTitle:class'
+    name: ChartTitle
+    fullName: Excel.ChartTitle
+  - uid: 'excel!Excel.ChartTitle#position~0:complex'
+    name: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
+    fullName: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTitlePosition:enum'
+        name: Excel.ChartTitlePosition
+        fullName: Excel.ChartTitlePosition
+      - name: ' | "Automatic" | "Top" | "Bottom" | "Left" | "Right"'
+        fullName: ' | "Automatic" | "Top" | "Bottom" | "Left" | "Right"'
+  - uid: 'excel!Excel.ChartTitle#verticalAlignment~0:complex'
+    name: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+    fullName: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+        name: Excel.ChartTextVerticalAlignment
+        fullName: Excel.ChartTextVerticalAlignment
+      - name: ' | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"'
+        fullName: ' | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"'

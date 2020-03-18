@@ -1,0 +1,963 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Shape:class'
+    summary: '代表工作表中的一个通用 shape 对象。 一个形状可以是一个几何形状、一条线、一组形状，等等。若要了解有关 shape 对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理形状](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    name: Excel.Shape
+    fullName: Excel.Shape
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.Shape#altTextDescription:member'
+      - 'excel!Excel.Shape#altTextTitle:member'
+      - 'excel!Excel.Shape#connectionSiteCount:member'
+      - 'excel!Excel.Shape#context:member'
+      - 'excel!Excel.Shape#copyTo:member(1)'
+      - 'excel!Excel.Shape#delete:member(1)'
+      - 'excel!Excel.Shape#fill:member'
+      - 'excel!Excel.Shape#geometricShape:member'
+      - 'excel!Excel.Shape#geometricShapeType:member'
+      - 'excel!Excel.Shape#getAsImage:member(1)'
+      - 'excel!Excel.Shape#getAsImage:member(2)'
+      - 'excel!Excel.Shape#group:member'
+      - 'excel!Excel.Shape#height:member'
+      - 'excel!Excel.Shape#id:member'
+      - 'excel!Excel.Shape#image:member'
+      - 'excel!Excel.Shape#incrementLeft:member(1)'
+      - 'excel!Excel.Shape#incrementRotation:member(1)'
+      - 'excel!Excel.Shape#incrementTop:member(1)'
+      - 'excel!Excel.Shape#left:member'
+      - 'excel!Excel.Shape#level:member'
+      - 'excel!Excel.Shape#line:member'
+      - 'excel!Excel.Shape#lineFormat:member'
+      - 'excel!Excel.Shape#load:member(1)'
+      - 'excel!Excel.Shape#load:member(2)'
+      - 'excel!Excel.Shape#lockAspectRatio:member'
+      - 'excel!Excel.Shape#name:member'
+      - 'excel!Excel.Shape#parentGroup:member'
+      - 'excel!Excel.Shape#placement:member'
+      - 'excel!Excel.Shape#rotation:member'
+      - 'excel!Excel.Shape#scaleHeight:member(1)'
+      - 'excel!Excel.Shape#scaleHeight:member(2)'
+      - 'excel!Excel.Shape#scaleWidth:member(1)'
+      - 'excel!Excel.Shape#scaleWidth:member(2)'
+      - 'excel!Excel.Shape#set:member(1)'
+      - 'excel!Excel.Shape#setZOrder:member(1)'
+      - 'excel!Excel.Shape#setZOrder:member(2)'
+      - 'excel!Excel.Shape#textFrame:member'
+      - 'excel!Excel.Shape#top:member'
+      - 'excel!Excel.Shape#type:member'
+      - 'excel!Excel.Shape#visible:member'
+      - 'excel!Excel.Shape#width:member'
+      - 'excel!Excel.Shape#zOrderPosition:member'
+  - uid: 'excel!Excel.Shape#altTextDescription:member'
+    summary: 返回或设置形状对象的可选说明文本。
+    name: altTextDescription
+    fullName: altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Shape#altTextTitle:member'
+    summary: 返回或设置形状对象的可选标题文本。
+    name: altTextTitle
+    fullName: altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Shape#connectionSiteCount:member'
+    summary: 返回此形状上的连接站点数。 只读。
+    name: connectionSiteCount
+    fullName: connectionSiteCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly connectionSiteCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Shape#copyTo:member(1)'
+    summary: 复制并粘贴 Shape 对象。 粘贴的形状将复制到与此形状相同的像素位置。
+    name: copyTo(destinationSheet)
+    fullName: copyTo(destinationSheet)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'copyTo(destinationSheet?: Worksheet | string): Excel.Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:class'
+        description: ''
+      parameters:
+        - id: destinationSheet
+          description: 形状对象将粘贴到的工作表。 默认值是复制的形状的工作表。
+          type:
+            - 'excel!Excel.Shape#copyTo~0:complex'
+  - uid: 'excel!Excel.Shape#delete:member(1)'
+    summary: 从工作表删除形状。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
+              let sheet = context.workbook.worksheets.add("Shapes");
+
+              let shapes = sheet.shapes;
+
+              // load all the shapes in the collection without loading their properties
+              shapes.load("items/$none");
+              await context.sync();
+
+              shapes.items.forEach((shape) => shape.delete());
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#fill:member'
+    summary: 返回此形状的填充格式。 只读。
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ShapeFill;'
+      return:
+        type:
+          - 'excel!Excel.ShapeFill:class'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
+              shape.left = 300;
+              shape.top = 100;
+              shape.height = 100;
+              shape.width = 100;
+              shape.fill.foregroundColor = "yellow"
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#geometricShape:member'
+    summary: 返回与形状关联的几何形状。 如果形状类型不是“GeometricShape”，则会引发错误。
+    name: geometricShape
+    fullName: geometricShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly geometricShape: Excel.GeometricShape;'
+      return:
+        type:
+          - 'excel!Excel.GeometricShape:class'
+  - uid: 'excel!Excel.Shape#geometricShapeType:member'
+    summary: 表示此几何形状的几何形状类型。 有关详细信息，请参阅 Excel.GeometricShapeType。 如果形状类型不是“GeometricShape”，返回 NULL。
+    name: geometricShapeType
+    fullName: geometricShapeType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'geometricShapeType: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";'
+      return:
+        type:
+          - 'excel!Excel.Shape#geometricShapeType~0:complex'
+  - uid: 'excel!Excel.Shape#getAsImage:member(1)'
+    summary: '将形状转换为图像并将图像返回为 base64 编码字符串。 DPI 为 96。 唯一受支持的格式是`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->，并`Excel.PictureFormat.GIF`<!-- -->.'
+    name: getAsImage(format)
+    fullName: getAsImage(format)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsImage(format: Excel.PictureFormat): ClientResult<string>;'
+      return:
+        type:
+          - 'excel!Excel.Shape#getAsImage~0:complex'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Image");
+              let result = shape.getAsImage(Excel.PictureFormat.png);
+              await context.sync();
+
+              let imageString = result.value;
+              // Your add-in would save this string as a .png file.
+              console.log("The image's base64-encoded string: " + imageString);
+          }
+          ```
+      parameters:
+        - id: format
+          description: 指定图像的格式。
+          type:
+            - 'excel!Excel.PictureFormat:enum'
+  - uid: 'excel!Excel.Shape#getAsImage:member(2)'
+    summary: '将形状转换为图像并将图像返回为 base64 编码字符串。 DPI 为 96。 唯一受支持的格式是`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->，并`Excel.PictureFormat.GIF`<!-- -->.'
+    name: getAsImage(formatString)
+    fullName: getAsImage(formatString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsImage(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"): ClientResult<string>;'
+      return:
+        type:
+          - 'excel!Excel.Shape#getAsImage~1:complex'
+        description: ''
+      parameters:
+        - id: formatString
+          description: 指定图像的格式。
+          type:
+            - '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
+  - uid: 'excel!Excel.Shape#group:member'
+    summary: 返回与形状关联的形状组。 如果形状类型不是“GroupShape”，则会引发错误。
+    name: group
+    fullName: group
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly group: Excel.ShapeGroup;'
+      return:
+        type:
+          - 'excel!Excel.ShapeGroup:class'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+
+              let shapeGroup = sheet.shapes.getItem("Group").group;
+              shapeGroup.ungroup();
+              console.log("Shapes ungrouped");
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#height:member'
+    summary: 表示形状的高度（以磅为单位）。 当设置为负值或零作为输入时，将引发无效参数异常。
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#id:member'
+    summary: 表示形状标识符。 只读。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Shape#image:member'
+    summary: 返回与形状关联的图像。 如果形状类型不是“Image”，则会引发错误。
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly image: Excel.Image;'
+      return:
+        type:
+          - 'excel!Excel.Image:class'
+  - uid: 'excel!Excel.Shape#incrementLeft:member(1)'
+    summary: 以指定磅数水平移动形状。
+    name: incrementLeft(increment)
+    fullName: incrementLeft(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementLeft(increment: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Square")
+              shape.incrementLeft(-25);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: increment
+          description: 以磅为单位的增量，形状将水平移动。 正值表示将形状向右移动，值为负值时将形状向左移动。 如果工作表是从右到左方向的，则将其反转：正值将形状向左移动，负值表示将形状向右移动。
+          type:
+            - number
+  - uid: 'excel!Excel.Shape#incrementRotation:member(1)'
+    summary: 将形状围绕 z 轴旋转特定度数。 使用`rotation`属性可设置形状的绝对旋转量。
+    name: incrementRotation(increment)
+    fullName: incrementRotation(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementRotation(increment: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Image");
+              shape.incrementRotation(180);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: increment
+          description: 形状将旋转多少度。 为正值时顺时针旋转形状，为负值时逆时针旋转形状。
+          type:
+            - number
+  - uid: 'excel!Excel.Shape#incrementTop:member(1)'
+    summary: 以指定磅数垂直移动形状。
+    name: incrementTop(increment)
+    fullName: incrementTop(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementTop(increment: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Pentagon")
+              shape.incrementTop(25);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: increment
+          description: 以磅为单位的增量，形状将垂直移动。 以磅为单位。 正值表示将形状向下移动，负值表示将形状上移。
+          type:
+            - number
+  - uid: 'excel!Excel.Shape#left:member'
+    summary: 从形状左侧到工作表左侧的距离（以磅为单位）。 当设置为负值作为输入时，将引发无效参数异常。
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#level:member'
+    summary: 表示指定形状的级别。 例如，级别 0 表示形状不是任何组的一部分，级别 1 表示形状是顶级组的一部分，级别 2 表示形状是顶级子组的一部分。
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly level: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#line:member'
+    summary: 返回与形状关联的线条。 如果形状类型不是“Line”，则会引发错误。
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: Excel.Line;'
+      return:
+        type:
+          - 'excel!Excel.Line:class'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.beginArrowheadLength = Excel.ArrowheadLength.long;
+              line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+              line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+              line.endArrowheadLength = Excel.ArrowheadLength.long;
+              line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+              line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#lineFormat:member'
+    summary: 返回此形状的线条格式。 只读。
+    name: lineFormat
+    fullName: lineFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lineFormat: Excel.ShapeLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ShapeLineFormat:class'
+  - uid: 'excel!Excel.Shape#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Shape#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Shape;
+      return:
+        type:
+          - 'excel!Excel.Shape:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Shape#lockAspectRatio:member'
+    summary: 指定此形状的纵横比是否锁定。
+    name: lockAspectRatio
+    fullName: lockAspectRatio
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lockAspectRatio: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Octagon")
+              shape.lockAspectRatio = true;
+              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#name:member'
+    summary: 表示形状的名称。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Shape#parentGroup:member'
+    summary: 表示此形状的父组。
+    name: parentGroup
+    fullName: parentGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentGroup: Excel.Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.Shape#placement:member'
+    summary: 表示对象如何附加到其下方的单元格。
+    name: placement
+    fullName: placement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'placement: Excel.Placement | "TwoCell" | "OneCell" | "Absolute";'
+      return:
+        type:
+          - 'excel!Excel.Shape#placement~0:complex'
+  - uid: 'excel!Excel.Shape#rotation:member'
+    summary: 表示形状的旋转度数。
+    name: rotation
+    fullName: rotation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rotation: number;'
+      return:
+        type:
+          - number
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.triangle);
+              shape.left = 100;
+              shape.top = 300;
+              shape.height = 150;
+              shape.width = 200;
+              shape.rotation = 45;
+              shape.fill.clear();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Shape#scaleHeight:member(1)'
+    summary: 按指定因子缩放形状的高度。 对于图像，你可以说明是相对于原始尺寸还是当前尺寸缩放形状。 对于除图片以外的其他形状来说，缩放总是相对于其当前高度而言。
+    name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'scaleHeight(scaleFactor: number, scaleType: Excel.ShapeScaleType, scaleFrom?: Excel.ShapeScaleFrom): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Octagon")
+              shape.lockAspectRatio = true;
+              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: scaleFactor
+          description: 指定形状调整后的高度与当前或原始高度的比例。
+          type:
+            - number
+        - id: scaleType
+          description: 指定是相对于形状的原始尺寸还是当前尺寸来对其进行缩放。 原始大小缩放选项仅适用于图像。
+          type:
+            - 'excel!Excel.ShapeScaleType:enum'
+        - id: scaleFrom
+          description: 可选。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。 如果省略，则表示形状的左上角将保留其位置。
+          type:
+            - 'excel!Excel.ShapeScaleFrom:enum'
+  - uid: 'excel!Excel.Shape#scaleHeight:member(2)'
+    summary: 按指定因子缩放形状的高度。 对于图像，你可以说明是相对于原始尺寸还是当前尺寸缩放形状。 对于除图片以外的其他形状来说，缩放总是相对于其当前高度而言。
+    name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: 指定形状调整后的高度与当前或原始高度的比例。
+          type:
+            - number
+        - id: scaleTypeString
+          description: 指定是相对于形状的原始尺寸还是当前尺寸来对其进行缩放。 原始大小缩放选项仅适用于图像。
+          type:
+            - '"CurrentSize" | "OriginalSize"'
+        - id: scaleFrom
+          description: 可选。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。 如果省略，则表示形状的左上角将保留其位置。
+          type:
+            - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
+  - uid: 'excel!Excel.Shape#scaleWidth:member(1)'
+    summary: 按指定因子缩放形状的宽度。 对于图像，你可以说明是相对于原始尺寸还是当前尺寸缩放形状。 对于除图片以外的其他形状来说，缩放总是相对于其当前宽度而言。
+    name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'scaleWidth(scaleFactor: number, scaleType: Excel.ShapeScaleType, scaleFrom?: Excel.ShapeScaleFrom): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: 指定形状调整后的宽度与当前或原始宽度的比例。
+          type:
+            - number
+        - id: scaleType
+          description: 指定是相对于形状的原始尺寸还是当前尺寸来对其进行缩放。 原始大小缩放选项仅适用于图像。
+          type:
+            - 'excel!Excel.ShapeScaleType:enum'
+        - id: scaleFrom
+          description: 可选。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。 如果省略，则表示形状的左上角将保留其位置。
+          type:
+            - 'excel!Excel.ShapeScaleFrom:enum'
+  - uid: 'excel!Excel.Shape#scaleWidth:member(2)'
+    summary: 按指定因子缩放形状的宽度。 对于图像，你可以说明是相对于原始尺寸还是当前尺寸缩放形状。 对于除图片以外的其他形状来说，缩放总是相对于其当前宽度而言。
+    name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: 指定形状调整后的宽度与当前或原始宽度的比例。
+          type:
+            - number
+        - id: scaleTypeString
+          description: 指定是相对于形状的原始尺寸还是当前尺寸来对其进行缩放。 原始大小缩放选项仅适用于图像。
+          type:
+            - '"CurrentSize" | "OriginalSize"'
+        - id: scaleFrom
+          description: 可选。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。 如果省略，则表示形状的左上角将保留其位置。
+          type:
+            - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
+  - uid: 'excel!Excel.Shape#set:member(1)'
+    summary: 基于现有加载的对象同时设置该对象的多个属性。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Shape): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.Shape#setZOrder:member(1)'
+    summary: 将指定形状沿集合的 z 顺序向上或向下移动，将其移动到其他形状的前面或后面。
+    name: setZOrder(position)
+    fullName: setZOrder(position)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setZOrder(position: Excel.ShapeZOrder): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.getItem("Octagon")
+              shape.setZOrder(Excel.ShapeZOrder.sendBackward);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: position
+          description: 相对于其他形状在 z-顺序堆栈中移动形状的位置。 有关详细信息，请参阅 ShapeZOrder。
+          type:
+            - 'excel!Excel.ShapeZOrder:enum'
+  - uid: 'excel!Excel.Shape#setZOrder:member(2)'
+    summary: 将指定形状沿集合的 z 顺序向上或向下移动，将其移动到其他形状的前面或后面。
+    name: setZOrder(positionString)
+    fullName: setZOrder(positionString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setZOrder(positionString: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: positionString
+          description: 相对于其他形状在 z-顺序堆栈中移动形状的位置。 有关详细信息，请参阅 ShapeZOrder。
+          type:
+            - '"BringToFront" | "BringForward" | "SendToBack" | "SendBackward"'
+  - uid: 'excel!Excel.Shape#textFrame:member'
+    summary: 返回此形状的文本框对象。 只读。
+    name: textFrame
+    fullName: textFrame
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textFrame: Excel.TextFrame;'
+      return:
+        type:
+          - 'excel!Excel.TextFrame:class'
+  - uid: 'excel!Excel.Shape#top:member'
+    summary: 从形状上边缘到工作表上边缘之间的距离（以磅为单位）。 当设置为负值作为输入时，将引发无效参数异常。
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#type:member'
+    summary: 返回此形状的类型。 有关详细信息，请参阅 Excel.ShapeType。 只读。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
+      return:
+        type:
+          - 'excel!Excel.Shape#type~0:complex'
+  - uid: 'excel!Excel.Shape#visible:member'
+    summary: 表示此形状的可视性。
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Shape#width:member'
+    summary: 表示形状的宽度（以磅为单位）。 当设置为负值或零作为输入时，将引发无效参数异常。
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Shape#zOrderPosition:member'
+    summary: 返回指定形状在 z 顺序中的位置，0 表示顺序堆栈的底部。 只读。
+    name: zOrderPosition
+    fullName: zOrderPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly zOrderPosition: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.Shape:class'
+    name: Shape
+    fullName: Excel.Shape
+  - uid: 'excel!Excel.Shape#copyTo~0:complex'
+    name: Worksheet | string
+    fullName: Excel.Worksheet | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Worksheet:class'
+        name: Worksheet
+        fullName: Excel.Worksheet
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.ShapeFill:class'
+    name: ShapeFill
+    fullName: Excel.ShapeFill
+  - uid: 'excel!Excel.GeometricShape:class'
+    name: GeometricShape
+    fullName: Excel.GeometricShape
+  - uid: 'excel!Excel.Shape#geometricShapeType~0:complex'
+    name: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"
+    fullName: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"
+    spec.typeScript:
+      - uid: 'excel!Excel.GeometricShapeType:enum'
+        name: Excel.GeometricShapeType
+        fullName: Excel.GeometricShapeType
+      - name: ' | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"'
+        fullName: ' | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"'
+  - uid: 'excel!Excel.Shape#getAsImage~0:complex'
+    name: ClientResult<string>
+    fullName: Excel.ClientResult<string>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'excel!Excel.PictureFormat:enum'
+    name: PictureFormat
+    fullName: Excel.PictureFormat
+  - uid: 'excel!Excel.Shape#getAsImage~1:complex'
+    name: ClientResult<string>
+    fullName: Excel.ClientResult<string>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'excel!Excel.ShapeGroup:class'
+    name: ShapeGroup
+    fullName: Excel.ShapeGroup
+  - uid: 'excel!Excel.Image:class'
+    name: Image
+    fullName: Excel.Image
+  - uid: 'excel!Excel.Line:class'
+    name: Line
+    fullName: Excel.Line
+  - uid: 'excel!Excel.ShapeLineFormat:class'
+    name: ShapeLineFormat
+    fullName: Excel.ShapeLineFormat
+  - uid: 'excel!Excel.Shape#placement~0:complex'
+    name: Excel.Placement | "TwoCell" | "OneCell" | "Absolute"
+    fullName: Excel.Placement | "TwoCell" | "OneCell" | "Absolute"
+    spec.typeScript:
+      - uid: 'excel!Excel.Placement:enum'
+        name: Excel.Placement
+        fullName: Excel.Placement
+      - name: ' | "TwoCell" | "OneCell" | "Absolute"'
+        fullName: ' | "TwoCell" | "OneCell" | "Absolute"'
+  - uid: 'excel!Excel.ShapeScaleType:enum'
+    name: ShapeScaleType
+    fullName: Excel.ShapeScaleType
+  - uid: 'excel!Excel.ShapeScaleFrom:enum'
+    name: ShapeScaleFrom
+    fullName: Excel.ShapeScaleFrom
+  - uid: 'excel!Excel.ShapeZOrder:enum'
+    name: ShapeZOrder
+    fullName: Excel.ShapeZOrder
+  - uid: 'excel!Excel.TextFrame:class'
+    name: TextFrame
+    fullName: Excel.TextFrame
+  - uid: 'excel!Excel.Shape#type~0:complex'
+    name: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"
+    fullName: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeType:enum'
+        name: Excel.ShapeType
+        fullName: Excel.ShapeType
+      - name: ' | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"'
+        fullName: ' | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"'

@@ -1,0 +1,144 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
+    summary: 封装图表趋势线标签的格式属性。
+    name: Excel.ChartTrendlineLabelFormat
+    fullName: Excel.ChartTrendlineLabelFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendlineLabelFormat#border:member'
+      - 'excel!Excel.ChartTrendlineLabelFormat#context:member'
+      - 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
+      - 'excel!Excel.ChartTrendlineLabelFormat#font:member'
+      - 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
+      - 'excel!Excel.ChartTrendlineLabelFormat#load:member(2)'
+      - 'excel!Excel.ChartTrendlineLabelFormat#set:member(1)'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#border:member'
+    summary: 表示边框格式，包括颜色、线条样式和粗细。
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
+    summary: 表示当前图表趋势线标签的填充格式。
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#font:member'
+    summary: 表示图表趋势线标签的字体属性（字体名称、字体大小、颜色等）。
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:class'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineLabelFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineLabelFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartTrendlineLabelFormat;
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineLabelFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat#set:member(1)'
+    summary: 基于现有加载的对象同时设置该对象的多个属性。
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartTrendlineLabelFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartTrendlineLabelFormat:class'
+references:
+  - uid: 'excel!Excel.ChartBorder:class'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:class'
+    name: ChartFont
+    fullName: Excel.ChartFont
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
+    name: ChartTrendlineLabelFormat
+    fullName: Excel.ChartTrendlineLabelFormat

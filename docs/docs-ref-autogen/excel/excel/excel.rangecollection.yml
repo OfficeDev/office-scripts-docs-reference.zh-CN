@@ -1,0 +1,116 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeCollection:class'
+    name: Excel.RangeCollection
+    fullName: Excel.RangeCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.RangeCollection#context:member'
+      - 'excel!Excel.RangeCollection#getCount:member(1)'
+      - 'excel!Excel.RangeCollection#getItemAt:member(1)'
+      - 'excel!Excel.RangeCollection#items:member'
+      - 'excel!Excel.RangeCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeCollection#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeCollection#getCount:member(1)'
+    summary: 返回 RangeCollection 中的区域数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.RangeCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.RangeCollection#getItemAt:member(1)'
+    summary: 根据其在 RangeCollection 中的位置返回 Range 对象。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的 range 对象的索引值。 从零开始编制索引。
+          type:
+            - number
+  - uid: 'excel!Excel.RangeCollection#items:member'
+    summary: 获取此集合中已加载的子项。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Range[];'
+      return:
+        type:
+          - 'excel!Excel.RangeCollection#items~0:complex'
+  - uid: 'excel!Excel.RangeCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RangeCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.RangeCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.RangeCollection#items~0:complex'
+    name: 'Excel.Range[]'
+    fullName: 'Excel.Range[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Excel.Range
+        fullName: Excel.Range
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.RangeCollection:class'
+    name: RangeCollection
+    fullName: Excel.RangeCollection

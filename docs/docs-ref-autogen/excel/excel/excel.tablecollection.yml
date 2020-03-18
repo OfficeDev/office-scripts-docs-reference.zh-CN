@@ -1,0 +1,200 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableCollection:class'
+    summary: 表示属于工作簿或工作表（具有取决于限定到的范围）的所有表的集合。
+    name: Excel.TableCollection
+    fullName: Excel.TableCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.TableCollection#add:member(1)'
+      - 'excel!Excel.TableCollection#context:member'
+      - 'excel!Excel.TableCollection#count:member'
+      - 'excel!Excel.TableCollection#getCount:member(1)'
+      - 'excel!Excel.TableCollection#getItem:member(1)'
+      - 'excel!Excel.TableCollection#getItemAt:member(1)'
+      - 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableCollection#items:member'
+      - 'excel!Excel.TableCollection#load:member(1)'
+  - uid: 'excel!Excel.TableCollection#add:member(1)'
+    summary: 新建表。范围对象或源地址决定了在哪个工作表下添加表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），则会引发错误。
+    name: 'add(address, hasHeaders)'
+    fullName: 'add(address, hasHeaders)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(address: Range | string, hasHeaders: boolean): Excel.Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: ''
+      parameters:
+        - id: address
+          description: Range 对象或表示数据源的区域的字符串地址或名称。 如果地址不包含工作表名称，将使用当前活动的工作表。
+          type:
+            - 'excel!Excel.TableCollection#add~0:complex'
+        - id: hasHeaders
+          description: 指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。
+          type:
+            - boolean
+  - uid: 'excel!Excel.TableCollection#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableCollection#count:member'
+    summary: 返回工作簿中的表数目。 只读。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableCollection#getCount:member(1)'
+    summary: 获取集合中的表数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.TableCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.TableCollection#getItem:member(1)'
+    summary: 按名称或 ID 获取表。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的表的名称或 ID。
+          type:
+            - string
+  - uid: 'excel!Excel.TableCollection#getItemAt:member(1)'
+    summary: 根据其在集合中的位置获取表。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的对象的索引值。 从零开始编制索引。
+          type:
+            - number
+  - uid: 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
+    summary: 按名称或 ID 获取表。 如果没有表，将返回 NULL 对象。
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的表的名称或 ID。
+          type:
+            - string
+  - uid: 'excel!Excel.TableCollection#items:member'
+    summary: 获取此集合中已加载的子项。
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Table[];'
+      return:
+        type:
+          - 'excel!Excel.TableCollection#items~0:complex'
+  - uid: 'excel!Excel.TableCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TableCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Table:class'
+    name: Table
+    fullName: Excel.Table
+  - uid: 'excel!Excel.TableCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.TableCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.TableCollection#items~0:complex'
+    name: 'Excel.Table[]'
+    fullName: 'Excel.Table[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Table:class'
+        name: Excel.Table
+        fullName: Excel.Table
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.TableCollection:class'
+    name: TableCollection
+    fullName: Excel.TableCollection

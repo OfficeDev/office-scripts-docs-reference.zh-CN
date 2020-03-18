@@ -1,0 +1,174 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetProtection:class'
+    summary: 表示对工作表对象的保护。
+    name: Excel.WorksheetProtection
+    fullName: Excel.WorksheetProtection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.WorksheetProtection#context:member'
+      - 'excel!Excel.WorksheetProtection#load:member(1)'
+      - 'excel!Excel.WorksheetProtection#load:member(2)'
+      - 'excel!Excel.WorksheetProtection#options:member'
+      - 'excel!Excel.WorksheetProtection#protect:member(1)'
+      - 'excel!Excel.WorksheetProtection#protected:member'
+      - 'excel!Excel.WorksheetProtection#unprotect:member(1)'
+  - uid: 'excel!Excel.WorksheetProtection#context:member'
+    summary: 与该对象关联的请求上下文。 这会将加载项的进程连接到 Office 主机应用程序的进程。
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.WorksheetProtection;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetProtection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(2)'
+    summary: 将命令加入队列以加载对象的指定属性。 在读取属性`context.sync()`之前，必须先调用。
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.WorksheetProtection;
+      return:
+        type:
+          - 'excel!Excel.WorksheetProtection:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`是一个以逗号分隔的字符串，用于指定要加载的属性`propertyNamesAndPaths.expand` ，并且是一个以逗号分隔的字符串，用于指定要加载的导航属性。'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.WorksheetProtection#options:member'
+    summary: 工作表保护选项。 只读。
+    name: options
+    fullName: options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly options: Excel.WorksheetProtectionOptions;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetProtectionOptions:interface'
+  - uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
+    summary: 保护 worksheet。 如果工作表已受到保护，则失败。
+    name: 'protect(options, password)'
+    fullName: 'protect(options, password)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.load("protection/protected");
+
+              await context.sync();
+
+              if (!activeSheet.protection.protected) {
+                  activeSheet.protection.protect();
+              }
+          }
+          ```
+      parameters:
+        - id: options
+          description: 可选。 工作表保护选项。
+          type:
+            - 'excel!Excel.WorksheetProtectionOptions:interface'
+        - id: password
+          description: 可选。 工作表保护密码。
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetProtection#protected:member'
+    summary: 表示该工作表是否受保护。 只读。
+    name: protected
+    fullName: protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.WorksheetProtection#unprotect:member(1)'
+    summary: 解除对 worksheet 的保护。
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          async function main(context: Excel.RequestContext) {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.protection.unprotect();
+          }
+          ```
+      parameters:
+        - id: password
+          description: 工作表保护密码。
+          type:
+            - string
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.WorksheetProtection:class'
+    name: WorksheetProtection
+    fullName: Excel.WorksheetProtection
+  - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
+    name: WorksheetProtectionOptions
+    fullName: Excel.WorksheetProtectionOptions
