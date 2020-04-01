@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Table:class'
-    summary: '表示 Excel 表格。 若要了解有关表对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理表](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.'
+    summary: 表示 Excel 表格。
     name: Excel.Table
     fullName: Excel.Table
     langs:

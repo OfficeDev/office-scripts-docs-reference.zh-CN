@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.PivotTable:class'
-    summary: '表示 Excel 数据透视表。 若要了解有关数据透视表对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理数据透视表](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
+    summary: 表示 Excel 数据透视表。
     name: Excel.PivotTable
     fullName: Excel.PivotTable
     langs:
