@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Shape:class'
-    summary: '代表工作表中的一个通用 shape 对象。 一个形状可以是一个几何形状、一条线、一组形状，等等。若要了解有关 shape 对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理形状](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    summary: 代表工作表中的一个通用 shape 对象。 一个形状可以是一个几何形状、一条线、一组形状，等等。
     name: Excel.Shape
     fullName: Excel.Shape
     langs:
