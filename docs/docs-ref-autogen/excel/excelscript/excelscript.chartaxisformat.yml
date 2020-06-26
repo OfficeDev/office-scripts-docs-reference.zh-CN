@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
+    summary: 封装图表坐标轴的格式属性。
+    name: ExcelScript.ChartAxisFormat
+    fullName: ExcelScript.ChartAxisFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
+    summary: 指定图表填充格式。
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
+    summary: 指定图表轴元素的字体属性（字体名称、字体大小、颜色等）。
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFont:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
+    summary: 指定图表线格式。
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill
+  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
+    name: ChartFont
+    fullName: ExcelScript.ChartFont
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat

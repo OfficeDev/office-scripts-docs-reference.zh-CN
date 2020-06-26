@@ -1,0 +1,328 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Line:interface'
+    summary: 代表工作表中的一条线。 若要获取相应的 Shape 对象，请使用`Line.shape`<!-- -->.
+    name: Excel.Line
+    fullName: Excel.Line
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Line#beginArrowheadLength:member'
+      - 'excel!Excel.Line#beginArrowheadStyle:member'
+      - 'excel!Excel.Line#beginArrowheadWidth:member'
+      - 'excel!Excel.Line#beginConnectedSite:member'
+      - 'excel!Excel.Line#connectBeginShape:member(1)'
+      - 'excel!Excel.Line#connectEndShape:member(1)'
+      - 'excel!Excel.Line#connectorType:member'
+      - 'excel!Excel.Line#disconnectBeginShape:member(1)'
+      - 'excel!Excel.Line#disconnectEndShape:member(1)'
+      - 'excel!Excel.Line#endArrowheadLength:member'
+      - 'excel!Excel.Line#endArrowheadStyle:member'
+      - 'excel!Excel.Line#endArrowheadWidth:member'
+      - 'excel!Excel.Line#endConnectedSite:member'
+      - 'excel!Excel.Line#id:member'
+      - 'excel!Excel.Line#isBeginConnected:member'
+      - 'excel!Excel.Line#isEndConnected:member'
+      - 'excel!Excel.Line#load:member(1)'
+  - uid: 'excel!Excel.Line#beginArrowheadLength:member'
+    summary: 表示指定线条始端的箭头长度。
+    name: beginArrowheadLength
+    fullName: beginArrowheadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadLength: ArrowheadLength;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadLength:enum'
+  - uid: 'excel!Excel.Line#beginArrowheadStyle:member'
+    summary: 表示指定线条始端的箭头样式。
+    name: beginArrowheadStyle
+    fullName: beginArrowheadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadStyle: ArrowheadStyle;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadStyle:enum'
+  - uid: 'excel!Excel.Line#beginArrowheadWidth:member'
+    summary: 表示指定线条始端的箭头宽度。
+    name: beginArrowheadWidth
+    fullName: beginArrowheadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadWidth: ArrowheadWidth;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#beginConnectedSite:member'
+    summary: 表示连接线始端所连接的连接站点。 当线条的始端没有附加到任何形状时，返回 null。
+    name: beginConnectedSite
+    fullName: beginConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly beginConnectedSite: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Line#connectBeginShape:member(1)'
+    summary: 将指定连接线的始端附加到指定形状。
+    name: 'connectBeginShape(shape, connectionSite)'
+    fullName: 'connectBeginShape(shape, connectionSite)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.connectBeginShape(shapes.getItem("Left"), 2);
+              line.connectEndShape(shapes.getItem("Right"), 0);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: shape
+          description: 要连接的形状。
+          type:
+            - 'excel!Excel.Shape:interface'
+        - id: connectionSite
+          description: 连接符的起点所附加到的形状上的连接点。 必须是介于0（含）和指定形状的连接网站数（独占）之间的整数。
+          type:
+            - number
+  - uid: 'excel!Excel.Line#connectEndShape:member(1)'
+    summary: 将指定连接线的末端附加到指定形状。
+    name: 'connectEndShape(shape, connectionSite)'
+    fullName: 'connectEndShape(shape, connectionSite)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.connectBeginShape(shapes.getItem("Left"), 2);
+              line.connectEndShape(shapes.getItem("Right"), 0);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: shape
+          description: 要连接的形状。
+          type:
+            - 'excel!Excel.Shape:interface'
+        - id: connectionSite
+          description: 连接符的终点所连接的形状上的连接点。 必须是介于0（含）和指定形状的连接网站数（独占）之间的整数。
+          type:
+            - number
+  - uid: 'excel!Excel.Line#connectorType:member'
+    summary: 表示线条的连接器类型。
+    name: connectorType
+    fullName: connectorType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectorType: ConnectorType;'
+      return:
+        type:
+          - 'excel!Excel.ConnectorType:enum'
+  - uid: 'excel!Excel.Line#disconnectBeginShape:member(1)'
+    summary: 使指定连接线的始端与形状脱离。
+    name: disconnectBeginShape()
+    fullName: disconnectBeginShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'disconnectBeginShape(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.disconnectBeginShape();
+              line.disconnectEndShape();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Line#disconnectEndShape:member(1)'
+    summary: 使指定连接线的末端与形状脱离。
+    name: disconnectEndShape()
+    fullName: disconnectEndShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'disconnectEndShape(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.disconnectBeginShape();
+              line.disconnectEndShape();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Line#endArrowheadLength:member'
+    summary: 表示指定线条末端的箭头长度。
+    name: endArrowheadLength
+    fullName: endArrowheadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadLength: ArrowheadLength;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadLength:enum'
+  - uid: 'excel!Excel.Line#endArrowheadStyle:member'
+    summary: 表示指定线条末端的箭头样式。
+    name: endArrowheadStyle
+    fullName: endArrowheadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadStyle: ArrowheadStyle;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadStyle:enum'
+  - uid: 'excel!Excel.Line#endArrowheadWidth:member'
+    summary: 表示指定线条末端的箭头宽度。
+    name: endArrowheadWidth
+    fullName: endArrowheadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadWidth: ArrowheadWidth;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#endConnectedSite:member'
+    summary: 表示连接线末端所连接的连接站点。 当线条的末端没有附加到任何形状时，返回 null。
+    name: endConnectedSite
+    fullName: endConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly endConnectedSite: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Line#id:member'
+    summary: 指定形状标识符。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Line#isBeginConnected:member'
+    summary: 指定是否将指定线条的起点连接到形状。
+    name: isBeginConnected
+    fullName: isBeginConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isBeginConnected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Line#isEndConnected:member'
+    summary: 指定是否将指定线条的终点连接到形状。
+    name: isEndConnected
+    fullName: isEndConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isEndConnected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Line#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ArrowheadLength:enum'
+    name: ArrowheadLength
+    fullName: Excel.ArrowheadLength
+  - uid: 'excel!Excel.ArrowheadStyle:enum'
+    name: ArrowheadStyle
+    fullName: Excel.ArrowheadStyle
+  - uid: 'excel!Excel.ArrowheadWidth:enum'
+    name: ArrowheadWidth
+    fullName: Excel.ArrowheadWidth
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
+  - uid: 'excel!Excel.ConnectorType:enum'
+    name: ConnectorType
+    fullName: Excel.ConnectorType

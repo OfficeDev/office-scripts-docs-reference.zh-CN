@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+    summary: 表示在时间轴中按区域定义样式元素的日程表样式。
+    name: ExcelScript.TimelineStyle
+    fullName: ExcelScript.TimelineStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
+      - 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
+    summary: 删除 TableStyle。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
+    summary: 使用所有样式元素的副本创建此 TimelineStyle 的副本。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TimelineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
+    summary: 获取 TimelineStyle 的名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
+    summary: 指定此 TimelineStyle 对象是否为只读。
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
+    summary: 获取 TimelineStyle 的名称。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: ExcelScript.TimelineStyle

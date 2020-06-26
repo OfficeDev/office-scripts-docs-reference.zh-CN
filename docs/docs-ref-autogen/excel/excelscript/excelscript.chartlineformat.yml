@@ -1,0 +1,128 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    summary: 封装线条元素的格式设置选项。
+    name: ExcelScript.ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartLineFormat#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLineFormat#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLineFormat#getLineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLineFormat#getWeight:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLineFormat#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLineFormat#setLineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLineFormat#setWeight:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat#clear:member(1)'
+    summary: 清除图表元素的线条格式。
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat#getColor:member(1)'
+    summary: 表示图表中的线条颜色的 HTML 颜色代码。
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat#getLineStyle:member(1)'
+    summary: 代表线条样式。 有关详细信息，请参阅 ChartLineStyle。
+    name: getLineStyle()
+    fullName: getLineStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLineStyle(): ChartLineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat#getWeight:member(1)'
+    summary: 表示线条的粗细（以磅为单位）。
+    name: getWeight()
+    fullName: getWeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat#setColor:member(1)'
+    summary: 表示图表中的线条颜色的 HTML 颜色代码。
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat#setLineStyle:member(1)'
+    summary: 代表线条样式。 有关详细信息，请参阅 ChartLineStyle。
+    name: setLineStyle(lineStyle)
+    fullName: setLineStyle(lineStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLineStyle(lineStyle: ChartLineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: lineStyle
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartLineStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat#setWeight:member(1)'
+    summary: 表示线条的粗细（以磅为单位）。
+    name: setWeight(weight)
+    fullName: setWeight(weight)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWeight(weight: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: weight
+          description: ''
+          type:
+            - number
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartLineStyle:enum'
+    name: ChartLineStyle
+    fullName: ExcelScript.ChartLineStyle

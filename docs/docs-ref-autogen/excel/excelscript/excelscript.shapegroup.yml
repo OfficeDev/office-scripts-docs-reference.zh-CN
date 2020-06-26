@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup:interface'
+    summary: 代表工作表中的形状组。 若要获取相应的 Shape 对象，请使用`ShapeGroup.shape`<!-- -->.
+    name: ExcelScript.ShapeGroup
+    fullName: ExcelScript.ShapeGroup
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
+    summary: 指定形状标识符。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
+    summary: 按名称或 ID 获取形状。
+    name: getShape(key)
+    fullName: getShape(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShape(key: string): Shape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Shape:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的形状的名称或 ID。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
+    summary: 返回 Shape 对象的集合。
+    name: getShapes()
+    fullName: getShapes()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShapes(): Shape[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeGroup#getShapes~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
+    summary: 取消分组指定形状组中的任何已分组形状。
+    name: ungroup()
+    fullName: ungroup()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'ungroup(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.Shape:interface'
+    name: Shape
+    fullName: ExcelScript.Shape
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShapes~0:complex'
+    name: 'Shape[]'
+    fullName: 'ExcelScript.Shape[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Shape:interface'
+        name: Shape
+        fullName: ExcelScript.Shape
+      - name: '[]'
+        fullName: '[]'

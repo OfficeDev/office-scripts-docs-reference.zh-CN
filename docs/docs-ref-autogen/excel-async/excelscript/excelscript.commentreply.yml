@@ -1,0 +1,248 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentReply:interface'
+    summary: 代表工作簿中的注释答复。
+    name: Excel.CommentReply
+    fullName: Excel.CommentReply
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CommentReply#authorEmail:member'
+      - 'excel!Excel.CommentReply#authorName:member'
+      - 'excel!Excel.CommentReply#content:member'
+      - 'excel!Excel.CommentReply#creationDate:member'
+      - 'excel!Excel.CommentReply#delete:member(1)'
+      - 'excel!Excel.CommentReply#getLocation:member(1)'
+      - 'excel!Excel.CommentReply#getParentComment:member(1)'
+      - 'excel!Excel.CommentReply#id:member'
+      - 'excel!Excel.CommentReply#load:member(1)'
+      - 'excel!Excel.CommentReply#mentions:member'
+      - 'excel!Excel.CommentReply#resolved:member'
+      - 'excel!Excel.CommentReply#richContent:member'
+      - 'excel!Excel.CommentReply#updateMentions:member(1)'
+  - uid: 'excel!Excel.CommentReply#authorEmail:member'
+    summary: 获取批注回复作者的电子邮件。
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly authorEmail: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentReply#authorName:member'
+    summary: 获取批注回复作者的姓名。
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly authorName: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentReply#content:member'
+    summary: 批注答复的内容。 字符串为纯文本。
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Comments");
+              let comment = sheet.comments.getItemAt(0);
+              let reply = comment.replies.getItemAt(0);
+              reply.load("content");
+              // Sync to load the content of the comment reply.
+              await context.sync();
+
+              // Append "Please!" to the end of the comment reply.
+              reply.content += " Please!";
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.CommentReply#creationDate:member'
+    summary: 获取批注回复的创建时间。
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.CommentReply#delete:member(1)'
+    summary: 删除批注回复。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              // Remove the first comment reply from this worksheet's first comment.
+              let sheet = context.workbook.worksheets.getItem("Comments");
+              let comment = sheet.comments.getItemAt(0);
+              comment.replies.getItemAt(0).delete();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.CommentReply#getLocation:member(1)'
+    summary: 获取此批注答复所在的单元格。
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.CommentReply#getParentComment:member(1)'
+    summary: 获取此回复的父注释。
+    name: getParentComment()
+    fullName: getParentComment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getParentComment(): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+  - uid: 'excel!Excel.CommentReply#id:member'
+    summary: 指定批注答复标识符。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentReply#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CommentReply#mentions:member'
+    summary: 注释中提到的实体（例如，人员）。
+    name: mentions
+    fullName: mentions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly mentions: CommentMention[];'
+      return:
+        type:
+          - 'excel!Excel.CommentReply#mentions~0:complex'
+  - uid: 'excel!Excel.CommentReply#resolved:member'
+    summary: 批注答复状态。 值为 "true" 表示答复处于 "已解决" 状态。
+    name: resolved
+    fullName: resolved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly resolved: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CommentReply#richContent:member'
+    summary: 丰富的注释内容（例如，注释中提到的内容）。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
+    name: richContent
+    fullName: richContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly richContent: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentReply#updateMentions:member(1)'
+    summary: 使用特殊格式的字符串和提及列表更新注释内容。
+    name: updateMentions(contentWithMentions)
+    fullName: updateMentions(contentWithMentions)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: contentWithMentions
+          description: 批注的内容。 这包含一个特殊格式的字符串和在 Excel 显示时将解析为字符串的提及的列表。
+          type:
+            - 'excel!Excel.CommentRichContent:interface'
+references:
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.Comment:interface'
+    name: Comment
+    fullName: Excel.Comment
+  - uid: 'excel!Excel.CommentReply#mentions~0:complex'
+    name: 'CommentMention[]'
+    fullName: 'Excel.CommentMention[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentMention:interface'
+        name: CommentMention
+        fullName: Excel.CommentMention
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.CommentRichContent:interface'
+    name: CommentRichContent
+    fullName: Excel.CommentRichContent

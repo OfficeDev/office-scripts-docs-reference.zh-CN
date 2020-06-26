@@ -1,0 +1,164 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeFont:interface'
+    summary: 此对象表示对象的字体属性（字体名称、字体大小、颜色等）。
+    name: Excel.RangeFont
+    fullName: Excel.RangeFont
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeFont#bold:member'
+      - 'excel!Excel.RangeFont#color:member'
+      - 'excel!Excel.RangeFont#italic:member'
+      - 'excel!Excel.RangeFont#load:member(1)'
+      - 'excel!Excel.RangeFont#name:member'
+      - 'excel!Excel.RangeFont#size:member'
+      - 'excel!Excel.RangeFont#strikethrough:member'
+      - 'excel!Excel.RangeFont#subscript:member'
+      - 'excel!Excel.RangeFont#superscript:member'
+      - 'excel!Excel.RangeFont#tintAndShade:member'
+      - 'excel!Excel.RangeFont#underline:member'
+  - uid: 'excel!Excel.RangeFont#bold:member'
+    summary: 表示字体的加粗状态。
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeFont#color:member'
+    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeFont#italic:member'
+    summary: 指定字体的斜体状态。
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeFont#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeFont#name:member'
+    summary: 字体名称（例如，"Calibri"）
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeFont#size:member'
+    summary: 字号
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeFont#strikethrough:member'
+    summary: 指定字体的删除线状态。 Null 值表示整个区域没有统一的删除线设置。
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeFont#subscript:member'
+    summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal （既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeFont#superscript:member'
+    summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体为下标或普通（既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RangeFont#tintAndShade:member'
+    summary: 指定将区域字体的颜色变浅或变暗的双精度值，该值介于-1 （最暗）和1（最亮）之间，0表示原始颜色。 空值表示整个区域没有统一的字体 tintAndShade 设置。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeFont#underline:member'
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 RangeUnderlineStyle。
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: RangeUnderlineStyle;'
+      return:
+        type:
+          - 'excel!Excel.RangeUnderlineStyle:enum'
+references:
+  - uid: 'excel!Excel.RangeUnderlineStyle:enum'
+    name: RangeUnderlineStyle
+    fullName: Excel.RangeUnderlineStyle

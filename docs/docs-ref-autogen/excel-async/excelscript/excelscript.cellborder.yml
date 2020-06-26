@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellBorder:interface'
+    summary: '代表由返回的单个边框的属性`getCellProperties`<!-- -->, `getRowProperties`<!-- -->，和 `getColumnProperties` 或的 border 属性输入参数`setCellProperties`<!-- -->, `setRowProperties`<!-- -->，并`setColumnProperties`<!-- -->.'
+    name: Excel.CellBorder
+    fullName: Excel.CellBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellBorder#color:member'
+      - 'excel!Excel.CellBorder#style:member'
+      - 'excel!Excel.CellBorder#tintAndShade:member'
+      - 'excel!Excel.CellBorder#weight:member'
+  - uid: 'excel!Excel.CellBorder#color:member'
+    summary: 表示`color`单个边框的属性。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CellBorder#style:member'
+    summary: 表示`style`单个边框的属性。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: BorderLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.BorderLineStyle:enum'
+  - uid: 'excel!Excel.CellBorder#tintAndShade:member'
+    summary: 表示`tintAndShade`单个边框的属性。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.CellBorder#weight:member'
+    summary: 表示`weight`单个边框的属性。
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: BorderWeight;'
+      return:
+        type:
+          - 'excel!Excel.BorderWeight:enum'
+references:
+  - uid: 'excel!Excel.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: Excel.BorderLineStyle
+  - uid: 'excel!Excel.BorderWeight:enum'
+    name: BorderWeight
+    fullName: Excel.BorderWeight

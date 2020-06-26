@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TextRange:interface'
+    summary: 包含附加到形状上的文本，以及用于操作文本的属性和方法。
+    name: Excel.TextRange
+    fullName: Excel.TextRange
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TextRange#font:member'
+      - 'excel!Excel.TextRange#getSubstring:member(1)'
+      - 'excel!Excel.TextRange#load:member(1)'
+      - 'excel!Excel.TextRange#text:member'
+  - uid: 'excel!Excel.TextRange#font:member'
+    summary: 返回一个 ShapeFont 对象，该对象表示文本范围的字体属性。
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ShapeFont;'
+      return:
+        type:
+          - 'excel!Excel.ShapeFont:interface'
+  - uid: 'excel!Excel.TextRange#getSubstring:member(1)'
+    summary: 返回给定区域内子字符串的 TextRange 对象。
+    name: 'getSubstring(start, length)'
+    fullName: 'getSubstring(start, length)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubstring(start: number, length?: number): TextRange;'
+      return:
+        type:
+          - 'excel!Excel.TextRange:interface'
+        description: ''
+      parameters:
+        - id: start
+          description: 从文本范围中获取的第一个字符的从零开始的索引。
+          type:
+            - number
+        - id: length
+          description: 可选。 要在新文本范围中返回的字符数。 如果省略 length，则将返回从文本范围的最后一段的最后一段的末尾开始的所有字符。
+          type:
+            - number
+  - uid: 'excel!Excel.TextRange#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TextRange#text:member'
+    summary: 表示文本范围的纯文本内容。
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.ShapeFont:interface'
+    name: ShapeFont
+    fullName: Excel.ShapeFont
+  - uid: 'excel!Excel.TextRange:interface'
+    name: TextRange
+    fullName: Excel.TextRange

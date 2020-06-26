@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize:enum'
+    summary: 确定允许的自动调整大小的类型。
+    name: ExcelScript.ShapeAutoSize
+    fullName: ExcelScript.ShapeAutoSize
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
+      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member'
+      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
+      - 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeMixed:member'
+    summary: 使用自动调整大小方案的组合。
+    name: autoSizeMixed
+    fullName: autoSizeMixed
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeNone:member'
+    summary: 不自动调整大小。
+    name: autoSizeNone
+    fullName: autoSizeNone
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeShapeToFitText:member'
+    summary: 根据文本调整形状。
+    name: autoSizeShapeToFitText
+    fullName: autoSizeShapeToFitText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeAutoSize.autoSizeTextToFitShape:member'
+    summary: 根据形状调整文本。
+    name: autoSizeTextToFitShape
+    fullName: autoSizeTextToFitShape
+    langs:
+      - typeScript
+    type: field

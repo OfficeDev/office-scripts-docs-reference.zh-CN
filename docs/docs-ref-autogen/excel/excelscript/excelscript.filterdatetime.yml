@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
+    summary: 表示在筛选值时如何筛选日期。
+    name: ExcelScript.FilterDatetime
+    fullName: ExcelScript.FilterDatetime
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+      - 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+    summary: 用于筛选数据的采用 ISO8601 格式的日期。
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+    summary: 用于保留数据的日期的具体程度。 例如，如果日期是 2005-04-02 并且将特殊性设置为“月”，则筛选操作将保留包含 2009 年 4 月日期的所有行。
+    name: specificity
+    fullName: specificity
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'specificity: FilterDatetimeSpecificity;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum'
+    name: FilterDatetimeSpecificity
+    fullName: ExcelScript.FilterDatetimeSpecificity

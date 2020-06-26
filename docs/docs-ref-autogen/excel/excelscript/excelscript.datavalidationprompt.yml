@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt:interface'
+    summary: 表示数据验证的用户提示属性。
+    name: ExcelScript.DataValidationPrompt
+    fullName: ExcelScript.DataValidationPrompt
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#message:member'
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member'
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#title:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#message:member'
+    summary: 指定提示的消息。
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member'
+    summary: 指定当用户选择包含数据验证的单元格时是否显示提示。
+    name: showPrompt
+    fullName: showPrompt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPrompt: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#title:member'
+    summary: 指定提示的标题。
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string

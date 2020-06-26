@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.GroupShapeCollection:interface'
+    summary: 代表形状组中的形状集合。
+    name: Excel.GroupShapeCollection
+    fullName: Excel.GroupShapeCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+    summary: 按名称或 ID 获取形状。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的形状的名称或 ID。
+          type:
+            - string
+  - uid: 'excel!Excel.GroupShapeCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
