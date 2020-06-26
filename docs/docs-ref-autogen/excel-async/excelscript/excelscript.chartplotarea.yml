@@ -1,0 +1,167 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartPlotArea:interface'
+    summary: 此对象表示 chart plotArea 对象的属性。
+    name: Excel.ChartPlotArea
+    fullName: Excel.ChartPlotArea
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartPlotArea#format:member'
+      - 'excel!Excel.ChartPlotArea#height:member'
+      - 'excel!Excel.ChartPlotArea#insideHeight:member'
+      - 'excel!Excel.ChartPlotArea#insideLeft:member'
+      - 'excel!Excel.ChartPlotArea#insideTop:member'
+      - 'excel!Excel.ChartPlotArea#insideWidth:member'
+      - 'excel!Excel.ChartPlotArea#left:member'
+      - 'excel!Excel.ChartPlotArea#load:member(1)'
+      - 'excel!Excel.ChartPlotArea#position:member'
+      - 'excel!Excel.ChartPlotArea#top:member'
+      - 'excel!Excel.ChartPlotArea#width:member'
+  - uid: 'excel!Excel.ChartPlotArea#format:member'
+    summary: 指定图表 plotArea 的格式。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartPlotAreaFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartPlotAreaFormat:interface'
+  - uid: 'excel!Excel.ChartPlotArea#height:member'
+    summary: 指定 plotArea 的高度值。
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#insideHeight:member'
+    summary: 指定 plotArea 的 insideHeight 值。
+    name: insideHeight
+    fullName: insideHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideHeight: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#insideLeft:member'
+    summary: 指定 plotArea 的 insideLeft 值。
+    name: insideLeft
+    fullName: insideLeft
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideLeft: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#insideTop:member'
+    summary: 指定 plotArea 的 insideTop 值。
+    name: insideTop
+    fullName: insideTop
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideTop: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#insideWidth:member'
+    summary: 指定 plotArea 的 insideWidth 值。
+    name: insideWidth
+    fullName: insideWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideWidth: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#left:member'
+    summary: 指定 plotArea 的左侧值。
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartPlotArea#position:member'
+    summary: 指定 plotArea 的位置。
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: ChartPlotAreaPosition;'
+      return:
+        type:
+          - 'excel!Excel.ChartPlotAreaPosition:enum'
+  - uid: 'excel!Excel.ChartPlotArea#top:member'
+    summary: 指定 plotArea 的最高值。
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#width:member'
+    summary: 指定 plotArea 的宽度值。
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartPlotAreaFormat:interface'
+    name: ChartPlotAreaFormat
+    fullName: Excel.ChartPlotAreaFormat
+  - uid: 'excel!Excel.ChartPlotAreaPosition:enum'
+    name: ChartPlotAreaPosition
+    fullName: Excel.ChartPlotAreaPosition
