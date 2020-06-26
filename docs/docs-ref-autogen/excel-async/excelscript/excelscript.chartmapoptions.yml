@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartMapOptions:interface'
+    summary: 封装区域映射图的属性。
+    name: Excel.ChartMapOptions
+    fullName: Excel.ChartMapOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartMapOptions#labelStrategy:member'
+      - 'excel!Excel.ChartMapOptions#level:member'
+      - 'excel!Excel.ChartMapOptions#load:member(1)'
+      - 'excel!Excel.ChartMapOptions#projectionType:member'
+  - uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
+    summary: 指定区域地图图表的系列地图标签策略。
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelStrategy: ChartMapLabelStrategy;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapLabelStrategy:enum'
+  - uid: 'excel!Excel.ChartMapOptions#level:member'
+    summary: 指定区域映射图表的系列映射级别。
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level: ChartMapAreaLevel;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapAreaLevel:enum'
+  - uid: 'excel!Excel.ChartMapOptions#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartMapOptions#projectionType:member'
+    summary: 指定区域地图图表的系列投影类型。
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'projectionType: ChartMapProjectionType;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapProjectionType:enum'
+references:
+  - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
+    name: ChartMapLabelStrategy
+    fullName: Excel.ChartMapLabelStrategy
+  - uid: 'excel!Excel.ChartMapAreaLevel:enum'
+    name: ChartMapAreaLevel
+    fullName: Excel.ChartMapAreaLevel
+  - uid: 'excel!Excel.ChartMapProjectionType:enum'
+    name: ChartMapProjectionType
+    fullName: Excel.ChartMapProjectionType

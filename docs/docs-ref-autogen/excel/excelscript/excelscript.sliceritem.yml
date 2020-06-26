@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
+    summary: 表示切片器中的切片器项目。
+    name: ExcelScript.SlicerItem
+    fullName: ExcelScript.SlicerItem
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
+    summary: 如果切片器项包含数据，则为 True。
+    name: getHasData()
+    fullName: getHasData()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHasData(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
+    summary: 如果选择了切片器项，则为 True。 设置此值不会清除其他 SlicerItems 的选定状态。 默认情况下，如果仅选择了切片器项目，则取消选择该项目时，将会选择所有项目。
+    name: getIsSelected()
+    fullName: getIsSelected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsSelected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
+    summary: 表示代表切片器项的唯一值。
+    name: getKey()
+    fullName: getKey()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
+    summary: 代表 UI 中显示的标题。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
+    summary: 如果选择了切片器项，则为 True。 设置此值不会清除其他 SlicerItems 的选定状态。 默认情况下，如果仅选择了切片器项目，则取消选择该项目时，将会选择所有项目。
+    name: setIsSelected(isSelected)
+    fullName: setIsSelected(isSelected)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIsSelected(isSelected: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isSelected
+          description: ''
+          type:
+            - boolean

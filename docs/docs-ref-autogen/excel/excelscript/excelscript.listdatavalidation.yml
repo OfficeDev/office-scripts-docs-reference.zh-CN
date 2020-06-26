@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
+    summary: 表示列表数据验证条件。
+    name: ExcelScript.ListDataValidation
+    fullName: ExcelScript.ListDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+      - 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
+    summary: 是否显示单元格下拉菜单中的列表，默认为 true。
+    name: inCellDropDown
+    fullName: inCellDropDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inCellDropDown: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#source:member'
+    summary: 数据验证列表的源。设置值时，可以将其作为 Excel 区域对象传入，或包含逗号分隔的数字、布尔值或日期的字符串。
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'source: string | Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ListDataValidation#source~0:complex'
+references:
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation#source~0:complex'
+    name: string | Range
+    fullName: string | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range

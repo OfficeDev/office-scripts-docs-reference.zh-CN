@@ -1,0 +1,141 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions:interface'
+    summary: 指定要在对象上加载的属性 `format.font` 。
+    name: ExcelScript.CellPropertiesFontLoadOptions
+    fullName: ExcelScript.CellPropertiesFontLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member'
+    summary: 指定是否在属性上进行加载 `bold` 。
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member'
+    summary: 指定是否在属性上进行加载 `color` 。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member'
+    summary: 指定是否在属性上进行加载 `italic` 。
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member'
+    summary: 指定是否在属性上进行加载 `name` 。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member'
+    summary: 指定是否在属性上进行加载 `size` 。
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member'
+    summary: 指定是否在属性上进行加载 `strikethrough` 。
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member'
+    summary: 指定是否在属性上进行加载 `subscript` 。
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member'
+    summary: 指定是否在属性上进行加载 `superscript` 。
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member'
+    summary: 指定是否在属性上进行加载 `tintAndShade` 。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member'
+    summary: 指定是否在属性上进行加载 `underline` 。
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type:
+          - boolean

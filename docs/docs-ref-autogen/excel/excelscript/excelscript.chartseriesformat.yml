@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat:interface'
+    summary: 封装图表系列的格式属性
+    name: ExcelScript.ChartSeriesFormat
+    fullName: ExcelScript.ChartSeriesFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.ChartSeriesFormat#getLine:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)'
+    summary: 表示图表系列的填充格式，包括背景格式信息。
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat#getLine:member(1)'
+    summary: 表示线条格式。
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat

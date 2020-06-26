@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+    summary: 表示一个切片器样式，该样式按切片器区域定义样式元素。
+    name: ExcelScript.SlicerStyle
+    fullName: ExcelScript.SlicerStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SlicerStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerStyle#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#delete:member(1)'
+    summary: 删除 SlicerStyle。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)'
+    summary: 使用所有样式元素的副本创建此 SlicerStyle 的副本。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): SlicerStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#getName:member(1)'
+    summary: 获取 SlicerStyle 的名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)'
+    summary: 指定此 SlicerStyle 对象是否为只读。
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle#setName:member(1)'
+    summary: 获取 SlicerStyle 的名称。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+    name: SlicerStyle
+    fullName: ExcelScript.SlicerStyle

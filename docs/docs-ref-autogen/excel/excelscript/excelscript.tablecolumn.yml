@@ -1,0 +1,163 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
+    summary: 代表表格中的一列。
+    name: ExcelScript.TableColumn
+    fullName: ExcelScript.TableColumn
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TableColumn#delete:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#getFilter:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#getHeaderRowRange:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#getId:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#getIndex:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#getName:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#getRange:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#getRangeBetweenHeaderAndTotal:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#getTotalRowRange:member(1)'
+      - 'ExcelScript!ExcelScript.TableColumn#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.TableColumn#delete:member(1)'
+    summary: 从表中删除列。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#getFilter:member(1)'
+    summary: 检索应用于列的筛选器。
+    name: getFilter()
+    fullName: getFilter()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilter(): Filter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Filter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#getHeaderRowRange:member(1)'
+    summary: 获取与列的标头行相关的 range 对象。
+    name: getHeaderRowRange()
+    fullName: getHeaderRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#getId:member(1)'
+    summary: 返回标识表内的列的唯一键。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#getIndex:member(1)'
+    summary: 返回表的列集合内列的索引编号。 从零开始编制索引。
+    name: getIndex()
+    fullName: getIndex()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIndex(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#getName:member(1)'
+    summary: 指定表格列的名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#getRange:member(1)'
+    summary: 获取与整个列相关的 range 对象。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#getRangeBetweenHeaderAndTotal:member(1)'
+    summary: 获取与列的数据体相关的 range 对象。
+    name: getRangeBetweenHeaderAndTotal()
+    fullName: getRangeBetweenHeaderAndTotal()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeBetweenHeaderAndTotal(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#getTotalRowRange:member(1)'
+    summary: 获取与列的总计行相关的 range 对象。
+    name: getTotalRowRange()
+    fullName: getTotalRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableColumn#setName:member(1)'
+    summary: 指定表格列的名称。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.Filter:interface'
+    name: Filter
+    fullName: ExcelScript.Filter
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range

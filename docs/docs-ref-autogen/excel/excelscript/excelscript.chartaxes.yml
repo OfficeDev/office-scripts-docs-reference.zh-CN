@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
+    summary: 表示图表坐标轴。
+    name: ExcelScript.ChartAxes
+    fullName: ExcelScript.ChartAxes
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+    summary: 表示图表中的类别轴。
+    name: getCategoryAxis()
+    fullName: getCategoryAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCategoryAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+    summary: 返回通过类型和组标识的特定轴。
+    name: 'getChartAxis(type, group)'
+    fullName: 'getChartAxis(type, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: 指定坐标轴类型。 有关详细信息，请参阅 ChartAxisType。
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisType:enum'
+        - id: group
+          description: 可选。 指定坐标轴组。 有关详细信息，请参阅 ChartAxisGroup。
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+    summary: 表示三维图表的系列轴。
+    name: getSeriesAxis()
+    fullName: getSeriesAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSeriesAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+    summary: 表示坐标轴中的数值轴。
+    name: getValueAxis()
+    fullName: getValueAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValueAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
+    name: ChartAxis
+    fullName: ExcelScript.ChartAxis
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: ExcelScript.ChartAxisType
+  - uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: ExcelScript.ChartAxisGroup

@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSeriesFormat:interface'
+    summary: 封装图表系列的格式属性
+    name: Excel.ChartSeriesFormat
+    fullName: Excel.ChartSeriesFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartSeriesFormat#fill:member'
+      - 'excel!Excel.ChartSeriesFormat#line:member'
+      - 'excel!Excel.ChartSeriesFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartSeriesFormat#fill:member'
+    summary: 表示图表系列的填充格式，包括背景格式信息。
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartSeriesFormat#line:member'
+    summary: 表示线条格式。
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: ChartLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:interface'
+  - uid: 'excel!Excel.ChartSeriesFormat#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat

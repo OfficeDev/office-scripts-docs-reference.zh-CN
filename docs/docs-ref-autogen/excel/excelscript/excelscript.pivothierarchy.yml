@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
+    summary: 表示 Excel PivotHierarchy。
+    name: ExcelScript.PivotHierarchy
+    fullName: ExcelScript.PivotHierarchy
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+      - 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
+    summary: 返回与 PivotHierarchy 相关联的 PivotFields。
+    name: getFields()
+    fullName: getFields()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFields(): PivotField[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
+    summary: PivotHierarchy 的 ID。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
+    summary: PivotHierarchy 的名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+    summary: 按名称获取透视字段。 如果透视字段不存在，则将返回 null 对象。
+    name: getPivotField(name)
+    fullName: getPivotField(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotField(name: string): PivotField | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的透视字段的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
+    summary: PivotHierarchy 的名称。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
+    name: 'PivotField[]'
+    fullName: 'ExcelScript.PivotField[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
+    name: PivotField | undefined
+    fullName: ExcelScript.PivotField | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: ' | undefined'
+        fullName: ' | undefined'

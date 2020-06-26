@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat:interface'
+    summary: 表示图表 plotArea 的格式属性。
+    name: ExcelScript.ChartPlotAreaFormat
+    fullName: ExcelScript.ChartPlotAreaFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)'
+    summary: 指定图表 plotArea 的边框属性。
+    name: getBorder()
+    fullName: getBorder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)'
+    summary: 指定对象的填充格式，其中包括背景格式信息。
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
+    name: ChartBorder
+    fullName: ExcelScript.ChartBorder
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill

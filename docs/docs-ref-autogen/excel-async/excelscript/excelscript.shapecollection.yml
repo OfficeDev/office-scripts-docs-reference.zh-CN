@@ -1,0 +1,274 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeCollection:interface'
+    summary: 代表工作表中所有形状的集合。
+    name: Excel.ShapeCollection
+    fullName: Excel.ShapeCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
+      - 'excel!Excel.ShapeCollection#addGroup:member(1)'
+      - 'excel!Excel.ShapeCollection#addImage:member(1)'
+      - 'excel!Excel.ShapeCollection#addLine:member(1)'
+      - 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+      - 'excel!Excel.ShapeCollection#getItem:member(1)'
+      - 'excel!Excel.ShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
+    summary: 将几何形状添加到工作表。 返回一个 Shape 对象，该对象代表新图形。
+    name: addGeometricShape(geometricShapeType)
+    fullName: addGeometricShape(geometricShapeType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
+              shape.left = 5;
+              shape.top = 5;
+              shape.height = 175;
+              shape.width = 200;
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: geometricShapeType
+          description: 表示几何形状的类型。 有关详细信息，请参阅 Excel.GeometricShapeType。
+          type:
+            - 'excel!Excel.GeometricShapeType:enum'
+  - uid: 'excel!Excel.ShapeCollection#addGroup:member(1)'
+    summary: 在此集合的工作表中对形状的子集进行分组。 返回表示新形状组的 Shape 对象。
+    name: addGroup(values)
+    fullName: addGroup(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addGroup(values: Array<string | Shape>): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let square = sheet.shapes.getItem("Square");
+              let pentagon = sheet.shapes.getItem("Pentagon");
+              let octagon = sheet.shapes.getItem("Octagon");
+
+              let shapeGroup = sheet.shapes.addGroup([square, pentagon, octagon]);
+              shapeGroup.name = "Group";
+              console.log("Shapes grouped");
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: values
+          description: 形状 ID 或 shape 对象的数组。
+          type:
+            - 'excel!Excel.ShapeCollection#addGroup~0:complex'
+  - uid: 'excel!Excel.ShapeCollection#addImage:member(1)'
+    summary: 从 base64 编码的字符串创建图像并将其添加到工作表。 返回表示新图片的 Shape 对象。
+    name: addImage(base64ImageString)
+    fullName: addImage(base64ImageString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addImage(base64ImageString: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          let myFile = <HTMLInputElement>document.getElementById("selectedFile");
+          let reader = new FileReader();
+
+          reader.onload = (event) => {
+              Excel.run((context) => {
+                  let startIndex = reader.result.toString().indexOf("base64,");
+                  let mybase64 = reader.result.toString().substr(startIndex + 7);
+                  let sheet = context.workbook.worksheets.getItem("Shapes");
+                  let image = sheet.shapes.addImage(mybase64);
+                  image.name = "Image";
+                  return context.sync();
+              });
+          };
+
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(myFile.files[0]);
+          ```
+      parameters:
+        - id: base64ImageString
+          description: 以 JPEG 或 PNG 格式表示图像的 base64 编码字符串。
+          type:
+            - string
+  - uid: 'excel!Excel.ShapeCollection#addLine:member(1)'
+    summary: 将线条添加到工作表。 返回表示新线条的 Shape 对象。
+    name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addLine(
+                    startLeft: number,
+                    startTop: number,
+                    endLeft: number,
+                    endTop: number,
+                    connectorType?: ConnectorType
+                ): Shape;
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
+              line.name = "StraightLine";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: startLeft
+          description: 从行的起点到工作表的左侧之间的距离（以磅为单位）。
+          type:
+            - number
+        - id: startTop
+          description: 从行的起始位置到工作表的顶端之间的距离（以磅为单位）。
+          type:
+            - number
+        - id: endLeft
+          description: 从工作表左侧线的末尾到的距离（以磅为单位）。
+          type:
+            - number
+        - id: endTop
+          description: 从行的末尾到工作表的顶端的距离（以磅为单位）。
+          type:
+            - number
+        - id: connectorType
+          description: 代表连接器类型。 有关详细信息，请参阅 ConnectorType。
+          type:
+            - 'excel!Excel.ConnectorType:enum'
+  - uid: 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+    summary: 使用提供的文本作为内容，将文本框添加到工作表。 返回表示新文本框的 Shape 对象。
+    name: addTextBox(text)
+    fullName: addTextBox(text)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTextBox(text?: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let textbox = shapes.addTextBox("A box with text");
+              textbox.left = 100;
+              textbox.top = 100;
+              textbox.height = 20;
+              textbox.width = 175;
+              textbox.name = "Textbox";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: text
+          description: 表示将在创建的文本框中显示的文本。
+          type:
+            - string
+  - uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
+    summary: 按名称或 ID 获取形状。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的形状的名称或 ID。
+          type:
+            - string
+  - uid: 'excel!Excel.ShapeCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
+  - uid: 'excel!Excel.GeometricShapeType:enum'
+    name: GeometricShapeType
+    fullName: Excel.GeometricShapeType
+  - uid: 'excel!Excel.ShapeCollection#addGroup~0:complex'
+    name: Array<string | Shape>
+    fullName: Array<string | Excel.Shape>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: '<string | '
+        fullName: '<string | '
+      - uid: 'excel!Excel.Shape:interface'
+        name: Shape
+        fullName: Excel.Shape
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.ConnectorType:enum'
+    name: ConnectorType
+    fullName: Excel.ConnectorType

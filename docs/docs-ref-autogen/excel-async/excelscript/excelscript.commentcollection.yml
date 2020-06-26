@@ -1,0 +1,166 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentCollection:interface'
+    summary: 表示属于工作簿的注释对象的集合。
+    name: Excel.CommentCollection
+    fullName: Excel.CommentCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CommentCollection#add:member(1)'
+      - 'excel!Excel.CommentCollection#getItem:member(1)'
+      - 'excel!Excel.CommentCollection#getItemByCell:member(1)'
+      - 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
+      - 'excel!Excel.CommentCollection#load:member(1)'
+  - uid: 'excel!Excel.CommentCollection#add:member(1)'
+    summary: 使用给定单元格上的给定内容创建新批注。 `InvalidArgument`如果提供的范围大于一个单元格，则会引发错误。
+    name: 'add(cellAddress, content, contentType)'
+    fullName: 'add(cellAddress, content, contentType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    cellAddress: Range | string,
+                    content: CommentRichContent | string,
+                    contentType?: ContentType
+                ): Comment;
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Comments");
+
+              // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
+              sheet.comments.add("A2", "TODO: add data.");
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: cellAddress
+          description: 向其中添加批注的单元格。 它可以是一个 Range 对象或一个字符串。 如果是字符串，则必须包含完整的地址，包括工作表名称。 `InvalidArgument`如果提供的范围大于一个单元格，则会引发错误。
+          type:
+            - 'excel!Excel.CommentCollection#add~0:complex'
+        - id: content
+          description: 批注的内容。 它可以是 string 或 CommentRichContent 对象。 字符串用于纯文本。 CommentRichContent 对象允许其他注释功能，如提到。
+          type:
+            - 'excel!Excel.CommentCollection#add~1:complex'
+        - id: contentType
+          description: 可选。 包含在注释中的内容类型。 默认值为枚举`ContentType.Plain`<!-- -->.
+          type:
+            - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
+    summary: 根据其 ID 从集合中获取批注。
+    name: getItem(commentId)
+    fullName: getItem(commentId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(commentId: string): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: commentId
+          description: 注释的标识符。
+          type:
+            - string
+  - uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
+    summary: 从指定单元格获取的批注。
+    name: getItemByCell(cellAddress)
+    fullName: getItemByCell(cellAddress)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemByCell(cellAddress: Range | string): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: 批注所在的单元格。 它可以是一个 Range 对象或一个字符串。 如果是字符串，则必须包含完整的地址，包括工作表名称。 `InvalidArgument`如果提供的范围大于一个单元格，则会引发错误。
+          type:
+            - 'excel!Excel.CommentCollection#getItemByCell~0:complex'
+  - uid: 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
+    summary: 获取给定答复连接到的注释。
+    name: getItemByReplyId(replyId)
+    fullName: getItemByReplyId(replyId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemByReplyId(replyId: string): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: replyId
+          description: 批注答复的标识符。
+          type:
+            - string
+  - uid: 'excel!Excel.CommentCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Comment:interface'
+    name: Comment
+    fullName: Excel.Comment
+  - uid: 'excel!Excel.CommentCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.CommentCollection#add~1:complex'
+    name: CommentRichContent | string
+    fullName: Excel.CommentRichContent | string
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentRichContent:interface'
+        name: CommentRichContent
+        fullName: Excel.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.ContentType:enum'
+    name: ContentType
+    fullName: Excel.ContentType
+  - uid: 'excel!Excel.CommentCollection#getItemByCell~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'

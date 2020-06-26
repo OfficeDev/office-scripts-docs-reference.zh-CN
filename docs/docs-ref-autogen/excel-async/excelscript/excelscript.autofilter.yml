@@ -1,0 +1,196 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.AutoFilter:interface'
+    summary: 代表自动筛选对象。 "自动筛选" 将 Excel 列中的值转换为基于单元格内容的特定筛选器。
+    name: Excel.AutoFilter
+    fullName: Excel.AutoFilter
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.AutoFilter#apply:member(1)'
+      - 'excel!Excel.AutoFilter#clearCriteria:member(1)'
+      - 'excel!Excel.AutoFilter#criteria:member'
+      - 'excel!Excel.AutoFilter#enabled:member'
+      - 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.AutoFilter#isDataFiltered:member'
+      - 'excel!Excel.AutoFilter#load:member(1)'
+      - 'excel!Excel.AutoFilter#reapply:member(1)'
+      - 'excel!Excel.AutoFilter#remove:member(1)'
+  - uid: 'excel!Excel.AutoFilter#apply:member(1)'
+    summary: 将自动筛选器应用于区域。 如果指定了列索引和筛选条件，则筛选列。
+    name: 'apply(range, columnIndex, criteria)'
+    fullName: 'apply(range, columnIndex, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    range: Range | string,
+                    columnIndex?: number,
+                    criteria?: FilterCriteria
+                ): void;
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getActiveWorksheet();
+              let farmData = sheet.getUsedRange();
+
+              // This filter will only show the rows with the top 25% of values in column 3.
+              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: range
+          description: 将应用自动筛选的范围。
+          type:
+            - 'excel!Excel.AutoFilter#apply~0:complex'
+        - id: columnIndex
+          description: 将自动筛选应用于的从零开始的列索引。
+          type:
+            - number
+        - id: criteria
+          description: 筛选条件。
+          type:
+            - 'excel!Excel.FilterCriteria:interface'
+  - uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
+    summary: 清除自动筛选器的筛选条件。
+    name: clearCriteria()
+    fullName: clearCriteria()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearCriteria(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#criteria:member'
+    summary: 在自动筛选区域中保留所有筛选条件的数组。
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly criteria: FilterCriteria[];'
+      return:
+        type:
+          - 'excel!Excel.AutoFilter#criteria~0:complex'
+  - uid: 'excel!Excel.AutoFilter#enabled:member'
+    summary: 指定是否启用自动筛选。
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly enabled: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
+    summary: 返回 Range 对象，该对象表示“自动筛选”应用的区域。 如果没有与自动筛选器关联的 Range 对象，则此方法返回 null 对象。
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
+    summary: 指定自动筛选是否具有筛选条件。
+    name: isDataFiltered
+    fullName: isDataFiltered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isDataFiltered: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.AutoFilter#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.AutoFilter#reapply:member(1)'
+    summary: 应用当前位于区域上的指定 Autofilter 对象。
+    name: reapply()
+    fullName: reapply()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapply(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#remove:member(1)'
+    summary: 删除区域的自动筛选。
+    name: remove()
+    fullName: remove()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.AutoFilter#apply~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.FilterCriteria:interface'
+    name: FilterCriteria
+    fullName: Excel.FilterCriteria
+  - uid: 'excel!Excel.AutoFilter#criteria~0:complex'
+    name: 'FilterCriteria[]'
+    fullName: 'Excel.FilterCriteria[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.FilterCriteria:interface'
+        name: FilterCriteria
+        fullName: Excel.FilterCriteria
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
