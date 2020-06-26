@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalFormatCollection:interface'
+    summary: 代表与区域重叠的所有条件格式的集合。
+    name: Excel.ConditionalFormatCollection
+    fullName: Excel.ConditionalFormatCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalFormatCollection#add:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#load:member(1)'
+  - uid: 'excel!Excel.ConditionalFormatCollection#add:member(1)'
+    summary: 将新的条件格式添加到集合中的第一个/最高优先级处。
+    name: add(type)
+    fullName: add(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type: ConditionalFormatType): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B2:M5");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.colorScale);
+              let criteria = {
+                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+              };
+              conditionalFormat.colorScale.criteria = criteria;
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: type
+          description: 要添加的条件格式的类型。 有关详细信息，请参阅 ConditionalFormatType。
+          type:
+            - 'excel!Excel.ConditionalFormatType:enum'
+  - uid: 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+    summary: 清除当前指定区域中处于活动状态的所有条件格式。
+    name: clearAll()
+    fullName: clearAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAll(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange();
+              range.conditionalFormats.clearAll();
+
+              await context.sync();
+
+              $(".conditional-formats").hide();
+          }
+          ```
+  - uid: 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+    summary: 返回给定 ID 的条件格式。
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: 条件格式的 id。
+          type:
+            - string
+  - uid: 'excel!Excel.ConditionalFormatCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ConditionalFormat:interface'
+    name: ConditionalFormat
+    fullName: Excel.ConditionalFormat
+  - uid: 'excel!Excel.ConditionalFormatType:enum'
+    name: ConditionalFormatType
+    fullName: Excel.ConditionalFormatType
