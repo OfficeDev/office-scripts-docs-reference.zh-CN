@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
+    summary: 指定切片器的切片器排序行为。 sortBy API。
+    name: ExcelScript.SlicerSortType
+    fullName: ExcelScript.SlicerSortType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+      - 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+      - 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+    summary: 按项目标题的升序对切片器项目进行排序。
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+    summary: 按数据源提供的顺序对切片器项目进行排序。
+    name: dataSourceOrder
+    fullName: dataSourceOrder
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+    summary: 按项目标题的降序对切片器项进行排序。
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+    summary: 表示 Excel PivotItem。
+    name: ExcelScript.PivotItem
+    fullName: ExcelScript.PivotItem
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotItem#getId:member(1)'
+      - 'ExcelScript!ExcelScript.PivotItem#getIsExpanded:member(1)'
+      - 'ExcelScript!ExcelScript.PivotItem#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotItem#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.PivotItem#setIsExpanded:member(1)'
+      - 'ExcelScript!ExcelScript.PivotItem#setName:member(1)'
+      - 'ExcelScript!ExcelScript.PivotItem#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PivotItem#getId:member(1)'
+    summary: PivotItem 的 ID。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotItem#getIsExpanded:member(1)'
+    summary: 确定是展开项以显示子项还是折叠项并隐藏子项。
+    name: getIsExpanded()
+    fullName: getIsExpanded()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsExpanded(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotItem#getName:member(1)'
+    summary: PivotItem 的名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotItem#getVisible:member(1)'
+    summary: 指定 PivotItem 是否可见。
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotItem#setIsExpanded:member(1)'
+    summary: 确定是展开项以显示子项还是折叠项并隐藏子项。
+    name: setIsExpanded(isExpanded)
+    fullName: setIsExpanded(isExpanded)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIsExpanded(isExpanded: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isExpanded
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PivotItem#setName:member(1)'
+    summary: PivotItem 的名称。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PivotItem#setVisible:member(1)'
+    summary: 指定 PivotItem 是否可见。
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean

@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
+    summary: 表示构成区域边框的 border 对象。
+    name: Excel.ConditionalRangeBorderCollection
+    fullName: Excel.ConditionalRangeBorderCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+    summary: 获取下边框。
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly bottom: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+    summary: 使用其名称获取 border 对象
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: ConditionalRangeBorderIndex): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 ConditionalRangeBorderIndex。
+          type:
+            - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+    summary: 获取左边框。
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+    summary: 获取右边框。
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly right: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+    summary: 获取上边框。
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+references:
+  - uid: 'excel!Excel.ConditionalRangeBorder:interface'
+    name: ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
+  - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
+    name: ConditionalRangeBorderIndex
+    fullName: Excel.ConditionalRangeBorderIndex

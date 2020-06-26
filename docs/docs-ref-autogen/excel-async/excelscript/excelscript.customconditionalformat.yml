@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomConditionalFormat:interface'
+    summary: 代表自定义条件格式类型。
+    name: Excel.CustomConditionalFormat
+    fullName: Excel.CustomConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomConditionalFormat#format:member'
+      - 'excel!Excel.CustomConditionalFormat#load:member(1)'
+      - 'excel!Excel.CustomConditionalFormat#rule:member'
+  - uid: 'excel!Excel.CustomConditionalFormat#format:member'
+    summary: 返回一个 format 对象，该对象封装条件格式字体、填充、边框和其他属性。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B8:E13");
+              let conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+              conditionalFormat.custom.format.font.color = "green";
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.CustomConditionalFormat#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CustomConditionalFormat#rule:member'
+    summary: 指定此条件格式的 Rule 对象。
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rule: ConditionalFormatRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormatRule:interface'
+references:
+  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.ConditionalFormatRule:interface'
+    name: ConditionalFormatRule
+    fullName: Excel.ConditionalFormatRule

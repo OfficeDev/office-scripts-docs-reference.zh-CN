@@ -1,0 +1,114 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry:interface'
+    summary: 表示 legendEntryCollection 中的 legendEntry。
+    name: ExcelScript.ChartLegendEntry
+    fullName: ExcelScript.ChartLegendEntry
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)'
+    summary: 指定图表图例上的 legendEntry 的高度。
+    name: getHeight()
+    fullName: getHeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)'
+    summary: 指定图表图例中的 legendEntry 的索引。
+    name: getIndex()
+    fullName: getIndex()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIndex(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)'
+    summary: 指定图表 legendEntry 的左侧。
+    name: getLeft()
+    fullName: getLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)'
+    summary: 指定图表 legendEntry 的顶部。
+    name: getTop()
+    fullName: getTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)'
+    summary: 表示图表图例条目可见。
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)'
+    summary: 表示图表图例上的 legendEntry 的宽度。
+    name: getWidth()
+    fullName: getWidth()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)'
+    summary: 表示图表图例条目可见。
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean

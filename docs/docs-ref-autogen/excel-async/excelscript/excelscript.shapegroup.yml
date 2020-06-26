@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeGroup:interface'
+    summary: 代表工作表中的形状组。 若要获取相应的 Shape 对象，请使用`ShapeGroup.shape`<!-- -->.
+    name: Excel.ShapeGroup
+    fullName: Excel.ShapeGroup
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeGroup#id:member'
+      - 'excel!Excel.ShapeGroup#load:member(1)'
+      - 'excel!Excel.ShapeGroup#shapes:member'
+      - 'excel!Excel.ShapeGroup#ungroup:member(1)'
+  - uid: 'excel!Excel.ShapeGroup#id:member'
+    summary: 指定形状标识符。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ShapeGroup#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ShapeGroup#shapes:member'
+    summary: 返回 Shape 对象的集合。
+    name: shapes
+    fullName: shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shapes: GroupShapeCollection;'
+      return:
+        type:
+          - 'excel!Excel.GroupShapeCollection:interface'
+  - uid: 'excel!Excel.ShapeGroup#ungroup:member(1)'
+    summary: 取消分组指定形状组中的任何已分组形状。
+    name: ungroup()
+    fullName: ungroup()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'ungroup(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+
+              let shapeGroup = sheet.shapes.getItem("Group").group;
+              shapeGroup.ungroup();
+              console.log("Shapes ungrouped");
+
+              await context.sync();
+          }
+          ```
+references:
+  - uid: 'excel!Excel.GroupShapeCollection:interface'
+    name: GroupShapeCollection
+    fullName: Excel.GroupShapeCollection

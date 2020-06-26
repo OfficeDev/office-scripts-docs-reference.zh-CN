@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TimelineStyleCollection:interface'
+    summary: 表示 TimelineStyles 的集合。
+    name: Excel.TimelineStyleCollection
+    fullName: Excel.TimelineStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TimelineStyleCollection#add:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#load:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.TimelineStyleCollection#add:member(1)'
+    summary: 使用指定名称创建空白 TimelineStyle。
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新 TimelineStyle 的唯一名称。 如果名称已在使用中，则将引发无效参数异常。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 可选，默认值为 false。 如果为 true，则将数字追加到名称，以便根据需要使其唯一。
+          type:
+            - boolean
+  - uid: 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+    summary: 获取父对象范围的默认 TimelineStyle。
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
+    summary: 按名称获取 TimelineStyle。 如果没有 TimelineStyle，将返回 null 对象。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 TimelineStyle 的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.TimelineStyleCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
+    summary: 设置在父对象范围内使用的默认 TimelineStyle。
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TimelineStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 应为新的默认值的 TimelineStyle 对象的 TimelineStyle 对象或名称。
+          type:
+            - 'excel!Excel.TimelineStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: Excel.TimelineStyle
+  - uid: 'excel!Excel.TimelineStyleCollection#setDefault~0:complex'
+    name: TimelineStyle | string
+    fullName: Excel.TimelineStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: Excel.TimelineStyle
+      - name: ' | string'
+        fullName: ' | string'

@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TopBottomConditionalFormat:interface'
+    summary: 表示顶部/底部条件格式。
+    name: Excel.TopBottomConditionalFormat
+    fullName: Excel.TopBottomConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TopBottomConditionalFormat#format:member'
+      - 'excel!Excel.TopBottomConditionalFormat#load:member(1)'
+      - 'excel!Excel.TopBottomConditionalFormat#rule:member'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#format:member'
+    summary: 返回一个 format 对象，该对象封装条件格式字体、填充、边框和其他属性。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:interface'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#rule:member'
+    summary: 顶部/底部条件格式的条件。
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: ConditionalTopBottomRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalTopBottomRule:interface'
+references:
+  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.ConditionalTopBottomRule:interface'
+    name: ConditionalTopBottomRule
+    fullName: Excel.ConditionalTopBottomRule

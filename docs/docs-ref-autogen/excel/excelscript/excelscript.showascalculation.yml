@@ -1,0 +1,139 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
+    summary: 数据透视字段的 ShowAs 计算函数。
+    name: ExcelScript.ShowAsCalculation
+    fullName: ExcelScript.ShowAsCalculation
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
+      - 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
+    summary: 与指定的基本字段和基本项之间的差异。
+    name: differenceFrom
+    fullName: differenceFrom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
+    summary: 计算值，如下所示：（（单元格的值） x （总计总计））/（（总计行总计） x （总计列总计））
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
+    summary: 不应用任何计算。
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
+    summary: 与指定的基本字段和基本项之间的差异。
+    name: percentDifferenceFrom
+    fullName: percentDifferenceFrom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
+    summary: 指定的基本字段和基本项的百分比。
+    name: percentOf
+    fullName: percentOf
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
+    summary: 列总计的百分比。
+    name: percentOfColumnTotal
+    fullName: percentOfColumnTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
+    summary: 总计的百分比。
+    name: percentOfGrandTotal
+    fullName: percentOfGrandTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
+    summary: 指定基本字段的列总计的百分比。
+    name: percentOfParentColumnTotal
+    fullName: percentOfParentColumnTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
+    summary: 指定基本字段的行总计的百分比。
+    name: percentOfParentRowTotal
+    fullName: percentOfParentRowTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
+    summary: 指定基本字段的总计的百分比。
+    name: percentOfParentTotal
+    fullName: percentOfParentTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
+    summary: 行总计的百分比。
+    name: percentOfRowTotal
+    fullName: percentOfRowTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
+    summary: 指定基本字段的运行百分比总计。
+    name: percentRunningTotal
+    fullName: percentRunningTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
+    summary: 指定的基本字段的升序排名。
+    name: rankAscending
+    fullName: rankAscending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
+    summary: 指定的基本字段的降序排名。
+    name: rankDecending
+    fullName: rankDecending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
+    summary: 指定的基本字段的运行总计。
+    name: runningTotal
+    fullName: runningTotal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
+    summary: 计算未知或不受支持。
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

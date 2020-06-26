@@ -1,0 +1,28 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface'
+    summary: 代表 "预置条件" 条件格式规则
+    name: ExcelScript.ConditionalPresetCriteriaRule
+    fullName: ExcelScript.ConditionalPresetCriteriaRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule#criterion:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule#criterion:member'
+    summary: 条件格式的条件。
+    name: criterion
+    fullName: criterion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion: ConditionalFormatPresetCriterion;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum'
+    name: ConditionalFormatPresetCriterion
+    fullName: ExcelScript.ConditionalFormatPresetCriterion

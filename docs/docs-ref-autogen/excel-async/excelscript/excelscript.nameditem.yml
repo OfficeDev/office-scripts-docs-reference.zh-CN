@@ -1,0 +1,224 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItem:interface'
+    summary: 表示单元格区域或值的定义名称。 名称可以是命名为对象的基元（如下面的类型中所示）、range 对象或对区域的引用。 此对象可用于获取与名称相关的 range 对象。
+    name: Excel.NamedItem
+    fullName: Excel.NamedItem
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItem#arrayValues:member'
+      - 'excel!Excel.NamedItem#comment:member'
+      - 'excel!Excel.NamedItem#delete:member(1)'
+      - 'excel!Excel.NamedItem#formula:member'
+      - 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.NamedItem#load:member(1)'
+      - 'excel!Excel.NamedItem#name:member'
+      - 'excel!Excel.NamedItem#scope:member'
+      - 'excel!Excel.NamedItem#type:member'
+      - 'excel!Excel.NamedItem#value:member'
+      - 'excel!Excel.NamedItem#visible:member'
+  - uid: 'excel!Excel.NamedItem#arrayValues:member'
+    summary: 返回包含已命名项目的值和类型的对象。
+    name: arrayValues
+    fullName: arrayValues
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly arrayValues: NamedItemArrayValues;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues:interface'
+  - uid: 'excel!Excel.NamedItem#comment:member'
+    summary: 指定与此名称关联的注释。
+    name: comment
+    fullName: comment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comment: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.NamedItem#delete:member(1)'
+    summary: 删除给定的名称。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let totalName = sheet.names.getItemOrNullObject("TotalAmount");
+              totalName.load();
+              await context.sync();
+
+              if (totalName.value) {
+                  totalName.delete();
+
+                  // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
+                  sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
+              } else {
+                  console.log("No named item created for the formula.");
+              }
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.NamedItem#formula:member'
+    summary: 已命名项的公式。 公式始终以等号 (=) 开头。
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: any;'
+      return:
+        type:
+          - any
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              // Get the named item
+              let myNamedItem = sheet.names.getItemOrNullObject("MyRange");
+              myNamedItem.load("name, formula");
+              await context.sync();
+
+              if (myNamedItem.isNullObject) {
+                  console.log(`There is no named item. Create it with "Add named item for a range" first.`);
+              } else {                    
+                  // Update named item to point to the second range
+                  myNamedItem.formula = "=Sample!$B$10:$D$14";
+                  sheet.getRange("B10:D14").select();
+                  await context.sync();
+
+                  console.log(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
+              }
+          }
+          ```
+  - uid: 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
+    summary: 返回与名称相关联的 Range 对象。 如果已命名项的类型不是 Range，将返回 NULL 对象。
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.NamedItem#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NamedItem#name:member'
+    summary: 对象的名称。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.NamedItem#scope:member'
+    summary: 指定名称的范围是工作簿还是特定工作表。 可能的值为：工作表、工作簿。
+    name: scope
+    fullName: scope
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly scope: NamedItemScope;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemScope:enum'
+  - uid: 'excel!Excel.NamedItem#type:member'
+    summary: 指定由名称的公式返回的值的类型。 有关详细信息，请参阅 NamedItemType。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: NamedItemType;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemType:enum'
+  - uid: 'excel!Excel.NamedItem#value:member'
+    summary: 表示 name 公式计算出的值。 对于已命名区域，将返回区域地址。
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.NamedItem#visible:member'
+    summary: 指定对象是否可见。
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.NamedItemArrayValues:interface'
+    name: NamedItemArrayValues
+    fullName: Excel.NamedItemArrayValues
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.NamedItemScope:enum'
+    name: NamedItemScope
+    fullName: Excel.NamedItemScope
+  - uid: 'excel!Excel.NamedItemType:enum'
+    name: NamedItemType
+    fullName: Excel.NamedItemType

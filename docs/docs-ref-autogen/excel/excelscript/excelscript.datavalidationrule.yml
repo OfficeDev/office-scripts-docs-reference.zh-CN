@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
+    summary: 数据有效性规则包含不同类型的数据验证。 一次只能根据 DataValidationType 使用其中一种方法。
+    name: ExcelScript.DataValidationRule
+    fullName: ExcelScript.DataValidationRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationRule#custom:member'
+      - 'ExcelScript!ExcelScript.DataValidationRule#date:member'
+      - 'ExcelScript!ExcelScript.DataValidationRule#decimal:member'
+      - 'ExcelScript!ExcelScript.DataValidationRule#list:member'
+      - 'ExcelScript!ExcelScript.DataValidationRule#textLength:member'
+      - 'ExcelScript!ExcelScript.DataValidationRule#time:member'
+      - 'ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationRule#custom:member'
+    summary: 自定义数据有效性条件。
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'custom?: CustomDataValidation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CustomDataValidation:interface'
+  - uid: 'ExcelScript!ExcelScript.DataValidationRule#date:member'
+    summary: 日期数据有效性条件。
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date?: DateTimeDataValidation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
+  - uid: 'ExcelScript!ExcelScript.DataValidationRule#decimal:member'
+    summary: 小数数据有效性条件。
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'decimal?: BasicDataValidation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
+  - uid: 'ExcelScript!ExcelScript.DataValidationRule#list:member'
+    summary: 列表数据有效性条件。
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'list?: ListDataValidation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ListDataValidation:interface'
+  - uid: 'ExcelScript!ExcelScript.DataValidationRule#textLength:member'
+    summary: TextLength 数据有效性条件。
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textLength?: BasicDataValidation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
+  - uid: 'ExcelScript!ExcelScript.DataValidationRule#time:member'
+    summary: 时间数据有效性条件。
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'time?: DateTimeDataValidation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
+  - uid: 'ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member'
+    summary: WholeNumber 数据有效性条件。
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wholeNumber?: BasicDataValidation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BasicDataValidation:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.CustomDataValidation:interface'
+    name: CustomDataValidation
+    fullName: ExcelScript.CustomDataValidation
+  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
+    name: DateTimeDataValidation
+    fullName: ExcelScript.DateTimeDataValidation
+  - uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
+    name: BasicDataValidation
+    fullName: ExcelScript.BasicDataValidation
+  - uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
+    name: ListDataValidation
+    fullName: ExcelScript.ListDataValidation

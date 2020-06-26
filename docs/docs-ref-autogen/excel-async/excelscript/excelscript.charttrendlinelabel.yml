@@ -1,0 +1,209 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendlineLabel:interface'
+    summary: 此对象表示图表趋势线标签对象的属性。
+    name: Excel.ChartTrendlineLabel
+    fullName: Excel.ChartTrendlineLabel
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendlineLabel#autoText:member'
+      - 'excel!Excel.ChartTrendlineLabel#format:member'
+      - 'excel!Excel.ChartTrendlineLabel#formula:member'
+      - 'excel!Excel.ChartTrendlineLabel#height:member'
+      - 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
+      - 'excel!Excel.ChartTrendlineLabel#left:member'
+      - 'excel!Excel.ChartTrendlineLabel#linkNumberFormat:member'
+      - 'excel!Excel.ChartTrendlineLabel#load:member(1)'
+      - 'excel!Excel.ChartTrendlineLabel#numberFormat:member'
+      - 'excel!Excel.ChartTrendlineLabel#text:member'
+      - 'excel!Excel.ChartTrendlineLabel#textOrientation:member'
+      - 'excel!Excel.ChartTrendlineLabel#top:member'
+      - 'excel!Excel.ChartTrendlineLabel#verticalAlignment:member'
+      - 'excel!Excel.ChartTrendlineLabel#width:member'
+  - uid: 'excel!Excel.ChartTrendlineLabel#autoText:member'
+    summary: 指定趋势线标签是否根据上下文自动生成相应的文本。
+    name: autoText
+    fullName: autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendlineLabel#format:member'
+    summary: 图表趋势线标签的格式。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartTrendlineLabelFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineLabelFormat:interface'
+  - uid: 'excel!Excel.ChartTrendlineLabel#formula:member'
+    summary: 该字符串值表示采用 A1 表示法的图表趋势线标签的公式。
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#height:member'
+    summary: 返回图表趋势线标签的高度，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
+    summary: 表示图表趋势线标签水平对齐。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的趋势线标签为-90、90或180时，此属性才有效。
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: ChartTextHorizontalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTextHorizontalAlignment:enum'
+  - uid: 'excel!Excel.ChartTrendlineLabel#left:member'
+    summary: 表示图表趋势线标签左边缘到图表区域左边缘的距离，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#linkNumberFormat:member'
+    summary: 指定数字格式是否链接到单元格（以便数字格式在单元格更改时更改标签中的数字格式）。
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendlineLabel#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartTrendlineLabel#numberFormat:member'
+    summary: 该字符串值表示趋势线标签的格式代码。
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#text:member'
+    summary: 该字符串表示图表上的趋势线标签文本。
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendlineLabel#textOrientation:member'
+    summary: 表示文本面向图表趋势线标签的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#top:member'
+    summary: 表示图表趋势线标签上边缘到图表区域顶部的距离，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendlineLabel#verticalAlignment:member'
+    summary: 表示图表趋势线标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的趋势线标签为0时，此属性才有效。
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: ChartTextVerticalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTextVerticalAlignment:enum'
+  - uid: 'excel!Excel.ChartTrendlineLabel#width:member'
+    summary: 返回图表趋势线标签的宽度，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartTrendlineLabelFormat:interface'
+    name: ChartTrendlineLabelFormat
+    fullName: Excel.ChartTrendlineLabelFormat
+  - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
+    name: ChartTextHorizontalAlignment
+    fullName: Excel.ChartTextHorizontalAlignment
+  - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
+    name: ChartTextVerticalAlignment
+    fullName: Excel.ChartTextVerticalAlignment

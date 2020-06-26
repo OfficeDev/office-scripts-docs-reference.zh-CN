@@ -1,0 +1,213 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeFont:interface'
+    summary: 代表形状的 TextRange 对象的字体属性，如字体名称、字体大小和颜色。
+    name: ExcelScript.ShapeFont
+    fullName: ExcelScript.ShapeFont
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
+    summary: 表示字体的加粗状态。 如果 TextRange 包含粗体和非粗体文本片段，则返回 null。
+    name: getBold()
+    fullName: getBold()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
+    summary: 文本颜色的 HTML 颜色代码表示形式（例如，" \# FF0000" 代表红色）。 如果 TextRange 包含具有不同颜色的文本片段，则返回 null。
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
+    summary: 表示字体的斜体状态。 如果 TextRange 包含斜体和非斜体文本片段，则返回 null。
+    name: getItalic()
+    fullName: getItalic()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
+    summary: 表示字体名称（例如，"Calibri"）。 如果文本是复杂脚本或东亚语言，则这是相应的字体名称，否则是拉丁字体名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
+    summary: 表示以磅为单位的字体大小（例如，11）。 如果 TextRange 包含具有不同字体大小的文本片段，则返回 null。
+    name: getSize()
+    fullName: getSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
+    summary: 应用于字体的下划线类型。 如果 TextRange 包含具有不同下划线样式的文本片段，则返回 null。 有关详细信息，请参阅 Excel.ShapeFontUnderlineStyle。
+    name: getUnderline()
+    fullName: getUnderline()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUnderline(): ShapeFontUnderlineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
+    summary: 表示字体的加粗状态。 如果 TextRange 包含粗体和非粗体文本片段，则返回 null。
+    name: setBold(bold)
+    fullName: setBold(bold)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bold
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
+    summary: 文本颜色的 HTML 颜色代码表示形式（例如，" \# FF0000" 代表红色）。 如果 TextRange 包含具有不同颜色的文本片段，则返回 null。
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
+    summary: 表示字体的斜体状态。 如果 TextRange 包含斜体和非斜体文本片段，则返回 null。
+    name: setItalic(italic)
+    fullName: setItalic(italic)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: italic
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
+    summary: 表示字体名称（例如，"Calibri"）。 如果文本是复杂脚本或东亚语言，则这是相应的字体名称，否则是拉丁字体名称。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
+    summary: 表示以磅为单位的字体大小（例如，11）。 如果 TextRange 包含具有不同字体大小的文本片段，则返回 null。
+    name: setSize(size)
+    fullName: setSize(size)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSize(size: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: size
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
+    summary: 应用于字体的下划线类型。 如果 TextRange 包含具有不同下划线样式的文本片段，则返回 null。 有关详细信息，请参阅 Excel.ShapeFontUnderlineStyle。
+    name: setUnderline(underline)
+    fullName: setUnderline(underline)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: underline
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum'
+    name: ShapeFontUnderlineStyle
+    fullName: ExcelScript.ShapeFontUnderlineStyle

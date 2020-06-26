@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeSort:interface'
+    summary: 管理对 Range 对象的排序操作。
+    name: ExcelScript.RangeSort
+    fullName: ExcelScript.RangeSort
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeSort#apply:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RangeSort#apply:member(1)'
+    summary: 执行排序操作。
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: SortOrientation,
+                    method?: SortMethod
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: 要用作排序依据的条件列表。
+          type:
+            - 'ExcelScript!ExcelScript.RangeSort#apply~0:complex'
+        - id: matchCase
+          description: 可选。 是否让大小写对字符串排序产生影响。
+          type:
+            - boolean
+        - id: hasHeaders
+          description: 可选。 该区域是否有标头。
+          type:
+            - boolean
+        - id: orientation
+          description: 可选。 该操作是对行还是列排序。
+          type:
+            - 'ExcelScript!ExcelScript.SortOrientation:enum'
+        - id: method
+          description: 可选。 用于中文字符的排序方法。
+          type:
+            - 'ExcelScript!ExcelScript.SortMethod:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.RangeSort#apply~0:complex'
+    name: 'SortField[]'
+    fullName: 'ExcelScript.SortField[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SortField:interface'
+        name: SortField
+        fullName: ExcelScript.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.SortOrientation:enum'
+    name: SortOrientation
+    fullName: ExcelScript.SortOrientation
+  - uid: 'ExcelScript!ExcelScript.SortMethod:enum'
+    name: SortMethod
+    fullName: ExcelScript.SortMethod

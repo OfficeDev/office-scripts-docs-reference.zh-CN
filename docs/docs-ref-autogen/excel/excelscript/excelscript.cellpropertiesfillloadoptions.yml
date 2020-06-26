@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions:interface'
+    summary: 指定要在对象上加载的属性 `format.fill` 。
+    name: ExcelScript.CellPropertiesFillLoadOptions
+    fullName: ExcelScript.CellPropertiesFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+    summary: 指定是否加载 `color` 属性。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+    summary: 指定是否加载 `pattern` 属性。
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+    summary: 指定是否加载 `patternColor` 属性。
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+    summary: 指定是否加载 `patternTintAndShade` 属性。
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+    summary: 指定是否加载 `tintAndShade` 属性。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean

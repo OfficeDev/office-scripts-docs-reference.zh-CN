@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItemArrayValues:interface'
+    summary: 表示一个包含已命名项目的值和类型的对象。
+    name: Excel.NamedItemArrayValues
+    fullName: Excel.NamedItemArrayValues
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItemArrayValues#load:member(1)'
+      - 'excel!Excel.NamedItemArrayValues#types:member'
+      - 'excel!Excel.NamedItemArrayValues#values:member'
+  - uid: 'excel!Excel.NamedItemArrayValues#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NamedItemArrayValues#types:member'
+    summary: 表示已命名项目数组中每个项目的类型
+    name: types
+    fullName: types
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly types: RangeValueType[][];'
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues#types~0:complex'
+  - uid: 'excel!Excel.NamedItemArrayValues#values:member'
+    summary: 表示已命名项目数组中每个项目的值。
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+references:
+  - uid: 'excel!Excel.NamedItemArrayValues#types~0:complex'
+    name: 'RangeValueType[][]'
+    fullName: 'Excel.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: RangeValueType
+        fullName: Excel.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'

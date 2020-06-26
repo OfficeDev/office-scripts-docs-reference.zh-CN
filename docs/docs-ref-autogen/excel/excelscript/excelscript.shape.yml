@@ -1,0 +1,822 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Shape:interface'
+    summary: '代表工作表中的一个通用 shape 对象。 一个形状可以是一个几何形状、一条线、一组形状，等等。若要了解有关 shape 对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理形状](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    name: ExcelScript.Shape
+    fullName: ExcelScript.Shape
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Shape#copyTo:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#delete:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getGeometricShape:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getGroup:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getHeight:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getId:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getImage:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLeft:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLevel:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLine:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLineFormat:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getName:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getPlacement:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getRotation:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getTextFrame:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getTop:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getType:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getWidth:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#getZOrderPosition:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#incrementLeft:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#incrementRotation:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#incrementTop:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#scaleHeight:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#scaleWidth:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setHeight:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setLeft:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setName:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setPlacement:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setRotation:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setTop:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setVisible:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setWidth:member(1)'
+      - 'ExcelScript!ExcelScript.Shape#setZOrder:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Shape#copyTo:member(1)'
+    summary: 复制并粘贴 Shape 对象。 粘贴的形状将复制到与此形状相同的像素位置。
+    name: copyTo(destinationSheet)
+    fullName: copyTo(destinationSheet)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Shape:interface'
+        description: ''
+      parameters:
+        - id: destinationSheet
+          description: 形状对象将粘贴到的工作表。 默认值是复制的形状的工作表。
+          type:
+            - 'ExcelScript!ExcelScript.Shape#copyTo~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Shape#delete:member(1)'
+    summary: 从工作表删除形状。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)'
+    summary: 指定 Shape 对象的替代说明文本。
+    name: getAltTextDescription()
+    fullName: getAltTextDescription()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAltTextDescription(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)'
+    summary: 为 Shape 对象指定可选的标题文本。
+    name: getAltTextTitle()
+    fullName: getAltTextTitle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAltTextTitle(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
+    summary: '将形状转换为图像并将图像返回为 base64 编码字符串。 DPI 为 96。 唯一受支持的格式是`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->，并`Excel.PictureFormat.GIF`<!-- -->.'
+    name: getAsImage(format)
+    fullName: getAsImage(format)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsImage(format: PictureFormat): string;'
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: format
+          description: 指定图像的格式。
+          type:
+            - 'ExcelScript!ExcelScript.PictureFormat:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)'
+    summary: 返回此形状上的连接站点数。
+    name: getConnectionSiteCount()
+    fullName: getConnectionSiteCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getConnectionSiteCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getFill:member(1)'
+    summary: 返回此形状的填充格式。
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ShapeFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShape:member(1)'
+    summary: 返回与形状关联的几何形状。 如果形状类型不是“GeometricShape”，则会引发错误。
+    name: getGeometricShape()
+    fullName: getGeometricShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGeometricShape(): GeometricShape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.GeometricShape:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
+    summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 Excel.GeometricShapeType。 如果形状类型不是“GeometricShape”，返回 NULL。
+    name: getGeometricShapeType()
+    fullName: getGeometricShapeType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGeometricShapeType(): GeometricShapeType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getGroup:member(1)'
+    summary: 返回与形状关联的形状组。 如果形状类型不是“GroupShape”，则会引发错误。
+    name: getGroup()
+    fullName: getGroup()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGroup(): ShapeGroup;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeGroup:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getHeight:member(1)'
+    summary: 指定形状的高度（以磅为单位）。 当设置为负值或零作为输入时，将引发无效参数异常。
+    name: getHeight()
+    fullName: getHeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getId:member(1)'
+    summary: 指定形状标识符。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getImage:member(1)'
+    summary: 返回与形状关联的图像。 如果形状类型不是“Image”，则会引发错误。
+    name: getImage()
+    fullName: getImage()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getImage(): Image;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Image:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLeft:member(1)'
+    summary: 从形状左侧到工作表左侧的距离（以磅为单位）。 当设置为负值作为输入时，将引发无效参数异常。
+    name: getLeft()
+    fullName: getLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLevel:member(1)'
+    summary: 指定指定形状的级别。 例如，级别 0 表示形状不是任何组的一部分，级别 1 表示形状是顶级组的一部分，级别 2 表示形状是顶级子组的一部分。
+    name: getLevel()
+    fullName: getLevel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLevel(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLine:member(1)'
+    summary: 返回与形状关联的线条。 如果形状类型不是“Line”，则会引发错误。
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): Line;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Line:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLineFormat:member(1)'
+    summary: 返回此形状的线条格式。
+    name: getLineFormat()
+    fullName: getLineFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLineFormat(): ShapeLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeLineFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)'
+    summary: 指定此形状的纵横比是否已锁定。
+    name: getLockAspectRatio()
+    fullName: getLockAspectRatio()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLockAspectRatio(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getName:member(1)'
+    summary: 指定形状的名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getPlacement:member(1)'
+    summary: 表示对象如何附加到其下方的单元格。
+    name: getPlacement()
+    fullName: getPlacement()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPlacement(): Placement;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Placement:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getRotation:member(1)'
+    summary: 指定形状的旋转角度（以度为单位）。
+    name: getRotation()
+    fullName: getRotation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRotation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getTextFrame:member(1)'
+    summary: 返回此形状的文本框对象。 只读。
+    name: getTextFrame()
+    fullName: getTextFrame()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextFrame(): TextFrame;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TextFrame:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getTop:member(1)'
+    summary: 从形状上边缘到工作表上边缘之间的距离（以磅为单位）。 当设置为负值作为输入时，将引发无效参数异常。
+    name: getTop()
+    fullName: getTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getType:member(1)'
+    summary: 返回此形状的类型。 有关详细信息，请参阅 Excel.ShapeType。
+    name: getType()
+    fullName: getType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getType(): ShapeType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getVisible:member(1)'
+    summary: 指定形状是否可见。
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getWidth:member(1)'
+    summary: 指定形状的宽度（以磅为单位）。 当设置为负值或零作为输入时，将引发无效参数异常。
+    name: getWidth()
+    fullName: getWidth()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#getZOrderPosition:member(1)'
+    summary: 返回指定形状在 z 顺序中的位置，0 表示顺序堆栈的底部。
+    name: getZOrderPosition()
+    fullName: getZOrderPosition()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getZOrderPosition(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Shape#incrementLeft:member(1)'
+    summary: 以指定磅数水平移动形状。
+    name: incrementLeft(increment)
+    fullName: incrementLeft(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementLeft(increment: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: increment
+          description: 以磅为单位的增量，形状将水平移动。 正值表示将形状向右移动，值为负值时将形状向左移动。 如果工作表是从右到左方向的，则将其反转：正值将形状向左移动，负值表示将形状向右移动。
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#incrementRotation:member(1)'
+    summary: 将形状围绕 z 轴旋转特定度数。 使用 `rotation` 属性可设置形状的绝对旋转量。
+    name: incrementRotation(increment)
+    fullName: incrementRotation(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementRotation(increment: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: increment
+          description: 形状将旋转多少度。 为正值时顺时针旋转形状，为负值时逆时针旋转形状。
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#incrementTop:member(1)'
+    summary: 以指定磅数垂直移动形状。
+    name: incrementTop(increment)
+    fullName: incrementTop(increment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'incrementTop(increment: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: increment
+          description: 以磅为单位的增量，形状将垂直移动。 以磅为单位。 正值表示将形状向下移动，负值表示将形状上移。
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#scaleHeight:member(1)'
+    summary: 按指定因子缩放形状的高度。 对于图像，你可以说明是相对于原始尺寸还是当前尺寸缩放形状。 对于除图片以外的其他形状来说，缩放总是相对于其当前高度而言。
+    name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        scaleHeight(
+                    scaleFactor: number,
+                    scaleType: ShapeScaleType,
+                    scaleFrom?: ShapeScaleFrom
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: 指定形状调整后的高度与当前或原始高度的比例。
+          type:
+            - number
+        - id: scaleType
+          description: 指定是相对于形状的原始尺寸还是当前尺寸来对其进行缩放。 原始大小缩放选项仅适用于图像。
+          type:
+            - 'ExcelScript!ExcelScript.ShapeScaleType:enum'
+        - id: scaleFrom
+          description: 可选。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。 如果省略，则表示形状的左上角将保留其位置。
+          type:
+            - 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#scaleWidth:member(1)'
+    summary: 按指定因子缩放形状的宽度。 对于图像，你可以说明是相对于原始尺寸还是当前尺寸缩放形状。 对于除图片以外的其他形状来说，缩放总是相对于其当前宽度而言。
+    name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        scaleWidth(
+                    scaleFactor: number,
+                    scaleType: ShapeScaleType,
+                    scaleFrom?: ShapeScaleFrom
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: 指定形状调整后的宽度与当前或原始宽度的比例。
+          type:
+            - number
+        - id: scaleType
+          description: 指定是相对于形状的原始尺寸还是当前尺寸来对其进行缩放。 原始大小缩放选项仅适用于图像。
+          type:
+            - 'ExcelScript!ExcelScript.ShapeScaleType:enum'
+        - id: scaleFrom
+          description: 可选。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。 如果省略，则表示形状的左上角将保留其位置。
+          type:
+            - 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)'
+    summary: 指定 Shape 对象的替代说明文本。
+    name: setAltTextDescription(altTextDescription)
+    fullName: setAltTextDescription(altTextDescription)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAltTextDescription(altTextDescription: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: altTextDescription
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)'
+    summary: 为 Shape 对象指定可选的标题文本。
+    name: setAltTextTitle(altTextTitle)
+    fullName: setAltTextTitle(altTextTitle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAltTextTitle(altTextTitle: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: altTextTitle
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
+    summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 Excel.GeometricShapeType。 如果形状类型不是“GeometricShape”，返回 NULL。
+    name: setGeometricShapeType(geometricShapeType)
+    fullName: setGeometricShapeType(geometricShapeType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setGeometricShapeType(geometricShapeType: GeometricShapeType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: geometricShapeType
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#setHeight:member(1)'
+    summary: 指定形状的高度（以磅为单位）。 当设置为负值或零作为输入时，将引发无效参数异常。
+    name: setHeight(height)
+    fullName: setHeight(height)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setHeight(height: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: height
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setLeft:member(1)'
+    summary: 从形状左侧到工作表左侧的距离（以磅为单位）。 当设置为负值作为输入时，将引发无效参数异常。
+    name: setLeft(left)
+    fullName: setLeft(left)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLeft(left: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: left
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)'
+    summary: 指定此形状的纵横比是否已锁定。
+    name: setLockAspectRatio(lockAspectRatio)
+    fullName: setLockAspectRatio(lockAspectRatio)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLockAspectRatio(lockAspectRatio: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: lockAspectRatio
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Shape#setName:member(1)'
+    summary: 指定形状的名称。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Shape#setPlacement:member(1)'
+    summary: 表示对象如何附加到其下方的单元格。
+    name: setPlacement(placement)
+    fullName: setPlacement(placement)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPlacement(placement: Placement): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: placement
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.Placement:enum'
+  - uid: 'ExcelScript!ExcelScript.Shape#setRotation:member(1)'
+    summary: 指定形状的旋转角度（以度为单位）。
+    name: setRotation(rotation)
+    fullName: setRotation(rotation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRotation(rotation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rotation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setTop:member(1)'
+    summary: 从形状上边缘到工作表上边缘之间的距离（以磅为单位）。 当设置为负值作为输入时，将引发无效参数异常。
+    name: setTop(top)
+    fullName: setTop(top)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTop(top: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: top
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setVisible:member(1)'
+    summary: 指定形状是否可见。
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Shape#setWidth:member(1)'
+    summary: 指定形状的宽度（以磅为单位）。 当设置为负值或零作为输入时，将引发无效参数异常。
+    name: setWidth(width)
+    fullName: setWidth(width)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWidth(width: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: width
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.Shape#setZOrder:member(1)'
+    summary: 将指定形状沿集合的 z 顺序向上或向下移动，将其移动到其他形状的前面或后面。
+    name: setZOrder(position)
+    fullName: setZOrder(position)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setZOrder(position: ShapeZOrder): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: position
+          description: 相对于其他形状在 z-顺序堆栈中移动形状的位置。 有关详细信息，请参阅 ShapeZOrder。
+          type:
+            - 'ExcelScript!ExcelScript.ShapeZOrder:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.Shape:interface'
+    name: Shape
+    fullName: ExcelScript.Shape
+  - uid: 'ExcelScript!ExcelScript.Shape#copyTo~0:complex'
+    name: Worksheet | string
+    fullName: ExcelScript.Worksheet | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
+    name: PictureFormat
+    fullName: ExcelScript.PictureFormat
+  - uid: 'ExcelScript!ExcelScript.ShapeFill:interface'
+    name: ShapeFill
+    fullName: ExcelScript.ShapeFill
+  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
+    name: GeometricShape
+    fullName: ExcelScript.GeometricShape
+  - uid: 'ExcelScript!ExcelScript.GeometricShapeType:enum'
+    name: GeometricShapeType
+    fullName: ExcelScript.GeometricShapeType
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup:interface'
+    name: ShapeGroup
+    fullName: ExcelScript.ShapeGroup
+  - uid: 'ExcelScript!ExcelScript.Image:interface'
+    name: Image
+    fullName: ExcelScript.Image
+  - uid: 'ExcelScript!ExcelScript.Line:interface'
+    name: Line
+    fullName: ExcelScript.Line
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat:interface'
+    name: ShapeLineFormat
+    fullName: ExcelScript.ShapeLineFormat
+  - uid: 'ExcelScript!ExcelScript.Placement:enum'
+    name: Placement
+    fullName: ExcelScript.Placement
+  - uid: 'ExcelScript!ExcelScript.TextFrame:interface'
+    name: TextFrame
+    fullName: ExcelScript.TextFrame
+  - uid: 'ExcelScript!ExcelScript.ShapeType:enum'
+    name: ShapeType
+    fullName: ExcelScript.ShapeType
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleType:enum'
+    name: ShapeScaleType
+    fullName: ExcelScript.ShapeScaleType
+  - uid: 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
+    name: ShapeScaleFrom
+    fullName: ExcelScript.ShapeScaleFrom
+  - uid: 'ExcelScript!ExcelScript.ShapeZOrder:enum'
+    name: ShapeZOrder
+    fullName: ExcelScript.ShapeZOrder

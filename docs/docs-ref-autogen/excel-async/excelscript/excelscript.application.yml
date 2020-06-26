@@ -1,0 +1,169 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Application:interface'
+    summary: 表示用于管理工作簿的 Excel 应用程序。
+    name: Excel.Application
+    fullName: Excel.Application
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Application#calculate:member(1)'
+      - 'excel!Excel.Application#calculationEngineVersion:member'
+      - 'excel!Excel.Application#calculationMode:member'
+      - 'excel!Excel.Application#calculationState:member'
+      - 'excel!Excel.Application#cultureInfo:member'
+      - 'excel!Excel.Application#decimalSeparator:member'
+      - 'excel!Excel.Application#iterativeCalculation:member'
+      - 'excel!Excel.Application#load:member(1)'
+      - 'excel!Excel.Application#thousandsSeparator:member'
+      - 'excel!Excel.Application#useSystemSeparators:member'
+  - uid: 'excel!Excel.Application#calculate:member(1)'
+    summary: 重新计算 Excel 中当前打开的所有工作簿。
+    name: calculate(calculationType)
+    fullName: calculate(calculationType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(calculationType: CalculationType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: calculationType
+          description: 指定要使用的计算类型。 有关详细信息，请参阅 CalculationType。
+          type:
+            - 'excel!Excel.CalculationType:enum'
+  - uid: 'excel!Excel.Application#calculationEngineVersion:member'
+    summary: 返回用于上次完整重新计算的 Excel 计算引擎版本。
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationEngineVersion: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Application#calculationMode:member'
+    summary: 返回工作簿中使用的计算模式，如 CalculationMode 中的常量所定义。 可能的值包括：`Automatic`<!-- -->，Excel 控制重新计算的位置;`AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。`Manual`<!-- -->，在用户请求计算时完成计算。
+    name: calculationMode
+    fullName: calculationMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationMode: CalculationMode;'
+      return:
+        type:
+          - 'excel!Excel.CalculationMode:enum'
+  - uid: 'excel!Excel.Application#calculationState:member'
+    summary: 返回应用程序的计算状态。 有关详细信息，请参阅 Excel.CalculationState。
+    name: calculationState
+    fullName: calculationState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationState: CalculationState;'
+      return:
+        type:
+          - 'excel!Excel.CalculationState:enum'
+  - uid: 'excel!Excel.Application#cultureInfo:member'
+    summary: 基于当前系统区域性设置提供信息。 这包括区域性名称、数字格式和其他区域性相关设置。
+    name: cultureInfo
+    fullName: cultureInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cultureInfo: CultureInfo;'
+      return:
+        type:
+          - 'excel!Excel.CultureInfo:interface'
+  - uid: 'excel!Excel.Application#decimalSeparator:member'
+    summary: 获取用作数值的小数分隔符的字符串。 这是基于 Excel 的本地设置。
+    name: decimalSeparator
+    fullName: decimalSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly decimalSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Application#iterativeCalculation:member'
+    summary: 返回“迭代计算”设置。 在 Windows 和 Mac 上的 Excel 中，这些设置将应用于 Excel 应用程序。 在 Excel 中的 web 和其他平台上，这些设置将应用于活动工作簿。
+    name: iterativeCalculation
+    fullName: iterativeCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iterativeCalculation: IterativeCalculation;'
+      return:
+        type:
+          - 'excel!Excel.IterativeCalculation:interface'
+  - uid: 'excel!Excel.Application#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Application#thousandsSeparator:member'
+    summary: 获取一个字符串，用于将数字值的小数位数与小数的左边隔开。 这是基于 Excel 的本地设置。
+    name: thousandsSeparator
+    fullName: thousandsSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly thousandsSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Application#useSystemSeparators:member'
+    summary: 指定是否启用 Excel 的系统分隔符。 系统分隔符包括小数分隔符和千位分隔符。
+    name: useSystemSeparators
+    fullName: useSystemSeparators
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly useSystemSeparators: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.CalculationType:enum'
+    name: CalculationType
+    fullName: Excel.CalculationType
+  - uid: 'excel!Excel.CalculationMode:enum'
+    name: CalculationMode
+    fullName: Excel.CalculationMode
+  - uid: 'excel!Excel.CalculationState:enum'
+    name: CalculationState
+    fullName: Excel.CalculationState
+  - uid: 'excel!Excel.CultureInfo:interface'
+    name: CultureInfo
+    fullName: Excel.CultureInfo
+  - uid: 'excel!Excel.IterativeCalculation:interface'
+    name: IterativeCalculation
+    fullName: Excel.IterativeCalculation

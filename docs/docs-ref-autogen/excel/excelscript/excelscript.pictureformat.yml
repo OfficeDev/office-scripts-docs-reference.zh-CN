@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
+    summary: 图像的格式。
+    name: ExcelScript.PictureFormat
+    fullName: ExcelScript.PictureFormat
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PictureFormat.bmp:member'
+      - 'ExcelScript!ExcelScript.PictureFormat.gif:member'
+      - 'ExcelScript!ExcelScript.PictureFormat.jpeg:member'
+      - 'ExcelScript!ExcelScript.PictureFormat.png:member'
+      - 'ExcelScript!ExcelScript.PictureFormat.svg:member'
+      - 'ExcelScript!ExcelScript.PictureFormat.unknown:member'
+  - uid: 'ExcelScript!ExcelScript.PictureFormat.bmp:member'
+    summary: 位图图像。
+    name: bmp
+    fullName: bmp
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PictureFormat.gif:member'
+    summary: 图形交换格式。
+    name: gif
+    fullName: gif
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PictureFormat.jpeg:member'
+    summary: 联合图像专家组。
+    name: jpeg
+    fullName: jpeg
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PictureFormat.png:member'
+    summary: 可移植网络图形。
+    name: png
+    fullName: png
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PictureFormat.svg:member'
+    summary: 可缩放的矢量图形。
+    name: svg
+    fullName: svg
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PictureFormat.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

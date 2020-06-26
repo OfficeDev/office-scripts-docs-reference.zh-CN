@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection:interface'
+    summary: '表示 `format.protection` 的属性`getCellProperties`<!-- -->, `getRowProperties`<!-- -->，和 `getColumnProperties` 或的 `format.protection` 输入参数`setCellProperties`<!-- -->, `setRowProperties`<!-- -->，并`setColumnProperties`<!-- -->.'
+    name: ExcelScript.CellPropertiesProtection
+    fullName: ExcelScript.CellPropertiesProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesProtection#formulaHidden:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesProtection#locked:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection#formulaHidden:member'
+    summary: 表示`format.protection.formulaHidden`属性。
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection#locked:member'
+    summary: 表示`format.protection.locked`属性。
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type:
+          - boolean

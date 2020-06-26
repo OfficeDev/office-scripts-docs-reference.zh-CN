@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType:enum'
+    summary: 表示图表系列布局的区域投影类型。 这仅适用于地区地图图表。
+    name: ExcelScript.ChartMapProjectionType
+    fullName: ExcelScript.ChartMapProjectionType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartMapProjectionType.albers:member'
+      - 'ExcelScript!ExcelScript.ChartMapProjectionType.automatic:member'
+      - 'ExcelScript!ExcelScript.ChartMapProjectionType.mercator:member'
+      - 'ExcelScript!ExcelScript.ChartMapProjectionType.miller:member'
+      - 'ExcelScript!ExcelScript.ChartMapProjectionType.robinson:member'
+  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.albers:member'
+    name: albers
+    fullName: albers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.automatic:member'
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.mercator:member'
+    name: mercator
+    fullName: mercator
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.miller:member'
+    name: miller
+    fullName: miller
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartMapProjectionType.robinson:member'
+    name: robinson
+    fullName: robinson
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+    summary: 表示一个 TableStyle，它按表的区域定义样式元素。
+    name: ExcelScript.TableStyle
+    fullName: ExcelScript.TableStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
+    summary: 删除 TableStyle。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
+    summary: 使用所有样式元素的副本创建此 TableStyle 的副本。
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TableStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
+    summary: 获取 TableStyle 的名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
+    summary: 指定此 TableStyle 对象是否为只读。
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
+    summary: 获取 TableStyle 的名称。
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+    name: TableStyle
+    fullName: ExcelScript.TableStyle

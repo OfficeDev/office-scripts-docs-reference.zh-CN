@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FormatProtection:interface'
+    summary: 表示对范围对象的格式保护。
+    name: Excel.FormatProtection
+    fullName: Excel.FormatProtection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FormatProtection#formulaHidden:member'
+      - 'excel!Excel.FormatProtection#load:member(1)'
+      - 'excel!Excel.FormatProtection#locked:member'
+  - uid: 'excel!Excel.FormatProtection#formulaHidden:member'
+    summary: 指定 Excel 是否隐藏区域中单元格的公式。 指示整个区域不具有统一公式隐藏设置的空值。
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.FormatProtection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.FormatProtection#locked:member'
+    summary: 指定 Excel 是否锁定对象中的单元格。 指示整个区域不具有统一锁定设置的空值。
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked: boolean;'
+      return:
+        type:
+          - boolean

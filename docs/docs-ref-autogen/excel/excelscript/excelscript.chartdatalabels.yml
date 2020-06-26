@@ -1,0 +1,506 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels:interface'
+    summary: 表示图表点上的所有数据标签的集合。
+    name: ExcelScript.ChartDataLabels
+    fullName: ExcelScript.ChartDataLabels
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getAutoText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getLinkNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getSeparator:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getShowBubbleSize:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getShowCategoryName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getShowLegendKey:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getShowPercentage:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getShowSeriesName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getShowValue:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setAutoText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setLinkNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setSeparator:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setShowBubbleSize:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setShowCategoryName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setShowLegendKey:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setShowPercentage:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setShowSeriesName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setShowValue:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getAutoText:member(1)'
+    summary: 指定数据标签是否根据上下文自动生成相应的文本。
+    name: getAutoText()
+    fullName: getAutoText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAutoText(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getFormat:member(1)'
+    summary: 指定图表数据标签的格式，其中包括填充和字体格式。
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartDataLabelFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)'
+    summary: 指定图表数据标签的水平对齐方式。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
+    name: getHorizontalAlignment()
+    fullName: getHorizontalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getLinkNumberFormat:member(1)'
+    summary: 指定数字格式是否链接到单元格。 如果为 true，则数字格式会在单元格中更改时在标签中更改。
+    name: getLinkNumberFormat()
+    fullName: getLinkNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLinkNumberFormat(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getNumberFormat:member(1)'
+    summary: 指定数据标签的格式代码。
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)'
+    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ChartDataLabelPosition。
+    name: getPosition()
+    fullName: getPosition()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPosition(): ChartDataLabelPosition;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartDataLabelPosition:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getSeparator:member(1)'
+    summary: 表示用于图表中数据标签的分隔符的字符串。
+    name: getSeparator()
+    fullName: getSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowBubbleSize:member(1)'
+    summary: 指定数据标签气泡大小是否可见。
+    name: getShowBubbleSize()
+    fullName: getShowBubbleSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowBubbleSize(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowCategoryName:member(1)'
+    summary: 指定数据标签类别名称是否可见。
+    name: getShowCategoryName()
+    fullName: getShowCategoryName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowCategoryName(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowLegendKey:member(1)'
+    summary: 指定数据标签图例标示是否可见。
+    name: getShowLegendKey()
+    fullName: getShowLegendKey()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowLegendKey(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowPercentage:member(1)'
+    summary: 指定数据标签百分比是否可见。
+    name: getShowPercentage()
+    fullName: getShowPercentage()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowPercentage(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowSeriesName:member(1)'
+    summary: 指定数据标签系列名称是否可见。
+    name: getShowSeriesName()
+    fullName: getShowSeriesName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowSeriesName(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowValue:member(1)'
+    summary: 指定数据标签值是否可见。
+    name: getShowValue()
+    fullName: getShowValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowValue(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getTextOrientation:member(1)'
+    summary: 表示文本对数据标签的方向的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+    name: getTextOrientation()
+    fullName: getTextOrientation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)'
+    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
+    name: getVerticalAlignment()
+    fullName: getVerticalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setAutoText:member(1)'
+    summary: 指定数据标签是否根据上下文自动生成相应的文本。
+    name: setAutoText(autoText)
+    fullName: setAutoText(autoText)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAutoText(autoText: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: autoText
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)'
+    summary: 指定图表数据标签的水平对齐方式。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
+    name: setHorizontalAlignment(horizontalAlignment)
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setHorizontalAlignment(
+                    horizontalAlignment: ChartTextHorizontalAlignment
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setLinkNumberFormat:member(1)'
+    summary: 指定数字格式是否链接到单元格。 如果为 true，则数字格式会在单元格中更改时在标签中更改。
+    name: setLinkNumberFormat(linkNumberFormat)
+    fullName: setLinkNumberFormat(linkNumberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: linkNumberFormat
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setNumberFormat:member(1)'
+    summary: 指定数据标签的格式代码。
+    name: setNumberFormat(numberFormat)
+    fullName: setNumberFormat(numberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormat
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)'
+    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ChartDataLabelPosition。
+    name: setPosition(position)
+    fullName: setPosition(position)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPosition(position: ChartDataLabelPosition): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: position
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartDataLabelPosition:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setSeparator:member(1)'
+    summary: 表示用于图表中数据标签的分隔符的字符串。
+    name: setSeparator(separator)
+    fullName: setSeparator(separator)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSeparator(separator: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: separator
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowBubbleSize:member(1)'
+    summary: 指定数据标签气泡大小是否可见。
+    name: setShowBubbleSize(showBubbleSize)
+    fullName: setShowBubbleSize(showBubbleSize)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowBubbleSize(showBubbleSize: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showBubbleSize
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowCategoryName:member(1)'
+    summary: 指定数据标签类别名称是否可见。
+    name: setShowCategoryName(showCategoryName)
+    fullName: setShowCategoryName(showCategoryName)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowCategoryName(showCategoryName: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showCategoryName
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowLegendKey:member(1)'
+    summary: 指定数据标签图例标示是否可见。
+    name: setShowLegendKey(showLegendKey)
+    fullName: setShowLegendKey(showLegendKey)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowLegendKey(showLegendKey: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showLegendKey
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowPercentage:member(1)'
+    summary: 指定数据标签百分比是否可见。
+    name: setShowPercentage(showPercentage)
+    fullName: setShowPercentage(showPercentage)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowPercentage(showPercentage: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showPercentage
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowSeriesName:member(1)'
+    summary: 指定数据标签系列名称是否可见。
+    name: setShowSeriesName(showSeriesName)
+    fullName: setShowSeriesName(showSeriesName)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowSeriesName(showSeriesName: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showSeriesName
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowValue:member(1)'
+    summary: 指定数据标签值是否可见。
+    name: setShowValue(showValue)
+    fullName: setShowValue(showValue)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowValue(showValue: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showValue
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setTextOrientation:member(1)'
+    summary: 表示文本对数据标签的方向的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+    name: setTextOrientation(textOrientation)
+    fullName: setTextOrientation(textOrientation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: textOrientation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)'
+    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
+    name: setVerticalAlignment(verticalAlignment)
+    fullName: setVerticalAlignment(verticalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setVerticalAlignment(
+                    verticalAlignment: ChartTextVerticalAlignment
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
+    name: ChartDataLabelFormat
+    fullName: ExcelScript.ChartDataLabelFormat
+  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+    name: ChartTextHorizontalAlignment
+    fullName: ExcelScript.ChartTextHorizontalAlignment
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabelPosition:enum'
+    name: ChartDataLabelPosition
+    fullName: ExcelScript.ChartDataLabelPosition
+  - uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+    name: ChartTextVerticalAlignment
+    fullName: ExcelScript.ChartTextVerticalAlignment
