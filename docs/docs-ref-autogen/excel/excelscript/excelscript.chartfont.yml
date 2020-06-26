@@ -1,0 +1,213 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
+    summary: 此对象表示 chart 对象的字体属性（字体名称、字体大小、颜色等）。
+    name: ExcelScript.ChartFont
+    fullName: ExcelScript.ChartFont
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartFont#getBold:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getSize:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setBold:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setSize:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getBold:member(1)'
+    summary: 表示字体的加粗状态。
+    name: getBold()
+    fullName: getBold()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getColor:member(1)'
+    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getItalic:member(1)'
+    summary: 表示字体的斜体状态。
+    name: getItalic()
+    fullName: getItalic()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getName:member(1)'
+    summary: 字体名称（例如，"Calibri"）
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getSize:member(1)'
+    summary: 字体大小（例如，11）
+    name: getSize()
+    fullName: getSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ChartUnderlineStyle。
+    name: getUnderline()
+    fullName: getUnderline()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUnderline(): ChartUnderlineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setBold:member(1)'
+    summary: 表示字体的加粗状态。
+    name: setBold(bold)
+    fullName: setBold(bold)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bold
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setColor:member(1)'
+    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setItalic:member(1)'
+    summary: 表示字体的斜体状态。
+    name: setItalic(italic)
+    fullName: setItalic(italic)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: italic
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setName:member(1)'
+    summary: 字体名称（例如，"Calibri"）
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setSize:member(1)'
+    summary: 字体大小（例如，11）
+    name: setSize(size)
+    fullName: setSize(size)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSize(size: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: size
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ChartUnderlineStyle。
+    name: setUnderline(underline)
+    fullName: setUnderline(underline)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUnderline(underline: ChartUnderlineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: underline
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
+    name: ChartUnderlineStyle
+    fullName: ExcelScript.ChartUnderlineStyle

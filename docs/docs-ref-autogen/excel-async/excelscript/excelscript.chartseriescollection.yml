@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSeriesCollection:interface'
+    summary: 表示图表系列的集合。
+    name: Excel.ChartSeriesCollection
+    fullName: Excel.ChartSeriesCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartSeriesCollection#add:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartSeriesCollection#add:member(1)'
+    summary: 向集合添加新系列。 在设置值/x 轴值/气泡大小（具体取决于图表类型）之前，新添加的系列将不可见。
+    name: 'add(name, index)'
+    fullName: 'add(name, index)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name?: string, index?: number): ChartSeries;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeries:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 可选。 系列的名称。
+          type:
+            - string
+        - id: index
+          description: 可选。 要添加的系列的索引值。 从零开始编制索引。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartSeries:interface'
+    name: ChartSeries
+    fullName: Excel.ChartSeries

@@ -1,0 +1,100 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
+    summary: 一个由限定的自定义 XML 部件组成的集合。 限定的集合是某个操作（例如，按命名空间进行筛选）的结果。 作用域内的集合不能进一步设定范围。
+    name: Excel.CustomXmlPartScopedCollection
+    fullName: Excel.CustomXmlPartScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+    summary: 获取基于其 ID 的自定义 XML 部件。 如果 CustomXmlPart 不存在，则返回对象的 isNull 属性将为 true。
+    name: getItemOrNullObject(id)
+    fullName: getItemOrNullObject(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
+              await context.sync();
+
+              if (xmlPartIDSetting.value) {   
+                  let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
+                  let xmlBlob = customXmlPart.getXml();
+                  customXmlPart.delete();
+                  customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
+
+                  await context.sync();
+
+                  if (customXmlPart.isNullObject) {
+                      $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
+
+                      // Delete the unneeded setting too.
+                      xmlPartIDSetting.delete();            
+                  } else {
+                      let readableXml = addLineBreaksToXML(xmlBlob.value);
+                      let strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
+                      $("#display-xml").text(strangeMessage);
+                  }
+
+                  await context.sync();
+              }
+          }
+          ```
+      parameters:
+        - id: id
+          description: 要检索的对象的 ID。
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
+    summary: 如果集合仅包含一个项，则此方法返回该项。 否则，此方法返回 Null。
+    name: getOnlyItemOrNullObject()
+    fullName: getOnlyItemOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOnlyItemOrNullObject(): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.CustomXmlPart:interface'
+    name: CustomXmlPart
+    fullName: Excel.CustomXmlPart

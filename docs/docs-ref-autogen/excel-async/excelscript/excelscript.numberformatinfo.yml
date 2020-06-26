@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NumberFormatInfo:interface'
+    summary: 定义适当的区域性格式，以显示数字。 这取决于当前的系统区域性设置。
+    name: Excel.NumberFormatInfo
+    fullName: Excel.NumberFormatInfo
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.NumberFormatInfo#load:member(1)'
+      - 'excel!Excel.NumberFormatInfo#numberDecimalSeparator:member'
+      - 'excel!Excel.NumberFormatInfo#numberGroupSeparator:member'
+  - uid: 'excel!Excel.NumberFormatInfo#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NumberFormatInfo#numberDecimalSeparator:member'
+    summary: 获取用作数值的小数分隔符的字符串。 这取决于当前的系统设置。
+    name: numberDecimalSeparator
+    fullName: numberDecimalSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly numberDecimalSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.NumberFormatInfo#numberGroupSeparator:member'
+    summary: 获取一个字符串，用于将数字值的小数位数与小数的左边隔开。 这取决于当前的系统设置。
+    name: numberGroupSeparator
+    fullName: numberGroupSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly numberGroupSeparator: string;'
+      return:
+        type:
+          - string

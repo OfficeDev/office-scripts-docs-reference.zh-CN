@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableScopedCollection:interface'
+    summary: 表示已确定范围的表的集合。 对于每个表，其左上角都被认为是其定位点位置，表按从上到下，然后从左到右进行排序。
+    name: Excel.TableScopedCollection
+    fullName: Excel.TableScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
+      - 'excel!Excel.TableScopedCollection#getItem:member(1)'
+      - 'excel!Excel.TableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
+    summary: 获取集合中的第一个表格。 集合中的表格按照从上到下、从左到右的顺序排列，因此左上表格是集合中的第一个表格。
+    name: getFirst()
+    fullName: getFirst()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+  - uid: 'excel!Excel.TableScopedCollection#getItem:member(1)'
+    summary: 按名称或 ID 获取表。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的表的名称或 ID。
+          type:
+            - string
+  - uid: 'excel!Excel.TableScopedCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Table:interface'
+    name: Table
+    fullName: Excel.Table

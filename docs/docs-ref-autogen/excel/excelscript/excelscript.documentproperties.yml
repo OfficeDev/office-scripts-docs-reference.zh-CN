@@ -1,0 +1,430 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties:interface'
+    summary: 代表工作簿属性。
+    name: ExcelScript.DocumentProperties
+    fullName: ExcelScript.DocumentProperties
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DocumentProperties#addCustomProperty:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)'
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#addCustomProperty:member(1)'
+    summary: 新建自定义属性或设置现有自定义属性。
+    name: 'addCustomProperty(key, value)'
+    fullName: 'addCustomProperty(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addCustomProperty(key: string, value: any): CustomProperty;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 必填。 自定义属性的键，它不区分大小写。 密钥限制为在 web 上的 Excel 之外的255个字符（较大的密钥会自动修整到其他平台上的255个字符）。
+          type:
+            - string
+        - id: value
+          description: 必填。 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符（更大的值会自动修整为其他平台上的255个字符）。
+          type:
+            - any
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)'
+    summary: 删除此集合中的所有自定义属性。
+    name: deleteAllCustomProperties()
+    fullName: deleteAllCustomProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAllCustomProperties(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)'
+    summary: 工作簿的作者。
+    name: getAuthor()
+    fullName: getAuthor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAuthor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)'
+    summary: 工作簿的类别。
+    name: getCategory()
+    fullName: getCategory()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCategory(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)'
+    summary: 工作簿的注释。
+    name: getComments()
+    fullName: getComments()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComments(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)'
+    summary: 工作簿的公司。
+    name: getCompany()
+    fullName: getCompany()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCompany(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)'
+    summary: 获取工作簿的创建日期。 只读。
+    name: getCreationDate()
+    fullName: getCreationDate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCreationDate(): Date;'
+      return:
+        type:
+          - '!Date:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)'
+    summary: 获取工作簿的自定义属性的集合。 只读。
+    name: getCustom()
+    fullName: getCustom()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustom(): CustomProperty[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DocumentProperties#getCustom~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)'
+    summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则返回 null 对象。
+    name: getCustomProperty(key)
+    fullName: getCustomProperty(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomProperty(key: string): CustomProperty | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 必填。 标识自定义属性对象的键。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)'
+    summary: 工作簿的关键字。
+    name: getKeywords()
+    fullName: getKeywords()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKeywords(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)'
+    summary: 获取工作簿的最终作者。 只读。
+    name: getLastAuthor()
+    fullName: getLastAuthor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastAuthor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)'
+    summary: 工作簿的管理者。
+    name: getManager()
+    fullName: getManager()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getManager(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)'
+    summary: 获取工作簿的修订号。 只读。
+    name: getRevisionNumber()
+    fullName: getRevisionNumber()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRevisionNumber(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)'
+    summary: 工作簿的主题。
+    name: getSubject()
+    fullName: getSubject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubject(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)'
+    summary: 工作簿的标题。
+    name: getTitle()
+    fullName: getTitle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTitle(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)'
+    summary: 工作簿的作者。
+    name: setAuthor(author)
+    fullName: setAuthor(author)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAuthor(author: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: author
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)'
+    summary: 工作簿的类别。
+    name: setCategory(category)
+    fullName: setCategory(category)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCategory(category: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: category
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)'
+    summary: 工作簿的注释。
+    name: setComments(comments)
+    fullName: setComments(comments)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setComments(comments: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: comments
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)'
+    summary: 工作簿的公司。
+    name: setCompany(company)
+    fullName: setCompany(company)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCompany(company: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: company
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)'
+    summary: 工作簿的关键字。
+    name: setKeywords(keywords)
+    fullName: setKeywords(keywords)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setKeywords(keywords: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: keywords
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)'
+    summary: 工作簿的管理者。
+    name: setManager(manager)
+    fullName: setManager(manager)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setManager(manager: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: manager
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)'
+    summary: 获取工作簿的修订号。 只读。
+    name: setRevisionNumber(revisionNumber)
+    fullName: setRevisionNumber(revisionNumber)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRevisionNumber(revisionNumber: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: revisionNumber
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)'
+    summary: 工作簿的主题。
+    name: setSubject(subject)
+    fullName: setSubject(subject)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSubject(subject: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: subject
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)'
+    summary: 工作簿的标题。
+    name: setTitle(title)
+    fullName: setTitle(title)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTitle(title: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: title
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+    name: CustomProperty
+    fullName: ExcelScript.CustomProperty
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustom~0:complex'
+    name: 'CustomProperty[]'
+    fullName: 'ExcelScript.CustomProperty[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+        name: CustomProperty
+        fullName: ExcelScript.CustomProperty
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty~0:complex'
+    name: CustomProperty | undefined
+    fullName: ExcelScript.CustomProperty | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+        name: CustomProperty
+        fullName: ExcelScript.CustomProperty
+      - name: ' | undefined'
+        fullName: ' | undefined'

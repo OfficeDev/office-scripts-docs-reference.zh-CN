@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection:interface'
+    summary: 代表与数据透视表相关联的 FilterPivotHierarchy 项目的集合。
+    name: Excel.FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FilterPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.FilterPivotHierarchyCollection#remove:member(1)'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#add:member(1)'
+    summary: 将 PivotHierarchy 添加到当前轴。 如果行、列或筛选轴上的其他位置存在层次结构，则会将该层次结构从相应的位置移除。
+    name: add(pivotHierarchy)
+    fullName: add(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pivotHierarchy: PivotHierarchy): FilterPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:interface'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 按名称获取 FilterPivotHierarchy。 如果 FilterPivotHierarchy 不存在，则返回 Null 对象。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): FilterPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 FilterPivotHierarchy 的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection#remove:member(1)'
+    summary: 从当前轴删除 PivotHierarchy。
+    name: remove(filterPivotHierarchy)
+    fullName: remove(filterPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(filterPivotHierarchy: FilterPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: filterPivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.FilterPivotHierarchy:interface'
+references:
+  - uid: 'excel!Excel.FilterPivotHierarchy:interface'
+    name: FilterPivotHierarchy
+    fullName: Excel.FilterPivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:interface'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy

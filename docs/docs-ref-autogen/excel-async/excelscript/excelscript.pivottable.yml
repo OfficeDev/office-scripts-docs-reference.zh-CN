@@ -1,0 +1,314 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTable:interface'
+    summary: '表示 Excel 数据透视表。 若要了解有关数据透视表对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理数据透视表](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
+    name: Excel.PivotTable
+    fullName: Excel.PivotTable
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTable#columnHierarchies:member'
+      - 'excel!Excel.PivotTable#dataHierarchies:member'
+      - 'excel!Excel.PivotTable#delete:member(1)'
+      - 'excel!Excel.PivotTable#enableDataValueEditing:member'
+      - 'excel!Excel.PivotTable#filterHierarchies:member'
+      - 'excel!Excel.PivotTable#hierarchies:member'
+      - 'excel!Excel.PivotTable#id:member'
+      - 'excel!Excel.PivotTable#layout:member'
+      - 'excel!Excel.PivotTable#load:member(1)'
+      - 'excel!Excel.PivotTable#name:member'
+      - 'excel!Excel.PivotTable#refresh:member(1)'
+      - 'excel!Excel.PivotTable#rowHierarchies:member'
+      - 'excel!Excel.PivotTable#useCustomSortLists:member'
+      - 'excel!Excel.PivotTable#worksheet:member'
+  - uid: 'excel!Excel.PivotTable#columnHierarchies:member'
+    summary: 数据透视表的列透视层级结构。
+    name: columnHierarchies
+    fullName: columnHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnHierarchies: RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
+
+              // check if the PivotTable already has a column
+              let column = pivotTable.columnHierarchies.getItemOrNullObject("Farm");
+              column.load("id");
+              await context.sync();
+
+              if (column.isNullObject) {
+                  // ading the farm column to the column hierarchy automatically removes it from the row hierarchy
+                  pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
+              } else {
+                  pivotTable.columnHierarchies.remove(column);
+              }
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#dataHierarchies:member'
+    summary: 数据透视表的数据透视层级结构。
+    name: dataHierarchies
+    fullName: dataHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataHierarchies: DataPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#delete:member(1)'
+    summary: 删除 PivotTable 对象。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#enableDataValueEditing:member'
+    summary: 指定数据透视表是否允许用户对数据正文中的值进行编辑。
+    name: enableDataValueEditing
+    fullName: enableDataValueEditing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableDataValueEditing: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotTable#filterHierarchies:member'
+    summary: 数据透视表的筛选器透视层级结构。
+    name: filterHierarchies
+    fullName: filterHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly filterHierarchies: FilterPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.FilterPivotHierarchyCollection:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function filter(functionType: Excel.AggregationFunction) {
+              async function main(context: Excel.RequestContext) {
+                  let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+                  let filters = pivotTable.filterHierarchies;
+                  let filter = filters.getItemOrNullObject("Classification");
+                  filter.load();
+                  await context.sync();
+
+                  // add the Classification hierarchy to the filter, if it's not already there
+                  if (filter.isNullObject) {
+                      filters.add(pivotTable.hierarchies.getItem("Classification"));
+                      await context.sync();
+                  }
+              }
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#hierarchies:member'
+    summary: 数据透视表的透视层级结构。
+    name: hierarchies
+    fullName: hierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hierarchies: PivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchyCollection:interface'
+  - uid: 'excel!Excel.PivotTable#id:member'
+    summary: 数据透视表的 ID。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTable#layout:member'
+    summary: PivotLayout，用于说明数据透视表的布局和可视化结构。
+    name: layout
+    fullName: layout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly layout: PivotLayout;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayout:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.layout.load("layoutType");
+              await context.sync();
+
+              // cycle between the three layout types
+              if (pivotTable.layout.layoutType === "Compact") {
+                  pivotTable.layout.layoutType = "Outline";
+              } else if (pivotTable.layout.layoutType === "Outline") {
+                  pivotTable.layout.layoutType = "Tabular";
+              } else {
+                  pivotTable.layout.layoutType = "Compact";
+              }
+              await context.sync();
+              console.log("Pivot layout is now " + pivotTable.layout.layoutType);
+          }
+          ```
+  - uid: 'excel!Excel.PivotTable#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTable#name:member'
+    summary: PivotTable 对象的名称。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTable#refresh:member(1)'
+    summary: 刷新 PivotTable 对象。
+    name: refresh()
+    fullName: refresh()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refresh(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PivotTable#rowHierarchies:member'
+    summary: 数据透视表的行透视层级结构。
+    name: rowHierarchies
+    fullName: rowHierarchies
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowHierarchies: RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+  - uid: 'excel!Excel.PivotTable#useCustomSortLists:member'
+    summary: 指定在排序时数据透视表是否使用自定义列表。
+    name: useCustomSortLists
+    fullName: useCustomSortLists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useCustomSortLists: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotTable#worksheet:member'
+    summary: 包含当前 PivotTable 对象的工作表。
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+references:
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+    name: RowColumnPivotHierarchyCollection
+    fullName: Excel.RowColumnPivotHierarchyCollection
+  - uid: 'excel!Excel.DataPivotHierarchyCollection:interface'
+    name: DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection
+  - uid: 'excel!Excel.FilterPivotHierarchyCollection:interface'
+    name: FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
+  - uid: 'excel!Excel.PivotHierarchyCollection:interface'
+    name: PivotHierarchyCollection
+    fullName: Excel.PivotHierarchyCollection
+  - uid: 'excel!Excel.PivotLayout:interface'
+    name: PivotLayout
+    fullName: Excel.PivotLayout
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

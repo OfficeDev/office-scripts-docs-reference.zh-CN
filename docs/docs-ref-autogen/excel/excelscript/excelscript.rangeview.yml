@@ -1,0 +1,310 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeView:interface'
+    summary: RangeView 表示父范围的一组可见单元格。
+    name: ExcelScript.RangeView
+    fullName: ExcelScript.RangeView
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeView#getCellAddresses:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getColumnCount:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getFormulas:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getFormulasLocal:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getFormulasR1C1:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getIndex:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getRange:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getRowCount:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getRows:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getText:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getValues:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#getValueTypes:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#setFormulas:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#setFormulasLocal:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#setFormulasR1C1:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#setNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.RangeView#setValues:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RangeView#getCellAddresses:member(1)'
+    summary: 表示 RangeView 的单元格地址。
+    name: getCellAddresses()
+    fullName: getCellAddresses()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCellAddresses(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getColumnCount:member(1)'
+    summary: 可见列的数量。
+    name: getColumnCount()
+    fullName: getColumnCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumnCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getFormulas:member(1)'
+    summary: 表示采用 A1 表示法的公式。
+    name: getFormulas()
+    fullName: getFormulas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulas(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getFormulasLocal:member(1)'
+    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    name: getFormulasLocal()
+    fullName: getFormulasLocal()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulasLocal(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getFormulasR1C1:member(1)'
+    summary: 表示采用 R1C1 样式表示法的公式。
+    name: getFormulasR1C1()
+    fullName: getFormulasR1C1()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulasR1C1(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getIndex:member(1)'
+    summary: 返回表示 RangeView 的索引的值。
+    name: getIndex()
+    fullName: getIndex()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIndex(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getNumberFormat:member(1)'
+    summary: 表示 Excel 中指定单元格的数字格式代码。
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getRange:member(1)'
+    summary: 获取与当前 RangeView 相关联的父 range。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getRowCount:member(1)'
+    summary: 可见行的数目。
+    name: getRowCount()
+    fullName: getRowCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getRows:member(1)'
+    summary: 表示一组与 range 相关联的 RangeView。
+    name: getRows()
+    fullName: getRows()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRows(): RangeView[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeView#getRows~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getText:member(1)'
+    summary: 指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。
+    name: getText()
+    fullName: getText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): string[][];'
+      return:
+        type:
+          - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getValues:member(1)'
+    summary: 表示指定的 RangeView 的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
+    name: getValues()
+    fullName: getValues()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValues(): (string | number | boolean)[][];'
+      return:
+        type:
+          - '(string | number | boolean)[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#getValueTypes:member(1)'
+    summary: 表示每个单元格的数据类型。
+    name: getValueTypes()
+    fullName: getValueTypes()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValueTypes(): RangeValueType[][];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeView#getValueTypes~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeView#setFormulas:member(1)'
+    summary: 表示采用 A1 表示法的公式。
+    name: setFormulas(formulas)
+    fullName: setFormulas(formulas)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulas(formulas: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulas
+          description: ''
+          type:
+            - 'string[][]'
+  - uid: 'ExcelScript!ExcelScript.RangeView#setFormulasLocal:member(1)'
+    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    name: setFormulasLocal(formulasLocal)
+    fullName: setFormulasLocal(formulasLocal)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulasLocal(formulasLocal: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulasLocal
+          description: ''
+          type:
+            - 'string[][]'
+  - uid: 'ExcelScript!ExcelScript.RangeView#setFormulasR1C1:member(1)'
+    summary: 表示采用 R1C1 样式表示法的公式。
+    name: setFormulasR1C1(formulasR1C1)
+    fullName: setFormulasR1C1(formulasR1C1)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulasR1C1
+          description: ''
+          type:
+            - 'string[][]'
+  - uid: 'ExcelScript!ExcelScript.RangeView#setNumberFormat:member(1)'
+    summary: 表示 Excel 中指定单元格的数字格式代码。
+    name: setNumberFormat(numberFormat)
+    fullName: setNumberFormat(numberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormat(numberFormat: string[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormat
+          description: ''
+          type:
+            - 'string[][]'
+  - uid: 'ExcelScript!ExcelScript.RangeView#setValues:member(1)'
+    summary: 表示指定的 RangeView 的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
+    name: setValues(values)
+    fullName: setValues(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setValues(values: (string | number | boolean)[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: values
+          description: ''
+          type:
+            - '(string | number | boolean)[][]'
+references:
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.RangeView#getRows~0:complex'
+    name: 'RangeView[]'
+    fullName: 'ExcelScript.RangeView[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RangeView:interface'
+        name: RangeView
+        fullName: ExcelScript.RangeView
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.RangeView#getValueTypes~0:complex'
+    name: 'RangeValueType[][]'
+    fullName: 'ExcelScript.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
+        name: RangeValueType
+        fullName: ExcelScript.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'

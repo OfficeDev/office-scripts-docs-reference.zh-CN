@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.FormatProtection:interface'
+    summary: 表示对范围对象的格式保护。
+    name: ExcelScript.FormatProtection
+    fullName: ExcelScript.FormatProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
+      - 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
+      - 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
+      - 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
+  - uid: 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
+    summary: 指定 Excel 是否隐藏区域中单元格的公式。 指示整个区域不具有统一公式隐藏设置的空值。
+    name: getFormulaHidden()
+    fullName: getFormulaHidden()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulaHidden(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
+    summary: 指定 Excel 是否锁定对象中的单元格。 指示整个区域不具有统一锁定设置的空值。
+    name: getLocked()
+    fullName: getLocked()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocked(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
+    summary: 指定 Excel 是否隐藏区域中单元格的公式。 指示整个区域不具有统一公式隐藏设置的空值。
+    name: setFormulaHidden(formulaHidden)
+    fullName: setFormulaHidden(formulaHidden)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulaHidden(formulaHidden: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulaHidden
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
+    summary: 指定 Excel 是否锁定对象中的单元格。 指示整个区域不具有统一锁定设置的空值。
+    name: setLocked(locked)
+    fullName: setLocked(locked)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLocked(locked: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: locked
+          description: ''
+          type:
+            - boolean

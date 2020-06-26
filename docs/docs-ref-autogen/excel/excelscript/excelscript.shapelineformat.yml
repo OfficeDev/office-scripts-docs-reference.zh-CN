@@ -1,0 +1,216 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat:interface'
+    summary: 代表 shape 对象的线条格式。 对于图像和几何形状，线条格式表示形状的边框。
+    name: ExcelScript.ShapeLineFormat
+    fullName: ExcelScript.ShapeLineFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
+    summary: 代表 HTML 颜色格式的线条颜色，格式 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如，"橙色"）。
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
+    summary: 表示形状的线条样式。 当线条不可见或短划线样式不一致时，返回 null。 有关详细信息，请参阅 Excel.ShapeLineStyle。
+    name: getDashStyle()
+    fullName: getDashStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDashStyle(): ShapeLineDashStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
+    summary: 表示形状的线条样式。 当线条不可见或样式不一致时，返回 null。 有关详细信息，请参阅 Excel.ShapeLineStyle。
+    name: getStyle()
+    fullName: getStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyle(): ShapeLineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)'
+    summary: 将指定线条的透明度表示为从 0.0（不透明）到 1.0（清晰）的值。 当形状的透明度不一致时，返回 null。
+    name: getTransparency()
+    fullName: getTransparency()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTransparency(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)'
+    summary: 指定是否显示 shape 元素的线条格式。 当形状的可见性不一致时，返回 null。
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)'
+    summary: 表示线条的粗细（以磅为单位）。 当线条不可见或线条粗细不一致时，返回 null。
+    name: getWeight()
+    fullName: getWeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
+    summary: 代表 HTML 颜色格式的线条颜色，格式 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如，"橙色"）。
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
+    summary: 表示形状的线条样式。 当线条不可见或短划线样式不一致时，返回 null。 有关详细信息，请参阅 Excel.ShapeLineStyle。
+    name: setDashStyle(dashStyle)
+    fullName: setDashStyle(dashStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDashStyle(dashStyle: ShapeLineDashStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: dashStyle
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
+    summary: 表示形状的线条样式。 当线条不可见或样式不一致时，返回 null。 有关详细信息，请参阅 Excel.ShapeLineStyle。
+    name: setStyle(style)
+    fullName: setStyle(style)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStyle(style: ShapeLineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: style
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)'
+    summary: 将指定线条的透明度表示为从 0.0（不透明）到 1.0（清晰）的值。 当形状的透明度不一致时，返回 null。
+    name: setTransparency(transparency)
+    fullName: setTransparency(transparency)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTransparency(transparency: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: transparency
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
+    summary: 指定是否显示 shape 元素的线条格式。 当形状的可见性不一致时，返回 null。
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
+    summary: 表示线条的粗细（以磅为单位）。 当线条不可见或线条粗细不一致时，返回 null。
+    name: setWeight(weight)
+    fullName: setWeight(weight)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWeight(weight: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: weight
+          description: ''
+          type:
+            - number
+references:
+  - uid: 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+    name: ShapeLineDashStyle
+    fullName: ExcelScript.ShapeLineDashStyle
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+    name: ShapeLineStyle
+    fullName: ExcelScript.ShapeLineStyle

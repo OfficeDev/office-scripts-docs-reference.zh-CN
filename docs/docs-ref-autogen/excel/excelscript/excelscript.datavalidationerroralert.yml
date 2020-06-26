@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
+    summary: 表示数据验证的错误警报属性。
+    name: ExcelScript.DataValidationErrorAlert
+    fullName: ExcelScript.DataValidationErrorAlert
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+    summary: 表示错误警报消息。
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+    summary: 指定当用户输入无效数据时是否显示出错警告对话框。 默认值为 true。
+    name: showAlert
+    fullName: showAlert
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAlert: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+    summary: 数据有效性警报类型，有关详细信息，请参阅 DataValidationAlertStyle。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: DataValidationAlertStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+    summary: 表示错误警报对话框标题。
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+    name: DataValidationAlertStyle
+    fullName: ExcelScript.DataValidationAlertStyle

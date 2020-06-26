@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
+    summary: 代表工作表中的几何形状。 在 Excel 中，几何形状可以是矩形、箭头总汇、公式符号、流程图项、星形、横幅、标注或任何其他基本形状。
+    name: ExcelScript.GeometricShape
+    fullName: ExcelScript.GeometricShape
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+  - uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+    summary: 返回形状标识符。
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''

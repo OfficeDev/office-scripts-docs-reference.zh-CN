@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.StyleCollection:interface'
+    summary: 代表所有样式的集合。
+    name: Excel.StyleCollection
+    fullName: Excel.StyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.StyleCollection#add:member(1)'
+      - 'excel!Excel.StyleCollection#getItem:member(1)'
+      - 'excel!Excel.StyleCollection#load:member(1)'
+  - uid: 'excel!Excel.StyleCollection#add:member(1)'
+    summary: 向集合添加新样式。
+    name: add(name)
+    fullName: add(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let styles = context.workbook.styles;
+
+              // Add a new style to the style collection.
+              // Styles is in the Home tab ribbon.
+              styles.add("Diagonal Orientation Style");
+                    
+              let newStyle = styles.getItem("Diagonal Orientation Style");
+              
+              // The "Diagonal Orientation Style" properties.
+              newStyle.textOrientation = 38;
+              newStyle.autoIndent = true;
+              newStyle.includeProtection = true;
+              newStyle.shrinkToFit = true;
+              newStyle.locked = false;
+              
+              await context.sync();
+
+              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+          }
+          ```
+      parameters:
+        - id: name
+          description: 要添加的样式的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.StyleCollection#getItem:member(1)'
+    summary: 按名称获取样式。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let styles = context.workbook.styles;
+
+              // Add a new style to the style collection.
+              // Styles is in the Home tab ribbon.
+              styles.add("Diagonal Orientation Style");
+                    
+              let newStyle = styles.getItem("Diagonal Orientation Style");
+              
+              // The "Diagonal Orientation Style" properties.
+              newStyle.textOrientation = 38;
+              newStyle.autoIndent = true;
+              newStyle.includeProtection = true;
+              newStyle.shrinkToFit = true;
+              newStyle.locked = false;
+              
+              await context.sync();
+
+              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+          }
+          ```
+      parameters:
+        - id: name
+          description: 要检索的样式的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.StyleCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Style:interface'
+    name: Style
+    fullName: Excel.Style

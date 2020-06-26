@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
+    summary: 表示对工作簿对象的保护。
+    name: ExcelScript.WorkbookProtection
+    fullName: ExcelScript.WorkbookProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
+    summary: 指定工作簿是否受保护。
+    name: getProtected()
+    fullName: getProtected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
+    summary: 保护工作簿。 如果工作簿处于受保护状态，则无法执行此方法。
+    name: protect(password)
+    fullName: protect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: 工作簿保护密码。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
+    summary: 解除保护工作簿。
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: 工作簿保护密码。
+          type:
+            - string

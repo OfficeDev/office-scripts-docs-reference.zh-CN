@@ -1,0 +1,289 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotLayout:interface'
+    summary: 表示数据透视表的可视化布局。
+    name: Excel.PivotLayout
+    fullName: Excel.PivotLayout
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotLayout#autoFormat:member'
+      - 'excel!Excel.PivotLayout#enableFieldList:member'
+      - 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+      - 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+      - 'excel!Excel.PivotLayout#getRange:member(1)'
+      - 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#layoutType:member'
+      - 'excel!Excel.PivotLayout#load:member(1)'
+      - 'excel!Excel.PivotLayout#preserveFormatting:member'
+      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
+      - 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+      - 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+      - 'excel!Excel.PivotLayout#subtotalLocation:member'
+  - uid: 'excel!Excel.PivotLayout#autoFormat:member'
+    summary: 指定在刷新或移动域时是否自动设置格式。
+    name: autoFormat
+    fullName: autoFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#enableFieldList:member'
+    summary: 指定是否可以在 UI 中显示字段列表。
+    name: enableFieldList
+    fullName: enableFieldList
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableFieldList: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+    summary: 返回数据透视表列标签所在位置的区域。
+    name: getColumnLabelRange()
+    fullName: getColumnLabelRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColumnLabelRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+    summary: 返回数据透视表数据值所在位置的区域。
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+              // the layout controls the ranges used by the PivotTable
+              let range = pivotTable.layout.getDataBodyRange();
+
+              // get all the data hierarchy totals
+              let grandTotalRange = range.getLastRow();
+              grandTotalRange.load("address");
+              await context.sync();
+              
+              // use the wholesale and farm sale totals to make a final sum
+              let masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
+              masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+    summary: 获取 DataHierarchy，它用于计算数据透视表中指定区域内的值。
+    name: getDataHierarchy(cell)
+    fullName: getDataHierarchy(cell)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: cell
+          description: 数据透视表数据正文中的单个单元格。
+          type:
+            - 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+  - uid: 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+    summary: 返回数据透视表筛选区的区域。
+    name: getFilterAxisRange()
+    fullName: getFilterAxisRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilterAxisRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getRange:member(1)'
+    summary: 返回存在数据透视表的区域，不包括筛选区。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+    summary: 返回数据透视表行标签所在位置的区域。
+    name: getRowLabelRange()
+    fullName: getRowLabelRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowLabelRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotLayout#layoutType:member'
+    summary: 此属性指示数据透视表上的所有字段的 PivotLayoutType。 如果字段状态不同，则为 null。
+    name: layoutType
+    fullName: layoutType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layoutType: PivotLayoutType;'
+      return:
+        type:
+          - 'excel!Excel.PivotLayoutType:enum'
+  - uid: 'excel!Excel.PivotLayout#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
+    summary: 指定当通过透视、排序或更改页字段项等操作刷新或重新计算报表时，是否保留格式设置。
+    name: preserveFormatting
+    fullName: preserveFormatting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preserveFormatting: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
+    summary: 将数据透视表设置为使用指定的单元格设置自动排序，以自动选择排序的所有条件和上下文。 这与从 UI 应用自动排序的行为相同。
+    name: 'setAutoSortOnCell(cell, sortBy)'
+    fullName: 'setAutoSortOnCell(cell, sortBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cell
+          description: 要使用的单个单元格获取应用自动排序的条件。
+          type:
+            - 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
+        - id: sortBy
+          description: 排序的方向。
+          type:
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+    summary: 指定数据透视表是否显示列总计。
+    name: showColumnGrandTotals
+    fullName: showColumnGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showColumnGrandTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+    summary: 指定数据透视表是否显示行的总计。
+    name: showRowGrandTotals
+    fullName: showRowGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRowGrandTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotLayout#subtotalLocation:member'
+    summary: 此属性指示数据透视表上的所有字段的 SubtotalLocationType。 如果字段状态不同，则为 null。
+    name: subtotalLocation
+    fullName: subtotalLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotalLocation: SubtotalLocationType;'
+      return:
+        type:
+          - 'excel!Excel.SubtotalLocationType:enum'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayoutType:enum'
+    name: PivotLayoutType
+    fullName: Excel.PivotLayoutType
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.SortBy:enum'
+    name: SortBy
+    fullName: Excel.SortBy
+  - uid: 'excel!Excel.SubtotalLocationType:enum'
+    name: SubtotalLocationType
+    fullName: Excel.SubtotalLocationType

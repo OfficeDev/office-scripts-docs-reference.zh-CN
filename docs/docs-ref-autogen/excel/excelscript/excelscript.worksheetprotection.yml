@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection:interface'
+    summary: 表示对工作表对象的保护。
+    name: ExcelScript.WorksheetProtection
+    fullName: ExcelScript.WorksheetProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
+    summary: 指定工作表的保护选项。
+    name: getOptions()
+    fullName: getOptions()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOptions(): WorksheetProtectionOptions;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
+    summary: 指定工作表是否受保护。
+    name: getProtected()
+    fullName: getProtected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
+    summary: 保护 worksheet。 如果工作表已受到保护，则失败。
+    name: 'protect(options, password)'
+    fullName: 'protect(options, password)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 可选。 工作表保护选项。
+          type:
+            - 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+        - id: password
+          description: 可选。 工作表保护密码。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
+    summary: 解除对 worksheet 的保护。
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: 工作表保护密码。
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
+    name: WorksheetProtectionOptions
+    fullName: ExcelScript.WorksheetProtectionOptions

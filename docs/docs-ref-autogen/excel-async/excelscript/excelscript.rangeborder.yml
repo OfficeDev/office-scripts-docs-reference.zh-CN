@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeBorder:interface'
+    summary: 代表对象的边框。
+    name: Excel.RangeBorder
+    fullName: Excel.RangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeBorder#color:member'
+      - 'excel!Excel.RangeBorder#load:member(1)'
+      - 'excel!Excel.RangeBorder#sideIndex:member'
+      - 'excel!Excel.RangeBorder#style:member'
+      - 'excel!Excel.RangeBorder#tintAndShade:member'
+      - 'excel!Excel.RangeBorder#weight:member'
+  - uid: 'excel!Excel.RangeBorder#color:member'
+    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线颜色的 HTML 颜色代码。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeBorder#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeBorder#sideIndex:member'
+    summary: 指示边框的特定边的常量值。 有关详细信息，请参阅 BorderIndex。
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sideIndex: BorderIndex;'
+      return:
+        type:
+          - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorder#style:member'
+    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 BorderLineStyle。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: BorderLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.BorderLineStyle:enum'
+  - uid: 'excel!Excel.RangeBorder#tintAndShade:member'
+    summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 （最暗）和1（最亮）之间，0表示原始颜色。 空值表示边框没有统一的 tintAndShade 设置。
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeBorder#weight:member'
+    summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 BorderWeight。
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: BorderWeight;'
+      return:
+        type:
+          - 'excel!Excel.BorderWeight:enum'
+references:
+  - uid: 'excel!Excel.BorderIndex:enum'
+    name: BorderIndex
+    fullName: Excel.BorderIndex
+  - uid: 'excel!Excel.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: Excel.BorderLineStyle
+  - uid: 'excel!Excel.BorderWeight:enum'
+    name: BorderWeight
+    fullName: Excel.BorderWeight

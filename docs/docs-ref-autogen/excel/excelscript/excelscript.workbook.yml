@@ -1,0 +1,1949 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Workbook:interface'
+    summary: '工作簿是顶级对象，其中包含相关的工作簿对象，如工作表、表、范围等。若要了解有关工作簿对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理工作簿](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.'
+    name: ExcelScript.Workbook
+    fullName: ExcelScript.Workbook
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Workbook#addBinding:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addComment:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addNamedItem:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addPredefinedCellStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addSetting:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addSlicer:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getActiveWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getApplication:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getBinding:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getBindings:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCalculationEngineVersion:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getComment:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCommentByCell:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getFirstWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getLastWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getNames:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPivotTables:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getProperties:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getProtection:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSetting:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSettings:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSlicer:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSlicers:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getSlicerStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTable:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTables:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTableStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getTimelineStyles:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#getWorksheets:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)'
+      - 'ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addBinding:member(1)'
+    summary: 将新的 binding 对象添加到特定区域。
+    name: 'addBinding(range, bindingType, id)'
+    fullName: 'addBinding(range, bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addBinding(
+                    range: Range | string,
+                    bindingType: BindingType,
+                    id: string
+                ): Binding;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: range
+          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
+        - id: bindingType
+          description: 绑定的类型。 请参阅 BindingType。
+          type:
+            - 'ExcelScript!ExcelScript.BindingType:enum'
+        - id: id
+          description: 绑定的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)'
+    summary: 根据工作簿中的命名项添加新的 binding 对象。 如果已命名项目引用多个区域，则将返回 "InvalidReference" 错误。
+    name: 'addBindingFromNamedItem(name, bindingType, id)'
+    fullName: 'addBindingFromNamedItem(name, bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addBindingFromNamedItem(
+                    name: string,
+                    bindingType: BindingType,
+                    id: string
+                ): Binding;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 从中创建绑定的名称。
+          type:
+            - string
+        - id: bindingType
+          description: 绑定的类型。 请参阅 BindingType。
+          type:
+            - 'ExcelScript!ExcelScript.BindingType:enum'
+        - id: id
+          description: 绑定的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)'
+    summary: 根据当前选择的内容添加新的 binding 对象。 如果所选内容有多个区域，则将返回 "InvalidReference" 错误。
+    name: 'addBindingFromSelection(bindingType, id)'
+    fullName: 'addBindingFromSelection(bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addBindingFromSelection(bindingType: BindingType, id: string): Binding;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Binding:interface'
+        description: ''
+      parameters:
+        - id: bindingType
+          description: 绑定的类型。 请参阅 BindingType。
+          type:
+            - 'ExcelScript!ExcelScript.BindingType:enum'
+        - id: id
+          description: 绑定的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addComment:member(1)'
+    summary: 使用给定单元格上的给定内容创建新批注。 `InvalidArgument`如果提供的范围大于一个单元格，则会引发错误。
+    name: 'addComment(cellAddress, content, contentType)'
+    fullName: 'addComment(cellAddress, content, contentType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addComment(
+                    cellAddress: Range | string,
+                    content: CommentRichContent | string,
+                    contentType?: ContentType
+                ): Comment;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: 向其中添加批注的单元格。 它可以是一个 Range 对象或一个字符串。 如果是字符串，则必须包含完整的地址，包括工作表名称。 `InvalidArgument`如果提供的范围大于一个单元格，则会引发错误。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addComment~0:complex'
+        - id: content
+          description: 批注的内容。 它可以是 string 或 CommentRichContent 对象。 字符串用于纯文本。 CommentRichContent 对象允许其他注释功能，如提到。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
+        - id: contentType
+          description: 可选。 包含在注释中的内容类型。 默认值为枚举`ContentType.Plain`<!-- -->.
+          type:
+            - 'ExcelScript!ExcelScript.ContentType:enum'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
+    summary: 向工作簿添加新的自定义 XML 部件。
+    name: addCustomXmlPart(xml)
+    fullName: addCustomXmlPart(xml)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addCustomXmlPart(xml: string): CustomXmlPart;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: xml
+          description: XML 内容。 必须是有效的 XML 片段。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItem:member(1)'
+    summary: 将新名称添加到给定范围的集合。
+    name: 'addNamedItem(name, reference, comment)'
+    fullName: 'addNamedItem(name, reference, comment)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addNamedItem(
+                    name: string,
+                    reference: Range | string,
+                    comment?: string
+                ): NamedItem;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 已命名项目的名称。
+          type:
+            - string
+        - id: reference
+          description: 名称将引用的公式或区域。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
+        - id: comment
+          description: 可选。 与已命名项目相关联的注释。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItemFormulaLocal:member(1)'
+    summary: 使用用户的公式区域设置，将新名称添加到给定范围的集合。
+    name: 'addNamedItemFormulaLocal(name, formula, comment)'
+    fullName: 'addNamedItemFormulaLocal(name, formula, comment)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addNamedItemFormulaLocal(
+                    name: string,
+                    formula: string,
+                    comment?: string
+                ): NamedItem;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 已命名项的“名称”。
+          type:
+            - string
+        - id: formula
+          description: 名称将引用的采用用户区域设置的公式。
+          type:
+            - string
+        - id: comment
+          description: 可选。 与已命名项目相关联的注释。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)'
+    summary: 根据指定的源数据添加数据透视表，并将其插入到目标区域左上角的单元格处。
+    name: 'addPivotTable(name, source, destination)'
+    fullName: 'addPivotTable(name, source, destination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addPivotTable(
+                    name: string,
+                    source: Range | string | Table,
+                    destination: Range | string
+                ): PivotTable;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新数据透视表的名称。
+          type:
+            - string
+        - id: source
+          description: 新数据透视表的源数据，可以是区域（或包含工作表名称的字符串地址）或表。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addPivotTable~0:complex'
+        - id: destination
+          description: 数据透视表目标区域（工作表中用于放置所生成的报表的区域）左上角的单元格。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addPivotTable~1:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)'
+    summary: 使用指定名称创建空白 PivotTableStyle。
+    name: 'addPivotTableStyle(name, makeUniqueName)'
+    fullName: 'addPivotTableStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addPivotTableStyle(
+                    name: string,
+                    makeUniqueName?: boolean
+                ): PivotTableStyle;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新 PivotTableStyle 的唯一名称。 如果名称已在使用中，则将引发无效参数异常。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 可选，默认值为 false。 如果为 true，则将数字追加到名称，以便根据需要使其唯一。
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPredefinedCellStyle:member(1)'
+    summary: 向集合添加新样式。
+    name: addPredefinedCellStyle(name)
+    fullName: addPredefinedCellStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addPredefinedCellStyle(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: 要添加的样式的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSetting:member(1)'
+    summary: 设置指定的 Setting 对象，或将其添加到工作簿中。
+    name: 'addSetting(key, value)'
+    fullName: 'addSetting(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addSetting(
+                    key: string,
+                    value: string | number | boolean | Date | Array<any> | any
+                ): Setting;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Setting:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 新设置的键。
+          type:
+            - string
+        - id: value
+          description: 新设置的值。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addSetting~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer:member(1)'
+    summary: 将新切片器添加到工作簿。
+    name: 'addSlicer(slicerSource, sourceField, slicerDestination)'
+    fullName: 'addSlicer(slicerSource, sourceField, slicerDestination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addSlicer(
+                    slicerSource: string | PivotTable | Table,
+                    sourceField: string | PivotField | number | TableColumn,
+                    slicerDestination?: string | Worksheet
+                ): Slicer;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Slicer:interface'
+        description: ''
+      parameters:
+        - id: slicerSource
+          description: 新切片器将基于的数据源。 它可以是一个数据透视表对象、一个 Table 对象或一个字符串。 传递数据透视表对象时，数据源是数据透视表对象的源。 当传递 Table 对象时，数据源是 Table 对象。 传递字符串时，它被解释为数据透视表/表的名称/id。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addSlicer~0:complex'
+        - id: sourceField
+          description: 要作为筛选依据的数据源中的字段。 它可以是一个透视字段对象、一个 TableColumn 对象、透视字段的 id 或 TableColumn 的 id/名称。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
+        - id: slicerDestination
+          description: 可选。 将在其中创建新切片器的工作表。 它可以是工作表对象或工作表的名称/id。 如果从工作表中检索切片器集合，则可以忽略此参数。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)'
+    summary: 使用指定名称创建空白 SlicerStyle。
+    name: 'addSlicerStyle(name, makeUniqueName)'
+    fullName: 'addSlicerStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addSlicerStyle(name: string, makeUniqueName?: boolean): SlicerStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新 SlicerStyle 的唯一名称。 如果名称已在使用中，则将引发无效参数异常。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 可选，默认值为 false。 如果为 true，则将数字追加到名称，以便根据需要使其唯一。
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
+    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    name: 'addTable(address, hasHeaders)'
+    fullName: 'addTable(address, hasHeaders)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Table:interface'
+        description: ''
+      parameters:
+        - id: address
+          description: Range 对象或表示数据源的区域的字符串地址或名称。 如果地址不包含工作表名称，将使用当前活动的工作表。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
+        - id: hasHeaders
+          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
+    summary: 使用指定名称创建空白 TableStyle。
+    name: 'addTableStyle(name, makeUniqueName)'
+    fullName: 'addTableStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新 TableStyle 的唯一名称。 如果名称已在使用中，则将引发无效参数异常。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 可选，默认值为 false。 如果为 true，则将数字追加到名称，以便根据需要使其唯一。
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)'
+    summary: 使用指定名称创建空白 TimelineStyle。
+    name: 'addTimelineStyle(name, makeUniqueName)'
+    fullName: 'addTimelineStyle(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 新 TimelineStyle 的唯一名称。 如果名称已在使用中，则将引发无效参数异常。
+          type:
+            - string
+        - id: makeUniqueName
+          description: 可选，默认值为 false。 如果为 true，则将数字追加到名称，以便根据需要使其唯一。
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
+    summary: 'Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.'
+    name: addWorksheet(name)
+    fullName: addWorksheet(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addWorksheet(name?: string): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 'Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'
+    summary: 获取工作簿中当前处于活动状态的单元格。
+    name: getActiveCell()
+    fullName: getActiveCell()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveCell(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          /**
+           * This script logs the value of the current active cell. 
+           * If multiple cells are selected, the top-leftmost cell will be logged.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current active cell in the workbook.
+            let cell = workbook.getActiveCell();
+            console.log(`The current cell's value is ${cell.getValue()}`);
+          }
+          ```
+  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)'
+    summary: 获取工作簿中的当前活动图表。 如果没有活动图表，则返回 null 对象。
+    name: getActiveChart()
+    fullName: getActiveChart()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChart(): Chart;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Chart:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)'
+    summary: 获取工作簿中当前处于活动状态的切片器。 如果没有处于活动状态的切片器，则返回 null 对象。
+    name: getActiveSlicer()
+    fullName: getActiveSlicer()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicer(): Slicer;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Slicer:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getActiveWorksheet:member(1)'
+    summary: 获取工作簿中当前处于活动状态的工作表。
+    name: getActiveWorksheet()
+    fullName: getActiveWorksheet()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveWorksheet(): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getApplication:member(1)'
+    summary: 表示包含此工作簿的 Excel 应用程序实例。
+    name: getApplication()
+    fullName: getApplication()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getApplication(): Application;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Application:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)'
+    summary: 指定工作簿是否处于自动保存模式。
+    name: getAutoSave()
+    fullName: getAutoSave()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAutoSave(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getBinding:member(1)'
+    summary: 按 ID 获取 Binding 对象。 如果没有 Binding 对象，将返回 NULL 对象。
+    name: getBinding(id)
+    fullName: getBinding(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBinding(id: string): Binding | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getBinding~0:complex'
+        description: ''
+      parameters:
+        - id: id
+          description: 要检索的绑定对象的 ID。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getBindings:member(1)'
+    summary: 表示属于工作簿的绑定的集合。
+    name: getBindings()
+    fullName: getBindings()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBindings(): Binding[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getBindings~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCalculationEngineVersion:member(1)'
+    summary: 返回有关 Excel 计算引擎的版本号。
+    name: getCalculationEngineVersion()
+    fullName: getCalculationEngineVersion()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCalculationEngineVersion(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)'
+    summary: 如果工作簿中的所有图表都跟踪它们所附加的实际数据点，则为 True。 假如果图表跟踪数据点的索引。
+    name: getChartDataPointTrack()
+    fullName: getChartDataPointTrack()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getChartDataPointTrack(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getComment:member(1)'
+    summary: 根据其 ID 从集合中获取批注。
+    name: getComment(commentId)
+    fullName: getComment(commentId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComment(commentId: string): Comment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: commentId
+          description: 注释的标识符。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByCell:member(1)'
+    summary: 从指定单元格获取的批注。
+    name: getCommentByCell(cellAddress)
+    fullName: getCommentByCell(cellAddress)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCommentByCell(cellAddress: Range | string): Comment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: 批注所在的单元格。 它可以是一个 Range 对象或一个字符串。 如果是字符串，则必须包含完整的地址，包括工作表名称。 `InvalidArgument`如果提供的范围大于一个单元格，则会引发错误。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#getCommentByCell~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)'
+    summary: 获取给定答复连接到的注释。
+    name: getCommentByReplyId(replyId)
+    fullName: getCommentByReplyId(replyId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCommentByReplyId(replyId: string): Comment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Comment:interface'
+        description: ''
+      parameters:
+        - id: replyId
+          description: 批注答复的标识符。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getComments:member(1)'
+    summary: 表示与工作簿关联的批注集合。
+    name: getComments()
+    fullName: getComments()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComments(): Comment[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getComments~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)'
+    summary: 获取基于其 ID 的自定义 XML 部件。 如果 CustomXmlPart 不存在，则返回对象的 isNull 属性将为 true。
+    name: getCustomXmlPart(id)
+    fullName: getCustomXmlPart(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomXmlPart(id: string): CustomXmlPart | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart~0:complex'
+        description: ''
+      parameters:
+        - id: id
+          description: 要检索的对象的 ID。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts:member(1)'
+    summary: 表示此工作簿包含的自定义 XML 部件的集合。
+    name: getCustomXmlParts()
+    fullName: getCustomXmlParts()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomXmlParts(): CustomXmlPart[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultPivotTableStyle:member(1)'
+    summary: 获取父对象范围的默认 PivotTableStyle。
+    name: getDefaultPivotTableStyle()
+    fullName: getDefaultPivotTableStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultPivotTableStyle(): PivotTableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)'
+    summary: 获取父对象范围的默认 SlicerStyle。
+    name: getDefaultSlicerStyle()
+    fullName: getDefaultSlicerStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultSlicerStyle(): SlicerStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)'
+    summary: 获取父对象范围的默认 TableStyle。
+    name: getDefaultTableStyle()
+    fullName: getDefaultTableStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultTableStyle(): TableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TableStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getDefaultTimelineStyle:member(1)'
+    summary: 获取父对象范围的默认 TimelineStyle。
+    name: getDefaultTimelineStyle()
+    fullName: getDefaultTimelineStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultTimelineStyle(): TimelineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getFirstWorksheet:member(1)'
+    summary: 获取集合中的第一个工作表。
+    name: getFirstWorksheet(visibleOnly)
+    fullName: getFirstWorksheet(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)'
+    summary: 指定自上次保存工作簿后是否进行了更改。 如果要关闭修改过的工作簿而不保存或提示保存它，则可以将该属性设置为 true。
+    name: getIsDirty()
+    fullName: getIsDirty()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsDirty(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getLastWorksheet:member(1)'
+    summary: 获取集合中的最后一个工作表。
+    name: getLastWorksheet(visibleOnly)
+    fullName: getLastWorksheet(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#getName:member(1)'
+    summary: 获取工作簿名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)'
+    summary: 使用其名称获取 NamedItem 对象。 如果没有 NamedItem 对象，将返回 NULL 对象。
+    name: getNamedItem(name)
+    fullName: getNamedItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNamedItem(name: string): NamedItem | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getNamedItem~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: Nameditem 名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getNames:member(1)'
+    summary: 表示工作簿范围内的已命名项目（称为区域和常量）的集合。
+    name: getNames()
+    fullName: getNames()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNames(): NamedItem[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getNames~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)'
+    summary: 按 PivotTable 对象的名称获取此对象。 如果没有 PivotTable 对象，将返回 NULL 对象。
+    name: getPivotTable(name)
+    fullName: getPivotTable(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTable(name: string): PivotTable | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPivotTable~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的数据透视表的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTables:member(1)'
+    summary: 表示一组与 workbook 相关联的 PivotTable 对象。
+    name: getPivotTables()
+    fullName: getPivotTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTables(): PivotTable[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPivotTables~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)'
+    summary: 按名称获取 PivotTableStyle。 如果没有 PivotTableStyle，将返回 null 对象。
+    name: getPivotTableStyle(name)
+    fullName: getPivotTableStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTableStyle(name: string): PivotTableStyle | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 PivotTableStyle 的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles:member(1)'
+    summary: 表示一组与工作簿相关联的 PivotTableStyles。
+    name: getPivotTableStyles()
+    fullName: getPivotTableStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTableStyles(): PivotTableStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)'
+    summary: 按名称获取样式。
+    name: getPredefinedCellStyle(name)
+    fullName: getPredefinedCellStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPredefinedCellStyle(name: string): PredefinedCellStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的样式的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles:member(1)'
+    summary: 表示与工作簿关联的样式的集合。
+    name: getPredefinedCellStyles()
+    fullName: getPredefinedCellStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPredefinedCellStyles(): PredefinedCellStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)'
+    summary: 指定是否曾在本地或联机保存工作簿。
+    name: getPreviouslySaved()
+    fullName: getPreviouslySaved()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPreviouslySaved(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getProperties:member(1)'
+    summary: 获取工作簿属性。
+    name: getProperties()
+    fullName: getProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProperties(): DocumentProperties;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DocumentProperties:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getProtection:member(1)'
+    summary: 返回工作簿的保护对象。
+    name: getProtection()
+    fullName: getProtection()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtection(): WorkbookProtection;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookProtection:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)'
+    summary: 如果在只读模式下打开工作簿，则为 True。
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)'
+    summary: 从工作簿中获取当前选定的单个区域。 如果选择了多个区域，则此方法将引发错误。
+    name: getSelectedRange()
+    fullName: getSelectedRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)'
+    summary: 从工作簿中获取当前选定的一个或多个区域。 与 getSelectedRange() 不同，此方法返回表示所有选定区域的 RangeAreas 对象。
+    name: getSelectedRanges()
+    fullName: getSelectedRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRanges(): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSetting:member(1)'
+    summary: 按键获取 Setting 项。 如果没有 Setting 项，将返回 NULL 对象。
+    name: getSetting(key)
+    fullName: getSetting(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSetting(key: string): Setting | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSetting~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 设置的键。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSettings:member(1)'
+    summary: 表示一组与 workbook 相关联的 setting 对象。
+    name: getSettings()
+    fullName: getSettings()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSettings(): Setting[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSettings~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicer:member(1)'
+    summary: 使用其名称或 ID 获取切片器。如果没有切片器项，将返回 null 对象。
+    name: getSlicer(key)
+    fullName: getSlicer(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicer(key: string): Slicer | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSlicer~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的切片器的名称或 Id。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicers:member(1)'
+    summary: 表示与工作簿关联的切片器集合。
+    name: getSlicers()
+    fullName: getSlicers()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicers(): Slicer[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSlicers~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)'
+    summary: 按名称获取 SlicerStyle。 如果没有 SlicerStyle，将返回 null 对象。
+    name: getSlicerStyle(name)
+    fullName: getSlicerStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicerStyle(name: string): SlicerStyle | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSlicerStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 SlicerStyle 的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyles:member(1)'
+    summary: 表示一组与工作簿相关联的 SlicerStyles。
+    name: getSlicerStyles()
+    fullName: getSlicerStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSlicerStyles(): SlicerStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getSlicerStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTable:member(1)'
+    summary: 按名称或 ID 获取表。 如果没有表，将返回 NULL 对象。
+    name: getTable(key)
+    fullName: getTable(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTable(key: string): Table | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTable~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的表的名称或 ID。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTables:member(1)'
+    summary: 表示与工作簿关联的表的集合。
+    name: getTables()
+    fullName: getTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(): Table[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTables~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)'
+    summary: 按名称获取 TableStyle。 如果没有 TableStyle，将返回 null 对象。
+    name: getTableStyle(name)
+    fullName: getTableStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTableStyle(name: string): TableStyle | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTableStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 TableStyle 的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyles:member(1)'
+    summary: 表示一组与工作簿相关联的 TableStyles。
+    name: getTableStyles()
+    fullName: getTableStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTableStyles(): TableStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTableStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)'
+    summary: 按名称获取 TimelineStyle。 如果没有 TimelineStyle，将返回 null 对象。
+    name: getTimelineStyle(name)
+    fullName: getTimelineStyle(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTimelineStyle(name: string): TimelineStyle | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTimelineStyle~0:complex'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 TimelineStyle 的名称。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyles:member(1)'
+    summary: 表示一组与工作簿相关联的 TimelineStyles。
+    name: getTimelineStyles()
+    fullName: getTimelineStyles()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTimelineStyles(): TimelineStyle[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getTimelineStyles~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)'
+    summary: 如果此工作簿中的计算仅使用显示的数字精度来完成，则为 True。 将此属性从 false 切换到 true 时，数据将永久丢失精度。
+    name: getUsePrecisionAsDisplayed()
+    fullName: getUsePrecisionAsDisplayed()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsePrecisionAsDisplayed(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)'
+    summary: 按 Worksheet 对象的名称或 ID 获取此对象。 如果没有 Worksheet 对象，将返回 NULL 对象。
+    name: getWorksheet(key)
+    fullName: getWorksheet(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheet(key: string): Worksheet | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getWorksheet~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 工作表的名称或 ID。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheets:member(1)'
+    summary: 表示与工作簿关联的工作表的集合。
+    name: getWorksheets()
+    fullName: getWorksheets()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWorksheets(): Worksheet[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Workbook#getWorksheets~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)'
+    summary: 刷新所有数据连接。
+    name: refreshAllDataConnections()
+    fullName: refreshAllDataConnections()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAllDataConnections(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)'
+    summary: 刷新集合中的所有数据透视表。
+    name: refreshAllPivotTables()
+    fullName: refreshAllPivotTables()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAllPivotTables(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)'
+    summary: 如果工作簿中的所有图表都跟踪它们所附加的实际数据点，则为 True。 假如果图表跟踪数据点的索引。
+    name: setChartDataPointTrack(chartDataPointTrack)
+    fullName: setChartDataPointTrack(chartDataPointTrack)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setChartDataPointTrack(chartDataPointTrack: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: chartDataPointTrack
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)'
+    summary: 设置在父对象范围内使用的默认 PivotTableStyle。
+    name: setDefaultPivotTableStyle(newDefaultStyle)
+    fullName: setDefaultPivotTableStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setDefaultPivotTableStyle(
+                    newDefaultStyle: PivotTableStyle | string
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 应为新的默认值的 PivotTableStyle 对象的 PivotTableStyle 对象或名称。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)'
+    summary: 设置在父对象范围内使用的默认 SlicerStyle。
+    name: setDefaultSlicerStyle(newDefaultStyle)
+    fullName: setDefaultSlicerStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultSlicerStyle(newDefaultStyle: SlicerStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 应为新的默认值的 SlicerStyle 对象的 SlicerStyle 对象或名称。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle:member(1)'
+    summary: 设置在父对象范围内使用的默认 TableStyle。
+    name: setDefaultTableStyle(newDefaultStyle)
+    fullName: setDefaultTableStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultTableStyle(newDefaultStyle: TableStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 应为新的默认值的 TableStyle 对象的 TableStyle 对象或名称。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)'
+    summary: 设置在父对象范围内使用的默认 TimelineStyle。
+    name: setDefaultTimelineStyle(newDefaultStyle)
+    fullName: setDefaultTimelineStyle(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefaultTimelineStyle(newDefaultStyle: TimelineStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: 应为新的默认值的 TimelineStyle 对象的 TimelineStyle 对象或名称。
+          type:
+            - 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)'
+    summary: 指定自上次保存工作簿后是否进行了更改。 如果要关闭修改过的工作簿而不保存或提示保存它，则可以将该属性设置为 true。
+    name: setIsDirty(isDirty)
+    fullName: setIsDirty(isDirty)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIsDirty(isDirty: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isDirty
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)'
+    summary: 如果此工作簿中的计算仅使用显示的数字精度来完成，则为 True。 将此属性从 false 切换到 true 时，数据将永久丢失精度。
+    name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
+    fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUsePrecisionAsDisplayed(usePrecisionAsDisplayed: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: usePrecisionAsDisplayed
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.Binding:interface'
+    name: Binding
+    fullName: ExcelScript.Binding
+  - uid: 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.BindingType:enum'
+    name: BindingType
+    fullName: ExcelScript.BindingType
+  - uid: 'ExcelScript!ExcelScript.Comment:interface'
+    name: Comment
+    fullName: ExcelScript.Comment
+  - uid: 'ExcelScript!ExcelScript.Workbook#addComment~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
+    name: CommentRichContent | string
+    fullName: ExcelScript.CommentRichContent | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
+        name: CommentRichContent
+        fullName: ExcelScript.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.ContentType:enum'
+    name: ContentType
+    fullName: ExcelScript.ContentType
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+    name: CustomXmlPart
+    fullName: ExcelScript.CustomXmlPart
+  - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+    name: NamedItem
+    fullName: ExcelScript.NamedItem
+  - uid: 'ExcelScript!ExcelScript.Workbook#addNamedItem~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+    name: PivotTable
+    fullName: ExcelScript.PivotTable
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable~0:complex'
+    name: Range | string | Table
+    fullName: ExcelScript.Range | string | ExcelScript.Table
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string | '
+        fullName: ' | string | '
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+  - uid: 'ExcelScript!ExcelScript.Workbook#addPivotTable~1:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
+                  
+  - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+    name: PivotTableStyle
+    fullName: ExcelScript.PivotTableStyle
+  - uid: 'ExcelScript!ExcelScript.Setting:interface'
+    name: Setting
+    fullName: ExcelScript.Setting
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSetting~0:complex'
+    name: string | number | boolean | Date | Array<any> | any
+    fullName: string | number | boolean | Date | Array<any> | any
+    spec.typeScript:
+      - name: 'string | number | boolean | '
+        fullName: 'string | number | boolean | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: |-
+          <any> | any
+                  
+        fullName: |-
+          <any> | any
+                  
+  - uid: 'ExcelScript!ExcelScript.Slicer:interface'
+    name: Slicer
+    fullName: ExcelScript.Slicer
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~0:complex'
+    name: string | PivotTable | Table
+    fullName: string | ExcelScript.PivotTable | ExcelScript.Table
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~1:complex'
+    name: string | PivotField | number | TableColumn
+    fullName: string | ExcelScript.PivotField | number | ExcelScript.TableColumn
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+        name: PivotField
+        fullName: ExcelScript.PivotField
+      - name: ' | number | '
+        fullName: ' | number | '
+      - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
+        name: TableColumn
+        fullName: ExcelScript.TableColumn
+  - uid: 'ExcelScript!ExcelScript.Workbook#addSlicer~2:complex'
+    name: string | Worksheet
+    fullName: string | ExcelScript.Worksheet
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+  - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+    name: SlicerStyle
+    fullName: ExcelScript.SlicerStyle
+  - uid: 'ExcelScript!ExcelScript.Table:interface'
+    name: Table
+    fullName: ExcelScript.Table
+  - uid: 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+    name: TableStyle
+    fullName: ExcelScript.TableStyle
+  - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+    name: TimelineStyle
+    fullName: ExcelScript.TimelineStyle
+  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+    name: Worksheet
+    fullName: ExcelScript.Worksheet
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.Chart:interface'
+    name: Chart
+    fullName: ExcelScript.Chart
+  - uid: 'ExcelScript!ExcelScript.Application:interface'
+    name: Application
+    fullName: ExcelScript.Application
+  - uid: 'ExcelScript!ExcelScript.Workbook#getBinding~0:complex'
+    name: Binding | undefined
+    fullName: ExcelScript.Binding | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Binding:interface'
+        name: Binding
+        fullName: ExcelScript.Binding
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getBindings~0:complex'
+    name: 'Binding[]'
+    fullName: 'ExcelScript.Binding[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Binding:interface'
+        name: Binding
+        fullName: ExcelScript.Binding
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCommentByCell~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getComments~0:complex'
+    name: 'Comment[]'
+    fullName: 'ExcelScript.Comment[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Comment:interface'
+        name: Comment
+        fullName: ExcelScript.Comment
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlPart~0:complex'
+    name: CustomXmlPart | undefined
+    fullName: ExcelScript.CustomXmlPart | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+        name: CustomXmlPart
+        fullName: ExcelScript.CustomXmlPart
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getCustomXmlParts~0:complex'
+    name: 'CustomXmlPart[]'
+    fullName: 'ExcelScript.CustomXmlPart[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+        name: CustomXmlPart
+        fullName: ExcelScript.CustomXmlPart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getNamedItem~0:complex'
+    name: NamedItem | undefined
+    fullName: ExcelScript.NamedItem | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+        name: NamedItem
+        fullName: ExcelScript.NamedItem
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getNames~0:complex'
+    name: 'NamedItem[]'
+    fullName: 'ExcelScript.NamedItem[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
+        name: NamedItem
+        fullName: ExcelScript.NamedItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTable~0:complex'
+    name: PivotTable | undefined
+    fullName: ExcelScript.PivotTable | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTables~0:complex'
+    name: 'PivotTable[]'
+    fullName: 'ExcelScript.PivotTable[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyle~0:complex'
+    name: PivotTableStyle | undefined
+    fullName: ExcelScript.PivotTableStyle | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPivotTableStyles~0:complex'
+    name: 'PivotTableStyle[]'
+    fullName: 'ExcelScript.PivotTableStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
+    name: PredefinedCellStyle
+    fullName: ExcelScript.PredefinedCellStyle
+  - uid: 'ExcelScript!ExcelScript.Workbook#getPredefinedCellStyles~0:complex'
+    name: 'PredefinedCellStyle[]'
+    fullName: 'ExcelScript.PredefinedCellStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
+        name: PredefinedCellStyle
+        fullName: ExcelScript.PredefinedCellStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties:interface'
+    name: DocumentProperties
+    fullName: ExcelScript.DocumentProperties
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
+    name: WorkbookProtection
+    fullName: ExcelScript.WorkbookProtection
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+    fullName: ExcelScript.RangeAreas
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSetting~0:complex'
+    name: Setting | undefined
+    fullName: ExcelScript.Setting | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Setting:interface'
+        name: Setting
+        fullName: ExcelScript.Setting
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSettings~0:complex'
+    name: 'Setting[]'
+    fullName: 'ExcelScript.Setting[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Setting:interface'
+        name: Setting
+        fullName: ExcelScript.Setting
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicer~0:complex'
+    name: Slicer | undefined
+    fullName: ExcelScript.Slicer | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Slicer:interface'
+        name: Slicer
+        fullName: ExcelScript.Slicer
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicers~0:complex'
+    name: 'Slicer[]'
+    fullName: 'ExcelScript.Slicer[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Slicer:interface'
+        name: Slicer
+        fullName: ExcelScript.Slicer
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyle~0:complex'
+    name: SlicerStyle | undefined
+    fullName: ExcelScript.SlicerStyle | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getSlicerStyles~0:complex'
+    name: 'SlicerStyle[]'
+    fullName: 'ExcelScript.SlicerStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTable~0:complex'
+    name: Table | undefined
+    fullName: ExcelScript.Table | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTables~0:complex'
+    name: 'Table[]'
+    fullName: 'ExcelScript.Table[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyle~0:complex'
+    name: TableStyle | undefined
+    fullName: ExcelScript.TableStyle | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTableStyles~0:complex'
+    name: 'TableStyle[]'
+    fullName: 'ExcelScript.TableStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyle~0:complex'
+    name: TimelineStyle | undefined
+    fullName: ExcelScript.TimelineStyle | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getTimelineStyles~0:complex'
+    name: 'TimelineStyle[]'
+    fullName: 'ExcelScript.TimelineStyle[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheet~0:complex'
+    name: Worksheet | undefined
+    fullName: ExcelScript.Worksheet | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: ' | undefined'
+        fullName: ' | undefined'
+  - uid: 'ExcelScript!ExcelScript.Workbook#getWorksheets~0:complex'
+    name: 'Worksheet[]'
+    fullName: 'ExcelScript.Worksheet[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
+        name: Worksheet
+        fullName: ExcelScript.Worksheet
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle~0:complex'
+    name: PivotTableStyle | string
+    fullName: ExcelScript.PivotTableStyle | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: ExcelScript.PivotTableStyle
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string
+                  
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle~0:complex'
+    name: SlicerStyle | string
+    fullName: ExcelScript.SlicerStyle | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: ExcelScript.SlicerStyle
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTableStyle~0:complex'
+    name: TableStyle | string
+    fullName: ExcelScript.TableStyle | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+        name: TableStyle
+        fullName: ExcelScript.TableStyle
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle~0:complex'
+    name: TimelineStyle | string
+    fullName: ExcelScript.TimelineStyle | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
+        name: TimelineStyle
+        fullName: ExcelScript.TimelineStyle
+      - name: ' | string'
+        fullName: ' | string'

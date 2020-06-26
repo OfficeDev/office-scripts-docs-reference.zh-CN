@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAreaFormat:interface'
+    summary: 封装整个图表区域的格式属性。
+    name: Excel.ChartAreaFormat
+    fullName: Excel.ChartAreaFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAreaFormat#border:member'
+      - 'excel!Excel.ChartAreaFormat#colorScheme:member'
+      - 'excel!Excel.ChartAreaFormat#fill:member'
+      - 'excel!Excel.ChartAreaFormat#font:member'
+      - 'excel!Excel.ChartAreaFormat#load:member(1)'
+      - 'excel!Excel.ChartAreaFormat#roundedCorners:member'
+  - uid: 'excel!Excel.ChartAreaFormat#border:member'
+    summary: 代表图表区域的边框格式，包括颜色、linestyle 和粗细。
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:interface'
+  - uid: 'excel!Excel.ChartAreaFormat#colorScheme:member'
+    summary: 指定图表的配色方案。
+    name: colorScheme
+    fullName: colorScheme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'colorScheme: ChartColorScheme;'
+      return:
+        type:
+          - 'excel!Excel.ChartColorScheme:enum'
+  - uid: 'excel!Excel.ChartAreaFormat#fill:member'
+    summary: 表示对象的填充格式，包括背景格式信息。
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartAreaFormat#font:member'
+    summary: 表示当前对象的字体属性（字体名称、字体大小、颜色等）。
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartAreaFormat#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAreaFormat#roundedCorners:member'
+    summary: 指定图表的图表区是否有圆角。
+    name: roundedCorners
+    fullName: roundedCorners
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roundedCorners: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartBorder:interface'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.ChartColorScheme:enum'
+    name: ChartColorScheme
+    fullName: Excel.ChartColorScheme
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont

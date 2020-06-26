@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotHierarchy:interface'
+    summary: 表示 Excel PivotHierarchy。
+    name: Excel.PivotHierarchy
+    fullName: Excel.PivotHierarchy
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotHierarchy#fields:member'
+      - 'excel!Excel.PivotHierarchy#id:member'
+      - 'excel!Excel.PivotHierarchy#load:member(1)'
+      - 'excel!Excel.PivotHierarchy#name:member'
+  - uid: 'excel!Excel.PivotHierarchy#fields:member'
+    summary: 返回与 PivotHierarchy 相关联的 PivotFields。
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fields: PivotFieldCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotFieldCollection:interface'
+  - uid: 'excel!Excel.PivotHierarchy#id:member'
+    summary: PivotHierarchy 的 ID。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotHierarchy#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotHierarchy#name:member'
+    summary: PivotHierarchy 的名称。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.PivotFieldCollection:interface'
+    name: PivotFieldCollection
+    fullName: Excel.PivotFieldCollection

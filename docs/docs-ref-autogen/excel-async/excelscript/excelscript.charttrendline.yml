@@ -1,0 +1,217 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendline:interface'
+    summary: 此对象表示图表趋势线对象的属性。
+    name: Excel.ChartTrendline
+    fullName: Excel.ChartTrendline
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendline#backwardPeriod:member'
+      - 'excel!Excel.ChartTrendline#delete:member(1)'
+      - 'excel!Excel.ChartTrendline#format:member'
+      - 'excel!Excel.ChartTrendline#forwardPeriod:member'
+      - 'excel!Excel.ChartTrendline#intercept:member'
+      - 'excel!Excel.ChartTrendline#label:member'
+      - 'excel!Excel.ChartTrendline#load:member(1)'
+      - 'excel!Excel.ChartTrendline#movingAveragePeriod:member'
+      - 'excel!Excel.ChartTrendline#name:member'
+      - 'excel!Excel.ChartTrendline#polynomialOrder:member'
+      - 'excel!Excel.ChartTrendline#showEquation:member'
+      - 'excel!Excel.ChartTrendline#showRSquared:member'
+      - 'excel!Excel.ChartTrendline#type:member'
+  - uid: 'excel!Excel.ChartTrendline#backwardPeriod:member'
+    summary: 表示趋势线向后延伸的周期数。
+    name: backwardPeriod
+    fullName: backwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'backwardPeriod: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendline#delete:member(1)'
+    summary: 删除 Trendline 对象。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ChartTrendline#format:member'
+    summary: 表示图表趋势线的格式。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartTrendlineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineFormat:interface'
+  - uid: 'excel!Excel.ChartTrendline#forwardPeriod:member'
+    summary: 表示趋势线向前延伸的周期数。
+    name: forwardPeriod
+    fullName: forwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forwardPeriod: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendline#intercept:member'
+    summary: 表示趋势线的截距值。 可以设置为数字值或空字符串（对于自动值）。 返回的值始终为数字。
+    name: intercept
+    fullName: intercept
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'intercept: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ChartTrendline#label:member'
+    summary: 表示图表趋势线的标签。
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly label: ChartTrendlineLabel;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineLabel:interface'
+  - uid: 'excel!Excel.ChartTrendline#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartTrendline#movingAveragePeriod:member'
+    summary: 表示图表趋势线的周期。 仅适用于 MovingAverage 类型的趋势线。
+    name: movingAveragePeriod
+    fullName: movingAveragePeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'movingAveragePeriod: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendline#name:member'
+    summary: 表示趋势线的名称。 可设为字符串值，或者设为 Null 值（表示自动值）。 返回的值始终为字符串
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendline#polynomialOrder:member'
+    summary: 表示图表趋势线的顺序。 仅适用于具有多项式类型的趋势线。
+    name: polynomialOrder
+    fullName: polynomialOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'polynomialOrder: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendline#showEquation:member'
+    summary: 如果图表上显示趋势线公式，则为 True。
+    name: showEquation
+    fullName: showEquation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showEquation: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendline#showRSquared:member'
+    summary: 如果图表上显示趋势线的 R 平方值，则为 True。
+    name: showRSquared
+    fullName: showRSquared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRSquared: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendline#type:member'
+    summary: 表示图表趋势线的类型。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ChartTrendlineType;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineType:enum'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              let seriesCollection = sheet.charts.getItemAt(0).series;
+
+              // Get the trendline for series 1 and load its type property.  
+              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+              trendline.load("type");
+
+              await context.sync();
+
+              console.log("The trendline type is:" + trendline.type);  
+          }
+          ```
+references:
+  - uid: 'excel!Excel.ChartTrendlineFormat:interface'
+    name: ChartTrendlineFormat
+    fullName: Excel.ChartTrendlineFormat
+  - uid: 'excel!Excel.ChartTrendlineLabel:interface'
+    name: ChartTrendlineLabel
+    fullName: Excel.ChartTrendlineLabel
+  - uid: 'excel!Excel.ChartTrendlineType:enum'
+    name: ChartTrendlineType
+    fullName: Excel.ChartTrendlineType

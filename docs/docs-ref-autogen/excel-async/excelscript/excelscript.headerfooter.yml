@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.HeaderFooter:interface'
+    name: Excel.HeaderFooter
+    fullName: Excel.HeaderFooter
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.HeaderFooter#centerFooter:member'
+      - 'excel!Excel.HeaderFooter#centerHeader:member'
+      - 'excel!Excel.HeaderFooter#leftFooter:member'
+      - 'excel!Excel.HeaderFooter#leftHeader:member'
+      - 'excel!Excel.HeaderFooter#load:member(1)'
+      - 'excel!Excel.HeaderFooter#rightFooter:member'
+      - 'excel!Excel.HeaderFooter#rightHeader:member'
+  - uid: 'excel!Excel.HeaderFooter#centerFooter:member'
+    summary: '工作表的中心页脚。 若要应用字体格式或插入变量值，请使用此处指定的格式代码： https://msdn.microsoft.com/library/bb225426.aspx 。'
+    name: centerFooter
+    fullName: centerFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerFooter: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#centerHeader:member'
+    summary: '工作表的中间标头。 若要应用字体格式或插入变量值，请使用此处指定的格式代码： https://msdn.microsoft.com/library/bb225426.aspx 。'
+    name: centerHeader
+    fullName: centerHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerHeader: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#leftFooter:member'
+    summary: '工作表的左页脚。 若要应用字体格式或插入变量值，请使用此处指定的格式代码： https://msdn.microsoft.com/library/bb225426.aspx 。'
+    name: leftFooter
+    fullName: leftFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftFooter: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#leftHeader:member'
+    summary: '工作表的左页眉。 若要应用字体格式或插入变量值，请使用此处指定的格式代码： https://msdn.microsoft.com/library/bb225426.aspx 。'
+    name: leftHeader
+    fullName: leftHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftHeader: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.HeaderFooter#rightFooter:member'
+    summary: '工作表的右页脚。 若要应用字体格式或插入变量值，请使用此处指定的格式代码： https://msdn.microsoft.com/library/bb225426.aspx 。'
+    name: rightFooter
+    fullName: rightFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightFooter: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#rightHeader:member'
+    summary: '工作表的右侧标头。 若要应用字体格式或插入变量值，请使用此处指定的格式代码： https://msdn.microsoft.com/library/bb225426.aspx 。'
+    name: rightHeader
+    fullName: rightHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightHeader: string;'
+      return:
+        type:
+          - string

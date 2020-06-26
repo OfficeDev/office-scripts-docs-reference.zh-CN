@@ -1,0 +1,675 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxis:interface'
+    summary: 代表图表中的单个坐标轴。
+    name: Excel.ChartAxis
+    fullName: Excel.ChartAxis
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxis#alignment:member'
+      - 'excel!Excel.ChartAxis#axisGroup:member'
+      - 'excel!Excel.ChartAxis#baseTimeUnit:member'
+      - 'excel!Excel.ChartAxis#categoryType:member'
+      - 'excel!Excel.ChartAxis#customDisplayUnit:member'
+      - 'excel!Excel.ChartAxis#displayUnit:member'
+      - 'excel!Excel.ChartAxis#format:member'
+      - 'excel!Excel.ChartAxis#height:member'
+      - 'excel!Excel.ChartAxis#isBetweenCategories:member'
+      - 'excel!Excel.ChartAxis#left:member'
+      - 'excel!Excel.ChartAxis#linkNumberFormat:member'
+      - 'excel!Excel.ChartAxis#load:member(1)'
+      - 'excel!Excel.ChartAxis#logBase:member'
+      - 'excel!Excel.ChartAxis#majorGridlines:member'
+      - 'excel!Excel.ChartAxis#majorTickMark:member'
+      - 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
+      - 'excel!Excel.ChartAxis#majorUnit:member'
+      - 'excel!Excel.ChartAxis#maximum:member'
+      - 'excel!Excel.ChartAxis#minimum:member'
+      - 'excel!Excel.ChartAxis#minorGridlines:member'
+      - 'excel!Excel.ChartAxis#minorTickMark:member'
+      - 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
+      - 'excel!Excel.ChartAxis#minorUnit:member'
+      - 'excel!Excel.ChartAxis#multiLevel:member'
+      - 'excel!Excel.ChartAxis#numberFormat:member'
+      - 'excel!Excel.ChartAxis#offset:member'
+      - 'excel!Excel.ChartAxis#position:member'
+      - 'excel!Excel.ChartAxis#positionAt:member'
+      - 'excel!Excel.ChartAxis#reversePlotOrder:member'
+      - 'excel!Excel.ChartAxis#scaleType:member'
+      - 'excel!Excel.ChartAxis#setCategoryNames:member(1)'
+      - 'excel!Excel.ChartAxis#setCustomDisplayUnit:member(1)'
+      - 'excel!Excel.ChartAxis#setPositionAt:member(1)'
+      - 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
+      - 'excel!Excel.ChartAxis#textOrientation:member'
+      - 'excel!Excel.ChartAxis#tickLabelPosition:member'
+      - 'excel!Excel.ChartAxis#tickLabelSpacing:member'
+      - 'excel!Excel.ChartAxis#tickMarkSpacing:member'
+      - 'excel!Excel.ChartAxis#title:member'
+      - 'excel!Excel.ChartAxis#top:member'
+      - 'excel!Excel.ChartAxis#type:member'
+      - 'excel!Excel.ChartAxis#visible:member'
+      - 'excel!Excel.ChartAxis#width:member'
+  - uid: 'excel!Excel.ChartAxis#alignment:member'
+    summary: 指定指定轴刻度线标签的对齐方式。 有关详细信息，请参阅 ChartTextHorizontalAlignment。
+    name: alignment
+    fullName: alignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'alignment: ChartTickLabelAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ChartTickLabelAlignment:enum'
+  - uid: 'excel!Excel.ChartAxis#axisGroup:member'
+    summary: 为指定坐标轴指定组。 有关详细信息，请参阅 ChartAxisGroup。
+    name: axisGroup
+    fullName: axisGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly axisGroup: ChartAxisGroup;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisGroup:enum'
+  - uid: 'excel!Excel.ChartAxis#baseTimeUnit:member'
+    summary: 指定指定分类轴的基本单位。
+    name: baseTimeUnit
+    fullName: baseTimeUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'baseTimeUnit: ChartAxisTimeUnit;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTimeUnit:enum'
+  - uid: 'excel!Excel.ChartAxis#categoryType:member'
+    summary: 指定分类轴类型。
+    name: categoryType
+    fullName: categoryType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryType: ChartAxisCategoryType;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisCategoryType:enum'
+  - uid: 'excel!Excel.ChartAxis#customDisplayUnit:member'
+    summary: 指定自定义轴显示单位值。 要设置此属性，请使用 SetCustomDisplayUnit(double) 方法。
+    name: customDisplayUnit
+    fullName: customDisplayUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customDisplayUnit: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#displayUnit:member'
+    summary: 表示轴显示单位。 有关详细信息，请参阅 ChartAxisDisplayUnit。
+    name: displayUnit
+    fullName: displayUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayUnit: ChartAxisDisplayUnit;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisDisplayUnit:enum'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              let chart = sheet.charts.getItemAt(0);
+              let categoryAxis = chart.axes.categoryAxis;
+              let valueAxis = chart.axes.valueAxis;
+
+              // Load to get display unit.
+              valueAxis.load("displayUnit");
+
+              await context.sync();
+
+              console.log("The vertical axis display unit is: " + valueAxis.displayUnit);
+          }
+          ```
+  - uid: 'excel!Excel.ChartAxis#format:member'
+    summary: 表示 chart 对象的格式，包括线条和字体格式。
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartAxisFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisFormat:interface'
+  - uid: 'excel!Excel.ChartAxis#height:member'
+    summary: 指定图表坐标轴的高度（以磅为单位）。 如果轴不可见，则为 Null。
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#isBetweenCategories:member'
+    summary: 指定数值轴与分类轴相交于分类之间。
+    name: isBetweenCategories
+    fullName: isBetweenCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBetweenCategories: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartAxis#left:member'
+    summary: 指定从坐标轴的左边缘到图表区左侧的距离（以磅为单位）。 如果轴不可见，则为 Null。
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#linkNumberFormat:member'
+    summary: 指定数字格式是否链接到单元格。 如果为 true，则数字格式会在单元格中更改时在标签中更改。
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartAxis#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxis#logBase:member'
+    summary: 指定使用对数刻度时的对数的底数。
+    name: logBase
+    fullName: logBase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'logBase: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#majorGridlines:member'
+    summary: 返回一个表示指定坐标轴的主要网格线的网格线对象。
+    name: majorGridlines
+    fullName: majorGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly majorGridlines: ChartGridlines;'
+      return:
+        type:
+          - 'excel!Excel.ChartGridlines:interface'
+  - uid: 'excel!Excel.ChartAxis#majorTickMark:member'
+    summary: 指定坐标轴的主要刻度线的类型。 有关详细信息，请参阅 ChartAxisTickMark。
+    name: majorTickMark
+    fullName: majorTickMark
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorTickMark: ChartAxisTickMark;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTickMark:enum'
+  - uid: 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
+    summary: 当 CategoryType 属性设置为 "时间刻度" 时，指定分类轴的主要刻度单位刻度值。
+    name: majorTimeUnitScale
+    fullName: majorTimeUnitScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorTimeUnitScale: ChartAxisTimeUnit;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTimeUnit:enum'
+  - uid: 'excel!Excel.ChartAxis#majorUnit:member'
+    summary: 表示两个主要刻度标记之间的间隔。 可以设置为数字值或空字符串。 返回的值始终为数字。
+    name: majorUnit
+    fullName: majorUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorUnit: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#maximum:member'
+    summary: 表示数值轴上的最大值。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximum: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#minimum:member'
+    summary: 表示数值轴上的最小值。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minimum: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#minorGridlines:member'
+    summary: 返回一个表示指定坐标轴的次要网格线的网格线对象。
+    name: minorGridlines
+    fullName: minorGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly minorGridlines: ChartGridlines;'
+      return:
+        type:
+          - 'excel!Excel.ChartGridlines:interface'
+  - uid: 'excel!Excel.ChartAxis#minorTickMark:member'
+    summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 ChartAxisTickMark。
+    name: minorTickMark
+    fullName: minorTickMark
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorTickMark: ChartAxisTickMark;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTickMark:enum'
+  - uid: 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
+    summary: 当 CategoryType 属性设置为 "时间刻度" 时，指定分类轴的次要刻度单位刻度值。
+    name: minorTimeUnitScale
+    fullName: minorTimeUnitScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorTimeUnitScale: ChartAxisTimeUnit;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTimeUnit:enum'
+  - uid: 'excel!Excel.ChartAxis#minorUnit:member'
+    summary: 表示两个次要刻度标记之间的间隔。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    name: minorUnit
+    fullName: minorUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorUnit: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#multiLevel:member'
+    summary: 指定轴是否为多级。
+    name: multiLevel
+    fullName: multiLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'multiLevel: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartAxis#numberFormat:member'
+    summary: 指定轴刻度线标签的格式代码。
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartAxis#offset:member'
+    summary: 指定标签级别之间的距离以及第一层和轴线之间的距离。 此值应该是 0 到 1000 之间的整数。
+    name: offset
+    fullName: offset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'offset: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#position:member'
+    summary: 指定另一个轴交叉处的指定轴位置。 有关详细信息，请参阅 ChartAxisPosition。
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: ChartAxisPosition;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisPosition:enum'
+  - uid: 'excel!Excel.ChartAxis#positionAt:member'
+    summary: 指定另一坐标轴交叉处的指定轴位置。 应使用 SetPositionAt(double) 方法设置此属性。
+    name: positionAt
+    fullName: positionAt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly positionAt: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#reversePlotOrder:member'
+    summary: 指定 Excel 是否将数据点绘制为从最后一个到第一个。
+    name: reversePlotOrder
+    fullName: reversePlotOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'reversePlotOrder: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartAxis#scaleType:member'
+    summary: 指定数值轴的刻度类型。 有关详细信息，请参阅 ChartAxisScaleType。
+    name: scaleType
+    fullName: scaleType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'scaleType: ChartAxisScaleType;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisScaleType:enum'
+  - uid: 'excel!Excel.ChartAxis#setCategoryNames:member(1)'
+    summary: 设置指定轴的所有分类名称。
+    name: setCategoryNames(sourceData)
+    fullName: setCategoryNames(sourceData)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCategoryNames(sourceData: Range): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceData
+          description: 对应于源数据的 Range 对象。
+          type:
+            - 'excel!Excel.Range:interface'
+  - uid: 'excel!Excel.ChartAxis#setCustomDisplayUnit:member(1)'
+    summary: 将轴显示单位设为自定义值。
+    name: setCustomDisplayUnit(value)
+    fullName: setCustomDisplayUnit(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCustomDisplayUnit(value: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: 显示单位的自定义值。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartAxis#setPositionAt:member(1)'
+    summary: 设置另一个轴交叉处的指定轴位置。
+    name: setPositionAt(value)
+    fullName: setPositionAt(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPositionAt(value: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: 交叉处的自定义值
+          type:
+            - number
+  - uid: 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
+    summary: 指定轴显示单位标签是否可见。
+    name: showDisplayUnitLabel
+    fullName: showDisplayUnitLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showDisplayUnitLabel: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let chart = sheet.charts.getItemAt(0);
+              let axis = chart.axes.valueAxis;
+
+              // Remove display unit.
+              axis.showDisplayUnitLabel = false;
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ChartAxis#textOrientation:member'
+    summary: 指定文本面向图表轴刻度线标签的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#tickLabelPosition:member'
+    summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 ChartAxisTickLabelPosition。
+    name: tickLabelPosition
+    fullName: tickLabelPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickLabelPosition: ChartAxisTickLabelPosition;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTickLabelPosition:enum'
+  - uid: 'excel!Excel.ChartAxis#tickLabelSpacing:member'
+    summary: 指定分类或系列轴刻度线标签之间的数目。 可以是 1 到 31999 的值或空字符串（自动设置）。 返回的值始终为数字。
+    name: tickLabelSpacing
+    fullName: tickLabelSpacing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickLabelSpacing: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ChartAxis#tickMarkSpacing:member'
+    summary: 指定分类或刻度线之间的系列数。
+    name: tickMarkSpacing
+    fullName: tickMarkSpacing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickMarkSpacing: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#title:member'
+    summary: 表示坐标轴标题。
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly title: ChartAxisTitle;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitle:interface'
+  - uid: 'excel!Excel.ChartAxis#top:member'
+    summary: 指定从轴的上边缘到图表区域顶部的距离（以磅为单位）。 如果轴不可见，则为 Null。
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartAxis#type:member'
+    summary: 指定坐标轴类型。 有关详细信息，请参阅 ChartAxisType。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: ChartAxisType;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisType:enum'
+  - uid: 'excel!Excel.ChartAxis#visible:member'
+    summary: 指定轴是否可见。
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartAxis#width:member'
+    summary: 指定图表坐标轴的宽度（以磅为单位）。 如果轴不可见，则为 Null。
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartTickLabelAlignment:enum'
+    name: ChartTickLabelAlignment
+    fullName: Excel.ChartTickLabelAlignment
+  - uid: 'excel!Excel.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: Excel.ChartAxisGroup
+  - uid: 'excel!Excel.ChartAxisTimeUnit:enum'
+    name: ChartAxisTimeUnit
+    fullName: Excel.ChartAxisTimeUnit
+  - uid: 'excel!Excel.ChartAxisCategoryType:enum'
+    name: ChartAxisCategoryType
+    fullName: Excel.ChartAxisCategoryType
+  - uid: 'excel!Excel.ChartAxisDisplayUnit:enum'
+    name: ChartAxisDisplayUnit
+    fullName: Excel.ChartAxisDisplayUnit
+  - uid: 'excel!Excel.ChartAxisFormat:interface'
+    name: ChartAxisFormat
+    fullName: Excel.ChartAxisFormat
+  - uid: 'excel!Excel.ChartGridlines:interface'
+    name: ChartGridlines
+    fullName: Excel.ChartGridlines
+  - uid: 'excel!Excel.ChartAxisTickMark:enum'
+    name: ChartAxisTickMark
+    fullName: Excel.ChartAxisTickMark
+  - uid: 'excel!Excel.ChartAxisPosition:enum'
+    name: ChartAxisPosition
+    fullName: Excel.ChartAxisPosition
+  - uid: 'excel!Excel.ChartAxisScaleType:enum'
+    name: ChartAxisScaleType
+    fullName: Excel.ChartAxisScaleType
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.ChartAxisTickLabelPosition:enum'
+    name: ChartAxisTickLabelPosition
+    fullName: Excel.ChartAxisTickLabelPosition
+  - uid: 'excel!Excel.ChartAxisTitle:interface'
+    name: ChartAxisTitle
+    fullName: Excel.ChartAxisTitle
+  - uid: 'excel!Excel.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: Excel.ChartAxisType

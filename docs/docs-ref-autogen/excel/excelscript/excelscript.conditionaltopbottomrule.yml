@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
+    summary: 表示顶部/底部条件格式的规则。
+    name: ExcelScript.ConditionalTopBottomRule
+    fullName: ExcelScript.ConditionalTopBottomRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
+      - 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
+    summary: 1 和 1000 之间的数字排名或 1 和 100 之间的百分比排名。
+    name: rank
+    fullName: rank
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rank: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
+    summary: 根据顶部或底部排名设置值的格式。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ConditionalTopBottomCriterionType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum'
+    name: ConditionalTopBottomCriterionType
+    fullName: ExcelScript.ConditionalTopBottomCriterionType

@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomPropertyCollection:interface'
+    summary: 包含 customProperty 对象的集合。
+    name: Excel.CustomPropertyCollection
+    fullName: Excel.CustomPropertyCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomPropertyCollection#add:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#load:member(1)'
+  - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
+    summary: 新建自定义属性或设置现有自定义属性。
+    name: 'add(key, value)'
+    fullName: 'add(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(key: string, value: any): CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 必填。 自定义属性的键，它不区分大小写。 密钥限制为在 web 上的 Excel 之外的255个字符（较大的密钥会自动修整到其他平台上的255个字符）。
+          type:
+            - string
+        - id: value
+          description: 必填。 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符（更大的值会自动修整为其他平台上的255个字符）。
+          type:
+            - any
+  - uid: 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+    summary: 删除此集合中的所有自定义属性。
+    name: deleteAll()
+    fullName: deleteAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
+    summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则返回 null 对象。
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 必填。 标识自定义属性对象的键。
+          type:
+            - string
+  - uid: 'excel!Excel.CustomPropertyCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.CustomProperty:interface'
+    name: CustomProperty
+    fullName: Excel.CustomProperty

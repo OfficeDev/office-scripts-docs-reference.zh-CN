@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeBorder:interface'
+    summary: 代表对象的边框。
+    name: Excel.ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeBorder#color:member'
+      - 'excel!Excel.ConditionalRangeBorder#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
+      - 'excel!Excel.ConditionalRangeBorder#style:member'
+  - uid: 'excel!Excel.ConditionalRangeBorder#color:member'
+    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线颜色的 HTML 颜色代码。
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeBorder#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
+    summary: 指示边框的特定边的常量值。 有关详细信息，请参阅 ConditionalRangeBorderIndex。
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sideIndex: ConditionalRangeBorderIndex;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorder#style:member'
+    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 BorderLineStyle。
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: ConditionalRangeBorderLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
+references:
+  - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
+    name: ConditionalRangeBorderIndex
+    fullName: Excel.ConditionalRangeBorderIndex
+  - uid: 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
+    name: ConditionalRangeBorderLineStyle
+    fullName: Excel.ConditionalRangeBorderLineStyle

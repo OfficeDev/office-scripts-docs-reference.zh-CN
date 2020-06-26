@@ -1,0 +1,345 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeFont:interface'
+    summary: 此对象表示对象的字体属性（字体名称、字体大小、颜色等）。
+    name: ExcelScript.RangeFont
+    fullName: ExcelScript.RangeFont
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeFont#getBold:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getItalic:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getSize:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setBold:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setItalic:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setSize:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getBold:member(1)'
+    summary: 表示字体的加粗状态。
+    name: getBold()
+    fullName: getBold()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getColor:member(1)'
+    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getItalic:member(1)'
+    summary: 指定字体的斜体状态。
+    name: getItalic()
+    fullName: getItalic()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
+    summary: 字体名称（例如，"Calibri"）
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getSize:member(1)'
+    summary: 字号
+    name: getSize()
+    fullName: getSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)'
+    summary: 指定字体的删除线状态。 Null 值表示整个区域没有统一的删除线设置。
+    name: getStrikethrough()
+    fullName: getStrikethrough()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStrikethrough(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)'
+    summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal （既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    name: getSubscript()
+    fullName: getSubscript()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubscript(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)'
+    summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体为下标或普通（既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    name: getSuperscript()
+    fullName: getSuperscript()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSuperscript(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
+    summary: 指定将区域字体的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示整个区域没有统一的字体 tintAndShade 设置。
+    name: getTintAndShade()
+    fullName: getTintAndShade()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 RangeUnderlineStyle。
+    name: getUnderline()
+    fullName: getUnderline()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUnderline(): RangeUnderlineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setBold:member(1)'
+    summary: 表示字体的加粗状态。
+    name: setBold(bold)
+    fullName: setBold(bold)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bold
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setColor:member(1)'
+    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setItalic:member(1)'
+    summary: 指定字体的斜体状态。
+    name: setItalic(italic)
+    fullName: setItalic(italic)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: italic
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
+    summary: 字体名称（例如，"Calibri"）
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setSize:member(1)'
+    summary: 字号
+    name: setSize(size)
+    fullName: setSize(size)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSize(size: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: size
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)'
+    summary: 指定字体的删除线状态。 Null 值表示整个区域没有统一的删除线设置。
+    name: setStrikethrough(strikethrough)
+    fullName: setStrikethrough(strikethrough)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStrikethrough(strikethrough: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: strikethrough
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)'
+    summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal （既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    name: setSubscript(subscript)
+    fullName: setSubscript(subscript)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSubscript(subscript: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: subscript
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)'
+    summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体为下标或普通（既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    name: setSuperscript(superscript)
+    fullName: setSuperscript(superscript)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSuperscript(superscript: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: superscript
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
+    summary: 指定将区域字体的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示整个区域没有统一的字体 tintAndShade 设置。
+    name: setTintAndShade(tintAndShade)
+    fullName: setTintAndShade(tintAndShade)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 RangeUnderlineStyle。
+    name: setUnderline(underline)
+    fullName: setUnderline(underline)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUnderline(underline: RangeUnderlineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: underline
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.RangeUnderlineStyle:enum'
+    name: RangeUnderlineStyle
+    fullName: ExcelScript.RangeUnderlineStyle

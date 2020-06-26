@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerItem:interface'
+    summary: 表示切片器中的切片器项目。
+    name: Excel.SlicerItem
+    fullName: Excel.SlicerItem
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerItem#hasData:member'
+      - 'excel!Excel.SlicerItem#isSelected:member'
+      - 'excel!Excel.SlicerItem#key:member'
+      - 'excel!Excel.SlicerItem#load:member(1)'
+      - 'excel!Excel.SlicerItem#name:member'
+  - uid: 'excel!Excel.SlicerItem#hasData:member'
+    summary: 如果切片器项包含数据，则为 True。
+    name: hasData
+    fullName: hasData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hasData: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.SlicerItem#isSelected:member'
+    summary: 如果选择了切片器项，则为 True。 设置此值不会清除其他 SlicerItems 的选定状态。 默认情况下，如果仅选择了切片器项目，则取消选择该项目时，将会选择所有项目。
+    name: isSelected
+    fullName: isSelected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSelected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.SlicerItem#key:member'
+    summary: 表示代表切片器项的唯一值。
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.SlicerItem#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerItem#name:member'
+    summary: 代表 UI 中显示的标题。
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string

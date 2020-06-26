@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
+    summary: 基于当前系统区域性设置提供信息。 这包括区域性名称、数字格式和其他区域性相关设置。
+    name: ExcelScript.CultureInfo
+    fullName: ExcelScript.CultureInfo
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+      - 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+    summary: 以 languagecode2/regioncode2 格式获取区域性名称（例如，"zh-tw-cn" 或 "en-us"）。 这取决于当前的系统设置。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+    summary: 定义适当的区域性格式，以显示数字。 这取决于当前的系统区域性设置。
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): NumberFormatInfo;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+    name: NumberFormatInfo
+    fullName: ExcelScript.NumberFormatInfo

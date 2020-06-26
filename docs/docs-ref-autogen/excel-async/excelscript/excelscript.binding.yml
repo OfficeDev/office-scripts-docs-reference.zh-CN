@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Binding:interface'
+    summary: 表示工作簿中定义的 Office.js 绑定。
+    name: Excel.Binding
+    fullName: Excel.Binding
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Binding#delete:member(1)'
+      - 'excel!Excel.Binding#getRange:member(1)'
+      - 'excel!Excel.Binding#getTable:member(1)'
+      - 'excel!Excel.Binding#getText:member(1)'
+      - 'excel!Excel.Binding#id:member'
+      - 'excel!Excel.Binding#load:member(1)'
+      - 'excel!Excel.Binding#type:member'
+  - uid: 'excel!Excel.Binding#delete:member(1)'
+    summary: 删除 binding 对象。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Binding#getRange:member(1)'
+    summary: 返回绑定表示的区域。 如果绑定类型不正确，将引发错误。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.Binding#getTable:member(1)'
+    summary: 返回绑定表示的表。 如果绑定类型不正确，将引发错误。
+    name: getTable()
+    fullName: getTable()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTable(): Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:interface'
+        description: ''
+  - uid: 'excel!Excel.Binding#getText:member(1)'
+    summary: 返回绑定表示的文本。 如果绑定类型不正确，将引发错误。
+    name: getText()
+    fullName: getText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'excel!Excel.Binding#id:member'
+    summary: 表示绑定标识符。
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Binding#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Binding#type:member'
+    summary: 返回绑定的类型。 有关详细信息，请参阅 BindingType。
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: BindingType;'
+      return:
+        type:
+          - 'excel!Excel.BindingType:enum'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.Table:interface'
+    name: Table
+    fullName: Excel.Table
+  - uid: 'excel!Excel.BindingType:enum'
+    name: BindingType
+    fullName: Excel.BindingType

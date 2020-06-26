@@ -1,0 +1,772 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle:interface'
+    summary: 一个封装样式的格式和其他属性的对象。
+    name: ExcelScript.PredefinedCellStyle
+    fullName: ExcelScript.PredefinedCellStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getBuiltIn:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getFormulaHidden:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getIndentLevel:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getLocked:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getNumberFormatLocal:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getReadingOrder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getShrinkToFit:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#getWrapText:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setFormulaHidden:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setIndentLevel:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setLocked:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setNumberFormatLocal:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setReadingOrder:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setShrinkToFit:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.PredefinedCellStyle#setWrapText:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#delete:member(1)'
+    summary: 删除此样式。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)'
+    summary: 指定当单元格中文本的对齐方式设置为相等分布时，文本是否自动缩进。
+    name: getAutoIndent()
+    fullName: getAutoIndent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAutoIndent(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)'
+    summary: 四个 Border 对象的 Border 集合，表示四个边框的样式。
+    name: getBorders()
+    fullName: getBorders()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorders(): RangeBorder[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PredefinedCellStyle#getBorders~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getBuiltIn:member(1)'
+    summary: 指定样式是否为内置样式。
+    name: getBuiltIn()
+    fullName: getBuiltIn()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBuiltIn(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getFill:member(1)'
+    summary: 样式的填充。
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): RangeFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)'
+    summary: 该 Font 对象表示样式的字体。
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): RangeFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeFont:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getFormulaHidden:member(1)'
+    summary: 指定在工作表处于保护状态时是否隐藏公式。
+    name: getFormulaHidden()
+    fullName: getFormulaHidden()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulaHidden(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)'
+    summary: 表示样式水平对齐。 有关详细信息，请参阅 HorizontalAlignment。
+    name: getHorizontalAlignment()
+    fullName: getHorizontalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHorizontalAlignment(): HorizontalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)'
+    summary: 指定样式是否包括 AutoIndent、HorizontalAlignment、VerticalAlignment、WrapText、IndentLevel 和 TextOrientation 属性。
+    name: getIncludeAlignment()
+    fullName: getIncludeAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeAlignment(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)'
+    summary: 指定样式是否包含 Color、ColorIndex、LineStyle 和权数边框属性。
+    name: getIncludeBorder()
+    fullName: getIncludeBorder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeBorder(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)'
+    summary: 指定样式是否包括背景、粗体、颜色、ColorIndex、FontStyle、斜体、名称、大小、删除线、下标、上标和下划线字体属性。
+    name: getIncludeFont()
+    fullName: getIncludeFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeFont(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)'
+    summary: 指定样式是否包含 NumberFormat 属性。
+    name: getIncludeNumber()
+    fullName: getIncludeNumber()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeNumber(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)'
+    summary: 指定样式是否包含 Color、ColorIndex、InvertIfNegative、Pattern、PatternColor 和 PatternColorIndex 内部属性。
+    name: getIncludePatterns()
+    fullName: getIncludePatterns()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludePatterns(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)'
+    summary: 指定样式是否包含 FormulaHidden 和 Locked 保护属性。
+    name: getIncludeProtection()
+    fullName: getIncludeProtection()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIncludeProtection(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getIndentLevel:member(1)'
+    summary: 0 到 250 之间的一个整数，指示样式的缩进水平。
+    name: getIndentLevel()
+    fullName: getIndentLevel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIndentLevel(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getLocked:member(1)'
+    summary: 指定在工作表处于保护状态时是否锁定对象。
+    name: getLocked()
+    fullName: getLocked()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocked(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getName:member(1)'
+    summary: 样式的名称。
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getNumberFormat:member(1)'
+    summary: 样式中数字格式的格式代码。
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getNumberFormatLocal:member(1)'
+    summary: 样式中数字格式的本地化格式代码。
+    name: getNumberFormatLocal()
+    fullName: getNumberFormatLocal()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormatLocal(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorder:member(1)'
+    summary: 使用其名称获取 border 对象
+    name: getRangeBorder(index)
+    fullName: getRangeBorder(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 BorderIndex。
+          type:
+            - 'ExcelScript!ExcelScript.BorderIndex:enum'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)'
+    summary: 指定用于使区域边框的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示整个边框集合没有统一的 tintAndShade 设置。
+    name: getRangeBorderTintAndShade()
+    fullName: getRangeBorderTintAndShade()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeBorderTintAndShade(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getReadingOrder:member(1)'
+    summary: 样式中的阅读顺序。
+    name: getReadingOrder()
+    fullName: getReadingOrder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadingOrder(): ReadingOrder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ReadingOrder:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getShrinkToFit:member(1)'
+    summary: 指定文本是否自动收缩以显示可用列宽。
+    name: getShrinkToFit()
+    fullName: getShrinkToFit()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShrinkToFit(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getTextOrientation:member(1)'
+    summary: 此样式中的文本方向。
+    name: getTextOrientation()
+    fullName: getTextOrientation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)'
+    summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 VerticalAlignment。
+    name: getVerticalAlignment()
+    fullName: getVerticalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVerticalAlignment(): VerticalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.VerticalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getWrapText:member(1)'
+    summary: 指定 Excel 是否对对象中的文本进行换行。
+    name: getWrapText()
+    fullName: getWrapText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWrapText(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)'
+    summary: 指定当单元格中文本的对齐方式设置为相等分布时，文本是否自动缩进。
+    name: setAutoIndent(autoIndent)
+    fullName: setAutoIndent(autoIndent)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAutoIndent(autoIndent: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: autoIndent
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setFormulaHidden:member(1)'
+    summary: 指定在工作表处于保护状态时是否隐藏公式。
+    name: setFormulaHidden(formulaHidden)
+    fullName: setFormulaHidden(formulaHidden)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulaHidden(formulaHidden: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulaHidden
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)'
+    summary: 表示样式水平对齐。 有关详细信息，请参阅 HorizontalAlignment。
+    name: setHorizontalAlignment(horizontalAlignment)
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)'
+    summary: 指定样式是否包括 AutoIndent、HorizontalAlignment、VerticalAlignment、WrapText、IndentLevel 和 TextOrientation 属性。
+    name: setIncludeAlignment(includeAlignment)
+    fullName: setIncludeAlignment(includeAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeAlignment(includeAlignment: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeAlignment
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)'
+    summary: 指定样式是否包含 Color、ColorIndex、LineStyle 和权数边框属性。
+    name: setIncludeBorder(includeBorder)
+    fullName: setIncludeBorder(includeBorder)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeBorder(includeBorder: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeBorder
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)'
+    summary: 指定样式是否包括背景、粗体、颜色、ColorIndex、FontStyle、斜体、名称、大小、删除线、下标、上标和下划线字体属性。
+    name: setIncludeFont(includeFont)
+    fullName: setIncludeFont(includeFont)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeFont(includeFont: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeFont
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)'
+    summary: 指定样式是否包含 NumberFormat 属性。
+    name: setIncludeNumber(includeNumber)
+    fullName: setIncludeNumber(includeNumber)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeNumber(includeNumber: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeNumber
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)'
+    summary: 指定样式是否包含 Color、ColorIndex、InvertIfNegative、Pattern、PatternColor 和 PatternColorIndex 内部属性。
+    name: setIncludePatterns(includePatterns)
+    fullName: setIncludePatterns(includePatterns)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludePatterns(includePatterns: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includePatterns
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)'
+    summary: 指定样式是否包含 FormulaHidden 和 Locked 保护属性。
+    name: setIncludeProtection(includeProtection)
+    fullName: setIncludeProtection(includeProtection)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIncludeProtection(includeProtection: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: includeProtection
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setIndentLevel:member(1)'
+    summary: 0 到 250 之间的一个整数，指示样式的缩进水平。
+    name: setIndentLevel(indentLevel)
+    fullName: setIndentLevel(indentLevel)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIndentLevel(indentLevel: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: indentLevel
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setLocked:member(1)'
+    summary: 指定在工作表处于保护状态时是否锁定对象。
+    name: setLocked(locked)
+    fullName: setLocked(locked)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLocked(locked: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: locked
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setNumberFormat:member(1)'
+    summary: 样式中数字格式的格式代码。
+    name: setNumberFormat(numberFormat)
+    fullName: setNumberFormat(numberFormat)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormat
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setNumberFormatLocal:member(1)'
+    summary: 样式中数字格式的本地化格式代码。
+    name: setNumberFormatLocal(numberFormatLocal)
+    fullName: setNumberFormatLocal(numberFormatLocal)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: numberFormatLocal
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)'
+    summary: 指定用于使区域边框的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示整个边框集合没有统一的 tintAndShade 设置。
+    name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+    fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rangeBorderTintAndShade
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setReadingOrder:member(1)'
+    summary: 样式中的阅读顺序。
+    name: setReadingOrder(readingOrder)
+    fullName: setReadingOrder(readingOrder)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: readingOrder
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ReadingOrder:enum'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setShrinkToFit:member(1)'
+    summary: 指定文本是否自动收缩以显示可用列宽。
+    name: setShrinkToFit(shrinkToFit)
+    fullName: setShrinkToFit(shrinkToFit)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShrinkToFit(shrinkToFit: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: shrinkToFit
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setTextOrientation:member(1)'
+    summary: 此样式中的文本方向。
+    name: setTextOrientation(textOrientation)
+    fullName: setTextOrientation(textOrientation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: textOrientation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)'
+    summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 VerticalAlignment。
+    name: setVerticalAlignment(verticalAlignment)
+    fullName: setVerticalAlignment(verticalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.VerticalAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setWrapText:member(1)'
+    summary: 指定 Excel 是否对对象中的文本进行换行。
+    name: setWrapText(wrapText)
+    fullName: setWrapText(wrapText)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWrapText(wrapText: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: wrapText
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getBorders~0:complex'
+    name: 'RangeBorder[]'
+    fullName: 'ExcelScript.RangeBorder[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
+        name: RangeBorder
+        fullName: ExcelScript.RangeBorder
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.RangeFill:interface'
+    name: RangeFill
+    fullName: ExcelScript.RangeFill
+  - uid: 'ExcelScript!ExcelScript.RangeFont:interface'
+    name: RangeFont
+    fullName: ExcelScript.RangeFont
+  - uid: 'ExcelScript!ExcelScript.HorizontalAlignment:enum'
+    name: HorizontalAlignment
+    fullName: ExcelScript.HorizontalAlignment
+  - uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
+    name: RangeBorder
+    fullName: ExcelScript.RangeBorder
+  - uid: 'ExcelScript!ExcelScript.BorderIndex:enum'
+    name: BorderIndex
+    fullName: ExcelScript.BorderIndex
+  - uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
+    name: ReadingOrder
+    fullName: ExcelScript.ReadingOrder
+  - uid: 'ExcelScript!ExcelScript.VerticalAlignment:enum'
+    name: VerticalAlignment
+    fullName: ExcelScript.VerticalAlignment

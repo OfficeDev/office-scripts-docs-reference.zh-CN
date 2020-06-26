@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerCollection:interface'
+    summary: 代表工作簿或工作表上所有切片器对象的集合。
+    name: Excel.SlicerCollection
+    fullName: Excel.SlicerCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerCollection#add:member(1)'
+    summary: 将新切片器添加到工作簿。
+    name: 'add(slicerSource, sourceField, slicerDestination)'
+    fullName: 'add(slicerSource, sourceField, slicerDestination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    slicerSource: string | PivotTable | Table,
+                    sourceField: string | PivotField | number | TableColumn,
+                    slicerDestination?: string | Worksheet
+                ): Slicer;
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Pivot");
+              let slicer = sheet.slicers.add(
+                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
+                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
+              );
+              slicer.name = "Fruit Slicer";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: slicerSource
+          description: 新切片器将基于的数据源。 它可以是一个数据透视表对象、一个 Table 对象或一个字符串。 传递数据透视表对象时，数据源是数据透视表对象的源。 当传递 Table 对象时，数据源是 Table 对象。 传递字符串时，它被解释为数据透视表/表的名称/id。
+          type:
+            - 'excel!Excel.SlicerCollection#add~0:complex'
+        - id: sourceField
+          description: 要作为筛选依据的数据源中的字段。 它可以是一个透视字段对象、一个 TableColumn 对象、透视字段的 id 或 TableColumn 的 id/名称。
+          type:
+            - 'excel!Excel.SlicerCollection#add~1:complex'
+        - id: slicerDestination
+          description: 可选。 将在其中创建新切片器的工作表。 它可以是工作表对象或工作表的名称/id。 如果从工作表中检索切片器集合，则可以忽略此参数。
+          type:
+            - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+    summary: 使用其名称或 ID 获取切片器。如果没有切片器项，将返回 null 对象。
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的切片器的名称或 Id。
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Slicer:interface'
+    name: Slicer
+    fullName: Excel.Slicer
+  - uid: 'excel!Excel.SlicerCollection#add~0:complex'
+    name: string | PivotTable | Table
+    fullName: string | Excel.PivotTable | Excel.Table
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.PivotTable:interface'
+        name: PivotTable
+        fullName: Excel.PivotTable
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.Table:interface'
+        name: Table
+        fullName: Excel.Table
+  - uid: 'excel!Excel.SlicerCollection#add~1:complex'
+    name: string | PivotField | number | TableColumn
+    fullName: string | Excel.PivotField | number | Excel.TableColumn
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.PivotField:interface'
+        name: PivotField
+        fullName: Excel.PivotField
+      - name: ' | number | '
+        fullName: ' | number | '
+      - uid: 'excel!Excel.TableColumn:interface'
+        name: TableColumn
+        fullName: Excel.TableColumn
+  - uid: 'excel!Excel.SlicerCollection#add~2:complex'
+    name: string | Worksheet
+    fullName: string | Excel.Worksheet
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.Worksheet:interface'
+        name: Worksheet
+        fullName: Excel.Worksheet

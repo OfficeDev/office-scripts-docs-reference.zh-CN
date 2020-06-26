@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode:enum'
+    name: ExcelScript.ProtectionSelectionMode
+    fullName: ExcelScript.ProtectionSelectionMode
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ProtectionSelectionMode.none:member'
+      - 'ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member'
+      - 'ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member'
+  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.none:member'
+    summary: 不允许对所有单元格进行选择。
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member'
+    summary: 对所有单元格允许所选内容。
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member'
+    summary: 仅对未锁定的单元格允许所做的选择。
+    name: unlocked
+    fullName: unlocked
+    langs:
+      - typeScript
+    type: field
