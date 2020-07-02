@@ -10,6 +10,10 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#count:member'
+      - 'excel!Excel.ChartCollection#getCount:member(1)'
+      - 'excel!Excel.ChartCollection#getItem:member(1)'
+      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.ChartCollection#load:member(1)'
   - uid: 'excel!Excel.ChartCollection#add:member(1)'
@@ -43,6 +47,67 @@ items:
           description: 可选。 指定列或行在图表上用作数据系列的方式。 有关详细信息，请参阅 ChartSeriesBy。
           type:
             - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#count:member'
+    summary: 返回工作表中的图表数。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartCollection#getCount:member(1)'
+    summary: 返回工作表中的图表数。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
+    summary: 使用图表名称获取图表。 如果存在多个名称相同的图表，将返回第一个图表。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的图表的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
+    summary: 根据其在集合中的位置获取图表。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的对象的索引值。 从零开始编制索引。
+          type:
+            - number
   - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
     summary: 使用图表名称获取图表。 如果存在多个名称相同的图表，将返回第一个图表。 如果图表不存在，将返回一个 null 对象。
     name: getItemOrNullObject(name)

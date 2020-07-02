@@ -13,6 +13,7 @@ items:
       - 'excel!Excel.AutoFilter#clearCriteria:member(1)'
       - 'excel!Excel.AutoFilter#criteria:member'
       - 'excel!Excel.AutoFilter#enabled:member'
+      - 'excel!Excel.AutoFilter#getRange:member(1)'
       - 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
       - 'excel!Excel.AutoFilter#isDataFiltered:member'
       - 'excel!Excel.AutoFilter#load:member(1)'
@@ -100,6 +101,19 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.AutoFilter#getRange:member(1)'
+    summary: 返回 Range 对象，该对象表示“自动筛选”应用的区域。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
     summary: 返回 Range 对象，该对象表示“自动筛选”应用的区域。 如果没有与自动筛选器关联的 Range 对象，则此方法返回 null 对象。
     name: getRangeOrNullObject()

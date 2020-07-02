@@ -9,7 +9,40 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeViewCollection#getCount:member(1)'
+      - 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeViewCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeViewCollection#getCount:member(1)'
+    summary: 获取集合中 RangeView 对象的数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.RangeViewCollection#getItemAt:member(1)'
+    summary: 通过其索引获取 RangeView 行。 从零开始编制索引。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): RangeView;'
+      return:
+        type:
+          - 'excel!Excel.RangeView:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 可见行的索引。
+          type:
+            - number
   - uid: 'excel!Excel.RangeViewCollection#load:member(1)'
     summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
     name: load(propertyNames)
@@ -28,3 +61,7 @@ items:
           description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RangeView:interface'
+    name: RangeView
+    fullName: Excel.RangeView

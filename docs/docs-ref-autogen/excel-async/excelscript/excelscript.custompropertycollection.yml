@@ -11,6 +11,8 @@ items:
     children:
       - 'excel!Excel.CustomPropertyCollection#add:member(1)'
       - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
       - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.CustomPropertyCollection#load:member(1)'
   - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
@@ -28,11 +30,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: 必填。 自定义属性的键，它不区分大小写。 密钥限制为在 web 上的 Excel 之外的255个字符（较大的密钥会自动修整到其他平台上的255个字符）。
+          description: 必需。 自定义属性的键，它不区分大小写。 密钥限制为在 web 上的 Excel 之外的255个字符（较大的密钥会自动修整到其他平台上的255个字符）。
           type:
             - string
         - id: value
-          description: 必填。 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符（更大的值会自动修整为其他平台上的255个字符）。
+          description: 必需。 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符（更大的值会自动修整为其他平台上的255个字符）。
           type:
             - any
   - uid: 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
@@ -48,6 +50,37 @@ items:
         type:
           - void
         description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+    summary: 获取自定义属性的计数。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
+    summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则引发此异常。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 标识自定义属性对象的键。
+          type:
+            - string
   - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
     summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则返回 null 对象。
     name: getItemOrNullObject(key)
@@ -63,7 +96,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: 必填。 标识自定义属性对象的键。
+          description: 必需。 标识自定义属性对象的键。
           type:
             - string
   - uid: 'excel!Excel.CustomPropertyCollection#load:member(1)'

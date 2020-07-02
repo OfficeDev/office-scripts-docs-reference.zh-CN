@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ChartSeriesCollection#add:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#count:member'
+      - 'excel!Excel.ChartSeriesCollection#getCount:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartSeriesCollection#load:member(1)'
   - uid: 'excel!Excel.ChartSeriesCollection#add:member(1)'
     summary: 向集合添加新系列。 在设置值/x 轴值/气泡大小（具体取决于图表类型）之前，新添加的系列将不可见。
@@ -31,6 +34,49 @@ items:
             - string
         - id: index
           description: 可选。 要添加的系列的索引值。 从零开始编制索引。
+          type:
+            - number
+  - uid: 'excel!Excel.ChartSeriesCollection#count:member'
+    summary: 返回集合中的系列数量。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartSeriesCollection#getCount:member(1)'
+    summary: 返回集合中的系列数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
+    summary: 根据其在集合中的位置检索系列
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ChartSeries;'
+      return:
+        type:
+          - 'excel!Excel.ChartSeries:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的对象的索引值。 从零开始编制索引。
           type:
             - number
   - uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'

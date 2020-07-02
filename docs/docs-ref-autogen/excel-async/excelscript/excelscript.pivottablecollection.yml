@@ -10,6 +10,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PivotTableCollection#add:member(1)'
+      - 'excel!Excel.PivotTableCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableCollection#getItem:member(1)'
       - 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotTableCollection#load:member(1)'
       - 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
@@ -57,6 +59,37 @@ items:
           description: 数据透视表目标区域（工作表中用于放置所生成的报表的区域）左上角的单元格。
           type:
             - 'excel!Excel.PivotTableCollection#add~1:complex'
+  - uid: 'excel!Excel.PivotTableCollection#getCount:member(1)'
+    summary: 获取集合中的数据透视表的数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotTableCollection#getItem:member(1)'
+    summary: 按名称获取 PivotTable 对象。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的数据透视表的名称。
+          type:
+            - string
   - uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
     summary: 按 PivotTable 对象的名称获取此对象。 如果没有 PivotTable 对象，将返回 NULL 对象。
     name: getItemOrNullObject(name)

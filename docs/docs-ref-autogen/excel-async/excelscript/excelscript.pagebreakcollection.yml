@@ -9,6 +9,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PageBreakCollection#add:member(1)'
+      - 'excel!Excel.PageBreakCollection#getCount:member(1)'
+      - 'excel!Excel.PageBreakCollection#getItem:member(1)'
       - 'excel!Excel.PageBreakCollection#load:member(1)'
       - 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
   - uid: 'excel!Excel.PageBreakCollection#add:member(1)'
@@ -40,6 +42,37 @@ items:
           description: 紧跟在要添加的分页符之后的区域。
           type:
             - 'excel!Excel.PageBreakCollection#add~0:complex'
+  - uid: 'excel!Excel.PageBreakCollection#getCount:member(1)'
+    summary: 获取集合中的分页符数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PageBreakCollection#getItem:member(1)'
+    summary: 通过索引获取分页符对象。
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): PageBreak;'
+      return:
+        type:
+          - 'excel!Excel.PageBreak:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 分页符的索引。
+          type:
+            - number
   - uid: 'excel!Excel.PageBreakCollection#load:member(1)'
     summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
     name: load(propertyNames)

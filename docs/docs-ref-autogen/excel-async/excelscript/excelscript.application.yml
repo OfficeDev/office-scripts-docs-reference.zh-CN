@@ -17,6 +17,8 @@ items:
       - 'excel!Excel.Application#decimalSeparator:member'
       - 'excel!Excel.Application#iterativeCalculation:member'
       - 'excel!Excel.Application#load:member(1)'
+      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
       - 'excel!Excel.Application#thousandsSeparator:member'
       - 'excel!Excel.Application#useSystemSeparators:member'
   - uid: 'excel!Excel.Application#calculate:member(1)'
@@ -127,6 +129,35 @@ items:
           description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+    summary: 'Suspends calculation until the next "context.sync()" is called. Once set, it is the developer''s responsibility to re-calc the workbook, to ensure that any dependencies are propagated.'
+    name: suspendApiCalculationUntilNextSync()
+    fullName: suspendApiCalculationUntilNextSync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendApiCalculationUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
+    summary: |-
+      在调用下一步之前挂起屏幕更新 `context.sync()` 。
+
+      **注意**：请勿 `suspendScreenUpdatingUntilNextSync` 重复调用（如在循环中）。 重复调用将导致 Excel 窗口闪烁。
+    name: suspendScreenUpdatingUntilNextSync()
+    fullName: suspendScreenUpdatingUntilNextSync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendScreenUpdatingUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'excel!Excel.Application#thousandsSeparator:member'
     summary: 获取一个字符串，用于将数字值的小数位数与小数的左边隔开。 这是基于 Excel 的本地设置。
     name: thousandsSeparator

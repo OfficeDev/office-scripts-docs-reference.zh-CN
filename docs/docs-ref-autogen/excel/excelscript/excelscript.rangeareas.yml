@@ -33,6 +33,7 @@ items:
       - 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
+      - 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
@@ -431,6 +432,24 @@ items:
           description: 如果 cellType 为常量或公式，则此参数用于确定要在结果中包含哪些类型的单元格。 可以将这些值组合在一起，以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
           type:
             - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
+    summary: 返回与此 RangeAreas 对象中的任何区域重叠的限定范围的表格集合。
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): Table[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 如果为 true，则仅返回完全包含在区域边界内的表。 默认为 false。
+          type:
+            - boolean
   - uid: 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
     summary: 返回使用的 RangeAreas，它包含 RangeAreas 对象中的各个矩形区域的所有已用区域。 如果 RangeAreas 中没有已使用的单元格，则将返回 null 对象。
     name: getUsedRangeAreas(valuesOnly)
@@ -567,6 +586,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: ExcelScript.SpecialCellValueType
+  - uid: 'ExcelScript!ExcelScript.RangeAreas#getTables~0:complex'
+    name: 'Table[]'
+    fullName: 'ExcelScript.Table[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: '[]'
+        fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
     name: Worksheet
     fullName: ExcelScript.Worksheet

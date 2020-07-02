@@ -9,8 +9,42 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.GroupShapeCollection#_GetItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#getCount:member(1)'
       - 'excel!Excel.GroupShapeCollection#getItem:member(1)'
+      - 'excel!Excel.GroupShapeCollection#getItemAt:member(1)'
       - 'excel!Excel.GroupShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.GroupShapeCollection#_GetItem:member(1)'
+    summary: 返回由形状 id 标识的形状。
+    name: _GetItem(shapeId)
+    fullName: _GetItem(shapeId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '_GetItem(shapeId: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: shapeId
+          description: 形状的标识符。
+          type:
+            - string
+  - uid: 'excel!Excel.GroupShapeCollection#getCount:member(1)'
+    summary: 返回形状组中的形状数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.GroupShapeCollection#getItem:member(1)'
     summary: 按名称或 ID 获取形状。
     name: getItem(key)
@@ -29,6 +63,24 @@ items:
           description: 要检索的形状的名称或 ID。
           type:
             - string
+  - uid: 'excel!Excel.GroupShapeCollection#getItemAt:member(1)'
+    summary: 根据其在集合中的位置获取形状。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的对象的从零开始的索引值。
+          type:
+            - number
   - uid: 'excel!Excel.GroupShapeCollection#load:member(1)'
     summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
     name: load(propertyNames)
