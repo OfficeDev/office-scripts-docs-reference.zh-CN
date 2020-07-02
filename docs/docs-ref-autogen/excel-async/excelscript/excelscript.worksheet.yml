@@ -17,14 +17,18 @@ items:
       - 'excel!Excel.Worksheet#copy:member(1)'
       - 'excel!Excel.Worksheet#delete:member(1)'
       - 'excel!Excel.Worksheet#enableCalculation:member'
+      - 'excel!Excel.Worksheet#findAll:member(1)'
       - 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#freezePanes:member'
       - 'excel!Excel.Worksheet#getCell:member(1)'
+      - 'excel!Excel.Worksheet#getNext:member(1)'
       - 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#getPrevious:member(1)'
       - 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#getRange:member(1)'
       - 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
       - 'excel!Excel.Worksheet#getRanges:member(1)'
+      - 'excel!Excel.Worksheet#getUsedRange:member(1)'
       - 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#horizontalPageBreaks:member'
       - 'excel!Excel.Worksheet#id:member'
@@ -198,6 +202,28 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Worksheet#findAll:member(1)'
+    summary: 根据指定的条件查找给定字符串的所有匹配项，并将它们作为包含一个或多个矩形区域的 RangeAreas 对象返回。
+    name: 'findAll(text, criteria)'
+    fullName: 'findAll(text, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: text
+          description: 要查找的字符串。
+          type:
+            - string
+        - id: criteria
+          description: 其他搜索条件，包括搜索是否需要匹配整个单元格或是否区分大小写。
+          type:
+            - 'excel!Excel.WorksheetSearchCriteria:interface'
   - uid: 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
     summary: 根据指定的条件查找给定字符串的所有匹配项，并将它们作为包含一个或多个矩形区域的 RangeAreas 对象返回。
     name: 'findAllOrNullObject(text, criteria)'
@@ -279,6 +305,24 @@ items:
           description: 要检索的单元格的列号。 从零开始编制索引。
           type:
             - number
+  - uid: 'excel!Excel.Worksheet#getNext:member(1)'
+    summary: 获取此工作表的后面的工作表。 如果此方法后面没有任何工作表，则此方法将引发错误。
+    name: getNext(visibleOnly)
+    fullName: getNext(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNext(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+          type:
+            - boolean
   - uid: 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
     summary: 获取此工作表的后面的工作表。 如果此方法后面没有任何工作表，则此方法将返回一个 null 对象。
     name: getNextOrNullObject(visibleOnly)
@@ -288,6 +332,24 @@ items:
     type: method
     syntax:
       content: 'getNextOrNullObject(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+          type:
+            - boolean
+  - uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
+    summary: 获取此项之前的工作表。 如果没有以前的工作表，此方法将引发错误。
+    name: getPrevious(visibleOnly)
+    fullName: getPrevious(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
       return:
         type:
           - 'excel!Excel.Worksheet:interface'
@@ -401,6 +463,24 @@ items:
           description: 可选。 一个包含以逗号分隔的地址或各个区域的名称的字符串。 例如，"A1： B2，A5： B5"。 如果未指定，则返回整个工作表的 RangeArea 对象。
           type:
             - string
+  - uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
+    summary: 使用的区域是包含分配了值或格式化的任何单元格的最小区域。 如果整个工作表为空，则此函数将返回左上角单元格（即，它*不*会引发错误）。
+    name: getUsedRange(valuesOnly)
+    fullName: getUsedRange(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRange(valuesOnly?: boolean): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 可选。 如果为 true，则仅考虑值为已使用单元格的单元格（忽略格式设置）。
+          type:
+            - boolean
   - uid: 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
     summary: 'The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.'
     name: getUsedRangeOrNullObject(valuesOnly)

@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
       - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SlicerCollection#load:member(1)'
   - uid: 'excel!Excel.SlicerCollection#add:member(1)'
@@ -58,6 +61,55 @@ items:
           description: 可选。 将在其中创建新切片器的工作表。 它可以是工作表对象或工作表的名称/id。 如果从工作表中检索切片器集合，则可以忽略此参数。
           type:
             - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
+    summary: 返回集合中的切片器数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
+    summary: 使用其名称或 ID 获取 Slicer 对象。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 切片器的名称或 id。
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
+    summary: 根据其在集合中的位置获取切片器。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的对象的索引值。 从零开始编制索引。
+          type:
+            - number
   - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
     summary: 使用其名称或 ID 获取切片器。如果没有切片器项，将返回 null 对象。
     name: getItemOrNullObject(key)

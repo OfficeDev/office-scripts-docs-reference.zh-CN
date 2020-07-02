@@ -24,9 +24,13 @@ items:
       - 'excel!Excel.RangeAreas#format:member'
       - 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
       - 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+      - 'excel!Excel.RangeAreas#getIntersection:member(1)'
       - 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
       - 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+      - 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
       - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#getTables:member(1)'
+      - 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
       - 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
       - 'excel!Excel.RangeAreas#isEntireColumn:member'
       - 'excel!Excel.RangeAreas#isEntireRow:member'
@@ -280,6 +284,24 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.RangeAreas#getIntersection:member(1)'
+    summary: 返回 RangeAreas 对象，它表示给定区域或 RangeAreas 的交集。 如果未找到任何交集，则将引发 ItemNotFound 错误。
+    name: getIntersection(anotherRange)
+    fullName: getIntersection(anotherRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: 将用于确定交集的 range、RangeAreas 对象或 range 地址。
+          type:
+            - 'excel!Excel.RangeAreas#getIntersection~0:complex'
   - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
     summary: 返回 RangeAreas 对象，它表示给定区域或 RangeAreas 的交集。 如果未找到任何交集，将返回 null 对象。
     name: getIntersectionOrNullObject(anotherRange)
@@ -327,6 +349,32 @@ items:
           description: RangeAreas 要偏移的列数（正值、负值或0）。 正值表示向右偏移，负值表示向左偏移。
           type:
             - number
+  - uid: 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
+    summary: 返回一个 RangeAreas 对象，它表示匹配指定类型和值的所有单元格。 如果未找到符合条件的特殊单元格，则会引发错误。
+    name: 'getSpecialCells(cellType, cellValueType)'
+    fullName: 'getSpecialCells(cellType, cellValueType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getSpecialCells(
+                    cellType: SpecialCellType,
+                    cellValueType?: SpecialCellValueType
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: cellType
+          description: 要包含的单元格的类型。
+          type:
+            - 'excel!Excel.SpecialCellType:enum'
+        - id: cellValueType
+          description: 如果 cellType 为常量或公式，则此参数用于确定要在结果中包含哪些类型的单元格。 可以将这些值组合在一起，以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
+          type:
+            - 'excel!Excel.SpecialCellValueType:enum'
   - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
     summary: 返回一个 RangeAreas 对象，它表示匹配指定类型和值的所有单元格。 如果未找到符合条件的特殊单元格，则返回 null 对象。
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
@@ -353,6 +401,42 @@ items:
           description: 如果 cellType 为常量或公式，则此参数用于确定要在结果中包含哪些类型的单元格。 可以将这些值组合在一起，以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
           type:
             - 'excel!Excel.SpecialCellValueType:enum'
+  - uid: 'excel!Excel.RangeAreas#getTables:member(1)'
+    summary: 返回与此 RangeAreas 对象中的任何区域重叠的限定范围的表格集合。
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): TableScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableScopedCollection:interface'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 如果为 true，则仅返回完全包含在区域边界内的表。 默认为 false。
+          type:
+            - boolean
+  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
+    summary: 返回使用的 RangeAreas，它包含 RangeAreas 对象中的各个矩形区域的所有已用区域。 如果 RangeAreas 中没有已使用的单元格，则将引发 ItemNotFound 错误。
+    name: getUsedRangeAreas(valuesOnly)
+    fullName: getUsedRangeAreas(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 是否仅将值为的单元格视为已使用的单元格。 默认为 false。
+          type:
+            - boolean
   - uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
     summary: 返回使用的 RangeAreas，它包含 RangeAreas 对象中的各个矩形区域的所有已用区域。 如果 RangeAreas 中没有已使用的单元格，则将返回 null 对象。
     name: getUsedRangeAreasOrNullObject(valuesOnly)
@@ -486,6 +570,20 @@ references:
   - uid: 'excel!Excel.RangeAreas:interface'
     name: RangeAreas
     fullName: Excel.RangeAreas
+  - uid: 'excel!Excel.RangeAreas#getIntersection~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:interface'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
   - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -510,6 +608,9 @@ references:
   - uid: 'excel!Excel.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: Excel.SpecialCellValueType
+  - uid: 'excel!Excel.TableScopedCollection:interface'
+    name: TableScopedCollection
+    fullName: Excel.TableScopedCollection
   - uid: 'excel!Excel.Worksheet:interface'
     name: Worksheet
     fullName: Excel.Worksheet

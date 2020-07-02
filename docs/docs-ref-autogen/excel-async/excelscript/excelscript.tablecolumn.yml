@@ -19,6 +19,7 @@ items:
       - 'excel!Excel.TableColumn#index:member'
       - 'excel!Excel.TableColumn#load:member(1)'
       - 'excel!Excel.TableColumn#name:member'
+      - 'excel!Excel.TableColumn#values:member'
   - uid: 'excel!Excel.TableColumn#delete:member(1)'
     summary: 从表中删除列。
     name: delete()
@@ -150,6 +151,18 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.TableColumn#values:member'
+    summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
 references:
   - uid: 'excel!Excel.Filter:interface'
     name: Filter

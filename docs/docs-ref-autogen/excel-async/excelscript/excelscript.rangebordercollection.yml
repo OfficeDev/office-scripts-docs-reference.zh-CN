@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeBorderCollection#count:member'
       - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeBorderCollection#load:member(1)'
       - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+  - uid: 'excel!Excel.RangeBorderCollection#count:member'
+    summary: 集合中的 border 对象数量。
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
     summary: 使用其名称获取 border 对象
     name: getItem(index)
@@ -30,6 +44,24 @@ items:
           description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 BorderIndex。
           type:
             - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+    summary: 使用其索引获取 border 对象
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的对象的索引值。 从零开始编制索引。
+          type:
+            - number
   - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
     summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
     name: load(propertyNames)

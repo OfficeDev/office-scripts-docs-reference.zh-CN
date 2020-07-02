@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.WorksheetCollection#add:member(1)'
       - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
       - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
       - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.WorksheetCollection#getLast:member(1)'
       - 'excel!Excel.WorksheetCollection#load:member(1)'
@@ -46,6 +48,24 @@ items:
         type:
           - 'excel!Excel.Worksheet:interface'
         description: ''
+  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
+    summary: 获取集合中的工作表数量。
+    name: getCount(visibleOnly)
+    fullName: getCount(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(visibleOnly?: boolean): number;'
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+          type:
+            - boolean
   - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
     summary: 获取集合中的第一个工作表。
     name: getFirst(visibleOnly)
@@ -94,6 +114,24 @@ items:
           description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
           type:
             - boolean
+  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
+    summary: 按 Worksheet 对象的名称或 ID 获取此对象。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 工作表的名称或 ID。
+          type:
+            - string
   - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
     summary: 按 Worksheet 对象的名称或 ID 获取此对象。 如果没有 Worksheet 对象，将返回 NULL 对象。
     name: getItemOrNullObject(key)

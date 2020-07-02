@@ -71,7 +71,7 @@ items:
           - 'ExcelScript!ExcelScript.HeaderFooter:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-    summary: 设置了哪些页眉/页脚。 有关详细信息，请参阅 Excel.HeaderFooterState。
+    summary: 页眉/页脚的设置状态。 有关详细信息，请参阅 Excel.HeaderFooterState。
     name: getState()
     fullName: getState()
     langs:
@@ -110,7 +110,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-    summary: 设置了哪些页眉/页脚。 有关详细信息，请参阅 Excel.HeaderFooterState。
+    summary: 页眉/页脚的设置状态。 有关详细信息，请参阅 Excel.HeaderFooterState。
     name: setState(state)
     fullName: setState(state)
     langs:

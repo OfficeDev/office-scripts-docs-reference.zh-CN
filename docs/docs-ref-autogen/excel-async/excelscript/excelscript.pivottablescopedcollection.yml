@@ -1,0 +1,100 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableScopedCollection:interface'
+    summary: 表示数据透视表的限定集合。 数据透视表根据数据透视表左上角的位置进行排序。 它们按从上到下、从左到右的顺序排列。
+    name: Excel.PivotTableScopedCollection
+    fullName: Excel.PivotTableScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableScopedCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotTableScopedCollection#getCount:member(1)'
+    summary: 获取集合中的数据透视表的数目。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
+    summary: 获取集合中的第一个数据透视表。 集合中的数据透视表按从上到下、从左到右的顺序排序，因此左上角的表格是集合中的第一个数据透视表。
+    name: getFirst()
+    fullName: getFirst()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
+    summary: 按名称获取 PivotTable 对象。
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 要检索的数据透视表的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
+    summary: 按 PivotTable 对象的名称获取此对象。 如果没有 PivotTable 对象，将返回 NULL 对象。
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的数据透视表的名称。
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableScopedCollection#load:member(1)'
+    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.PivotTable:interface'
+    name: PivotTable
+    fullName: Excel.PivotTable

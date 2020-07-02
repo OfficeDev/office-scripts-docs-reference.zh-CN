@@ -10,6 +10,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.RowColumnPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getItem:member(1)'
       - 'excel!Excel.RowColumnPivotHierarchyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(1)'
       - 'excel!Excel.RowColumnPivotHierarchyCollection#remove:member(1)'
@@ -31,6 +33,37 @@ items:
           description: ''
           type:
             - 'excel!Excel.PivotHierarchy:interface'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getCount:member(1)'
+    summary: 获取集合中的透视层级结构的数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getItem:member(1)'
+    summary: 按名称或 ID 获取 RowColumnPivotHierarchy。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): RowColumnPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 RowColumnPivotHierarchy 的名称。
+          type:
+            - string
   - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getItemOrNullObject:member(1)'
     summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则返回 Null 对象。
     name: getItemOrNullObject(name)

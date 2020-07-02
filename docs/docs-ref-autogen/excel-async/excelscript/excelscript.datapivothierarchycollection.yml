@@ -10,6 +10,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
       - 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
       - 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
@@ -31,6 +33,37 @@ items:
           description: ''
           type:
             - 'excel!Excel.PivotHierarchy:interface'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
+    summary: 获取集合中的透视层级结构的数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
+    summary: 按名称或 ID 获取 DataPivotHierarchy。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 DataPivotHierarchy 的名称。
+          type:
+            - string
   - uid: 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
     summary: 按名称获取 DataPivotHierarchy。 如果 DataPivotHierarchy 不存在，则返回 Null 对象。
     name: getItemOrNullObject(name)

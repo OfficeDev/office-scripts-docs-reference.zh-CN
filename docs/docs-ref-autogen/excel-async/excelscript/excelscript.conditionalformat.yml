@@ -9,22 +9,43 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ConditionalFormat#cellValue:member'
       - 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#colorScale:member'
       - 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#custom:member'
       - 'excel!Excel.ConditionalFormat#customOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#dataBar:member'
       - 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#delete:member(1)'
+      - 'excel!Excel.ConditionalFormat#getRange:member(1)'
       - 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
       - 'excel!Excel.ConditionalFormat#getRanges:member(1)'
+      - 'excel!Excel.ConditionalFormat#iconSet:member'
       - 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#id:member'
       - 'excel!Excel.ConditionalFormat#load:member(1)'
+      - 'excel!Excel.ConditionalFormat#preset:member'
       - 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#priority:member'
       - 'excel!Excel.ConditionalFormat#stopIfTrue:member'
+      - 'excel!Excel.ConditionalFormat#textComparison:member'
       - 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#topBottom:member'
       - 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#type:member'
+  - uid: 'excel!Excel.ConditionalFormat#cellValue:member'
+    summary: 如果当前条件格式为 CellValue 类型，则返回单元格值条件格式属性。 例如，设置5到10之间的所有单元格的格式。
+    name: cellValue
+    fullName: cellValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellValue: CellValueConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.CellValueConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
     summary: 如果当前条件格式为 CellValue 类型，则返回单元格值条件格式属性。 例如，设置5到10之间的所有单元格的格式。
     name: cellValueOrNullObject
@@ -37,6 +58,18 @@ items:
       return:
         type:
           - 'excel!Excel.CellValueConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#colorScale:member'
+    summary: 如果当前条件格式为色阶类型，则返回色阶条件格式属性。
+    name: colorScale
+    fullName: colorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly colorScale: ColorScaleConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ColorScaleConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
     summary: 如果当前条件格式为色阶类型，则返回色阶条件格式属性。
     name: colorScaleOrNullObject
@@ -49,6 +82,18 @@ items:
       return:
         type:
           - 'excel!Excel.ColorScaleConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#custom:member'
+    summary: 如果当前条件格式为自定义类型，则返回自定义条件格式属性。
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly custom: CustomConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.CustomConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#customOrNullObject:member'
     summary: 如果当前条件格式为自定义类型，则返回自定义条件格式属性。
     name: customOrNullObject
@@ -61,6 +106,18 @@ items:
       return:
         type:
           - 'excel!Excel.CustomConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#dataBar:member'
+    summary: 如果当前条件格式为数据栏，则返回数据条属性。
+    name: dataBar
+    fullName: dataBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataBar: DataBarConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
     summary: 如果当前条件格式为数据栏，则返回数据条属性。
     name: dataBarOrNullObject
@@ -85,6 +142,19 @@ items:
       return:
         type:
           - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalFormat#getRange:member(1)'
+    summary: 返回应用条件格式的范围。 如果将条件格式应用于多个区域，则会引发错误。
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
         description: ''
   - uid: 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
     summary: 返回条件格式应用于的区域; 或者，如果将条件格式应用于多个区域，则返回 null 对象。
@@ -112,6 +182,18 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.ConditionalFormat#iconSet:member'
+    summary: 如果当前条件格式为 IconSet 类型，则返回 IconSet 条件格式属性。
+    name: iconSet
+    fullName: iconSet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iconSet: IconSetConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
     summary: 如果当前条件格式为 IconSet 类型，则返回 IconSet 条件格式属性。
     name: iconSetOrNullObject
@@ -154,6 +236,18 @@ items:
           description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalFormat#preset:member'
+    summary: 返回预设条件的条件格式。 有关更多详细信息，请参阅 PresetCriteriaConditionalFormat。
+    name: preset
+    fullName: preset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly preset: PresetCriteriaConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.PresetCriteriaConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
     summary: 返回预设条件的条件格式。 有关更多详细信息，请参阅 PresetCriteriaConditionalFormat。
     name: presetOrNullObject
@@ -190,6 +284,18 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.ConditionalFormat#textComparison:member'
+    summary: 如果当前条件格式是文本类型，则返回特定的文本条件格式属性。 例如，设置与单词 "Text" 相匹配的单元格的格式。
+    name: textComparison
+    fullName: textComparison
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textComparison: TextConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TextConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
     summary: 如果当前条件格式是文本类型，则返回特定的文本条件格式属性。 例如，设置与单词 "Text" 相匹配的单元格的格式。
     name: textComparisonOrNullObject
@@ -202,6 +308,18 @@ items:
       return:
         type:
           - 'excel!Excel.TextConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#topBottom:member'
+    summary: 如果当前条件格式为 TopBottom 类型，则返回 Top/底端条件格式属性。 例如，设置前10% 或前10个项目的格式。
+    name: topBottom
+    fullName: topBottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly topBottom: TopBottomConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TopBottomConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
     summary: 如果当前条件格式为 TopBottom 类型，则返回 Top/底端条件格式属性。 例如，设置前10% 或前10个项目的格式。
     name: topBottomOrNullObject

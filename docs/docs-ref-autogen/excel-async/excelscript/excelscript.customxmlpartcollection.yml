@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CustomXmlPartCollection#add:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
+      - 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
       - 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.CustomXmlPartCollection#load:member(1)'
   - uid: 'excel!Excel.CustomXmlPartCollection#add:member(1)'
@@ -55,6 +58,55 @@ items:
           description: XML 内容。 必须是有效的 XML 片段。
           type:
             - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
+    summary: 获取其命名空间匹配给定命名空间的自定义 XML 部件的新作用域内集合。
+    name: getByNamespace(namespaceUri)
+    fullName: getByNamespace(namespaceUri)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByNamespace(namespaceUri: string): CustomXmlPartScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPartScopedCollection:interface'
+        description: ''
+      parameters:
+        - id: namespaceUri
+          description: '这必须是完全限定的架构 URI;例如，" http://schemas.contoso.com/review/1.0 "。'
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
+    summary: 获取此集合中 CustomXml 部件的数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
+    summary: 获取基于其 ID 的自定义 XML 部件。
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: 要检索的对象的 ID。
+          type:
+            - string
   - uid: 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
     summary: 获取基于其 ID 的自定义 XML 部件。 如果 CustomXmlPart 不存在，则返回对象的 isNull 属性将为 true。
     name: getItemOrNullObject(id)
@@ -95,3 +147,6 @@ references:
   - uid: 'excel!Excel.CustomXmlPart:interface'
     name: CustomXmlPart
     fullName: Excel.CustomXmlPart
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
+    name: CustomXmlPartScopedCollection
+    fullName: Excel.CustomXmlPartScopedCollection

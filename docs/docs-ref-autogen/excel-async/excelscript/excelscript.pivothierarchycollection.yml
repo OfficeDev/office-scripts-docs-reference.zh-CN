@@ -9,8 +9,41 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.PivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.PivotHierarchyCollection#getItem:member(1)'
       - 'excel!Excel.PivotHierarchyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotHierarchyCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotHierarchyCollection#getCount:member(1)'
+    summary: 获取集合中的透视层级结构的数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotHierarchyCollection#getItem:member(1)'
+    summary: 按名称或 ID 获取 PivotHierarchy。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.PivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 PivotHierarchy 的名称。
+          type:
+            - string
   - uid: 'excel!Excel.PivotHierarchyCollection#getItemOrNullObject:member(1)'
     summary: 按名称获取 PivotHierarchy。 如果 PivotHierarchy 不存在，则返回 Null 对象。
     name: getItemOrNullObject(name)

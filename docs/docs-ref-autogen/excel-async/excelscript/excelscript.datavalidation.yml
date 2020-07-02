@@ -11,6 +11,7 @@ items:
     children:
       - 'excel!Excel.DataValidation#clear:member(1)'
       - 'excel!Excel.DataValidation#errorAlert:member'
+      - 'excel!Excel.DataValidation#getInvalidCells:member(1)'
       - 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
       - 'excel!Excel.DataValidation#ignoreBlanks:member'
       - 'excel!Excel.DataValidation#load:member(1)'
@@ -77,6 +78,19 @@ items:
               await context.sync();
           }
           ```
+  - uid: 'excel!Excel.DataValidation#getInvalidCells:member(1)'
+    summary: 返回包含一个或多个矩形区域的 RangeAreas，它具有无效单元格值。 如果所有单元格值都有效，则此函数将引发 ItemNotFound 错误。
+    name: getInvalidCells()
+    fullName: getInvalidCells()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInvalidCells(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
   - uid: 'excel!Excel.DataValidation#getInvalidCellsOrNullObject:member(1)'
     summary: 返回包含一个或多个矩形区域的 RangeAreas，它具有无效单元格值。 如果所有单元格值都有效，则此函数将返回 null。
     name: getInvalidCellsOrNullObject()

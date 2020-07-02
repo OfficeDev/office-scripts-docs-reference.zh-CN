@@ -9,10 +9,24 @@ items:
     type: interface
     package: ExcelScript!
     children:
+      - 'ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)'
       - 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
       - 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
       - 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
       - 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)'
+    summary: 返回与组关联的 Shape 对象。
+    name: getGroupShape()
+    fullName: getGroupShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getGroupShape(): Shape;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Shape:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
     summary: 指定形状标识符。
     name: getId()

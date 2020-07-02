@@ -16,8 +16,11 @@ items:
       - 'excel!Excel.Workbook#chartDataPointTrack:member'
       - 'excel!Excel.Workbook#comments:member'
       - 'excel!Excel.Workbook#customXmlParts:member'
+      - 'excel!Excel.Workbook#dataConnections:member'
       - 'excel!Excel.Workbook#getActiveCell:member(1)'
+      - 'excel!Excel.Workbook#getActiveChart:member(1)'
       - 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
+      - 'excel!Excel.Workbook#getActiveSlicer:member(1)'
       - 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
       - 'excel!Excel.Workbook#getSelectedRange:member(1)'
       - 'excel!Excel.Workbook#getSelectedRanges:member(1)'
@@ -31,7 +34,6 @@ items:
       - 'excel!Excel.Workbook#properties:member'
       - 'excel!Excel.Workbook#protection:member'
       - 'excel!Excel.Workbook#readOnly:member'
-      - 'excel!Excel.Workbook#settings:member'
       - 'excel!Excel.Workbook#slicers:member'
       - 'excel!Excel.Workbook#slicerStyles:member'
       - 'excel!Excel.Workbook#styles:member'
@@ -124,6 +126,18 @@ items:
       return:
         type:
           - 'excel!Excel.CustomXmlPartCollection:interface'
+  - uid: 'excel!Excel.Workbook#dataConnections:member'
+    summary: 表示工作簿中的所有数据连接。
+    name: dataConnections
+    fullName: dataConnections
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataConnections: DataConnectionCollection;'
+      return:
+        type:
+          - 'excel!Excel.DataConnectionCollection:interface'
   - uid: 'excel!Excel.Workbook#getActiveCell:member(1)'
     summary: 获取工作簿中当前处于活动状态的单元格。
     name: getActiveCell()
@@ -153,6 +167,19 @@ items:
               console.log("The active cell is " + activeCell.address);
           }
           ```
+  - uid: 'excel!Excel.Workbook#getActiveChart:member(1)'
+    summary: 获取工作簿中的当前活动图表。 如果没有活动图表，则 `ItemNotFound` 会引发异常。
+    name: getActiveChart()
+    fullName: getActiveChart()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChart(): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
   - uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
     summary: 获取工作簿中的当前活动图表。 如果没有活动图表，则返回 null 对象。
     name: getActiveChartOrNullObject()
@@ -165,6 +192,19 @@ items:
       return:
         type:
           - 'excel!Excel.Chart:interface'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getActiveSlicer:member(1)'
+    summary: 获取工作簿中当前处于活动状态的切片器。 如果没有活动切片器，则 `ItemNotFound` 会引发异常。
+    name: getActiveSlicer()
+    fullName: getActiveSlicer()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicer(): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
         description: ''
   - uid: 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
     summary: 获取工作簿中当前处于活动状态的切片器。 如果没有处于活动状态的切片器，则返回 null 对象。
@@ -375,18 +415,6 @@ items:
       return:
         type:
           - boolean
-  - uid: 'excel!Excel.Workbook#settings:member'
-    summary: 表示一组与 workbook 相关联的 setting 对象。
-    name: settings
-    fullName: settings
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly settings: SettingCollection;'
-      return:
-        type:
-          - 'excel!Excel.SettingCollection:interface'
   - uid: 'excel!Excel.Workbook#slicers:member'
     summary: 表示与工作簿关联的切片器集合。
     name: slicers
@@ -523,6 +551,9 @@ references:
   - uid: 'excel!Excel.CustomXmlPartCollection:interface'
     name: CustomXmlPartCollection
     fullName: Excel.CustomXmlPartCollection
+  - uid: 'excel!Excel.DataConnectionCollection:interface'
+    name: DataConnectionCollection
+    fullName: Excel.DataConnectionCollection
   - uid: 'excel!Excel.Range:interface'
     name: Range
     fullName: Excel.Range
@@ -550,9 +581,6 @@ references:
   - uid: 'excel!Excel.WorkbookProtection:interface'
     name: WorkbookProtection
     fullName: Excel.WorkbookProtection
-  - uid: 'excel!Excel.SettingCollection:interface'
-    name: SettingCollection
-    fullName: Excel.SettingCollection
   - uid: 'excel!Excel.SlicerCollection:interface'
     name: SlicerCollection
     fullName: Excel.SlicerCollection

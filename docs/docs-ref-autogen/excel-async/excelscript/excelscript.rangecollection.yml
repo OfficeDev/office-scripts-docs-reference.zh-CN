@@ -8,7 +8,40 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeCollection#getCount:member(1)'
+      - 'excel!Excel.RangeCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeCollection#getCount:member(1)'
+    summary: 返回 RangeCollection 中的区域数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.RangeCollection#getItemAt:member(1)'
+    summary: 根据其在 RangeCollection 中的位置返回 Range 对象。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的 range 对象的索引值。 从零开始编制索引。
+          type:
+            - number
   - uid: 'excel!Excel.RangeCollection#load:member(1)'
     summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
     name: load(propertyNames)
@@ -27,3 +60,7 @@ items:
           description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

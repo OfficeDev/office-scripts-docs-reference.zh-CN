@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.TableScopedCollection#getCount:member(1)'
       - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
       - 'excel!Excel.TableScopedCollection#getItem:member(1)'
       - 'excel!Excel.TableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#getCount:member(1)'
+    summary: 获取集合中的表数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
     summary: 获取集合中的第一个表格。 集合中的表格按照从上到下、从左到右的顺序排列，因此左上表格是集合中的第一个表格。
     name: getFirst()

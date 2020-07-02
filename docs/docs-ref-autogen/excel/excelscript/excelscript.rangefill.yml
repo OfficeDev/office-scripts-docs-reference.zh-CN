@@ -73,7 +73,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 指定用于将区域填充的图案颜色变浅或变暗的双精度值，该值介于-1 （最暗）和1（最亮）之间，0表示原始颜色。 如果模式 tintAndShades 不一致，则将返回 null。
+    summary: 指定用于将区域填充的图案颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 如果模式 tintAndShades 不一致，则将返回 null。
     name: getPatternTintAndShade()
     fullName: getPatternTintAndShade()
     langs:
@@ -153,7 +153,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 指定用于将区域填充的图案颜色变浅或变暗的双精度值，该值介于-1 （最暗）和1（最亮）之间，0表示原始颜色。 如果模式 tintAndShades 不一致，则将返回 null。
+    summary: 指定用于将区域填充的图案颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 如果模式 tintAndShades 不一致，则将返回 null。
     name: setPatternTintAndShade(patternTintAndShade)
     fullName: setPatternTintAndShade(patternTintAndShade)
     langs:

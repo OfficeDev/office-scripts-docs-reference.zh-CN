@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RequestContext:interface'
+    summary: RequestContext 对象可促进对 Excel 工作簿的请求。 脚本和 Excel 工作簿在单独的进程中运行。 请求上下文用于同步脚本和工作簿之间的数据和操作。
+    name: Excel.RequestContext
+    fullName: Excel.RequestContext
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RequestContext#sync:member(1)'
+      - 'excel!Excel.RequestContext#workbook:member'
+  - uid: 'excel!Excel.RequestContext#sync:member(1)'
+    name: sync()
+    fullName: sync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sync(): Promise<void>;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext#sync~0:complex'
+        description: ''
+  - uid: 'excel!Excel.RequestContext#workbook:member'
+    name: workbook
+    fullName: workbook
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly workbook: Workbook;'
+      return:
+        type:
+          - 'excel!Excel.Workbook:interface'
+references:
+  - uid: 'excel!Excel.RequestContext#sync~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>
+  - uid: 'excel!Excel.Workbook:interface'
+    name: Workbook
+    fullName: Excel.Workbook

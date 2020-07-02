@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.TableStyleCollection#add:member(1)'
+      - 'excel!Excel.TableStyleCollection#getCount:member(1)'
       - 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TableStyleCollection#getItem:member(1)'
       - 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.TableStyleCollection#load:member(1)'
       - 'excel!Excel.TableStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 可选，默认值为 false。 如果为 true，则将数字追加到名称，以便根据需要使其唯一。
           type:
             - boolean
+  - uid: 'excel!Excel.TableStyleCollection#getCount:member(1)'
+    summary: 获取集合中表格样式的数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TableStyleCollection#getDefault:member(1)'
     summary: 获取父对象范围的默认 TableStyle。
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.TableStyle:interface'
         description: ''
+  - uid: 'excel!Excel.TableStyleCollection#getItem:member(1)'
+    summary: 按名称获取 TableStyle。
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: 要检索的 TableStyle 的名称。
+          type:
+            - string
   - uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
     summary: 按名称获取 TableStyle。 如果没有 TableStyle，将返回 null 对象。
     name: getItemOrNullObject(name)

@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CommentCollection#add:member(1)'
+      - 'excel!Excel.CommentCollection#getCount:member(1)'
       - 'excel!Excel.CommentCollection#getItem:member(1)'
+      - 'excel!Excel.CommentCollection#getItemAt:member(1)'
       - 'excel!Excel.CommentCollection#getItemByCell:member(1)'
       - 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
       - 'excel!Excel.CommentCollection#load:member(1)'
@@ -58,6 +60,19 @@ items:
           description: 可选。 包含在注释中的内容类型。 默认值为枚举`ContentType.Plain`<!-- -->.
           type:
             - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentCollection#getCount:member(1)'
+    summary: 获取集合中的批注数量。
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     summary: 根据其 ID 从集合中获取批注。
     name: getItem(commentId)
@@ -76,6 +91,24 @@ items:
           description: 注释的标识符。
           type:
             - string
+  - uid: 'excel!Excel.CommentCollection#getItemAt:member(1)'
+    summary: 根据其位置从集合中获取批注。
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 要检索的对象的索引值。 从零开始编制索引。
+          type:
+            - number
   - uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
     summary: 从指定单元格获取的批注。
     name: getItemByCell(cellAddress)
