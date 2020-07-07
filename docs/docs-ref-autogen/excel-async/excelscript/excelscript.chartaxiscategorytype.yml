@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automatic"'
+    numericValue: '"Automatic"'
   - uid: 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
     summary: 轴按时间刻度组合数据。
     name: dateAxis
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"dateAxis"'
+    numericValue: '"DateAxis"'
   - uid: 'excel!Excel.ChartAxisCategoryType.textAxis:member'
     summary: 轴按一组任意类别组合数据。
     name: textAxis
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"textAxis"'
+    numericValue: '"TextAxis"'

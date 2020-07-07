@@ -19,14 +19,14 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"category"'
+    numericValue: '"Category"'
   - uid: 'excel!Excel.ChartAxisType.invalid:member'
     name: invalid
     fullName: invalid
     langs:
       - typeScript
     type: field
-    numericValue: '"invalid"'
+    numericValue: '"Invalid"'
   - uid: 'excel!Excel.ChartAxisType.series:member'
     summary: 坐标轴显示数据系列。
     name: series
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"series"'
+    numericValue: '"Series"'
   - uid: 'excel!Excel.ChartAxisType.value:member'
     summary: 坐标轴显示值。
     name: value
@@ -42,4 +42,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"value"'
+    numericValue: '"Value"'

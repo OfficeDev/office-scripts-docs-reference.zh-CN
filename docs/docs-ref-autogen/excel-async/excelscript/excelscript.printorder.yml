@@ -17,7 +17,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"downThenOver"'
+    numericValue: '"DownThenOver"'
   - uid: 'excel!Excel.PrintOrder.overThenDown:member'
     summary: 向右逐个处理页或页面字段，然后向下处理行。
     name: overThenDown
@@ -25,4 +25,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overThenDown"'
+    numericValue: '"OverThenDown"'
