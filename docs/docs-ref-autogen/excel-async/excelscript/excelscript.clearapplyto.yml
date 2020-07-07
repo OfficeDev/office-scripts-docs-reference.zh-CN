@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"all"'
+    numericValue: '"All"'
   - uid: 'excel!Excel.ClearApplyTo.contents:member'
     summary: 清除区域的内容。
     name: contents
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"contents"'
+    numericValue: '"Contents"'
   - uid: 'excel!Excel.ClearApplyTo.formats:member'
     summary: 清除区域的所有格式。
     name: formats
@@ -35,7 +35,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"formats"'
+    numericValue: '"Formats"'
   - uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
     summary: 清除所有超链接，但保留所有内容和格式不变。
     name: hyperlinks
@@ -43,7 +43,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hyperlinks"'
+    numericValue: '"Hyperlinks"'
   - uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
     summary: 删除单元格的超链接和格式，但保留内容、条件格式和数据验证不变。
     name: removeHyperlinks
@@ -51,4 +51,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"removeHyperlinks"'
+    numericValue: '"RemoveHyperlinks"'

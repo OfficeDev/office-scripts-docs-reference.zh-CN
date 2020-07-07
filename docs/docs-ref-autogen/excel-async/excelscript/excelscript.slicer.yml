@@ -94,10 +94,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedItems(): string[];'
+      content: 'getSelectedItems(): ClientResult<string[]>;'
       return:
         type:
-          - 'string[]'
+          - 'excel!Excel.Slicer#getSelectedItems~0:complex'
         description: ''
   - uid: 'excel!Excel.Slicer#height:member'
     summary: 表示切片器的高度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
@@ -226,10 +226,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sortBy: SlicerSortType;'
+      content: 'sortBy: SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
       return:
         type:
-          - 'excel!Excel.SlicerSortType:enum'
+          - 'excel!Excel.Slicer#sortBy~0:complex'
   - uid: 'excel!Excel.Slicer#style:member'
     summary: 表示切片器样式的常量值。 可能的值为： "SlicerStyleLight1" 到 "SlicerStyleLight6"、"TableStyleOther1" 通过 "TableStyleOther2"、"SlicerStyleDark1" 到 "SlicerStyleDark6"。 还可以指定工作簿中显示的用户定义的自定义样式。
     name: style
@@ -291,12 +291,27 @@ items:
         type:
           - 'excel!Excel.Worksheet:interface'
 references:
+  - uid: 'excel!Excel.Slicer#getSelectedItems~0:complex'
+    name: 'ClientResult<string[]>'
+    fullName: 'Excel.ClientResult<string[]>'
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: '<string[]>'
+        fullName: '<string[]>'
   - uid: 'excel!Excel.SlicerItemCollection:interface'
     name: SlicerItemCollection
     fullName: Excel.SlicerItemCollection
-  - uid: 'excel!Excel.SlicerSortType:enum'
-    name: SlicerSortType
-    fullName: Excel.SlicerSortType
+  - uid: 'excel!Excel.Slicer#sortBy~0:complex'
+    name: SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
+    fullName: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerSortType:enum'
+        name: SlicerSortType
+        fullName: Excel.SlicerSortType
+      - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
+        fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
   - uid: 'excel!Excel.Worksheet:interface'
     name: Worksheet
     fullName: Excel.Worksheet
