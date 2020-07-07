@@ -65,10 +65,17 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: DocumentPropertyType;'
+      content: |-
+        readonly type:
+                    | DocumentPropertyType
+                    | "Number"
+                    | "Boolean"
+                    | "Date"
+                    | "String"
+                    | "Float";
       return:
         type:
-          - 'excel!Excel.DocumentPropertyType:enum'
+          - 'excel!Excel.CustomProperty#type~0:complex'
   - uid: 'excel!Excel.CustomProperty#value:member'
     summary: 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符（更大的值会自动修整为其他平台上的255个字符）。
     name: value
@@ -82,6 +89,38 @@ items:
         type:
           - any
 references:
-  - uid: 'excel!Excel.DocumentPropertyType:enum'
-    name: DocumentPropertyType
-    fullName: Excel.DocumentPropertyType
+  - uid: 'excel!Excel.CustomProperty#type~0:complex'
+    name: |-
+      | DocumentPropertyType
+                  | "Number"
+                  | "Boolean"
+                  | "Date"
+                  | "String"
+                  | "Float"
+    fullName: |-
+      | Excel.DocumentPropertyType
+                  | "Number"
+                  | "Boolean"
+                  | "Date"
+                  | "String"
+                  | "Float"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.DocumentPropertyType:enum'
+        name: DocumentPropertyType
+        fullName: Excel.DocumentPropertyType
+      - name: |2-
+
+                      | "Number"
+                      | "Boolean"
+                      | "Date"
+                      | "String"
+                      | "Float"
+        fullName: |2-
+
+                      | "Number"
+                      | "Boolean"
+                      | "Date"
+                      | "String"
+                      | "Float"

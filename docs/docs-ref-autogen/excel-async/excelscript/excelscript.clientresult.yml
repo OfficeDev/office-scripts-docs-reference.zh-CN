@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ClientResult:interface'
+    summary: 包含返回基元类型的方法的结果。 对象的 value 属性是在调用后从文档中检索的 `context.sync()` 。
+    name: Excel.ClientResult
+    fullName: Excel.ClientResult
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
+    package: excel!
+    children:
+      - 'excel!Excel.ClientResult#value:member'
+  - uid: 'excel!Excel.ClientResult#value:member'
+    summary: 调用后从文档中检索的结果的值 `context.sync()` 。
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: T;'
+      return:
+        type:
+          - T

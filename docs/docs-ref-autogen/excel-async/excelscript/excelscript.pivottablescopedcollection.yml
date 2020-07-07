@@ -22,10 +22,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.PivotTableScopedCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
     summary: 获取集合中的第一个数据透视表。 集合中的数据透视表按从上到下、从左到右的顺序排序，因此左上角的表格是集合中的第一个数据透视表。
@@ -95,6 +95,15 @@ items:
           type:
             - 'string | string[]'
 references:
+  - uid: 'excel!Excel.PivotTableScopedCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
   - uid: 'excel!Excel.PivotTable:interface'
     name: PivotTable
     fullName: Excel.PivotTable

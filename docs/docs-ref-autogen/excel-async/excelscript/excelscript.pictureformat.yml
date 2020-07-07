@@ -22,7 +22,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"bmp"'
+    numericValue: '"Bmp"'
   - uid: 'excel!Excel.PictureFormat.gif:member'
     summary: 图形交换格式。
     name: gif
@@ -30,7 +30,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"gif"'
+    numericValue: '"Gif"'
   - uid: 'excel!Excel.PictureFormat.jpeg:member'
     summary: 联合图像专家组。
     name: jpeg
@@ -38,7 +38,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"jpeg"'
+    numericValue: '"Jpeg"'
   - uid: 'excel!Excel.PictureFormat.png:member'
     summary: 可移植网络图形。
     name: png
@@ -46,7 +46,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"png"'
+    numericValue: '"Png"'
   - uid: 'excel!Excel.PictureFormat.svg:member'
     summary: 可缩放的矢量图形。
     name: svg
@@ -54,11 +54,11 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"svg"'
+    numericValue: '"Svg"'
   - uid: 'excel!Excel.PictureFormat.unknown:member'
     name: unknown
     fullName: unknown
     langs:
       - typeScript
     type: field
-    numericValue: '"unknown"'
+    numericValue: '"Unknown"'
