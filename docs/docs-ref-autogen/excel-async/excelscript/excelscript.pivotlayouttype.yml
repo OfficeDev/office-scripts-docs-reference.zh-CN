@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"compact"'
+    numericValue: '"Compact"'
   - uid: 'excel!Excel.PivotLayoutType.outline:member'
     summary: 内部字段的项目在同一行上与外部字段的项目和小计始终在底部。
     name: outline
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"outline"'
+    numericValue: '"Outline"'
   - uid: 'excel!Excel.PivotLayoutType.tabular:member'
     summary: 内部字段的项目总是在相对于外部字段的项目的新行上。
     name: tabular
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tabular"'
+    numericValue: '"Tabular"'

@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"atBottom"'
+    numericValue: '"AtBottom"'
   - uid: 'excel!Excel.SubtotalLocationType.atTop:member'
     summary: 小计位于顶部。
     name: atTop
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"atTop"'
+    numericValue: '"AtTop"'
   - uid: 'excel!Excel.SubtotalLocationType.off:member'
     summary: 小计处于关闭状态。
     name: 'off'
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"off"'
+    numericValue: '"Off"'

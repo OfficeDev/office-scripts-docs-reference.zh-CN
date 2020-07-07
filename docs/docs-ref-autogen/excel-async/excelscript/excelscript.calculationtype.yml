@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"full"'
+    numericValue: '"Full"'
   - uid: 'excel!Excel.CalculationType.fullRebuild:member'
     summary: 这将重新生成整个依赖关系链，将所有单元格标记为已更新，然后重新进行计算。
     name: fullRebuild
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fullRebuild"'
+    numericValue: '"FullRebuild"'
   - uid: 'excel!Excel.CalculationType.recalculate:member'
     summary: 重新计算 Excel 已标记为脏的所有单元格（即可变或已更改的数据的从属单元格），以及以编程方式标记为脏的单元格。
     name: recalculate
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"recalculate"'
+    numericValue: '"Recalculate"'

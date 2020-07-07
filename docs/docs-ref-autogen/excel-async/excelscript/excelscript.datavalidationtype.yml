@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"custom"'
+    numericValue: '"Custom"'
   - uid: 'excel!Excel.DataValidationType.date:member'
     summary: 日期数据验证类型
     name: date
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"date"'
+    numericValue: '"Date"'
   - uid: 'excel!Excel.DataValidationType.decimal:member'
     summary: 小数数据验证类型
     name: decimal
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"decimal"'
+    numericValue: '"Decimal"'
   - uid: 'excel!Excel.DataValidationType.inconsistent:member'
     summary: '"不一致" 表示范围具有不一致的数据验证（不同的单元格有不同的规则）'
     name: inconsistent
@@ -50,7 +50,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"inconsistent"'
+    numericValue: '"Inconsistent"'
   - uid: 'excel!Excel.DataValidationType.list:member'
     summary: 列表数据验证类型
     name: list
@@ -58,7 +58,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"list"'
+    numericValue: '"List"'
   - uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
     summary: MixedCriteria 表示区域在部分（而非所有单元格）上存在数据验证
     name: mixedCriteria
@@ -66,7 +66,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"mixedCriteria"'
+    numericValue: '"MixedCriteria"'
   - uid: 'excel!Excel.DataValidationType.none:member'
     summary: '"无" 表示允许任何值，因此范围中没有数据验证。'
     name: none
@@ -74,7 +74,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.DataValidationType.textLength:member'
     summary: 文本长度数据验证类型
     name: textLength
@@ -82,7 +82,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"textLength"'
+    numericValue: '"TextLength"'
   - uid: 'excel!Excel.DataValidationType.time:member'
     summary: 时间数据验证类型
     name: time
@@ -90,7 +90,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"time"'
+    numericValue: '"Time"'
   - uid: 'excel!Excel.DataValidationType.wholeNumber:member'
     summary: 全数字数据验证类型
     name: wholeNumber
@@ -98,4 +98,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"wholeNumber"'
+    numericValue: '"WholeNumber"'

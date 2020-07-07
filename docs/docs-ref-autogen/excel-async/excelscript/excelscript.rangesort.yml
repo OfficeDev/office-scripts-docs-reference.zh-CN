@@ -24,8 +24,8 @@ items:
                     fields: SortField[],
                     matchCase?: boolean,
                     hasHeaders?: boolean,
-                    orientation?: SortOrientation,
-                    method?: SortMethod
+                    orientation?: SortOrientation | "Rows" | "Columns",
+                    method?: SortMethod | "PinYin" | "StrokeCount"
                 ): void;
       return:
         type:
@@ -47,11 +47,11 @@ items:
         - id: orientation
           description: 可选。 该操作是对行还是列排序。
           type:
-            - 'excel!Excel.SortOrientation:enum'
+            - 'excel!Excel.RangeSort#apply~1:complex'
         - id: method
           description: 可选。 用于中文字符的排序方法。
           type:
-            - 'excel!Excel.SortMethod:enum'
+            - 'excel!Excel.RangeSort#apply~2:complex'
   - uid: 'excel!Excel.RangeSort#load:member(1)'
     summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
     name: load(propertyNames)
@@ -80,9 +80,24 @@ references:
         fullName: Excel.SortField
       - name: '[]'
         fullName: '[]'
-  - uid: 'excel!Excel.SortOrientation:enum'
-    name: SortOrientation
-    fullName: Excel.SortOrientation
-  - uid: 'excel!Excel.SortMethod:enum'
-    name: SortMethod
-    fullName: Excel.SortMethod
+  - uid: 'excel!Excel.RangeSort#apply~1:complex'
+    name: SortOrientation | "Rows" | "Columns"
+    fullName: Excel.SortOrientation | "Rows" | "Columns"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortOrientation:enum'
+        name: SortOrientation
+        fullName: Excel.SortOrientation
+      - name: ' | "Rows" | "Columns"'
+        fullName: ' | "Rows" | "Columns"'
+  - uid: 'excel!Excel.RangeSort#apply~2:complex'
+    name: SortMethod | "PinYin" | "StrokeCount"
+    fullName: Excel.SortMethod | "PinYin" | "StrokeCount"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortMethod:enum'
+        name: SortMethod
+        fullName: Excel.SortMethod
+      - name: |2-
+           | "PinYin" | "StrokeCount"
+                  
+        fullName: |2-
+           | "PinYin" | "StrokeCount"
