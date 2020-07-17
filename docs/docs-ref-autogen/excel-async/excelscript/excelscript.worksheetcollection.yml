@@ -18,7 +18,7 @@ items:
       - 'excel!Excel.WorksheetCollection#getLast:member(1)'
       - 'excel!Excel.WorksheetCollection#load:member(1)'
   - uid: 'excel!Excel.WorksheetCollection#add:member(1)'
-    summary: 'Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.'
+    summary: 向工作簿添加新工作表。工作表将添加到现有工作表的末尾。如果您想要激活新添加的工作表，请对其调用 ".activate()。
     name: add(name)
     fullName: add(name)
     langs:
@@ -32,7 +32,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.'
+          description: 可选。要添加的工作表的名称。如果指定，名称应唯一。如果未指定，Excel 将确定新工作表的名称。
           type:
             - string
   - uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'

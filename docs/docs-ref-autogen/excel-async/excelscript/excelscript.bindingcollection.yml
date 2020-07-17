@@ -38,7 +38,7 @@ items:
         description: ''
       parameters:
         - id: range
-          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          description: 要将绑定绑定到的范围。可以是 Excel 范围对象，也可以是字符串。如果是字符串，必须包含完整地址，包括工作表名称
           type:
             - 'excel!Excel.BindingCollection#add~0:complex'
         - id: bindingType

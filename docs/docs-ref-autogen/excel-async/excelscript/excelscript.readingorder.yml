@@ -12,7 +12,7 @@ items:
       - 'excel!Excel.ReadingOrder.leftToRight:member'
       - 'excel!Excel.ReadingOrder.rightToLeft:member'
   - uid: 'excel!Excel.ReadingOrder.context:member'
-    summary: 'Reading order is determined by the language of the first character entered. If a right-to-left language character is entered first, reading order is right to left. If a left-to-right language character is entered first, reading order is left to right.'
+    summary: 读取顺序由所输入的首字符的语言所确定。如果首先输入从右到左的语言字符，则读取顺序就为从右到左。如果首先输入从左到右的语言字符，则读取顺序就为从左到右。
     name: context
     fullName: context
     langs:

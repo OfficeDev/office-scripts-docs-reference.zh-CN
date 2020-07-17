@@ -67,7 +67,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.SortMethod:enum'
   - uid: 'ExcelScript!ExcelScript.TableSort#clear:member(1)'
-    summary: 'Clears the sorting that is currently on the table. While this doesn''t modify the table''s ordering, it clears the state of the header buttons.'
+    summary: 清除表上的当前排序。尽管这不能修改表的排序，但它会清除标题按钮的状态。
     name: clear()
     fullName: clear()
     langs:
