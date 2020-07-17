@@ -43,7 +43,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.'
+          description: 可选。指定新行的相对位置。如果为 NULL 或 -1，将在末尾进行添加。插入的行下方的所有行都会向下移动。从零开始编制索引。
           type:
             - number
         - id: values

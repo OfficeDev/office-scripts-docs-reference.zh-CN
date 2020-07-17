@@ -393,7 +393,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addSlicer~2:complex'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
-    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    summary: 新建表。范围对象或源地址决定了在哪个工作表下添加表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），则会引发错误。
     name: 'addTable(address, hasHeaders)'
     fullName: 'addTable(address, hasHeaders)'
     langs:
@@ -431,7 +431,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addTable~0:complex'
         - id: hasHeaders
-          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          description: 指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
@@ -1172,7 +1172,7 @@ items:
           - 'ExcelScript!ExcelScript.Worksheet#getTables~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
-    summary: 'The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.'
+    summary: 使用的区域是包含分配了值或格式的任意单元格的最小区域。如果整个工作表为空，此函数将返回 NULL 对象。
     name: getUsedRange(valuesOnly)
     fullName: getUsedRange(valuesOnly)
     langs:

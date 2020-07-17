@@ -106,7 +106,7 @@ items:
         description: ''
       parameters:
         - id: range
-          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          description: 要将绑定绑定到的范围。可以是 Excel 范围对象，也可以是字符串。如果是字符串，必须包含完整地址，包括工作表名称
           type:
             - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
@@ -410,7 +410,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addTable:member(1)'
-    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    summary: 新建表。范围对象或源地址决定了在哪个工作表下添加表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），则会引发错误。
     name: 'addTable(address, hasHeaders)'
     fullName: 'addTable(address, hasHeaders)'
     langs:
@@ -428,7 +428,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addTable~0:complex'
         - id: hasHeaders
-          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          description: 指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)'
@@ -476,7 +476,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Workbook#addWorksheet:member(1)'
-    summary: 'Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.'
+    summary: 向工作簿添加新工作表。工作表将添加到现有工作表的末尾。如果您想要激活新添加的工作表，请对其调用 ".activate()。
     name: addWorksheet(name)
     fullName: addWorksheet(name)
     langs:
@@ -490,7 +490,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.'
+          description: 可选。要添加的工作表的名称。如果指定，名称应唯一。如果未指定，Excel 将确定新工作表的名称。
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)'

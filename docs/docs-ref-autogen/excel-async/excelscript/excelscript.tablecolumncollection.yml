@@ -40,7 +40,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.'
+          description: 可选。指定新列的相对位置。如果为 NULL 或 -1，将在末尾进行添加。索引更高的列将被移到一侧。从零开始编制索引。
           type:
             - number
         - id: values

@@ -448,7 +448,7 @@ items:
         description: ''
       parameters:
         - id: startCell
-          description: 'The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user''s right-to-left display settings.'
+          description: 起始单元格。这是图表将移动到的位置。起始单元格为左上角或右上角的单元格，具体取决于用户的从右到左显示设置。
           type:
             - 'excel!Excel.Chart#setPosition~0:complex'
         - id: endCell
