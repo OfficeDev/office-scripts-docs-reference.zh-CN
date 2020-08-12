@@ -354,7 +354,7 @@ items:
           type:
             - string
         - id: source
-          description: 新数据透视表的源数据，可以是区域（或包含工作表名称的字符串地址）或表。
+          description: 新数据透视表的源数据，可以是区域 (或字符串地址，包括工作表名称) 或表。
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addPivotTable~0:complex'
         - id: destination
@@ -980,11 +980,11 @@ items:
         description: ''
       parameters:
         - id: startRow
-          description: 起始行（零编制索引）。
+          description: ' (零索引) 的起始行。'
           type:
             - number
         - id: startColumn
-          description: Start 列（零个索引）。
+          description: ' (零索引) 的起始列。'
           type:
             - number
         - id: rowCount
@@ -1115,7 +1115,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)'
-    summary: 指定工作表中所有列的标准（默认）宽度。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+    summary: 指定工作表中所有列的标准 (默认) 宽度。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
     name: getStandardWidth()
     fullName: getStandardWidth()
     langs:
@@ -1376,7 +1376,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)'
-    summary: 指定工作表中所有列的标准（默认）宽度。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+    summary: 指定工作表中所有列的标准 (默认) 宽度。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
     name: setStandardWidth(standardWidth)
     fullName: setStandardWidth(standardWidth)
     langs:
@@ -1405,7 +1405,26 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          /**
+           * This script sets the tab color of every worksheet in the workbook to red.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get all the worksheets in the workbook. 
+            let sheets = workbook.getWorksheets();
+            
+            // Set the tab color of each worksheet to a random color.
+            for (let sheet of sheets) {    
+              // Set the color of the current worksheet's tab to red.
+              sheet.setTabColor("red");
+            }
+          }
+          ```
       parameters:
         - id: tabColor
           description: ''
