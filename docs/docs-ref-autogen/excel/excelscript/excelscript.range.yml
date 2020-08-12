@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Range:interface'
-    summary: 'Range 表示一个或多个连续单元格的集合，例如单元格、行、列、单元格块等。若要了解有关如何在整个 API 中使用范围的详细信息，请参阅[使用 Excel JAVASCRIPT Api 处理区域](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges)并使用[excel javascript api （高级）处理区域](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.'
+    summary: 'Range 表示一个或多个连续单元格的集合，例如单元格、行、列、单元格块等。若要了解有关如何在整个 API 中使用范围的详细信息，请参阅[使用 Excel JAVASCRIPT Api 处理区域](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges)并使用[excel javascript api (高级) ](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.'
     name: ExcelScript.Range
     fullName: ExcelScript.Range
     langs:
@@ -180,7 +180,7 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: 要自动填充的目标区域。 如果目标区域为 null，则根据周围单元格（双击 UI 的区域填充句柄时的行为）填充数据。
+          description: 要自动填充的目标区域。 如果目标区域为 null，则数据将根据周围的单元格进行填充 (这是双击 UI 的区域填充柄) 时的行为。
           type:
             - 'ExcelScript!ExcelScript.Range#autoFill~0:complex'
         - id: autoFillType
@@ -212,7 +212,23 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          /**
+           * This script removes all the formatting from the selected range.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the selected range.
+            let range = workbook.getSelectedRange();
+
+            // Clear all the formatting in that range.
+            range.clear(ExcelScript.ClearApplyTo.formats);
+          }
+          ```
       parameters:
         - id: applyTo
           description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ClearApplyTo。
@@ -382,7 +398,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Range#getAddress:member(1)'
-    summary: 指定 A1 样式中的区域引用。 Address 值将包含工作表引用（例如，"Sheet1！A1： B4 "）。
+    summary: 指定 A1 样式中的区域引用。 Address 值将包含工作表引用 (例如，"Sheet1！A1： B4 ") 。
     name: getAddress()
     fullName: getAddress()
     langs:
@@ -632,7 +648,7 @@ items:
           - 'ExcelScript!ExcelScript.DataValidation:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
-    summary: '获取一个对象，该对象代表区域的整列（例如，如果当前区域表示单元格 "B4： E11"，则它 `getEntireColumn` 是表示列 "B:E" 的区域）。'
+    summary: '获取一个对象，该对象表示区域中 (的整列。例如，如果当前区域表示单元格 "B4： E11"， `getEntireColumn` 则它是表示列 "B:E" 的区域 ) 。'
     name: getEntireColumn()
     fullName: getEntireColumn()
     langs:
@@ -645,7 +661,7 @@ items:
           - 'ExcelScript!ExcelScript.Range:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
-    summary: '获取一个对象，该对象表示区域的整行（例如，如果当前区域表示单元格 "B4： E11"，则它 `GetEntireRow` 是表示行 "4:11" 的区域）。'
+    summary: '获取表示区域中整行的对象 (例如，如果当前区域表示单元格 "B4： E11"， `GetEntireRow` 则它是表示行 "4:11" ) 的区域。'
     name: getEntireRow()
     fullName: getEntireRow()
     langs:
@@ -671,7 +687,7 @@ items:
           - 'ExcelScript!ExcelScript.RangeFormat:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormula:member(1)'
-    summary: 代表 A1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格中的数据（由0行索引和列索引为0）。
+    summary: 代表 A1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
     name: getFormula()
     fullName: getFormula()
     langs:
@@ -682,9 +698,33 @@ items:
       return:
         type:
           - string
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          /*
+           * This script sets a cell's formula, 
+           * then displays how Excel stores the cell's formula and value separately.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Set A1 to 2.
+            let a1 = selectedSheet.getRange("A1");
+            a1.setValue(2);
+
+            // Set B1 to the formula =(2*A1), which should equal 4.
+            let b1 = selectedSheet.getRange("B1")
+            b1.setFormula("=(2*A1)");
+
+            // Log the current results for `getFormula` and `getValue` at B1.
+            console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);
+          }
+          ```
   - uid: 'ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)'
-    summary: '代表 A1 样式表示法中的单元格公式，位于用户的语言和数字格式区域设置中。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则将返回第一个单元格中的数据（由0行索引和列索引为0）。'
+    summary: '代表 A1 样式表示法中的单元格公式，位于用户的语言和数字格式区域设置中。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。'
     name: getFormulaLocal()
     fullName: getFormulaLocal()
     langs:
@@ -697,7 +737,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)'
-    summary: 代表 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格中的数据（由0行索引和列索引为0）。
+    summary: 代表 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
     name: getFormulaR1C1()
     fullName: getFormulaR1C1()
     langs:
@@ -923,7 +963,7 @@ items:
           - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
-    summary: 表示给定范围的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将返回第一个单元格中的数据（由0行索引和列索引为0）。
+    summary: 表示给定范围的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
     name: getNumberFormat()
     fullName: getNumberFormat()
     langs:
@@ -936,7 +976,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
-    summary: 表示给定范围的单元格 Excel 数字格式代码（基于用户的语言设置）。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将返回第一个单元格中的数据（由0行索引和列索引为0）。
+    summary: 表示给定范围的单元格 Excel 数字格式代码（基于用户的语言设置）。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
     name: getNumberFormatLocal()
     fullName: getNumberFormatLocal()
     langs:
@@ -1304,7 +1344,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#getText:member(1)'
-    summary: 代表指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。 如果区域包含多个单元格，则将返回第一个单元格中的数据（由0行索引和列索引为0）。
+    summary: 代表指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
     name: getText()
     fullName: getText()
     langs:
@@ -1361,7 +1401,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#getValue:member(1)'
-    summary: 表示指定范围的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，则将返回第一个单元格中的数据（由0行索引和列索引为0）。
+    summary: 表示指定范围的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
     name: getValue()
     fullName: getValue()
     langs:
@@ -1406,7 +1446,7 @@ items:
           - 'any[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getValueType:member(1)'
-    summary: 表示单元格中的数据的类型。 如果区域包含多个单元格，则将返回第一个单元格中的数据（由0行索引和列索引为0）。
+    summary: 表示单元格中的数据的类型。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
     name: getValueType()
     fullName: getValueType()
     langs:
@@ -1485,7 +1525,7 @@ items:
         description: ''
       parameters:
         - id: groupOption
-          description: 指定如何按行或列对区域进行分组。 `InvalidArgument`当组选项与范围 `isEntireRow` 或 `isEntireColumn` 属性不同时（即，为 `range.isEntireRow` True 且 `groupOption` 为 "ByColumns"，或者为 `range.isEntireColumn` `groupOption` "ByRows"）时，将引发错误。
+          description: 指定如何按行或列对区域进行分组。 `InvalidArgument`当组选项与范围或属性不同时，将引发错误 `isEntireRow` `isEntireColumn` (也就是说， `range.isEntireRow` 为 True 且 `groupOption` 为 "ByColumns"，或者为 `range.isEntireColumn` `groupOption` "ByRows" ) 。
           type:
             - 'ExcelScript!ExcelScript.GroupOption:enum'
   - uid: 'ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)'
@@ -1673,7 +1713,31 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          /*
+           * This script sets a cell's formula, 
+           * then displays how Excel stores the cell's formula and value separately.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Set A1 to 2.
+            let a1 = selectedSheet.getRange("A1");
+            a1.setValue(2);
+
+            // Set B1 to the formula =(2*A1), which should equal 4.
+            let b1 = selectedSheet.getRange("B1")
+            b1.setFormula("=(2*A1)");
+
+            // Log the current results for `getFormula` and `getValue` at B1.
+            console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);
+          }
+          ```
       parameters:
         - id: formula
           description: ''
@@ -1781,7 +1845,38 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>示例
+
+          ```javascript
+          /** 
+           * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the active cell.
+            let cell = workbook.getActiveCell();
+
+            // Get the last worksheet in the workbook.
+            // Note that this might be the current sheet if there's only one worksheet.
+            let lastSheet = workbook.getLastWorksheet();
+
+            // Get sheet name. 
+            let linkedSheetName = lastSheet.getName();
+            console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);
+
+            // Set the text for the hyperlink.
+            let value = `Click to go to: ${linkedSheetName}`;
+
+            // Create the hyperlink using that cell's value.
+            cell.setHyperlink({
+              textToDisplay: value.toString(),
+              screenTip: `Navigate to ${linkedSheetName}`,
+              documentReference: `${linkedSheetName}!A1`
+            });
+          }
+          ```
       parameters:
         - id: hyperlink
           description: ''
@@ -1896,7 +1991,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 设置指定区域的原始值。 设置的数据可以是 string、number 或 boolean 类型。 `null`值将被忽略（Excel 中不会设置或覆盖）。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+    summary: 设置指定区域的原始值。 设置的数据可以是 string、number 或 boolean 类型。 `null`值将被忽略 (在 Excel) 中未设置或覆盖。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
     name: setValue(value)
     fullName: setValue(value)
     langs:
