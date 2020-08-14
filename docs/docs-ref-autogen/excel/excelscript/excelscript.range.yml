@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Range:interface'
-    summary: 'Range 表示一个或多个连续单元格的集合，例如单元格、行、列、单元格块等。若要了解有关如何在整个 API 中使用范围的详细信息，请参阅[使用 Excel JAVASCRIPT Api 处理区域](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges)并使用[excel javascript api (高级) ](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.'
+    summary: 'Range 表示一个或多个连续单元格的集合，例如单元格、行、列、单元格块等。若要了解有关如何在整个 API 中使用范围的详细信息，请参阅 [使用 Excel JAVASCRIPT Api 处理区域](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) 并使用 [excel javascript api (高级) ](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.'
     name: ExcelScript.Range
     fullName: ExcelScript.Range
     langs:
@@ -15,7 +15,6 @@ items:
       - 'ExcelScript!ExcelScript.Range#clear:member(1)'
       - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.Range#delete:member(1)'
       - 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -162,7 +161,7 @@ items:
     summary: |-
       使用指定的自动填充逻辑将范围从当前范围填充到目标区域。 目标区域可以是 null，也可以是水平或垂直扩展源。 不支持不连续的区域。
 
-      有关详细信息，请参阅[使用自动填充和快速填充](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
+      有关详细信息，请参阅 [使用自动填充和快速填充](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
@@ -260,32 +259,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
-    summary: 将区域单元格转换为工作表中的链接数据类型。
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: 将用于查询数据的服务 ID。
-          type:
-            - number
-        - id: languageCulture
-          description: 要为其查询服务的语言区域性。
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
     summary: 将单元格数据或格式从源区域或 RangeAreas 复制到当前区域。 目标区域的大小可以与源区域或 RangeAreas 的大小不同。 如果目标小于源，则将自动扩展目标。
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -1991,7 +1964,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 设置指定区域的原始值。 设置的数据可以是 string、number 或 boolean 类型。 `null`值将被忽略 (在 Excel) 中未设置或覆盖。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+    summary: 设置指定区域的原始值。 设置的数据可以是 string、number 或 boolean 类型。 `null` 值将被忽略 (在 Excel) 中未设置或覆盖。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
     name: setValue(value)
     fullName: setValue(value)
     langs:
