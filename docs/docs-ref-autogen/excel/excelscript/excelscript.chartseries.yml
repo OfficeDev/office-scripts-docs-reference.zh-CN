@@ -18,6 +18,7 @@ items:
       - 'ExcelScript!ExcelScript.ChartSeries#getChartTrendline:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getDataLabels:member(1)'
+      - 'ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getExplosion:member(1)'
       - 'ExcelScript!ExcelScript.ChartSeries#getFiltered:member(1)'
@@ -113,7 +114,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 指定趋势线类型。 默认值为 "线性"。 有关详细信息，请参阅 ChartTrendline。
+          description: 指定趋势线类型。 默认值为 "线性"。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
   - uid: 'ExcelScript!ExcelScript.ChartSeries#delete:member(1)'
@@ -200,7 +201,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)'
-    summary: 表示系列的图表类型。 有关详细信息，请参阅 ChartType。
+    summary: 表示系列的图表类型。 有关详细信息，请参阅 ExcelScript。
     name: getChartType()
     fullName: getChartType()
     langs:
@@ -225,6 +226,24 @@ items:
         type:
           - 'ExcelScript!ExcelScript.ChartDataLabels:interface'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)'
+    summary: 从图表系列的单个维中获取值。 这些值可以是类别值，也可以是数据值，具体取决于指定的维度和为图表系列映射数据的方式。
+    name: getDimensionValues(dimension)
+    fullName: getDimensionValues(dimension)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDimensionValues(dimension: ChartSeriesDimension): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+      parameters:
+        - id: dimension
+          description: 数据从其开始的轴的维度
+          type:
+            - 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)'
     summary: 表示图表系列的圆环孔大小。 仅对圆环图和分离型圆环图有效。 对无效图表引发无效参数异常。
     name: getDoughnutHoleSize()
@@ -265,7 +284,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getFirstSliceAngle:member(1)'
-    summary: 指定第一个饼图或圆环图的扇区的角度（以度为单位（从垂直方向顺时针方向）。 只适用于饼图、三维饼图和圆环图。 可以是 0 到 360 之间的值。
+    summary: 指定第一个饼图或圆环图的扇区的角度，以度为单位从垂直) 顺时针 (。 只适用于饼图、三维饼图和圆环图。 可以是 0 到 360 之间的值。
     name: getFirstSliceAngle()
     fullName: getFirstSliceAngle()
     langs:
@@ -525,7 +544,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getMarkerStyle:member(1)'
-    summary: 指定图表系列的标记样式。 有关详细信息，请参阅 ChartMarkerStyle。
+    summary: 指定图表系列的标记样式。 有关详细信息，请参阅 ExcelScript。
     name: getMarkerStyle()
     fullName: getMarkerStyle()
     langs:
@@ -538,7 +557,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartSeries#getName:member(1)'
-    summary: 指定图表中系列的名称。
+    summary: 指定图表中系列的名称。 名称的长度不应超过255个字符。
     name: getName()
     fullName: getName()
     langs:
@@ -800,7 +819,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
   - uid: 'ExcelScript!ExcelScript.ChartSeries#setChartType:member(1)'
-    summary: 表示系列的图表类型。 有关详细信息，请参阅 ChartType。
+    summary: 表示系列的图表类型。 有关详细信息，请参阅 ExcelScript。
     name: setChartType(chartType)
     fullName: setChartType(chartType)
     langs:
@@ -872,7 +891,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartSeries#setFirstSliceAngle:member(1)'
-    summary: 指定第一个饼图或圆环图的扇区的角度（以度为单位（从垂直方向顺时针方向）。 只适用于饼图、三维饼图和圆环图。 可以是 0 到 360 之间的值。
+    summary: 指定第一个饼图或圆环图的扇区的角度，以度为单位从垂直) 顺时针 (。 只适用于饼图、三维饼图和圆环图。 可以是 0 到 360 之间的值。
     name: setFirstSliceAngle(firstSliceAngle)
     fullName: setFirstSliceAngle(firstSliceAngle)
     langs:
@@ -1205,7 +1224,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartSeries#setMarkerStyle:member(1)'
-    summary: 指定图表系列的标记样式。 有关详细信息，请参阅 ChartMarkerStyle。
+    summary: 指定图表系列的标记样式。 有关详细信息，请参阅 ExcelScript。
     name: setMarkerStyle(markerStyle)
     fullName: setMarkerStyle(markerStyle)
     langs:
@@ -1223,7 +1242,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
   - uid: 'ExcelScript!ExcelScript.ChartSeries#setName:member(1)'
-    summary: 指定图表中系列的名称。
+    summary: 指定图表中系列的名称。 名称的长度不应超过255个字符。
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -1499,6 +1518,9 @@ references:
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels:interface'
     name: ChartDataLabels
     fullName: ExcelScript.ChartDataLabels
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
+    name: ChartSeriesDimension
+    fullName: ExcelScript.ChartSeriesDimension
   - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat:interface'
     name: ChartSeriesFormat
     fullName: ExcelScript.ChartSeriesFormat

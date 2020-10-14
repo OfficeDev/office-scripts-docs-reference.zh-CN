@@ -101,7 +101,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getHorizontalAlignment:member(1)'
-    summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
+    summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -127,7 +127,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getLinkNumberFormat:member(1)'
-    summary: 指定数字格式是否链接到单元格（以便数字格式在单元格更改时更改标签中的数字格式）。
+    summary: 指定数字格式是否链接到单元格 (以便在标签中的) 单元格区域发生更改时，数字格式的更改将发生变化。
     name: getLinkNumberFormat()
     fullName: getLinkNumberFormat()
     langs:
@@ -153,7 +153,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getPosition:member(1)'
-    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ChartDataLabelPosition。
+    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ExcelScript。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -296,7 +296,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabel#getVerticalAlignment:member(1)'
-    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
+    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -358,7 +358,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setHorizontalAlignment:member(1)'
-    summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
+    summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -397,7 +397,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setLinkNumberFormat:member(1)'
-    summary: 指定数字格式是否链接到单元格（以便数字格式在单元格更改时更改标签中的数字格式）。
+    summary: 指定数字格式是否链接到单元格 (以便在标签中的) 单元格区域发生更改时，数字格式的更改将发生变化。
     name: setLinkNumberFormat(linkNumberFormat)
     fullName: setLinkNumberFormat(linkNumberFormat)
     langs:
@@ -433,7 +433,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setPosition:member(1)'
-    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ChartDataLabelPosition。
+    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ExcelScript。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -631,7 +631,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartDataLabel#setVerticalAlignment:member(1)'
-    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
+    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+    summary: 代表多个工作表中的一个或多个矩形区域的集合。
+    name: ExcelScript.WorkbookRangeAreas
+    fullName: ExcelScript.WorkbookRangeAreas
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)'
+    summary: 返回 A1 样式的地址数组。 Address 值将包含单元格每个矩形块的工作表名称 (例如，"Sheet1！A1： B4、Sheet1！D1： D4 ") 。 只读。
+    name: getAddresses()
+    fullName: getAddresses()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAddresses(): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)'
+    summary: 返回 RangeAreasCollection 对象，集合中的每个 RangeAreas 代表一个工作表中的一个或多个矩形区域。
+    name: getAreas()
+    fullName: getAreas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAreas(): RangeAreas[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
+    summary: 基于集合中的工作表名称或 id 返回 RangeAreas 对象。 如果没有 Worksheet 对象，将返回 NULL 对象。
+    name: getRangeAreasBySheet(key)
+    fullName: getRangeAreasBySheet(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeAreasBySheet(key: string): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 工作表的名称或 id。
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)'
+    summary: 返回在 RangeCollection 对象中组成此对象的范围。
+    name: getRanges()
+    fullName: getRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRanges(): Range[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges~0:complex'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas~0:complex'
+    name: 'RangeAreas[]'
+    fullName: 'ExcelScript.RangeAreas[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+        name: RangeAreas
+        fullName: ExcelScript.RangeAreas
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+    fullName: ExcelScript.RangeAreas
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges~0:complex'
+    name: 'Range[]'
+    fullName: 'ExcelScript.Range[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: '[]'
+        fullName: '[]'

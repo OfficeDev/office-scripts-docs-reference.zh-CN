@@ -30,7 +30,7 @@ items:
           - void
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)'
-    summary: 代表形状填充前景色的格式为 \# RRGGBB （例如，"FFA500"）或命名的 html 颜色（例如，"橙色"）的 html 颜色格式（如 ""）或命名的 html 颜色（例如 "橙色"）
+    summary: '代表形状填充前景色的格式为 \# RRGGBB (例如，"FFA500" ) 或用作命名的 HTML 颜色 (例如 "橙色" ) '
     name: getForegroundColor()
     fullName: getForegroundColor()
     langs:
@@ -43,7 +43,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)'
-    summary: 将填充的透明度百分比指定为0.0 （不透明）到1.0 （清除）中的值。 如果形状类型不支持透明度或形状填充透明度不一致（例如使用渐变填充类型），则返回 null。
+    summary: 将 fill 的透明度百分比指定为 0.0 (不透明) 到 1.0 (clear) 中的值。 如果形状类型不支持透明度或形状填充透明度不一致（例如使用渐变填充类型），则返回 null。
     name: getTransparency()
     fullName: getTransparency()
     langs:
@@ -56,7 +56,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
-    summary: 返回形状的填充类型。 有关详细信息，请参阅 Excel.ShapeFillType。
+    summary: 返回形状的填充类型。 有关详细信息，请参阅 ExcelScript。
     name: getType()
     fullName: getType()
     langs:
@@ -69,7 +69,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeFillType:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)'
-    summary: 代表形状填充前景色的格式为 \# RRGGBB （例如，"FFA500"）或命名的 html 颜色（例如，"橙色"）的 html 颜色格式（如 ""）或命名的 html 颜色（例如 "橙色"）
+    summary: '代表形状填充前景色的格式为 \# RRGGBB (例如，"FFA500" ) 或用作命名的 HTML 颜色 (例如 "橙色" ) '
     name: setForegroundColor(foregroundColor)
     fullName: setForegroundColor(foregroundColor)
     langs:
@@ -101,11 +101,11 @@ items:
         description: ''
       parameters:
         - id: color
-          description: 一个字符串，表示以 HTML 颜色格式表示的填充颜色，格式 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如，"橙色"）。
+          description: 一个字符串，表示以 HTML 颜色格式表示的填充颜色，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如，"橙色" ) 。
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)'
-    summary: 将填充的透明度百分比指定为0.0 （不透明）到1.0 （清除）中的值。 如果形状类型不支持透明度或形状填充透明度不一致（例如使用渐变填充类型），则返回 null。
+    summary: 将 fill 的透明度百分比指定为 0.0 (不透明) 到 1.0 (clear) 中的值。 如果形状类型不支持透明度或形状填充透明度不一致（例如使用渐变填充类型），则返回 null。
     name: setTransparency(transparency)
     fullName: setTransparency(transparency)
     langs:

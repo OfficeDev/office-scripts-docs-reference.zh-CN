@@ -36,7 +36,7 @@ items:
         type:
           - 'ExcelScript!ExcelScript.PivotItem:interface'
   - uid: 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
-    summary: 数据 PivotField 使用的 ShowAs 计算。 有关详细信息，请参阅 ShowAsCalculation。
+    summary: 数据 PivotField 使用的 ShowAs 计算。 有关详细信息，请参阅 ExcelScript。
     name: calculation
     fullName: calculation
     langs:

@@ -35,7 +35,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getColor:member(1)'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
     name: getColor()
     fullName: getColor()
     langs:
@@ -61,7 +61,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getName:member(1)'
-    summary: 字体名称（例如，"Calibri"）
+    summary: '字体名称 (例如，"Calibri" ) '
     name: getName()
     fullName: getName()
     langs:
@@ -74,7 +74,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getSize:member(1)'
-    summary: 字体大小（例如，11）
+    summary: '字体大小 (例如，11) '
     name: getSize()
     fullName: getSize()
     langs:
@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
-    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ChartUnderlineStyle。
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -118,7 +118,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartFont#setColor:member(1)'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -154,7 +154,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartFont#setName:member(1)'
-    summary: 字体名称（例如，"Calibri"）
+    summary: '字体名称 (例如，"Calibri" ) '
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -172,7 +172,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartFont#setSize:member(1)'
-    summary: 字体大小（例如，11）
+    summary: '字体大小 (例如，11) '
     name: setSize(size)
     fullName: setSize(size)
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
-    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ChartUnderlineStyle。
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

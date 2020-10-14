@@ -62,7 +62,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)'
-    summary: 数据点的标记背景色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 数据点的标记背景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
     name: getMarkerBackgroundColor()
     fullName: getMarkerBackgroundColor()
     langs:
@@ -75,7 +75,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)'
-    summary: 数据点的标记前景色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 数据点的标记前景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
     name: getMarkerForegroundColor()
     fullName: getMarkerForegroundColor()
     langs:
@@ -101,7 +101,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
-    summary: 表示图表数据点的标记样式。 有关详细信息，请参阅 ChartMarkerStyle。
+    summary: 表示图表数据点的标记样式。 有关详细信息，请参阅 ExcelScript。
     name: getMarkerStyle()
     fullName: getMarkerStyle()
     langs:
@@ -145,7 +145,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
-    summary: 数据点的标记背景色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 数据点的标记背景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
     name: setMarkerBackgroundColor(markerBackgroundColor)
     fullName: setMarkerBackgroundColor(markerBackgroundColor)
     langs:
@@ -163,7 +163,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
-    summary: 数据点的标记前景色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 数据点的标记前景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
     name: setMarkerForegroundColor(markerForegroundColor)
     fullName: setMarkerForegroundColor(markerForegroundColor)
     langs:
@@ -199,7 +199,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
-    summary: 表示图表数据点的标记样式。 有关详细信息，请参阅 ChartMarkerStyle。
+    summary: 表示图表数据点的标记样式。 有关详细信息，请参阅 ExcelScript。
     name: setMarkerStyle(markerStyle)
     fullName: setMarkerStyle(markerStyle)
     langs:

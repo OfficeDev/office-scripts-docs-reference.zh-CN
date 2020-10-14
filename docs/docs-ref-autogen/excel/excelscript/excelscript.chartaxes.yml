@@ -41,11 +41,11 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 指定坐标轴类型。 有关详细信息，请参阅 ChartAxisType。
+          description: 指定坐标轴类型。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ChartAxisType:enum'
         - id: group
-          description: 可选。 指定坐标轴组。 有关详细信息，请参阅 ChartAxisGroup。
+          description: 可选。 指定坐标轴组。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'

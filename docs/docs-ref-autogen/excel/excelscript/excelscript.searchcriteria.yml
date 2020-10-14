@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
       - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    summary: 指定是否需要完成匹配或部分匹配。 完全匹配的单元格的全部内容。 部分匹配与单元格内容中的子字符串匹配（例如， `cat` 部分匹配 `caterpillar` 和`scatter`<!-- -->). 默认值为 false（部分）。
+    summary: 指定是否需要完成匹配或部分匹配。 完全匹配的单元格的全部内容。 部分匹配匹配单元格内容中的子字符串 (例如， `cat` 部分匹配 `caterpillar` 和 `scatter`<!-- -->). 默认值为 false（部分）。
     name: completeMatch
     fullName: completeMatch
     langs:
@@ -37,7 +37,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    summary: 指定搜索方向。 默认值为向前。 请参阅 Excel.SearchDirection。
+    summary: 指定搜索方向。 默认值为向前。 请参阅 ExcelScript. SearchDirection。
     name: searchDirection
     fullName: searchDirection
     langs:

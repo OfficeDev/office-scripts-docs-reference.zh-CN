@@ -43,7 +43,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartLineFormat#getLineStyle:member(1)'
-    summary: 代表线条样式。 有关详细信息，请参阅 ChartLineStyle。
+    summary: 代表线条样式。 有关详细信息，请参阅 ExcelScript。
     name: getLineStyle()
     fullName: getLineStyle()
     langs:
@@ -87,7 +87,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartLineFormat#setLineStyle:member(1)'
-    summary: 代表线条样式。 有关详细信息，请参阅 ChartLineStyle。
+    summary: 代表线条样式。 有关详细信息，请参阅 ExcelScript。
     name: setLineStyle(lineStyle)
     fullName: setLineStyle(lineStyle)
     langs:

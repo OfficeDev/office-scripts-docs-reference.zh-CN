@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
       - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
   - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
-    summary: 返回一个 format 对象，该对象封装条件格式的字体、填充、边框和其他属性。
+    summary: 返回一个 format 对象，该对象封装条件格式字体、填充、边框和其他属性。
     name: getFormat()
     fullName: getFormat()
     langs:

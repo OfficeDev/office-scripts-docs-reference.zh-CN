@@ -230,7 +230,7 @@ items:
         description: ''
       parameters:
         - id: values
-          description: 要显示的值的列表。 这必须是一个字符串数组或 FilterDateTime 对象的数组。
+          description: 要显示的值的列表。 这必须是一个字符串数组或 ExcelScript 的 FilterDateTime 对象的数组。
           type:
             - 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
   - uid: 'ExcelScript!ExcelScript.Filter#clear:member(1)'

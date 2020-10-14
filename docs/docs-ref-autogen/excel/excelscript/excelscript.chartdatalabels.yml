@@ -65,7 +65,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)'
-    summary: 指定图表数据标签的水平对齐方式。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
+    summary: 指定图表数据标签的水平对齐方式。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -104,7 +104,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)'
-    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ChartDataLabelPosition。
+    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ExcelScript。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -221,7 +221,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)'
-    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
+    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -252,7 +252,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)'
-    summary: 指定图表数据标签的水平对齐方式。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
+    summary: 指定图表数据标签的水平对齐方式。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -309,7 +309,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)'
-    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ChartDataLabelPosition。
+    summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ExcelScript。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -471,7 +471,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)'
-    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
+    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

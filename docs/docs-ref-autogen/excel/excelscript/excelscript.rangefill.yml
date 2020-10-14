@@ -34,7 +34,7 @@ items:
           - void
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getColor:member(1)'
-    summary: 代表表单 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的背景色的 HTML 颜色代码。
+    summary: '代表表单 RRGGBB 的背景色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) '
     name: getColor()
     fullName: getColor()
     langs:
@@ -47,7 +47,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
-    summary: 区域的图案。 有关详细信息，请参阅 Excel.FillPattern。 不支持 LinearGradient 和 RectangularGradient。 如果为 null 值，则表示整个区域没有统一的模式设置。
+    summary: 区域的图案。 有关详细信息，请参阅 ExcelScript。 不支持 LinearGradient 和 RectangularGradient。 如果为 null 值，则表示整个区域没有统一的模式设置。
     name: getPattern()
     fullName: getPattern()
     langs:
@@ -60,7 +60,7 @@ items:
           - 'ExcelScript!ExcelScript.FillPattern:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)'
-    summary: 表示范围模式的颜色的 HTML 颜色代码，格式 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）。
+    summary: 表示范围模式的颜色的 HTML 颜色代码，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
     name: getPatternColor()
     fullName: getPatternColor()
     langs:
@@ -73,7 +73,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 指定用于将区域填充的图案颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 如果模式 tintAndShades 不一致，则将返回 null。
+    summary: 指定用于使区域填充的图案颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (明亮的) ，0表示原始颜色。 如果模式 tintAndShades 不一致，则将返回 null。
     name: getPatternTintAndShade()
     fullName: getPatternTintAndShade()
     langs:
@@ -86,7 +86,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)'
-    summary: 指定用于将区域填充的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 如果 tintAndShades 不是统一的，将返回 null。
+    summary: 指定用于将区域填充的颜色变浅或变暗的双精度。 该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 如果 tintAndShades 不是统一的，将返回 null。
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -99,7 +99,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#setColor:member(1)'
-    summary: 代表表单 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的背景色的 HTML 颜色代码。
+    summary: '代表表单 RRGGBB 的背景色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) '
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -117,7 +117,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
-    summary: 区域的图案。 有关详细信息，请参阅 Excel.FillPattern。 不支持 LinearGradient 和 RectangularGradient。 如果为 null 值，则表示整个区域没有统一的模式设置。
+    summary: 区域的图案。 有关详细信息，请参阅 ExcelScript。 不支持 LinearGradient 和 RectangularGradient。 如果为 null 值，则表示整个区域没有统一的模式设置。
     name: setPattern(pattern)
     fullName: setPattern(pattern)
     langs:
@@ -135,7 +135,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.FillPattern:enum'
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)'
-    summary: 表示范围模式的颜色的 HTML 颜色代码，格式 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）。
+    summary: 表示范围模式的颜色的 HTML 颜色代码，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
     name: setPatternColor(patternColor)
     fullName: setPatternColor(patternColor)
     langs:
@@ -153,7 +153,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 指定用于将区域填充的图案颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 如果模式 tintAndShades 不一致，则将返回 null。
+    summary: 指定用于使区域填充的图案颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (明亮的) ，0表示原始颜色。 如果模式 tintAndShades 不一致，则将返回 null。
     name: setPatternTintAndShade(patternTintAndShade)
     fullName: setPatternTintAndShade(patternTintAndShade)
     langs:
@@ -171,7 +171,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)'
-    summary: 指定用于将区域填充的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 如果 tintAndShades 不是统一的，将返回 null。
+    summary: 指定用于将区域填充的颜色变浅或变暗的双精度。 该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 如果 tintAndShades 不是统一的，将返回 null。
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Chart:interface'
-    summary: '表示工作簿中的 chart 对象。 若要了解有关 Chart 对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理图表](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.'
+    summary: 表示工作簿中的 chart 对象。
     name: ExcelScript.Chart
     fullName: ExcelScript.Chart
     langs:
@@ -67,7 +67,7 @@ items:
           - void
         description: ''
   - uid: 'ExcelScript!ExcelScript.Chart#addChartSeries:member(1)'
-    summary: 向集合添加新系列。 在设置值/x 轴值/气泡大小（具体取决于图表类型）之前，新添加的系列将不可见。
+    summary: 向集合添加新系列。 在为其设置值/x 轴值/气泡大小之前，新添加的系列将不可见， (取决于图表类型) 。
     name: 'addChartSeries(name, index)'
     fullName: 'addChartSeries(name, index)'
     langs:
@@ -128,7 +128,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Chart#getChartType:member(1)'
-    summary: 指定图表的类型。 有关详细信息，请参阅 ChartType。
+    summary: 指定图表的类型。 有关详细信息，请参阅 ExcelScript。
     name: getChartType()
     fullName: getChartType()
     langs:
@@ -233,7 +233,7 @@ items:
           type:
             - number
         - id: fittingMode
-          description: Optional用于将图表缩放到指定尺寸（如果同时设置了高度和宽度）的方法。
+          description: ' (可选) 如果高度和宽度均设置) ，用于将图表缩放到指定尺寸的方法 (。'
           type:
             - 'ExcelScript!ExcelScript.ImageFittingMode:enum'
   - uid: 'ExcelScript!ExcelScript.Chart#getLeft:member(1)'
@@ -406,7 +406,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartTitle:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Chart#getTop:member(1)'
-    summary: 指定从对象的上边缘到工作表上的第1行顶部或图表上的图表区顶部的距离（以磅为单位）。
+    summary: 指定一个距离，以磅为单位，从工作表上的第1行顶部 (工作) 表上，或图表) 上的图表区 (顶部的距离（以磅为单位）。
     name: getTop()
     fullName: getTop()
     langs:
@@ -463,7 +463,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Chart#setChartType:member(1)'
-    summary: 指定图表的类型。 有关详细信息，请参阅 ChartType。
+    summary: 指定图表的类型。 有关详细信息，请参阅 ExcelScript。
     name: setChartType(chartType)
     fullName: setChartType(chartType)
     langs:
@@ -499,7 +499,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
         - id: seriesBy
-          description: 指定列或行在图表上用作数据系列的方式。 可以是下列值之一：自动（默认）、行和列。 有关详细信息，请参阅 ChartSeriesBy。
+          description: 指定列或行在图表上用作数据系列的方式。 可以是下列值之一： Auto (默认) 、行和列。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
   - uid: 'ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)'
@@ -705,7 +705,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Chart#setTop:member(1)'
-    summary: 指定从对象的上边缘到工作表上的第1行顶部或图表上的图表区顶部的距离（以磅为单位）。
+    summary: 指定一个距离，以磅为单位，从工作表上的第1行顶部 (工作) 表上，或图表) 上的图表区 (顶部的距离（以磅为单位）。
     name: setTop(top)
     fullName: setTop(top)
     langs:

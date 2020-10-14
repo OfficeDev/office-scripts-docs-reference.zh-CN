@@ -34,7 +34,7 @@ items:
     summary: |-
       第一个条件用于筛选数据。 在“自定义”筛选中用作运算符。 例如 "<!-- -->&gt;<!-- -->50 "的数字大于50或" = * s "（表示以" s "结尾的值）。
 
-      在 top/底端项目/百分比的情况下使用（如果将 "开启" 设置为 "topItems"，则为前5项）使用的数字（例如，"5"）。
+      在 top/底端项目/百分比的情况下用作数字 (例如，如果将 "topItems" 设置为 "5"，则将前5个项目设置为 "" ) 。
     name: criterion1
     fullName: criterion1
     langs:
@@ -58,7 +58,7 @@ items:
         type:
           - string
   - uid: 'ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member'
-    summary: Excel.DynamicFilterCriteria 集中的动态条件将应用于此列。 与“动态”筛选一起使用。
+    summary: 要应用于此列的 ExcelScript 中的 DynamicFilterCriteria 集合中的动态条件。 与“动态”筛选一起使用。
     name: dynamicCriteria
     fullName: dynamicCriteria
     langs:

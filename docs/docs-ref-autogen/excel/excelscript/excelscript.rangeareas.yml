@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    summary: 'RangeAreas 表示同一工作表中的一个或多个矩形区域的集合。 若要了解如何使用 discontinguous 范围，请阅读 [在 Excel 加载项中同时处理多个区域](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.'
+    summary: RangeAreas 表示同一工作表中的一个或多个矩形区域的集合。
     name: ExcelScript.RangeAreas
     fullName: ExcelScript.RangeAreas
     langs:
@@ -52,7 +52,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 要添加的条件格式的类型。 有关详细信息，请参阅 ConditionalFormatType。
+          description: 要添加的条件格式的类型。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
@@ -83,7 +83,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ClearApplyTo。 默认值为 "All"。
+          description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ExcelScript。 默认值为 "All"。
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'

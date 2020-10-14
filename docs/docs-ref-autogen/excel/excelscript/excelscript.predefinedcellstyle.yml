@@ -146,7 +146,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)'
-    summary: 表示样式水平对齐。 有关详细信息，请参阅 HorizontalAlignment。
+    summary: 表示样式水平对齐。 有关详细信息，请参阅 ExcelScript。
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -316,11 +316,11 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 BorderIndex。
+          description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.BorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)'
-    summary: 指定用于使区域边框的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示整个边框集合没有统一的 tintAndShade 设置。
+    summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示整个边框集合没有统一的 tintAndShade 设置。
     name: getRangeBorderTintAndShade()
     fullName: getRangeBorderTintAndShade()
     langs:
@@ -372,7 +372,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)'
-    summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 VerticalAlignment。
+    summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 ExcelScript。
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -434,7 +434,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)'
-    summary: 表示样式水平对齐。 有关详细信息，请参阅 HorizontalAlignment。
+    summary: 表示样式水平对齐。 有关详细信息，请参阅 ExcelScript。
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -632,7 +632,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)'
-    summary: 指定用于使区域边框的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示整个边框集合没有统一的 tintAndShade 设置。
+    summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示整个边框集合没有统一的 tintAndShade 设置。
     name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     langs:
@@ -704,7 +704,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)'
-    summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 VerticalAlignment。
+    summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 ExcelScript。
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

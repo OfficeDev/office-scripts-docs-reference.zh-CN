@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
+    summary: 一个代表透视字段的筛选器类型的简单枚举。
+    name: ExcelScript.PivotFilterType
+    fullName: ExcelScript.PivotFilterType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    summary: 使用日期替换标签筛选 PivotItems。 注意：透视字段不能同时应用标签筛选和日期筛选器。
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    summary: 根据其标签筛选 PivotItems。 注意：透视字段不能同时应用标签筛选和日期筛选器。
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    summary: 从数据透视表中筛选特定的手动选定 PivotItems。
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    summary: PivotFilterType 未知或不受支持。
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    summary: 基于 PivotItem 的值与 DataPivotHierarchy 的筛选器相关的筛选器。
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field

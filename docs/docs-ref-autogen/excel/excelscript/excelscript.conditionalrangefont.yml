@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont:interface'
-    summary: 此对象表示对象的字体属性（字体样式、颜色等）。
+    summary: 此对象表示对象的字体样式、颜色等 )  (字体属性。
     name: ExcelScript.ConditionalRangeFont
     fullName: ExcelScript.ConditionalRangeFont
     langs:
@@ -47,7 +47,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
     name: getColor()
     fullName: getColor()
     langs:
@@ -86,7 +86,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)'
-    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ConditionalRangeFontUnderlineStyle。
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -117,7 +117,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -171,7 +171,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)'
-    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ConditionalRangeFontUnderlineStyle。
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

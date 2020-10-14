@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
-    summary: 数据有效性规则包含不同类型的数据验证。 一次只能根据 DataValidationType 使用其中一种方法。
+    summary: 数据有效性规则包含不同类型的数据验证。 一次只能根据 ExcelScript 使用其中一种。
     name: ExcelScript.DataValidationRule
     fullName: ExcelScript.DataValidationRule
     langs:

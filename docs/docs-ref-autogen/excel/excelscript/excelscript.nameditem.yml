@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.NamedItem:interface'
-    summary: 表示单元格区域或值的定义名称。 名称可以是命名为对象的基元（如下面的类型中所示）、range 对象或对区域的引用。 此对象可用于获取与名称相关的 range 对象。
+    summary: 表示单元格区域或值的定义名称。 名称可以是基元命名的对象 (如下面的类型) 、range 对象或对区域的引用所示。 此对象可用于获取与名称相关的 range 对象。
     name: ExcelScript.NamedItem
     fullName: ExcelScript.NamedItem
     langs:
@@ -115,7 +115,7 @@ items:
           - 'ExcelScript!ExcelScript.NamedItemScope:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
-    summary: 指定由名称的公式返回的值的类型。 有关详细信息，请参阅 NamedItemType。
+    summary: 指定由名称的公式返回的值的类型。 有关详细信息，请参阅 ExcelScript。
     name: getType()
     fullName: getType()
     langs:

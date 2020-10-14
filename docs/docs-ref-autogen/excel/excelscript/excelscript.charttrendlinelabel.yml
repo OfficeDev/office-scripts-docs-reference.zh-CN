@@ -33,7 +33,7 @@ items:
       - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setTop:member(1)'
       - 'ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)'
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getAutoText:member(1)'
-    summary: 指定趋势线标签是否根据上下文自动生成适当的文字。
+    summary: 指定趋势线标签是否根据上下文自动生成相应的文本。
     name: getAutoText()
     fullName: getAutoText()
     langs:
@@ -85,7 +85,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)'
-    summary: 表示图表趋势线标签水平对齐。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的趋势线标签为-90、90或180时，此属性才有效。
+    summary: 表示图表趋势线标签水平对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的趋势线标签为-90、90或180时，此属性才有效。
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -111,7 +111,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getLinkNumberFormat:member(1)'
-    summary: 指定数字格式是否链接到单元格（以便数字格式在单元格更改时更改标签中的数字格式）。
+    summary: 指定数字格式是否链接到单元格 (以便在标签中的) 单元格区域发生更改时，数字格式的更改将发生变化。
     name: getLinkNumberFormat()
     fullName: getLinkNumberFormat()
     langs:
@@ -176,7 +176,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)'
-    summary: 表示图表趋势线标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的趋势线标签为0时，此属性才有效。
+    summary: 表示图表趋势线标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的趋势线标签为0时，此属性才有效。
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -202,7 +202,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setAutoText:member(1)'
-    summary: 指定趋势线标签是否根据上下文自动生成适当的文字。
+    summary: 指定趋势线标签是否根据上下文自动生成相应的文本。
     name: setAutoText(autoText)
     fullName: setAutoText(autoText)
     langs:
@@ -238,7 +238,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)'
-    summary: 表示图表趋势线标签水平对齐。 有关详细信息，请参阅 ChartTextHorizontalAlignment。 仅当 TextOrientation 的趋势线标签为-90、90或180时，此属性才有效。
+    summary: 表示图表趋势线标签水平对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的趋势线标签为-90、90或180时，此属性才有效。
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -277,7 +277,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setLinkNumberFormat:member(1)'
-    summary: 指定数字格式是否链接到单元格（以便数字格式在单元格更改时更改标签中的数字格式）。
+    summary: 指定数字格式是否链接到单元格 (以便在标签中的) 单元格区域发生更改时，数字格式的更改将发生变化。
     name: setLinkNumberFormat(linkNumberFormat)
     fullName: setLinkNumberFormat(linkNumberFormat)
     langs:
@@ -367,7 +367,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)'
-    summary: 表示图表趋势线标签垂直对齐。 有关详细信息，请参阅 ChartTextVerticalAlignment。 仅当 TextOrientation 的趋势线标签为0时，此属性才有效。
+    summary: 表示图表趋势线标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的趋势线标签为0时，此属性才有效。
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

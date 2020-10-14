@@ -35,7 +35,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如，" \# FF0000" 代表红色）。 如果 TextRange 包含具有不同颜色的文本片段，则返回 null。
+    summary: ' (文本颜色的 HTML 颜色代码表示形式，例如，" \# FF0000" 表示红色) 。 如果 TextRange 包含具有不同颜色的文本片段，则返回 null。'
     name: getColor()
     fullName: getColor()
     langs:
@@ -61,7 +61,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
-    summary: 表示字体名称（例如，"Calibri"）。 如果文本是复杂脚本或东亚语言，则这是相应的字体名称，否则是拉丁字体名称。
+    summary: 表示字体名称 (例如，"Calibri" ) 。 如果文本是复杂脚本或东亚语言，则这是相应的字体名称，否则是拉丁字体名称。
     name: getName()
     fullName: getName()
     langs:
@@ -74,7 +74,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
-    summary: 表示以磅为单位的字体大小（例如，11）。 如果 TextRange 包含具有不同字体大小的文本片段，则返回 null。
+    summary: 表示字体大小，以磅为单位 (例如，11) 。 如果 TextRange 包含具有不同字体大小的文本片段，则返回 null。
     name: getSize()
     fullName: getSize()
     langs:
@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
-    summary: 应用于字体的下划线类型。 如果 TextRange 包含具有不同下划线样式的文本片段，则返回 null。 有关详细信息，请参阅 Excel.ShapeFontUnderlineStyle。
+    summary: 应用于字体的下划线类型。 如果 TextRange 包含具有不同下划线样式的文本片段，则返回 null。 有关详细信息，请参阅 ExcelScript。
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -118,7 +118,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如，" \# FF0000" 代表红色）。 如果 TextRange 包含具有不同颜色的文本片段，则返回 null。
+    summary: ' (文本颜色的 HTML 颜色代码表示形式，例如，" \# FF0000" 表示红色) 。 如果 TextRange 包含具有不同颜色的文本片段，则返回 null。'
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -154,7 +154,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
-    summary: 表示字体名称（例如，"Calibri"）。 如果文本是复杂脚本或东亚语言，则这是相应的字体名称，否则是拉丁字体名称。
+    summary: 表示字体名称 (例如，"Calibri" ) 。 如果文本是复杂脚本或东亚语言，则这是相应的字体名称，否则是拉丁字体名称。
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -172,7 +172,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
-    summary: 表示以磅为单位的字体大小（例如，11）。 如果 TextRange 包含具有不同字体大小的文本片段，则返回 null。
+    summary: 表示字体大小，以磅为单位 (例如，11) 。 如果 TextRange 包含具有不同字体大小的文本片段，则返回 null。
     name: setSize(size)
     fullName: setSize(size)
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
-    summary: 应用于字体的下划线类型。 如果 TextRange 包含具有不同下划线样式的文本片段，则返回 null。 有关详细信息，请参阅 Excel.ShapeFontUnderlineStyle。
+    summary: 应用于字体的下划线类型。 如果 TextRange 包含具有不同下划线样式的文本片段，则返回 null。 有关详细信息，请参阅 ExcelScript。
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

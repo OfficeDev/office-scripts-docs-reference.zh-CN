@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotFilters:interface'
+    summary: 一个表示当前应用于给定透视字段的所有 PivotFilters 的接口。
+    name: ExcelScript.PivotFilters
+    fullName: ExcelScript.PivotFilters
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotFilters#dateFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#labelFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#manualFilter:member'
+      - 'ExcelScript!ExcelScript.PivotFilters#valueFilter:member'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#dateFilter:member'
+    summary: 透视字段当前应用的日期筛选器。 如果未应用任何值，则为 Null。
+    name: dateFilter
+    fullName: dateFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateFilter?: PivotDateFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotDateFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#labelFilter:member'
+    summary: 透视字段当前应用的标签筛选器。 如果未应用任何值，则为 Null。
+    name: labelFilter
+    fullName: labelFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelFilter?: PivotLabelFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#manualFilter:member'
+    summary: 透视字段当前应用的手动筛选。 如果未应用任何值，则为 Null。
+    name: manualFilter
+    fullName: manualFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manualFilter?: PivotManualFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotManualFilter:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotFilters#valueFilter:member'
+    summary: 透视字段当前应用的值筛选器。 如果未应用任何值，则为 Null。
+    name: valueFilter
+    fullName: valueFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueFilter?: PivotValueFilter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotValueFilter:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter:interface'
+    name: PivotDateFilter
+    fullName: ExcelScript.PivotDateFilter
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+    name: PivotLabelFilter
+    fullName: ExcelScript.PivotLabelFilter
+  - uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
+    name: PivotManualFilter
+    fullName: ExcelScript.PivotManualFilter
+  - uid: 'ExcelScript!ExcelScript.PivotValueFilter:interface'
+    name: PivotValueFilter
+    fullName: ExcelScript.PivotValueFilter

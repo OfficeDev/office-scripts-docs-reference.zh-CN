@@ -79,7 +79,7 @@ items:
       - 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
       - 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
-    summary: 指定指定轴刻度线标签的对齐方式。 有关详细信息，请参阅 ChartTextHorizontalAlignment。
+    summary: 指定指定轴刻度线标签的对齐方式。 有关详细信息，请参阅 ExcelScript ChartTextHorizontalAlignment。
     name: getAlignment()
     fullName: getAlignment()
     langs:
@@ -92,7 +92,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
-    summary: 为指定坐标轴指定组。 有关详细信息，请参阅 ChartAxisGroup。
+    summary: 为指定坐标轴指定组。 有关详细信息，请参阅 ExcelScript。
     name: getAxisGroup()
     fullName: getAxisGroup()
     langs:
@@ -144,7 +144,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
-    summary: 表示轴显示单位。 有关详细信息，请参阅 ChartAxisDisplayUnit。
+    summary: 表示轴显示单位。 有关详细信息，请参阅 ExcelScript。
     name: getDisplayUnit()
     fullName: getDisplayUnit()
     langs:
@@ -248,7 +248,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartGridlines:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
-    summary: 指定坐标轴的主要刻度线的类型。 有关详细信息，请参阅 ChartAxisTickMark。
+    summary: 指定坐标轴的主要刻度线的类型。 有关详细信息，请参阅 ExcelScript。
     name: getMajorTickMark()
     fullName: getMajorTickMark()
     langs:
@@ -274,7 +274,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
-    summary: 表示两个主要刻度标记之间的间隔。 可以设置为数字值或空字符串。 返回的值始终为数字。
+    summary: 指定两个主要刻度线之间的间隔。
     name: getMajorUnit()
     fullName: getMajorUnit()
     langs:
@@ -287,7 +287,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
-    summary: 表示数值轴上的最大值。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    summary: 指定数值轴上的最大值。
     name: getMaximum()
     fullName: getMaximum()
     langs:
@@ -300,7 +300,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
-    summary: 表示数值轴上的最小值。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    summary: 指定数值轴上的最小值。
     name: getMinimum()
     fullName: getMinimum()
     langs:
@@ -326,7 +326,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartGridlines:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
-    summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 ChartAxisTickMark。
+    summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 ExcelScript。
     name: getMinorTickMark()
     fullName: getMinorTickMark()
     langs:
@@ -352,7 +352,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
-    summary: 表示两个次要刻度标记之间的间隔。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    summary: 指定两个次要刻度线之间的间隔。
     name: getMinorUnit()
     fullName: getMinorUnit()
     langs:
@@ -404,7 +404,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
-    summary: 指定另一个轴交叉处的指定轴位置。 有关详细信息，请参阅 ChartAxisPosition。
+    summary: 指定另一个轴交叉处的指定轴位置。 有关详细信息，请参阅 ExcelScript。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -443,7 +443,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
-    summary: 指定数值轴的刻度类型。 有关详细信息，请参阅 ChartAxisScaleType。
+    summary: 指定数值轴的刻度类型。 有关详细信息，请参阅 ExcelScript。
     name: getScaleType()
     fullName: getScaleType()
     langs:
@@ -482,7 +482,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
-    summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 ChartAxisTickLabelPosition。
+    summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 ExcelScript。
     name: getTickLabelPosition()
     fullName: getTickLabelPosition()
     langs:
@@ -495,7 +495,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
-    summary: 指定分类或系列轴刻度线标签之间的数目。 可以是 1 到 31999 的值或空字符串（自动设置）。 返回的值始终为数字。
+    summary: 指定分类或系列轴刻度线标签之间的数目。 可以是 1 到 31999 之间的一个数值。
     name: getTickLabelSpacing()
     fullName: getTickLabelSpacing()
     langs:
@@ -547,7 +547,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
-    summary: 指定坐标轴类型。 有关详细信息，请参阅 ChartAxisType。
+    summary: 指定坐标轴类型。 有关详细信息，请参阅 ExcelScript。
     name: getType()
     fullName: getType()
     langs:
@@ -586,7 +586,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
-    summary: 指定指定轴刻度线标签的对齐方式。 有关详细信息，请参阅 ChartTextHorizontalAlignment。
+    summary: 指定指定轴刻度线标签的对齐方式。 有关详细信息，请参阅 ExcelScript ChartTextHorizontalAlignment。
     name: setAlignment(alignment)
     fullName: setAlignment(alignment)
     langs:
@@ -676,7 +676,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
-    summary: 表示轴显示单位。 有关详细信息，请参阅 ChartAxisDisplayUnit。
+    summary: 表示轴显示单位。 有关详细信息，请参阅 ExcelScript。
     name: setDisplayUnit(displayUnit)
     fullName: setDisplayUnit(displayUnit)
     langs:
@@ -748,7 +748,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
-    summary: 指定坐标轴的主要刻度线的类型。 有关详细信息，请参阅 ChartAxisTickMark。
+    summary: 指定坐标轴的主要刻度线的类型。 有关详细信息，请参阅 ExcelScript。
     name: setMajorTickMark(majorTickMark)
     fullName: setMajorTickMark(majorTickMark)
     langs:
@@ -784,7 +784,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
-    summary: 表示两个主要刻度标记之间的间隔。 可以设置为数字值或空字符串。 返回的值始终为数字。
+    summary: 指定两个主要刻度线之间的间隔。
     name: setMajorUnit(majorUnit)
     fullName: setMajorUnit(majorUnit)
     langs:
@@ -802,7 +802,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
-    summary: 表示数值轴上的最大值。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    summary: 指定数值轴上的最大值。
     name: setMaximum(maximum)
     fullName: setMaximum(maximum)
     langs:
@@ -820,7 +820,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
-    summary: 表示数值轴上的最小值。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    summary: 指定数值轴上的最小值。
     name: setMinimum(minimum)
     fullName: setMinimum(minimum)
     langs:
@@ -838,7 +838,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
-    summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 ChartAxisTickMark。
+    summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 ExcelScript。
     name: setMinorTickMark(minorTickMark)
     fullName: setMinorTickMark(minorTickMark)
     langs:
@@ -874,7 +874,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
-    summary: 表示两个次要刻度标记之间的间隔。 可以设置为数字值或空字符串（对于自动坐标轴值）。 返回的值始终为数字。
+    summary: 指定两个次要刻度线之间的间隔。
     name: setMinorUnit(minorUnit)
     fullName: setMinorUnit(minorUnit)
     langs:
@@ -946,7 +946,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
-    summary: 指定另一个轴交叉处的指定轴位置。 有关详细信息，请参阅 ChartAxisPosition。
+    summary: 指定另一个轴交叉处的指定轴位置。 有关详细信息，请参阅 ExcelScript。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -1000,7 +1000,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
-    summary: 指定数值轴的刻度类型。 有关详细信息，请参阅 ChartAxisScaleType。
+    summary: 指定数值轴的刻度类型。 有关详细信息，请参阅 ExcelScript。
     name: setScaleType(scaleType)
     fullName: setScaleType(scaleType)
     langs:
@@ -1054,7 +1054,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
-    summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 ChartAxisTickLabelPosition。
+    summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 ExcelScript。
     name: setTickLabelPosition(tickLabelPosition)
     fullName: setTickLabelPosition(tickLabelPosition)
     langs:
@@ -1075,7 +1075,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
-    summary: 指定分类或系列轴刻度线标签之间的数目。 可以是 1 到 31999 的值或空字符串（自动设置）。 返回的值始终为数字。
+    summary: 指定分类或系列轴刻度线标签之间的数目。 可以是 1 到 31999 之间的一个数值。
     name: setTickLabelSpacing(tickLabelSpacing)
     fullName: setTickLabelSpacing(tickLabelSpacing)
     langs:

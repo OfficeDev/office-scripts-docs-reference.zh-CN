@@ -38,7 +38,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-    summary: 数据有效性警报类型，有关详细信息，请参阅 DataValidationAlertStyle。
+    summary: 数据验证警报类型的详细信息，请参阅 ExcelScript。
     name: style
     fullName: style
     langs:

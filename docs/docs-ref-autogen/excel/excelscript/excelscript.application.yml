@@ -34,7 +34,7 @@ items:
         description: ''
       parameters:
         - id: calculationType
-          description: 指定要使用的计算类型。 有关详细信息，请参阅 CalculationType。
+          description: 指定要使用的计算类型。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.CalculationType:enum'
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
@@ -51,7 +51,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
-    summary: 返回工作簿中使用的计算模式，如 CalculationMode 中的常量所定义。 可能的值包括：`Automatic`<!-- -->，Excel 控制重新计算的位置;`AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。`Manual`<!-- -->，在用户请求计算时完成计算。
+    summary: 返回工作簿中使用的计算模式，由 ExcelScript 中的常量定义。 可能的值包括： `Automatic`<!-- -->，Excel 控制重新计算的位置; `AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。 `Manual`<!-- -->，在用户请求计算时完成计算。
     name: getCalculationMode()
     fullName: getCalculationMode()
     langs:
@@ -64,7 +64,7 @@ items:
           - 'ExcelScript!ExcelScript.CalculationMode:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
-    summary: 返回应用程序的计算状态。 有关详细信息，请参阅 Excel.CalculationState。
+    summary: 返回应用程序的计算状态。 有关详细信息，请参阅 ExcelScript。
     name: getCalculationState()
     fullName: getCalculationState()
     langs:
@@ -142,7 +142,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
-    summary: 返回工作簿中使用的计算模式，如 CalculationMode 中的常量所定义。 可能的值包括：`Automatic`<!-- -->，Excel 控制重新计算的位置;`AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。`Manual`<!-- -->，在用户请求计算时完成计算。
+    summary: 返回工作簿中使用的计算模式，由 ExcelScript 中的常量定义。 可能的值包括： `Automatic`<!-- -->，Excel 控制重新计算的位置; `AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。 `Manual`<!-- -->，在用户请求计算时完成计算。
     name: setCalculationMode(calculationMode)
     fullName: setCalculationMode(calculationMode)
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Range:interface'
-    summary: 'Range 表示一个或多个连续单元格的集合，例如单元格、行、列、单元格块等。若要了解有关如何在整个 API 中使用范围的详细信息，请参阅 [使用 Excel JAVASCRIPT Api 处理区域](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) 并使用 [excel javascript api (高级) ](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.'
+    summary: 区域表示一个或多个相邻的单元格，如单元格、行、列、单元格块等。
     name: ExcelScript.Range
     fullName: ExcelScript.Range
     langs:
@@ -34,6 +34,7 @@ items:
       - 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
       - 'ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#getDataValidation:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
       - 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
       - 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormat:member(1)'
@@ -43,6 +44,7 @@ items:
       - 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHidden:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHyperlink:member(1)'
@@ -56,7 +58,9 @@ items:
       - 'ExcelScript!ExcelScript.Range#getLeft:member(1)'
       - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)'
       - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
@@ -70,8 +74,11 @@ items:
       - 'ExcelScript!ExcelScript.Range#getRowIndex:member(1)'
       - 'ExcelScript!ExcelScript.Range#getRowsAbove:member(1)'
       - 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSort:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
       - 'ExcelScript!ExcelScript.Range#getTables:member(1)'
       - 'ExcelScript!ExcelScript.Range#getText:member(1)'
@@ -154,14 +161,11 @@ items:
           ```
       parameters:
         - id: type
-          description: 要添加的条件格式的类型。 有关详细信息，请参阅 ConditionalFormatType。
+          description: 要添加的条件格式的类型。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.Range#autoFill:member(1)'
-    summary: |-
-      使用指定的自动填充逻辑将范围从当前范围填充到目标区域。 目标区域可以是 null，也可以是水平或垂直扩展源。 不支持不连续的区域。
-
-      有关详细信息，请参阅 [使用自动填充和快速填充](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
+    summary: 使用指定的自动填充逻辑将范围从当前范围填充到目标区域。 目标区域可以是 null，也可以是水平或垂直扩展源。 不支持不连续的区域。
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
@@ -230,7 +234,7 @@ items:
           ```
       parameters:
         - id: applyTo
-          description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ClearApplyTo。
+          description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
@@ -310,7 +314,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: 指定移动单元格的方式。 有关详细信息，请参阅 DeleteShiftDirection。
+          description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.DeleteShiftDirection:enum'
   - uid: 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -620,6 +624,19 @@ items:
         type:
           - 'ExcelScript!ExcelScript.DataValidation:interface'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
+    summary: 返回一个 WorkbookRangeAreas 对象，该对象代表包含同一工作表或多个工作表中的单元格的所有直接引用单元格的区域。
+    name: getDirectPrecedents()
+    fullName: getDirectPrecedents()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDirectPrecedents(): WorkbookRangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
     summary: '获取一个对象，该对象表示区域中 (的整列。例如，如果当前区域表示单元格 "B4： E11"， `getEntireColumn` 则它是表示列 "B:E" 的区域 ) 。'
     name: getEntireColumn()
@@ -723,7 +740,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
-    summary: 表示采用 A1 表示法的公式。
+    summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回它的值。
     name: getFormulas()
     fullName: getFormulas()
     langs:
@@ -736,7 +753,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-    summary: '表示采用 A1 表示法的公式，使用用户语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中变为 "=SUMME(A1; 1,5)"。'
+    summary: '表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回它的值。'
     name: getFormulasLocal()
     fullName: getFormulasLocal()
     langs:
@@ -749,7 +766,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
-    summary: 表示采用 R1C1 样式表示法的公式。
+    summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回它的值。
     name: getFormulasR1C1()
     fullName: getFormulasR1C1()
     langs:
@@ -760,6 +777,19 @@ items:
       return:
         type:
           - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
+    summary: 表示所有单元格是否都具有溢出边框。 如果所有单元格都有溢出边框，则返回 true; 如果所有单元格都没有溢出边框，则返回 false。 如果区域中有和没有溢出边框的单元格，则返回 null。
+    name: getHasSpill()
+    fullName: getHasSpill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHasSpill(): boolean;'
+      return:
+        type:
+          - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
     summary: 返回从区域的上边缘到区域的下边缘的 100％ 缩放的距离（以磅为单位）。
@@ -801,7 +831,7 @@ items:
           - 'ExcelScript!ExcelScript.RangeHyperlink:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getImage:member(1)'
-    summary: 将区域呈现为 base64 编码的 png 图像。
+    summary: '将区域呈现为 base64 编码的 png 图像。 **重要说明**： Excel for Mac 中目前不支持此 API。 \[有关当前状态，请访问 OfficeDev/office-Js 问题 \# 235 \] (https://github.com/OfficeDev/office-js/issues/235) 。'
     name: getImage()
     fullName: getImage()
     langs:
@@ -935,6 +965,19 @@ items:
         type:
           - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates~0:complex'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
+    summary: 返回一个 RangeAreas 对象，该对象代表此区域中的合并区域。 请注意，如果此范围中的合并区域计数超过512，API 将无法返回结果。
+    name: getMergedAreas()
+    fullName: getMergedAreas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMergedAreas(): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
     summary: 表示给定范围的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
     name: getNumberFormat()
@@ -947,6 +990,19 @@ items:
       return:
         type:
           - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
+    summary: 表示每个单元格的数字格式的类别。
+    name: getNumberFormatCategories()
+    fullName: getNumberFormatCategories()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
     summary: 表示给定范围的单元格 Excel 数字格式代码（基于用户的语言设置）。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
@@ -1246,6 +1302,19 @@ items:
           description: 可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
           type:
             - number
+  - uid: 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
+    summary: 表示是否将所有单元格都保存为数组公式。 如果所有单元格都将保存为数组公式，则返回 true; 如果不将所有单元格保存为数组公式，则返回 false。 如果某些单元格将另存为数组公式，则返回 null，而某些单元格则不是。
+    name: getSavedAsArray()
+    fullName: getSavedAsArray()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSavedAsArray(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getSort:member(1)'
     summary: 表示当前 range 的区域排序。
     name: getSort()
@@ -1285,6 +1354,32 @@ items:
           description: 如果 cellType 为常量或公式，则此参数用于确定要在结果中包含哪些类型的单元格。 可以将这些值组合在一起，以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
           type:
             - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+  - uid: 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
+    summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果区域不是定位单元格或溢出区域，则返回 null 对象。
+    name: getSpillingToRange()
+    fullName: getSpillingToRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSpillingToRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
+    summary: 获取 Range 对象，它包含要将某个单元格溢出到的定位单元格。 如果不是溢出单元格或多个单元格给出了一个值，则返回 null 对象。
+    name: getSpillParent()
+    fullName: getSpillParent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSpillParent(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
     summary: 返回一个 Range 对象，该对象表示此区域左上单元格的周围区域。 周围区域是由相对于该区域的空白行和空白列的任何组合所限定的区域。
     name: getSurroundingRegion()
@@ -1534,7 +1629,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: 指定移动单元格的方式。 有关详细信息，请参阅 InsertShiftDirection。
+          description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
   - uid: 'ExcelScript!ExcelScript.Range#merge:member(1)'
@@ -1753,7 +1848,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Range#setFormulas:member(1)'
-    summary: 表示采用 A1 表示法的公式。
+    summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回它的值。
     name: setFormulas(formulas)
     fullName: setFormulas(formulas)
     langs:
@@ -1771,7 +1866,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-    summary: '表示采用 A1 表示法的公式，使用用户语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中变为 "=SUMME(A1; 1,5)"。'
+    summary: '表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回它的值。'
     name: setFormulasLocal(formulasLocal)
     fullName: setFormulasLocal(formulasLocal)
     langs:
@@ -1789,7 +1884,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)'
-    summary: 表示采用 R1C1 样式表示法的公式。
+    summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回它的值。
     name: setFormulasR1C1(formulasR1C1)
     fullName: setFormulasR1C1(formulasR1C1)
     langs:
@@ -2170,6 +2265,9 @@ references:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
     name: DataValidation
     fullName: ExcelScript.DataValidation
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+    name: WorkbookRangeAreas
+    fullName: ExcelScript.WorkbookRangeAreas
   - uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
     name: RangeFormat
     fullName: ExcelScript.RangeFormat
@@ -2197,6 +2295,18 @@ references:
         fullName: ExcelScript.LinkedDataTypeState
       - name: '[][]'
         fullName: '[][]'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+    fullName: ExcelScript.RangeAreas
+  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
+    name: 'NumberFormatCategory[][]'
+    fullName: 'ExcelScript.NumberFormatCategory[][]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
+        name: NumberFormatCategory
+        fullName: ExcelScript.NumberFormatCategory
+      - name: '[][]'
+        fullName: '[][]'
   - uid: 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
     name: 'PivotTable[]'
     fullName: 'ExcelScript.PivotTable[]'
@@ -2209,9 +2319,6 @@ references:
   - uid: 'ExcelScript!ExcelScript.RangeSort:interface'
     name: RangeSort
     fullName: ExcelScript.RangeSort
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
   - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
     name: SpecialCellType
     fullName: ExcelScript.SpecialCellType
