@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Workbook:interface'
-    summary: '工作簿是顶级对象，其中包含相关的工作簿对象，如工作表、表、范围等。若要了解有关工作簿对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理工作簿](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.'
+    summary: 工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
     name: ExcelScript.Workbook
     fullName: ExcelScript.Workbook
     langs:
@@ -110,7 +110,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
-          description: 绑定的类型。 请参阅 BindingType。
+          description: 绑定的类型。 请参阅 ExcelScript. BindingType。
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -141,7 +141,7 @@ items:
           type:
             - string
         - id: bindingType
-          description: 绑定的类型。 请参阅 BindingType。
+          description: 绑定的类型。 请参阅 ExcelScript. BindingType。
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -163,7 +163,7 @@ items:
         description: ''
       parameters:
         - id: bindingType
-          description: 绑定的类型。 请参阅 BindingType。
+          description: 绑定的类型。 请参阅 ExcelScript. BindingType。
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -198,7 +198,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
         - id: contentType
-          description: 可选。 包含在注释中的内容类型。 默认值为枚举`ContentType.Plain`<!-- -->.
+          description: 可选。 包含在注释中的内容类型。 默认值为枚举 `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'

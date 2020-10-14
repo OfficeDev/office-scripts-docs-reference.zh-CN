@@ -19,7 +19,7 @@ items:
       - 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
       - 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getColor:member(1)'
-    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线颜色的 HTML 颜色代码。
+    summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
     name: getColor()
     fullName: getColor()
     langs:
@@ -32,7 +32,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
-    summary: 指示边框的特定边的常量值。 有关详细信息，请参阅 BorderIndex。
+    summary: 指示边框的特定边的常量值。 有关详细信息，请参阅 ExcelScript。
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -45,7 +45,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
-    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 BorderLineStyle。
+    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 ExcelScript。
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -58,7 +58,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
-    summary: 指定用于使区域边框的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示边框没有统一的 tintAndShade 设置。
+    summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示边框没有统一的 tintAndShade 设置。
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -71,7 +71,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
-    summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 BorderWeight。
+    summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 ExcelScript。
     name: getWeight()
     fullName: getWeight()
     langs:
@@ -84,7 +84,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderWeight:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setColor:member(1)'
-    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线颜色的 HTML 颜色代码。
+    summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -102,7 +102,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
-    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 BorderLineStyle。
+    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 ExcelScript。
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -120,7 +120,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
-    summary: 指定用于使区域边框的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示边框没有统一的 tintAndShade 设置。
+    summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示边框没有统一的 tintAndShade 设置。
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -138,7 +138,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
-    summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 BorderWeight。
+    summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 ExcelScript。
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

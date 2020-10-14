@@ -43,7 +43,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getColor:member(1)'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
     name: getColor()
     fullName: getColor()
     langs:
@@ -69,7 +69,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
-    summary: 字体名称（例如，"Calibri"）
+    summary: 字体名称 (例如，"Calibri" ) 。 名称的长度不应超过31个字符。
     name: getName()
     fullName: getName()
     langs:
@@ -108,7 +108,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)'
-    summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal （既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal (不是上标，也不是下标) ，则返回 False。 否则返回 Null。
     name: getSubscript()
     fullName: getSubscript()
     langs:
@@ -121,7 +121,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)'
-    summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体为下标或普通（既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体均为下标或普通 (既不是上标，也不是下标) ，则返回 False。 否则返回 Null。
     name: getSuperscript()
     fullName: getSuperscript()
     langs:
@@ -134,7 +134,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
-    summary: 指定将区域字体的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示整个区域没有统一的字体 tintAndShade 设置。
+    summary: 指定将区域字体的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示整个区域没有统一的字体 tintAndShade 设置。
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -147,7 +147,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
-    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 RangeUnderlineStyle。
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -178,7 +178,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setColor:member(1)'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
+    summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -214,7 +214,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
-    summary: 字体名称（例如，"Calibri"）
+    summary: 字体名称 (例如，"Calibri" ) 。 名称的长度不应超过31个字符。
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -268,7 +268,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)'
-    summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal （既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal (不是上标，也不是下标) ，则返回 False。 否则返回 Null。
     name: setSubscript(subscript)
     fullName: setSubscript(subscript)
     langs:
@@ -286,7 +286,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)'
-    summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体为下标或普通（既不是上标，也不是下标），则返回 False。 否则返回 Null。
+    summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体均为下标或普通 (既不是上标，也不是下标) ，则返回 False。 否则返回 Null。
     name: setSuperscript(superscript)
     fullName: setSuperscript(superscript)
     langs:
@@ -304,7 +304,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
-    summary: 指定将区域字体的颜色变浅或变暗的双精度。 该值介于-1 （最暗）和1（最亮）之间，其原始颜色为0。 空值表示整个区域没有统一的字体 tintAndShade 设置。
+    summary: 指定将区域字体的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示整个区域没有统一的字体 tintAndShade 设置。
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -322,7 +322,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
-    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 RangeUnderlineStyle。
+    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

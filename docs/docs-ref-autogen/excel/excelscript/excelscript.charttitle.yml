@@ -100,7 +100,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
-    summary: 表示图表标题的位置。 有关详细信息，请参阅 ChartTitlePosition。
+    summary: 表示图表标题的位置。 有关详细信息，请参阅 ExcelScript。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -187,7 +187,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
-    summary: 指定图表标题的垂直对齐方式。 有关详细信息，请参阅 ChartTextVerticalAlignment。
+    summary: 指定图表标题的垂直对齐方式。 有关详细信息，请参阅 ExcelScript。
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -301,7 +301,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
-    summary: 表示图表标题的位置。 有关详细信息，请参阅 ChartTitlePosition。
+    summary: 表示图表标题的位置。 有关详细信息，请参阅 ExcelScript。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -391,7 +391,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
-    summary: 指定图表标题的垂直对齐方式。 有关详细信息，请参阅 ChartTextVerticalAlignment。
+    summary: 指定图表标题的垂直对齐方式。 有关详细信息，请参阅 ExcelScript。
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

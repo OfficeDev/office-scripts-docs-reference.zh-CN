@@ -15,7 +15,7 @@ items:
       - 'ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)'
       - 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getColor:member(1)'
-    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线颜色的 HTML 颜色代码。
+    summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
     name: getColor()
     fullName: getColor()
     langs:
@@ -28,7 +28,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
-    summary: 指示边框的特定边的常量值。 有关详细信息，请参阅 ConditionalRangeBorderIndex。
+    summary: 指示边框的特定边的常量值。 有关详细信息，请参阅 ExcelScript。
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -41,7 +41,7 @@ items:
           - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
-    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 BorderLineStyle。
+    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 ExcelScript。
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -54,7 +54,7 @@ items:
           - 'ExcelScript!ExcelScript.ConditionalRangeBorderLineStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setColor:member(1)'
-    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线颜色的 HTML 颜色代码。
+    summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -72,7 +72,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
-    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 BorderLineStyle。
+    summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 ExcelScript。
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

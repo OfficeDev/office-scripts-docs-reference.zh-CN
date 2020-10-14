@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    summary: 'Excel 工作表是由单元格组成的网格。 它可以包含数据、表、图表等。若要了解有关工作表对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理工作表](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.'
+    summary: Excel 工作表是由单元格组成的网格。 它可以包含数据、表、图表等。
     name: ExcelScript.Worksheet
     fullName: ExcelScript.Worksheet
     langs:
@@ -24,6 +24,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#addTable:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#copy:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#delete:member(1)'
@@ -36,6 +37,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#getCommentByCell:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getHorizontalPageBreaks:member(1)'
@@ -67,6 +69,7 @@ items:
       - 'ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getVerticalPageBreaks:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#getVisibility:member(1)'
+      - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#removeAllHorizontalPageBreaks:member(1)'
       - 'ExcelScript!ExcelScript.Worksheet#removeAllVerticalPageBreaks:member(1)'
@@ -113,7 +116,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 表示图表的类型。 有关详细信息，请参阅 ChartType。
+          description: 表示图表的类型。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ChartType:enum'
         - id: sourceData
@@ -121,7 +124,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
         - id: seriesBy
-          description: 可选。 指定列或行在图表上用作数据系列的方式。 有关详细信息，请参阅 ChartSeriesBy。
+          description: 可选。 指定列或行在图表上用作数据系列的方式。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addComment:member(1)'
@@ -152,7 +155,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addComment~1:complex'
         - id: contentType
-          description: 可选。 包含在注释中的内容类型。 默认值为枚举`ContentType.Plain`<!-- -->.
+          description: 可选。 包含在注释中的内容类型。 默认值为枚举 `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)'
@@ -170,7 +173,7 @@ items:
         description: ''
       parameters:
         - id: geometricShapeType
-          description: 表示几何形状的类型。 有关详细信息，请参阅 Excel.GeometricShapeType。
+          description: 表示几何形状的类型。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.GeometricShapeType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addGroup:member(1)'
@@ -265,7 +268,7 @@ items:
           type:
             - number
         - id: connectorType
-          description: 代表连接器类型。 有关详细信息，请参阅 ConnectorType。
+          description: 代表连接器类型。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ConnectorType:enum'
   - uid: 'ExcelScript!ExcelScript.Worksheet#addNamedItem:member(1)'
@@ -470,6 +473,32 @@ items:
           description: 紧跟在要添加的分页符之后的区域。
           type:
             - 'ExcelScript!ExcelScript.Worksheet#addVerticalPageBreak~0:complex'
+  - uid: 'ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)'
+    summary: 添加映射到所提供的键的新自定义属性。 这将使用该密钥覆盖现有的自定义属性。
+    name: 'addWorksheetCustomProperty(key, value)'
+    fullName: 'addWorksheetCustomProperty(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addWorksheetCustomProperty(
+                    key: string,
+                    value: string
+                ): WorksheetCustomProperty;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: '标识自定义属性对象的键。 它不区分大小写。密钥限制为255个字符 (较大的值将导致引发 "InvalidArgument" 错误。 ) '
+          type:
+            - string
+        - id: value
+          description: 此自定义属性的值。
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#calculate:member(1)'
     summary: 计算工作表上的所有单元格。
     name: calculate(markAllDirty)
@@ -697,6 +726,19 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.Worksheet#getComments~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)'
+    summary: 获取工作表级自定义属性的集合。
+    name: getCustomProperties()
+    fullName: getCustomProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomProperties(): WorksheetCustomProperty[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)'
     summary: 确定 Excel 是否应根据需要重新计算工作表。 如此如果 Excel 根据需要重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
@@ -1215,6 +1257,27 @@ items:
         type:
           - 'ExcelScript!ExcelScript.SheetVisibility:enum'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)'
+    summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则返回 null 对象。
+    name: getWorksheetCustomProperty(key)
+    fullName: getWorksheetCustomProperty(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getWorksheetCustomProperty(
+                    key: string
+                ): WorksheetCustomProperty | undefined;
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: 标识自定义属性对象的键。 它不区分大小写。
+          type:
+            - string
   - uid: 'ExcelScript!ExcelScript.Worksheet#refreshAllPivotTables:member(1)'
     summary: 刷新集合中的所有数据透视表。
     name: refreshAllPivotTables()
@@ -1643,6 +1706,9 @@ references:
         fullName: ExcelScript.Range
       - name: ' | string'
         fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+    name: WorksheetCustomProperty
+    fullName: ExcelScript.WorksheetCustomProperty
   - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
     name: Worksheet
     fullName: ExcelScript.Worksheet
@@ -1692,6 +1758,15 @@ references:
       - uid: 'ExcelScript!ExcelScript.Comment:interface'
         name: Comment
         fullName: ExcelScript.Comment
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getCustomProperties~0:complex'
+    name: 'WorksheetCustomProperty[]'
+    fullName: 'ExcelScript.WorksheetCustomProperty[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        name: WorksheetCustomProperty
+        fullName: ExcelScript.WorksheetCustomProperty
       - name: '[]'
         fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
@@ -1805,6 +1880,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SheetVisibility:enum'
     name: SheetVisibility
     fullName: ExcelScript.SheetVisibility
+  - uid: 'ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty~0:complex'
+    name: WorksheetCustomProperty | undefined
+    fullName: ExcelScript.WorksheetCustomProperty | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+        name: WorksheetCustomProperty
+        fullName: ExcelScript.WorksheetCustomProperty
+      - name: ' | undefined'
+        fullName: ' | undefined'
   - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
     name: ReplaceCriteria
     fullName: ExcelScript.ReplaceCriteria

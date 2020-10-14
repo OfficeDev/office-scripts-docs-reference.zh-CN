@@ -43,7 +43,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartBorder#getLineStyle:member(1)'
-    summary: 表示边框的线条样式。 有关详细信息，请参阅 ChartLineStyle。
+    summary: 表示边框的线条样式。 有关详细信息，请参阅 ExcelScript。
     name: getLineStyle()
     fullName: getLineStyle()
     langs:
@@ -87,7 +87,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartBorder#setLineStyle:member(1)'
-    summary: 表示边框的线条样式。 有关详细信息，请参阅 ChartLineStyle。
+    summary: 表示边框的线条样式。 有关详细信息，请参阅 ExcelScript。
     name: setLineStyle(lineStyle)
     fullName: setLineStyle(lineStyle)
     langs:

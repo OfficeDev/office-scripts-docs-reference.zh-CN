@@ -83,7 +83,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
-    summary: 表示趋势线的截距值。 可以设置为数字值或空字符串（对于自动值）。 返回的值始终为数字。
+    summary: 指定趋势线的截距值。
     name: getIntercept()
     fullName: getIntercept()
     langs:
@@ -223,7 +223,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
-    summary: 表示趋势线的截距值。 可以设置为数字值或空字符串（对于自动值）。 返回的值始终为数字。
+    summary: 指定趋势线的截距值。
     name: setIntercept(intercept)
     fullName: setIntercept(intercept)
     langs:

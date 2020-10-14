@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    summary: '一个封装条件格式的范围、格式、规则和其他属性的对象。 若要了解有关条件格式对象模型的详细信息，请参阅[将条件格式应用于 Excel 区域](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.'
+    summary: 一个封装条件格式的范围、格式、规则和其他属性的对象。
     name: ExcelScript.ConditionalFormat
     fullName: ExcelScript.ConditionalFormat
     langs:
@@ -118,7 +118,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-    summary: 返回预设条件的条件格式。 有关更多详细信息，请参阅 PresetCriteriaConditionalFormat。
+    summary: 返回预设条件的条件格式。 有关详细信息，请参阅 ExcelScript。
     name: getPreset()
     fullName: getPreset()
     langs:
@@ -131,7 +131,7 @@ items:
           - 'ExcelScript!ExcelScript.ConditionalFormat#getPreset~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)'
-    summary: 条件格式集合中当前存在此条件格式的优先级（或索引）。 更改此设置还会更改其他条件格式的优先级，以允许进行连续的优先级顺序。 使用负优先级从后开始。 优先级大于界限将获取并设置为最大值（如果为负，则为最小值）优先级。 另请注意，如果您更改优先级，则必须在该新的优先级位置重新获取该对象的新副本（如果要对其进行进一步的更改）。
+    summary: 条件格式集合中当前存在此条件格式的优先级 (或索引) 。 更改此设置还会更改其他条件格式的优先级，以允许进行连续的优先级顺序。 使用负优先级从后开始。 如果负) 优先级，则优先级大于界限将获取并设置为最大 (或最小值。 另请注意，如果您更改优先级，则必须在该新的优先级位置重新获取该对象的新副本（如果要对其进行进一步的更改）。
     name: getPriority()
     fullName: getPriority()
     langs:
@@ -222,7 +222,7 @@ items:
           - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)'
-    summary: 条件格式集合中当前存在此条件格式的优先级（或索引）。 更改此设置还会更改其他条件格式的优先级，以允许进行连续的优先级顺序。 使用负优先级从后开始。 优先级大于界限将获取并设置为最大值（如果为负，则为最小值）优先级。 另请注意，如果您更改优先级，则必须在该新的优先级位置重新获取该对象的新副本（如果要对其进行进一步的更改）。
+    summary: 条件格式集合中当前存在此条件格式的优先级 (或索引) 。 更改此设置还会更改其他条件格式的优先级，以允许进行连续的优先级顺序。 使用负优先级从后开始。 如果负) 优先级，则优先级大于界限将获取并设置为最大 (或最小值。 另请注意，如果您更改优先级，则必须在该新的优先级位置重新获取该对象的新副本（如果要对其进行进一步的更改）。
     name: setPriority(priority)
     fullName: setPriority(priority)
     langs:

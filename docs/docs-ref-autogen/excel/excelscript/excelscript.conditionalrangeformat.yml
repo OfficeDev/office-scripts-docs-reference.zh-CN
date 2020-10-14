@@ -50,7 +50,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 ConditionalRangeBorderIndex。
+          description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'

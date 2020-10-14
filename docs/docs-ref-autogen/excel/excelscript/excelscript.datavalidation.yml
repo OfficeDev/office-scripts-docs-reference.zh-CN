@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    summary: '表示应用于当前范围的数据验证。 若要了解有关数据验证对象模型的详细信息，请参阅[向 Excel 区域添加数据验证](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.'
+    summary: 表示应用于当前范围的数据验证。
     name: ExcelScript.DataValidation
     fullName: ExcelScript.DataValidation
     langs:
@@ -100,7 +100,7 @@ items:
           - 'ExcelScript!ExcelScript.DataValidationRule:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.DataValidation#getType:member(1)'
-    summary: 数据有效性类型，有关详细信息，请参阅 Excel.DataValidationType。
+    summary: 数据验证类型。有关详细信息，请参阅 ExcelScript。
     name: getType()
     fullName: getType()
     langs:

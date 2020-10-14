@@ -13,6 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.CommentReply#getAuthorEmail:member(1)'
       - 'ExcelScript!ExcelScript.CommentReply#getAuthorName:member(1)'
       - 'ExcelScript!ExcelScript.CommentReply#getContent:member(1)'
+      - 'ExcelScript!ExcelScript.CommentReply#getContentType:member(1)'
       - 'ExcelScript!ExcelScript.CommentReply#getCreationDate:member(1)'
       - 'ExcelScript!ExcelScript.CommentReply#getId:member(1)'
       - 'ExcelScript!ExcelScript.CommentReply#getLocation:member(1)'
@@ -74,6 +75,19 @@ items:
         type:
           - string
         description: ''
+  - uid: 'ExcelScript!ExcelScript.CommentReply#getContentType:member(1)'
+    summary: 答复的内容类型。
+    name: getContentType()
+    fullName: getContentType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getContentType(): ContentType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ContentType:enum'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.CommentReply#getCreationDate:member(1)'
     summary: 获取批注回复的创建时间。
     name: getCreationDate()
@@ -114,7 +128,7 @@ items:
           - 'ExcelScript!ExcelScript.Range:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.CommentReply#getMentions:member(1)'
-    summary: 注释中提到的实体（例如，人员）。
+    summary: 实体 (例如，在注释中提到的人) 。
     name: getMentions()
     fullName: getMentions()
     langs:
@@ -153,7 +167,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)'
-    summary: 丰富的注释内容（例如，注释中提到的内容）。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
+    summary: 富注释内容 (例如，注释) 中提到的内容。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
     name: getRichContent()
     fullName: getRichContent()
     langs:
@@ -202,6 +216,9 @@ items:
           type:
             - 'ExcelScript!ExcelScript.CommentRichContent:interface'
 references:
+  - uid: 'ExcelScript!ExcelScript.ContentType:enum'
+    name: ContentType
+    fullName: ExcelScript.ContentType
   - uid: '!Date:interface'
     name: Date
   - uid: 'ExcelScript!ExcelScript.Range:interface'

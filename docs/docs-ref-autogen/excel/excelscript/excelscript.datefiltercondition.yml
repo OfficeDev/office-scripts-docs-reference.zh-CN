@@ -1,0 +1,341 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition:enum'
+    summary: 表示可应用日期筛选器的所有接受条件的枚举。 用于配置应用于字段的 PivotFilter 的类型。
+    name: ExcelScript.DateFilterCondition
+    fullName: ExcelScript.DateFilterCondition
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DateFilterCondition.after:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.afterOrEqualTo:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodApril:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodAugust:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodDecember:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodFebruary:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJanuary:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJuly:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJune:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMarch:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMay:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodNovember:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodOctober:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter1:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter2:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter3:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter4:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodSeptember:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.before:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.beforeOrEqualTo:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.between:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.equals:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.lastMonth:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.lastQuarter:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.lastWeek:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.lastYear:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.nextMonth:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.nextQuarter:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.nextWeek:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.nextYear:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.thisMonth:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.thisQuarter:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.thisWeek:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.thisYear:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.today:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.tomorrow:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.unknown:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.yearToDate:member'
+      - 'ExcelScript!ExcelScript.DateFilterCondition.yesterday:member'
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.after:member'
+    summary: |-
+      日期在比较运算符日期之后。
+
+      必需的条件： {`comparator`<!-- -->}<!-- -->. 可选条件： {`wholeDays`<!-- -->}<!-- -->.
+    name: after
+    fullName: after
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.afterOrEqualTo:member'
+    summary: |-
+      日期晚于或等于比较运算符日期。
+
+      必需的条件： {`comparator`<!-- -->}<!-- -->. 可选条件： {`wholeDays`<!-- -->}<!-- -->.
+    name: afterOrEqualTo
+    fullName: afterOrEqualTo
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodApril:member'
+    summary: 日期在四月。
+    name: allDatesInPeriodApril
+    fullName: allDatesInPeriodApril
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodAugust:member'
+    summary: 日期在八月中。
+    name: allDatesInPeriodAugust
+    fullName: allDatesInPeriodAugust
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodDecember:member'
+    summary: 日期在十二月。
+    name: allDatesInPeriodDecember
+    fullName: allDatesInPeriodDecember
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodFebruary:member'
+    summary: 日期在二月。
+    name: allDatesInPeriodFebruary
+    fullName: allDatesInPeriodFebruary
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJanuary:member'
+    summary: 日期在1月。
+    name: allDatesInPeriodJanuary
+    fullName: allDatesInPeriodJanuary
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJuly:member'
+    summary: 日期在7月。
+    name: allDatesInPeriodJuly
+    fullName: allDatesInPeriodJuly
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJune:member'
+    summary: 日期在六月。
+    name: allDatesInPeriodJune
+    fullName: allDatesInPeriodJune
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMarch:member'
+    summary: 日期在三月份。
+    name: allDatesInPeriodMarch
+    fullName: allDatesInPeriodMarch
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMay:member'
+    summary: 日期在5月。
+    name: allDatesInPeriodMay
+    fullName: allDatesInPeriodMay
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodNovember:member'
+    summary: 日期在11月。
+    name: allDatesInPeriodNovember
+    fullName: allDatesInPeriodNovember
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodOctober:member'
+    summary: 日期在10月。
+    name: allDatesInPeriodOctober
+    fullName: allDatesInPeriodOctober
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter1:member'
+    summary: 日期在第1季度。
+    name: allDatesInPeriodQuarter1
+    fullName: allDatesInPeriodQuarter1
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter2:member'
+    summary: 日期在第2季度。
+    name: allDatesInPeriodQuarter2
+    fullName: allDatesInPeriodQuarter2
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter3:member'
+    summary: 日期在第3季度。
+    name: allDatesInPeriodQuarter3
+    fullName: allDatesInPeriodQuarter3
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter4:member'
+    summary: 日期在第4季度。
+    name: allDatesInPeriodQuarter4
+    fullName: allDatesInPeriodQuarter4
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodSeptember:member'
+    summary: 日期在九月。
+    name: allDatesInPeriodSeptember
+    fullName: allDatesInPeriodSeptember
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.before:member'
+    summary: |-
+      日期早在比较运算符日期之前。
+
+      必需的条件： {`comparator`<!-- -->}<!-- -->. 可选条件： {`wholeDays`<!-- -->}<!-- -->.
+    name: before
+    fullName: before
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.beforeOrEqualTo:member'
+    summary: |-
+      日期早于或等于比较运算符日期。
+
+      必需的条件： {`comparator`<!-- -->}<!-- -->. 可选条件： {`wholeDays`<!-- -->}<!-- -->.
+    name: beforeOrEqualTo
+    fullName: beforeOrEqualTo
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.between:member'
+    summary: |-
+      介于 `lowerBound` 和 `upperBound` 日期之间。
+
+      必需的条件： {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. 可选条件： {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+    name: between
+    fullName: between
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.equals:member'
+    summary: |-
+      等于比较运算符条件。
+
+      必需的条件： {`comparator`<!-- -->}<!-- -->. 可选条件： {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+    name: equals
+    fullName: equals
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastMonth:member'
+    summary: 日期为上个月。
+    name: lastMonth
+    fullName: lastMonth
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastQuarter:member'
+    summary: 日期为上季度。
+    name: lastQuarter
+    fullName: lastQuarter
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastWeek:member'
+    summary: 日期为上周。
+    name: lastWeek
+    fullName: lastWeek
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastYear:member'
+    summary: 日期为去年。
+    name: lastYear
+    fullName: lastYear
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextMonth:member'
+    summary: 日期为下个月。
+    name: nextMonth
+    fullName: nextMonth
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextQuarter:member'
+    summary: 日期为下一季度。
+    name: nextQuarter
+    fullName: nextQuarter
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextWeek:member'
+    summary: 日期为下周。
+    name: nextWeek
+    fullName: nextWeek
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextYear:member'
+    summary: 日期为明年。
+    name: nextYear
+    fullName: nextYear
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisMonth:member'
+    summary: 本月的日期。
+    name: thisMonth
+    fullName: thisMonth
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisQuarter:member'
+    summary: 日期为本季度。
+    name: thisQuarter
+    fullName: thisQuarter
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisWeek:member'
+    summary: 日期为本周。
+    name: thisWeek
+    fullName: thisWeek
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisYear:member'
+    summary: 日期为今年。
+    name: thisYear
+    fullName: thisYear
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.today:member'
+    summary: 日期为今天。
+    name: today
+    fullName: today
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.tomorrow:member'
+    summary: 日期为明天。
+    name: tomorrow
+    fullName: tomorrow
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.unknown:member'
+    summary: DateFilterCondition 未知或不受支持。
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.yearToDate:member'
+    summary: 日期与日期相同一年。
+    name: yearToDate
+    fullName: yearToDate
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition.yesterday:member'
+    summary: 日期为昨天。
+    name: yesterday
+    fullName: yesterday
+    langs:
+      - typeScript
+    type: field

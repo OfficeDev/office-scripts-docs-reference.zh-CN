@@ -93,7 +93,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)'
-    summary: 指定图例在图表上的位置。 有关详细信息，请参阅 ChartLegendPosition。
+    summary: 指定图例在图表上的位置。 有关详细信息，请参阅 ExcelScript。
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -212,7 +212,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)'
-    summary: 指定图例在图表上的位置。 有关详细信息，请参阅 ChartLegendPosition。
+    summary: 指定图例在图表上的位置。 有关详细信息，请参阅 ExcelScript。
     name: setPosition(position)
     fullName: setPosition(position)
     langs:

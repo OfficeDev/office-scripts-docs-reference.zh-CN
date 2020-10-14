@@ -22,7 +22,7 @@ items:
       - 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
       - 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
-    summary: 代表 HTML 颜色格式的线条颜色，格式 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如，"橙色"）。
+    summary: 代表 HTML 颜色格式的线条颜色，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如，"橙色" ) 。
     name: getColor()
     fullName: getColor()
     langs:
@@ -35,7 +35,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
-    summary: 表示形状的线条样式。 当线条不可见或短划线样式不一致时，返回 null。 有关详细信息，请参阅 Excel.ShapeLineStyle。
+    summary: 表示形状的线条样式。 当线条不可见或短划线样式不一致时，返回 null。 有关详细信息，请参阅 ExcelScript。
     name: getDashStyle()
     fullName: getDashStyle()
     langs:
@@ -48,7 +48,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
-    summary: 表示形状的线条样式。 当线条不可见或样式不一致时，返回 null。 有关详细信息，请参阅 Excel.ShapeLineStyle。
+    summary: 表示形状的线条样式。 当线条不可见或样式不一致时，返回 null。 有关详细信息，请参阅 ExcelScript。
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -100,7 +100,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
-    summary: 代表 HTML 颜色格式的线条颜色，格式 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如，"橙色"）。
+    summary: 代表 HTML 颜色格式的线条颜色，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如，"橙色" ) 。
     name: setColor(color)
     fullName: setColor(color)
     langs:
@@ -118,7 +118,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
-    summary: 表示形状的线条样式。 当线条不可见或短划线样式不一致时，返回 null。 有关详细信息，请参阅 Excel.ShapeLineStyle。
+    summary: 表示形状的线条样式。 当线条不可见或短划线样式不一致时，返回 null。 有关详细信息，请参阅 ExcelScript。
     name: setDashStyle(dashStyle)
     fullName: setDashStyle(dashStyle)
     langs:
@@ -136,7 +136,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
-    summary: 表示形状的线条样式。 当线条不可见或样式不一致时，返回 null。 有关详细信息，请参阅 Excel.ShapeLineStyle。
+    summary: 表示形状的线条样式。 当线条不可见或样式不一致时，返回 null。 有关详细信息，请参阅 ExcelScript。
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

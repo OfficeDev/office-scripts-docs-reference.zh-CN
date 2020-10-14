@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+    summary: 表示工作表级别的自定义属性。
+    name: ExcelScript.WorksheetCustomProperty
+    fullName: ExcelScript.WorksheetCustomProperty
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+    summary: 删除 custom property 对象。
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+    summary: '获取 customProperty 的键。 自定义属性键不区分大小写。 密钥限制为255个字符 (较大的值将导致引发 "InvalidArgument" 错误。 ) '
+    name: getKey()
+    fullName: getKey()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+    summary: 获取或设置自定义属性的值。
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+    summary: 获取或设置自定义属性的值。
+    name: setValue(value)
+    fullName: setValue(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setValue(value: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: ''
+          type:
+            - string

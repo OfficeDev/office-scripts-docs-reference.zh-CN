@@ -15,6 +15,7 @@ items:
       - 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
+      - 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getId:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
@@ -44,11 +45,11 @@ items:
         description: ''
       parameters:
         - id: content
-          description: 批注的内容。 它可以是字符串或接口 CommentRichContent （例如，用于包含提及的注释）。
+          description: 批注的内容。 此值可以是字符串或接口 CommentRichContent (例如，对于提及) 的注释。
           type:
             - 'ExcelScript!ExcelScript.Comment#addCommentReply~0:complex'
         - id: contentType
-          description: 可选。 包含在注释中的内容类型。 默认值为枚举`ContentType.Plain`<!-- -->.
+          description: 可选。 包含在注释中的内容类型。 默认值为枚举 `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Comment#delete:member(1)'
@@ -121,6 +122,19 @@ items:
         type:
           - string
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
+    summary: 获取注释的内容类型。
+    name: getContentType()
+    fullName: getContentType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getContentType(): ContentType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ContentType:enum'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
     summary: 获取批注的创建时间。 如果批注是从备注转换而来的，则返回 null，因为批注没有创建日期。
     name: getCreationDate()
@@ -161,7 +175,7 @@ items:
           - 'ExcelScript!ExcelScript.Range:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Comment#getMentions:member(1)'
-    summary: 获取注释中提到的实体（例如，人员）。
+    summary: 获取实体 (例如，在注释中提到的人) 。
     name: getMentions()
     fullName: getMentions()
     langs:
@@ -200,7 +214,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Comment#getRichContent:member(1)'
-    summary: 获取丰富的注释内容（例如，注释中的提到）。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
+    summary: 获取丰富的注释内容 (例如，注释) 中提及。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
     name: getRichContent()
     fullName: getRichContent()
     langs:

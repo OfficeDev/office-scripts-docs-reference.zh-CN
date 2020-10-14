@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    summary: '代表工作表中的一个通用 shape 对象。 一个形状可以是一个几何形状、一条线、一组形状，等等。若要了解有关 shape 对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理形状](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    summary: 代表工作表中的一个通用 shape 对象。 一个形状可以是一个几何形状、一条线、一组形状，等等。
     name: ExcelScript.Shape
     fullName: ExcelScript.Shape
     langs:
@@ -113,7 +113,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
-    summary: '将形状转换为图像并将图像返回为 base64 编码字符串。 DPI 为 96。 唯一受支持的格式是`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->，并`Excel.PictureFormat.GIF`<!-- -->.'
+    summary: '将形状转换为图像并将图像返回为 base64 编码字符串。 DPI 为 96。 唯一受支持的格式是 `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->，并 `ExcelScript.PictureFormat.GIF`<!-- -->.'
     name: getAsImage(format)
     fullName: getAsImage(format)
     langs:
@@ -170,7 +170,7 @@ items:
           - 'ExcelScript!ExcelScript.GeometricShape:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
-    summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 Excel.GeometricShapeType。 如果形状类型不是“GeometricShape”，返回 NULL。
+    summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 ExcelScript。 如果形状类型不是“GeometricShape”，返回 NULL。
     name: getGeometricShapeType()
     fullName: getGeometricShapeType()
     langs:
@@ -378,7 +378,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getType:member(1)'
-    summary: 返回此形状的类型。 有关详细信息，请参阅 Excel.ShapeType。
+    summary: 返回此形状的类型。 有关详细信息，请参阅 ExcelScript。
     name: getType()
     fullName: getType()
     langs:
@@ -582,7 +582,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
-    summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 Excel.GeometricShapeType。 如果形状类型不是“GeometricShape”，返回 NULL。
+    summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 ExcelScript。 如果形状类型不是“GeometricShape”，返回 NULL。
     name: setGeometricShapeType(geometricShapeType)
     fullName: setGeometricShapeType(geometricShapeType)
     langs:
@@ -776,7 +776,7 @@ items:
         description: ''
       parameters:
         - id: position
-          description: 相对于其他形状在 z-顺序堆栈中移动形状的位置。 有关详细信息，请参阅 ShapeZOrder。
+          description: 相对于其他形状在 z-顺序堆栈中移动形状的位置。 有关详细信息，请参阅 ExcelScript。
           type:
             - 'ExcelScript!ExcelScript.ShapeZOrder:enum'
 references:

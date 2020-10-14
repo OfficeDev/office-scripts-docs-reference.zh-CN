@@ -1,0 +1,36 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
+    summary: 用于手动筛选的可配置模板，以应用于透视字段。 定义为使 `condition` 筛选器能够正常工作而需要设置的条件。
+    name: ExcelScript.PivotManualFilter
+    fullName: ExcelScript.PivotManualFilter
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member'
+  - uid: 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member'
+    summary: 要手动筛选的选定项的列表。 这些项必须是所选字段中现有和有效的项。
+    name: selectedItems
+    fullName: selectedItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectedItems?: (string | PivotItem)[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems~0:complex'
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems~0:complex'
+    name: '(string | PivotItem)[]'
+    fullName: '(string | ExcelScript.PivotItem)[]'
+    spec.typeScript:
+      - name: '(string | '
+        fullName: '(string | '
+      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+        name: PivotItem
+        fullName: ExcelScript.PivotItem
+      - name: ')[]'
+        fullName: ')[]'
