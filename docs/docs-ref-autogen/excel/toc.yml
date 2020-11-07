@@ -181,7 +181,7 @@ items:
                 name: ConditionalFormatIconRuleType
                 uid: 'ExcelScript!ExcelScript.ConditionalFormatIconRuleType:enum'
               - &ref_57
-                name: Conditionalpresetcriteriarule
+                name: ConditionalFormatPresetCriterion
                 uid: 'ExcelScript!ExcelScript.ConditionalFormatPresetCriterion:enum'
               - &ref_58
                 name: ConditionalFormatRuleType
@@ -304,7 +304,7 @@ items:
                 name: PivotLayoutType
                 uid: 'ExcelScript!ExcelScript.PivotLayoutType:enum'
               - &ref_98
-                name: Placement
+                name: 位置
                 uid: 'ExcelScript!ExcelScript.Placement:enum'
               - &ref_99
                 name: PrintComments
@@ -666,7 +666,7 @@ items:
           - *ref_71
           - name: DateTimeDataValidation
             uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-          - name: 格式
+          - name: DatetimeFormatInfo
             uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
           - *ref_72
           - name: DocumentProperties
@@ -674,7 +674,7 @@ items:
           - *ref_73
           - *ref_74
           - *ref_75
-          - name: 筛选
+          - name: 筛选器
             uid: 'ExcelScript!ExcelScript.Filter:interface'
           - name: FilterCriteria
             uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
@@ -697,7 +697,7 @@ items:
             uid: 'ExcelScript!ExcelScript.HeaderFooterGroup:interface'
           - *ref_81
           - *ref_82
-          - name: Icon
+          - name: 图标
             uid: 'ExcelScript!ExcelScript.Icon:interface'
           - *ref_83
           - name: IconSetConditionalFormat
@@ -770,7 +770,7 @@ items:
           - *ref_101
           - *ref_102
           - *ref_103
-          - name: Range
+          - name: 范围
             uid: 'ExcelScript!ExcelScript.Range:interface'
           - name: RangeAreas
             uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
@@ -803,7 +803,7 @@ items:
           - name: SearchCriteria
             uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
           - *ref_108
-          - name: 型号
+          - name: 形状
             uid: 'ExcelScript!ExcelScript.Shape:interface'
           - *ref_109
           - name: ShapeFill
@@ -849,9 +849,9 @@ items:
           - *ref_132
           - *ref_133
           - *ref_134
-          - name: Subtotals
+          - name: 分类汇总
             uid: 'ExcelScript!ExcelScript.Subtotals:interface'
-          - name: Table
+          - name: 表格
             uid: 'ExcelScript!ExcelScript.Table:interface'
           - name: TableColumn
             uid: 'ExcelScript!ExcelScript.TableColumn:interface'
@@ -878,7 +878,7 @@ items:
             uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
           - name: WorkbookRangeAreas
             uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
-          - name: Worksheet
+          - name: 工作表
             uid: 'ExcelScript!ExcelScript.Worksheet:interface'
           - name: WorksheetCustomProperty
             uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
