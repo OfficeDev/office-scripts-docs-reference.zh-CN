@@ -178,7 +178,7 @@ items:
                 name: ConditionalFormatIconRuleType
                 uid: 'excel!Excel.ConditionalFormatIconRuleType:enum'
               - &ref_56
-                name: Conditionalpresetcriteriarule
+                name: ConditionalFormatPresetCriterion
                 uid: 'excel!Excel.ConditionalFormatPresetCriterion:enum'
               - &ref_57
                 name: ConditionalFormatRuleType
@@ -289,7 +289,7 @@ items:
                 name: PivotLayoutType
                 uid: 'excel!Excel.PivotLayoutType:enum'
               - &ref_93
-                name: Placement
+                name: 位置
                 uid: 'excel!Excel.Placement:enum'
               - &ref_94
                 name: PrintComments
@@ -708,7 +708,7 @@ items:
             uid: 'excel!Excel.HeaderFooterGroup:interface'
           - *ref_79
           - *ref_80
-          - name: Icon
+          - name: 图标
             uid: 'excel!Excel.Icon:interface'
           - *ref_81
           - name: IconSetConditionalFormat
@@ -782,7 +782,7 @@ items:
           - *ref_96
           - *ref_97
           - *ref_98
-          - name: Range
+          - name: 范围
             uid: 'excel!Excel.Range:interface'
           - name: RangeAreas
             uid: 'excel!Excel.RangeAreas:interface'
@@ -829,7 +829,7 @@ items:
             uid: 'excel!Excel.Setting:interface'
           - name: SettingCollection
             uid: 'excel!Excel.SettingCollection:interface'
-          - name: 型号
+          - name: 形状
             uid: 'excel!Excel.Shape:interface'
           - *ref_104
           - name: ShapeCollection
@@ -882,14 +882,14 @@ items:
           - *ref_126
           - *ref_127
           - *ref_128
-          - name: Style
+          - name: 样式
             uid: 'excel!Excel.Style:interface'
           - name: StyleCollection
             uid: 'excel!Excel.StyleCollection:interface'
           - *ref_129
-          - name: Subtotals
+          - name: 分类汇总
             uid: 'excel!Excel.Subtotals:interface'
-          - name: Table
+          - name: 表格
             uid: 'excel!Excel.Table:interface'
           - name: TableCollection
             uid: 'excel!Excel.TableCollection:interface'
@@ -926,7 +926,7 @@ items:
             uid: 'excel!Excel.Workbook:interface'
           - name: WorkbookProtection
             uid: 'excel!Excel.WorkbookProtection:interface'
-          - name: Worksheet
+          - name: 工作表
             uid: 'excel!Excel.Worksheet:interface'
           - name: WorksheetCollection
             uid: 'excel!Excel.WorksheetCollection:interface'
