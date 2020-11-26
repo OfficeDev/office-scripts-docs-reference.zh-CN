@@ -1,85 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterDatetime:interface'
-    summary: 表示在筛选值时如何筛选日期。
-    name: Excel.FilterDatetime
-    fullName: Excel.FilterDatetime
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.FilterDatetime#date:member'
-      - 'excel!Excel.FilterDatetime#specificity:member'
-  - uid: 'excel!Excel.FilterDatetime#date:member'
-    summary: 用于筛选数据的采用 ISO8601 格式的日期。
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'date: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterDatetime#specificity:member'
-    summary: 用于保留数据的日期的具体程度。 例如，如果日期是 2005-04-02 并且将特殊性设置为“月”，则筛选操作将保留包含 2009 年 4 月日期的所有行。
-    name: specificity
-    fullName: specificity
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        specificity:
-                    | FilterDatetimeSpecificity
+### YamlMime:TSType
+name: Excel.FilterDatetime
+uid: excel!Excel.FilterDatetime:interface
+package: excel!
+fullName: Excel.FilterDatetime
+summary: 表示在筛选值时如何筛选日期。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: date
+  uid: excel!Excel.FilterDatetime#date:member
+  package: excel!
+  fullName: date
+  summary: 用于筛选数据的采用 ISO8601 格式的日期。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'date: string;'
+    return:
+      type: string
+- name: specificity
+  uid: excel!Excel.FilterDatetime#specificity:member
+  package: excel!
+  fullName: specificity
+  summary: 用于保留数据的日期的具体程度。 例如，如果日期是 2005-04-02 并且将特殊性设置为“月”，则筛选操作将保留包含 2009 年 4 月日期的所有行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      specificity:
+                  | FilterDatetimeSpecificity
+                  | "Year"
+                  | "Month"
+                  | "Day"
+                  | "Hour"
+                  | "Minute"
+                  | "Second";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.FilterDatetimeSpecificity:enum" />
                     | "Year"
                     | "Month"
                     | "Day"
                     | "Hour"
                     | "Minute"
-                    | "Second";
-      return:
-        type:
-          - 'excel!Excel.FilterDatetime#specificity~0:complex'
-references:
-  - uid: 'excel!Excel.FilterDatetime#specificity~0:complex'
-    name: |-
-      | FilterDatetimeSpecificity
-                  | "Year"
-                  | "Month"
-                  | "Day"
-                  | "Hour"
-                  | "Minute"
-                  | "Second"
-    fullName: |-
-      | Excel.FilterDatetimeSpecificity
-                  | "Year"
-                  | "Month"
-                  | "Day"
-                  | "Hour"
-                  | "Minute"
-                  | "Second"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
-        name: FilterDatetimeSpecificity
-        fullName: Excel.FilterDatetimeSpecificity
-      - name: |2-
-
-                      | "Year"
-                      | "Month"
-                      | "Day"
-                      | "Hour"
-                      | "Minute"
-                      | "Second"
-        fullName: |2-
-
-                      | "Year"
-                      | "Month"
-                      | "Day"
-                      | "Hour"
-                      | "Minute"
-                      | "Second"
+                    | "Second"
+metadata:
+  ms.openlocfilehash: 7057a3b8455be4fc1e197dd3bb5579f7a12e6361
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417958"

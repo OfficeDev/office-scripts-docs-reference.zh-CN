@@ -1,143 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
-    summary: 代表数据栏的负侧的条件格式 DataBar 格式。
-    name: ExcelScript.ConditionalDataBarNegativeFormat
-    fullName: ExcelScript.ConditionalDataBarNegativeFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
-    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线颜色的 HTML 颜色代码。 如果不存在或设置了边框，则为 "空字符串"。
-    name: getBorderColor()
-    fullName: getBorderColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorderColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
-    summary: 代表表单 RRGGBB 的填充颜色的 HTML 颜色代码 \# （例如，"FFA500"）或命名的 HTML 颜色（例如，"橙色"）。
-    name: getFillColor()
-    fullName: getFillColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFillColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
-    summary: 指定负 DataBar 的边框颜色是否与正 DataBar 相同。
-    name: getMatchPositiveBorderColor()
-    fullName: getMatchPositiveBorderColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMatchPositiveBorderColor(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
-    summary: 指定负 DataBar 的填充颜色是否与正 DataBar 相同。
-    name: getMatchPositiveFillColor()
-    fullName: getMatchPositiveFillColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMatchPositiveFillColor(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
-    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的边框线颜色的 HTML 颜色代码。 如果不存在或设置了边框，则为 "空字符串"。
-    name: setBorderColor(borderColor)
-    fullName: setBorderColor(borderColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBorderColor(borderColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: borderColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
-    summary: 代表表单 RRGGBB 的填充颜色的 HTML 颜色代码 \# （例如，"FFA500"）或命名的 HTML 颜色（例如，"橙色"）。
-    name: setFillColor(fillColor)
-    fullName: setFillColor(fillColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFillColor(fillColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: fillColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
-    summary: 指定负 DataBar 的边框颜色是否与正 DataBar 相同。
-    name: setMatchPositiveBorderColor(matchPositiveBorderColor)
-    fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: matchPositiveBorderColor
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
-    summary: 指定负 DataBar 的填充颜色是否与正 DataBar 相同。
-    name: setMatchPositiveFillColor(matchPositiveFillColor)
-    fullName: setMatchPositiveFillColor(matchPositiveFillColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: matchPositiveFillColor
-          description: ''
-          type:
-            - boolean
+### YamlMime:TSType
+name: ExcelScript.ConditionalDataBarNegativeFormat
+uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalDataBarNegativeFormat
+summary: 代表数据栏的负侧的条件格式 DataBar 格式。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorderColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)
+  package: ExcelScript!
+  fullName: getBorderColor()
+  summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。 如果不存在或设置了边框，则为 "空字符串"。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorderColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFillColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)
+  package: ExcelScript!
+  fullName: getFillColor()
+  summary: 代表表单 RRGGBB 的填充颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFillColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getMatchPositiveBorderColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)
+  package: ExcelScript!
+  fullName: getMatchPositiveBorderColor()
+  summary: 指定负 DataBar 的边框颜色是否与正 DataBar 相同。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMatchPositiveBorderColor(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getMatchPositiveFillColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)
+  package: ExcelScript!
+  fullName: getMatchPositiveFillColor()
+  summary: 指定负 DataBar 的填充颜色是否与正 DataBar 相同。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMatchPositiveFillColor(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setBorderColor(borderColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)
+  package: ExcelScript!
+  fullName: setBorderColor(borderColor)
+  summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。 如果不存在或设置了边框，则为 "空字符串"。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBorderColor(borderColor: string): void;'
+    parameters:
+    - id: borderColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFillColor(fillColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)
+  package: ExcelScript!
+  fullName: setFillColor(fillColor)
+  summary: 代表表单 RRGGBB 的填充颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFillColor(fillColor: string): void;'
+    parameters:
+    - id: fillColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setMatchPositiveBorderColor(matchPositiveBorderColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)
+  package: ExcelScript!
+  fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
+  summary: 指定负 DataBar 的边框颜色是否与正 DataBar 相同。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
+    parameters:
+    - id: matchPositiveBorderColor
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setMatchPositiveFillColor(matchPositiveFillColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)
+  package: ExcelScript!
+  fullName: setMatchPositiveFillColor(matchPositiveFillColor)
+  summary: 指定负 DataBar 的填充颜色是否与正 DataBar 相同。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
+    parameters:
+    - id: matchPositiveFillColor
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 95cd68ae74d6ea3c0765aa03717d71d3da0494ef
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416755"

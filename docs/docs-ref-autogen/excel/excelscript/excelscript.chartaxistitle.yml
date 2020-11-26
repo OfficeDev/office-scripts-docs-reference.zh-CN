@@ -1,147 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle:interface'
-    summary: 表示图表坐标轴的标题。
-    name: ExcelScript.ChartAxisTitle
-    fullName: ExcelScript.ChartAxisTitle
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)'
-    summary: 指定图表坐标轴标题的格式。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartAxisTitleFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTitleFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)'
-    summary: 指定轴标题。
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)'
-    summary: 指定文本面向图表轴标题的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
-    name: getTextOrientation()
-    fullName: getTextOrientation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)'
-    summary: 指定轴标题是否为 shape.visibile。
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)'
-    summary: 该字符串值表示采用 A1 表示法的图表轴标题的公式。
-    name: setFormula(formula)
-    fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formula
-          description: 一个显示要设置的公式的字符串
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)'
-    summary: 指定轴标题。
-    name: setText(text)
-    fullName: setText(text)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setText(text: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: text
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)'
-    summary: 指定文本面向图表轴标题的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
-    name: setTextOrientation(textOrientation)
-    fullName: setTextOrientation(textOrientation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: textOrientation
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)'
-    summary: 指定轴标题是否为 shape.visibile。
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat:interface'
-    name: ChartAxisTitleFormat
-    fullName: ExcelScript.ChartAxisTitleFormat
+### YamlMime:TSType
+name: ExcelScript.ChartAxisTitle
+uid: ExcelScript!ExcelScript.ChartAxisTitle:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAxisTitle
+summary: 表示图表坐标轴的标题。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 指定图表坐标轴标题的格式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartAxisTitleFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTitleFormat:interface" />
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: 指定轴标题。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: 指定文本面向图表轴标题的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: 指定轴标题是否为 shape.visibile。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: 该字符串值表示采用 A1 表示法的图表轴标题的公式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: 一个显示要设置的公式的字符串
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setText(text)
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)
+  package: ExcelScript!
+  fullName: setText(text)
+  summary: 指定轴标题。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setText(text: string): void;'
+    parameters:
+    - id: text
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: 指定文本面向图表轴标题的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: 指定轴标题是否为 shape.visibile。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: cc90d8c96c4846a97eb80b1c44317def1d5a9e51
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417007"

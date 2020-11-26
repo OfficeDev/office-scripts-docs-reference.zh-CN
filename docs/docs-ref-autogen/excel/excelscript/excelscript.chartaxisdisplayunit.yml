@@ -1,98 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
-    name: ExcelScript.ChartAxisDisplayUnit
-    fullName: ExcelScript.ChartAxisDisplayUnit
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
-      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
-    summary: 这将设置以十亿为单位的坐标轴。
-    name: billions
-    fullName: billions
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
-    summary: 这将设置以自定义值为单位的轴。
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
-    summary: 这将设置以数亿为单位的坐标轴。
-    name: hundredMillions
-    fullName: hundredMillions
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
-    summary: 这将设置以成百上千为单位的轴。
-    name: hundreds
-    fullName: hundreds
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
-    summary: 这将设置以几十万为单位的坐标轴。
-    name: hundredThousands
-    fullName: hundredThousands
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
-    summary: 这将设置以百万为单位的坐标轴。
-    name: millions
-    fullName: millions
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
-    summary: 默认选项。 这会将显示单元重置为轴，并将 "设置单位标签" 不可见。
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
-    summary: 这将设置以上百万为单位的坐标轴。
-    name: tenMillions
-    fullName: tenMillions
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
-    summary: 这将设置以成千上万为单位的轴。
-    name: tenThousands
-    fullName: tenThousands
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
-    summary: 这将设置单位为千单位的轴。
-    name: thousands
-    fullName: thousands
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
-    summary: 这将设置 trillions 的单位坐标轴。
-    name: trillions
-    fullName: trillions
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartAxisDisplayUnit
+uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartAxisDisplayUnit
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: billions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member
+  package: ExcelScript!
+  summary: 这将设置以十亿为单位的坐标轴。
+- name: custom
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member
+  package: ExcelScript!
+  summary: 这将设置以自定义值为单位的轴。
+- name: hundredMillions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member
+  package: ExcelScript!
+  summary: 这将设置以数亿为单位的坐标轴。
+- name: hundreds
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member
+  package: ExcelScript!
+  summary: 这将设置以成百上千为单位的轴。
+- name: hundredThousands
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member
+  package: ExcelScript!
+  summary: 这将设置以几十万为单位的坐标轴。
+- name: millions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member
+  package: ExcelScript!
+  summary: 这将设置以百万为单位的坐标轴。
+- name: none
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member
+  package: ExcelScript!
+  summary: 默认选项。 这会将显示单元重置为轴，并将 "设置单位标签" 不可见。
+- name: tenMillions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member
+  package: ExcelScript!
+  summary: 这将设置以上百万为单位的坐标轴。
+- name: tenThousands
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member
+  package: ExcelScript!
+  summary: 这将设置以成千上万为单位的轴。
+- name: thousands
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member
+  package: ExcelScript!
+  summary: 这将设置单位为千单位的轴。
+- name: trillions
+  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member
+  package: ExcelScript!
+  summary: 这将设置 trillions 的单位坐标轴。
+metadata:
+  ms.openlocfilehash: ce73f608460520b055d6e811a4691fc16517df76
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417084"

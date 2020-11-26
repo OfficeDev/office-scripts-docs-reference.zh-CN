@@ -1,80 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill:interface'
-    summary: '表示 `format.fill` 的属性`getCellProperties`<!-- -->, `getRowProperties`<!-- -->，和 `getColumnProperties` 或的 `format.fill` 输入参数`setCellProperties`<!-- -->, `setRowProperties`<!-- -->，并`setColumnProperties`<!-- -->.'
-    name: ExcelScript.CellPropertiesFill
-    fullName: ExcelScript.CellPropertiesFill
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CellPropertiesFill#color:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFill#pattern:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFill#patternColor:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFill#patternTintAndShade:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFill#tintAndShade:member'
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#color:member'
-    summary: 表示`format.fill.color`属性。
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#pattern:member'
-    summary: 表示`format.fill.pattern`属性。
-    name: pattern
-    fullName: pattern
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'pattern?: FillPattern;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FillPattern:enum'
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#patternColor:member'
-    summary: 表示`format.fill.patternColor`属性。
-    name: patternColor
-    fullName: patternColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternColor?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#patternTintAndShade:member'
-    summary: 表示`format.fill.patternTintAndShade`属性。
-    name: patternTintAndShade
-    fullName: patternTintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternTintAndShade?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#tintAndShade:member'
-    summary: 表示`format.fill.tintAndShade`属性。
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'ExcelScript!ExcelScript.FillPattern:enum'
-    name: FillPattern
-    fullName: ExcelScript.FillPattern
+### YamlMime:TSType
+name: ExcelScript.CellPropertiesFill
+uid: ExcelScript!ExcelScript.CellPropertiesFill:interface
+package: ExcelScript!
+fullName: ExcelScript.CellPropertiesFill
+summary: 表示 `format.fill` 的属性 `getCellProperties`<!-- -->, `getRowProperties`<!-- -->，和 `getColumnProperties` 或的 `format.fill` 输入参数 `setCellProperties`<!-- -->, `setRowProperties`<!-- -->，并 `setColumnProperties`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: ExcelScript!ExcelScript.CellPropertiesFill#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: 表示`format.fill.color`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: pattern
+  uid: ExcelScript!ExcelScript.CellPropertiesFill#pattern:member
+  package: ExcelScript!
+  fullName: pattern
+  summary: 表示`format.fill.pattern`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'pattern?: FillPattern;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
+- name: patternColor
+  uid: ExcelScript!ExcelScript.CellPropertiesFill#patternColor:member
+  package: ExcelScript!
+  fullName: patternColor
+  summary: 表示`format.fill.patternColor`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'patternColor?: string;'
+    return:
+      type: string
+- name: patternTintAndShade
+  uid: ExcelScript!ExcelScript.CellPropertiesFill#patternTintAndShade:member
+  package: ExcelScript!
+  fullName: patternTintAndShade
+  summary: 表示`format.fill.patternTintAndShade`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'patternTintAndShade?: number;'
+    return:
+      type: number
+- name: tintAndShade
+  uid: ExcelScript!ExcelScript.CellPropertiesFill#tintAndShade:member
+  package: ExcelScript!
+  fullName: tintAndShade
+  summary: 表示`format.fill.tintAndShade`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tintAndShade?: number;'
+    return:
+      type: number
+metadata:
+  ms.openlocfilehash: 347fe81875d4029ef86cbf24dad2d626a6e86c15
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417140"

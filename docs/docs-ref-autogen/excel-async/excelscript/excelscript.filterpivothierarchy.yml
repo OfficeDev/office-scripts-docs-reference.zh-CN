@@ -1,113 +1,109 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterPivotHierarchy:interface'
-    summary: 表示 Excel FilterPivotHierarchy。
-    name: Excel.FilterPivotHierarchy
-    fullName: Excel.FilterPivotHierarchy
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
-      - 'excel!Excel.FilterPivotHierarchy#fields:member'
-      - 'excel!Excel.FilterPivotHierarchy#id:member'
-      - 'excel!Excel.FilterPivotHierarchy#load:member(1)'
-      - 'excel!Excel.FilterPivotHierarchy#name:member'
-      - 'excel!Excel.FilterPivotHierarchy#position:member'
-      - 'excel!Excel.FilterPivotHierarchy#setToDefault:member(1)'
-  - uid: 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
-    summary: 确定是否允许多个筛选项。
-    name: enableMultipleFilterItems
-    fullName: enableMultipleFilterItems
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableMultipleFilterItems: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.FilterPivotHierarchy#fields:member'
-    summary: 返回与 FilterPivotHierarchy 相关联的 PivotFields。
-    name: fields
-    fullName: fields
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fields: PivotFieldCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotFieldCollection:interface'
-  - uid: 'excel!Excel.FilterPivotHierarchy#id:member'
-    summary: FilterPivotHierarchy 的 ID。
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterPivotHierarchy#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.FilterPivotHierarchy#name:member'
-    summary: FilterPivotHierarchy 的名称。
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterPivotHierarchy#position:member'
-    summary: FilterPivotHierarchy 的位置。
-    name: position
-    fullName: position
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'position: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.FilterPivotHierarchy#setToDefault:member(1)'
-    summary: 将 FilterPivotHierarchy 重置回其默认值。
-    name: setToDefault()
-    fullName: setToDefault()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setToDefault(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'excel!Excel.PivotFieldCollection:interface'
-    name: PivotFieldCollection
-    fullName: Excel.PivotFieldCollection
+### YamlMime:TSType
+name: Excel.FilterPivotHierarchy
+uid: excel!Excel.FilterPivotHierarchy:interface
+package: excel!
+fullName: Excel.FilterPivotHierarchy
+summary: 表示 Excel FilterPivotHierarchy。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: enableMultipleFilterItems
+  uid: excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member
+  package: excel!
+  fullName: enableMultipleFilterItems
+  summary: 确定是否允许多个筛选项。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enableMultipleFilterItems: boolean;'
+    return:
+      type: boolean
+- name: fields
+  uid: excel!Excel.FilterPivotHierarchy#fields:member
+  package: excel!
+  fullName: fields
+  summary: 返回与 FilterPivotHierarchy 相关联的 PivotFields。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fields: PivotFieldCollection;'
+    return:
+      type: <xref uid="excel!Excel.PivotFieldCollection:interface" />
+- name: id
+  uid: excel!Excel.FilterPivotHierarchy#id:member
+  package: excel!
+  fullName: id
+  summary: FilterPivotHierarchy 的 ID。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: name
+  uid: excel!Excel.FilterPivotHierarchy#name:member
+  package: excel!
+  fullName: name
+  summary: FilterPivotHierarchy 的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: position
+  uid: excel!Excel.FilterPivotHierarchy#position:member
+  package: excel!
+  fullName: position
+  summary: FilterPivotHierarchy 的位置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'position: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.FilterPivotHierarchy#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setToDefault()
+  uid: excel!Excel.FilterPivotHierarchy#setToDefault:member(1)
+  package: excel!
+  fullName: setToDefault()
+  summary: 将 FilterPivotHierarchy 重置回其默认值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setToDefault(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 25824443f7078c37f9235ee07d39e34d0521242b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417923"
