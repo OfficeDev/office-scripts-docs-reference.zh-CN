@@ -1,317 +1,237 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Slicer:interface'
-    summary: 表示工作簿中的切片器对象。
-    name: Excel.Slicer
-    fullName: Excel.Slicer
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Slicer#caption:member'
-      - 'excel!Excel.Slicer#clearFilters:member(1)'
-      - 'excel!Excel.Slicer#delete:member(1)'
-      - 'excel!Excel.Slicer#getSelectedItems:member(1)'
-      - 'excel!Excel.Slicer#height:member'
-      - 'excel!Excel.Slicer#id:member'
-      - 'excel!Excel.Slicer#isFilterCleared:member'
-      - 'excel!Excel.Slicer#left:member'
-      - 'excel!Excel.Slicer#load:member(1)'
-      - 'excel!Excel.Slicer#name:member'
-      - 'excel!Excel.Slicer#selectItems:member(1)'
-      - 'excel!Excel.Slicer#slicerItems:member'
-      - 'excel!Excel.Slicer#sortBy:member'
-      - 'excel!Excel.Slicer#style:member'
-      - 'excel!Excel.Slicer#top:member'
-      - 'excel!Excel.Slicer#width:member'
-      - 'excel!Excel.Slicer#worksheet:member'
-  - uid: 'excel!Excel.Slicer#caption:member'
-    summary: 表示切片器的标题。
-    name: caption
-    fullName: caption
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'caption: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Slicer#clearFilters:member(1)'
-    summary: 清除当前切片器上应用的所有筛选器。
-    name: clearFilters()
-    fullName: clearFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearFilters(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.clearFilters();
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Slicer#delete:member(1)'
-    summary: 删除切片器。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.slicers.getItemAt(0).delete();
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
-    summary: 返回所选项目密钥的数组。
-    name: getSelectedItems()
-    fullName: getSelectedItems()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedItems(): ClientResult<string[]>;'
-      return:
-        type:
-          - 'excel!Excel.Slicer#getSelectedItems~0:complex'
-        description: ''
-  - uid: 'excel!Excel.Slicer#height:member'
-    summary: 表示切片器的高度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'height: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Slicer#id:member'
-    summary: 表示切片器的唯一 ID。
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Slicer#isFilterCleared:member'
-    summary: 如果已清除当前切片器上应用的所有筛选器，则为 True。
-    name: isFilterCleared
-    fullName: isFilterCleared
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isFilterCleared: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Slicer#left:member'
-    summary: 表示从切片器左侧到工作表左侧的距离（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 将负值设置为 input 时出现异常。
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'left: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Slicer#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Slicer#name:member'
-    summary: 表示切片器的名称。
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Slicer#selectItems:member(1)'
-    summary: 根据它们的键选择切片器项目。 将清除以前的选择。 如果数组为空，则默认情况下将选择所有项目。
-    name: selectItems(items)
-    fullName: selectItems(items)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'selectItems(items?: string[]): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.selectItems(["Lemon", "Lime", "Orange"]);
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: items
-          description: 可选。 要选择的指定切片器项目名称。
-          type:
-            - 'string[]'
-  - uid: 'excel!Excel.Slicer#slicerItems:member'
-    summary: 表示作为切片器一部分的 SlicerItems 的集合。
-    name: slicerItems
-    fullName: slicerItems
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly slicerItems: SlicerItemCollection;'
-      return:
-        type:
-          - 'excel!Excel.SlicerItemCollection:interface'
-  - uid: 'excel!Excel.Slicer#sortBy:member'
-    summary: 表示切片器中的项目的排序顺序。 可能的值为： "DataSourceOrder"、"升序"、"降序"。
-    name: sortBy
-    fullName: sortBy
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'sortBy: SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
-      return:
-        type:
-          - 'excel!Excel.Slicer#sortBy~0:complex'
-  - uid: 'excel!Excel.Slicer#style:member'
-    summary: 表示切片器样式的常量值。 可能的值为： "SlicerStyleLight1" 到 "SlicerStyleLight6"、"TableStyleOther1" 通过 "TableStyleOther2"、"SlicerStyleDark1" 到 "SlicerStyleDark6"。 还可以指定工作簿中显示的用户定义的自定义样式。
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.style = "SlicerStyleLight6";
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Slicer#top:member'
-    summary: 表示从切片器上边缘到工作表顶部的距离（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 将负值设置为 input 时出现异常。
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'top: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Slicer#width:member'
-    summary: 表示切片器的宽度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'width: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Slicer#worksheet:member'
-    summary: 表示包含切片器的工作表。
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheet: Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-references:
-  - uid: 'excel!Excel.Slicer#getSelectedItems~0:complex'
-    name: 'ClientResult<string[]>'
-    fullName: 'Excel.ClientResult<string[]>'
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: '<string[]>'
-        fullName: '<string[]>'
-  - uid: 'excel!Excel.SlicerItemCollection:interface'
-    name: SlicerItemCollection
-    fullName: Excel.SlicerItemCollection
-  - uid: 'excel!Excel.Slicer#sortBy~0:complex'
-    name: SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
-    fullName: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
-    spec.typeScript:
-      - uid: 'excel!Excel.SlicerSortType:enum'
-        name: SlicerSortType
-        fullName: Excel.SlicerSortType
-      - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
-        fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
+### YamlMime:TSType
+name: Excel.Slicer
+uid: excel!Excel.Slicer:interface
+package: excel!
+fullName: Excel.Slicer
+summary: 表示工作簿中的切片器对象。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: caption
+  uid: excel!Excel.Slicer#caption:member
+  package: excel!
+  fullName: caption
+  summary: 表示切片器的标题。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'caption: string;'
+    return:
+      type: string
+- name: height
+  uid: excel!Excel.Slicer#height:member
+  package: excel!
+  fullName: height
+  summary: 表示切片器的高度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'height: number;'
+    return:
+      type: number
+- name: id
+  uid: excel!Excel.Slicer#id:member
+  package: excel!
+  fullName: id
+  summary: 表示切片器的唯一 ID。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: isFilterCleared
+  uid: excel!Excel.Slicer#isFilterCleared:member
+  package: excel!
+  fullName: isFilterCleared
+  summary: 如果已清除当前切片器上应用的所有筛选器，则为 True。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly isFilterCleared: boolean;'
+    return:
+      type: boolean
+- name: left
+  uid: excel!Excel.Slicer#left:member
+  package: excel!
+  fullName: left
+  summary: 表示从切片器左侧到工作表左侧的距离（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 将负值设置为 input 时出现异常。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'left: number;'
+    return:
+      type: number
+- name: name
+  uid: excel!Excel.Slicer#name:member
+  package: excel!
+  fullName: name
+  summary: 表示切片器的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: slicerItems
+  uid: excel!Excel.Slicer#slicerItems:member
+  package: excel!
+  fullName: slicerItems
+  summary: 表示作为切片器一部分的 SlicerItems 的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly slicerItems: SlicerItemCollection;'
+    return:
+      type: <xref uid="excel!Excel.SlicerItemCollection:interface" />
+- name: sortBy
+  uid: excel!Excel.Slicer#sortBy:member
+  package: excel!
+  fullName: sortBy
+  summary: 表示切片器中的项目的排序顺序。 可能的值为： "DataSourceOrder"、"升序"、"降序"。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'sortBy: SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
+    return:
+      type: <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" | "Ascending" | "Descending"
+- name: style
+  uid: excel!Excel.Slicer#style:member
+  package: excel!
+  fullName: style
+  summary: 表示切片器样式的常量值。 可能的值为： "SlicerStyleLight1" 到 "SlicerStyleLight6"、"TableStyleOther1" 通过 "TableStyleOther2"、"SlicerStyleDark1" 到 "SlicerStyleDark6"。 还可以指定工作簿中显示的用户定义的自定义样式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let slicer = context.workbook.slicers.getItem(\"Fruit Slicer\");\n    slicer.style = \"SlicerStyleLight6\";\n    await context.sync();\n}\n```"
+- name: top
+  uid: excel!Excel.Slicer#top:member
+  package: excel!
+  fullName: top
+  summary: 表示从切片器上边缘到工作表顶部的距离（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 将负值设置为 input 时出现异常。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'top: number;'
+    return:
+      type: number
+- name: width
+  uid: excel!Excel.Slicer#width:member
+  package: excel!
+  fullName: width
+  summary: 表示切片器的宽度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'width: number;'
+    return:
+      type: number
+- name: worksheet
+  uid: excel!Excel.Slicer#worksheet:member
+  package: excel!
+  fullName: worksheet
+  summary: 表示包含切片器的工作表。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly worksheet: Worksheet;'
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+methods:
+- name: clearFilters()
+  uid: excel!Excel.Slicer#clearFilters:member(1)
+  package: excel!
+  fullName: clearFilters()
+  summary: 清除当前切片器上应用的所有筛选器。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearFilters(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let slicer = context.workbook.slicers.getItem(\"Fruit Slicer\");\n    slicer.clearFilters();\n    await context.sync();\n}\n```"
+- name: delete()
+  uid: excel!Excel.Slicer#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: 删除切片器。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    sheet.slicers.getItemAt(0).delete();\n    await context.sync();\n}\n```"
+- name: getSelectedItems()
+  uid: excel!Excel.Slicer#getSelectedItems:member(1)
+  package: excel!
+  fullName: getSelectedItems()
+  summary: 返回所选项目密钥的数组。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSelectedItems(): ClientResult<string[]>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;string[]&gt;
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Slicer#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: selectItems(items)
+  uid: excel!Excel.Slicer#selectItems:member(1)
+  package: excel!
+  fullName: selectItems(items)
+  summary: 根据它们的键选择切片器项目。 将清除以前的选择。 如果数组为空，则默认情况下将选择所有项目。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'selectItems(items?: string[]): void;'
+    parameters:
+    - id: items
+      description: 可选。 要选择的指定切片器项目名称。
+      type: string[]
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let slicer = context.workbook.slicers.getItem(\"Fruit Slicer\");\n    slicer.selectItems([\"Lemon\", \"Lime\", \"Orange\"]);\n    await context.sync();\n}\n```"
+metadata:
+  ms.openlocfilehash: 40b0e71f29db5f4c18ea35ab8b63508e16a64199
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418412"

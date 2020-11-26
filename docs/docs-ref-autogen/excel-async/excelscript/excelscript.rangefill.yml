@@ -1,75 +1,62 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RangeFill:interface'
-    summary: 表示 range 对象的背景。
-    name: Excel.RangeFill
-    fullName: Excel.RangeFill
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.RangeFill#clear:member(1)'
-      - 'excel!Excel.RangeFill#color:member'
-      - 'excel!Excel.RangeFill#load:member(1)'
-      - 'excel!Excel.RangeFill#pattern:member'
-      - 'excel!Excel.RangeFill#patternColor:member'
-      - 'excel!Excel.RangeFill#patternTintAndShade:member'
-      - 'excel!Excel.RangeFill#tintAndShade:member'
-  - uid: 'excel!Excel.RangeFill#clear:member(1)'
-    summary: 重置区域背景。
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.RangeFill#color:member'
-    summary: 代表表单 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的背景色的 HTML 颜色代码。
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeFill#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RangeFill#pattern:member'
-    summary: 区域的图案。 有关详细信息，请参阅 Excel.FillPattern。 不支持 LinearGradient 和 RectangularGradient。 如果为 null 值，则表示整个区域没有统一的模式设置。
-    name: pattern
-    fullName: pattern
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        pattern:
-                    | FillPattern
+### YamlMime:TSType
+name: Excel.RangeFill
+uid: excel!Excel.RangeFill:interface
+package: excel!
+fullName: Excel.RangeFill
+summary: 表示 range 对象的背景。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: excel!Excel.RangeFill#color:member
+  package: excel!
+  fullName: color
+  summary: '代表表单 RRGGBB 的背景色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color: string;'
+    return:
+      type: string
+- name: pattern
+  uid: excel!Excel.RangeFill#pattern:member
+  package: excel!
+  fullName: pattern
+  summary: 区域的图案。 有关详细信息，请参阅 Excel.FillPattern。 不支持 LinearGradient 和 RectangularGradient。 如果为 null 值，则表示整个区域没有统一的模式设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      pattern:
+                  | FillPattern
+                  | "None"
+                  | "Solid"
+                  | "Gray50"
+                  | "Gray75"
+                  | "Gray25"
+                  | "Horizontal"
+                  | "Vertical"
+                  | "Down"
+                  | "Up"
+                  | "Checker"
+                  | "SemiGray75"
+                  | "LightHorizontal"
+                  | "LightVertical"
+                  | "LightDown"
+                  | "LightUp"
+                  | "Grid"
+                  | "CrissCross"
+                  | "Gray16"
+                  | "Gray8"
+                  | "LinearGradient"
+                  | "RectangularGradient";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.FillPattern:enum" />
                     | "None"
                     | "Solid"
                     | "Gray50"
@@ -90,143 +77,78 @@ items:
                     | "Gray16"
                     | "Gray8"
                     | "LinearGradient"
-                    | "RectangularGradient";
-      return:
-        type:
-          - 'excel!Excel.RangeFill#pattern~0:complex'
-  - uid: 'excel!Excel.RangeFill#patternColor:member'
-    summary: 表示范围模式的颜色的 HTML 颜色代码，格式 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）。
-    name: patternColor
-    fullName: patternColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RangeFill#patternTintAndShade:member'
-    summary: 指定用于将区域填充的图案颜色变浅或变暗的双精度值，该值介于-1 （最暗）和1（最亮）之间，0表示原始颜色。 如果模式 tintAndShades 不一致，则将返回 null。
-    name: patternTintAndShade
-    fullName: patternTintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'patternTintAndShade: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RangeFill#tintAndShade:member'
-    summary: 指定用于将区域填充的颜色变浅或变暗的双精度值，该值介于-1 （最暗）和1（最亮）之间，0表示原始颜色。 如果 tintAndShades 不是统一的，将返回 null。
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.RangeFill#pattern~0:complex'
-    name: |-
-      | FillPattern
-                  | "None"
-                  | "Solid"
-                  | "Gray50"
-                  | "Gray75"
-                  | "Gray25"
-                  | "Horizontal"
-                  | "Vertical"
-                  | "Down"
-                  | "Up"
-                  | "Checker"
-                  | "SemiGray75"
-                  | "LightHorizontal"
-                  | "LightVertical"
-                  | "LightDown"
-                  | "LightUp"
-                  | "Grid"
-                  | "CrissCross"
-                  | "Gray16"
-                  | "Gray8"
-                  | "LinearGradient"
-                  | "RectangularGradient"
-    fullName: |-
-      | Excel.FillPattern
-                  | "None"
-                  | "Solid"
-                  | "Gray50"
-                  | "Gray75"
-                  | "Gray25"
-                  | "Horizontal"
-                  | "Vertical"
-                  | "Down"
-                  | "Up"
-                  | "Checker"
-                  | "SemiGray75"
-                  | "LightHorizontal"
-                  | "LightVertical"
-                  | "LightDown"
-                  | "LightUp"
-                  | "Grid"
-                  | "CrissCross"
-                  | "Gray16"
-                  | "Gray8"
-                  | "LinearGradient"
-                  | "RectangularGradient"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.FillPattern:enum'
-        name: FillPattern
-        fullName: Excel.FillPattern
-      - name: |2-
-
-                      | "None"
-                      | "Solid"
-                      | "Gray50"
-                      | "Gray75"
-                      | "Gray25"
-                      | "Horizontal"
-                      | "Vertical"
-                      | "Down"
-                      | "Up"
-                      | "Checker"
-                      | "SemiGray75"
-                      | "LightHorizontal"
-                      | "LightVertical"
-                      | "LightDown"
-                      | "LightUp"
-                      | "Grid"
-                      | "CrissCross"
-                      | "Gray16"
-                      | "Gray8"
-                      | "LinearGradient"
-                      | "RectangularGradient"
-        fullName: |2-
-
-                      | "None"
-                      | "Solid"
-                      | "Gray50"
-                      | "Gray75"
-                      | "Gray25"
-                      | "Horizontal"
-                      | "Vertical"
-                      | "Down"
-                      | "Up"
-                      | "Checker"
-                      | "SemiGray75"
-                      | "LightHorizontal"
-                      | "LightVertical"
-                      | "LightDown"
-                      | "LightUp"
-                      | "Grid"
-                      | "CrissCross"
-                      | "Gray16"
-                      | "Gray8"
-                      | "LinearGradient"
-                      | "RectangularGradient"
+                    | "RectangularGradient"
+- name: patternColor
+  uid: excel!Excel.RangeFill#patternColor:member
+  package: excel!
+  fullName: patternColor
+  summary: 表示范围模式的颜色的 HTML 颜色代码，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'patternColor: string;'
+    return:
+      type: string
+- name: patternTintAndShade
+  uid: excel!Excel.RangeFill#patternTintAndShade:member
+  package: excel!
+  fullName: patternTintAndShade
+  summary: 指定用于使区域填充的图案颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (明亮的) ，0表示原始颜色。 如果模式 tintAndShades 不一致，则将返回 null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'patternTintAndShade: number;'
+    return:
+      type: number
+- name: tintAndShade
+  uid: excel!Excel.RangeFill#tintAndShade:member
+  package: excel!
+  fullName: tintAndShade
+  summary: 指定用于将区域填充的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (明亮的) 之间，0表示原始颜色。 如果 tintAndShades 不是统一的，将返回 null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tintAndShade: number;'
+    return:
+      type: number
+methods:
+- name: clear()
+  uid: excel!Excel.RangeFill#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: 重置区域背景。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.RangeFill#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e7bb03a72346b625694fa29bc5324a79ba3a3c44
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418700"

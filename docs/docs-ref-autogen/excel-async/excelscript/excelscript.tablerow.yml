@@ -1,78 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableRow:interface'
-    summary: |-
-      表示表中的行。
+### YamlMime:TSType
+name: Excel.TableRow
+uid: excel!Excel.TableRow:interface
+package: excel!
+fullName: Excel.TableRow
+summary: >-
+  表示表中的行。
 
-      请注意，与在添加新行/列之前的区域或列不同，TableRow 对象表示表行的物理位置，而不是数据。 也就是说，如果对数据进行排序或添加新行，则表行将继续指向为其创建该索引的索引。
-    name: Excel.TableRow
-    fullName: Excel.TableRow
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TableRow#delete:member(1)'
-      - 'excel!Excel.TableRow#getRange:member(1)'
-      - 'excel!Excel.TableRow#load:member(1)'
-      - 'excel!Excel.TableRow#values:member'
-  - uid: 'excel!Excel.TableRow#delete:member(1)'
-    summary: 从表中删除行。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.TableRow#getRange:member(1)'
-    summary: 返回与整个行相关的 range 对象。
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.TableRow#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TableRow#values:member'
-    summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'values: any[][];'
-      return:
-        type:
-          - 'any[][]'
-references:
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
+
+  请注意，与在添加新行/列之前的区域或列不同，TableRow 对象表示表行的物理位置，而不是数据。 也就是说，如果对数据进行排序或添加新行，则表行将继续指向为其创建该索引的索引。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: values
+  uid: excel!Excel.TableRow#values:member
+  package: excel!
+  fullName: values
+  summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'values: any[][];'
+    return:
+      type: any[][]
+methods:
+- name: delete()
+  uid: excel!Excel.TableRow#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: 从表中删除行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getRange()
+  uid: excel!Excel.TableRow#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: 返回与整个行相关的 range 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TableRow#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 7d8b53988f75a8e8f9e9fce4f175396e8ebf2319
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418245"

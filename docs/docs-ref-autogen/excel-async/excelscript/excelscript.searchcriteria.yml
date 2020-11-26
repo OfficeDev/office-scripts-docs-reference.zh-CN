@@ -1,60 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SearchCriteria:interface'
-    summary: 表示要使用的搜索条件。
-    name: Excel.SearchCriteria
-    fullName: Excel.SearchCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.SearchCriteria#completeMatch:member'
-      - 'excel!Excel.SearchCriteria#matchCase:member'
-      - 'excel!Excel.SearchCriteria#searchDirection:member'
-  - uid: 'excel!Excel.SearchCriteria#completeMatch:member'
-    summary: 指定是否需要完成匹配或部分匹配。 完全匹配的单元格的全部内容。 部分匹配与单元格内容中的子字符串匹配（例如， `cat` 部分匹配 `caterpillar` 和`scatter`<!-- -->). 默认值为 false（部分）。
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SearchCriteria#matchCase:member'
-    summary: 指定匹配是否区分大小写。 默认值为 false（不区分大小写）。
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SearchCriteria#searchDirection:member'
-    summary: 指定搜索方向。 默认值为向前。 请参阅 Excel.SearchDirection。
-    name: searchDirection
-    fullName: searchDirection
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'searchDirection?: SearchDirection | "Forward" | "Backwards";'
-      return:
-        type:
-          - 'excel!Excel.SearchCriteria#searchDirection~0:complex'
-references:
-  - uid: 'excel!Excel.SearchCriteria#searchDirection~0:complex'
-    name: SearchDirection | "Forward" | "Backwards"
-    fullName: Excel.SearchDirection | "Forward" | "Backwards"
-    spec.typeScript:
-      - uid: 'excel!Excel.SearchDirection:enum'
-        name: SearchDirection
-        fullName: Excel.SearchDirection
-      - name: ' | "Forward" | "Backwards"'
-        fullName: ' | "Forward" | "Backwards"'
+### YamlMime:TSType
+name: Excel.SearchCriteria
+uid: excel!Excel.SearchCriteria:interface
+package: excel!
+fullName: Excel.SearchCriteria
+summary: 表示要使用的搜索条件。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: excel!Excel.SearchCriteria#completeMatch:member
+  package: excel!
+  fullName: completeMatch
+  summary: 指定是否需要完成匹配或部分匹配。 完全匹配的单元格的全部内容。 部分匹配匹配单元格内容中的子字符串 (例如， `cat` 部分匹配 `caterpillar` 和 `scatter`<!-- -->). 默认值为 false（部分）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: excel!Excel.SearchCriteria#matchCase:member
+  package: excel!
+  fullName: matchCase
+  summary: 指定匹配是否区分大小写。 默认值为 false（不区分大小写）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+- name: searchDirection
+  uid: excel!Excel.SearchCriteria#searchDirection:member
+  package: excel!
+  fullName: searchDirection
+  summary: 指定搜索方向。 默认值为向前。 请参阅 Excel.SearchDirection。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'searchDirection?: SearchDirection | "Forward" | "Backwards";'
+    return:
+      type: <xref uid="excel!Excel.SearchDirection:enum" /> | "Forward" | "Backwards"
+metadata:
+  ms.openlocfilehash: 05b2c27b25815da716cf93f733c02380cdb71251
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418637"

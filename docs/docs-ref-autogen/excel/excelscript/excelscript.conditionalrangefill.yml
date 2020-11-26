@@ -1,58 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill:interface'
-    summary: 代表条件 range 对象的背景。
-    name: ExcelScript.ConditionalRangeFill
-    fullName: ExcelScript.ConditionalRangeFill
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)'
-    summary: 重置填充。
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)'
-    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的填充颜色的 HTML 颜色代码。
-    name: getColor()
-    fullName: getColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)'
-    summary: 代表 \# RRGGBB （例如，"FFA500"）或命名的 HTML 颜色（例如 "橙色"）的填充颜色的 HTML 颜色代码。
-    name: setColor(color)
-    fullName: setColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: ''
-          type:
-            - string
+### YamlMime:TSType
+name: ExcelScript.ConditionalRangeFill
+uid: ExcelScript!ExcelScript.ConditionalRangeFill:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalRangeFill
+summary: 代表条件 range 对象的背景。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: clear()
+  uid: ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: 重置填充。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getColor()
+  uid: ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: 表示填充颜色的 HTML 颜色代码 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: 表示填充颜色的 HTML 颜色代码 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 5c7cbb289160e9a35d89c749f3a144bca6e8c3cd
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419381"

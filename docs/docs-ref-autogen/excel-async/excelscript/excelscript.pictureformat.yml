@@ -1,64 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PictureFormat:enum'
-    summary: 图像的格式。
-    name: Excel.PictureFormat
-    fullName: Excel.PictureFormat
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.PictureFormat.bmp:member'
-      - 'excel!Excel.PictureFormat.gif:member'
-      - 'excel!Excel.PictureFormat.jpeg:member'
-      - 'excel!Excel.PictureFormat.png:member'
-      - 'excel!Excel.PictureFormat.svg:member'
-      - 'excel!Excel.PictureFormat.unknown:member'
-  - uid: 'excel!Excel.PictureFormat.bmp:member'
-    summary: 位图图像。
-    name: bmp
-    fullName: bmp
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Bmp"'
-  - uid: 'excel!Excel.PictureFormat.gif:member'
-    summary: 图形交换格式。
-    name: gif
-    fullName: gif
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Gif"'
-  - uid: 'excel!Excel.PictureFormat.jpeg:member'
-    summary: 联合图像专家组。
-    name: jpeg
-    fullName: jpeg
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Jpeg"'
-  - uid: 'excel!Excel.PictureFormat.png:member'
-    summary: 可移植网络图形。
-    name: png
-    fullName: png
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Png"'
-  - uid: 'excel!Excel.PictureFormat.svg:member'
-    summary: 可缩放的矢量图形。
-    name: svg
-    fullName: svg
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Svg"'
-  - uid: 'excel!Excel.PictureFormat.unknown:member'
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Unknown"'
+### YamlMime:TSEnum
+name: Excel.PictureFormat
+uid: excel!Excel.PictureFormat:enum
+package: excel!
+fullName: Excel.PictureFormat
+summary: 图像的格式。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bmp
+  uid: excel!Excel.PictureFormat.bmp:member
+  package: excel!
+  summary: 位图图像。
+- name: gif
+  uid: excel!Excel.PictureFormat.gif:member
+  package: excel!
+  summary: 图形交换格式。
+- name: jpeg
+  uid: excel!Excel.PictureFormat.jpeg:member
+  package: excel!
+  summary: 联合图像专家组。
+- name: png
+  uid: excel!Excel.PictureFormat.png:member
+  package: excel!
+  summary: 可移植网络图形。
+- name: svg
+  uid: excel!Excel.PictureFormat.svg:member
+  package: excel!
+  summary: 可缩放的矢量图形。
+- name: unknown
+  uid: excel!Excel.PictureFormat.unknown:member
+  package: excel!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 254cf034b3512cd5f5fbefb7e82b783653fee21d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418924"

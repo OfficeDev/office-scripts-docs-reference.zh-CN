@@ -1,231 +1,150 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorksheetCollection:interface'
-    summary: 表示属于工作簿的 worksheet 对象的集合。
-    name: Excel.WorksheetCollection
-    fullName: Excel.WorksheetCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.WorksheetCollection#add:member(1)'
-      - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
-      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
-      - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
-      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
-      - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.WorksheetCollection#getLast:member(1)'
-      - 'excel!Excel.WorksheetCollection#load:member(1)'
-  - uid: 'excel!Excel.WorksheetCollection#add:member(1)'
-    summary: 向工作簿添加新工作表。工作表将添加到现有工作表的末尾。如果您想要激活新添加的工作表，请对其调用 ".activate()。
-    name: add(name)
-    fullName: add(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(name?: string): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 可选。要添加的工作表的名称。如果指定，名称应唯一。如果未指定，Excel 将确定新工作表的名称。
-          type:
-            - string
-  - uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
-    summary: 获取工作簿中当前处于活动状态的工作表。
-    name: getActiveWorksheet()
-    fullName: getActiveWorksheet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getActiveWorksheet(): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
-    summary: 获取集合中的工作表数量。
-    name: getCount(visibleOnly)
-    fullName: getCount(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(visibleOnly?: boolean): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetCollection#getCount~0:complex'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
-          type:
-            - boolean
-  - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
-    summary: 获取集合中的第一个工作表。
-    name: getFirst(visibleOnly)
-    fullName: getFirst(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFirst(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheets = context.workbook.worksheets;
-
-              // We don't want to include the default worksheet that was created
-              // when the workbook was created, so our "firstSheet" will be the one
-              // after the literal first. Note chaining of navigation methods.
-              let firstSheet = sheets.getFirst().getNext();
-              let lastSheet = sheets.getLast();
-              let firstTaxRateRange = firstSheet.getRange("B2");
-              let lastTaxRateRange = lastSheet.getRange("B2");
-
-              firstSheet.load("name");
-              lastSheet.load("name");
-              firstTaxRateRange.load("text");
-              lastTaxRateRange.load("text");
-
-              await context.sync();
-
-              let firstYear = firstSheet.name.substr(5, 4);
-              let lastYear = lastSheet.name.substr(5, 4);
-              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: visibleOnly
-          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
-          type:
-            - boolean
-  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
-    summary: 按 Worksheet 对象的名称或 ID 获取此对象。
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 工作表的名称或 ID。
-          type:
-            - string
-  - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
-    summary: 按 Worksheet 对象的名称或 ID 获取此对象。 如果没有 Worksheet 对象，将返回 NULL 对象。
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: 工作表的名称或 ID。
-          type:
-            - string
-  - uid: 'excel!Excel.WorksheetCollection#getLast:member(1)'
-    summary: 获取集合中的最后一个工作表。
-    name: getLast(visibleOnly)
-    fullName: getLast(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLast(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheets = context.workbook.worksheets;
-
-              // We don't want to include the default worksheet that was created
-              // when the workbook was created, so our "firstSheet" will be the one
-              // after the literal first. Note chaining of navigation methods.
-              let firstSheet = sheets.getFirst().getNext();
-              let lastSheet = sheets.getLast();
-              let firstTaxRateRange = firstSheet.getRange("B2");
-              let lastTaxRateRange = lastSheet.getRange("B2");
-
-              firstSheet.load("name");
-              lastSheet.load("name");
-              firstTaxRateRange.load("text");
-              lastTaxRateRange.load("text");
-
-              await context.sync();
-
-              let firstYear = firstSheet.name.substr(5, 4);
-              let lastYear = lastSheet.name.substr(5, 4);
-              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: visibleOnly
-          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
-          type:
-            - boolean
-  - uid: 'excel!Excel.WorksheetCollection#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
-  - uid: 'excel!Excel.WorksheetCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.WorksheetCollection
+uid: excel!Excel.WorksheetCollection:interface
+package: excel!
+fullName: Excel.WorksheetCollection
+summary: 表示属于工作簿的 worksheet 对象的集合。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(name)
+  uid: excel!Excel.WorksheetCollection#add:member(1)
+  package: excel!
+  fullName: add(name)
+  summary: 向工作簿添加新工作表。工作表将添加到现有工作表的末尾。如果您想要激活新添加的工作表，请对其调用 ".activate()。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'add(name?: string): Worksheet;'
+    parameters:
+    - id: name
+      description: 可选。要添加的工作表的名称。如果指定，名称应唯一。如果未指定，Excel 将确定新工作表的名称。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getActiveWorksheet()
+  uid: excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)
+  package: excel!
+  fullName: getActiveWorksheet()
+  summary: 获取工作簿中当前处于活动状态的工作表。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getCount(visibleOnly)
+  uid: excel!Excel.WorksheetCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount(visibleOnly)
+  summary: 获取集合中的工作表数量。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(visibleOnly?: boolean): ClientResult<number>;'
+    parameters:
+    - id: visibleOnly
+      description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getFirst(visibleOnly)
+  uid: excel!Excel.WorksheetCollection#getFirst:member(1)
+  package: excel!
+  fullName: getFirst(visibleOnly)
+  summary: 获取集合中的第一个工作表。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFirst(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheets = context.workbook.worksheets;\n\n    // We don't want to include the default worksheet that was created\n    // when the workbook was created, so our \"firstSheet\" will be the one\n    // after the literal first. Note chaining of navigation methods.\n    let firstSheet = sheets.getFirst().getNext();\n    let lastSheet = sheets.getLast();\n    let firstTaxRateRange = firstSheet.getRange(\"B2\");\n    let lastTaxRateRange = lastSheet.getRange(\"B2\");\n\n    firstSheet.load(\"name\");\n    lastSheet.load(\"name\");\n    firstTaxRateRange.load(\"text\");\n    lastTaxRateRange.load(\"text\");\n\n    await context.sync();\n\n    let firstYear = firstSheet.name.substr(5, 4);\n    let lastYear = lastSheet.name.substr(5, 4);\n    console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)\n\n    await context.sync();\n}\n```"
+- name: getItem(key)
+  uid: excel!Excel.WorksheetCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: 按 Worksheet 对象的名称或 ID 获取此对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): Worksheet;'
+    parameters:
+    - id: key
+      description: 工作表的名称或 ID。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: 按 Worksheet 对象的名称或 ID 获取此对象。 如果没有 Worksheet 对象，将返回 NULL 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): Worksheet;'
+    parameters:
+    - id: key
+      description: 工作表的名称或 ID。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getLast(visibleOnly)
+  uid: excel!Excel.WorksheetCollection#getLast:member(1)
+  package: excel!
+  fullName: getLast(visibleOnly)
+  summary: 获取集合中的最后一个工作表。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLast(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheets = context.workbook.worksheets;\n\n    // We don't want to include the default worksheet that was created\n    // when the workbook was created, so our \"firstSheet\" will be the one\n    // after the literal first. Note chaining of navigation methods.\n    let firstSheet = sheets.getFirst().getNext();\n    let lastSheet = sheets.getLast();\n    let firstTaxRateRange = firstSheet.getRange(\"B2\");\n    let lastTaxRateRange = lastSheet.getRange(\"B2\");\n\n    firstSheet.load(\"name\");\n    lastSheet.load(\"name\");\n    firstTaxRateRange.load(\"text\");\n    lastTaxRateRange.load(\"text\");\n\n    await context.sync();\n\n    let firstYear = firstSheet.name.substr(5, 4);\n    let lastYear = lastSheet.name.substr(5, 4);\n    console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)\n\n    await context.sync();\n}\n```"
+- name: load(propertyNames)
+  uid: excel!Excel.WorksheetCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 61e5897d3f1e998cf0178cdd645dea173b17d823
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418119"

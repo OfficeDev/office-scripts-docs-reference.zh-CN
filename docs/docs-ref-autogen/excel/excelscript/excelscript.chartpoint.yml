@@ -1,228 +1,207 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartPoint:interface'
-    summary: 表示图表中某个系列的点。
-    name: ExcelScript.ChartPoint
-    fullName: ExcelScript.ChartPoint
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartPoint#getDataLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#getValue:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)'
-      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getDataLabel:member(1)'
-    summary: 返回图表点的数据标签。
-    name: getDataLabel()
-    fullName: getDataLabel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataLabel(): ChartDataLabel;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartDataLabel:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getFormat:member(1)'
-    summary: 封装图表点的格式属性。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartPointFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartPointFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)'
-    summary: 表示数据点是否具有数据标签。 不适用于曲面图。
-    name: getHasDataLabel()
-    fullName: getHasDataLabel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHasDataLabel(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)'
-    summary: 数据点的标记背景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
-    name: getMarkerBackgroundColor()
-    fullName: getMarkerBackgroundColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMarkerBackgroundColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)'
-    summary: 数据点的标记前景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
-    name: getMarkerForegroundColor()
-    fullName: getMarkerForegroundColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMarkerForegroundColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)'
-    summary: 表示数据点的标记大小。
-    name: getMarkerSize()
-    fullName: getMarkerSize()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMarkerSize(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
-    summary: 表示图表数据点的标记样式。 有关详细信息，请参阅 ExcelScript。
-    name: getMarkerStyle()
-    fullName: getMarkerStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMarkerStyle(): ChartMarkerStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#getValue:member(1)'
-    summary: 返回图表点的值。
-    name: getValue()
-    fullName: getValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValue(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)'
-    summary: 表示数据点是否具有数据标签。 不适用于曲面图。
-    name: setHasDataLabel(hasDataLabel)
-    fullName: setHasDataLabel(hasDataLabel)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHasDataLabel(hasDataLabel: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: hasDataLabel
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
-    summary: 数据点的标记背景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
-    name: setMarkerBackgroundColor(markerBackgroundColor)
-    fullName: setMarkerBackgroundColor(markerBackgroundColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMarkerBackgroundColor(markerBackgroundColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markerBackgroundColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
-    summary: 数据点的标记前景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
-    name: setMarkerForegroundColor(markerForegroundColor)
-    fullName: setMarkerForegroundColor(markerForegroundColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMarkerForegroundColor(markerForegroundColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markerForegroundColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)'
-    summary: 表示数据点的标记大小。
-    name: setMarkerSize(markerSize)
-    fullName: setMarkerSize(markerSize)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMarkerSize(markerSize: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markerSize
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
-    summary: 表示图表数据点的标记样式。 有关详细信息，请参阅 ExcelScript。
-    name: setMarkerStyle(markerStyle)
-    fullName: setMarkerStyle(markerStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMarkerStyle(markerStyle: ChartMarkerStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markerStyle
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartDataLabel:interface'
-    name: ChartDataLabel
-    fullName: ExcelScript.ChartDataLabel
-  - uid: 'ExcelScript!ExcelScript.ChartPointFormat:interface'
-    name: ChartPointFormat
-    fullName: ExcelScript.ChartPointFormat
-  - uid: 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
-    name: ChartMarkerStyle
-    fullName: ExcelScript.ChartMarkerStyle
+### YamlMime:TSType
+name: ExcelScript.ChartPoint
+uid: ExcelScript!ExcelScript.ChartPoint:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartPoint
+summary: 表示图表中某个系列的点。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getDataLabel()
+  uid: ExcelScript!ExcelScript.ChartPoint#getDataLabel:member(1)
+  package: ExcelScript!
+  fullName: getDataLabel()
+  summary: 返回图表点的数据标签。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataLabel(): ChartDataLabel;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabel:interface" />
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartPoint#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 封装图表点的格式属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartPointFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartPointFormat:interface" />
+      description: ''
+- name: getHasDataLabel()
+  uid: ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)
+  package: ExcelScript!
+  fullName: getHasDataLabel()
+  summary: 表示数据点是否具有数据标签。 不适用于曲面图。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHasDataLabel(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getMarkerBackgroundColor()
+  uid: ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)
+  package: ExcelScript!
+  fullName: getMarkerBackgroundColor()
+  summary: 数据点的标记背景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMarkerBackgroundColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getMarkerForegroundColor()
+  uid: ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)
+  package: ExcelScript!
+  fullName: getMarkerForegroundColor()
+  summary: 数据点的标记前景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMarkerForegroundColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getMarkerSize()
+  uid: ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)
+  package: ExcelScript!
+  fullName: getMarkerSize()
+  summary: 表示数据点的标记大小。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMarkerSize(): number;'
+    return:
+      type: number
+      description: ''
+- name: getMarkerStyle()
+  uid: ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)
+  package: ExcelScript!
+  fullName: getMarkerStyle()
+  summary: 表示图表数据点的标记样式。 有关详细信息，请参阅 ExcelScript。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMarkerStyle(): ChartMarkerStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartMarkerStyle:enum" />
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.ChartPoint#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: 返回图表点的值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): number;'
+    return:
+      type: number
+      description: ''
+- name: setHasDataLabel(hasDataLabel)
+  uid: ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)
+  package: ExcelScript!
+  fullName: setHasDataLabel(hasDataLabel)
+  summary: 表示数据点是否具有数据标签。 不适用于曲面图。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHasDataLabel(hasDataLabel: boolean): void;'
+    parameters:
+    - id: hasDataLabel
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setMarkerBackgroundColor(markerBackgroundColor)
+  uid: ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)
+  package: ExcelScript!
+  fullName: setMarkerBackgroundColor(markerBackgroundColor)
+  summary: 数据点的标记背景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMarkerBackgroundColor(markerBackgroundColor: string): void;'
+    parameters:
+    - id: markerBackgroundColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setMarkerForegroundColor(markerForegroundColor)
+  uid: ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)
+  package: ExcelScript!
+  fullName: setMarkerForegroundColor(markerForegroundColor)
+  summary: 数据点的标记前景色的 HTML 颜色代码表示形式 (例如， \# FF0000 表示红色) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMarkerForegroundColor(markerForegroundColor: string): void;'
+    parameters:
+    - id: markerForegroundColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setMarkerSize(markerSize)
+  uid: ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)
+  package: ExcelScript!
+  fullName: setMarkerSize(markerSize)
+  summary: 表示数据点的标记大小。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMarkerSize(markerSize: number): void;'
+    parameters:
+    - id: markerSize
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMarkerStyle(markerStyle)
+  uid: ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)
+  package: ExcelScript!
+  fullName: setMarkerStyle(markerStyle)
+  summary: 表示图表数据点的标记样式。 有关详细信息，请参阅 ExcelScript。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMarkerStyle(markerStyle: ChartMarkerStyle): void;'
+    parameters:
+    - id: markerStyle
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartMarkerStyle:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d11ca64902c23c50ed0f8ae592d26c935e90319d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419619"
