@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-    summary: 表示要使用的替换条件。
-    name: ExcelScript.ReplaceCriteria
-    fullName: ExcelScript.ReplaceCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
-      - 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
-    summary: 指定是否需要完成匹配或部分匹配。 完全匹配的单元格的全部内容。 部分匹配与单元格内容中的子字符串匹配（例如， `cat` 部分匹配 `caterpillar` 和`scatter`<!-- -->). 默认值为 false（部分）。
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
-    summary: 指定匹配是否区分大小写。 默认值为 false（不区分大小写）。
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.ReplaceCriteria
+uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
+package: ExcelScript!
+fullName: ExcelScript.ReplaceCriteria
+summary: 表示要使用的替换条件。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: 指定是否需要完成匹配或部分匹配。 完全匹配的单元格的全部内容。 部分匹配匹配单元格内容中的子字符串 (例如， `cat` 部分匹配 `caterpillar` 和 `scatter`<!-- -->). 默认值为 false（部分）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: 指定匹配是否区分大小写。 默认值为 false（不区分大小写）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 1894a4f11b497b0f71859489023b1c3d69e3e0d6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420676"
