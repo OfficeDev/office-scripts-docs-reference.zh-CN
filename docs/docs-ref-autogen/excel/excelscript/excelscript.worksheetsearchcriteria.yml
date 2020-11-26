@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
-    summary: 表示要使用的工作表搜索条件。
-    name: ExcelScript.WorksheetSearchCriteria
-    fullName: ExcelScript.WorksheetSearchCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
-      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
-    summary: 指定是否需要完成匹配或部分匹配。 完全匹配的单元格的全部内容。 部分匹配与单元格内容中的子字符串匹配（例如， `cat` 部分匹配 `caterpillar` 和`scatter`<!-- -->). 默认值为 false（部分）。
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
-    summary: 指定匹配是否区分大小写。 默认值为 false（不区分大小写）。
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.WorksheetSearchCriteria
+uid: ExcelScript!ExcelScript.WorksheetSearchCriteria:interface
+package: ExcelScript!
+fullName: ExcelScript.WorksheetSearchCriteria
+summary: 表示要使用的工作表搜索条件。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: 指定是否需要完成匹配或部分匹配。 完全匹配的单元格的全部内容。 部分匹配匹配单元格内容中的子字符串 (例如， `cat` 部分匹配 `caterpillar` 和 `scatter`<!-- -->). 默认值为 false（部分）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: 指定匹配是否区分大小写。 默认值为 false（不区分大小写）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 56003b6e099d7730216a7a57188780d6b966aeea
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415125"

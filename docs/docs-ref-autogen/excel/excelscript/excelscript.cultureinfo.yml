@@ -1,60 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
-    summary: 基于当前系统区域性设置提供信息。 这包括区域性名称、数字格式和其他区域性相关设置。
-    name: ExcelScript.CultureInfo
-    fullName: ExcelScript.CultureInfo
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
-      - 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
-      - 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
-  - uid: 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
-    summary: 定义适当的区域性格式，以显示日期和时间。 这取决于当前的系统区域性设置。
-    name: getDatetimeFormat()
-    fullName: getDatetimeFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDatetimeFormat(): DatetimeFormatInfo;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
-    summary: 以 languagecode2/regioncode2 (格式获取区域性名称，例如 "zh-tw-cn" or "en-us" ) 。 这取决于当前的系统设置。
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
-    summary: 定义适当的区域性格式，以显示数字。 这取决于当前的系统区域性设置。
-    name: getNumberFormat()
-    fullName: getNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormat(): NumberFormatInfo;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
-    name: DatetimeFormatInfo
-    fullName: ExcelScript.DatetimeFormatInfo
-  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
-    name: NumberFormatInfo
-    fullName: ExcelScript.NumberFormatInfo
+### YamlMime:TSType
+name: ExcelScript.CultureInfo
+uid: ExcelScript!ExcelScript.CultureInfo:interface
+package: ExcelScript!
+fullName: ExcelScript.CultureInfo
+summary: 基于当前系统区域性设置提供信息。 这包括区域性名称、数字格式和其他区域性相关设置。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getDatetimeFormat()
+  uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
+  package: ExcelScript!
+  fullName: getDatetimeFormat()
+  summary: 定义适当的区域性格式，以显示日期和时间。 这取决于当前的系统区域性设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDatetimeFormat(): DatetimeFormatInfo;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DatetimeFormatInfo:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: 以 languagecode2/regioncode2 (格式获取区域性名称，例如 "zh-tw-cn" or "en-us" ) 。 这取决于当前的系统设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberFormat()
+  uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormat()
+  summary: 定义适当的区域性格式，以显示数字。 这取决于当前的系统区域性设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormat(): NumberFormatInfo;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: a399c6a2970feddfa20b995cbb9e55cb565f9f07
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415657"

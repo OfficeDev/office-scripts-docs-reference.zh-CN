@@ -1,44 +1,48 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DataConnectionCollection:interface'
-    summary: 表示属于工作簿或工作表的所有数据连接的集合。
-    name: Excel.DataConnectionCollection
-    fullName: Excel.DataConnectionCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.DataConnectionCollection#load:member(1)'
-      - 'excel!Excel.DataConnectionCollection#refreshAll:member(1)'
-  - uid: 'excel!Excel.DataConnectionCollection#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.DataConnectionCollection#refreshAll:member(1)'
-    summary: 刷新集合中的所有数据连接。
-    name: refreshAll()
-    fullName: refreshAll()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'refreshAll(): void;'
-      return:
-        type:
-          - void
-        description: ''
+### YamlMime:TSType
+name: Excel.DataConnectionCollection
+uid: excel!Excel.DataConnectionCollection:interface
+package: excel!
+fullName: Excel.DataConnectionCollection
+summary: 表示属于工作簿或工作表的所有数据连接的集合。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.DataConnectionCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: refreshAll()
+  uid: excel!Excel.DataConnectionCollection#refreshAll:member(1)
+  package: excel!
+  fullName: refreshAll()
+  summary: 刷新集合中的所有数据连接。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshAll(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: cca3d90d8f0f95e22a71c273b1435110959c2620
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414032"

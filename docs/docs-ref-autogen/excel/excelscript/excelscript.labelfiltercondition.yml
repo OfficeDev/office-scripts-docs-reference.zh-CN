@@ -1,118 +1,93 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
-    summary: 表示可应用标签筛选器的所有已接受条件的枚举。 用于配置应用于字段的 PivotFilter 的类型。 `PivotFilter.criteria.exclusive` 可以设置为 true 以反转其中的许多条件。
-    name: ExcelScript.LabelFilterCondition
-    fullName: ExcelScript.LabelFilterCondition
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.between:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.contains:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.equals:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member'
-      - 'ExcelScript!ExcelScript.LabelFilterCondition.unknown:member'
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member'
-    summary: |-
-      标签以子字符串条件开头。
+### YamlMime:TSEnum
+name: ExcelScript.LabelFilterCondition
+uid: ExcelScript!ExcelScript.LabelFilterCondition:enum
+package: ExcelScript!
+fullName: ExcelScript.LabelFilterCondition
+summary: 表示可应用标签筛选器的所有已接受条件的枚举。 用于配置应用于字段的 PivotFilter 的类型。 `PivotFilter.criteria.exclusive` 可以设置为 true 以反转其中的许多条件。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: beginsWith
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member
+  package: ExcelScript!
+  summary: >-
+    标签以子字符串条件开头。
 
-      必需的条件： {`substring`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
-    name: beginsWith
-    fullName: beginsWith
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.between:member'
-    summary: |-
-      介于 `lowerBound` 和 `upperBound` 条件之间。
 
-      必需的条件： {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
-    name: between
-    fullName: between
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.contains:member'
-    summary: |-
-      标签包含子字符串条件。
+    必需的条件： {`substring`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
+- name: between
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.between:member
+  package: ExcelScript!
+  summary: >-
+    介于 `lowerBound` 和 `upperBound` 条件之间。
 
-      必需的条件： {`substring`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
-    name: contains
-    fullName: contains
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member'
-    summary: |-
-      标签以子字符串条件结尾。
 
-      必需的条件： {`substring`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
-    name: endsWith
-    fullName: endsWith
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.equals:member'
-    summary: |-
-      等于比较运算符条件。
+    必需的条件： {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
+- name: contains
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.contains:member
+  package: ExcelScript!
+  summary: >-
+    标签包含子字符串条件。
 
-      必需的条件： {`comparator`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
-    name: equals
-    fullName: equals
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member'
-    summary: |-
-      大于比较运算符条件。
 
-      必需的条件： {`comparator`<!-- -->}<!-- -->.
-    name: greaterThan
-    fullName: greaterThan
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member'
-    summary: |-
-      大于或等于比较运算符条件。
+    必需的条件： {`substring`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
+- name: endsWith
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member
+  package: ExcelScript!
+  summary: >-
+    标签以子字符串条件结尾。
 
-      必需的条件： {`comparator`<!-- -->}<!-- -->.
-    name: greaterThanOrEqualTo
-    fullName: greaterThanOrEqualTo
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member'
-    summary: |-
-      小于比较运算符条件。
 
-      必需的条件： {`comparator`<!-- -->}<!-- -->.
-    name: lessThan
-    fullName: lessThan
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member'
-    summary: |-
-      小于或等于比较运算符条件。
+    必需的条件： {`substring`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
+- name: equals
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.equals:member
+  package: ExcelScript!
+  summary: >-
+    等于比较运算符条件。
 
-      必需的条件： {`comparator`<!-- -->}<!-- -->.
-    name: lessThanOrEqualTo
-    fullName: lessThanOrEqualTo
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition.unknown:member'
-    summary: LabelFilterCondition 未知或不受支持。
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
+
+    必需的条件： {`comparator`<!-- -->}<!-- -->. 可选条件： {`exclusive`<!-- -->}<!-- -->.
+- name: greaterThan
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member
+  package: ExcelScript!
+  summary: >-
+    大于比较运算符条件。
+
+
+    必需的条件： {`comparator`<!-- -->}<!-- -->.
+- name: greaterThanOrEqualTo
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    大于或等于比较运算符条件。
+
+
+    必需的条件： {`comparator`<!-- -->}<!-- -->.
+- name: lessThan
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member
+  package: ExcelScript!
+  summary: >-
+    小于比较运算符条件。
+
+
+    必需的条件： {`comparator`<!-- -->}<!-- -->.
+- name: lessThanOrEqualTo
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    小于或等于比较运算符条件。
+
+
+    必需的条件： {`comparator`<!-- -->}<!-- -->.
+- name: unknown
+  uid: ExcelScript!ExcelScript.LabelFilterCondition.unknown:member
+  package: ExcelScript!
+  summary: LabelFilterCondition 未知或不受支持。
+metadata:
+  ms.openlocfilehash: a594c7298529f819089b8b9985157fbc7d064e3d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415405"
