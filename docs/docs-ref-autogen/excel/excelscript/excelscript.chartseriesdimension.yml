@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
-    summary: 表示从图表系列中获取值时的尺寸。
-    name: ExcelScript.ChartSeriesDimension
-    fullName: ExcelScript.ChartSeriesDimension
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
-    summary: 气泡图中气泡尺寸的图表系列轴。
-    name: bubbleSizes
-    fullName: bubbleSizes
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
-    summary: 分类的图表系列轴。
-    name: categories
-    fullName: categories
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
-    summary: 图表系列轴的值。
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
-    summary: 散点图和气泡图中 x 轴值的图表系列轴。
-    name: xvalues
-    fullName: xvalues
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
-    summary: 散点图和气泡图中 y 轴值的图表系列轴。
-    name: yvalues
-    fullName: yvalues
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartSeriesDimension
+uid: ExcelScript!ExcelScript.ChartSeriesDimension:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartSeriesDimension
+summary: 表示从图表系列中获取值时的尺寸。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bubbleSizes
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member
+  package: ExcelScript!
+  summary: 气泡图中气泡尺寸的图表系列轴。
+- name: categories
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.categories:member
+  package: ExcelScript!
+  summary: 分类的图表系列轴。
+- name: values
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.values:member
+  package: ExcelScript!
+  summary: 图表系列轴的值。
+- name: xvalues
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member
+  package: ExcelScript!
+  summary: 散点图和气泡图中 x 轴值的图表系列轴。
+- name: yvalues
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member
+  package: ExcelScript!
+  summary: 散点图和气泡图中 y 轴值的图表系列轴。
+metadata:
+  ms.openlocfilehash: 62dbf9658e63772b83fed5d065b58bce1c013d89
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419549"

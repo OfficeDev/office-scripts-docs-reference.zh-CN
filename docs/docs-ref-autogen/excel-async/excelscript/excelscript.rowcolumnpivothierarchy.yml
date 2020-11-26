@@ -1,100 +1,97 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RowColumnPivotHierarchy:interface'
-    summary: 表示 Excel RowColumnPivotHierarchy。
-    name: Excel.RowColumnPivotHierarchy
-    fullName: Excel.RowColumnPivotHierarchy
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.RowColumnPivotHierarchy#fields:member'
-      - 'excel!Excel.RowColumnPivotHierarchy#id:member'
-      - 'excel!Excel.RowColumnPivotHierarchy#load:member(1)'
-      - 'excel!Excel.RowColumnPivotHierarchy#name:member'
-      - 'excel!Excel.RowColumnPivotHierarchy#position:member'
-      - 'excel!Excel.RowColumnPivotHierarchy#setToDefault:member(1)'
-  - uid: 'excel!Excel.RowColumnPivotHierarchy#fields:member'
-    summary: 返回与 RowColumnPivotHierarchy 相关联的 PivotFields。
-    name: fields
-    fullName: fields
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fields: PivotFieldCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotFieldCollection:interface'
-  - uid: 'excel!Excel.RowColumnPivotHierarchy#id:member'
-    summary: RowColumnPivotHierarchy 的 ID。
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RowColumnPivotHierarchy#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RowColumnPivotHierarchy#name:member'
-    summary: RowColumnPivotHierarchy 的名称。
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.RowColumnPivotHierarchy#position:member'
-    summary: RowColumnPivotHierarchy 的位置。
-    name: position
-    fullName: position
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'position: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RowColumnPivotHierarchy#setToDefault:member(1)'
-    summary: 将 RowColumnPivotHierarchy 重置回其默认值。
-    name: setToDefault()
-    fullName: setToDefault()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setToDefault(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'excel!Excel.PivotFieldCollection:interface'
-    name: PivotFieldCollection
-    fullName: Excel.PivotFieldCollection
+### YamlMime:TSType
+name: Excel.RowColumnPivotHierarchy
+uid: excel!Excel.RowColumnPivotHierarchy:interface
+package: excel!
+fullName: Excel.RowColumnPivotHierarchy
+summary: 表示 Excel RowColumnPivotHierarchy。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: fields
+  uid: excel!Excel.RowColumnPivotHierarchy#fields:member
+  package: excel!
+  fullName: fields
+  summary: 返回与 RowColumnPivotHierarchy 相关联的 PivotFields。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fields: PivotFieldCollection;'
+    return:
+      type: <xref uid="excel!Excel.PivotFieldCollection:interface" />
+- name: id
+  uid: excel!Excel.RowColumnPivotHierarchy#id:member
+  package: excel!
+  fullName: id
+  summary: RowColumnPivotHierarchy 的 ID。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: name
+  uid: excel!Excel.RowColumnPivotHierarchy#name:member
+  package: excel!
+  fullName: name
+  summary: RowColumnPivotHierarchy 的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: position
+  uid: excel!Excel.RowColumnPivotHierarchy#position:member
+  package: excel!
+  fullName: position
+  summary: RowColumnPivotHierarchy 的位置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'position: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.RowColumnPivotHierarchy#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setToDefault()
+  uid: excel!Excel.RowColumnPivotHierarchy#setToDefault:member(1)
+  package: excel!
+  fullName: setToDefault()
+  summary: 将 RowColumnPivotHierarchy 重置回其默认值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setToDefault(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 985e2b04f2bc566d0d849b3e7c1f460b18f9acfa
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418644"

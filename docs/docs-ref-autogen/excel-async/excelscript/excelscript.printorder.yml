@@ -1,28 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PrintOrder:enum'
-    name: Excel.PrintOrder
-    fullName: Excel.PrintOrder
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.PrintOrder.downThenOver:member'
-      - 'excel!Excel.PrintOrder.overThenDown:member'
-  - uid: 'excel!Excel.PrintOrder.downThenOver:member'
-    summary: 向下处理行，然后向右逐个处理页或页面字段。
-    name: downThenOver
-    fullName: downThenOver
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DownThenOver"'
-  - uid: 'excel!Excel.PrintOrder.overThenDown:member'
-    summary: 向右逐个处理页或页面字段，然后向下处理行。
-    name: overThenDown
-    fullName: overThenDown
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"OverThenDown"'
+### YamlMime:TSEnum
+name: Excel.PrintOrder
+uid: excel!Excel.PrintOrder:enum
+package: excel!
+fullName: Excel.PrintOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: downThenOver
+  uid: excel!Excel.PrintOrder.downThenOver:member
+  package: excel!
+  summary: 向下处理行，然后向右逐个处理页或页面字段。
+- name: overThenDown
+  uid: excel!Excel.PrintOrder.overThenDown:member
+  package: excel!
+  summary: 向右逐个处理页或页面字段，然后向下处理行。
+metadata:
+  ms.openlocfilehash: 724e91f49fa350419ad29ab3c4a159906e7e2676
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418791"
