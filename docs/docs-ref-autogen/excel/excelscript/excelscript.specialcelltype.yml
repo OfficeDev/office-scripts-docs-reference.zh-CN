@@ -1,74 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
-    name: ExcelScript.SpecialCellType
-    fullName: ExcelScript.SpecialCellType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
-      - 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
-    summary: 无内容的单元格。
-    name: blanks
-    fullName: blanks
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
-    summary: 包含条件格式的所有单元格
-    name: conditionalFormats
-    fullName: conditionalFormats
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
-    summary: 含有常量的单元格。
-    name: constants
-    fullName: constants
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
-    summary: 含有验证条件的单元格。
-    name: dataValidations
-    fullName: dataValidations
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
-    summary: 含有公式的单元格。
-    name: formulas
-    fullName: formulas
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
-    summary: 与区域中的第一个单元格具有相同条件格式的单元格。
-    name: sameConditionalFormat
-    fullName: sameConditionalFormat
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
-    summary: 与区域中的第一个单元格具有相同的数据有效性条件的单元格。
-    name: sameDataValidation
-    fullName: sameDataValidation
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
-    summary: 可见的单元格。
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SpecialCellType
+uid: ExcelScript!ExcelScript.SpecialCellType:enum
+package: ExcelScript!
+fullName: ExcelScript.SpecialCellType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: blanks
+  uid: ExcelScript!ExcelScript.SpecialCellType.blanks:member
+  package: ExcelScript!
+  summary: 无内容的单元格。
+- name: conditionalFormats
+  uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
+  package: ExcelScript!
+  summary: 包含条件格式的所有单元格
+- name: constants
+  uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
+  package: ExcelScript!
+  summary: 含有常量的单元格。
+- name: dataValidations
+  uid: ExcelScript!ExcelScript.SpecialCellType.dataValidations:member
+  package: ExcelScript!
+  summary: 含有验证条件的单元格。
+- name: formulas
+  uid: ExcelScript!ExcelScript.SpecialCellType.formulas:member
+  package: ExcelScript!
+  summary: 含有公式的单元格。
+- name: sameConditionalFormat
+  uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
+  package: ExcelScript!
+  summary: 与区域中的第一个单元格具有相同条件格式的单元格。
+- name: sameDataValidation
+  uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
+  package: ExcelScript!
+  summary: 与区域中的第一个单元格具有相同的数据有效性条件的单元格。
+- name: visible
+  uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
+  package: ExcelScript!
+  summary: 可见的单元格。
+metadata:
+  ms.openlocfilehash: e267008031fc63a772a4410ae996daf5b1352f86
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420347"

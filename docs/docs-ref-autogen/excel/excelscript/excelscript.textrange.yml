@@ -1,88 +1,81 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TextRange:interface'
-    summary: 包含附加到形状上的文本，以及用于操作文本的属性和方法。
-    name: ExcelScript.TextRange
-    fullName: ExcelScript.TextRange
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
-      - 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
-      - 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
-      - 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
-  - uid: 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
-    summary: 返回一个 ShapeFont 对象，该对象表示文本范围的字体属性。
-    name: getFont()
-    fullName: getFont()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFont(): ShapeFont;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ShapeFont:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
-    summary: 返回给定区域内子字符串的 TextRange 对象。
-    name: 'getSubstring(start, length)'
-    fullName: 'getSubstring(start, length)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSubstring(start: number, length?: number): TextRange;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TextRange:interface'
-        description: ''
-      parameters:
-        - id: start
-          description: 从文本范围中获取的第一个字符的从零开始的索引。
-          type:
-            - number
-        - id: length
-          description: 可选。 要在新文本范围中返回的字符数。 如果省略 length，则将返回从文本范围的最后一段的最后一段的末尾开始的所有字符。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
-    summary: 表示文本范围的纯文本内容。
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
-    summary: 表示文本范围的纯文本内容。
-    name: setText(text)
-    fullName: setText(text)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setText(text: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: text
-          description: ''
-          type:
-            - string
-references:
-  - uid: 'ExcelScript!ExcelScript.ShapeFont:interface'
-    name: ShapeFont
-    fullName: ExcelScript.ShapeFont
-  - uid: 'ExcelScript!ExcelScript.TextRange:interface'
-    name: TextRange
-    fullName: ExcelScript.TextRange
+### YamlMime:TSType
+name: ExcelScript.TextRange
+uid: ExcelScript!ExcelScript.TextRange:interface
+package: ExcelScript!
+fullName: ExcelScript.TextRange
+summary: 包含附加到形状上的文本，以及用于操作文本的属性和方法。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFont()
+  uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: 返回一个 ShapeFont 对象，该对象表示文本范围的字体属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): ShapeFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />
+      description: ''
+- name: getSubstring(start, length)
+  uid: ExcelScript!ExcelScript.TextRange#getSubstring:member(1)
+  package: ExcelScript!
+  fullName: getSubstring(start, length)
+  summary: 返回给定区域内子字符串的 TextRange 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSubstring(start: number, length?: number): TextRange;'
+    parameters:
+    - id: start
+      description: 从文本范围中获取的第一个字符的从零开始的索引。
+      type: number
+    - id: length
+      description: 可选。 要在新文本范围中返回的字符数。 如果省略 length，则将返回从文本范围的最后一段的最后一段的末尾开始的所有字符。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.TextRange#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: 表示文本范围的纯文本内容。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: setText(text)
+  uid: ExcelScript!ExcelScript.TextRange#setText:member(1)
+  package: ExcelScript!
+  fullName: setText(text)
+  summary: 表示文本范围的纯文本内容。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setText(text: string): void;'
+    parameters:
+    - id: text
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 6a02ebe67d08adff8c825586a96ada8c4177a1d4
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420235"

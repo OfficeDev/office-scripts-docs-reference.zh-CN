@@ -1,155 +1,111 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TableSort:interface'
-    summary: 管理对 Table 对象的排序操作。
-    name: ExcelScript.TableSort
-    fullName: ExcelScript.TableSort
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TableSort#apply:member(1)'
-      - 'ExcelScript!ExcelScript.TableSort#clear:member(1)'
-      - 'ExcelScript!ExcelScript.TableSort#getFields:member(1)'
-      - 'ExcelScript!ExcelScript.TableSort#getMatchCase:member(1)'
-      - 'ExcelScript!ExcelScript.TableSort#getMethod:member(1)'
-      - 'ExcelScript!ExcelScript.TableSort#reapply:member(1)'
-  - uid: 'ExcelScript!ExcelScript.TableSort#apply:member(1)'
-    summary: 执行排序操作。
-    name: 'apply(fields, matchCase, method)'
-    fullName: 'apply(fields, matchCase, method)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        apply(
-                    fields: SortField[],
-                    matchCase?: boolean,
-                    method?: SortMethod
-                ): void;
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Create a table with the used cells.
-            let usedRange = selectedSheet.getUsedRange();
-            let newTable = selectedSheet.addTable(usedRange, true);
-
-            // Sort the table using the first column.
-            newTable.getSort().apply([{ key: 0, ascending: true }]);
-          }
-          ```
-      parameters:
-        - id: fields
-          description: 要用作排序依据的条件列表。
-          type:
-            - 'ExcelScript!ExcelScript.TableSort#apply~0:complex'
-        - id: matchCase
-          description: 可选。 是否让大小写对字符串排序产生影响。
-          type:
-            - boolean
-        - id: method
-          description: 可选。 用于中文字符的排序方法。
-          type:
-            - 'ExcelScript!ExcelScript.SortMethod:enum'
-  - uid: 'ExcelScript!ExcelScript.TableSort#clear:member(1)'
-    summary: 清除表上的当前排序。尽管这不能修改表的排序，但它会清除标题按钮的状态。
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableSort#getFields:member(1)'
-    summary: 指定用于最后对表进行排序的当前条件。
-    name: getFields()
-    fullName: getFields()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFields(): SortField[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TableSort#getFields~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableSort#getMatchCase:member(1)'
-    summary: 指定大小写是否影响表的最后一个排序。
-    name: getMatchCase()
-    fullName: getMatchCase()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMatchCase(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableSort#getMethod:member(1)'
-    summary: 表示最后一次对表排序所使用的中文字符排序方法。
-    name: getMethod()
-    fullName: getMethod()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMethod(): SortMethod;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.SortMethod:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableSort#reapply:member(1)'
-    summary: 对 table 重新应用当前的排序参数。
-    name: reapply()
-    fullName: reapply()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'reapply(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.TableSort#apply~0:complex'
-    name: 'SortField[]'
-    fullName: 'ExcelScript.SortField[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.SortField:interface'
-        name: SortField
-        fullName: ExcelScript.SortField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.SortMethod:enum'
-    name: SortMethod
-    fullName: ExcelScript.SortMethod
-  - uid: 'ExcelScript!ExcelScript.TableSort#getFields~0:complex'
-    name: 'SortField[]'
-    fullName: 'ExcelScript.SortField[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.SortField:interface'
-        name: SortField
-        fullName: ExcelScript.SortField
-      - name: '[]'
-        fullName: '[]'
+### YamlMime:TSType
+name: ExcelScript.TableSort
+uid: ExcelScript!ExcelScript.TableSort:interface
+package: ExcelScript!
+fullName: ExcelScript.TableSort
+summary: 管理对 Table 对象的排序操作。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: apply(fields, matchCase, method)
+  uid: ExcelScript!ExcelScript.TableSort#apply:member(1)
+  package: ExcelScript!
+  fullName: apply(fields, matchCase, method)
+  summary: 执行排序操作。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      apply(
+                  fields: SortField[],
+                  matchCase?: boolean,
+                  method?: SortMethod
+              ): void;
+    parameters:
+    - id: fields
+      description: 要用作排序依据的条件列表。
+      type: <xref uid="ExcelScript!ExcelScript.SortField:interface" />[]
+    - id: matchCase
+      description: 可选。 是否让大小写对字符串排序产生影响。
+      type: boolean
+    - id: method
+      description: 可选。 用于中文字符的排序方法。
+      type: <xref uid="ExcelScript!ExcelScript.SortMethod:enum" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
+- name: clear()
+  uid: ExcelScript!ExcelScript.TableSort#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: 清除表上的当前排序。尽管这不能修改表的排序，但它会清除标题按钮的状态。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getFields()
+  uid: ExcelScript!ExcelScript.TableSort#getFields:member(1)
+  package: ExcelScript!
+  fullName: getFields()
+  summary: 指定用于最后对表进行排序的当前条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFields(): SortField[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SortField:interface" />[]
+      description: ''
+- name: getMatchCase()
+  uid: ExcelScript!ExcelScript.TableSort#getMatchCase:member(1)
+  package: ExcelScript!
+  fullName: getMatchCase()
+  summary: 指定大小写是否影响表的最后一个排序。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMatchCase(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getMethod()
+  uid: ExcelScript!ExcelScript.TableSort#getMethod:member(1)
+  package: ExcelScript!
+  fullName: getMethod()
+  summary: 表示最后一次对表排序所使用的中文字符排序方法。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMethod(): SortMethod;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SortMethod:enum" />
+      description: ''
+- name: reapply()
+  uid: ExcelScript!ExcelScript.TableSort#reapply:member(1)
+  package: ExcelScript!
+  fullName: reapply()
+  summary: 对 table 重新应用当前的排序参数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reapply(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 9413405e10e29eb2da40f194e2d53a3fc4d10847
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420242"

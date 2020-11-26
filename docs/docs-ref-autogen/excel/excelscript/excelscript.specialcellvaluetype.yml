@@ -1,130 +1,77 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-    name: ExcelScript.SpecialCellValueType
-    fullName: ExcelScript.SpecialCellValueType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
-      - 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
-    summary: 包含错误、true/false、数字或字符串值的单元格。
-    name: all
-    fullName: all
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
-    summary: 包含错误的单元格。
-    name: errors
-    fullName: errors
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
-    summary: 包含错误的单元格，或 true/false 值。
-    name: errorsLogical
-    fullName: errorsLogical
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
-    summary: 包含错误、true/false 或数值的单元格。
-    name: errorsLogicalNumber
-    fullName: errorsLogicalNumber
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
-    summary: 包含错误、true/false 或字符串值的单元格。
-    name: errorsLogicalText
-    fullName: errorsLogicalText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
-    summary: 包含错误的单元格或数值。
-    name: errorsNumbers
-    fullName: errorsNumbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
-    summary: 包含错误、数字或字符串值的单元格。
-    name: errorsNumberText
-    fullName: errorsNumberText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
-    summary: 包含错误的单元格或字符串值。
-    name: errorsText
-    fullName: errorsText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
-    summary: 具有 true/false 值的单元格。
-    name: logical
-    fullName: logical
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
-    summary: 具有真/假或数值的单元格。
-    name: logicalNumbers
-    fullName: logicalNumbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
-    summary: 具有 true/false、数字或字符串值的单元格。
-    name: logicalNumbersText
-    fullName: logicalNumbersText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
-    summary: 具有真/假或字符串值的单元格。
-    name: logicalText
-    fullName: logicalText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
-    summary: 具有数字值的单元格。
-    name: numbers
-    fullName: numbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
-    summary: 具有数字的单元格，或字符串值。
-    name: numbersText
-    fullName: numbersText
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
-    summary: 包含字符串值的单元格。
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SpecialCellValueType
+uid: ExcelScript!ExcelScript.SpecialCellValueType:enum
+package: ExcelScript!
+fullName: ExcelScript.SpecialCellValueType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: all
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.all:member
+  package: ExcelScript!
+  summary: 包含错误、true/false、数字或字符串值的单元格。
+- name: errors
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errors:member
+  package: ExcelScript!
+  summary: 包含错误的单元格。
+- name: errorsLogical
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member
+  package: ExcelScript!
+  summary: 包含错误的单元格，或 true/false 值。
+- name: errorsLogicalNumber
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member
+  package: ExcelScript!
+  summary: 包含错误、true/false 或数值的单元格。
+- name: errorsLogicalText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member
+  package: ExcelScript!
+  summary: 包含错误、true/false 或字符串值的单元格。
+- name: errorsNumbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member
+  package: ExcelScript!
+  summary: 包含错误的单元格或数值。
+- name: errorsNumberText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member
+  package: ExcelScript!
+  summary: 包含错误、数字或字符串值的单元格。
+- name: errorsText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member
+  package: ExcelScript!
+  summary: 包含错误的单元格或字符串值。
+- name: logical
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logical:member
+  package: ExcelScript!
+  summary: 具有 true/false 值的单元格。
+- name: logicalNumbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member
+  package: ExcelScript!
+  summary: 具有真/假或数值的单元格。
+- name: logicalNumbersText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member
+  package: ExcelScript!
+  summary: 具有 true/false、数字或字符串值的单元格。
+- name: logicalText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member
+  package: ExcelScript!
+  summary: 具有真/假或字符串值的单元格。
+- name: numbers
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbers:member
+  package: ExcelScript!
+  summary: 具有数字值的单元格。
+- name: numbersText
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member
+  package: ExcelScript!
+  summary: 具有数字的单元格，或字符串值。
+- name: text
+  uid: ExcelScript!ExcelScript.SpecialCellValueType.text:member
+  package: ExcelScript!
+  summary: 包含字符串值的单元格。
+metadata:
+  ms.openlocfilehash: 904bfc40ae83c845e58f566d41db47e05e38af4a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420340"

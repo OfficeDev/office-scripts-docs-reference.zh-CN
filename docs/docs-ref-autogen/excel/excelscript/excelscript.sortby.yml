@@ -1,27 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
-    summary: 表示排序方向。
-    name: ExcelScript.SortBy
-    fullName: ExcelScript.SortBy
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SortBy.ascending:member'
-      - 'ExcelScript!ExcelScript.SortBy.descending:member'
-  - uid: 'ExcelScript!ExcelScript.SortBy.ascending:member'
-    summary: 升序排序。 最小到最大或从 A 到 Z。
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SortBy.descending:member'
-    summary: 降序排序。 从大到小或 Z 到 A。
-    name: descending
-    fullName: descending
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SortBy
+uid: ExcelScript!ExcelScript.SortBy:enum
+package: ExcelScript!
+fullName: ExcelScript.SortBy
+summary: 表示排序方向。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: ascending
+  uid: ExcelScript!ExcelScript.SortBy.ascending:member
+  package: ExcelScript!
+  summary: 升序排序。 最小到最大或从 A 到 Z。
+- name: descending
+  uid: ExcelScript!ExcelScript.SortBy.descending:member
+  package: ExcelScript!
+  summary: 降序排序。 从大到小或 Z 到 A。
+metadata:
+  ms.openlocfilehash: ac1f6680ff327f4fedd3b7521ebd3a130bd4f077
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420438"
