@@ -1,60 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.GeometricShape:interface'
-    summary: 代表工作表中的几何形状。 在 Excel 中，几何形状可以是矩形、箭头总汇、公式符号、流程图项、星形、横幅、标注或任何其他基本形状。
-    name: Excel.GeometricShape
-    fullName: Excel.GeometricShape
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.GeometricShape#id:member'
-      - 'excel!Excel.GeometricShape#load:member(1)'
-      - 'excel!Excel.GeometricShape#shape:member'
-  - uid: 'excel!Excel.GeometricShape#id:member'
-    summary: 返回形状标识符。
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.GeometricShape#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.GeometricShape#shape:member'
-    summary: 返回几何形状的形状对象。
-    name: shape
-    fullName: shape
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly shape: Shape;'
-      return:
-        type:
-          - 'excel!Excel.Shape:interface'
-references:
-  - uid: 'excel!Excel.Shape:interface'
-    name: Shape
-    fullName: Excel.Shape
+### YamlMime:TSType
+name: Excel.GeometricShape
+uid: excel!Excel.GeometricShape:interface
+package: excel!
+fullName: Excel.GeometricShape
+summary: 代表工作表中的几何形状。 在 Excel 中，几何形状可以是矩形、箭头总汇、公式符号、流程图项、星形、横幅、标注或任何其他基本形状。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: id
+  uid: excel!Excel.GeometricShape#id:member
+  package: excel!
+  fullName: id
+  summary: 返回形状标识符。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: shape
+  uid: excel!Excel.GeometricShape#shape:member
+  package: excel!
+  fullName: shape
+  summary: 返回几何形状的形状对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly shape: Shape;'
+    return:
+      type: <xref uid="excel!Excel.Shape:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.GeometricShape#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e32b1790240cce678b29a0ed736654877161d874
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413501"

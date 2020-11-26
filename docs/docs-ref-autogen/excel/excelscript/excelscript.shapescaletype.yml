@@ -1,25 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeScaleType:enum'
-    summary: 指定是相对于形状的原始尺寸还是当前尺寸来对其进行缩放。
-    name: ExcelScript.ShapeScaleType
-    fullName: ExcelScript.ShapeScaleType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeScaleType.currentSize:member'
-      - 'ExcelScript!ExcelScript.ShapeScaleType.originalSize:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeScaleType.currentSize:member'
-    name: currentSize
-    fullName: currentSize
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeScaleType.originalSize:member'
-    name: originalSize
-    fullName: originalSize
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeScaleType
+uid: ExcelScript!ExcelScript.ShapeScaleType:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeScaleType
+summary: 指定是相对于形状的原始尺寸还是当前尺寸来对其进行缩放。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: currentSize
+  uid: ExcelScript!ExcelScript.ShapeScaleType.currentSize:member
+  package: ExcelScript!
+  summary: ''
+- name: originalSize
+  uid: ExcelScript!ExcelScript.ShapeScaleType.originalSize:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 4898e5ddd1d1b032b191ebb50bd20d3293198c82
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411787"

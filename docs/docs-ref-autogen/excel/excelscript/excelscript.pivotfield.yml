@@ -1,344 +1,273 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-    summary: 表示 Excel 透视字段。
-    name: ExcelScript.PivotField
-    fullName: ExcelScript.PivotField
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotField#applyFilter:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#clearFilter:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getFilters:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#isFiltered:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
-  - uid: 'ExcelScript!ExcelScript.PivotField#applyFilter:member(1)'
-    summary: 设置一个或多个字段的当前 PivotFilters，并将其应用于字段。 如果提供的筛选器无效或无法应用，则会引发异常。
-    name: applyFilter(filter)
-    fullName: applyFilter(filter)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyFilter(filter: PivotFilters): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: filter
-          description: 配置的特定 PivotFilter 或包含多个配置的筛选器的 PivotFilters 接口。
-          type:
-            - 'ExcelScript!ExcelScript.PivotFilters:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)'
-    summary: 从字段的所有筛选器中清除所有条件。 这将删除对字段的任何活动筛选。
-    name: clearAllFilters()
-    fullName: clearAllFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearAllFilters(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#clearFilter:member(1)'
-    summary: 清除给定类型的字段筛选器中的所有现有条件 (如果当前已将其应用) 。
-    name: clearFilter(filterType)
-    fullName: clearFilter(filterType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearFilter(filterType: PivotFilterType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: filterType
-          description: 要清除其所有条件的字段的筛选器类型。
-          type:
-            - 'ExcelScript!ExcelScript.PivotFilterType:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotField#getFilters:member(1)'
-    summary: 获取当前应用于字段的所有筛选器。
-    name: getFilters()
-    fullName: getFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFilters(): PivotFilters;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotFilters:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
-    summary: PivotField 的 ID。
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
-    summary: 返回与 PivotField 相关联的 PivotFields。
-    name: getItems()
-    fullName: getItems()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItems(): PivotItem[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
-    summary: PivotField 的名称。
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
-    summary: 按名称获取 PivotItem。 如果 PivotItem 不存在，则将返回一个 null 对象。
-    name: getPivotItem(name)
-    fullName: getPivotItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotItem(name: string): PivotItem | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotField#getPivotItem~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: 要检索的 PivotItem 的名称。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
-    summary: 确定是否显示 PivotField 的所有项。
-    name: getShowAllItems()
-    fullName: getShowAllItems()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowAllItems(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
-    summary: PivotField 小计。
-    name: getSubtotals()
-    fullName: getSubtotals()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSubtotals(): Subtotals;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Subtotals:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#isFiltered:member(1)'
-    summary: 检查字段上是否有任何已应用的筛选器。
-    name: isFiltered(filterType)
-    fullName: isFiltered(filterType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'isFiltered(filterType?: PivotFilterType): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-      parameters:
-        - id: filterType
-          description: 要检查的筛选器类型。 如果未提供任何类型，此方法将检查是否应用了任何筛选器。
-          type:
-            - 'ExcelScript!ExcelScript.PivotFilterType:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
-    summary: PivotField 的名称。
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
-    summary: 确定是否显示 PivotField 的所有项。
-    name: setShowAllItems(showAllItems)
-    fullName: setShowAllItems(showAllItems)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowAllItems(showAllItems: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showAllItems
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
-    summary: PivotField 小计。
-    name: setSubtotals(subtotals)
-    fullName: setSubtotals(subtotals)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSubtotals(subtotals: Subtotals): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: subtotals
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.Subtotals:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
-    summary: PivotField 排序。 如果指定 DataPivotHierarchy，则会基于它进行排序，如果未指定，则会基于 PivotField 本身进行排序。
-    name: sortByLabels(sortBy)
-    fullName: sortByLabels(sortBy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'sortByLabels(sortBy: SortBy): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sortBy
-          description: 指定是按升序还是降序进行排序。
-          type:
-            - 'ExcelScript!ExcelScript.SortBy:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
-    summary: 按给定范围中的指定值对 PivotField 进行排序。 作用域定义在具有相同 DataPivotHierarchy 中的多个值时，将使用哪些特定值进行排序。
-    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
-    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        sortByValues(
-                    sortBy: SortBy,
-                    valuesHierarchy: DataPivotHierarchy,
-                    pivotItemScope?: Array<PivotItem | string>
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sortBy
-          description: 指定是按升序还是降序进行排序。
-          type:
-            - 'ExcelScript!ExcelScript.SortBy:enum'
-        - id: valuesHierarchy
-          description: 指定要用于排序的数据轴上的值层次结构。
-          type:
-            - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-        - id: pivotItemScope
-          description: 应在排序范围中使用的项。 这些项目将构成要作为排序依据的行或列。 如果使用字符串而不是 PivotItem，则该字符串表示 PivotItem 的 ID。 如果您要对其进行排序的轴上没有数据层次结构以外的任何项目，则可以为空。
-          type:
-            - 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
-references:
-  - uid: 'ExcelScript!ExcelScript.PivotFilters:interface'
-    name: PivotFilters
-    fullName: ExcelScript.PivotFilters
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
-    name: PivotFilterType
-    fullName: ExcelScript.PivotFilterType
-  - uid: 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
-    name: 'PivotItem[]'
-    fullName: 'ExcelScript.PivotItem[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
-        name: PivotItem
-        fullName: ExcelScript.PivotItem
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem~0:complex'
-    name: PivotItem | undefined
-    fullName: ExcelScript.PivotItem | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
-        name: PivotItem
-        fullName: ExcelScript.PivotItem
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Subtotals:interface'
-    name: Subtotals
-    fullName: ExcelScript.Subtotals
-  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
-    name: SortBy
-    fullName: ExcelScript.SortBy
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-    name: DataPivotHierarchy
-    fullName: ExcelScript.DataPivotHierarchy
-  - uid: 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
-    name: Array<PivotItem | string>
-    fullName: Array<ExcelScript.PivotItem | string>
-    spec.typeScript:
-      - uid: '!Array:interface'
-        name: Array
-        fullName: Array
-      - name: <
-        fullName: <
-      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
-        name: PivotItem
-        fullName: ExcelScript.PivotItem
-      - name: |2-
-           | string>
-                  
-        fullName: |2-
-           | string>
+### YamlMime:TSType
+name: ExcelScript.PivotField
+uid: ExcelScript!ExcelScript.PivotField:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotField
+summary: 表示 Excel 透视字段。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: applyFilter(filter)
+  uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
+  package: ExcelScript!
+  fullName: applyFilter(filter)
+  summary: 设置一个或多个字段的当前 PivotFilters，并将其应用于字段。 如果提供的筛选器无效或无法应用，则会引发异常。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyFilter(filter: PivotFilters): void;'
+    parameters:
+    - id: filter
+      description: 配置的特定 PivotFilter 或包含多个配置的筛选器的 PivotFilters 接口。
+      type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
+    return:
+      type: void
+      description: ''
+- name: clearAllFilters()
+  uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
+  package: ExcelScript!
+  fullName: clearAllFilters()
+  summary: 从字段的所有筛选器中清除所有条件。 这将删除对字段的任何活动筛选。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearAllFilters(): void;'
+    return:
+      type: void
+      description: ''
+- name: clearFilter(filterType)
+  uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
+  package: ExcelScript!
+  fullName: clearFilter(filterType)
+  summary: 清除给定类型的字段筛选器中的所有现有条件 (如果当前已将其应用) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearFilter(filterType: PivotFilterType): void;'
+    parameters:
+    - id: filterType
+      description: 要清除其所有条件的字段的筛选器类型。
+      type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
+    return:
+      type: void
+      description: ''
+- name: getFilters()
+  uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
+  package: ExcelScript!
+  fullName: getFilters()
+  summary: 获取当前应用于字段的所有筛选器。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFilters(): PivotFilters;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: PivotField 的 ID。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getItems()
+  uid: ExcelScript!ExcelScript.PivotField#getItems:member(1)
+  package: ExcelScript!
+  fullName: getItems()
+  summary: 返回与 PivotField 相关联的 PivotFields。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItems(): PivotItem[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />[]
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.PivotField#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: PivotField 的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPivotItem(name)
+  uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
+  package: ExcelScript!
+  fullName: getPivotItem(name)
+  summary: 按名称获取 PivotItem。 如果 PivotItem 不存在，则将返回一个 null 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotItem(name: string): PivotItem | undefined;'
+    parameters:
+    - id: name
+      description: 要检索的 PivotItem 的名称。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
+      description: ''
+- name: getShowAllItems()
+  uid: ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)
+  package: ExcelScript!
+  fullName: getShowAllItems()
+  summary: 确定是否显示 PivotField 的所有项。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowAllItems(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSubtotals()
+  uid: ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)
+  package: ExcelScript!
+  fullName: getSubtotals()
+  summary: PivotField 小计。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSubtotals(): Subtotals;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Subtotals:interface" />
+      description: ''
+- name: isFiltered(filterType)
+  uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
+  package: ExcelScript!
+  fullName: isFiltered(filterType)
+  summary: 检查字段上是否有任何已应用的筛选器。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'isFiltered(filterType?: PivotFilterType): boolean;'
+    parameters:
+    - id: filterType
+      description: 要检查的筛选器类型。 如果未提供任何类型，此方法将检查是否应用了任何筛选器。
+      type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
+    return:
+      type: boolean
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.PivotField#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: PivotField 的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setShowAllItems(showAllItems)
+  uid: ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)
+  package: ExcelScript!
+  fullName: setShowAllItems(showAllItems)
+  summary: 确定是否显示 PivotField 的所有项。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowAllItems(showAllItems: boolean): void;'
+    parameters:
+    - id: showAllItems
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setSubtotals(subtotals)
+  uid: ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)
+  package: ExcelScript!
+  fullName: setSubtotals(subtotals)
+  summary: PivotField 小计。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSubtotals(subtotals: Subtotals): void;'
+    parameters:
+    - id: subtotals
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.Subtotals:interface" />
+    return:
+      type: void
+      description: ''
+- name: sortByLabels(sortBy)
+  uid: ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)
+  package: ExcelScript!
+  fullName: sortByLabels(sortBy)
+  summary: PivotField 排序。 如果指定 DataPivotHierarchy，则会基于它进行排序，如果未指定，则会基于 PivotField 本身进行排序。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'sortByLabels(sortBy: SortBy): void;'
+    parameters:
+    - id: sortBy
+      description: 指定是按升序还是降序进行排序。
+      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
+    return:
+      type: void
+      description: ''
+- name: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
+  uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
+  package: ExcelScript!
+  fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
+  summary: 按给定范围中的指定值对 PivotField 进行排序。 作用域定义在具有相同 DataPivotHierarchy 中的多个值时，将使用哪些特定值进行排序。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      sortByValues(
+                  sortBy: SortBy,
+                  valuesHierarchy: DataPivotHierarchy,
+                  pivotItemScope?: Array<PivotItem | string>
+              ): void;
+    parameters:
+    - id: sortBy
+      description: 指定是按升序还是降序进行排序。
+      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
+    - id: valuesHierarchy
+      description: 指定要用于排序的数据轴上的值层次结构。
+      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
+    - id: pivotItemScope
+      description: 应在排序范围中使用的项。 这些项目将构成要作为排序依据的行或列。 如果使用字符串而不是 PivotItem，则该字符串表示 PivotItem 的 ID。 如果您要对其进行排序的轴上没有数据层次结构以外的任何项目，则可以为空。
+      type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 13da7086b9d79638e42f4749066c90ac53a2b3de
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412151"

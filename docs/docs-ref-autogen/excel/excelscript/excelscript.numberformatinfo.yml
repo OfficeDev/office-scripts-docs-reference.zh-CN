@@ -1,39 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
-    summary: 定义适当的区域性格式，以显示数字。 这取决于当前的系统区域性设置。
-    name: ExcelScript.NumberFormatInfo
-    fullName: ExcelScript.NumberFormatInfo
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
-      - 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
-  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
-    summary: 获取用作数值的小数分隔符的字符串。 这取决于当前的系统设置。
-    name: getNumberDecimalSeparator()
-    fullName: getNumberDecimalSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberDecimalSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
-    summary: 获取一个字符串，用于将数字值的小数位数与小数的左边隔开。 这取决于当前的系统设置。
-    name: getNumberGroupSeparator()
-    fullName: getNumberGroupSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberGroupSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.NumberFormatInfo
+uid: ExcelScript!ExcelScript.NumberFormatInfo:interface
+package: ExcelScript!
+fullName: ExcelScript.NumberFormatInfo
+summary: 定义适当的区域性格式，以显示数字。 这取决于当前的系统区域性设置。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getNumberDecimalSeparator()
+  uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)
+  package: ExcelScript!
+  fullName: getNumberDecimalSeparator()
+  summary: 获取用作数值的小数分隔符的字符串。 这取决于当前的系统设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberDecimalSeparator(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberGroupSeparator()
+  uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)
+  package: ExcelScript!
+  fullName: getNumberGroupSeparator()
+  summary: 获取一个字符串，用于将数字值的小数位数与小数的左边隔开。 这取决于当前的系统设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberGroupSeparator(): string;'
+    return:
+      type: string
+      description: ''
+metadata:
+  ms.openlocfilehash: 1fcd1c48e99ecf014cfbef77d2a8cfb2dd79ba55
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412193"

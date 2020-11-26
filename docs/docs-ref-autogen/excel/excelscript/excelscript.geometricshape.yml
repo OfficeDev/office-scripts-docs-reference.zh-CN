@@ -1,25 +1,31 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
-    summary: 代表工作表中的几何形状。 在 Excel 中，几何形状可以是矩形、箭头总汇、公式符号、流程图项、星形、横幅、标注或任何其他基本形状。
-    name: ExcelScript.GeometricShape
-    fullName: ExcelScript.GeometricShape
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
-  - uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
-    summary: 返回形状标识符。
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.GeometricShape
+uid: ExcelScript!ExcelScript.GeometricShape:interface
+package: ExcelScript!
+fullName: ExcelScript.GeometricShape
+summary: 代表工作表中的几何形状。 在 Excel 中，几何形状可以是矩形、箭头总汇、公式符号、流程图项、星形、横幅、标注或任何其他基本形状。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getId()
+  uid: ExcelScript!ExcelScript.GeometricShape#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: 返回形状标识符。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+metadata:
+  ms.openlocfilehash: cf8298436ba13df23d8be7bfd41aee7612240f70
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412459"

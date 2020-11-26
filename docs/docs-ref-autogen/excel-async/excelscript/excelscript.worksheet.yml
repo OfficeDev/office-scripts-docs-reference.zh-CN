@@ -1,963 +1,675 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Worksheet:interface'
-    summary: 'Excel 工作表是由单元格组成的网格。 它可以包含数据、表、图表等。若要了解有关工作表对象模型的详细信息，请参阅[使用 Excel JAVASCRIPT API 处理工作表](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.'
-    name: Excel.Worksheet
-    fullName: Excel.Worksheet
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Worksheet#activate:member(1)'
-      - 'excel!Excel.Worksheet#autoFilter:member'
-      - 'excel!Excel.Worksheet#calculate:member(1)'
-      - 'excel!Excel.Worksheet#charts:member'
-      - 'excel!Excel.Worksheet#comments:member'
-      - 'excel!Excel.Worksheet#copy:member(1)'
-      - 'excel!Excel.Worksheet#delete:member(1)'
-      - 'excel!Excel.Worksheet#enableCalculation:member'
-      - 'excel!Excel.Worksheet#findAll:member(1)'
-      - 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
-      - 'excel!Excel.Worksheet#freezePanes:member'
-      - 'excel!Excel.Worksheet#getCell:member(1)'
-      - 'excel!Excel.Worksheet#getNext:member(1)'
-      - 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
-      - 'excel!Excel.Worksheet#getPrevious:member(1)'
-      - 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
-      - 'excel!Excel.Worksheet#getRange:member(1)'
-      - 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
-      - 'excel!Excel.Worksheet#getRanges:member(1)'
-      - 'excel!Excel.Worksheet#getUsedRange:member(1)'
-      - 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
-      - 'excel!Excel.Worksheet#horizontalPageBreaks:member'
-      - 'excel!Excel.Worksheet#id:member'
-      - 'excel!Excel.Worksheet#load:member(1)'
-      - 'excel!Excel.Worksheet#name:member'
-      - 'excel!Excel.Worksheet#names:member'
-      - 'excel!Excel.Worksheet#pageLayout:member'
-      - 'excel!Excel.Worksheet#pivotTables:member'
-      - 'excel!Excel.Worksheet#position:member'
-      - 'excel!Excel.Worksheet#protection:member'
-      - 'excel!Excel.Worksheet#replaceAll:member(1)'
-      - 'excel!Excel.Worksheet#shapes:member'
-      - 'excel!Excel.Worksheet#showGridlines:member'
-      - 'excel!Excel.Worksheet#showHeadings:member'
-      - 'excel!Excel.Worksheet#showOutlineLevels:member(1)'
-      - 'excel!Excel.Worksheet#slicers:member'
-      - 'excel!Excel.Worksheet#standardHeight:member'
-      - 'excel!Excel.Worksheet#standardWidth:member'
-      - 'excel!Excel.Worksheet#tabColor:member'
-      - 'excel!Excel.Worksheet#tables:member'
-      - 'excel!Excel.Worksheet#verticalPageBreaks:member'
-      - 'excel!Excel.Worksheet#visibility:member'
-  - uid: 'excel!Excel.Worksheet#activate:member(1)'
-    summary: 在 Excel UI 中激活工作表。
-    name: activate()
-    fullName: activate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'activate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Worksheet#autoFilter:member'
-    summary: 表示工作表的 AutoFilter 对象。
-    name: autoFilter
-    fullName: autoFilter
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly autoFilter: AutoFilter;'
-      return:
-        type:
-          - 'excel!Excel.AutoFilter:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              let farmData = sheet.getUsedRange();
-
-              // This filter will only show the rows with the top 25% of values in column 3.
-              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Worksheet#calculate:member(1)'
-    summary: 计算工作表上的所有单元格。
-    name: calculate(markAllDirty)
-    fullName: calculate(markAllDirty)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(markAllDirty: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: markAllDirty
-          description: 如果为 True，则将全部标记为已更新。
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#charts:member'
-    summary: 返回作为工作表的一部分的图表的集合。
-    name: charts
-    fullName: charts
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly charts: ChartCollection;'
-      return:
-        type:
-          - 'excel!Excel.ChartCollection:interface'
-  - uid: 'excel!Excel.Worksheet#comments:member'
-    summary: 返回工作表上的所有 Comments 对象的集合。
-    name: comments
-    fullName: comments
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly comments: CommentCollection;'
-      return:
-        type:
-          - 'excel!Excel.CommentCollection:interface'
-  - uid: 'excel!Excel.Worksheet#copy:member(1)'
-    summary: 复制工作表并将其放在指定位置。
-    name: 'copy(positionType, relativeTo)'
-    fullName: 'copy(positionType, relativeTo)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        copy(
-                    positionType?:
-                        | WorksheetPositionType
+### YamlMime:TSType
+name: Excel.Worksheet
+uid: excel!Excel.Worksheet:interface
+package: excel!
+fullName: Excel.Worksheet
+summary: Excel 工作表是由单元格组成的网格。 它可以包含数据、表、图表等。若要了解有关工作表对象模型的详细信息，请参阅 [使用 Excel JAVASCRIPT API 处理工作表](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: autoFilter
+  uid: excel!Excel.Worksheet#autoFilter:member
+  package: excel!
+  fullName: autoFilter
+  summary: 表示工作表的 AutoFilter 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly autoFilter: AutoFilter;'
+    return:
+      type: <xref uid="excel!Excel.AutoFilter:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    let farmData = sheet.getUsedRange();\n\n    // This filter will only show the rows with the top 25% of values in column 3.\n    sheet.autoFilter.apply(farmData, 3, { criterion1: \"25\", filterOn: Excel.FilterOn.topPercent });\n    await context.sync();\n}\n```"
+- name: charts
+  uid: excel!Excel.Worksheet#charts:member
+  package: excel!
+  fullName: charts
+  summary: 返回作为工作表的一部分的图表的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly charts: ChartCollection;'
+    return:
+      type: <xref uid="excel!Excel.ChartCollection:interface" />
+- name: comments
+  uid: excel!Excel.Worksheet#comments:member
+  package: excel!
+  fullName: comments
+  summary: 返回工作表上的所有 Comments 对象的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly comments: CommentCollection;'
+    return:
+      type: <xref uid="excel!Excel.CommentCollection:interface" />
+- name: enableCalculation
+  uid: excel!Excel.Worksheet#enableCalculation:member
+  package: excel!
+  fullName: enableCalculation
+  summary: 确定 Excel 是否应根据需要重新计算工作表。 如此如果 Excel 根据需要重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enableCalculation: boolean;'
+    return:
+      type: boolean
+- name: freezePanes
+  uid: excel!Excel.Worksheet#freezePanes:member
+  package: excel!
+  fullName: freezePanes
+  summary: 获取一个对象，该对象可用于操作工作表上的冻结窗格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly freezePanes: WorksheetFreezePanes;'
+    return:
+      type: <xref uid="excel!Excel.WorksheetFreezePanes:interface" />
+- name: horizontalPageBreaks
+  uid: excel!Excel.Worksheet#horizontalPageBreaks:member
+  package: excel!
+  fullName: horizontalPageBreaks
+  summary: 获取工作表的水平分页符集合。 此集合仅包含手动分页符。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly horizontalPageBreaks: PageBreakCollection;'
+    return:
+      type: <xref uid="excel!Excel.PageBreakCollection:interface" />
+- name: id
+  uid: excel!Excel.Worksheet#id:member
+  package: excel!
+  fullName: id
+  summary: 返回用于唯一标识指定工作簿中工作表的值。 即使工作表被重命名或移动，标识符的值仍然相同。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: name
+  uid: excel!Excel.Worksheet#name:member
+  package: excel!
+  fullName: name
+  summary: 工作表的显示名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: names
+  uid: excel!Excel.Worksheet#names:member
+  package: excel!
+  fullName: names
+  summary: 一组范围限定到当前工作表的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly names: NamedItemCollection;'
+    return:
+      type: <xref uid="excel!Excel.NamedItemCollection:interface" />
+- name: pageLayout
+  uid: excel!Excel.Worksheet#pageLayout:member
+  package: excel!
+  fullName: pageLayout
+  summary: 获取工作表的 PageLayout 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly pageLayout: PageLayout;'
+    return:
+      type: <xref uid="excel!Excel.PageLayout:interface" />
+- name: pivotTables
+  uid: excel!Excel.Worksheet#pivotTables:member
+  package: excel!
+  fullName: pivotTables
+  summary: 一组属于工作表的数据透视表对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly pivotTables: PivotTableCollection;'
+    return:
+      type: <xref uid="excel!Excel.PivotTableCollection:interface" />
+- name: position
+  uid: excel!Excel.Worksheet#position:member
+  package: excel!
+  fullName: position
+  summary: 工作表在工作簿中的位置，从零开始。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'position: number;'
+    return:
+      type: number
+- name: protection
+  uid: excel!Excel.Worksheet#protection:member
+  package: excel!
+  fullName: protection
+  summary: 返回表工作表的工作表保护对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly protection: WorksheetProtection;'
+    return:
+      type: <xref uid="excel!Excel.WorksheetProtection:interface" />
+- name: shapes
+  uid: excel!Excel.Worksheet#shapes:member
+  package: excel!
+  fullName: shapes
+  summary: 返回工作表上的所有 Shape 对象的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly shapes: ShapeCollection;'
+    return:
+      type: <xref uid="excel!Excel.ShapeCollection:interface" />
+- name: showGridlines
+  uid: excel!Excel.Worksheet#showGridlines:member
+  package: excel!
+  fullName: showGridlines
+  summary: 指定是否对用户显示网格线。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showGridlines: boolean;'
+    return:
+      type: boolean
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    sheet.showGridlines = true;\n\n    await context.sync();\n}\n```"
+- name: showHeadings
+  uid: excel!Excel.Worksheet#showHeadings:member
+  package: excel!
+  fullName: showHeadings
+  summary: 指定标题是否对用户可见。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showHeadings: boolean;'
+    return:
+      type: boolean
+- name: slicers
+  uid: excel!Excel.Worksheet#slicers:member
+  package: excel!
+  fullName: slicers
+  summary: 返回作为工作表一部分的切片器的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly slicers: SlicerCollection;'
+    return:
+      type: <xref uid="excel!Excel.SlicerCollection:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Pivot\");\n    let slicer = sheet.slicers.add(\n        \"Farm Sales\", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */\n        \"Type\" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */\n    );\n    slicer.name = \"Fruit Slicer\";\n    await context.sync();\n}\n```"
+- name: standardHeight
+  uid: excel!Excel.Worksheet#standardHeight:member
+  package: excel!
+  fullName: standardHeight
+  summary: 返回工作表中所有行的标准（默认）行高，以磅为单位。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly standardHeight: number;'
+    return:
+      type: number
+- name: standardWidth
+  uid: excel!Excel.Worksheet#standardWidth:member
+  package: excel!
+  fullName: standardWidth
+  summary: 指定工作表中所有列的标准 (默认) 宽度。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'standardWidth: number;'
+    return:
+      type: number
+- name: tabColor
+  uid: excel!Excel.Worksheet#tabColor:member
+  package: excel!
+  fullName: tabColor
+  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 null。 如果工作表可见但选项卡颜色设置为自动，将返回一个空字符串。 否则，在设置颜色时，属性将设置为颜色，格式为 " \# 123456"，则使用空字符串设置 "自动" 颜色，或使用实际颜色。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tabColor: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let activeSheet = context.workbook.worksheets.getActiveWorksheet();\n    activeSheet.tabColor = \"#FF0000\";\n\n    await context.sync();\n}\n```"
+- name: tables
+  uid: excel!Excel.Worksheet#tables:member
+  package: excel!
+  fullName: tables
+  summary: 属于工作表的表的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly tables: TableCollection;'
+    return:
+      type: <xref uid="excel!Excel.TableCollection:interface" />
+- name: verticalPageBreaks
+  uid: excel!Excel.Worksheet#verticalPageBreaks:member
+  package: excel!
+  fullName: verticalPageBreaks
+  summary: 获取工作表的垂直分页符集合。 此集合仅包含手动分页符。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly verticalPageBreaks: PageBreakCollection;'
+    return:
+      type: <xref uid="excel!Excel.PageBreakCollection:interface" />
+- name: visibility
+  uid: excel!Excel.Worksheet#visibility:member
+  package: excel!
+  fullName: visibility
+  summary: 工作表的可见性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'visibility: SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
+    return:
+      type: <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden" | "VeryHidden"
+methods:
+- name: activate()
+  uid: excel!Excel.Worksheet#activate:member(1)
+  package: excel!
+  fullName: activate()
+  summary: 在 Excel UI 中激活工作表。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'activate(): void;'
+    return:
+      type: void
+      description: ''
+- name: calculate(markAllDirty)
+  uid: excel!Excel.Worksheet#calculate:member(1)
+  package: excel!
+  fullName: calculate(markAllDirty)
+  summary: 计算工作表上的所有单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(markAllDirty: boolean): void;'
+    parameters:
+    - id: markAllDirty
+      description: 如果为 True，则将全部标记为已更新。
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: copy(positionType, relativeTo)
+  uid: excel!Excel.Worksheet#copy:member(1)
+  package: excel!
+  fullName: copy(positionType, relativeTo)
+  summary: 复制工作表并将其放在指定位置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copy(
+                  positionType?:
+                      | WorksheetPositionType
+                      | "None"
+                      | "Before"
+                      | "After"
+                      | "Beginning"
+                      | "End",
+                  relativeTo?: Worksheet
+              ): Worksheet;
+    parameters:
+    - id: positionType
+      description: 在工作簿中放置新创建的工作表的位置。 默认值为 "无"，这将在工作表的开头插入工作表。
+      type: >-
+        | <xref uid="excel!Excel.WorksheetPositionType:enum" />
                         | "None"
                         | "Before"
                         | "After"
                         | "Beginning"
-                        | "End",
-                    relativeTo?: Worksheet
-                ): Worksheet;
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let myWorkbook = context.workbook;
-              let sampleSheet = myWorkbook.worksheets.getActiveWorksheet();
-              let copiedSheet = sampleSheet.copy("End")
-
-              sampleSheet.load("name");
-              copiedSheet.load("name");
-
-              await context.sync();
-
-              console.log("'" + sampleSheet.name + "' was copied to '" + copiedSheet.name + "'")
-          }
-          ```
-      parameters:
-        - id: positionType
-          description: 在工作簿中放置新创建的工作表的位置。 默认值为 "无"，这将在工作表的开头插入工作表。
-          type:
-            - 'excel!Excel.Worksheet#copy~0:complex'
-        - id: relativeTo
-          description: 确定新创建的工作表位置的现有工作表。 仅当 `positionType` 为 "Before" 或 "After" 时才需要这样做。
-          type:
-            - 'excel!Excel.Worksheet:interface'
-  - uid: 'excel!Excel.Worksheet#delete:member(1)'
-    summary: 从工作簿中删除工作表。 请注意，如果工作表的可见性设置为 "VeryHidden"，则删除操作将失败，并出现 `InvalidOperation` 异常。 应首先将其可见性更改为隐藏或可见，然后再将其删除。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Worksheet#enableCalculation:member'
-    summary: 确定 Excel 是否应根据需要重新计算工作表。 如此如果 Excel 根据需要重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
-    name: enableCalculation
-    fullName: enableCalculation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableCalculation: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Worksheet#findAll:member(1)'
-    summary: 根据指定的条件查找给定字符串的所有匹配项，并将它们作为包含一个或多个矩形区域的 RangeAreas 对象返回。
-    name: 'findAll(text, criteria)'
-    fullName: 'findAll(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: text
-          description: 要查找的字符串。
-          type:
-            - string
-        - id: criteria
-          description: 其他搜索条件，包括搜索是否需要匹配整个单元格或是否区分大小写。
-          type:
-            - 'excel!Excel.WorksheetSearchCriteria:interface'
-  - uid: 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
-    summary: 根据指定的条件查找给定字符串的所有匹配项，并将它们作为包含一个或多个矩形区域的 RangeAreas 对象返回。
-    name: 'findAllOrNullObject(text, criteria)'
-    fullName: 'findAllOrNullObject(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        findAllOrNullObject(
-                    text: string,
-                    criteria: WorksheetSearchCriteria
-                ): RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let foundRanges = sheet.findAllOrNullObject("Complete", {
-                  completeMatch: true,
-                  matchCase: false
-              });
-
-              await context.sync();
-
-              if (foundRanges.isNullObject) {
-                  console.log("No complete projects");
-              } else {
-                  foundRanges.format.fill.color = "green"
-              }
-          }
-          ```
-      parameters:
-        - id: text
-          description: 要查找的字符串。
-          type:
-            - string
-        - id: criteria
-          description: 其他搜索条件，包括搜索是否需要匹配整个单元格或是否区分大小写。
-          type:
-            - 'excel!Excel.WorksheetSearchCriteria:interface'
-  - uid: 'excel!Excel.Worksheet#freezePanes:member'
-    summary: 获取一个对象，该对象可用于操作工作表上的冻结窗格。
-    name: freezePanes
-    fullName: freezePanes
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly freezePanes: WorksheetFreezePanes;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetFreezePanes:interface'
-  - uid: 'excel!Excel.Worksheet#getCell:member(1)'
-    summary: 根据行和列编号获取包含单个单元格的 range 对象。 单元格可以位于其父区域的边界之外，但前提是它停留在工作表网格中。
-    name: 'getCell(row, column)'
-    fullName: 'getCell(row, column)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCell(row: number, column: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: 要检索的单元格的行号。 从零开始编制索引。
-          type:
-            - number
-        - id: column
-          description: 要检索的单元格的列号。 从零开始编制索引。
-          type:
-            - number
-  - uid: 'excel!Excel.Worksheet#getNext:member(1)'
-    summary: 获取此工作表的后面的工作表。 如果此方法后面没有任何工作表，则此方法将引发错误。
-    name: getNext(visibleOnly)
-    fullName: getNext(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNext(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
-    summary: 获取此工作表的后面的工作表。 如果此方法后面没有任何工作表，则此方法将返回一个 null 对象。
-    name: getNextOrNullObject(visibleOnly)
-    fullName: getNextOrNullObject(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNextOrNullObject(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
-    summary: 获取此项之前的工作表。 如果没有以前的工作表，此方法将引发错误。
-    name: getPrevious(visibleOnly)
-    fullName: getPrevious(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
-    summary: 获取此项之前的工作表。 如果没有以前的工作表，则此方法将返回一个空的 objet。
-    name: getPreviousOrNullObject(visibleOnly)
-    fullName: getPreviousOrNullObject(visibleOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPreviousOrNullObject(visibleOnly?: boolean): Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-        description: ''
-      parameters:
-        - id: visibleOnly
-          description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getRange:member(1)'
-    summary: 获取一个 range 对象，该对象代表由地址或名称指定的单个矩形单元格块。
-    name: getRange(address)
-    fullName: getRange(address)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(address?: string): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: address
-          description: 可选。 表示地址或范围名称的字符串。 例如，"A1： B2"。 如果未指定，则返回整个工作表区域。
-          type:
-            - string
-  - uid: 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
-    summary: 获取以特定行索引和列索引开始并跨越了一定数量的行和列的 range 对象。
-    name: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
-    fullName: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getRangeByIndexes(
-                    startRow: number,
-                    startColumn: number,
-                    rowCount: number,
-                    columnCount: number
-                ): Range;
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: startRow
-          description: 起始行（零编制索引）。
-          type:
-            - number
-        - id: startColumn
-          description: Start 列（零个索引）。
-          type:
-            - number
-        - id: rowCount
-          description: 要包含在范围中的行数。
-          type:
-            - number
-        - id: columnCount
-          description: 要包含在范围中的列数。
-          type:
-            - number
-  - uid: 'excel!Excel.Worksheet#getRanges:member(1)'
-    summary: 获取按地址或名称指定的 RangeAreas 对象，它表示一个或多个矩形区域块。
-    name: getRanges(address)
-    fullName: getRanges(address)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRanges(address?: string): RangeAreas;'
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              let specifiedRanges = sheet.getRanges("D3:D5, G3:G5");
-              specifiedRanges.format.fill.color = "pink";
-
-              await context.sync();
-          })
-          ```
-      parameters:
-        - id: address
-          description: 可选。 一个包含以逗号分隔的地址或各个区域的名称的字符串。 例如，"A1： B2，A5： B5"。 如果未指定，则返回整个工作表的 RangeArea 对象。
-          type:
-            - string
-  - uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
-    summary: 使用的区域是包含分配了值或格式化的任何单元格的最小区域。 如果整个工作表为空，则此函数将返回左上角单元格（即，它*不*会引发错误）。
-    name: getUsedRange(valuesOnly)
-    fullName: getUsedRange(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRange(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: 可选。 如果为 true，则仅考虑值为已使用单元格的单元格（忽略格式设置）。
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
-    summary: 使用的区域是包含分配了值或格式的任意单元格的最小区域。如果整个工作表为空，此函数将返回 NULL 对象。
-    name: getUsedRangeOrNullObject(valuesOnly)
-    fullName: getUsedRangeOrNullObject(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: 可选。 仅将有值的单元格视为已使用的单元格。
-          type:
-            - boolean
-  - uid: 'excel!Excel.Worksheet#horizontalPageBreaks:member'
-    summary: 获取工作表的水平分页符集合。 此集合仅包含手动分页符。
-    name: horizontalPageBreaks
-    fullName: horizontalPageBreaks
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly horizontalPageBreaks: PageBreakCollection;'
-      return:
-        type:
-          - 'excel!Excel.PageBreakCollection:interface'
-  - uid: 'excel!Excel.Worksheet#id:member'
-    summary: 返回用于唯一标识指定工作簿中工作表的值。 即使工作表被重命名或移动，标识符的值仍然相同。
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Worksheet#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Worksheet#name:member'
-    summary: 工作表的显示名称。
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Worksheet#names:member'
-    summary: 一组范围限定到当前工作表的名称。
-    name: names
-    fullName: names
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly names: NamedItemCollection;'
-      return:
-        type:
-          - 'excel!Excel.NamedItemCollection:interface'
-  - uid: 'excel!Excel.Worksheet#pageLayout:member'
-    summary: 获取工作表的 PageLayout 对象。
-    name: pageLayout
-    fullName: pageLayout
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly pageLayout: PageLayout;'
-      return:
-        type:
-          - 'excel!Excel.PageLayout:interface'
-  - uid: 'excel!Excel.Worksheet#pivotTables:member'
-    summary: 一组属于工作表的数据透视表对象。
-    name: pivotTables
-    fullName: pivotTables
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly pivotTables: PivotTableCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotTableCollection:interface'
-  - uid: 'excel!Excel.Worksheet#position:member'
-    summary: 工作表在工作簿中的位置，从零开始。
-    name: position
-    fullName: position
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'position: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Worksheet#protection:member'
-    summary: 返回表工作表的工作表保护对象。
-    name: protection
-    fullName: protection
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly protection: WorksheetProtection;'
-      return:
-        type:
-          - 'excel!Excel.WorksheetProtection:interface'
-  - uid: 'excel!Excel.Worksheet#replaceAll:member(1)'
-    summary: 根据当前工作表中指定的条件查找并替换给定的字符串。
-    name: 'replaceAll(text, replacement, criteria)'
-    fullName: 'replaceAll(text, replacement, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        replaceAll(
-                    text: string,
-                    replacement: string,
-                    criteria: ReplaceCriteria
-                ): ClientResult<number>;
-      return:
-        type:
-          - 'excel!Excel.Worksheet#replaceAll~0:complex'
-        description: ''
-      parameters:
-        - id: text
-          description: 要查找的字符串。
-          type:
-            - string
-        - id: replacement
-          description: 要将原始替换为的字符串。
-          type:
-            - string
-        - id: criteria
-          description: 其他替换条件。
-          type:
-            - 'excel!Excel.ReplaceCriteria:interface'
-  - uid: 'excel!Excel.Worksheet#shapes:member'
-    summary: 返回工作表上的所有 Shape 对象的集合。
-    name: shapes
-    fullName: shapes
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly shapes: ShapeCollection;'
-      return:
-        type:
-          - 'excel!Excel.ShapeCollection:interface'
-  - uid: 'excel!Excel.Worksheet#showGridlines:member'
-    summary: 指定是否对用户显示网格线。
-    name: showGridlines
-    fullName: showGridlines
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showGridlines: boolean;'
-      return:
-        type:
-          - boolean
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.showGridlines = true;
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Worksheet#showHeadings:member'
-    summary: 指定标题是否对用户可见。
-    name: showHeadings
-    fullName: showHeadings
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showHeadings: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Worksheet#showOutlineLevels:member(1)'
-    summary: 按行或列的大纲级别显示组。 勾勒出组合并汇总工作表中的数据列表。 `rowLevels`和 `columnLevels` 参数指定将显示的大纲的级别数。 可接受的参数范围介于0和8之间。 值0不会更改当前显示。 大于当前级别数的值将显示所有级别。
-    name: 'showOutlineLevels(rowLevels, columnLevels)'
-    fullName: 'showOutlineLevels(rowLevels, columnLevels)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // This collapses the entire outline.
-              sheet.showOutlineLevels(1, 1);
-              await context.sync();
-          }
-          ```
-          ```typescript
-          Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-
-              // This shows the top 3 outline levels; collapsing any additional sublevels.
-              sheet.showOutlineLevels(3, 3);
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: rowLevels
-          description: 要显示的分级显示的行级别数。
-          type:
-            - number
-        - id: columnLevels
-          description: 要显示的分级显示的列级别数。
-          type:
-            - number
-  - uid: 'excel!Excel.Worksheet#slicers:member'
-    summary: 返回作为工作表一部分的切片器的集合。
-    name: slicers
-    fullName: slicers
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly slicers: SlicerCollection;'
-      return:
-        type:
-          - 'excel!Excel.SlicerCollection:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Pivot");
-              let slicer = sheet.slicers.add(
-                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
-                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
-              );
-              slicer.name = "Fruit Slicer";
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Worksheet#standardHeight:member'
-    summary: 返回工作表中所有行的标准（默认）行高，以磅为单位。
-    name: standardHeight
-    fullName: standardHeight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly standardHeight: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Worksheet#standardWidth:member'
-    summary: 指定工作表中所有列的标准（默认）宽度。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
-    name: standardWidth
-    fullName: standardWidth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'standardWidth: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Worksheet#tabColor:member'
-    summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 null。 如果工作表可见但选项卡颜色设置为自动，将返回一个空字符串。 否则，在设置颜色时，属性将设置为颜色，格式为 " \# 123456"，则使用空字符串设置 "自动" 颜色，或使用实际颜色。
-    name: tabColor
-    fullName: tabColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tabColor: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.tabColor = "#FF0000";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Worksheet#tables:member'
-    summary: 属于工作表的表的集合。
-    name: tables
-    fullName: tables
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly tables: TableCollection;'
-      return:
-        type:
-          - 'excel!Excel.TableCollection:interface'
-  - uid: 'excel!Excel.Worksheet#verticalPageBreaks:member'
-    summary: 获取工作表的垂直分页符集合。 此集合仅包含手动分页符。
-    name: verticalPageBreaks
-    fullName: verticalPageBreaks
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly verticalPageBreaks: PageBreakCollection;'
-      return:
-        type:
-          - 'excel!Excel.PageBreakCollection:interface'
-  - uid: 'excel!Excel.Worksheet#visibility:member'
-    summary: 工作表的可见性。
-    name: visibility
-    fullName: visibility
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'visibility: SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
-      return:
-        type:
-          - 'excel!Excel.Worksheet#visibility~0:complex'
-references:
-  - uid: 'excel!Excel.AutoFilter:interface'
-    name: AutoFilter
-    fullName: Excel.AutoFilter
-  - uid: 'excel!Excel.ChartCollection:interface'
-    name: ChartCollection
-    fullName: Excel.ChartCollection
-  - uid: 'excel!Excel.CommentCollection:interface'
-    name: CommentCollection
-    fullName: Excel.CommentCollection
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
-  - uid: 'excel!Excel.Worksheet#copy~0:complex'
-    name: |-
-      | WorksheetPositionType
-                      | "None"
-                      | "Before"
-                      | "After"
-                      | "Beginning"
-                      | "End"
-    fullName: |-
-      | Excel.WorksheetPositionType
-                      | "None"
-                      | "Before"
-                      | "After"
-                      | "Beginning"
-                      | "End"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.WorksheetPositionType:enum'
-        name: WorksheetPositionType
-        fullName: Excel.WorksheetPositionType
-      - name: |2-
-
-                          | "None"
-                          | "Before"
-                          | "After"
-                          | "Beginning"
-                          | "End"
-        fullName: |2-
-
-                          | "None"
-                          | "Before"
-                          | "After"
-                          | "Beginning"
-                          | "End"
-  - uid: 'excel!Excel.RangeAreas:interface'
-    name: RangeAreas
-    fullName: Excel.RangeAreas
-  - uid: 'excel!Excel.WorksheetSearchCriteria:interface'
-    name: WorksheetSearchCriteria
-    fullName: Excel.WorksheetSearchCriteria
-  - uid: 'excel!Excel.WorksheetFreezePanes:interface'
-    name: WorksheetFreezePanes
-    fullName: Excel.WorksheetFreezePanes
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.PageBreakCollection:interface'
-    name: PageBreakCollection
-    fullName: Excel.PageBreakCollection
-  - uid: 'excel!Excel.NamedItemCollection:interface'
-    name: NamedItemCollection
-    fullName: Excel.NamedItemCollection
-  - uid: 'excel!Excel.PageLayout:interface'
-    name: PageLayout
-    fullName: Excel.PageLayout
-  - uid: 'excel!Excel.PivotTableCollection:interface'
-    name: PivotTableCollection
-    fullName: Excel.PivotTableCollection
-  - uid: 'excel!Excel.WorksheetProtection:interface'
-    name: WorksheetProtection
-    fullName: Excel.WorksheetProtection
-  - uid: 'excel!Excel.Worksheet#replaceAll~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.ReplaceCriteria:interface'
-    name: ReplaceCriteria
-    fullName: Excel.ReplaceCriteria
-  - uid: 'excel!Excel.ShapeCollection:interface'
-    name: ShapeCollection
-    fullName: Excel.ShapeCollection
-  - uid: 'excel!Excel.SlicerCollection:interface'
-    name: SlicerCollection
-    fullName: Excel.SlicerCollection
-  - uid: 'excel!Excel.TableCollection:interface'
-    name: TableCollection
-    fullName: Excel.TableCollection
-  - uid: 'excel!Excel.Worksheet#visibility~0:complex'
-    name: SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
-    fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
-    spec.typeScript:
-      - uid: 'excel!Excel.SheetVisibility:enum'
-        name: SheetVisibility
-        fullName: Excel.SheetVisibility
-      - name: ' | "Visible" | "Hidden" | "VeryHidden"'
-        fullName: ' | "Visible" | "Hidden" | "VeryHidden"'
+                        | "End"
+    - id: relativeTo
+      description: 确定新创建的工作表位置的现有工作表。 仅当 `positionType` 为 "Before" 或 "After" 时才需要这样做。
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let myWorkbook = context.workbook;\n    let sampleSheet = myWorkbook.worksheets.getActiveWorksheet();\n    let copiedSheet = sampleSheet.copy(\"End\")\n\n    sampleSheet.load(\"name\");\n    copiedSheet.load(\"name\");\n\n    await context.sync();\n\n    console.log(\"'\" + sampleSheet.name + \"' was copied to '\" + copiedSheet.name + \"'\")\n}\n```"
+- name: delete()
+  uid: excel!Excel.Worksheet#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: 从工作簿中删除工作表。 请注意，如果工作表的可见性设置为 "VeryHidden"，则删除操作将失败，并出现 `InvalidOperation` 异常。 应首先将其可见性更改为隐藏或可见，然后再将其删除。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: findAll(text, criteria)
+  uid: excel!Excel.Worksheet#findAll:member(1)
+  package: excel!
+  fullName: findAll(text, criteria)
+  summary: 根据指定的条件查找给定字符串的所有匹配项，并将它们作为包含一个或多个矩形区域的 RangeAreas 对象返回。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
+    parameters:
+    - id: text
+      description: 要查找的字符串。
+      type: string
+    - id: criteria
+      description: 其他搜索条件，包括搜索是否需要匹配整个单元格或是否区分大小写。
+      type: <xref uid="excel!Excel.WorksheetSearchCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: findAllOrNullObject(text, criteria)
+  uid: excel!Excel.Worksheet#findAllOrNullObject:member(1)
+  package: excel!
+  fullName: findAllOrNullObject(text, criteria)
+  summary: 根据指定的条件查找给定字符串的所有匹配项，并将它们作为包含一个或多个矩形区域的 RangeAreas 对象返回。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      findAllOrNullObject(
+                  text: string,
+                  criteria: WorksheetSearchCriteria
+              ): RangeAreas;
+    parameters:
+    - id: text
+      description: 要查找的字符串。
+      type: string
+    - id: criteria
+      description: 其他搜索条件，包括搜索是否需要匹配整个单元格或是否区分大小写。
+      type: <xref uid="excel!Excel.WorksheetSearchCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let foundRanges = sheet.findAllOrNullObject(\"Complete\", {\n        completeMatch: true,\n        matchCase: false\n    });\n\n    await context.sync();\n\n    if (foundRanges.isNullObject) {\n        console.log(\"No complete projects\");\n    } else {\n        foundRanges.format.fill.color = \"green\"\n    }\n}\n```"
+- name: getCell(row, column)
+  uid: excel!Excel.Worksheet#getCell:member(1)
+  package: excel!
+  fullName: getCell(row, column)
+  summary: 根据行和列编号获取包含单个单元格的 range 对象。 单元格可以位于其父区域的边界之外，但前提是它停留在工作表网格中。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCell(row: number, column: number): Range;'
+    parameters:
+    - id: row
+      description: 要检索的单元格的行号。 从零开始编制索引。
+      type: number
+    - id: column
+      description: 要检索的单元格的列号。 从零开始编制索引。
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getNext(visibleOnly)
+  uid: excel!Excel.Worksheet#getNext:member(1)
+  package: excel!
+  fullName: getNext(visibleOnly)
+  summary: 获取此工作表的后面的工作表。 如果此方法后面没有任何工作表，则此方法将引发错误。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNext(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getNextOrNullObject(visibleOnly)
+  uid: excel!Excel.Worksheet#getNextOrNullObject:member(1)
+  package: excel!
+  fullName: getNextOrNullObject(visibleOnly)
+  summary: 获取此工作表的后面的工作表。 如果此方法后面没有任何工作表，则此方法将返回一个 null 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNextOrNullObject(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getPrevious(visibleOnly)
+  uid: excel!Excel.Worksheet#getPrevious:member(1)
+  package: excel!
+  fullName: getPrevious(visibleOnly)
+  summary: 获取此项之前的工作表。 如果没有以前的工作表，此方法将引发错误。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getPreviousOrNullObject(visibleOnly)
+  uid: excel!Excel.Worksheet#getPreviousOrNullObject:member(1)
+  package: excel!
+  fullName: getPreviousOrNullObject(visibleOnly)
+  summary: 获取此项之前的工作表。 如果没有以前的工作表，则此方法将返回一个空的 objet。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPreviousOrNullObject(visibleOnly?: boolean): Worksheet;'
+    parameters:
+    - id: visibleOnly
+      description: 可选。 如果为 true，则只考虑可见的工作表，跳过任何隐藏的工作表。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+      description: ''
+- name: getRange(address)
+  uid: excel!Excel.Worksheet#getRange:member(1)
+  package: excel!
+  fullName: getRange(address)
+  summary: 获取一个 range 对象，该对象代表由地址或名称指定的单个矩形单元格块。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(address?: string): Range;'
+    parameters:
+    - id: address
+      description: 可选。 表示地址或范围名称的字符串。 例如，"A1： B2"。 如果未指定，则返回整个工作表区域。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
+  uid: excel!Excel.Worksheet#getRangeByIndexes:member(1)
+  package: excel!
+  fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
+  summary: 获取以特定行索引和列索引开始并跨越了一定数量的行和列的 range 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getRangeByIndexes(
+                  startRow: number,
+                  startColumn: number,
+                  rowCount: number,
+                  columnCount: number
+              ): Range;
+    parameters:
+    - id: startRow
+      description: " (零索引) 的起始行。"
+      type: number
+    - id: startColumn
+      description: " (零索引) 的起始列。"
+      type: number
+    - id: rowCount
+      description: 要包含在范围中的行数。
+      type: number
+    - id: columnCount
+      description: 要包含在范围中的列数。
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRanges(address)
+  uid: excel!Excel.Worksheet#getRanges:member(1)
+  package: excel!
+  fullName: getRanges(address)
+  summary: 获取按地址或名称指定的 RangeAreas 对象，它表示一个或多个矩形区域块。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRanges(address?: string): RangeAreas;'
+    parameters:
+    - id: address
+      description: 可选。 一个包含以逗号分隔的地址或各个区域的名称的字符串。 例如，"A1： B2，A5： B5"。 如果未指定，则返回整个工作表的 RangeArea 对象。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    let specifiedRanges = sheet.getRanges(\"D3:D5, G3:G5\");\n    specifiedRanges.format.fill.color = \"pink\";\n\n    await context.sync();\n})\n```"
+- name: getUsedRange(valuesOnly)
+  uid: excel!Excel.Worksheet#getUsedRange:member(1)
+  package: excel!
+  fullName: getUsedRange(valuesOnly)
+  summary: 使用的区域是包含分配了值或格式化的任何单元格的最小区域。 如果整个工作表为空，则此函数将返回左上角的单元格 (即它将 *不* 会引发错误) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: 可选。 如果为 true，则仅将包含值的单元格视为已使用的单元格 (忽略格式设置) 。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getUsedRangeOrNullObject(valuesOnly)
+  uid: excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)
+  package: excel!
+  fullName: getUsedRangeOrNullObject(valuesOnly)
+  summary: 使用的区域是包含分配了值或格式的任意单元格的最小区域。如果整个工作表为空，此函数将返回 NULL 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: 可选。 仅将有值的单元格视为已使用的单元格。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Worksheet#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: replaceAll(text, replacement, criteria)
+  uid: excel!Excel.Worksheet#replaceAll:member(1)
+  package: excel!
+  fullName: replaceAll(text, replacement, criteria)
+  summary: 根据当前工作表中指定的条件查找并替换给定的字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      replaceAll(
+                  text: string,
+                  replacement: string,
+                  criteria: ReplaceCriteria
+              ): ClientResult<number>;
+    parameters:
+    - id: text
+      description: 要查找的字符串。
+      type: string
+    - id: replacement
+      description: 要将原始替换为的字符串。
+      type: string
+    - id: criteria
+      description: 其他替换条件。
+      type: <xref uid="excel!Excel.ReplaceCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: showOutlineLevels(rowLevels, columnLevels)
+  uid: excel!Excel.Worksheet#showOutlineLevels:member(1)
+  package: excel!
+  fullName: showOutlineLevels(rowLevels, columnLevels)
+  summary: 按行或列的大纲级别显示组。 勾勒出组合并汇总工作表中的数据列表。 `rowLevels`和 `columnLevels` 参数指定将显示的大纲的级别数。 可接受的参数范围介于0和8之间。 值0不会更改当前显示。 大于当前级别数的值将显示所有级别。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
+    parameters:
+    - id: rowLevels
+      description: 要显示的分级显示的行级别数。
+      type: number
+    - id: columnLevels
+      description: 要显示的分级显示的列级别数。
+      type: number
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nExcel.run(async (context) => {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n\n    // This collapses the entire outline.\n    sheet.showOutlineLevels(1, 1);\n    await context.sync();\n}\n```\n```typescript\nExcel.run(async (context) => {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n\n    // This shows the top 3 outline levels; collapsing any additional sublevels.\n    sheet.showOutlineLevels(3, 3);\n    await context.sync();\n}\n```"
+metadata:
+  ms.openlocfilehash: 3827291e11b2d99290067ce2143a928083276d38
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412641"
