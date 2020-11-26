@@ -1,119 +1,114 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection:interface'
-    summary: '表示 `format.borders` 的属性`getCellProperties`<!-- -->, `getRowProperties`<!-- -->，和 `getColumnProperties` 或的 `format.borders` 输入参数`setCellProperties`<!-- -->, `setRowProperties`<!-- -->，并`setColumnProperties`<!-- -->.'
-    name: ExcelScript.CellBorderCollection
-    fullName: ExcelScript.CellBorderCollection
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CellBorderCollection#bottom:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#diagonalDown:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#diagonalUp:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#horizontal:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#left:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#right:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#top:member'
-      - 'ExcelScript!ExcelScript.CellBorderCollection#vertical:member'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#bottom:member'
-    summary: 表示`format.borders.bottom`属性。
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bottom?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#diagonalDown:member'
-    summary: 表示`format.borders.diagonalDown`属性。
-    name: diagonalDown
-    fullName: diagonalDown
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'diagonalDown?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#diagonalUp:member'
-    summary: 表示`format.borders.diagonalUp`属性。
-    name: diagonalUp
-    fullName: diagonalUp
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'diagonalUp?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#horizontal:member'
-    summary: 表示`format.borders.horizontal`属性。
-    name: horizontal
-    fullName: horizontal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'horizontal?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#left:member'
-    summary: 表示`format.borders.left`属性。
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'left?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#right:member'
-    summary: 表示`format.borders.right`属性。
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'right?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#top:member'
-    summary: 表示`format.borders.top`属性。
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'top?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#vertical:member'
-    summary: 表示`format.borders.vertical`属性。
-    name: vertical
-    fullName: vertical
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'vertical?: CellBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CellBorder:interface'
-references:
-  - uid: 'ExcelScript!ExcelScript.CellBorder:interface'
-    name: CellBorder
-    fullName: ExcelScript.CellBorder
+### YamlMime:TSType
+name: ExcelScript.CellBorderCollection
+uid: ExcelScript!ExcelScript.CellBorderCollection:interface
+package: ExcelScript!
+fullName: ExcelScript.CellBorderCollection
+summary: 表示 `format.borders` 的属性 `getCellProperties`<!-- -->, `getRowProperties`<!-- -->，和 `getColumnProperties` 或的 `format.borders` 输入参数 `setCellProperties`<!-- -->, `setRowProperties`<!-- -->，并 `setColumnProperties`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bottom
+  uid: ExcelScript!ExcelScript.CellBorderCollection#bottom:member
+  package: ExcelScript!
+  fullName: bottom
+  summary: 表示`format.borders.bottom`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bottom?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: diagonalDown
+  uid: ExcelScript!ExcelScript.CellBorderCollection#diagonalDown:member
+  package: ExcelScript!
+  fullName: diagonalDown
+  summary: 表示`format.borders.diagonalDown`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'diagonalDown?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: diagonalUp
+  uid: ExcelScript!ExcelScript.CellBorderCollection#diagonalUp:member
+  package: ExcelScript!
+  fullName: diagonalUp
+  summary: 表示`format.borders.diagonalUp`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'diagonalUp?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: horizontal
+  uid: ExcelScript!ExcelScript.CellBorderCollection#horizontal:member
+  package: ExcelScript!
+  fullName: horizontal
+  summary: 表示`format.borders.horizontal`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'horizontal?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: left
+  uid: ExcelScript!ExcelScript.CellBorderCollection#left:member
+  package: ExcelScript!
+  fullName: left
+  summary: 表示`format.borders.left`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'left?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: right
+  uid: ExcelScript!ExcelScript.CellBorderCollection#right:member
+  package: ExcelScript!
+  fullName: right
+  summary: 表示`format.borders.right`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'right?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: top
+  uid: ExcelScript!ExcelScript.CellBorderCollection#top:member
+  package: ExcelScript!
+  fullName: top
+  summary: 表示`format.borders.top`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'top?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+- name: vertical
+  uid: ExcelScript!ExcelScript.CellBorderCollection#vertical:member
+  package: ExcelScript!
+  fullName: vertical
+  summary: 表示`format.borders.vertical`属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'vertical?: CellBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CellBorder:interface" />
+metadata:
+  ms.openlocfilehash: 3d2dd1ddcda3070dc678ca01b9cabf7599a3cab5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417168"

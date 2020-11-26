@@ -1,324 +1,266 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Comment:interface'
-    summary: 代表工作簿中的注释。
-    name: ExcelScript.Comment
-    fullName: ExcelScript.Comment
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Comment#addCommentReply:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getAuthorEmail:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getMentions:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getReplies:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getResolved:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getRichContent:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#setContent:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#setResolved:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#updateMentions:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Comment#addCommentReply:member(1)'
-    summary: 为批注创建批注回复。
-    name: 'addCommentReply(content, contentType)'
-    fullName: 'addCommentReply(content, contentType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addCommentReply(
-                    content: CommentRichContent | string,
-                    contentType?: ContentType
-                ): CommentReply;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CommentReply:interface'
-        description: ''
-      parameters:
-        - id: content
-          description: 批注的内容。 此值可以是字符串或接口 CommentRichContent (例如，对于提及) 的注释。
-          type:
-            - 'ExcelScript!ExcelScript.Comment#addCommentReply~0:complex'
-        - id: contentType
-          description: 可选。 包含在注释中的内容类型。 默认值为枚举 `ContentType.Plain`<!-- -->.
-          type:
-            - 'ExcelScript!ExcelScript.ContentType:enum'
-  - uid: 'ExcelScript!ExcelScript.Comment#delete:member(1)'
-    summary: 删除批注和所有连接的答复。
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getAuthorEmail:member(1)'
-    summary: 获取批注作者的电子邮件。
-    name: getAuthorEmail()
-    fullName: getAuthorEmail()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAuthorEmail(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
-    summary: 获取批注作者的姓名。
-    name: getAuthorName()
-    fullName: getAuthorName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAuthorName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
-    summary: 返回由其 ID 标识的批注回复。
-    name: getCommentReply(commentReplyId)
-    fullName: getCommentReply(commentReplyId)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCommentReply(commentReplyId: string): CommentReply;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CommentReply:interface'
-        description: ''
-      parameters:
-        - id: commentReplyId
-          description: 批注答复的标识符。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
-    summary: 批注的内容。 字符串为纯文本。
-    name: getContent()
-    fullName: getContent()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getContent(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
-    summary: 获取注释的内容类型。
-    name: getContentType()
-    fullName: getContentType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getContentType(): ContentType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ContentType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
-    summary: 获取批注的创建时间。 如果批注是从备注转换而来的，则返回 null，因为批注没有创建日期。
-    name: getCreationDate()
-    fullName: getCreationDate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCreationDate(): Date;'
-      return:
-        type:
-          - '!Date:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getId:member(1)'
-    summary: 指定注释标识符。
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
-    summary: 获取此注释所在的单元格。
-    name: getLocation()
-    fullName: getLocation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLocation(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getMentions:member(1)'
-    summary: 获取实体 (例如，在注释中提到的人) 。
-    name: getMentions()
-    fullName: getMentions()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMentions(): CommentMention[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment#getMentions~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getReplies:member(1)'
-    summary: 表示与批注关联的回复对象的集合。
-    name: getReplies()
-    fullName: getReplies()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getReplies(): CommentReply[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment#getReplies~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getResolved:member(1)'
-    summary: 注释线程状态。 值为 "true" 表示解析注释线程。
-    name: getResolved()
-    fullName: getResolved()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getResolved(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getRichContent:member(1)'
-    summary: 获取丰富的注释内容 (例如，注释) 中提及。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
-    name: getRichContent()
-    fullName: getRichContent()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRichContent(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#setContent:member(1)'
-    summary: 批注的内容。 字符串为纯文本。
-    name: setContent(content)
-    fullName: setContent(content)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setContent(content: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: content
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Comment#setResolved:member(1)'
-    summary: 注释线程状态。 值为 "true" 表示解析注释线程。
-    name: setResolved(resolved)
-    fullName: setResolved(resolved)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setResolved(resolved: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: resolved
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Comment#updateMentions:member(1)'
-    summary: 使用特殊格式的字符串和提及列表更新注释内容。
-    name: updateMentions(contentWithMentions)
-    fullName: updateMentions(contentWithMentions)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: contentWithMentions
-          description: 批注的内容。 这包含一个特殊格式的字符串和在 Excel 显示时将解析为字符串的提及的列表。
-          type:
-            - 'ExcelScript!ExcelScript.CommentRichContent:interface'
-references:
-  - uid: 'ExcelScript!ExcelScript.CommentReply:interface'
-    name: CommentReply
-    fullName: ExcelScript.CommentReply
-  - uid: 'ExcelScript!ExcelScript.Comment#addCommentReply~0:complex'
-    name: CommentRichContent | string
-    fullName: ExcelScript.CommentRichContent | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
-        name: CommentRichContent
-        fullName: ExcelScript.CommentRichContent
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.ContentType:enum'
-    name: ContentType
-    fullName: ExcelScript.ContentType
-  - uid: '!Date:interface'
-    name: Date
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.Comment#getMentions~0:complex'
-    name: 'CommentMention[]'
-    fullName: 'ExcelScript.CommentMention[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CommentMention:interface'
-        name: CommentMention
-        fullName: ExcelScript.CommentMention
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Comment#getReplies~0:complex'
-    name: 'CommentReply[]'
-    fullName: 'ExcelScript.CommentReply[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CommentReply:interface'
-        name: CommentReply
-        fullName: ExcelScript.CommentReply
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
-    name: CommentRichContent
-    fullName: ExcelScript.CommentRichContent
+### YamlMime:TSType
+name: ExcelScript.Comment
+uid: ExcelScript!ExcelScript.Comment:interface
+package: ExcelScript!
+fullName: ExcelScript.Comment
+summary: 代表工作簿中的注释。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: addCommentReply(content, contentType)
+  uid: ExcelScript!ExcelScript.Comment#addCommentReply:member(1)
+  package: ExcelScript!
+  fullName: addCommentReply(content, contentType)
+  summary: 为批注创建批注回复。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addCommentReply(
+                  content: CommentRichContent | string,
+                  contentType?: ContentType
+              ): CommentReply;
+    parameters:
+    - id: content
+      description: 批注的内容。 此值可以是字符串或接口 CommentRichContent (例如，对于提及) 的注释。
+      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
+    - id: contentType
+      description: 可选。 包含在注释中的内容类型。 默认值为枚举 `ContentType.Plain`<!-- -->.
+      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.Comment#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: 删除批注和所有连接的答复。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAuthorEmail()
+  uid: ExcelScript!ExcelScript.Comment#getAuthorEmail:member(1)
+  package: ExcelScript!
+  fullName: getAuthorEmail()
+  summary: 获取批注作者的电子邮件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAuthorEmail(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAuthorName()
+  uid: ExcelScript!ExcelScript.Comment#getAuthorName:member(1)
+  package: ExcelScript!
+  fullName: getAuthorName()
+  summary: 获取批注作者的姓名。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAuthorName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getCommentReply(commentReplyId)
+  uid: ExcelScript!ExcelScript.Comment#getCommentReply:member(1)
+  package: ExcelScript!
+  fullName: getCommentReply(commentReplyId)
+  summary: 返回由其 ID 标识的批注回复。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCommentReply(commentReplyId: string): CommentReply;'
+    parameters:
+    - id: commentReplyId
+      description: 批注答复的标识符。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
+      description: ''
+- name: getContent()
+  uid: ExcelScript!ExcelScript.Comment#getContent:member(1)
+  package: ExcelScript!
+  fullName: getContent()
+  summary: 批注的内容。 字符串为纯文本。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getContent(): string;'
+    return:
+      type: string
+      description: ''
+- name: getContentType()
+  uid: ExcelScript!ExcelScript.Comment#getContentType:member(1)
+  package: ExcelScript!
+  fullName: getContentType()
+  summary: 获取注释的内容类型。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getContentType(): ContentType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
+      description: ''
+- name: getCreationDate()
+  uid: ExcelScript!ExcelScript.Comment#getCreationDate:member(1)
+  package: ExcelScript!
+  fullName: getCreationDate()
+  summary: 获取批注的创建时间。 如果批注是从备注转换而来的，则返回 null，因为批注没有创建日期。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCreationDate(): Date;'
+    return:
+      type: Date
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Comment#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: 指定注释标识符。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getLocation()
+  uid: ExcelScript!ExcelScript.Comment#getLocation:member(1)
+  package: ExcelScript!
+  fullName: getLocation()
+  summary: 获取此注释所在的单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocation(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getMentions()
+  uid: ExcelScript!ExcelScript.Comment#getMentions:member(1)
+  package: ExcelScript!
+  fullName: getMentions()
+  summary: 获取实体 (例如，在注释中提到的人) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMentions(): CommentMention[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CommentMention:interface" />[]
+      description: ''
+- name: getReplies()
+  uid: ExcelScript!ExcelScript.Comment#getReplies:member(1)
+  package: ExcelScript!
+  fullName: getReplies()
+  summary: 表示与批注关联的回复对象的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReplies(): CommentReply[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />[]
+      description: ''
+- name: getResolved()
+  uid: ExcelScript!ExcelScript.Comment#getResolved:member(1)
+  package: ExcelScript!
+  fullName: getResolved()
+  summary: 注释线程状态。 值为 "true" 表示解析注释线程。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getResolved(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getRichContent()
+  uid: ExcelScript!ExcelScript.Comment#getRichContent:member(1)
+  package: ExcelScript!
+  fullName: getRichContent()
+  summary: 获取丰富的注释内容 (例如，注释) 中提及。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRichContent(): string;'
+    return:
+      type: string
+      description: ''
+- name: setContent(content)
+  uid: ExcelScript!ExcelScript.Comment#setContent:member(1)
+  package: ExcelScript!
+  fullName: setContent(content)
+  summary: 批注的内容。 字符串为纯文本。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setContent(content: string): void;'
+    parameters:
+    - id: content
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setResolved(resolved)
+  uid: ExcelScript!ExcelScript.Comment#setResolved:member(1)
+  package: ExcelScript!
+  fullName: setResolved(resolved)
+  summary: 注释线程状态。 值为 "true" 表示解析注释线程。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setResolved(resolved: boolean): void;'
+    parameters:
+    - id: resolved
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: updateMentions(contentWithMentions)
+  uid: ExcelScript!ExcelScript.Comment#updateMentions:member(1)
+  package: ExcelScript!
+  fullName: updateMentions(contentWithMentions)
+  summary: 使用特殊格式的字符串和提及列表更新注释内容。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
+    parameters:
+    - id: contentWithMentions
+      description: 批注的内容。 这包含一个特殊格式的字符串和在 Excel 显示时将解析为字符串的提及的列表。
+      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 99f2cf48b37e0d1b0db82fa78492b823e4d5eee7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415972"

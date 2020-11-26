@@ -1,118 +1,108 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartFont:interface'
-    summary: 此对象表示 chart 对象的字体属性（字体名称、字体大小、颜色等）。
-    name: Excel.ChartFont
-    fullName: Excel.ChartFont
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartFont#bold:member'
-      - 'excel!Excel.ChartFont#color:member'
-      - 'excel!Excel.ChartFont#italic:member'
-      - 'excel!Excel.ChartFont#load:member(1)'
-      - 'excel!Excel.ChartFont#name:member'
-      - 'excel!Excel.ChartFont#size:member'
-      - 'excel!Excel.ChartFont#underline:member'
-  - uid: 'excel!Excel.ChartFont#bold:member'
-    summary: 表示字体的加粗状态。
-    name: bold
-    fullName: bold
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bold: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartFont#color:member'
-    summary: 文本颜色的 HTML 颜色代码表示形式（例如， \# FF0000 表示红色）。
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartFont#italic:member'
-    summary: 表示字体的斜体状态。
-    name: italic
-    fullName: italic
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'italic: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartFont#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartFont#name:member'
-    summary: 字体名称（例如，"Calibri"）
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartFont#size:member'
-    summary: 字体大小（例如，11）
-    name: size
-    fullName: size
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'size: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartFont#underline:member'
-    summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ChartUnderlineStyle。
-    name: underline
-    fullName: underline
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'underline: ChartUnderlineStyle | "None" | "Single";'
-      return:
-        type:
-          - 'excel!Excel.ChartFont#underline~0:complex'
-references:
-  - uid: 'excel!Excel.ChartFont#underline~0:complex'
-    name: ChartUnderlineStyle | "None" | "Single"
-    fullName: Excel.ChartUnderlineStyle | "None" | "Single"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartUnderlineStyle:enum'
-        name: ChartUnderlineStyle
-        fullName: Excel.ChartUnderlineStyle
-      - name: ' | "None" | "Single"'
-        fullName: ' | "None" | "Single"'
+### YamlMime:TSType
+name: Excel.ChartFont
+uid: excel!Excel.ChartFont:interface
+package: excel!
+fullName: Excel.ChartFont
+summary: 此对象表示 chart 对象的字体属性（字体名称、字体大小、颜色等）。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bold
+  uid: excel!Excel.ChartFont#bold:member
+  package: excel!
+  fullName: bold
+  summary: 表示字体的加粗状态。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bold: boolean;'
+    return:
+      type: boolean
+- name: color
+  uid: excel!Excel.ChartFont#color:member
+  package: excel!
+  fullName: color
+  summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color: string;'
+    return:
+      type: string
+- name: italic
+  uid: excel!Excel.ChartFont#italic:member
+  package: excel!
+  fullName: italic
+  summary: 表示字体的斜体状态。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'italic: boolean;'
+    return:
+      type: boolean
+- name: name
+  uid: excel!Excel.ChartFont#name:member
+  package: excel!
+  fullName: name
+  summary: '字体名称 (例如，"Calibri" ) '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: size
+  uid: excel!Excel.ChartFont#size:member
+  package: excel!
+  fullName: size
+  summary: '字体大小 (例如，11) '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'size: number;'
+    return:
+      type: number
+- name: underline
+  uid: excel!Excel.ChartFont#underline:member
+  package: excel!
+  fullName: underline
+  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ChartUnderlineStyle。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'underline: ChartUnderlineStyle | "None" | "Single";'
+    return:
+      type: <xref uid="excel!Excel.ChartUnderlineStyle:enum" /> | "None" | "Single"
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartFont#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 7938a508b68d256bd79cd23527c28bac24fea7ce
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417573"
