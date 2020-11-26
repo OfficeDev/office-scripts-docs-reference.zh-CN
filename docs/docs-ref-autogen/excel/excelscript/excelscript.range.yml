@@ -1,2375 +1,1728 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    summary: 区域表示一个或多个相邻的单元格，如单元格、行、列、单元格块等。
-    name: ExcelScript.Range
-    fullName: ExcelScript.Range
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#autoFill:member(1)'
-      - 'ExcelScript!ExcelScript.Range#calculate:member(1)'
-      - 'ExcelScript!ExcelScript.Range#clear:member(1)'
-      - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
-      - 'ExcelScript!ExcelScript.Range#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Range#find:member(1)'
-      - 'ExcelScript!ExcelScript.Range#flashFill:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getAddress:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getAddressLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getBoundingRect:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getCell:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getCellCount:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnCount:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnIndex:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getDataValidation:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormula:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getHyperlink:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getImage:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getIntersection:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLastCell:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLastColumn:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLastRow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getOffsetRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getResizedRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowCount:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowIndex:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowsAbove:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSort:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getTables:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getTexts:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getUsedRange:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getValue:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getValues:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getValueType:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getValueTypes:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getVisibleView:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.Range#getWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.Range#group:member(1)'
-      - 'ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)'
-      - 'ExcelScript!ExcelScript.Range#insert:member(1)'
-      - 'ExcelScript!ExcelScript.Range#merge:member(1)'
-      - 'ExcelScript!ExcelScript.Range#moveTo:member(1)'
-      - 'ExcelScript!ExcelScript.Range#removeDuplicates:member(1)'
-      - 'ExcelScript!ExcelScript.Range#replaceAll:member(1)'
-      - 'ExcelScript!ExcelScript.Range#select:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setColumnHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setDirty:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormula:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulas:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setHyperlink:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setNumberFormats:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setRowHidden:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-      - 'ExcelScript!ExcelScript.Range#setValues:member(1)'
-      - 'ExcelScript!ExcelScript.Range#showCard:member(1)'
-      - 'ExcelScript!ExcelScript.Range#showGroupDetails:member(1)'
-      - 'ExcelScript!ExcelScript.Range#ungroup:member(1)'
-      - 'ExcelScript!ExcelScript.Range#unmerge:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)'
-    summary: 将新的条件格式添加到集合中的第一个/最高优先级处。
-    name: addConditionalFormat(type)
-    fullName: addConditionalFormat(type)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This sample applies conditional formatting to the currently used range in the worksheet. 
-           * The conditional formatting is a green fill for the top 10% of values.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Get the used range in the worksheet.
-            let range = selectedSheet.getUsedRange();
-
-            // Set the fill color to green for the top 10% of values in the range.
-            let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)
-            conditionalFormat.getTopBottom().getFormat().getFill().setColor("green");
-            conditionalFormat.getTopBottom().setRule({
-              rank: 10, // The percentage threshold.
-              type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.
-            });
-          }
-          ```
-      parameters:
-        - id: type
-          description: 要添加的条件格式的类型。 有关详细信息，请参阅 ExcelScript。
-          type:
-            - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#autoFill:member(1)'
-    summary: 使用指定的自动填充逻辑将范围从当前范围填充到目标区域。 目标区域可以是 null，也可以是水平或垂直扩展源。 不支持不连续的区域。
-    name: 'autoFill(destinationRange, autoFillType)'
-    fullName: 'autoFill(destinationRange, autoFillType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        autoFill(
-                    destinationRange?: Range | string,
-                    autoFillType?: AutoFillType
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: destinationRange
-          description: 要自动填充的目标区域。 如果目标区域为 null，则数据将根据周围的单元格进行填充 (这是双击 UI 的区域填充柄) 时的行为。
-          type:
-            - 'ExcelScript!ExcelScript.Range#autoFill~0:complex'
-        - id: autoFillType
-          description: 自动填充的类型。 根据当前区域的内容，指定目标区域的填充方式。 默认值为 "FillDefault"。
-          type:
-            - 'ExcelScript!ExcelScript.AutoFillType:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#calculate:member(1)'
-    summary: 计算工作表上的单元格区域。
-    name: calculate()
-    fullName: calculate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#clear:member(1)'
-    summary: 清除区域值、格式、填充、边框等。
-    name: clear(applyTo)
-    fullName: clear(applyTo)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(applyTo?: ClearApplyTo): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This script removes all the formatting from the selected range.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the selected range.
-            let range = workbook.getSelectedRange();
-
-            // Clear all the formatting in that range.
-            range.clear(ExcelScript.ClearApplyTo.formats);
-          }
-          ```
-      parameters:
-        - id: applyTo
-          description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ExcelScript。
-          type:
-            - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
-    summary: 清除当前指定区域中处于活动状态的所有条件格式。
-    name: clearAllConditionalFormats()
-    fullName: clearAllConditionalFormats()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearAllConditionalFormats(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-    summary: 将具有数据类型的区域单元格转换为文本。
-    name: convertDataTypeToText()
-    fullName: convertDataTypeToText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertDataTypeToText(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
-    summary: 将单元格数据或格式从源区域或 RangeAreas 复制到当前区域。 目标区域的大小可以与源区域或 RangeAreas 的大小不同。 如果目标小于源，则将自动扩展目标。
-    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        copyFrom(
-                    sourceRange: Range | RangeAreas | string,
-                    copyType?: RangeCopyType,
-                    skipBlanks?: boolean,
-                    transpose?: boolean
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceRange
-          description: 要从其复制的源区域或 RangeAreas。 当源 RangeAreas 有多个区域时，必须通过删除矩形区域中的完整行或列来创建窗体。
-          type:
-            - 'ExcelScript!ExcelScript.Range#copyFrom~0:complex'
-        - id: copyType
-          description: 要复制的单元格数据的类型或格式。 默认值为 "All"。
-          type:
-            - 'ExcelScript!ExcelScript.RangeCopyType:enum'
-        - id: skipBlanks
-          description: 如果为 True，则在源区域中跳过空白单元格。 默认为 false。
-          type:
-            - boolean
-        - id: transpose
-          description: 如此如果要转置目标区域中的单元格。 默认为 false。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#delete:member(1)'
-    summary: 删除与区域相关的单元格。
-    name: delete(shift)
-    fullName: delete(shift)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(shift: DeleteShiftDirection): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: shift
-          description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript。
-          type:
-            - 'ExcelScript!ExcelScript.DeleteShiftDirection:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#find:member(1)'
-    summary: 根据指定的条件查找给定的字符串。 如果当前范围大于单个单元格，则搜索将限制为该范围，否则搜索将覆盖该单元格的所有起始工作表。 如果没有匹配项，则此函数将返回一个 null 对象。
-    name: 'find(text, criteria)'
-    fullName: 'find(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'find(text: string, criteria: SearchCriteria): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: text
-          description: 要查找的字符串。
-          type:
-            - string
-        - id: criteria
-          description: 其他搜索条件，包括搜索方向以及搜索是否需要匹配整个单元格或是否区分大小写。
-          type:
-            - 'ExcelScript!ExcelScript.SearchCriteria:interface'
-  - uid: 'ExcelScript!ExcelScript.Range#flashFill:member(1)'
-    summary: 对当前区域进行快速填充。快速填充在感知到模式时可自动填充数据，因此该区域必须是单列区域且周围有数据以便查找模式。
-    name: flashFill()
-    fullName: flashFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'flashFill(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)'
-    summary: 获取一个 Range 对象，该对象的左上单元格与当前 Range 对象相同，但具有指定的行数和列数。
-    name: 'getAbsoluteResizedRange(numRows, numColumns)'
-    fullName: 'getAbsoluteResizedRange(numRows, numColumns)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: numRows
-          description: 新范围大小的行数。
-          type:
-            - number
-        - id: numColumns
-          description: 新范围大小的列数。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getAddress:member(1)'
-    summary: 指定 A1 样式中的区域引用。 Address 值将包含工作表引用 (例如，"Sheet1！A1： B4 ") 。
-    name: getAddress()
-    fullName: getAddress()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAddress(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getAddressLocal:member(1)'
-    summary: 以用户语言指定区域的区域引用。
-    name: getAddressLocal()
-    fullName: getAddressLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAddressLocal(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getBoundingRect:member(1)'
-    summary: '获取包含指定区域的最小 range 对象。 例如，“B2:C5”和“D10:E15”的 GetBoundingRect 为“B2:E15”。'
-    name: getBoundingRect(anotherRange)
-    fullName: getBoundingRect(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBoundingRect(anotherRange: Range | string): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: range 对象或地址或区域名称。
-          type:
-            - 'ExcelScript!ExcelScript.Range#getBoundingRect~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Range#getCell:member(1)'
-    summary: 根据行和列编号获取包含单个单元格的 range 对象。 单元格可以位于其父区域的边界之外，但前提是它停留在工作表网格中。 返回的单元格位于相对于区域左上角的单元格的位置。
-    name: 'getCell(row, column)'
-    fullName: 'getCell(row, column)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCell(row: number, column: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: 要检索的单元格的行号。 从零开始编制索引。
-          type:
-            - number
-        - id: column
-          description: 要检索的单元格的列号。 从零开始编制索引。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getCellCount:member(1)'
-    summary: '指定区域中的单元格的数目。 如果单元格数超过 2^31-1 (2,147,483,647)，此 API 返回 -1。'
-    name: getCellCount()
-    fullName: getCellCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCellCount(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getColumn:member(1)'
-    summary: 获取范围中包含的列。
-    name: getColumn(column)
-    fullName: getColumn(column)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumn(column: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: column
-          description: 要检索的区域的列号。 从零开始编制索引。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnCount:member(1)'
-    summary: 指定区域中的总列数。
-    name: getColumnCount()
-    fullName: getColumnCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnCount(): number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This sample provides the count of negative numbers that are present
-           * in the used range of the current worksheet.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the working range.
-            let usedRange = workbook.getActiveWorksheet().getUsedRange();
-            let rowCount = usedRange.getRowCount();
-            let columnCount = usedRange.getColumnCount();
-
-            // Save the values locally to avoid repeatedly asking the workbook.
-            let usedRangeValues = usedRange.getValues();
-
-            // Start the negative number counter.
-            let negativeCount = 0;
-
-            // Iterate over the entire range looking for negative numbers.
-            for (let i = 0; i < rowCount; i++) {
-              for (let j = 0; j < columnCount; j++) {
-                if (usedRangeValues[i][j] < 0) {
-                  negativeCount++;
-                }
-              }
-            }
-
-            // Log the negative number count to the console.
-            console.log(negativeCount);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnHidden:member(1)'
-    summary: 表示当前区域中的所有列是否隐藏。
-    name: getColumnHidden()
-    fullName: getColumnHidden()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnHidden(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnIndex:member(1)'
-    summary: 指定区域中的第一个单元格的列号。 从零开始编制索引。
-    name: getColumnIndex()
-    fullName: getColumnIndex()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnIndex(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)'
-    summary: 获取当前范围对象右侧的一定数量的列。
-    name: getColumnsAfter(count)
-    fullName: getColumnsAfter(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnsAfter(count?: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)'
-    summary: 获取当前范围对象左侧的一定数量的列。
-    name: getColumnsBefore(count)
-    fullName: getColumnsBefore(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnsBefore(count?: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
-    summary: 返回给定 ID 的条件格式。
-    name: getConditionalFormat(id)
-    fullName: getConditionalFormat(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getConditionalFormat(id: string): ConditionalFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        description: ''
-      parameters:
-        - id: id
-          description: 条件格式的 id。
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)'
-    summary: 与该范围相交的 ConditionalFormats 的集合。
-    name: getConditionalFormats()
-    fullName: getConditionalFormats()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getConditionalFormats(): ConditionalFormat[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getConditionalFormats~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getDataValidation:member(1)'
-    summary: 返回数据有效性对象。
-    name: getDataValidation()
-    fullName: getDataValidation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataValidation(): DataValidation;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidation:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
-    summary: 返回一个 WorkbookRangeAreas 对象，该对象代表包含同一工作表或多个工作表中的单元格的所有直接引用单元格的区域。
-    name: getDirectPrecedents()
-    fullName: getDirectPrecedents()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDirectPrecedents(): WorkbookRangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
-    summary: '获取一个对象，该对象表示区域中 (的整列。例如，如果当前区域表示单元格 "B4： E11"， `getEntireColumn` 则它是表示列 "B:E" 的区域 ) 。'
-    name: getEntireColumn()
-    fullName: getEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireColumn(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
-    summary: '获取表示区域中整行的对象 (例如，如果当前区域表示单元格 "B4： E11"， `GetEntireRow` 则它是表示行 "4:11" ) 的区域。'
-    name: getEntireRow()
-    fullName: getEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireRow(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormat:member(1)'
-    summary: 返回一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): RangeFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormula:member(1)'
-    summary: 代表 A1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
-    name: getFormula()
-    fullName: getFormula()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormula(): string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /*
-           * This script sets a cell's formula, 
-           * then displays how Excel stores the cell's formula and value separately.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Set A1 to 2.
-            let a1 = selectedSheet.getRange("A1");
-            a1.setValue(2);
-
-            // Set B1 to the formula =(2*A1), which should equal 4.
-            let b1 = selectedSheet.getRange("B1")
-            b1.setFormula("=(2*A1)");
-
-            // Log the current results for `getFormula` and `getValue` at B1.
-            console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)'
-    summary: '代表 A1 样式表示法中的单元格公式，位于用户的语言和数字格式区域设置中。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。'
-    name: getFormulaLocal()
-    fullName: getFormulaLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulaLocal(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)'
-    summary: 代表 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
-    name: getFormulaR1C1()
-    fullName: getFormulaR1C1()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulaR1C1(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
-    summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回它的值。
-    name: getFormulas()
-    fullName: getFormulas()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulas(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-    summary: '表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回它的值。'
-    name: getFormulasLocal()
-    fullName: getFormulasLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulasLocal(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
-    summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回它的值。
-    name: getFormulasR1C1()
-    fullName: getFormulasR1C1()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormulasR1C1(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
-    summary: 表示所有单元格是否都具有溢出边框。 如果所有单元格都有溢出边框，则返回 true; 如果所有单元格都没有溢出边框，则返回 false。 如果区域中有和没有溢出边框的单元格，则返回 null。
-    name: getHasSpill()
-    fullName: getHasSpill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHasSpill(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
-    summary: 返回从区域的上边缘到区域的下边缘的 100％ 缩放的距离（以磅为单位）。
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getHidden:member(1)'
-    summary: 表示当前区域中的所有单元格是否隐藏。
-    name: getHidden()
-    fullName: getHidden()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHidden(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getHyperlink:member(1)'
-    summary: 表示当前区域的超链接。
-    name: getHyperlink()
-    fullName: getHyperlink()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHyperlink(): RangeHyperlink;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getImage:member(1)'
-    summary: '将区域呈现为 base64 编码的 png 图像。 **重要说明**： Excel for Mac 中目前不支持此 API。 \[有关当前状态，请访问 OfficeDev/office-Js 问题 \# 235 \] (https://github.com/OfficeDev/office-js/issues/235) 。'
-    name: getImage()
-    fullName: getImage()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getImage(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getIntersection:member(1)'
-    summary: 获取表示指定区域的矩形交集的 range 对象。 如果找不到任何交集，则此方法返回空对象。
-    name: getIntersection(anotherRange)
-    fullName: getIntersection(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntersection(anotherRange: Range | string): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: 将用于确定区域交集的 range 对象或区域地址。
-          type:
-            - 'ExcelScript!ExcelScript.Range#getIntersection~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)'
-    summary: 表示当前区域是否为整列。
-    name: getIsEntireColumn()
-    fullName: getIsEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsEntireColumn(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)'
-    summary: 表示当前区域是否为整行。
-    name: getIsEntireRow()
-    fullName: getIsEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsEntireRow(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLastCell:member(1)'
-    summary: '获取区域内的最后一个单元格。 例如，“B2:D5”的最后一个单元格是“D5”。'
-    name: getLastCell()
-    fullName: getLastCell()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastCell(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLastColumn:member(1)'
-    summary: '获取区域内的最后一列。 例如，“B2:D5”的最后一列是“D2:D5”。'
-    name: getLastColumn()
-    fullName: getLastColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastColumn(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLastRow:member(1)'
-    summary: '获取区域内的最后一行。 例如，“B2:D5”的最后一行是“B5:D5”。'
-    name: getLastRow()
-    fullName: getLastRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastRow(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLeft:member(1)'
-    summary: 返回从工作表的左边缘到区域的左边缘的 100％ 缩放的距离（以磅为单位）。
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)'
-    summary: 表示单元格的数据类型状态。
-    name: getLinkedDataTypeState()
-    fullName: getLinkedDataTypeState()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLinkedDataTypeState(): LinkedDataTypeState;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.LinkedDataTypeState:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)'
-    summary: 表示每个单元格的数据类型状态。
-    name: getLinkedDataTypeStates()
-    fullName: getLinkedDataTypeStates()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLinkedDataTypeStates(): LinkedDataTypeState[][];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
-    summary: 返回一个 RangeAreas 对象，该对象代表此区域中的合并区域。 请注意，如果此范围中的合并区域计数超过512，API 将无法返回结果。
-    name: getMergedAreas()
-    fullName: getMergedAreas()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMergedAreas(): RangeAreas;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
-    summary: 表示给定范围的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
-    name: getNumberFormat()
-    fullName: getNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormat(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
-    summary: 表示每个单元格的数字格式的类别。
-    name: getNumberFormatCategories()
-    fullName: getNumberFormatCategories()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
-    summary: 表示给定范围的单元格 Excel 数字格式代码（基于用户的语言设置）。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
-    name: getNumberFormatLocal()
-    fullName: getNumberFormatLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormatLocal(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
-    summary: 表示给定范围的 Excel 数字格式代码。
-    name: getNumberFormats()
-    fullName: getNumberFormats()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormats(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
-    summary: 根据用户的语言设置，表示给定范围的 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。
-    name: getNumberFormatsLocal()
-    fullName: getNumberFormatsLocal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormatsLocal(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getOffsetRange:member(1)'
-    summary: 获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与此区域一致。如果强制在工作表网格的边界之外生成区域，将引发错误。
-    name: 'getOffsetRange(rowOffset, columnOffset)'
-    fullName: 'getOffsetRange(rowOffset, columnOffset)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This script gets adjacent cells using relative references.
-           * Note that if the active cell is on the top row, part of the script fails, 
-           * because it references the cell above the currently selected one.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the currently active cell in the workbook.
-            let activeCell = workbook.getActiveCell();
-            console.log(`The active cell's address is: ${activeCell.getAddress()}`);
-
-            // Get the cell to the right of the active cell and set its value and color.
-            let rightCell = activeCell.getOffsetRange(0,1);
-            rightCell.setValue("Right cell");
-            console.log(`The right cell's address is: ${rightCell.getAddress()}`);
-            rightCell.getFormat().getFont().setColor("Magenta");
-            rightCell.getFormat().getFill().setColor("Cyan");
-
-            // Get the cell to the above of the active cell and set its value and color.
-            // Note that this operation will fail if the active cell is in the top row.
-            let aboveCell = activeCell.getOffsetRange(-1, 0);
-            aboveCell.setValue("Above cell");
-            console.log(`The above cell's address is: ${aboveCell.getAddress()}`);
-            aboveCell.getFormat().getFont().setColor("White");
-            aboveCell.getFormat().getFill().setColor("Black");
-          }
-          ```
-      parameters:
-        - id: rowOffset
-          description: 区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。
-          type:
-            - number
-        - id: columnOffset
-          description: 区域偏移的列数（正数、负数或 0）。正数表示向右偏移，负数表示向左偏移。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
-    summary: 获取与区域重叠的数据透视表的限定集合。
-    name: getPivotTables(fullyContained)
-    fullName: getPivotTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: 如果为 true，则仅返回完全包含在区域边界内的数据透视表。 默认值为 false。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)'
-    summary: 表示当前区域的样式。 如果单元格的样式不一致，则将返回 null。 对于自定义样式，将返回样式名称。 对于内置样式，将返回一个表示 BuiltInStyle 枚举中的值的字符串。
-    name: getPredefinedCellStyle()
-    fullName: getPredefinedCellStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPredefinedCellStyle(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getResizedRange:member(1)'
-    summary: 获取与当前范围对象类似的范围对象，但其右下角可通过一定数量的行和列进行展开（或合拢）。
-    name: 'getResizedRange(deltaRows, deltaColumns)'
-    fullName: 'getResizedRange(deltaRows, deltaColumns)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This script copies the formatting in the active cell to the neighboring cells.
-           * Note that this script only works when the active cell isn't on an edge of the worksheet.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the active cell.
-            let activeCell = workbook.getActiveCell();
-
-            // Get the cell that's one row above and one column to the left of the active cell.
-            let cornerCell = activeCell.getOffsetRange(-1,-1);
-
-            // Get a range that includes all the cells surrounding the active cell.
-            let surroundingRange = cornerCell.getResizedRange(2, 2)
-
-            // Copy the formatting from the active cell to the new range.
-            surroundingRange.copyFrom(
-              activeCell, /* The source range. */
-              ExcelScript.RangeCopyType.formats /* What to copy. */
-              );
-          }
-          ```
-      parameters:
-        - id: deltaRows
-          description: 相对于当前范围，展开右下角的行数。使用正数可展开范围，使用负数可合拢范围。
-          type:
-            - number
-        - id: deltaColumns
-          description: 相对于当前范围，从右下角扩展的列数。 使用正数可展开范围，使用负数可合拢范围。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getRow:member(1)'
-    summary: 获取范围中包含的行。
-    name: getRow(row)
-    fullName: getRow(row)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRow(row: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: 要检索的区域的行号。 从零开始编制索引。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getRowCount:member(1)'
-    summary: 返回区域中的总行数。
-    name: getRowCount()
-    fullName: getRowCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowCount(): number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This sample provides the count of negative numbers that are present
-           * in the used range of the current worksheet.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the working range.
-            let usedRange = workbook.getActiveWorksheet().getUsedRange();
-            let rowCount = usedRange.getRowCount();
-            let columnCount = usedRange.getColumnCount();
-
-            // Save the values locally to avoid repeatedly asking the workbook.
-            let usedRangeValues = usedRange.getValues();
-
-            // Start the negative number counter.
-            let negativeCount = 0;
-
-            // Iterate over the entire range looking for negative numbers.
-            for (let i = 0; i < rowCount; i++) {
-              for (let j = 0; j < columnCount; j++) {
-                if (usedRangeValues[i][j] < 0) {
-                  negativeCount++;
-                }
-              }
-            }
-
-            // Log the negative number count to the console.
-            console.log(negativeCount);
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Range#getRowHidden:member(1)'
-    summary: 表示当前区域中的所有行是否隐藏。
-    name: getRowHidden()
-    fullName: getRowHidden()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowHidden(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getRowIndex:member(1)'
-    summary: 返回区域中第一个单元格的行编号。 从零开始编制索引。
-    name: getRowIndex()
-    fullName: getRowIndex()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowIndex(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getRowsAbove:member(1)'
-    summary: 获取当前范围对象上方的一定数量的行。
-    name: getRowsAbove(count)
-    fullName: getRowsAbove(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowsAbove(count?: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
-    summary: 获取当前范围对象下方的一定数量的行。
-    name: getRowsBelow(count)
-    fullName: getRowsBelow(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowsBelow(count?: number): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
-    summary: 表示是否将所有单元格都保存为数组公式。 如果所有单元格都将保存为数组公式，则返回 true; 如果不将所有单元格保存为数组公式，则返回 false。 如果某些单元格将另存为数组公式，则返回 null，而某些单元格则不是。
-    name: getSavedAsArray()
-    fullName: getSavedAsArray()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSavedAsArray(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getSort:member(1)'
-    summary: 表示当前 range 的区域排序。
-    name: getSort()
-    fullName: getSort()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSort(): RangeSort;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeSort:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
-    summary: 获取包含一个或多个区域的 RangeAreas 对象，它表示匹配指定类型和值的所有单元格。 如果找不到特殊单元格，则返回 null 对象。
-    name: 'getSpecialCells(cellType, cellValueType)'
-    fullName: 'getSpecialCells(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getSpecialCells(
-                    cellType: SpecialCellType,
-                    cellValueType?: SpecialCellValueType
-                ): RangeAreas;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: cellType
-          description: 要包含的单元格的类型。
-          type:
-            - 'ExcelScript!ExcelScript.SpecialCellType:enum'
-        - id: cellValueType
-          description: 如果 cellType 为常量或公式，则此参数用于确定要在结果中包含哪些类型的单元格。 可以将这些值组合在一起，以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
-          type:
-            - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
-    summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果区域不是定位单元格或溢出区域，则返回 null 对象。
-    name: getSpillingToRange()
-    fullName: getSpillingToRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSpillingToRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
-    summary: 获取 Range 对象，它包含要将某个单元格溢出到的定位单元格。 如果不是溢出单元格或多个单元格给出了一个值，则返回 null 对象。
-    name: getSpillParent()
-    fullName: getSpillParent()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSpillParent(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
-    summary: 返回一个 Range 对象，该对象表示此区域左上单元格的周围区域。 周围区域是由相对于该区域的空白行和空白列的任何组合所限定的区域。
-    name: getSurroundingRegion()
-    fullName: getSurroundingRegion()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSurroundingRegion(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getTables:member(1)'
-    summary: 获取与区域重叠的限定范围的表格集合。
-    name: getTables(fullyContained)
-    fullName: getTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(fullyContained?: boolean): Table[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getTables~0:complex'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: 如果为 true，则仅返回完全包含在区域边界内的表。 默认值为 false。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#getText:member(1)'
-    summary: 代表指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getTexts:member(1)'
-    summary: 指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。
-    name: getTexts()
-    fullName: getTexts()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTexts(): string[][];'
-      return:
-        type:
-          - 'string[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getTop:member(1)'
-    summary: 返回从工作表的上边缘到区域的上边缘的 100％ 缩放的距离（以磅为单位）。
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getUsedRange:member(1)'
-    summary: 返回指定 Range 对象的所用区域。如果区域内没有使用单元格，此函数将返回 NULL 对象。
-    name: getUsedRange(valuesOnly)
-    fullName: getUsedRange(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRange(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: 仅将有值的单元格视为已使用的单元格。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#getValue:member(1)'
-    summary: 表示指定范围的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
-    name: getValue()
-    fullName: getValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValue(): any;'
-      return:
-        type:
-          - any
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This sample reads the value of A1 and prints it to the console.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Get the value of cell A1.
-            let range = selectedSheet.getRange("A1");
-            
-            // Print the value of A1.
-            console.log(range.getValue());
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.Range#getValues:member(1)'
-    summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
-    name: getValues()
-    fullName: getValues()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValues(): any[][];'
-      return:
-        type:
-          - 'any[][]'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getValueType:member(1)'
-    summary: 表示单元格中的数据的类型。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
-    name: getValueType()
-    fullName: getValueType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValueType(): RangeValueType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeValueType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getValueTypes:member(1)'
-    summary: 指定每个单元格中的数据类型。
-    name: getValueTypes()
-    fullName: getValueTypes()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValueTypes(): RangeValueType[][];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range#getValueTypes~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getVisibleView:member(1)'
-    summary: 表示当前 range 对象的可见行。
-    name: getVisibleView()
-    fullName: getVisibleView()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisibleView(): RangeView;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RangeView:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getWidth:member(1)'
-    summary: 返回从区域的左边缘到区域的右边缘的 100％ 缩放的距离（以磅为单位）。
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#getWorksheet:member(1)'
-    summary: 包含当前区域的工作表。
-    name: getWorksheet()
-    fullName: getWorksheet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWorksheet(): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#group:member(1)'
-    summary: 对列和行进行分组以进行分级显示。
-    name: group(groupOption)
-    fullName: group(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'group(groupOption: GroupOption): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: 指定如何按行或列对区域进行分组。 `InvalidArgument`当组选项与范围或属性不同时，将引发错误 `isEntireRow` `isEntireColumn` (也就是说， `range.isEntireRow` 为 True 且 `groupOption` 为 "ByColumns"，或者为 `range.isEntireColumn` `groupOption` "ByRows" ) 。
-          type:
-            - 'ExcelScript!ExcelScript.GroupOption:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)'
-    summary: 隐藏行或列组的详细信息。
-    name: hideGroupDetails(groupOption)
-    fullName: hideGroupDetails(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'hideGroupDetails(groupOption: GroupOption): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: 指定是否隐藏分组行或分组列的详细信息。
-          type:
-            - 'ExcelScript!ExcelScript.GroupOption:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#insert:member(1)'
-    summary: 将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。
-    name: insert(shift)
-    fullName: insert(shift)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'insert(shift: InsertShiftDirection): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-      parameters:
-        - id: shift
-          description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript。
-          type:
-            - 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#merge:member(1)'
-    summary: 将范围单元格合并到工作表的一个区域内。
-    name: merge(across)
-    fullName: merge(across)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'merge(across?: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: across
-          description: 可选。 如果为 True，则将指定区域中每一行的单元格合并为一个单独的合并单元格。 默认值是 false。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#moveTo:member(1)'
-    summary: 将单元格的值、格式和公式从当前区域移动到目标区域，替换这些单元格中的旧信息。 如果目标区域小于当前区域，则将自动扩展目标区域。 原始区域区域以外的目标区域中的任何单元格都不会更改。
-    name: moveTo(destinationRange)
-    fullName: moveTo(destinationRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'moveTo(destinationRange: Range | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: destinationRange
-          description: destinationRange 指定此范围中的信息将移动到的范围。
-          type:
-            - 'ExcelScript!ExcelScript.Range#moveTo~0:complex'
-  - uid: 'ExcelScript!ExcelScript.Range#removeDuplicates:member(1)'
-    summary: 从列指定的区域中删除重复值。
-    name: 'removeDuplicates(columns, includesHeader)'
-    fullName: 'removeDuplicates(columns, includesHeader)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        removeDuplicates(
-                    columns: number[],
-                    includesHeader: boolean
-                ): RemoveDuplicatesResult;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
-        description: ''
-      parameters:
-        - id: columns
-          description: 区域中可能包含重复项的列。 至少需要指定一个列。 从零开始编制索引。
-          type:
-            - 'number[]'
-        - id: includesHeader
-          description: 如果输入数据包含标头，则为 True。 默认为 false。
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#replaceAll:member(1)'
-    summary: 根据当前区域内指定的条件查找并替换给定的字符串。
-    name: 'replaceAll(text, replacement, criteria)'
-    fullName: 'replaceAll(text, replacement, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        replaceAll(
-                    text: string,
-                    replacement: string,
-                    criteria: ReplaceCriteria
-                ): number;
-      return:
-        type:
-          - number
-        description: ''
-      parameters:
-        - id: text
-          description: 要查找的字符串。
-          type:
-            - string
-        - id: replacement
-          description: 要将原始替换为的字符串。
-          type:
-            - string
-        - id: criteria
-          description: 其他替换条件。
-          type:
-            - 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-  - uid: 'ExcelScript!ExcelScript.Range#select:member(1)'
-    summary: 在 Excel UI 中选择指定的区域。
-    name: select()
-    fullName: select()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'select(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#setColumnHidden:member(1)'
-    summary: 表示当前区域中的所有列是否隐藏。
-    name: setColumnHidden(columnHidden)
-    fullName: setColumnHidden(columnHidden)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColumnHidden(columnHidden: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: columnHidden
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#setDirty:member(1)'
-    summary: 设置下一次重新计算发生时要重新计算的区域。
-    name: setDirty()
-    fullName: setDirty()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDirty(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#setFormula:member(1)'
-    summary: 以 A1 样式表示法设置单元格公式。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
-    name: setFormula(formula)
-    fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /*
-           * This script sets a cell's formula, 
-           * then displays how Excel stores the cell's formula and value separately.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Set A1 to 2.
-            let a1 = selectedSheet.getRange("A1");
-            a1.setValue(2);
-
-            // Set B1 to the formula =(2*A1), which should equal 4.
-            let b1 = selectedSheet.getRange("B1")
-            b1.setFormula("=(2*A1)");
-
-            // Log the current results for `getFormula` and `getValue` at B1.
-            console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);
-          }
-          ```
-      parameters:
-        - id: formula
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)'
-    summary: '在用户的语言和数字格式设置区域设置 A1 样式表示法中的单元格公式。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。'
-    name: setFormulaLocal(formulaLocal)
-    fullName: setFormulaLocal(formulaLocal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulaLocal(formulaLocal: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulaLocal
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)'
-    summary: 以 R1C1 样式表示法设置单元格公式。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
-    name: setFormulaR1C1(formulaR1C1)
-    fullName: setFormulaR1C1(formulaR1C1)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulaR1C1(formulaR1C1: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulaR1C1
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulas:member(1)'
-    summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回它的值。
-    name: setFormulas(formulas)
-    fullName: setFormulas(formulas)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulas(formulas: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulas
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-    summary: '表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回它的值。'
-    name: setFormulasLocal(formulasLocal)
-    fullName: setFormulasLocal(formulasLocal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulasLocal(formulasLocal: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulasLocal
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)'
-    summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回它的值。
-    name: setFormulasR1C1(formulasR1C1)
-    fullName: setFormulasR1C1(formulasR1C1)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formulasR1C1
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setHyperlink:member(1)'
-    summary: 表示当前区域的超链接。
-    name: setHyperlink(hyperlink)
-    fullName: setHyperlink(hyperlink)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /** 
-           * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the active cell.
-            let cell = workbook.getActiveCell();
-
-            // Get the last worksheet in the workbook.
-            // Note that this might be the current sheet if there's only one worksheet.
-            let lastSheet = workbook.getLastWorksheet();
-
-            // Get sheet name. 
-            let linkedSheetName = lastSheet.getName();
-            console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);
-
-            // Set the text for the hyperlink.
-            let value = `Click to go to: ${linkedSheetName}`;
-
-            // Create the hyperlink using that cell's value.
-            cell.setHyperlink({
-              textToDisplay: value.toString(),
-              screenTip: `Navigate to ${linkedSheetName}`,
-              documentReference: `${linkedSheetName}!A1`
-            });
-          }
-          ```
-      parameters:
-        - id: hyperlink
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-  - uid: 'ExcelScript!ExcelScript.Range#setNumberFormat:member(1)'
-    summary: 设置给定区域的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
-    name: setNumberFormat(numberFormat)
-    fullName: setNumberFormat(numberFormat)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormat(numberFormat: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormat
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)'
-    summary: 根据用户的语言设置，设置给定区域的单元格 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
-    name: setNumberFormatLocal(numberFormatLocal)
-    fullName: setNumberFormatLocal(numberFormatLocal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormatLocal
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setNumberFormats:member(1)'
-    summary: 表示给定范围的 Excel 数字格式代码。
-    name: setNumberFormats(numberFormats)
-    fullName: setNumberFormats(numberFormats)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormats(numberFormats: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormats
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)'
-    summary: 根据用户的语言设置，表示给定范围的 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。
-    name: setNumberFormatsLocal(numberFormatsLocal)
-    fullName: setNumberFormatsLocal(numberFormatsLocal)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormatsLocal(numberFormatsLocal: string[][]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormatsLocal
-          description: ''
-          type:
-            - 'string[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)'
-    summary: 表示当前区域的样式。 如果单元格的样式不一致，则将返回 null。 对于自定义样式，将返回样式名称。 对于内置样式，将返回一个表示 BuiltInStyle 枚举中的值的字符串。
-    name: setPredefinedCellStyle(predefinedCellStyle)
-    fullName: setPredefinedCellStyle(predefinedCellStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: predefinedCellStyle
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Range#setRowHidden:member(1)'
-    summary: 表示当前区域中的所有行是否隐藏。
-    name: setRowHidden(rowHidden)
-    fullName: setRowHidden(rowHidden)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRowHidden(rowHidden: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rowHidden
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 设置指定区域的原始值。 设置的数据可以是 string、number 或 boolean 类型。 `null` 值将被忽略 (在 Excel) 中未设置或覆盖。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
-    name: setValue(value)
-    fullName: setValue(value)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setValue(value: any): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: value
-          description: ''
-          type:
-            - any
-  - uid: 'ExcelScript!ExcelScript.Range#setValues:member(1)'
-    summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
-    name: setValues(values)
-    fullName: setValues(values)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setValues(values: any[][]): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```javascript
-          /**
-           * This sample inserts some pre-loaded data into a range.
-           * It also shows how to get a range that fits the data.
-           */
-           function main(workbook: ExcelScript.Workbook) {
-             // Get the active cell.
-             let currentCell = workbook.getActiveCell();
-             
-             // Calculate the range needed to fit the given data.
-             let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);
-
-             // Set range values to the data.
-             targetRange.setValues(DATA);
-
-             // Autofit the columns so the worksheet is readable. 
-             targetRange.getFormat().autofitColumns();
-           }
-
-           /* 
-            * This sample's data is in a static 2-dimensional array.
-            * You could also get the input from other ranges or sources.
-            * Note that each row must have the same number of columns to be valid. 
-            */
-           const DATA = [
-             ['Date', 'Salesperson', 'Product', 'Amount']
-             , ['3/2/2020', 'Anne', 'Pizza', '$1400']
-             , ['3/2/2020', 'Mariya', 'Pizza', '$1700']
-             , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']
-             , ['3/24/2020', 'Anne', 'Pizza', '$750']
-             , ['3/28/2020', 'Mark', 'Salads', '$510']
-             , ['4/17/2020', 'Laura', 'Salads', '$900']
-             , ['4/17/2020', 'Mariya', 'Salads', '$1600']
-             , ['4/28/2020', 'Laura', 'Sandwiches', '$680']
-           ];
-          ```
-      parameters:
-        - id: values
-          description: ''
-          type:
-            - 'any[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#showCard:member(1)'
-    summary: 显示活动单元格的卡片（如果该单元格具有富值内容）。
-    name: showCard()
-    fullName: showCard()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'showCard(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#showGroupDetails:member(1)'
-    summary: 显示行或列组的详细信息。
-    name: showGroupDetails(groupOption)
-    fullName: showGroupDetails(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'showGroupDetails(groupOption: GroupOption): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: 指定是否显示分组行或分组列的详细信息。
-          type:
-            - 'ExcelScript!ExcelScript.GroupOption:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#ungroup:member(1)'
-    summary: 取消边框的列和行的组合。
-    name: ungroup(groupOption)
-    fullName: ungroup(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'ungroup(groupOption: GroupOption): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: 指定如何将区域与行或列取消组合。
-          type:
-            - 'ExcelScript!ExcelScript.GroupOption:enum'
-  - uid: 'ExcelScript!ExcelScript.Range#unmerge:member(1)'
-    summary: 将范围单元格取消合并为各个单元格。
-    name: unmerge()
-    fullName: unmerge()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unmerge(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    name: ConditionalFormat
-    fullName: ExcelScript.ConditionalFormat
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
-    name: ConditionalFormatType
-    fullName: ExcelScript.ConditionalFormatType
-  - uid: 'ExcelScript!ExcelScript.Range#autoFill~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
-    name: AutoFillType
-    fullName: ExcelScript.AutoFillType
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
-    name: ClearApplyTo
-    fullName: ExcelScript.ClearApplyTo
-  - uid: 'ExcelScript!ExcelScript.Range#copyFrom~0:complex'
-    name: Range | RangeAreas | string
-    fullName: ExcelScript.Range | ExcelScript.RangeAreas | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-        name: RangeAreas
-        fullName: ExcelScript.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.RangeCopyType:enum'
-    name: RangeCopyType
-    fullName: ExcelScript.RangeCopyType
-  - uid: 'ExcelScript!ExcelScript.DeleteShiftDirection:enum'
-    name: DeleteShiftDirection
-    fullName: ExcelScript.DeleteShiftDirection
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
-    name: SearchCriteria
-    fullName: ExcelScript.SearchCriteria
-  - uid: 'ExcelScript!ExcelScript.Range#getBoundingRect~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.Range#getConditionalFormats~0:complex'
-    name: 'ConditionalFormat[]'
-    fullName: 'ExcelScript.ConditionalFormat[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-        name: ConditionalFormat
-        fullName: ExcelScript.ConditionalFormat
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    name: DataValidation
-    fullName: ExcelScript.DataValidation
-  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
-    name: WorkbookRangeAreas
-    fullName: ExcelScript.WorkbookRangeAreas
-  - uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
-    name: RangeFormat
-    fullName: ExcelScript.RangeFormat
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-    name: RangeHyperlink
-    fullName: ExcelScript.RangeHyperlink
-  - uid: 'ExcelScript!ExcelScript.Range#getIntersection~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.LinkedDataTypeState:enum'
-    name: LinkedDataTypeState
-    fullName: ExcelScript.LinkedDataTypeState
-  - uid: 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates~0:complex'
-    name: 'LinkedDataTypeState[][]'
-    fullName: 'ExcelScript.LinkedDataTypeState[][]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.LinkedDataTypeState:enum'
-        name: LinkedDataTypeState
-        fullName: ExcelScript.LinkedDataTypeState
-      - name: '[][]'
-        fullName: '[][]'
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
-  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
-    name: 'NumberFormatCategory[][]'
-    fullName: 'ExcelScript.NumberFormatCategory[][]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
-        name: NumberFormatCategory
-        fullName: ExcelScript.NumberFormatCategory
-      - name: '[][]'
-        fullName: '[][]'
-  - uid: 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
-    name: 'PivotTable[]'
-    fullName: 'ExcelScript.PivotTable[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-        name: PivotTable
-        fullName: ExcelScript.PivotTable
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.RangeSort:interface'
-    name: RangeSort
-    fullName: ExcelScript.RangeSort
-  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
-    name: SpecialCellType
-    fullName: ExcelScript.SpecialCellType
-  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
-    name: SpecialCellValueType
-    fullName: ExcelScript.SpecialCellValueType
-  - uid: 'ExcelScript!ExcelScript.Range#getTables~0:complex'
-    name: 'Table[]'
-    fullName: 'ExcelScript.Table[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Table:interface'
-        name: Table
-        fullName: ExcelScript.Table
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
-    name: RangeValueType
-    fullName: ExcelScript.RangeValueType
-  - uid: 'ExcelScript!ExcelScript.Range#getValueTypes~0:complex'
-    name: 'RangeValueType[][]'
-    fullName: 'ExcelScript.RangeValueType[][]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
-        name: RangeValueType
-        fullName: ExcelScript.RangeValueType
-      - name: '[][]'
-        fullName: '[][]'
-  - uid: 'ExcelScript!ExcelScript.RangeView:interface'
-    name: RangeView
-    fullName: ExcelScript.RangeView
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    name: Worksheet
-    fullName: ExcelScript.Worksheet
-  - uid: 'ExcelScript!ExcelScript.GroupOption:enum'
-    name: GroupOption
-    fullName: ExcelScript.GroupOption
-  - uid: 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
-    name: InsertShiftDirection
-    fullName: ExcelScript.InsertShiftDirection
-  - uid: 'ExcelScript!ExcelScript.Range#moveTo~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
-    name: RemoveDuplicatesResult
-    fullName: ExcelScript.RemoveDuplicatesResult
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-    name: ReplaceCriteria
-    fullName: ExcelScript.ReplaceCriteria
+### YamlMime:TSType
+name: ExcelScript.Range
+uid: ExcelScript!ExcelScript.Range:interface
+package: ExcelScript!
+fullName: ExcelScript.Range
+summary: 区域表示一个或多个相邻的单元格，如单元格、行、列、单元格块等。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: addConditionalFormat(type)
+  uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
+  package: ExcelScript!
+  fullName: addConditionalFormat(type)
+  summary: 将新的条件格式添加到集合中的第一个/最高优先级处。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+    parameters:
+    - id: type
+      description: 要添加的条件格式的类型。 有关详细信息，请参阅 ExcelScript。
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
+- name: autoFill(destinationRange, autoFillType)
+  uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
+  package: ExcelScript!
+  fullName: autoFill(destinationRange, autoFillType)
+  summary: 使用指定的自动填充逻辑将范围从当前范围填充到目标区域。 目标区域可以是 null，也可以是水平或垂直扩展源。 不支持不连续的区域。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      autoFill(
+                  destinationRange?: Range | string,
+                  autoFillType?: AutoFillType
+              ): void;
+    parameters:
+    - id: destinationRange
+      description: 要自动填充的目标区域。 如果目标区域为 null，则数据将根据周围的单元格进行填充 (这是双击 UI 的区域填充柄) 时的行为。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: autoFillType
+      description: 自动填充的类型。 根据当前区域的内容，指定目标区域的填充方式。 默认值为 "FillDefault"。
+      type: <xref uid="ExcelScript!ExcelScript.AutoFillType:enum" />
+    return:
+      type: void
+      description: ''
+- name: calculate()
+  uid: ExcelScript!ExcelScript.Range#calculate:member(1)
+  package: ExcelScript!
+  fullName: calculate()
+  summary: 计算工作表上的单元格区域。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(): void;'
+    return:
+      type: void
+      description: ''
+- name: clear(applyTo)
+  uid: ExcelScript!ExcelScript.Range#clear:member(1)
+  package: ExcelScript!
+  fullName: clear(applyTo)
+  summary: 清除区域值、格式、填充、边框等。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(applyTo?: ClearApplyTo): void;'
+    parameters:
+    - id: applyTo
+      description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ExcelScript。
+      type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This script removes all the formatting from the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let range = workbook.getSelectedRange();\n\n  // Clear all the formatting in that range.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
+- name: clearAllConditionalFormats()
+  uid: ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)
+  package: ExcelScript!
+  fullName: clearAllConditionalFormats()
+  summary: 清除当前指定区域中处于活动状态的所有条件格式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearAllConditionalFormats(): void;'
+    return:
+      type: void
+      description: ''
+- name: convertDataTypeToText()
+  uid: ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)
+  package: ExcelScript!
+  fullName: convertDataTypeToText()
+  summary: 将具有数据类型的区域单元格转换为文本。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'convertDataTypeToText(): void;'
+    return:
+      type: void
+      description: ''
+- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
+  package: ExcelScript!
+  fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  summary: 将单元格数据或格式从源区域或 RangeAreas 复制到当前区域。 目标区域的大小可以与源区域或 RangeAreas 的大小不同。 如果目标小于源，则将自动扩展目标。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copyFrom(
+                  sourceRange: Range | RangeAreas | string,
+                  copyType?: RangeCopyType,
+                  skipBlanks?: boolean,
+                  transpose?: boolean
+              ): void;
+    parameters:
+    - id: sourceRange
+      description: 要从其复制的源区域或 RangeAreas。 当源 RangeAreas 有多个区域时，必须通过删除矩形区域中的完整行或列来创建窗体。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
+    - id: copyType
+      description: 要复制的单元格数据的类型或格式。 默认值为 "All"。
+      type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
+    - id: skipBlanks
+      description: 如果为 True，则在源区域中跳过空白单元格。 默认为 false。
+      type: boolean
+    - id: transpose
+      description: 如此如果要转置目标区域中的单元格。 默认为 false。
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: delete(shift)
+  uid: ExcelScript!ExcelScript.Range#delete:member(1)
+  package: ExcelScript!
+  fullName: delete(shift)
+  summary: 删除与区域相关的单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(shift: DeleteShiftDirection): void;'
+    parameters:
+    - id: shift
+      description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript。
+      type: <xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />
+    return:
+      type: void
+      description: ''
+- name: find(text, criteria)
+  uid: ExcelScript!ExcelScript.Range#find:member(1)
+  package: ExcelScript!
+  fullName: find(text, criteria)
+  summary: 根据指定的条件查找给定的字符串。 如果当前范围大于单个单元格，则搜索将限制为该范围，否则搜索将覆盖该单元格的所有起始工作表。 如果没有匹配项，则此函数将返回一个 null 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'find(text: string, criteria: SearchCriteria): Range;'
+    parameters:
+    - id: text
+      description: 要查找的字符串。
+      type: string
+    - id: criteria
+      description: 其他搜索条件，包括搜索方向以及搜索是否需要匹配整个单元格或是否区分大小写。
+      type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: flashFill()
+  uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
+  package: ExcelScript!
+  fullName: flashFill()
+  summary: 对当前区域进行快速填充。快速填充在感知到模式时可自动填充数据，因此该区域必须是单列区域且周围有数据以便查找模式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'flashFill(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAbsoluteResizedRange(numRows, numColumns)
+  uid: ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)
+  package: ExcelScript!
+  fullName: getAbsoluteResizedRange(numRows, numColumns)
+  summary: 获取一个 Range 对象，该对象的左上单元格与当前 Range 对象相同，但具有指定的行数和列数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
+    parameters:
+    - id: numRows
+      description: 新范围大小的行数。
+      type: number
+    - id: numColumns
+      description: 新范围大小的列数。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getAddress()
+  uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
+  package: ExcelScript!
+  fullName: getAddress()
+  summary: 指定 A1 样式中的区域引用。 Address 值将包含工作表引用 (例如，"Sheet1！A1： B4 ") 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddress(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAddressLocal()
+  uid: ExcelScript!ExcelScript.Range#getAddressLocal:member(1)
+  package: ExcelScript!
+  fullName: getAddressLocal()
+  summary: 以用户语言指定区域的区域引用。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddressLocal(): string;'
+    return:
+      type: string
+      description: ''
+- name: getBoundingRect(anotherRange)
+  uid: ExcelScript!ExcelScript.Range#getBoundingRect:member(1)
+  package: ExcelScript!
+  fullName: getBoundingRect(anotherRange)
+  summary: 获取包含指定区域的最小 range 对象。 例如，“B2:C5”和“D10:E15”的 GetBoundingRect 为“B2:E15”。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBoundingRect(anotherRange: Range | string): Range;'
+    parameters:
+    - id: anotherRange
+      description: range 对象或地址或区域名称。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getCell(row, column)
+  uid: ExcelScript!ExcelScript.Range#getCell:member(1)
+  package: ExcelScript!
+  fullName: getCell(row, column)
+  summary: 根据行和列编号获取包含单个单元格的 range 对象。 单元格可以位于其父区域的边界之外，但前提是它停留在工作表网格中。 返回的单元格位于相对于区域左上角的单元格的位置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCell(row: number, column: number): Range;'
+    parameters:
+    - id: row
+      description: 要检索的单元格的行号。 从零开始编制索引。
+      type: number
+    - id: column
+      description: 要检索的单元格的列号。 从零开始编制索引。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getCellCount()
+  uid: ExcelScript!ExcelScript.Range#getCellCount:member(1)
+  package: ExcelScript!
+  fullName: getCellCount()
+  summary: 指定区域中的单元格的数目。 如果单元格数超过 2^31-1 (2,147,483,647)，此 API 返回 -1。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCellCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getColumn(column)
+  uid: ExcelScript!ExcelScript.Range#getColumn:member(1)
+  package: ExcelScript!
+  fullName: getColumn(column)
+  summary: 获取范围中包含的列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumn(column: number): Range;'
+    parameters:
+    - id: column
+      description: 要检索的区域的列号。 从零开始编制索引。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getColumnCount()
+  uid: ExcelScript!ExcelScript.Range#getColumnCount:member(1)
+  package: ExcelScript!
+  fullName: getColumnCount()
+  summary: 指定区域中的总列数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnCount(): number;'
+    return:
+      type: number
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
+- name: getColumnHidden()
+  uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
+  package: ExcelScript!
+  fullName: getColumnHidden()
+  summary: 表示当前区域中的所有列是否隐藏。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnHidden(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getColumnIndex()
+  uid: ExcelScript!ExcelScript.Range#getColumnIndex:member(1)
+  package: ExcelScript!
+  fullName: getColumnIndex()
+  summary: 指定区域中的第一个单元格的列号。 从零开始编制索引。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnIndex(): number;'
+    return:
+      type: number
+      description: ''
+- name: getColumnsAfter(count)
+  uid: ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)
+  package: ExcelScript!
+  fullName: getColumnsAfter(count)
+  summary: 获取当前范围对象右侧的一定数量的列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnsAfter(count?: number): Range;'
+    parameters:
+    - id: count
+      description: 可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getColumnsBefore(count)
+  uid: ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)
+  package: ExcelScript!
+  fullName: getColumnsBefore(count)
+  summary: 获取当前范围对象左侧的一定数量的列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnsBefore(count?: number): Range;'
+    parameters:
+    - id: count
+      description: 可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getConditionalFormat(id)
+  uid: ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)
+  package: ExcelScript!
+  fullName: getConditionalFormat(id)
+  summary: 返回给定 ID 的条件格式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConditionalFormat(id: string): ConditionalFormat;'
+    parameters:
+    - id: id
+      description: 条件格式的 id。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
+      description: ''
+- name: getConditionalFormats()
+  uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
+  package: ExcelScript!
+  fullName: getConditionalFormats()
+  summary: 与该范围相交的 ConditionalFormats 的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConditionalFormats(): ConditionalFormat[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]
+      description: ''
+- name: getDataValidation()
+  uid: ExcelScript!ExcelScript.Range#getDataValidation:member(1)
+  package: ExcelScript!
+  fullName: getDataValidation()
+  summary: 返回数据有效性对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataValidation(): DataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidation:interface" />
+      description: ''
+- name: getDirectPrecedents()
+  uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
+  package: ExcelScript!
+  fullName: getDirectPrecedents()
+  summary: 返回一个 WorkbookRangeAreas 对象，该对象代表包含同一工作表或多个工作表中的单元格的所有直接引用单元格的区域。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDirectPrecedents(): WorkbookRangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookRangeAreas:interface" />
+      description: ''
+- name: getEntireColumn()
+  uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
+  package: ExcelScript!
+  fullName: getEntireColumn()
+  summary: 获取一个对象，该对象表示区域中 (的整列。例如，如果当前区域表示单元格 "B4： E11"， `getEntireColumn` 则它是表示列 "B:E" 的区域 ) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireColumn(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getEntireRow()
+  uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
+  package: ExcelScript!
+  fullName: getEntireRow()
+  summary: 获取表示区域中整行的对象 (例如，如果当前区域表示单元格 "B4： E11"， `GetEntireRow` 则它是表示行 "4:11" ) 的区域。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireRow(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 返回一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): RangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
+      description: ''
+- name: getFormula()
+  uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
+  package: ExcelScript!
+  fullName: getFormula()
+  summary: 代表 A1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormula(): string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
+- name: getFormulaLocal()
+  uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
+  package: ExcelScript!
+  fullName: getFormulaLocal()
+  summary: 代表 A1 样式表示法中的单元格公式，位于用户的语言和数字格式区域设置中。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulaLocal(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFormulaR1C1()
+  uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
+  package: ExcelScript!
+  fullName: getFormulaR1C1()
+  summary: 代表 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulaR1C1(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFormulas()
+  uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
+  package: ExcelScript!
+  fullName: getFormulas()
+  summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回它的值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulas(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getFormulasLocal()
+  uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
+  package: ExcelScript!
+  fullName: getFormulasLocal()
+  summary: 表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回它的值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulasLocal(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getFormulasR1C1()
+  uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
+  package: ExcelScript!
+  fullName: getFormulasR1C1()
+  summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回它的值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormulasR1C1(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getHasSpill()
+  uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
+  package: ExcelScript!
+  fullName: getHasSpill()
+  summary: 表示所有单元格是否都具有溢出边框。 如果所有单元格都有溢出边框，则返回 true; 如果所有单元格都没有溢出边框，则返回 false。 如果区域中有和没有溢出边框的单元格，则返回 null。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHasSpill(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.Range#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: 返回从区域的上边缘到区域的下边缘的 100％ 缩放的距离（以磅为单位）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getHidden()
+  uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
+  package: ExcelScript!
+  fullName: getHidden()
+  summary: 表示当前区域中的所有单元格是否隐藏。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHidden(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getHyperlink()
+  uid: ExcelScript!ExcelScript.Range#getHyperlink:member(1)
+  package: ExcelScript!
+  fullName: getHyperlink()
+  summary: 表示当前区域的超链接。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHyperlink(): RangeHyperlink;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
+      description: ''
+- name: getImage()
+  uid: ExcelScript!ExcelScript.Range#getImage:member(1)
+  package: ExcelScript!
+  fullName: getImage()
+  summary: 将区域呈现为 base64 编码的 png 图像。 **重要说明**： Excel for Mac 中目前不支持此 API。 \[有关当前状态，请访问 OfficeDev/office-Js 问题 \# 235 \] (https://github.com/OfficeDev/office-js/issues/235) 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getImage(): string;'
+    return:
+      type: string
+      description: ''
+- name: getIntersection(anotherRange)
+  uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
+  package: ExcelScript!
+  fullName: getIntersection(anotherRange)
+  summary: 获取表示指定区域的矩形交集的 range 对象。 如果找不到任何交集，则此方法返回空对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIntersection(anotherRange: Range | string): Range;'
+    parameters:
+    - id: anotherRange
+      description: 将用于确定区域交集的 range 对象或区域地址。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getIsEntireColumn()
+  uid: ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)
+  package: ExcelScript!
+  fullName: getIsEntireColumn()
+  summary: 表示当前区域是否为整列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEntireColumn(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsEntireRow()
+  uid: ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)
+  package: ExcelScript!
+  fullName: getIsEntireRow()
+  summary: 表示当前区域是否为整行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEntireRow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getLastCell()
+  uid: ExcelScript!ExcelScript.Range#getLastCell:member(1)
+  package: ExcelScript!
+  fullName: getLastCell()
+  summary: 获取区域内的最后一个单元格。 例如，“B2:D5”的最后一个单元格是“D5”。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastCell(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getLastColumn()
+  uid: ExcelScript!ExcelScript.Range#getLastColumn:member(1)
+  package: ExcelScript!
+  fullName: getLastColumn()
+  summary: 获取区域内的最后一列。 例如，“B2:D5”的最后一列是“D2:D5”。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastColumn(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getLastRow()
+  uid: ExcelScript!ExcelScript.Range#getLastRow:member(1)
+  package: ExcelScript!
+  fullName: getLastRow()
+  summary: 获取区域内的最后一行。 例如，“B2:D5”的最后一行是“B5:D5”。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastRow(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.Range#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: 返回从工作表的左边缘到区域的左边缘的 100％ 缩放的距离（以磅为单位）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLinkedDataTypeState()
+  uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)
+  package: ExcelScript!
+  fullName: getLinkedDataTypeState()
+  summary: 表示单元格的数据类型状态。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedDataTypeState(): LinkedDataTypeState;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />
+      description: ''
+- name: getLinkedDataTypeStates()
+  uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)
+  package: ExcelScript!
+  fullName: getLinkedDataTypeStates()
+  summary: 表示每个单元格的数据类型状态。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedDataTypeStates(): LinkedDataTypeState[][];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
+      description: ''
+- name: getMergedAreas()
+  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
+  package: ExcelScript!
+  fullName: getMergedAreas()
+  summary: 返回一个 RangeAreas 对象，该对象代表此区域中的合并区域。 请注意，如果此范围中的合并区域计数超过512，API 将无法返回结果。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMergedAreas(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getNumberFormat()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormat()
+  summary: 表示给定范围的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormat(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberFormatCategories()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatCategories()
+  summary: 表示每个单元格的数字格式的类别。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
+      description: ''
+- name: getNumberFormatLocal()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatLocal()
+  summary: 表示给定范围的单元格 Excel 数字格式代码（基于用户的语言设置）。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatLocal(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberFormats()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormats:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormats()
+  summary: 表示给定范围的 Excel 数字格式代码。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormats(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getNumberFormatsLocal()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatsLocal()
+  summary: 根据用户的语言设置，表示给定范围的 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatsLocal(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getOffsetRange(rowOffset, columnOffset)
+  uid: ExcelScript!ExcelScript.Range#getOffsetRange:member(1)
+  package: ExcelScript!
+  fullName: getOffsetRange(rowOffset, columnOffset)
+  summary: 获取表示与指定区域偏移的区域的对象。返回的区域的尺寸将与此区域一致。如果强制在工作表网格的边界之外生成区域，将引发错误。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
+    parameters:
+    - id: rowOffset
+      description: 区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。
+      type: number
+    - id: columnOffset
+      description: 区域偏移的列数（正数、负数或 0）。正数表示向右偏移，负数表示向左偏移。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This script gets adjacent cells using relative references.\n * Note that if the active cell is on the top row, part of the script fails, \n * because it references the cell above the currently selected one.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently active cell in the workbook.\n  let activeCell = workbook.getActiveCell();\n  console.log(`The active cell's address is: ${activeCell.getAddress()}`);\n\n  // Get the cell to the right of the active cell and set its value and color.\n  let rightCell = activeCell.getOffsetRange(0,1);\n  rightCell.setValue(\"Right cell\");\n  console.log(`The right cell's address is: ${rightCell.getAddress()}`);\n  rightCell.getFormat().getFont().setColor(\"Magenta\");\n  rightCell.getFormat().getFill().setColor(\"Cyan\");\n\n  // Get the cell to the above of the active cell and set its value and color.\n  // Note that this operation will fail if the active cell is in the top row.\n  let aboveCell = activeCell.getOffsetRange(-1, 0);\n  aboveCell.setValue(\"Above cell\");\n  console.log(`The above cell's address is: ${aboveCell.getAddress()}`);\n  aboveCell.getFormat().getFont().setColor(\"White\");\n  aboveCell.getFormat().getFill().setColor(\"Black\");\n}\n```"
+- name: getPivotTables(fullyContained)
+  uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
+  package: ExcelScript!
+  fullName: getPivotTables(fullyContained)
+  summary: 获取与区域重叠的数据透视表的限定集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
+    parameters:
+    - id: fullyContained
+      description: 如果为 true，则仅返回完全包含在区域边界内的数据透视表。 默认值为 false。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
+      description: ''
+- name: getPredefinedCellStyle()
+  uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: getPredefinedCellStyle()
+  summary: 表示当前区域的样式。 如果单元格的样式不一致，则将返回 null。 对于自定义样式，将返回样式名称。 对于内置样式，将返回一个表示 BuiltInStyle 枚举中的值的字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPredefinedCellStyle(): string;'
+    return:
+      type: string
+      description: ''
+- name: getResizedRange(deltaRows, deltaColumns)
+  uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
+  package: ExcelScript!
+  fullName: getResizedRange(deltaRows, deltaColumns)
+  summary: 获取与当前范围对象类似的范围对象，但其右下角可通过一定数量的行和列进行展开（或合拢）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
+    parameters:
+    - id: deltaRows
+      description: 相对于当前范围，展开右下角的行数。使用正数可展开范围，使用负数可合拢范围。
+      type: number
+    - id: deltaColumns
+      description: 相对于当前范围，从右下角扩展的列数。 使用正数可展开范围，使用负数可合拢范围。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n    );\n}\n```"
+- name: getRow(row)
+  uid: ExcelScript!ExcelScript.Range#getRow:member(1)
+  package: ExcelScript!
+  fullName: getRow(row)
+  summary: 获取范围中包含的行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRow(row: number): Range;'
+    parameters:
+    - id: row
+      description: 要检索的区域的行号。 从零开始编制索引。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRowCount()
+  uid: ExcelScript!ExcelScript.Range#getRowCount:member(1)
+  package: ExcelScript!
+  fullName: getRowCount()
+  summary: 返回区域中的总行数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowCount(): number;'
+    return:
+      type: number
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
+- name: getRowHidden()
+  uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
+  package: ExcelScript!
+  fullName: getRowHidden()
+  summary: 表示当前区域中的所有行是否隐藏。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowHidden(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getRowIndex()
+  uid: ExcelScript!ExcelScript.Range#getRowIndex:member(1)
+  package: ExcelScript!
+  fullName: getRowIndex()
+  summary: 返回区域中第一个单元格的行编号。 从零开始编制索引。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowIndex(): number;'
+    return:
+      type: number
+      description: ''
+- name: getRowsAbove(count)
+  uid: ExcelScript!ExcelScript.Range#getRowsAbove:member(1)
+  package: ExcelScript!
+  fullName: getRowsAbove(count)
+  summary: 获取当前范围对象上方的一定数量的行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowsAbove(count?: number): Range;'
+    parameters:
+    - id: count
+      description: 可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRowsBelow(count)
+  uid: ExcelScript!ExcelScript.Range#getRowsBelow:member(1)
+  package: ExcelScript!
+  fullName: getRowsBelow(count)
+  summary: 获取当前范围对象下方的一定数量的行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowsBelow(count?: number): Range;'
+    parameters:
+    - id: count
+      description: 可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getSavedAsArray()
+  uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
+  package: ExcelScript!
+  fullName: getSavedAsArray()
+  summary: 表示是否将所有单元格都保存为数组公式。 如果所有单元格都将保存为数组公式，则返回 true; 如果不将所有单元格保存为数组公式，则返回 false。 如果某些单元格将另存为数组公式，则返回 null，而某些单元格则不是。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSavedAsArray(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSort()
+  uid: ExcelScript!ExcelScript.Range#getSort:member(1)
+  package: ExcelScript!
+  fullName: getSort()
+  summary: 表示当前 range 的区域排序。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSort(): RangeSort;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeSort:interface" />
+      description: ''
+- name: getSpecialCells(cellType, cellValueType)
+  uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
+  package: ExcelScript!
+  fullName: getSpecialCells(cellType, cellValueType)
+  summary: 获取包含一个或多个区域的 RangeAreas 对象，它表示匹配指定类型和值的所有单元格。 如果找不到特殊单元格，则返回 null 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getSpecialCells(
+                  cellType: SpecialCellType,
+                  cellValueType?: SpecialCellValueType
+              ): RangeAreas;
+    parameters:
+    - id: cellType
+      description: 要包含的单元格的类型。
+      type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
+    - id: cellValueType
+      description: 如果 cellType 为常量或公式，则此参数用于确定要在结果中包含哪些类型的单元格。 可以将这些值组合在一起，以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
+      type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getSpillingToRange()
+  uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
+  package: ExcelScript!
+  fullName: getSpillingToRange()
+  summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果区域不是定位单元格或溢出区域，则返回 null 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSpillingToRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getSpillParent()
+  uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
+  package: ExcelScript!
+  fullName: getSpillParent()
+  summary: 获取 Range 对象，它包含要将某个单元格溢出到的定位单元格。 如果不是溢出单元格或多个单元格给出了一个值，则返回 null 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSpillParent(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getSurroundingRegion()
+  uid: ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)
+  package: ExcelScript!
+  fullName: getSurroundingRegion()
+  summary: 返回一个 Range 对象，该对象表示此区域左上单元格的周围区域。 周围区域是由相对于该区域的空白行和空白列的任何组合所限定的区域。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSurroundingRegion(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getTables(fullyContained)
+  uid: ExcelScript!ExcelScript.Range#getTables:member(1)
+  package: ExcelScript!
+  fullName: getTables(fullyContained)
+  summary: 获取与区域重叠的限定范围的表格集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTables(fullyContained?: boolean): Table[];'
+    parameters:
+    - id: fullyContained
+      description: 如果为 true，则仅返回完全包含在区域边界内的表。 默认值为 false。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.Range#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: 代表指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTexts()
+  uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
+  package: ExcelScript!
+  fullName: getTexts()
+  summary: 指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTexts(): string[][];'
+    return:
+      type: string[][]
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.Range#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: 返回从工作表的上边缘到区域的上边缘的 100％ 缩放的距离（以磅为单位）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUsedRange(valuesOnly)
+  uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
+  package: ExcelScript!
+  fullName: getUsedRange(valuesOnly)
+  summary: 返回指定 Range 对象的所用区域。如果区域内没有使用单元格，此函数将返回 NULL 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: 仅将有值的单元格视为已使用的单元格。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.Range#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: 表示指定范围的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): any;'
+    return:
+      type: any
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
+- name: getValues()
+  uid: ExcelScript!ExcelScript.Range#getValues:member(1)
+  package: ExcelScript!
+  fullName: getValues()
+  summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValues(): any[][];'
+    return:
+      type: any[][]
+      description: ''
+- name: getValueType()
+  uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
+  package: ExcelScript!
+  fullName: getValueType()
+  summary: 表示单元格中的数据的类型。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValueType(): RangeValueType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />
+      description: ''
+- name: getValueTypes()
+  uid: ExcelScript!ExcelScript.Range#getValueTypes:member(1)
+  package: ExcelScript!
+  fullName: getValueTypes()
+  summary: 指定每个单元格中的数据类型。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValueTypes(): RangeValueType[][];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
+      description: ''
+- name: getVisibleView()
+  uid: ExcelScript!ExcelScript.Range#getVisibleView:member(1)
+  package: ExcelScript!
+  fullName: getVisibleView()
+  summary: 表示当前 range 对象的可见行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisibleView(): RangeView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeView:interface" />
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.Range#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: 返回从区域的左边缘到区域的右边缘的 100％ 缩放的距离（以磅为单位）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.Range#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: 包含当前区域的工作表。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: group(groupOption)
+  uid: ExcelScript!ExcelScript.Range#group:member(1)
+  package: ExcelScript!
+  fullName: group(groupOption)
+  summary: 对列和行进行分组以进行分级显示。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'group(groupOption: GroupOption): void;'
+    parameters:
+    - id: groupOption
+      description: 指定如何按行或列对区域进行分组。 `InvalidArgument`当组选项与范围或属性不同时，将引发错误 `isEntireRow` `isEntireColumn` (也就是说， `range.isEntireRow` 为 True 且 `groupOption` 为 "ByColumns"，或者为 `range.isEntireColumn` `groupOption` "ByRows" ) 。
+      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
+    return:
+      type: void
+      description: ''
+- name: hideGroupDetails(groupOption)
+  uid: ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)
+  package: ExcelScript!
+  fullName: hideGroupDetails(groupOption)
+  summary: 隐藏行或列组的详细信息。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'hideGroupDetails(groupOption: GroupOption): void;'
+    parameters:
+    - id: groupOption
+      description: 指定是否隐藏分组行或分组列的详细信息。
+      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
+    return:
+      type: void
+      description: ''
+- name: insert(shift)
+  uid: ExcelScript!ExcelScript.Range#insert:member(1)
+  package: ExcelScript!
+  fullName: insert(shift)
+  summary: 将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'insert(shift: InsertShiftDirection): Range;'
+    parameters:
+    - id: shift
+      description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript。
+      type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: merge(across)
+  uid: ExcelScript!ExcelScript.Range#merge:member(1)
+  package: ExcelScript!
+  fullName: merge(across)
+  summary: 将范围单元格合并到工作表的一个区域内。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'merge(across?: boolean): void;'
+    parameters:
+    - id: across
+      description: 可选。 如果为 True，则将指定区域中每一行的单元格合并为一个单独的合并单元格。 默认值是 false。
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: moveTo(destinationRange)
+  uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
+  package: ExcelScript!
+  fullName: moveTo(destinationRange)
+  summary: 将单元格的值、格式和公式从当前区域移动到目标区域，替换这些单元格中的旧信息。 如果目标区域小于当前区域，则将自动扩展目标区域。 原始区域区域以外的目标区域中的任何单元格都不会更改。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'moveTo(destinationRange: Range | string): void;'
+    parameters:
+    - id: destinationRange
+      description: destinationRange 指定此范围中的信息将移动到的范围。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: removeDuplicates(columns, includesHeader)
+  uid: ExcelScript!ExcelScript.Range#removeDuplicates:member(1)
+  package: ExcelScript!
+  fullName: removeDuplicates(columns, includesHeader)
+  summary: 从列指定的区域中删除重复值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      removeDuplicates(
+                  columns: number[],
+                  includesHeader: boolean
+              ): RemoveDuplicatesResult;
+    parameters:
+    - id: columns
+      description: 区域中可能包含重复项的列。 至少需要指定一个列。 从零开始编制索引。
+      type: number[]
+    - id: includesHeader
+      description: 如果输入数据包含标头，则为 True。 默认为 false。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
+      description: ''
+- name: replaceAll(text, replacement, criteria)
+  uid: ExcelScript!ExcelScript.Range#replaceAll:member(1)
+  package: ExcelScript!
+  fullName: replaceAll(text, replacement, criteria)
+  summary: 根据当前区域内指定的条件查找并替换给定的字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      replaceAll(
+                  text: string,
+                  replacement: string,
+                  criteria: ReplaceCriteria
+              ): number;
+    parameters:
+    - id: text
+      description: 要查找的字符串。
+      type: string
+    - id: replacement
+      description: 要将原始替换为的字符串。
+      type: string
+    - id: criteria
+      description: 其他替换条件。
+      type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
+    return:
+      type: number
+      description: ''
+- name: select()
+  uid: ExcelScript!ExcelScript.Range#select:member(1)
+  package: ExcelScript!
+  fullName: select()
+  summary: 在 Excel UI 中选择指定的区域。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'select(): void;'
+    return:
+      type: void
+      description: ''
+- name: setColumnHidden(columnHidden)
+  uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
+  package: ExcelScript!
+  fullName: setColumnHidden(columnHidden)
+  summary: 表示当前区域中的所有列是否隐藏。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColumnHidden(columnHidden: boolean): void;'
+    parameters:
+    - id: columnHidden
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setDirty()
+  uid: ExcelScript!ExcelScript.Range#setDirty:member(1)
+  package: ExcelScript!
+  fullName: setDirty()
+  summary: 设置下一次重新计算发生时要重新计算的区域。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDirty(): void;'
+    return:
+      type: void
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: 以 A1 样式表示法设置单元格公式。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: ''
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
+- name: setFormulaLocal(formulaLocal)
+  uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
+  package: ExcelScript!
+  fullName: setFormulaLocal(formulaLocal)
+  summary: 在用户的语言和数字格式设置区域设置 A1 样式表示法中的单元格公式。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulaLocal(formulaLocal: string): void;'
+    parameters:
+    - id: formulaLocal
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFormulaR1C1(formulaR1C1)
+  uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
+  package: ExcelScript!
+  fullName: setFormulaR1C1(formulaR1C1)
+  summary: 以 R1C1 样式表示法设置单元格公式。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulaR1C1(formulaR1C1: string): void;'
+    parameters:
+    - id: formulaR1C1
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFormulas(formulas)
+  uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
+  package: ExcelScript!
+  fullName: setFormulas(formulas)
+  summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回它的值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulas(formulas: string[][]): void;'
+    parameters:
+    - id: formulas
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setFormulasLocal(formulasLocal)
+  uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
+  package: ExcelScript!
+  fullName: setFormulasLocal(formulasLocal)
+  summary: 表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回它的值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulasLocal(formulasLocal: string[][]): void;'
+    parameters:
+    - id: formulasLocal
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setFormulasR1C1(formulasR1C1)
+  uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
+  package: ExcelScript!
+  fullName: setFormulasR1C1(formulasR1C1)
+  summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回它的值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
+    parameters:
+    - id: formulasR1C1
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setHyperlink(hyperlink)
+  uid: ExcelScript!ExcelScript.Range#setHyperlink:member(1)
+  package: ExcelScript!
+  fullName: setHyperlink(hyperlink)
+  summary: 表示当前区域的超链接。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
+    parameters:
+    - id: hyperlink
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
+- name: setNumberFormat(numberFormat)
+  uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormat(numberFormat)
+  summary: 设置给定区域的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormat(numberFormat: string): void;'
+    parameters:
+    - id: numberFormat
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setNumberFormatLocal(numberFormatLocal)
+  uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormatLocal(numberFormatLocal)
+  summary: 根据用户的语言设置，设置给定区域的单元格 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
+    parameters:
+    - id: numberFormatLocal
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setNumberFormats(numberFormats)
+  uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormats(numberFormats)
+  summary: 表示给定范围的 Excel 数字格式代码。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormats(numberFormats: string[][]): void;'
+    parameters:
+    - id: numberFormats
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setNumberFormatsLocal(numberFormatsLocal)
+  uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormatsLocal(numberFormatsLocal)
+  summary: 根据用户的语言设置，表示给定范围的 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormatsLocal(numberFormatsLocal: string[][]): void;'
+    parameters:
+    - id: numberFormatsLocal
+      description: ''
+      type: string[][]
+    return:
+      type: void
+      description: ''
+- name: setPredefinedCellStyle(predefinedCellStyle)
+  uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: setPredefinedCellStyle(predefinedCellStyle)
+  summary: 表示当前区域的样式。 如果单元格的样式不一致，则将返回 null。 对于自定义样式，将返回样式名称。 对于内置样式，将返回一个表示 BuiltInStyle 枚举中的值的字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
+    parameters:
+    - id: predefinedCellStyle
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setRowHidden(rowHidden)
+  uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
+  package: ExcelScript!
+  fullName: setRowHidden(rowHidden)
+  summary: 表示当前区域中的所有行是否隐藏。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRowHidden(rowHidden: boolean): void;'
+    parameters:
+    - id: rowHidden
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setValue(value)
+  uid: ExcelScript!ExcelScript.Range#setValue:member(1)
+  package: ExcelScript!
+  fullName: setValue(value)
+  summary: 设置指定区域的原始值。 设置的数据可以是 string、number 或 boolean 类型。 `null` 值将被忽略 (在 Excel) 中未设置或覆盖。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValue(value: any): void;'
+    parameters:
+    - id: value
+      description: ''
+      type: any
+    return:
+      type: void
+      description: ''
+- name: setValues(values)
+  uid: ExcelScript!ExcelScript.Range#setValues:member(1)
+  package: ExcelScript!
+  fullName: setValues(values)
+  summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValues(values: any[][]): void;'
+    parameters:
+    - id: values
+      description: ''
+      type: any[][]
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
+- name: showCard()
+  uid: ExcelScript!ExcelScript.Range#showCard:member(1)
+  package: ExcelScript!
+  fullName: showCard()
+  summary: 显示活动单元格的卡片（如果该单元格具有富值内容）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showCard(): void;'
+    return:
+      type: void
+      description: ''
+- name: showGroupDetails(groupOption)
+  uid: ExcelScript!ExcelScript.Range#showGroupDetails:member(1)
+  package: ExcelScript!
+  fullName: showGroupDetails(groupOption)
+  summary: 显示行或列组的详细信息。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showGroupDetails(groupOption: GroupOption): void;'
+    parameters:
+    - id: groupOption
+      description: 指定是否显示分组行或分组列的详细信息。
+      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
+    return:
+      type: void
+      description: ''
+- name: ungroup(groupOption)
+  uid: ExcelScript!ExcelScript.Range#ungroup:member(1)
+  package: ExcelScript!
+  fullName: ungroup(groupOption)
+  summary: 取消边框的列和行的组合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'ungroup(groupOption: GroupOption): void;'
+    parameters:
+    - id: groupOption
+      description: 指定如何将区域与行或列取消组合。
+      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
+    return:
+      type: void
+      description: ''
+- name: unmerge()
+  uid: ExcelScript!ExcelScript.Range#unmerge:member(1)
+  package: ExcelScript!
+  fullName: unmerge()
+  summary: 将范围单元格取消合并为各个单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unmerge(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 652e22f246ce965e2c606f78abb8a457c478431d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412013"

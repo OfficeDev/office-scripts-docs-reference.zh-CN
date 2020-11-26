@@ -1,160 +1,132 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableStyleCollection:interface'
-    summary: 表示 TableStyles 的集合。
-    name: Excel.TableStyleCollection
-    fullName: Excel.TableStyleCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TableStyleCollection#add:member(1)'
-      - 'excel!Excel.TableStyleCollection#getCount:member(1)'
-      - 'excel!Excel.TableStyleCollection#getDefault:member(1)'
-      - 'excel!Excel.TableStyleCollection#getItem:member(1)'
-      - 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.TableStyleCollection#load:member(1)'
-      - 'excel!Excel.TableStyleCollection#setDefault:member(1)'
-  - uid: 'excel!Excel.TableStyleCollection#add:member(1)'
-    summary: 使用指定名称创建空白 TableStyle。
-    name: 'add(name, makeUniqueName)'
-    fullName: 'add(name, makeUniqueName)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(name: string, makeUniqueName?: boolean): TableStyle;'
-      return:
-        type:
-          - 'excel!Excel.TableStyle:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 新 TableStyle 的唯一名称。 如果名称已在使用中，则将引发无效参数异常。
-          type:
-            - string
-        - id: makeUniqueName
-          description: 可选，默认值为 false。 如果为 true，则将数字追加到名称，以便根据需要使其唯一。
-          type:
-            - boolean
-  - uid: 'excel!Excel.TableStyleCollection#getCount:member(1)'
-    summary: 获取集合中表格样式的数量。
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.TableStyleCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.TableStyleCollection#getDefault:member(1)'
-    summary: 获取父对象范围的默认 TableStyle。
-    name: getDefault()
-    fullName: getDefault()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDefault(): TableStyle;'
-      return:
-        type:
-          - 'excel!Excel.TableStyle:interface'
-        description: ''
-  - uid: 'excel!Excel.TableStyleCollection#getItem:member(1)'
-    summary: 按名称获取 TableStyle。
-    name: getItem(name)
-    fullName: getItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(name: string): TableStyle;'
-      return:
-        type:
-          - 'excel!Excel.TableStyle:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 要检索的 TableStyle 的名称。
-          type:
-            - string
-  - uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
-    summary: 按名称获取 TableStyle。 如果没有 TableStyle，将返回 null 对象。
-    name: getItemOrNullObject(name)
-    fullName: getItemOrNullObject(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(name: string): TableStyle;'
-      return:
-        type:
-          - 'excel!Excel.TableStyle:interface'
-        description: ''
-      parameters:
-        - id: name
-          description: 要检索的 TableStyle 的名称。
-          type:
-            - string
-  - uid: 'excel!Excel.TableStyleCollection#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TableStyleCollection#setDefault:member(1)'
-    summary: 设置在父对象范围内使用的默认 TableStyle。
-    name: setDefault(newDefaultStyle)
-    fullName: setDefault(newDefaultStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDefault(newDefaultStyle: TableStyle | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: newDefaultStyle
-          description: 应为新的默认值的 TableStyle 对象的 TableStyle 对象或名称。
-          type:
-            - 'excel!Excel.TableStyleCollection#setDefault~0:complex'
-references:
-  - uid: 'excel!Excel.TableStyle:interface'
-    name: TableStyle
-    fullName: Excel.TableStyle
-  - uid: 'excel!Excel.TableStyleCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.TableStyleCollection#setDefault~0:complex'
-    name: TableStyle | string
-    fullName: Excel.TableStyle | string
-    spec.typeScript:
-      - uid: 'excel!Excel.TableStyle:interface'
-        name: TableStyle
-        fullName: Excel.TableStyle
-      - name: ' | string'
-        fullName: ' | string'
+### YamlMime:TSType
+name: Excel.TableStyleCollection
+uid: excel!Excel.TableStyleCollection:interface
+package: excel!
+fullName: Excel.TableStyleCollection
+summary: 表示 TableStyles 的集合。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(name, makeUniqueName)
+  uid: excel!Excel.TableStyleCollection#add:member(1)
+  package: excel!
+  fullName: add(name, makeUniqueName)
+  summary: 使用指定名称创建空白 TableStyle。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'add(name: string, makeUniqueName?: boolean): TableStyle;'
+    parameters:
+    - id: name
+      description: 新 TableStyle 的唯一名称。 如果名称已在使用中，则将引发无效参数异常。
+      type: string
+    - id: makeUniqueName
+      description: 可选，默认值为 false。 如果为 true，则将数字追加到名称，以便根据需要使其唯一。
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.TableStyle:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.TableStyleCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: 获取集合中表格样式的数量。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getDefault()
+  uid: excel!Excel.TableStyleCollection#getDefault:member(1)
+  package: excel!
+  fullName: getDefault()
+  summary: 获取父对象范围的默认 TableStyle。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDefault(): TableStyle;'
+    return:
+      type: <xref uid="excel!Excel.TableStyle:interface" />
+      description: ''
+- name: getItem(name)
+  uid: excel!Excel.TableStyleCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(name)
+  summary: 按名称获取 TableStyle。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(name: string): TableStyle;'
+    parameters:
+    - id: name
+      description: 要检索的 TableStyle 的名称。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.TableStyle:interface" />
+      description: ''
+- name: getItemOrNullObject(name)
+  uid: excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(name)
+  summary: 按名称获取 TableStyle。 如果没有 TableStyle，将返回 null 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(name: string): TableStyle;'
+    parameters:
+    - id: name
+      description: 要检索的 TableStyle 的名称。
+      type: string
+    return:
+      type: <xref uid="excel!Excel.TableStyle:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TableStyleCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setDefault(newDefaultStyle)
+  uid: excel!Excel.TableStyleCollection#setDefault:member(1)
+  package: excel!
+  fullName: setDefault(newDefaultStyle)
+  summary: 设置在父对象范围内使用的默认 TableStyle。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDefault(newDefaultStyle: TableStyle | string): void;'
+    parameters:
+    - id: newDefaultStyle
+      description: 应为新的默认值的 TableStyle 对象的 TableStyle 对象或名称。
+      type: <xref uid="excel!Excel.TableStyle:interface" /> | string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 044d80f1352a169ab0883b5c02de9550fd364bad
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412739"

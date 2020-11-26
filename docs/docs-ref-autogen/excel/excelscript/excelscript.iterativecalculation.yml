@@ -1,110 +1,108 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.IterativeCalculation:interface'
-    summary: 表示迭代计算设置。
-    name: ExcelScript.IterativeCalculation
-    fullName: ExcelScript.IterativeCalculation
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)'
-      - 'ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)'
-      - 'ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)'
-      - 'ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)'
-      - 'ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)'
-      - 'ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)'
-  - uid: 'ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)'
-    summary: 如果 Excel 使用迭代来处理循环引用，则为 True。
-    name: getEnabled()
-    fullName: getEnabled()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEnabled(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)'
-    summary: 指定在 Excel 解析循环引用时，每次迭代之间的最大更改量。
-    name: getMaxChange()
-    fullName: getMaxChange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMaxChange(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)'
-    summary: 指定 Excel 可用于解析循环引用的最大迭代次数。
-    name: getMaxIteration()
-    fullName: getMaxIteration()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMaxIteration(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)'
-    summary: 如果 Excel 使用迭代来处理循环引用，则为 True。
-    name: setEnabled(enabled)
-    fullName: setEnabled(enabled)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setEnabled(enabled: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: enabled
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)'
-    summary: 指定在 Excel 解析循环引用时，每次迭代之间的最大更改量。
-    name: setMaxChange(maxChange)
-    fullName: setMaxChange(maxChange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMaxChange(maxChange: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: maxChange
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)'
-    summary: 指定 Excel 可用于解析循环引用的最大迭代次数。
-    name: setMaxIteration(maxIteration)
-    fullName: setMaxIteration(maxIteration)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMaxIteration(maxIteration: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: maxIteration
-          description: ''
-          type:
-            - number
+### YamlMime:TSType
+name: ExcelScript.IterativeCalculation
+uid: ExcelScript!ExcelScript.IterativeCalculation:interface
+package: ExcelScript!
+fullName: ExcelScript.IterativeCalculation
+summary: 表示迭代计算设置。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getEnabled()
+  uid: ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)
+  package: ExcelScript!
+  fullName: getEnabled()
+  summary: 如果 Excel 使用迭代来处理循环引用，则为 True。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEnabled(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getMaxChange()
+  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)
+  package: ExcelScript!
+  fullName: getMaxChange()
+  summary: 指定在 Excel 解析循环引用时，每次迭代之间的最大更改量。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMaxChange(): number;'
+    return:
+      type: number
+      description: ''
+- name: getMaxIteration()
+  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)
+  package: ExcelScript!
+  fullName: getMaxIteration()
+  summary: 指定 Excel 可用于解析循环引用的最大迭代次数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMaxIteration(): number;'
+    return:
+      type: number
+      description: ''
+- name: setEnabled(enabled)
+  uid: ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)
+  package: ExcelScript!
+  fullName: setEnabled(enabled)
+  summary: 如果 Excel 使用迭代来处理循环引用，则为 True。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setEnabled(enabled: boolean): void;'
+    parameters:
+    - id: enabled
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setMaxChange(maxChange)
+  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)
+  package: ExcelScript!
+  fullName: setMaxChange(maxChange)
+  summary: 指定在 Excel 解析循环引用时，每次迭代之间的最大更改量。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMaxChange(maxChange: number): void;'
+    parameters:
+    - id: maxChange
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMaxIteration(maxIteration)
+  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)
+  package: ExcelScript!
+  fullName: setMaxIteration(maxIteration)
+  summary: 指定 Excel 可用于解析循环引用的最大迭代次数。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMaxIteration(maxIteration: number): void;'
+    parameters:
+    - id: maxIteration
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 7fcf571a42bdb830bb9372a15896f1e862f0ccb3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412291"

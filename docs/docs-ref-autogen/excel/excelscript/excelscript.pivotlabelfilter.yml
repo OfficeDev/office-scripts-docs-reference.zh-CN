@@ -1,80 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
-    summary: 要应用于透视字段的标签筛选器的可配置模板。 定义为使 `condition` 筛选器能够正常工作而需要设置的条件。
-    name: ExcelScript.PivotLabelFilter
-    fullName: ExcelScript.PivotLabelFilter
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
-      - 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
-    summary: 指定筛选器的条件，该条件定义了必要的筛选条件。
-    name: condition
-    fullName: condition
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'condition: LabelFilterCondition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
-    summary: 如果为 true，则筛选 *排除* 满足条件的项目。 默认值为 false (筛选器以包含满足条件) 的项目。
-    name: exclusive
-    fullName: exclusive
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
-    summary: 筛选条件之间的范围的下限。 注意：将数字字符串与其他数值字符串进行比较时，将其视为数字。
-    name: lowerBound
-    fullName: lowerBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'lowerBound?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
-    summary: '用于的子字符串 `BeginsWith`<!-- -->, `EndsWith`<!-- -->和 `Contains` 筛选条件。'
-    name: substring
-    fullName: substring
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'substring?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
-    summary: 筛选条件之间的范围的上限。 注意：将数字字符串与其他数值字符串进行比较时，将其视为数字。
-    name: upperBound
-    fullName: upperBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'upperBound?: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
-    name: LabelFilterCondition
-    fullName: ExcelScript.LabelFilterCondition
+### YamlMime:TSType
+name: ExcelScript.PivotLabelFilter
+uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotLabelFilter
+summary: 要应用于透视字段的标签筛选器的可配置模板。 定义为使 `condition` 筛选器能够正常工作而需要设置的条件。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: 指定筛选器的条件，该条件定义了必要的筛选条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: LabelFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: 如果为 true，则筛选 *排除* 满足条件的项目。 默认值为 false (筛选器以包含满足条件) 的项目。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: 筛选条件之间的范围的下限。 注意：将数字字符串与其他数值字符串进行比较时，将其视为数字。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: string;'
+    return:
+      type: string
+- name: substring
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
+  package: ExcelScript!
+  fullName: substring
+  summary: 用于的子字符串 `BeginsWith`<!-- -->, `EndsWith`<!-- -->和 `Contains` 筛选条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'substring?: string;'
+    return:
+      type: string
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: 筛选条件之间的范围的上限。 注意：将数字字符串与其他数值字符串进行比较时，将其视为数字。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: d030957f0b9d36c810d4e9b9016f5ec9ba5f704a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412053"

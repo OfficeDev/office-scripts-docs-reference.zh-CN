@@ -1,59 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
-    summary: 指定形状的填充类型。
-    name: ExcelScript.ShapeFillType
-    fullName: ExcelScript.ShapeFillType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
-      - 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
-    summary: 渐变填充。
-    name: gradient
-    fullName: gradient
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
-    summary: 混和填充。
-    name: mixed
-    fullName: mixed
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
-    summary: 无填充。
-    name: noFill
-    fullName: noFill
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
-    summary: 图案填充。
-    name: pattern
-    fullName: pattern
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
-    summary: 图片和纹理填充。
-    name: pictureAndTexture
-    fullName: pictureAndTexture
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
-    summary: 单色填充。
-    name: solid
-    fullName: solid
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeFillType
+uid: ExcelScript!ExcelScript.ShapeFillType:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeFillType
+summary: 指定形状的填充类型。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: gradient
+  uid: ExcelScript!ExcelScript.ShapeFillType.gradient:member
+  package: ExcelScript!
+  summary: 渐变填充。
+- name: mixed
+  uid: ExcelScript!ExcelScript.ShapeFillType.mixed:member
+  package: ExcelScript!
+  summary: 混和填充。
+- name: noFill
+  uid: ExcelScript!ExcelScript.ShapeFillType.noFill:member
+  package: ExcelScript!
+  summary: 无填充。
+- name: pattern
+  uid: ExcelScript!ExcelScript.ShapeFillType.pattern:member
+  package: ExcelScript!
+  summary: 图案填充。
+- name: pictureAndTexture
+  uid: ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member
+  package: ExcelScript!
+  summary: 图片和纹理填充。
+- name: solid
+  uid: ExcelScript!ExcelScript.ShapeFillType.solid:member
+  package: ExcelScript!
+  summary: 单色填充。
+metadata:
+  ms.openlocfilehash: 45fe6ba829de5ab95a7aaa2fb1bb37750f649038
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411794"

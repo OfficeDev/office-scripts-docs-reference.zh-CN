@@ -1,79 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTitleFormat:interface'
-    summary: 提供对图表标题的 Office 艺术格式的访问权限。
-    name: Excel.ChartTitleFormat
-    fullName: Excel.ChartTitleFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartTitleFormat#border:member'
-      - 'excel!Excel.ChartTitleFormat#fill:member'
-      - 'excel!Excel.ChartTitleFormat#font:member'
-      - 'excel!Excel.ChartTitleFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartTitleFormat#border:member'
-    summary: 代表图表标题的边框格式，包括颜色、linestyle 和粗细。
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly border: ChartBorder;'
-      return:
-        type:
-          - 'excel!Excel.ChartBorder:interface'
-  - uid: 'excel!Excel.ChartTitleFormat#fill:member'
-    summary: 表示对象的填充格式，包括背景格式信息。
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fill: ChartFill;'
-      return:
-        type:
-          - 'excel!Excel.ChartFill:interface'
-  - uid: 'excel!Excel.ChartTitleFormat#font:member'
-    summary: 表示对象的字体属性（字体名称、字体大小、颜色等）。
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly font: ChartFont;'
-      return:
-        type:
-          - 'excel!Excel.ChartFont:interface'
-  - uid: 'excel!Excel.ChartTitleFormat#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartBorder:interface'
-    name: ChartBorder
-    fullName: Excel.ChartBorder
-  - uid: 'excel!Excel.ChartFill:interface'
-    name: ChartFill
-    fullName: Excel.ChartFill
-  - uid: 'excel!Excel.ChartFont:interface'
-    name: ChartFont
-    fullName: Excel.ChartFont
+### YamlMime:TSType
+name: Excel.ChartTitleFormat
+uid: excel!Excel.ChartTitleFormat:interface
+package: excel!
+fullName: Excel.ChartTitleFormat
+summary: 提供对图表标题的 Office 艺术格式的访问权限。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: border
+  uid: excel!Excel.ChartTitleFormat#border:member
+  package: excel!
+  fullName: border
+  summary: 代表图表标题的边框格式，包括颜色、linestyle 和粗细。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly border: ChartBorder;'
+    return:
+      type: <xref uid="excel!Excel.ChartBorder:interface" />
+- name: fill
+  uid: excel!Excel.ChartTitleFormat#fill:member
+  package: excel!
+  fullName: fill
+  summary: 表示对象的填充格式，包括背景格式信息。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fill: ChartFill;'
+    return:
+      type: <xref uid="excel!Excel.ChartFill:interface" />
+- name: font
+  uid: excel!Excel.ChartTitleFormat#font:member
+  package: excel!
+  fullName: font
+  summary: 表示对象的字体属性（字体名称、字体大小、颜色等）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly font: ChartFont;'
+    return:
+      type: <xref uid="excel!Excel.ChartFont:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartTitleFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: dcab76f90d8e9846409842d0b3d8bbe2316c57d3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413578"
