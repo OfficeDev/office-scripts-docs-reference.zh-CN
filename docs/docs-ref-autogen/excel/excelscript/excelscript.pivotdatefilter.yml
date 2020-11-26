@@ -1,96 +1,90 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter:interface'
-    summary: 要应用于透视字段的日期筛选器的可配置模板。 定义为使 `condition` 筛选器能够正常工作而需要设置的条件。
-    name: ExcelScript.PivotDateFilter
-    fullName: ExcelScript.PivotDateFilter
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotDateFilter#comparator:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#condition:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#exclusive:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#upperBound:member'
-      - 'ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#comparator:member'
-    summary: 比较运算符是其他值要与其进行比较的静态值。 比较的类型由条件定义。
-    name: comparator
-    fullName: comparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'comparator?: FilterDatetime;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#condition:member'
-    summary: 指定筛选器的条件，该条件定义了必要的筛选条件。
-    name: condition
-    fullName: condition
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'condition: DateFilterCondition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateFilterCondition:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#exclusive:member'
-    summary: 如果为 true，则筛选 *排除* 满足条件的项目。 默认值为 false (筛选器以包含满足条件) 的项目。
-    name: exclusive
-    fullName: exclusive
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member'
-    summary: 筛选条件范围的下限 `Between` 。
-    name: lowerBound
-    fullName: lowerBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'lowerBound?: FilterDatetime;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#upperBound:member'
-    summary: 筛选条件范围的上限 `Between` 。
-    name: upperBound
-    fullName: upperBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'upperBound?: FilterDatetime;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member'
-    summary: '。 `Equals`<!-- -->, `Before`<!-- -->, `After`<!-- -->和 `Between` 筛选条件，指示是否应将比较作为全天进行。'
-    name: wholeDays
-    fullName: wholeDays
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'wholeDays?: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
-    name: FilterDatetime
-    fullName: ExcelScript.FilterDatetime
-  - uid: 'ExcelScript!ExcelScript.DateFilterCondition:enum'
-    name: DateFilterCondition
-    fullName: ExcelScript.DateFilterCondition
+### YamlMime:TSType
+name: ExcelScript.PivotDateFilter
+uid: ExcelScript!ExcelScript.PivotDateFilter:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotDateFilter
+summary: 要应用于透视字段的日期筛选器的可配置模板。 定义为使 `condition` 筛选器能够正常工作而需要设置的条件。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: comparator
+  uid: ExcelScript!ExcelScript.PivotDateFilter#comparator:member
+  package: ExcelScript!
+  fullName: comparator
+  summary: 比较运算符是其他值要与其进行比较的静态值。 比较的类型由条件定义。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'comparator?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotDateFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: 指定筛选器的条件，该条件定义了必要的筛选条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: DateFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DateFilterCondition:enum" />
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotDateFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: 如果为 true，则筛选 *排除* 满足条件的项目。 默认值为 false (筛选器以包含满足条件) 的项目。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: 筛选条件范围的下限 `Between` 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotDateFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: 筛选条件范围的上限 `Between` 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: FilterDatetime;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />
+- name: wholeDays
+  uid: ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member
+  package: ExcelScript!
+  fullName: wholeDays
+  summary: 。 `Equals`<!-- -->, `Before`<!-- -->, `After`<!-- -->和 `Between` 筛选条件，指示是否应将比较作为全天进行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'wholeDays?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 50b2f14b12d33ae4786ce8fd4838d8c8ade4a3bd
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415272"

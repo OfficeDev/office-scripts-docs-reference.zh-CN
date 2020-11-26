@@ -1,55 +1,52 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartLineFormat:interface'
-    summary: 封装线条元素的格式设置选项。
-    name: Excel.ChartLineFormat
-    fullName: Excel.ChartLineFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartLineFormat#clear:member(1)'
-      - 'excel!Excel.ChartLineFormat#color:member'
-      - 'excel!Excel.ChartLineFormat#lineStyle:member'
-      - 'excel!Excel.ChartLineFormat#load:member(1)'
-      - 'excel!Excel.ChartLineFormat#weight:member'
-  - uid: 'excel!Excel.ChartLineFormat#clear:member(1)'
-    summary: 清除图表元素的线条格式。
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.ChartLineFormat#color:member'
-    summary: 表示图表中的线条颜色的 HTML 颜色代码。
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartLineFormat#lineStyle:member'
-    summary: 代表线条样式。 有关详细信息，请参阅 ChartLineStyle。
-    name: lineStyle
-    fullName: lineStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        lineStyle:
-                    | ChartLineStyle
+### YamlMime:TSType
+name: Excel.ChartLineFormat
+uid: excel!Excel.ChartLineFormat:interface
+package: excel!
+fullName: Excel.ChartLineFormat
+summary: 封装线条元素的格式设置选项。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: excel!Excel.ChartLineFormat#color:member
+  package: excel!
+  fullName: color
+  summary: 表示图表中的线条颜色的 HTML 颜色代码。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color: string;'
+    return:
+      type: string
+- name: lineStyle
+  uid: excel!Excel.ChartLineFormat#lineStyle:member
+  package: excel!
+  fullName: lineStyle
+  summary: 代表线条样式。 有关详细信息，请参阅 ChartLineStyle。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      lineStyle:
+                  | ChartLineStyle
+                  | "None"
+                  | "Continuous"
+                  | "Dash"
+                  | "DashDot"
+                  | "DashDotDot"
+                  | "Dot"
+                  | "Grey25"
+                  | "Grey50"
+                  | "Grey75"
+                  | "Automatic"
+                  | "RoundDot";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartLineStyle:enum" />
                     | "None"
                     | "Continuous"
                     | "Dash"
@@ -60,97 +57,54 @@ items:
                     | "Grey50"
                     | "Grey75"
                     | "Automatic"
-                    | "RoundDot";
-      return:
-        type:
-          - 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
-  - uid: 'excel!Excel.ChartLineFormat#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartLineFormat#weight:member'
-    summary: 表示线条的粗细（以磅为单位）。
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'weight: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
-    name: |-
-      | ChartLineStyle
-                  | "None"
-                  | "Continuous"
-                  | "Dash"
-                  | "DashDot"
-                  | "DashDotDot"
-                  | "Dot"
-                  | "Grey25"
-                  | "Grey50"
-                  | "Grey75"
-                  | "Automatic"
-                  | "RoundDot"
-    fullName: |-
-      | Excel.ChartLineStyle
-                  | "None"
-                  | "Continuous"
-                  | "Dash"
-                  | "DashDot"
-                  | "DashDotDot"
-                  | "Dot"
-                  | "Grey25"
-                  | "Grey50"
-                  | "Grey75"
-                  | "Automatic"
-                  | "RoundDot"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartLineStyle:enum'
-        name: ChartLineStyle
-        fullName: Excel.ChartLineStyle
-      - name: |2-
-
-                      | "None"
-                      | "Continuous"
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "Dot"
-                      | "Grey25"
-                      | "Grey50"
-                      | "Grey75"
-                      | "Automatic"
-                      | "RoundDot"
-        fullName: |2-
-
-                      | "None"
-                      | "Continuous"
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "Dot"
-                      | "Grey25"
-                      | "Grey50"
-                      | "Grey75"
-                      | "Automatic"
-                      | "RoundDot"
+                    | "RoundDot"
+- name: weight
+  uid: excel!Excel.ChartLineFormat#weight:member
+  package: excel!
+  fullName: weight
+  summary: 表示线条的粗细（以磅为单位）。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'weight: number;'
+    return:
+      type: number
+methods:
+- name: clear()
+  uid: excel!Excel.ChartLineFormat#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: 清除图表元素的线条格式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ChartLineFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: ae00506a648fab09cdb429291a0bc67a674fa189
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414899"

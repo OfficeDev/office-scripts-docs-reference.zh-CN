@@ -1,91 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
-    summary: 表示数据验证类型枚举。
-    name: ExcelScript.DataValidationType
-    fullName: ExcelScript.DataValidationType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DataValidationType.custom:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.date:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.list:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.none:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.time:member'
-      - 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.custom:member'
-    summary: 自定义数据验证类型
-    name: custom
-    fullName: custom
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.date:member'
-    summary: 日期数据验证类型
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
-    summary: 小数数据验证类型
-    name: decimal
-    fullName: decimal
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
-    summary: '"不一致" 表示范围具有不一致的数据验证（不同的单元格有不同的规则）'
-    name: inconsistent
-    fullName: inconsistent
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.list:member'
-    summary: 列表数据验证类型
-    name: list
-    fullName: list
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
-    summary: MixedCriteria 表示区域在部分（而非所有单元格）上存在数据验证
-    name: mixedCriteria
-    fullName: mixedCriteria
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.none:member'
-    summary: '"无" 表示允许任何值，因此范围中没有数据验证。'
-    name: none
-    fullName: none
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
-    summary: 文本长度数据验证类型
-    name: textLength
-    fullName: textLength
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.time:member'
-    summary: 时间数据验证类型
-    name: time
-    fullName: time
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
-    summary: 全数字数据验证类型
-    name: wholeNumber
-    fullName: wholeNumber
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.DataValidationType
+uid: ExcelScript!ExcelScript.DataValidationType:enum
+package: ExcelScript!
+fullName: ExcelScript.DataValidationType
+summary: 表示数据验证类型枚举。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: custom
+  uid: ExcelScript!ExcelScript.DataValidationType.custom:member
+  package: ExcelScript!
+  summary: 自定义数据验证类型
+- name: date
+  uid: ExcelScript!ExcelScript.DataValidationType.date:member
+  package: ExcelScript!
+  summary: 日期数据验证类型
+- name: decimal
+  uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
+  package: ExcelScript!
+  summary: 小数数据验证类型
+- name: inconsistent
+  uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
+  package: ExcelScript!
+  summary: "\"不一致\" 表示区域具有不一致的数据验证 (对不同的单元格有不同的规则) "
+- name: list
+  uid: ExcelScript!ExcelScript.DataValidationType.list:member
+  package: ExcelScript!
+  summary: 列表数据验证类型
+- name: mixedCriteria
+  uid: ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member
+  package: ExcelScript!
+  summary: MixedCriteria 表示区域在部分（而非所有单元格）上存在数据验证
+- name: none
+  uid: ExcelScript!ExcelScript.DataValidationType.none:member
+  package: ExcelScript!
+  summary: "\"无\" 表示允许任何值，因此范围中没有数据验证。"
+- name: textLength
+  uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
+  package: ExcelScript!
+  summary: 文本长度数据验证类型
+- name: time
+  uid: ExcelScript!ExcelScript.DataValidationType.time:member
+  package: ExcelScript!
+  summary: 时间数据验证类型
+- name: wholeNumber
+  uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
+  package: ExcelScript!
+  summary: 全数字数据验证类型
+metadata:
+  ms.openlocfilehash: a8c45f27ff01ae3d2cdd162b58f74388bdb1484a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415454"

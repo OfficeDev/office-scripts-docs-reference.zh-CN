@@ -1,291 +1,204 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Application:interface'
-    summary: 表示用于管理工作簿的 Excel 应用程序。
-    name: Excel.Application
-    fullName: Excel.Application
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Application#calculate:member(1)'
-      - 'excel!Excel.Application#calculationEngineVersion:member'
-      - 'excel!Excel.Application#calculationMode:member'
-      - 'excel!Excel.Application#calculationState:member'
-      - 'excel!Excel.Application#cultureInfo:member'
-      - 'excel!Excel.Application#decimalSeparator:member'
-      - 'excel!Excel.Application#iterativeCalculation:member'
-      - 'excel!Excel.Application#load:member(1)'
-      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
-      - 'excel!Excel.Application#thousandsSeparator:member'
-      - 'excel!Excel.Application#useSystemSeparators:member'
-  - uid: 'excel!Excel.Application#calculate:member(1)'
-    summary: 重新计算 Excel 中当前打开的所有工作簿。
-    name: calculate(calculationType)
-    fullName: calculate(calculationType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        calculate(
-                    calculationType:
-                        | CalculationType
-                        | "Recalculate"
-                        | "Full"
-                        | "FullRebuild"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: calculationType
-          description: 指定要使用的计算类型。 有关详细信息，请参阅 CalculationType。
-          type:
-            - 'excel!Excel.Application#calculate~0:complex'
-  - uid: 'excel!Excel.Application#calculationEngineVersion:member'
-    summary: 返回用于上次完整重新计算的 Excel 计算引擎版本。
-    name: calculationEngineVersion
-    fullName: calculationEngineVersion
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly calculationEngineVersion: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Application#calculationMode:member'
-    summary: 返回工作簿中使用的计算模式，如 CalculationMode 中的常量所定义。 可能的值包括：`Automatic`<!-- -->，Excel 控制重新计算的位置;`AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。`Manual`<!-- -->，在用户请求计算时完成计算。
-    name: calculationMode
-    fullName: calculationMode
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        calculationMode:
-                    | CalculationMode
+### YamlMime:TSType
+name: Excel.Application
+uid: excel!Excel.Application:interface
+package: excel!
+fullName: Excel.Application
+summary: 表示用于管理工作簿的 Excel 应用程序。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: calculationEngineVersion
+  uid: excel!Excel.Application#calculationEngineVersion:member
+  package: excel!
+  fullName: calculationEngineVersion
+  summary: 返回用于上次完整重新计算的 Excel 计算引擎版本。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly calculationEngineVersion: number;'
+    return:
+      type: number
+- name: calculationMode
+  uid: excel!Excel.Application#calculationMode:member
+  package: excel!
+  fullName: calculationMode
+  summary: 返回工作簿中使用的计算模式，如 CalculationMode 中的常量所定义。 可能的值包括： `Automatic`<!-- -->，Excel 控制重新计算的位置; `AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。 `Manual`<!-- -->，在用户请求计算时完成计算。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      calculationMode:
+                  | CalculationMode
+                  | "Automatic"
+                  | "AutomaticExceptTables"
+                  | "Manual";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.CalculationMode:enum" />
                     | "Automatic"
                     | "AutomaticExceptTables"
-                    | "Manual";
-      return:
-        type:
-          - 'excel!Excel.Application#calculationMode~0:complex'
-  - uid: 'excel!Excel.Application#calculationState:member'
-    summary: 返回应用程序的计算状态。 有关详细信息，请参阅 Excel.CalculationState。
-    name: calculationState
-    fullName: calculationState
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        readonly calculationState:
-                    | CalculationState
+                    | "Manual"
+- name: calculationState
+  uid: excel!Excel.Application#calculationState:member
+  package: excel!
+  fullName: calculationState
+  summary: 返回应用程序的计算状态。 有关详细信息，请参阅 Excel.CalculationState。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      readonly calculationState:
+                  | CalculationState
+                  | "Done"
+                  | "Calculating"
+                  | "Pending";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.CalculationState:enum" />
                     | "Done"
                     | "Calculating"
-                    | "Pending";
-      return:
-        type:
-          - 'excel!Excel.Application#calculationState~0:complex'
-  - uid: 'excel!Excel.Application#cultureInfo:member'
-    summary: 基于当前系统区域性设置提供信息。 这包括区域性名称、数字格式和其他区域性相关设置。
-    name: cultureInfo
-    fullName: cultureInfo
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly cultureInfo: CultureInfo;'
-      return:
-        type:
-          - 'excel!Excel.CultureInfo:interface'
-  - uid: 'excel!Excel.Application#decimalSeparator:member'
-    summary: 获取用作数值的小数分隔符的字符串。 这是基于 Excel 的本地设置。
-    name: decimalSeparator
-    fullName: decimalSeparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly decimalSeparator: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Application#iterativeCalculation:member'
-    summary: 返回“迭代计算”设置。 在 Windows 和 Mac 上的 Excel 中，这些设置将应用于 Excel 应用程序。 在 Excel 中的 web 和其他平台上，这些设置将应用于活动工作簿。
-    name: iterativeCalculation
-    fullName: iterativeCalculation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly iterativeCalculation: IterativeCalculation;'
-      return:
-        type:
-          - 'excel!Excel.IterativeCalculation:interface'
-  - uid: 'excel!Excel.Application#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-    summary: 在下一次调用“context.sync()”前暂停计算。设置后，开发者负责重新计算工作簿，以确保传播所有依赖项。
-    name: suspendApiCalculationUntilNextSync()
-    fullName: suspendApiCalculationUntilNextSync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'suspendApiCalculationUntilNextSync(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
-    summary: |-
-      在调用下一步之前挂起屏幕更新 `context.sync()` 。
-
-      **注意**：请勿 `suspendScreenUpdatingUntilNextSync` 重复调用（如在循环中）。 重复调用将导致 Excel 窗口闪烁。
-    name: suspendScreenUpdatingUntilNextSync()
-    fullName: suspendScreenUpdatingUntilNextSync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'suspendScreenUpdatingUntilNextSync(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Application#thousandsSeparator:member'
-    summary: 获取一个字符串，用于将数字值的小数位数与小数的左边隔开。 这是基于 Excel 的本地设置。
-    name: thousandsSeparator
-    fullName: thousandsSeparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly thousandsSeparator: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Application#useSystemSeparators:member'
-    summary: 指定是否启用 Excel 的系统分隔符。 系统分隔符包括小数分隔符和千位分隔符。
-    name: useSystemSeparators
-    fullName: useSystemSeparators
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly useSystemSeparators: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Application#calculate~0:complex'
-    name: |-
-      | CalculationType
+                    | "Pending"
+- name: cultureInfo
+  uid: excel!Excel.Application#cultureInfo:member
+  package: excel!
+  fullName: cultureInfo
+  summary: 基于当前系统区域性设置提供信息。 这包括区域性名称、数字格式和其他区域性相关设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly cultureInfo: CultureInfo;'
+    return:
+      type: <xref uid="excel!Excel.CultureInfo:interface" />
+- name: decimalSeparator
+  uid: excel!Excel.Application#decimalSeparator:member
+  package: excel!
+  fullName: decimalSeparator
+  summary: 获取用作数值的小数分隔符的字符串。 这是基于 Excel 的本地设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly decimalSeparator: string;'
+    return:
+      type: string
+- name: iterativeCalculation
+  uid: excel!Excel.Application#iterativeCalculation:member
+  package: excel!
+  fullName: iterativeCalculation
+  summary: 返回“迭代计算”设置。 在 Windows 和 Mac 上的 Excel 中，这些设置将应用于 Excel 应用程序。 在 Excel 中的 web 和其他平台上，这些设置将应用于活动工作簿。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly iterativeCalculation: IterativeCalculation;'
+    return:
+      type: <xref uid="excel!Excel.IterativeCalculation:interface" />
+- name: thousandsSeparator
+  uid: excel!Excel.Application#thousandsSeparator:member
+  package: excel!
+  fullName: thousandsSeparator
+  summary: 获取一个字符串，用于将数字值的小数位数与小数的左边隔开。 这是基于 Excel 的本地设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly thousandsSeparator: string;'
+    return:
+      type: string
+- name: useSystemSeparators
+  uid: excel!Excel.Application#useSystemSeparators:member
+  package: excel!
+  fullName: useSystemSeparators
+  summary: 指定是否启用 Excel 的系统分隔符。 系统分隔符包括小数分隔符和千位分隔符。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly useSystemSeparators: boolean;'
+    return:
+      type: boolean
+methods:
+- name: calculate(calculationType)
+  uid: excel!Excel.Application#calculate:member(1)
+  package: excel!
+  fullName: calculate(calculationType)
+  summary: 重新计算 Excel 中当前打开的所有工作簿。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      calculate(
+                  calculationType:
+                      | CalculationType
                       | "Recalculate"
                       | "Full"
                       | "FullRebuild"
-    fullName: |-
-      | Excel.CalculationType
-                      | "Recalculate"
-                      | "Full"
-                      | "FullRebuild"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationType:enum'
-        name: CalculationType
-        fullName: Excel.CalculationType
-      - name: |2-
+              ): void;
+    parameters:
+    - id: calculationType
+      description: 指定要使用的计算类型。 有关详细信息，请参阅 CalculationType。
+      type: "| <xref uid=\"excel!Excel.CalculationType:enum\" />\n                | \"Recalculate\"\n                | \"Full\"\n                | \"FullRebuild\"\n        "
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Application#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: suspendApiCalculationUntilNextSync()
+  uid: excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)
+  package: excel!
+  fullName: suspendApiCalculationUntilNextSync()
+  summary: 在下一次调用“context.sync()”前暂停计算。设置后，开发者负责重新计算工作簿，以确保传播所有依赖项。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'suspendApiCalculationUntilNextSync(): void;'
+    return:
+      type: void
+      description: ''
+- name: suspendScreenUpdatingUntilNextSync()
+  uid: excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)
+  package: excel!
+  fullName: suspendScreenUpdatingUntilNextSync()
+  summary: >-
+    在调用下一步之前挂起屏幕更新 `context.sync()` 。
 
-                          | "Recalculate"
-                          | "Full"
-                          | "FullRebuild"
-                  
-        fullName: |2-
 
-                          | "Recalculate"
-                          | "Full"
-                          | "FullRebuild"
-                  
-  - uid: 'excel!Excel.Application#calculationMode~0:complex'
-    name: |-
-      | CalculationMode
-                  | "Automatic"
-                  | "AutomaticExceptTables"
-                  | "Manual"
-    fullName: |-
-      | Excel.CalculationMode
-                  | "Automatic"
-                  | "AutomaticExceptTables"
-                  | "Manual"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationMode:enum'
-        name: CalculationMode
-        fullName: Excel.CalculationMode
-      - name: |2-
-
-                      | "Automatic"
-                      | "AutomaticExceptTables"
-                      | "Manual"
-        fullName: |2-
-
-                      | "Automatic"
-                      | "AutomaticExceptTables"
-                      | "Manual"
-  - uid: 'excel!Excel.Application#calculationState~0:complex'
-    name: |-
-      | CalculationState
-                  | "Done"
-                  | "Calculating"
-                  | "Pending"
-    fullName: |-
-      | Excel.CalculationState
-                  | "Done"
-                  | "Calculating"
-                  | "Pending"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationState:enum'
-        name: CalculationState
-        fullName: Excel.CalculationState
-      - name: |2-
-
-                      | "Done"
-                      | "Calculating"
-                      | "Pending"
-        fullName: |2-
-
-                      | "Done"
-                      | "Calculating"
-                      | "Pending"
-  - uid: 'excel!Excel.CultureInfo:interface'
-    name: CultureInfo
-    fullName: Excel.CultureInfo
-  - uid: 'excel!Excel.IterativeCalculation:interface'
-    name: IterativeCalculation
-    fullName: Excel.IterativeCalculation
+    **注意**：请勿 `suspendScreenUpdatingUntilNextSync` 反复调用 (如在循环) 中。 重复调用将导致 Excel 窗口闪烁。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'suspendScreenUpdatingUntilNextSync(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: ebedb8b1b7c0a22547a6ad13f9bf194a9846d7cb
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414553"

@@ -1,103 +1,73 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartLegendFormat:interface'
-    summary: 封装图表图例的格式属性。
-    name: Excel.ChartLegendFormat
-    fullName: Excel.ChartLegendFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartLegendFormat#border:member'
-      - 'excel!Excel.ChartLegendFormat#fill:member'
-      - 'excel!Excel.ChartLegendFormat#font:member'
-      - 'excel!Excel.ChartLegendFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartLegendFormat#border:member'
-    summary: 表示边框格式，包括颜色、线条样式和粗细。
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly border: ChartBorder;'
-      return:
-        type:
-          - 'excel!Excel.ChartBorder:interface'
-  - uid: 'excel!Excel.ChartLegendFormat#fill:member'
-    summary: 表示对象的填充格式，包括背景格式信息。
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fill: ChartFill;'
-      return:
-        type:
-          - 'excel!Excel.ChartFill:interface'
-  - uid: 'excel!Excel.ChartLegendFormat#font:member'
-    summary: 表示图表图例的字体属性，例如字体名称、字体大小、颜色等。
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly font: ChartFont;'
-      return:
-        type:
-          - 'excel!Excel.ChartFont:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>示例
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              let chart = sheet.charts.getItemAt(0);
-              chart.legend.visible = true;
-
-              // Format the legend font.
-              let font = chart.legend.format.font;
-              font.bold = true;
-              font.color = "red";
-              font.italic = true;
-              font.size = 15;
-              font.name = "Calibri";
-              font.underline = "Single";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.ChartLegendFormat#load:member(1)'
-    summary: 将命令加入队列以加载对象的指定属性。 在 `context.sync()` 读取属性之前，必须先调用。
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartBorder:interface'
-    name: ChartBorder
-    fullName: Excel.ChartBorder
-  - uid: 'excel!Excel.ChartFill:interface'
-    name: ChartFill
-    fullName: Excel.ChartFill
-  - uid: 'excel!Excel.ChartFont:interface'
-    name: ChartFont
-    fullName: Excel.ChartFont
+### YamlMime:TSType
+name: Excel.ChartLegendFormat
+uid: excel!Excel.ChartLegendFormat:interface
+package: excel!
+fullName: Excel.ChartLegendFormat
+summary: 封装图表图例的格式属性。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: border
+  uid: excel!Excel.ChartLegendFormat#border:member
+  package: excel!
+  fullName: border
+  summary: 表示边框格式，包括颜色、线条样式和粗细。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly border: ChartBorder;'
+    return:
+      type: <xref uid="excel!Excel.ChartBorder:interface" />
+- name: fill
+  uid: excel!Excel.ChartLegendFormat#fill:member
+  package: excel!
+  fullName: fill
+  summary: 表示对象的填充格式，包括背景格式信息。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fill: ChartFill;'
+    return:
+      type: <xref uid="excel!Excel.ChartFill:interface" />
+- name: font
+  uid: excel!Excel.ChartLegendFormat#font:member
+  package: excel!
+  fullName: font
+  summary: 表示图表图例的字体属性，例如字体名称、字体大小、颜色等。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly font: ChartFont;'
+    return:
+      type: <xref uid="excel!Excel.ChartFont:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    let chart = sheet.charts.getItemAt(0);\n    chart.legend.visible = true;\n\n    // Format the legend font.\n    let font = chart.legend.format.font;\n    font.bold = true;\n    font.color = \"red\";\n    font.italic = true;\n    font.size = 15;\n    font.name = \"Calibri\";\n    font.underline = \"Single\";\n\n    await context.sync();\n}\n```"
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartLegendFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: 将命令加入队列以加载对象的指定属性。 阅读属性前必须先调用 `context.sync()`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: 一个以逗号分隔的字符串或字符串数组，用于指定要加载的属性。
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 44cdb529018df3516dc8cf08f9dfe2f159c53b33
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414941"
