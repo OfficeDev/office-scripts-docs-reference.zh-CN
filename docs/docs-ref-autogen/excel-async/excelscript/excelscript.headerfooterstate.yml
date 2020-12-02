@@ -12,22 +12,26 @@ fields:
   uid: excel!Excel.HeaderFooterState.default:member
   package: excel!
   summary: 仅一个常规页眉/页脚用于打印的所有页面。
+  value: "\"Default\""
 - name: firstAndDefault
   uid: excel!Excel.HeaderFooterState.firstAndDefault:member
   package: excel!
   summary: 有单独的首页页眉/页脚和用于所有其他页面的常规页眉/页脚。
+  value: "\"FirstAndDefault\""
 - name: firstOddAndEven
   uid: excel!Excel.HeaderFooterState.firstOddAndEven:member
   package: excel!
   summary: 第一个首页页眉/页脚是单独的页眉/页脚，为奇数页和偶数页有单独的页眉/页脚。
+  value: "\"FirstOddAndEven\""
 - name: oddAndEven
   uid: excel!Excel.HeaderFooterState.oddAndEven:member
   package: excel!
   summary: 奇数页和偶数页有不同的页眉/页脚。
+  value: "\"OddAndEven\""
 metadata:
-  ms.openlocfilehash: 1a8c7b34c962f89abd69eb6516c42cdd74de7bfa
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d569d6574f6014a14dd41cf0df5d76b5e7f33005
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419109"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553778"

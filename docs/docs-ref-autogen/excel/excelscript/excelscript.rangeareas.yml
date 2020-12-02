@@ -265,7 +265,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: 返回 RangeAreas 对象，它表示给定区域或 RangeAreas 的交集。 如果未找到任何交集，将返回 null 对象。
+  summary: 返回 RangeAreas 对象，它表示给定区域或 RangeAreas 的交集。 如果找不到任何交集，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)
   package: ExcelScript!
   fullName: getUsedRangeAreas(valuesOnly)
-  summary: 返回使用的 RangeAreas，它包含 RangeAreas 对象中的各个矩形区域的所有已用区域。 如果 RangeAreas 中没有已使用的单元格，则将返回 null 对象。
+  summary: 返回使用的 RangeAreas，它包含 RangeAreas 对象中的各个矩形区域的所有已用区域。 如果 RangeAreas 中没有已使用的单元格，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -443,9 +443,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c32fbe6396b0e5ae78ec78536f827a98e1b2c360
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: da8fcd2adf7d4a33bbe25dd802fd0585a738557c
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416643"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554538"

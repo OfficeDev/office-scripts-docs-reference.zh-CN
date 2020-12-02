@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ReadingOrder.context:member
   package: excel!
   summary: 读取顺序由所输入的首字符的语言所确定。如果首先输入从右到左的语言字符，则读取顺序就为从右到左。如果首先输入从左到右的语言字符，则读取顺序就为从左到右。
+  value: "\"Context\""
 - name: leftToRight
   uid: excel!Excel.ReadingOrder.leftToRight:member
   package: excel!
   summary: 从左到右的阅读顺序
+  value: "\"LeftToRight\""
 - name: rightToLeft
   uid: excel!Excel.ReadingOrder.rightToLeft:member
   package: excel!
   summary: 从右到左的阅读顺序
+  value: "\"RightToLeft\""
 metadata:
-  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fd53fe7af6e6a01fa2192edc5252082824fd4e8e
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418665"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554375"

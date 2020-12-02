@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: 必填。 自定义属性的键，它不区分大小写。 密钥限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符进行修整 (较长的字符) 。
+      description: 必需。 自定义属性的键，它不区分大小写。 密钥限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符进行修整 (较长的字符) 。
       type: string
     - id: value
-      description: 必填。 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符 (较大值进行修整) 。
+      description: 必需。 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符 (较大值进行修整) 。
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则返回 null 对象。
+  summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
     content: 'getCustomProperty(key: string): CustomProperty | undefined;'
     parameters:
     - id: key
-      description: 必填。 标识自定义属性对象的键。
+      description: 必需。 标识自定义属性对象的键。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d16f7fd2e93078d4aca94a3637ea0378a7163798
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5eab007d84d344b973beabd9d62c7753486d3895
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415412"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554651"
