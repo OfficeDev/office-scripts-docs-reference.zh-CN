@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: 基于集合中的工作表名称或 id 返回 RangeAreas 对象。 如果没有 Worksheet 对象，将返回 NULL 对象。
+  summary: 基于集合中的工作表名称或 id 返回 RangeAreas 对象。 如果工作表不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: 5a9a420a2442ca49d5134e53ae4b8f944c59f843
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 314209691b999d9cbfe9b31caec70a30bb490d93
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419220"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554748"

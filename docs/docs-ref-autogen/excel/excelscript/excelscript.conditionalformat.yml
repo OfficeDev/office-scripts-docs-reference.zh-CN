@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: 返回条件格式应用于的区域; 或者，如果将条件格式应用于多个区域，则返回 null 对象。
+  summary: 返回应用条件格式的区域。 如果将条件格式应用于多个区域，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: feaf6283a35e8ddcbf05ec4ed806dfb460ffc46b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 340917734a75d932d8cbc80d2dd569421fd8c707
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415881"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554658"

@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.PivotLayoutType.compact:member
   package: excel!
   summary: 一种水平压缩的窗体，其标签来自同一列中的下一个字段。
+  value: "\"Compact\""
 - name: outline
   uid: excel!Excel.PivotLayoutType.outline:member
   package: excel!
   summary: 内部字段的项目在同一行上与外部字段的项目和小计始终在底部。
+  value: "\"Outline\""
 - name: tabular
   uid: excel!Excel.PivotLayoutType.tabular:member
   package: excel!
   summary: 内部字段的项目总是在相对于外部字段的项目的新行上。
+  value: "\"Tabular\""
 metadata:
-  ms.openlocfilehash: 8d1efe9874ceae2d6e3325bf4210f099b13b983d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5e9f5b3279253d6093a41f98dc05659da58c8129
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418840"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554347"

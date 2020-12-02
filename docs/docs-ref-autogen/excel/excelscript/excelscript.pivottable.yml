@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则返回 Null 对象。
+  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: 按名称获取 DataPivotHierarchy。 如果 DataPivotHierarchy 不存在，则返回 Null 对象。
+  summary: 按名称获取 DataPivotHierarchy。 如果 DataPivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: 按名称获取 FilterPivotHierarchy。 如果 FilterPivotHierarchy 不存在，则返回 Null 对象。
+  summary: 按名称获取 FilterPivotHierarchy。 如果 FilterPivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: 按名称获取 PivotHierarchy。 如果 PivotHierarchy 不存在，则返回 Null 对象。
+  summary: 按名称获取 PivotHierarchy。 如果 PivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则返回 Null 对象。
+  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6e6ae4214e6ddb923ba268f247c5088421dbac94
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cae3d58cfae8798085df614005461abe574927ec
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416713"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554606"

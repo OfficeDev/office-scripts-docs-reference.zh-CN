@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: 获取用于描述活动工作表视图中的冻结单元格的区域。 冻结的范围对应于顶部和最左侧窗格中冻结的单元格。 如果没有冻结的窗格，则返回 null 对象。
+  summary: 获取用于描述活动工作表视图中的冻结单元格的区域。 冻结的范围对应于顶部和最左侧窗格中冻结的单元格。 如果没有冻结的窗格，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cade48ae302b683d6d94540cc1e3578af177091a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6e5fbac54802cd580aee48a168245ddc3f4bb59a
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415139"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554046"

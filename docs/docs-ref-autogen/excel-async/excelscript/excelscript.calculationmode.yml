@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.CalculationMode.automatic:member
   package: excel!
   summary: Excel 在每次相关数据发生更改时计算新公式结果的默认重新计算行为。
+  value: "\"Automatic\""
 - name: automaticExceptTables
   uid: excel!Excel.CalculationMode.automaticExceptTables:member
   package: excel!
   summary: 在每次相关数据发生更改时计算新的公式结果，除非公式在数据表中。
+  value: "\"AutomaticExceptTables\""
 - name: manual
   uid: excel!Excel.CalculationMode.manual:member
   package: excel!
   summary: 仅当用户或加载项请求时，才会进行计算。
+  value: "\"Manual\""
 metadata:
-  ms.openlocfilehash: 039d1e22c000baae0e15e788c8df68173ebf984d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 09e90102086d8eb3addfe3bc196fa607d1447bdd
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414431"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553635"

@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.SlicerSortType.ascending:member
   package: excel!
   summary: 按项目标题的升序对切片器项目进行排序。
+  value: "\"Ascending\""
 - name: dataSourceOrder
   uid: excel!Excel.SlicerSortType.dataSourceOrder:member
   package: excel!
   summary: 按数据源提供的顺序对切片器项目进行排序。
+  value: "\"DataSourceOrder\""
 - name: descending
   uid: excel!Excel.SlicerSortType.descending:member
   package: excel!
   summary: 按项目标题的降序对切片器项进行排序。
+  value: "\"Descending\""
 metadata:
-  ms.openlocfilehash: 1a46ee4b98fe8c87e65cf74cb5c5a6f74f08877b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b129b6077a54b97a10c7aa88199476b19db71658
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418392"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554111"

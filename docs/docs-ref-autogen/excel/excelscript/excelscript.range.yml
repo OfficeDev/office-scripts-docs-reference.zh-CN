@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: 根据指定的条件查找给定的字符串。 如果当前范围大于单个单元格，则搜索将限制为该范围，否则搜索将覆盖该单元格的所有起始工作表。 如果没有匹配项，则此函数将返回一个 null 对象。
+  summary: 根据指定的条件查找给定的字符串。 如果当前范围大于单个单元格，则搜索将限制为该范围，否则搜索将覆盖该单元格的所有起始工作表。 如果没有匹配项，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -616,7 +616,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: 获取表示指定区域的矩形交集的 range 对象。 如果找不到任何交集，则此方法返回空对象。
+  summary: 获取表示指定区域的矩形交集的 range 对象。 如果找不到任何交集，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1001,7 +1001,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: 获取包含一个或多个区域的 RangeAreas 对象，它表示匹配指定类型和值的所有单元格。 如果找不到特殊单元格，则返回 null 对象。
+  summary: 获取包含一个或多个区域的 RangeAreas 对象，它表示匹配指定类型和值的所有单元格。 如果找不到特殊单元格，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1025,7 +1025,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果区域不是定位单元格或溢出区域，则返回 null 对象。
+  summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果区域不是定位单元格或无法找到溢出区域，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1038,7 +1038,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: 获取 Range 对象，它包含要将某个单元格溢出到的定位单元格。 如果不是溢出单元格或多个单元格给出了一个值，则返回 null 对象。
+  summary: 获取包含溢出的单元格的定位单元格的 range 对象。 如果不是溢出的单元格，或给出了多个单元格，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1120,7 +1120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: 返回指定 Range 对象的所用区域。如果区域内没有使用单元格，此函数将返回 NULL 对象。
+  summary: 返回指定 range 对象的所用区域。 如果区域中没有已使用的单元格，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1142,9 +1142,9 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): any;'
+    content: 'getValue(): string | number | boolean;'
     return:
-      type: any
+      type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
 - name: getValues()
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
@@ -1155,9 +1155,9 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): any[][];'
+    content: 'getValues(): (string | number | boolean)[][];'
     return:
-      type: any[][]
+      type: (string | number | boolean)[][]
       description: ''
 - name: getValueType()
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
@@ -1651,11 +1651,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValues(values: any[][]): void;'
+    content: 'setValues(values: (string | number | boolean)[][]): void;'
     parameters:
     - id: values
       description: ''
-      type: any[][]
+      type: (string | number | boolean)[][]
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
@@ -1720,9 +1720,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 652e22f246ce965e2c606f78abb8a457c478431d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2727f3b8ce8b578719e8f5496ee9c1a4cbe40a44
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412013"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554578"
