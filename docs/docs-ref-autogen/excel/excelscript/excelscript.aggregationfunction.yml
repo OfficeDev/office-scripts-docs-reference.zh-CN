@@ -1,115 +1,69 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
-    summary: 数据透视字段的聚合函数。
-    name: ExcelScript.AggregationFunction
-    fullName: ExcelScript.AggregationFunction
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.average:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.count:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.max:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.min:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.product:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
-    summary: Excel 将根据数据项自动选择聚合。
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
-    summary: 使用平均数据（相当于 AVERAGE 函数）进行聚合。
-    name: average
-    fullName: average
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
-    summary: 使用数据中项的计数（相当于 COUNTA 函数）进行聚合。
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
-    summary: 使用数据中的数字计数进行聚合，相当于 COUNT 函数。
-    name: countNumbers
-    fullName: countNumbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
-    summary: 使用数据的最大值（相当于 MAX 函数）进行聚合。
-    name: max
-    fullName: max
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
-    summary: 使用数据的最小值（相当于 MIN 函数）进行聚合。
-    name: min
-    fullName: min
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
-    summary: 使用数据的产品进行聚合，相当于 PRODUCT 函数。
-    name: product
-    fullName: product
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
-    summary: 使用数据的标准偏差（相当于 STDEV 函数）进行聚合。
-    name: standardDeviation
-    fullName: standardDeviation
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
-    summary: 使用数据的标准偏差（相当于 STDEVP 函数）进行聚合。
-    name: standardDeviationP
-    fullName: standardDeviationP
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
-    summary: 使用数据的总和（相当于 SUM 函数）进行聚合。
-    name: sum
-    fullName: sum
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
-    summary: 聚合函数未知或不受支持。
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
-    summary: 使用数据的方差进行聚合，相当于 VAR 函数。
-    name: variance
-    fullName: variance
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
-    summary: 使用数据的方差进行聚合，相当于 VARP 函数。
-    name: varianceP
-    fullName: varianceP
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.AggregationFunction
+uid: ExcelScript!ExcelScript.AggregationFunction:enum
+package: ExcelScript!
+fullName: ExcelScript.AggregationFunction
+summary: 数据透视字段的聚合函数。
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: ExcelScript!ExcelScript.AggregationFunction.automatic:member
+  package: ExcelScript!
+  summary: Excel 将根据数据项自动选择聚合。
+- name: average
+  uid: ExcelScript!ExcelScript.AggregationFunction.average:member
+  package: ExcelScript!
+  summary: 使用平均数据（相当于 AVERAGE 函数）进行聚合。
+- name: count
+  uid: ExcelScript!ExcelScript.AggregationFunction.count:member
+  package: ExcelScript!
+  summary: 使用数据中项的计数（相当于 COUNTA 函数）进行聚合。
+- name: countNumbers
+  uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
+  package: ExcelScript!
+  summary: 使用数据中的数字计数进行聚合，相当于 COUNT 函数。
+- name: max
+  uid: ExcelScript!ExcelScript.AggregationFunction.max:member
+  package: ExcelScript!
+  summary: 使用数据的最大值（相当于 MAX 函数）进行聚合。
+- name: min
+  uid: ExcelScript!ExcelScript.AggregationFunction.min:member
+  package: ExcelScript!
+  summary: 使用数据的最小值（相当于 MIN 函数）进行聚合。
+- name: product
+  uid: ExcelScript!ExcelScript.AggregationFunction.product:member
+  package: ExcelScript!
+  summary: 使用数据的产品进行聚合，相当于 PRODUCT 函数。
+- name: standardDeviation
+  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
+  package: ExcelScript!
+  summary: 使用数据的标准偏差（相当于 STDEV 函数）进行聚合。
+- name: standardDeviationP
+  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
+  package: ExcelScript!
+  summary: 使用数据的标准偏差（相当于 STDEVP 函数）进行聚合。
+- name: sum
+  uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
+  package: ExcelScript!
+  summary: 使用数据的总和（相当于 SUM 函数）进行聚合。
+- name: unknown
+  uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
+  package: ExcelScript!
+  summary: 聚合函数未知或不受支持。
+- name: variance
+  uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
+  package: ExcelScript!
+  summary: 使用数据的方差进行聚合，相当于 VAR 函数。
+- name: varianceP
+  uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
+  package: ExcelScript!
+  summary: 使用数据的方差进行聚合，相当于 VARP 函数。
+metadata:
+  ms.openlocfilehash: fd80d4534a8db2e7a409a6b8e45e529b9bfcaddc
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417367"
