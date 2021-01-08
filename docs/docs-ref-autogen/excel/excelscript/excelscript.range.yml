@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
   package: ExcelScript!
   fullName: addConditionalFormat(type)
-  summary: 将新的条件格式添加到集合中的第一个/最高优先级处。
+  summary: 以第一/最高优先级向集合添加新的条件格式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
     parameters:
     - id: type
-      description: 要添加的条件格式的类型。 有关详细信息，请参阅 ExcelScript。
+      description: 要添加的条件格式的类型。 有关详细信息，请参阅 ExcelScript.ConditionalFormatType。
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: 使用指定的自动填充逻辑将范围从当前范围填充到目标区域。 目标区域可以是 null，也可以是水平或垂直扩展源。 不支持不连续的区域。
+  summary: 使用指定的自动填充逻辑填充从当前范围到目标区域。 目标区域可以是 null，也可以水平或垂直扩展源。 不支持不连续的范围。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -42,10 +42,10 @@ methods:
               ): void;
     parameters:
     - id: destinationRange
-      description: 要自动填充的目标区域。 如果目标区域为 null，则数据将根据周围的单元格进行填充 (这是双击 UI 的区域填充柄) 时的行为。
+      description: 要自动填充的目标区域。 如果目标区域为 null，则根据周围的单元格填充数据 (这是双击 UI 的范围填充句柄时的行为) 。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
-      description: 自动填充的类型。 根据当前区域的内容，指定目标区域的填充方式。 默认值为 "FillDefault"。
+      description: 自动填充的类型。 指定如何根据当前区域的内容填充目标区域。 默认值为"FillDefault"。
       type: <xref uid="ExcelScript!ExcelScript.AutoFillType:enum" />
     return:
       type: void
@@ -75,7 +75,7 @@ methods:
     content: 'clear(applyTo?: ClearApplyTo): void;'
     parameters:
     - id: applyTo
-      description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ExcelScript。
+      description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 ExcelScript.ClearApplyTo。
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
@@ -110,7 +110,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  summary: 将单元格数据或格式从源区域或 RangeAreas 复制到当前区域。 目标区域的大小可以与源区域或 RangeAreas 的大小不同。 如果目标小于源，则将自动扩展目标。
+  summary: 将单元格数据或格式从源区域或 RangeAreas 复制到当前区域。 目标区域的大小可以不同于源区域或 RangeAreas 的大小。 如果目标小于源，将自动扩展目标。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,16 +124,16 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: 要从其复制的源区域或 RangeAreas。 当源 RangeAreas 有多个区域时，必须通过删除矩形区域中的完整行或列来创建窗体。
+      description: 要复制的源区域或 RangeAreas。 当源 RangeAreas 具有多个区域时，必须通过从矩形区域中删除整行或整列来创建其表单。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
-      description: 要复制的单元格数据的类型或格式。 默认值为 "All"。
+      description: 要复制的单元格数据或格式的类型。 默认值为"All"。
       type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
     - id: skipBlanks
-      description: 如果为 True，则在源区域中跳过空白单元格。 默认为 false。
+      description: 如此 如果跳过源范围中的空白单元格。 默认为 false。
       type: boolean
     - id: transpose
-      description: 如此如果要转置目标区域中的单元格。 默认为 false。
+      description: 如此 如果转置目标区域单元格。 默认为 false。
       type: boolean
     return:
       type: void
@@ -150,7 +150,7 @@ methods:
     content: 'delete(shift: DeleteShiftDirection): void;'
     parameters:
     - id: shift
-      description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript。
+      description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript.DeleteShiftDirection。
       type: <xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />
     return:
       type: void
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: 根据指定的条件查找给定的字符串。 如果当前范围大于单个单元格，则搜索将限制为该范围，否则搜索将覆盖该单元格的所有起始工作表。 如果没有匹配项，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
+  summary: 根据指定的条件查找给定的字符串。 如果当前区域大于单个单元格，则搜索将限制为该范围，否则搜索将覆盖从该单元格之后开始的整个工作表。 如果没有匹配项，则此函数将返回其属性设置为 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
       description: 要查找的字符串。
       type: string
     - id: criteria
-      description: 其他搜索条件，包括搜索方向以及搜索是否需要匹配整个单元格或是否区分大小写。
+      description: 其他搜索条件，包括搜索方向以及搜索是否需要匹配整个单元格或区分大小写。
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -200,10 +200,10 @@ methods:
     content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
     parameters:
     - id: numRows
-      description: 新范围大小的行数。
+      description: 新区域大小的行数。
       type: number
     - id: numColumns
-      description: 新范围大小的列数。
+      description: 新区域大小的列数。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -212,7 +212,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: 指定 A1 样式中的区域引用。 Address 值将包含工作表引用 (例如，"Sheet1！A1： B4 ") 。
+  summary: 指定 A1 样式的范围引用。 地址值将包含工作表引用 (例如，"Sheet1！A1：B4") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddressLocal:member(1)
   package: ExcelScript!
   fullName: getAddressLocal()
-  summary: 以用户语言指定区域的区域引用。
+  summary: 以用户语言指定区域的范围引用。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: 根据行和列编号获取包含单个单元格的 range 对象。 单元格可以位于其父区域的边界之外，但前提是它停留在工作表网格中。 返回的单元格位于相对于区域左上角的单元格的位置。
+  summary: 根据行和列编号获取包含单个单元格的 range 对象。 单元格可以位于父区域外部，只要它保持在工作表网格内即可。 返回的单元格位于相对于区域左上角的单元格的位置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -275,7 +275,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getCellCount:member(1)
   package: ExcelScript!
   fullName: getCellCount()
-  summary: 指定区域中的单元格的数目。 如果单元格数超过 2^31-1 (2,147,483,647)，此 API 返回 -1。
+  summary: 指定区域中的单元格数。 如果单元格数超过 2^31-1 (2,147,483,647)，此 API 返回 -1。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -305,7 +305,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnCount:member(1)
   package: ExcelScript!
   fullName: getColumnCount()
-  summary: 指定区域中的总列数。
+  summary: 指定范围中的列总数。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -331,7 +331,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnIndex:member(1)
   package: ExcelScript!
   fullName: getColumnIndex()
-  summary: 指定区域中的第一个单元格的列号。 从零开始编制索引。
+  summary: 指定范围中第一个单元格的列号。 从零开始编制索引。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
     content: 'getConditionalFormat(id: string): ConditionalFormat;'
     parameters:
     - id: id
-      description: 条件格式的 id。
+      description: 条件格式的 ID。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -395,7 +395,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
-  summary: 与该范围相交的 ConditionalFormats 的集合。
+  summary: 与区域相交的 ConditionalFormats 集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -421,7 +421,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
   package: ExcelScript!
   fullName: getDirectPrecedents()
-  summary: 返回一个 WorkbookRangeAreas 对象，该对象代表包含同一工作表或多个工作表中的单元格的所有直接引用单元格的区域。
+  summary: 返回一个 WorkbookRangeAreas 对象，该对象代表包含同一工作表或多个工作表中单元格的所有直接引用单元格的范围。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: 获取一个对象，该对象表示区域中 (的整列。例如，如果当前区域表示单元格 "B4： E11"， `getEntireColumn` 则它是表示列 "B:E" 的区域 ) 。
+  summary: 获取一个对象，该对象代表区域 (，例如，如果当前区域代表单元格"B4：E11"，则其区域表示列 `getEntireColumn` "B：E") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: 获取表示区域中整行的对象 (例如，如果当前区域表示单元格 "B4： E11"， `GetEntireRow` 则它是表示行 "4:11" ) 的区域。
+  summary: 获取一个对象，该对象代表区域整行 (例如，如果当前区域代表单元格"B4：E11"，则其区域表示行 `GetEntireRow` "4：11") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: 代表 A1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  summary: 表示用 A1 样式表示法的单元格公式。 如果区域包含多个单元格，则返回第一个单元格区域 (由行索引 0 和列索引 0 表示的数据) 0。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -486,7 +486,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
-  summary: 代表 A1 样式表示法中的单元格公式，位于用户的语言和数字格式区域设置中。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  summary: 表示采用 A1 样式表示法的单元格公式，采用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则返回第一个单元格区域 (由行索引 0 和列索引 0 表示的数据) 0。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,7 +499,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
-  summary: 代表 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  summary: 表示 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则返回第一个单元格区域 (由行索引 0 和列索引 0 表示的数据) 0。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -512,7 +512,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回它的值。
+  summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回其值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -525,7 +525,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
-  summary: 表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回它的值。
+  summary: 表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回其值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -538,7 +538,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
-  summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回它的值。
+  summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回其值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -551,7 +551,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
-  summary: 表示所有单元格是否都具有溢出边框。 如果所有单元格都有溢出边框，则返回 true; 如果所有单元格都没有溢出边框，则返回 false。 如果区域中有和没有溢出边框的单元格，则返回 null。
+  summary: 表示所有单元格是否都具有溢出边框。 如果所有单元格都有溢出边框，则返回 true;如果所有单元格没有溢出边框，则返回 false。 如果单元格区域内同时存在溢出边框和没有溢出边框，则返回 null。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -590,7 +590,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHyperlink:member(1)
   package: ExcelScript!
   fullName: getHyperlink()
-  summary: 表示当前区域的超链接。
+  summary: 表示当前范围的超链接。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -603,7 +603,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: 将区域呈现为 base64 编码的 png 图像。 **重要说明**： Excel for Mac 中目前不支持此 API。 \[有关当前状态，请访问 OfficeDev/office-Js 问题 \# 235 \] (https://github.com/OfficeDev/office-js/issues/235) 。
+  summary: 将区域呈现为 base64 编码的 png 图像。 **重要** 提示：此 API 当前在 Excel for Mac 中不受支持。 访问 \[ OfficeDev/office-js \# 问题 235 \] (https://github.com/OfficeDev/office-js/issues/235) 当前状态。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -616,7 +616,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: 获取表示指定区域的矩形交集的 range 对象。 如果找不到任何交集，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 获取表示指定区域的矩形交集的 range 对象。 如果未找到任何交集，则此函数将返回其 `isNullObject` 属性设置为 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)
   package: ExcelScript!
   fullName: getLinkedDataTypeState()
-  summary: 表示单元格的数据类型状态。
+  summary: 表示数据类型状态。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -737,7 +737,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: 返回一个 RangeAreas 对象，该对象代表此区域中的合并区域。 请注意，如果此范围中的合并区域计数超过512，API 将无法返回结果。
+  summary: 返回一个 RangeAreas 对象，该对象代表此范围中的合并区域。 请注意，如果此范围内合并的区域数超过 512，API 将无法返回结果。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -750,7 +750,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 表示给定范围的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  summary: 表示给定范围的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则返回第一个单元格区域 (由行索引 0 和列索引 0 表示的数据) 0。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -763,7 +763,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)
   package: ExcelScript!
   fullName: getNumberFormatCategories()
-  summary: 表示每个单元格的数字格式的类别。
+  summary: 表示每个单元格的编号格式的类别。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -776,7 +776,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: 表示给定范围的单元格 Excel 数字格式代码（基于用户的语言设置）。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  summary: 表示给定范围的单元格 Excel 数字格式代码，基于用户的语言设置。 Excel 在获取或设置属性时不执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都使用基于系统设置中指定的语言的本地格式的字符串。 如果区域包含多个单元格，则返回第一个单元格区域 (由行索引 0 和列索引 0 表示的数据) 0。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -802,7 +802,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: 根据用户的语言设置，表示给定范围的 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。
+  summary: 表示基于用户的语言设置的给定范围的 Excel 号码格式代码。 Excel 在获取或设置属性时不执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都使用基于系统设置中指定的语言的本地格式的字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -835,7 +835,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
   package: ExcelScript!
   fullName: getPivotTables(fullyContained)
-  summary: 获取与区域重叠的数据透视表的限定集合。
+  summary: 获取与区域重叠的数据透视表的作用域集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
     content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
     parameters:
     - id: fullyContained
-      description: 如果为 true，则仅返回完全包含在区域边界内的数据透视表。 默认值为 false。
+      description: 如果为 true，则仅返回区域边界内完全包含的数据透视表。 默认值为 false。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
@@ -852,7 +852,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: 表示当前区域的样式。 如果单元格的样式不一致，则将返回 null。 对于自定义样式，将返回样式名称。 对于内置样式，将返回一个表示 BuiltInStyle 枚举中的值的字符串。
+  summary: 表示当前区域的样式。 如果单元格的样式不一致，则返回 null。 对于自定义样式，将返回样式名称。 对于内置样式，将返回一个代表 BuiltInStyle 枚举中的值的字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -876,7 +876,7 @@ methods:
       description: 相对于当前范围，展开右下角的行数。使用正数可展开范围，使用负数可合拢范围。
       type: number
     - id: deltaColumns
-      description: 相对于当前范围，从右下角扩展的列数。 使用正数可展开范围，使用负数可合拢范围。
+      description: 相对于当前范围展开右下角的列数。 使用正数可展开范围，使用负数可合拢范围。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -975,7 +975,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
-  summary: 表示是否将所有单元格都保存为数组公式。 如果所有单元格都将保存为数组公式，则返回 true; 如果不将所有单元格保存为数组公式，则返回 false。 如果某些单元格将另存为数组公式，则返回 null，而某些单元格则不是。
+  summary: 表示所有单元格是否将另存为数组公式。 如果 ALL 单元格将另存为数组公式，则返回 true;如果所有单元格不另存为数组公式，则返回 false。 如果某些单元格将另存为数组公式，而某些单元格不另存为数组公式，则返回 null。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1001,7 +1001,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: 获取包含一个或多个区域的 RangeAreas 对象，它表示匹配指定类型和值的所有单元格。 如果找不到特殊单元格，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
+  summary: 获取包含一个或多个区域的 RangeAreas 对象，它表示匹配指定类型和值的所有单元格。 如果未找到特殊单元格，则此函数将返回其属性设置为 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1016,16 +1016,16 @@ methods:
       description: 要包含的单元格的类型。
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: 如果 cellType 为常量或公式，则此参数用于确定要在结果中包含哪些类型的单元格。 可以将这些值组合在一起，以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
+      description: 如果 cellType 是常量或公式，则此参数用于确定结果中要包含的单元格类型。 这些值可以组合在一起以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```javascript\n/**\n * This sample gets all the blank cells in the current worksheet's used range. It then highlights all those cells with a yellow background.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Get the current used range.\n    let range = workbook.getActiveWorksheet().getUsedRange();\n    \n    // Get all the blank cells.\n    let blankCells = range.getSpecialCells(ExcelScript.SpecialCellType.blanks);\n    // Highlight the blank cells with a yellow background.\n    blankCells.getFormat().getFill().setColor(\"yellow\");\n}\n```"
 - name: getSpillingToRange()
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果区域不是定位单元格或无法找到溢出区域，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果区域不是定位单元格或找不到溢出区域，则此函数将返回其属性设置为 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1038,7 +1038,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: 获取包含溢出的单元格的定位单元格的 range 对象。 如果不是溢出的单元格，或给出了多个单元格，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
+  summary: 获取包含被溢出的单元格的定位单元格的 range 对象。 如果该对象不是溢出的单元格，或者给定了多个单元格，则此函数将返回其属性设置为 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1081,7 +1081,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: 代表指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  summary: 表示指定区域的文本值。 文本值与单元格宽度无关。 在 \# Excel UI 中发生的符号替换不会影响 API 返回的文本值。 如果区域包含多个单元格，则返回第一个单元格区域 (由行索引 0 和列索引 0 表示的数据) 0。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1094,7 +1094,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: 指定区域的文本值。 文本值与单元格宽度无关。 \#EXCEL UI 中发生的符号替换不会影响 API 返回的文本值。
+  summary: 指定区域的文本值。 文本值与单元格宽度无关。 在 \# Excel UI 中发生的符号替换不会影响 API 返回的文本值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1120,7 +1120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: 返回指定 range 对象的所用区域。 如果区域中没有已使用的单元格，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 返回指定 range 对象的所用区域。 如果区域内没有已使用的单元格，则此函数将返回其属性设置为 `isNullObject``true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1137,7 +1137,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: 表示指定范围的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，则返回第一个单元格区域 (由行索引 0 和列索引 0 表示的数据) 0。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1163,7 +1163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
   package: ExcelScript!
   fullName: getValueType()
-  summary: 表示单元格中的数据的类型。 如果区域包含多个单元格，则将返回第一个单元格 (中的行索引为0，列索引为 0) 的数据。
+  summary: 表示单元格中的数据类型。 如果区域包含多个单元格，则返回第一个单元格区域 (由行索引 0 和列索引 0 表示的数据) 0。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1228,7 +1228,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#group:member(1)
   package: ExcelScript!
   fullName: group(groupOption)
-  summary: 对列和行进行分组以进行分级显示。
+  summary: 对大纲的列和行进行分组。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1236,7 +1236,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: 指定如何按行或列对区域进行分组。 `InvalidArgument`当组选项与范围或属性不同时，将引发错误 `isEntireRow` `isEntireColumn` (也就是说， `range.isEntireRow` 为 True 且 `groupOption` 为 "ByColumns"，或者为 `range.isEntireColumn` `groupOption` "ByRows" ) 。
+      description: 指定如何按行或列对区域进行分组。 当组选项与区域或属性不同时，将引发错误 (即为 `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` true，为 `groupOption` "ByColumns"或 true 且为 `range.isEntireColumn` `groupOption` "ByRows") 。
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1270,7 +1270,7 @@ methods:
     content: 'insert(shift: InsertShiftDirection): Range;'
     parameters:
     - id: shift
-      description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript。
+      description: 指定移动单元格的方式。 有关详细信息，请参阅 ExcelScript.InsertShiftDirection。
       type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1296,7 +1296,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
   package: ExcelScript!
   fullName: moveTo(destinationRange)
-  summary: 将单元格的值、格式和公式从当前区域移动到目标区域，替换这些单元格中的旧信息。 如果目标区域小于当前区域，则将自动扩展目标区域。 原始区域区域以外的目标区域中的任何单元格都不会更改。
+  summary: 将单元格值、格式设置和公式从当前区域移动到目标区域，替换这些单元格中的旧信息。 如果目标区域小于当前范围，则会自动扩展该范围。 不会更改目标区域中原始区域之外的任何单元格。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1304,7 +1304,7 @@ methods:
     content: 'moveTo(destinationRange: Range | string): void;'
     parameters:
     - id: destinationRange
-      description: destinationRange 指定此范围中的信息将移动到的范围。
+      description: destinationRange 指定将在此范围中信息移动到的范围。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -1325,10 +1325,10 @@ methods:
               ): RemoveDuplicatesResult;
     parameters:
     - id: columns
-      description: 区域中可能包含重复项的列。 至少需要指定一个列。 从零开始编制索引。
+      description: 区域内可能包含重复项的列。 至少需要指定一列。 从零开始编制索引。
       type: number[]
     - id: includesHeader
-      description: 如果输入数据包含标头，则为 True。 默认为 false。
+      description: 如此 如果输入数据包含标头。 默认为 false。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
@@ -1353,7 +1353,7 @@ methods:
       description: 要查找的字符串。
       type: string
     - id: replacement
-      description: 要将原始替换为的字符串。
+      description: 要替换为原始字符串。
       type: string
     - id: criteria
       description: 其他替换条件。
@@ -1408,7 +1408,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: 以 A1 样式表示法设置单元格公式。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  summary: 使用 A1 样式表示法设置单元格公式。 如果区域包含多个单元格，则给定区域的每个单元格都将使用输入数据进行更新。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1425,7 +1425,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
   fullName: setFormulaLocal(formulaLocal)
-  summary: 在用户的语言和数字格式设置区域设置 A1 样式表示法中的单元格公式。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  summary: 使用用户的语言和数字格式区域设置 A1 样式表示法的单元格公式。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则给定区域的每个单元格都将使用输入数据进行更新。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1442,7 +1442,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulaR1C1(formulaR1C1)
-  summary: 以 R1C1 样式表示法设置单元格公式。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  summary: 使用 R1C1 样式表示法设置单元格公式。 如果区域包含多个单元格，则给定区域的每个单元格都将使用输入数据进行更新。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1459,7 +1459,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
-  summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回它的值。
+  summary: 表示采用 A1 表示法的公式。 如果单元格没有公式，则改为返回其值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1476,7 +1476,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
-  summary: 表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回它的值。
+  summary: 表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果单元格没有公式，则改为返回其值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1493,7 +1493,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
-  summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回它的值。
+  summary: 表示采用 R1C1 样式表示法的公式。 如果单元格没有公式，则改为返回其值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1510,7 +1510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setHyperlink:member(1)
   package: ExcelScript!
   fullName: setHyperlink(hyperlink)
-  summary: 表示当前区域的超链接。
+  summary: 表示当前范围的超链接。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1527,7 +1527,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: 设置给定区域的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  summary: 设置给定范围的单元格 Excel 数字格式代码。 如果区域包含多个单元格，则给定区域的每个单元格都将使用输入数据进行更新。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1544,7 +1544,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: 根据用户的语言设置，设置给定区域的单元格 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  summary: 根据用户的语言设置设置给定范围的单元格 Excel 数字格式代码。 Excel 在获取或设置属性时不执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都使用基于系统设置中指定的语言的本地格式的字符串。 如果区域包含多个单元格，则给定区域的每个单元格都将使用输入数据进行更新。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1578,7 +1578,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: 根据用户的语言设置，表示给定范围的 Excel 数字格式代码。 在获取或设置属性时，Excel 不会执行任何语言或格式强制 `numberFormatLocal` 。 任何返回的文本将根据系统设置中指定的语言使用本地格式化的字符串。
+  summary: 表示基于用户的语言设置的给定范围的 Excel 号码格式代码。 Excel 在获取或设置属性时不执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都使用基于系统设置中指定的语言的本地格式的字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1595,7 +1595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: 表示当前区域的样式。 如果单元格的样式不一致，则将返回 null。 对于自定义样式，将返回样式名称。 对于内置样式，将返回一个表示 BuiltInStyle 枚举中的值的字符串。
+  summary: 表示当前区域的样式。 如果单元格的样式不一致，则返回 null。 对于自定义样式，将返回样式名称。 对于内置样式，将返回一个代表 BuiltInStyle 枚举中的值的字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1629,7 +1629,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: 设置指定区域的原始值。 设置的数据可以是 string、number 或 boolean 类型。 `null` 值将被忽略 (在 Excel) 中未设置或覆盖。 如果区域包含多个单元格，则将使用输入数据更新给定区域中的每个单元格。
+  summary: 设置指定区域的原始值。 要设置的数据的类型可以是字符串、数字或布尔值。 `null` 值将在 Excel (中设置或覆盖时) 。 如果区域包含多个单元格，则给定区域的每个单元格都将使用输入数据进行更新。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1684,7 +1684,7 @@ methods:
     content: 'showGroupDetails(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: 指定是否显示分组行或分组列的详细信息。
+      description: 指定是显示分组行的详细信息还是分组列的详细信息。
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1693,7 +1693,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#ungroup:member(1)
   package: ExcelScript!
   fullName: ungroup(groupOption)
-  summary: 取消边框的列和行的组合。
+  summary: 取消大纲的列和行的组。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1701,7 +1701,7 @@ methods:
     content: 'ungroup(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: 指定如何将区域与行或列取消组合。
+      description: 指定如何按行或列取消区域组合。
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1720,9 +1720,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 2727f3b8ce8b578719e8f5496ee9c1a4cbe40a44
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 8f16fa6c9b84bdd42fd68e8d9be7402164c40531
+  ms.sourcegitcommit: 2166f15e1168b1b453872c5840431e960dc909df
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554578"
+  ms.lasthandoff: 01/08/2021
+  ms.locfileid: "49784455"
