@@ -3,7 +3,7 @@ name: ExcelScript.PredefinedCellStyle
 uid: ExcelScript!ExcelScript.PredefinedCellStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.PredefinedCellStyle
-summary: 一个封装样式的格式和其他属性的对象。
+summary: 封装样式的格式和其他属性的对象。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: 指定当单元格中文本的对齐方式设置为相等分布时，文本是否自动缩进。
+  summary: 指定当单元格中的文本对齐方式设置为相等分布时文本是否自动缩进。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: 四个 Border 对象的 Border 集合，表示四个边框的样式。
+  summary: 四个 border 对象的集合，这些对象代表四个边框的样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getBuiltIn:member(1)
   package: ExcelScript!
   fullName: getBuiltIn()
-  summary: 指定样式是否为内置样式。
+  summary: 指定样式是否内置样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: 该 Font 对象表示样式的字体。
+  summary: '`Font`一个代表样式字体的对象。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFormulaHidden:member(1)
   package: ExcelScript!
   fullName: getFormulaHidden()
-  summary: 指定在工作表处于保护状态时是否隐藏公式。
+  summary: 指定在工作表受保护时是否隐藏公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: 表示样式水平对齐。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示样式水平对齐。 有关详细信息，请参阅 `ExcelScript.HorizontalAlignment`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: getIncludeAlignment()
-  summary: 指定样式是否包括 AutoIndent、HorizontalAlignment、VerticalAlignment、WrapText、IndentLevel 和 TextOrientation 属性。
+  summary: 指定样式是否包括自动缩进、水平对齐、垂直对齐、自动换行、缩进级别和文本方向属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)
   package: ExcelScript!
   fullName: getIncludeBorder()
-  summary: 指定样式是否包含 Color、ColorIndex、LineStyle 和权数边框属性。
+  summary: 指定样式是否包括颜色、颜色索引、线条样式和粗边框属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)
   package: ExcelScript!
   fullName: getIncludeFont()
-  summary: 指定样式是否包括背景、粗体、颜色、ColorIndex、FontStyle、斜体、名称、大小、删除线、下标、上标和下划线字体属性。
+  summary: 指定样式是否包括背景、粗体、颜色、颜色索引、字体样式、italic、名称、大小、删除线、下标、上标和下划线字体属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)
   package: ExcelScript!
   fullName: getIncludeNumber()
-  summary: 指定样式是否包含 NumberFormat 属性。
+  summary: 指定样式是否包含数字格式属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)
   package: ExcelScript!
   fullName: getIncludePatterns()
-  summary: 指定样式是否包含 Color、ColorIndex、InvertIfNegative、Pattern、PatternColor 和 PatternColorIndex 内部属性。
+  summary: 指定样式是否包括颜色、颜色索引、反转（如果为负值）、图案、图案颜色和图案颜色索引内部属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)
   package: ExcelScript!
   fullName: getIncludeProtection()
-  summary: 指定样式是否包含 FormulaHidden 和 Locked 保护属性。
+  summary: 指定样式是否包含隐藏和锁定保护属性的公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getLocked:member(1)
   package: ExcelScript!
   fullName: getLocked()
-  summary: 指定在工作表处于保护状态时是否锁定对象。
+  summary: 指定在工作表受保护时对象是否被锁定。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
     content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
     parameters:
     - id: index
-      description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 ExcelScript。
+      description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 `ExcelScript.BorderIndex`。
       type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
@@ -277,7 +277,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示整个边框集合没有统一的 tintAndShade 设置。
+  summary: 指定使区域边框的颜色变亮或变暗的双精度型值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示整个边框集合没有统一 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getShrinkToFit:member(1)
   package: ExcelScript!
   fullName: getShrinkToFit()
-  summary: 指定文本是否自动收缩以显示可用列宽。
+  summary: 指定文本是否自动缩小以适应可用列宽。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -329,7 +329,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 ExcelScript。
+  summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.VerticalAlignment`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -342,7 +342,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getWrapText:member(1)
   package: ExcelScript!
   fullName: getWrapText()
-  summary: 指定 Excel 是否对对象中的文本进行换行。
+  summary: 指定 Excel 是否将对象中的文本换行。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: 指定当单元格中文本的对齐方式设置为相等分布时，文本是否自动缩进。
+  summary: 指定当单元格中的文本对齐方式设置为相等分布时文本是否自动缩进。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -372,7 +372,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setFormulaHidden:member(1)
   package: ExcelScript!
   fullName: setFormulaHidden(formulaHidden)
-  summary: 指定在工作表处于保护状态时是否隐藏公式。
+  summary: 指定在工作表受保护时是否隐藏公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: 表示样式水平对齐。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示样式水平对齐。 有关详细信息，请参阅 `ExcelScript.HorizontalAlignment`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -406,7 +406,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: setIncludeAlignment(includeAlignment)
-  summary: 指定样式是否包括 AutoIndent、HorizontalAlignment、VerticalAlignment、WrapText、IndentLevel 和 TextOrientation 属性。
+  summary: 指定样式是否包括自动缩进、水平对齐、垂直对齐、自动换行、缩进级别和文本方向属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)
   package: ExcelScript!
   fullName: setIncludeBorder(includeBorder)
-  summary: 指定样式是否包含 Color、ColorIndex、LineStyle 和权数边框属性。
+  summary: 指定样式是否包括颜色、颜色索引、线条样式和粗边框属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -440,7 +440,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)
   package: ExcelScript!
   fullName: setIncludeFont(includeFont)
-  summary: 指定样式是否包括背景、粗体、颜色、ColorIndex、FontStyle、斜体、名称、大小、删除线、下标、上标和下划线字体属性。
+  summary: 指定样式是否包括背景、粗体、颜色、颜色索引、字体样式、italic、名称、大小、删除线、下标、上标和下划线字体属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -457,7 +457,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)
   package: ExcelScript!
   fullName: setIncludeNumber(includeNumber)
-  summary: 指定样式是否包含 NumberFormat 属性。
+  summary: 指定样式是否包含数字格式属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -474,7 +474,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)
   package: ExcelScript!
   fullName: setIncludePatterns(includePatterns)
-  summary: 指定样式是否包含 Color、ColorIndex、InvertIfNegative、Pattern、PatternColor 和 PatternColorIndex 内部属性。
+  summary: 指定样式是否包括颜色、颜色索引、反转（如果为负值）、图案、图案颜色和图案颜色索引内部属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -491,7 +491,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)
   package: ExcelScript!
   fullName: setIncludeProtection(includeProtection)
-  summary: 指定样式是否包含 FormulaHidden 和 Locked 保护属性。
+  summary: 指定样式是否包含隐藏和锁定保护属性的公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -525,7 +525,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setLocked:member(1)
   package: ExcelScript!
   fullName: setLocked(locked)
-  summary: 指定在工作表处于保护状态时是否锁定对象。
+  summary: 指定在工作表受保护时对象是否被锁定。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -576,7 +576,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示整个边框集合没有统一的 tintAndShade 设置。
+  summary: 指定使区域边框的颜色变亮或变暗的双精度型值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示整个边框集合没有统一 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -610,7 +610,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setShrinkToFit:member(1)
   package: ExcelScript!
   fullName: setShrinkToFit(shrinkToFit)
-  summary: 指定文本是否自动收缩以显示可用列宽。
+  summary: 指定文本是否自动缩小以适应可用列宽。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 ExcelScript。
+  summary: 指定样式的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.VerticalAlignment`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -661,7 +661,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setWrapText:member(1)
   package: ExcelScript!
   fullName: setWrapText(wrapText)
-  summary: 指定 Excel 是否对对象中的文本进行换行。
+  summary: 指定 Excel 是否将对象中的文本换行。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -675,9 +675,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5969a129dc30629684c79765be7c43892cf87600
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 90d16417266aad48b871faec7c48f2fd03d52985
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416698"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607443"

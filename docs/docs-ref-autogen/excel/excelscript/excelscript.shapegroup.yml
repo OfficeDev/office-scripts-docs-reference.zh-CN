@@ -3,7 +3,7 @@ name: ExcelScript.ShapeGroup
 uid: ExcelScript!ExcelScript.ShapeGroup:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeGroup
-summary: 代表工作表中的形状组。 若要获取相应的 Shape 对象，请使用 `ShapeGroup.shape`<!-- -->.
+summary: 表示工作表内的形状组。 若要获取相应的 `Shape` 对象，请使用 `ShapeGroup.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)
   package: ExcelScript!
   fullName: getGroupShape()
-  summary: 返回与组关联的 Shape 对象。
+  summary: 返回 `Shape` 与组关联的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)
   package: ExcelScript!
   fullName: getShape(key)
-  summary: 按名称或 ID 获取形状。
+  summary: 使用形状的名称或 ID 获取形状。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)
   package: ExcelScript!
   fullName: getShapes()
-  summary: 返回 Shape 对象的集合。
+  summary: 返回对象 `Shape` 的集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7aa8ade3b8eb551378ae316ced0864f037bee30f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cc1e9a9a08dfbf3710f374a5e254984a8314df9c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420634"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607373"

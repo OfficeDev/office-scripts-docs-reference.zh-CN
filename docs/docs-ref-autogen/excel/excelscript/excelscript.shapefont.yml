@@ -3,7 +3,7 @@ name: ExcelScript.ShapeFont
 uid: ExcelScript!ExcelScript.ShapeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeFont
-summary: 代表形状的 TextRange 对象的字体属性，如字体名称、字体大小和颜色。
+summary: 表示形状的对象的字体属性，如字体名称、字号和 `TextRange` 颜色。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: 表示字体的加粗状态。 如果 TextRange 包含粗体和非粗体文本片段，则返回 null。
+  summary: 表示字体的加粗状态。 如果 `null` 包括 `TextRange` 粗体和非粗体文本片段，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: " (文本颜色的 HTML 颜色代码表示形式，例如，\" \\# FF0000\" 表示红色) 。 如果 TextRange 包含具有不同颜色的文本片段，则返回 null。"
+  summary: 文本颜色格式的 HTML 颜色代码表示 (例如 \# "FF0000"表示红色) 。 如果 `null` 包含 `TextRange` 不同颜色的文本片段，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: 表示字体的斜体状态。 如果 TextRange 包含斜体和非斜体文本片段，则返回 null。
+  summary: 表示字体的斜体状态。 如果 `null` 包含 `TextRange` italic 和非 italic 文本片段，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 表示字体名称 (例如，"Calibri" ) 。 如果文本是复杂脚本或东亚语言，则这是相应的字体名称，否则是拉丁字体名称。
+  summary: 表示字体名称 (例如"Calibri") 。 如果文本是复杂文种或东亚语言，则这是相应的字体名称;否则为拉丁语字体名称。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getSize:member(1)
   package: ExcelScript!
   fullName: getSize()
-  summary: 表示字体大小，以磅为单位 (例如，11) 。 如果 TextRange 包含具有不同字体大小的文本片段，则返回 null。
+  summary: 表示字号（以 (，例如 11) ）。 如果 `null` 包含 `TextRange` 字体大小不同的文本片段，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: 应用于字体的下划线类型。 如果 TextRange 包含具有不同下划线样式的文本片段，则返回 null。 有关详细信息，请参阅 ExcelScript。
+  summary: 应用于字体的下划线类型。 如果 `null` 包含 `TextRange` 不同下划线样式的文本片段，则返回 。 有关详细信息，请参阅 `ExcelScript.ShapeFontUnderlineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: 表示字体的加粗状态。 如果 TextRange 包含粗体和非粗体文本片段，则返回 null。
+  summary: 表示字体的加粗状态。 如果 `null` 包括 `TextRange` 粗体和非粗体文本片段，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: " (文本颜色的 HTML 颜色代码表示形式，例如，\" \\# FF0000\" 表示红色) 。 如果 TextRange 包含具有不同颜色的文本片段，则返回 null。"
+  summary: 文本颜色格式的 HTML 颜色代码表示 (例如 \# "FF0000"表示红色) 。 如果 `null` 包含 `TextRange` 不同颜色的文本片段，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: 表示字体的斜体状态。 如果 TextRange 包含斜体和非斜体文本片段，则返回 null。
+  summary: 表示字体的斜体状态。 如果 `null` 包含 `TextRange` italic 和非 italic 文本片段，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: 表示字体名称 (例如，"Calibri" ) 。 如果文本是复杂脚本或东亚语言，则这是相应的字体名称，否则是拉丁字体名称。
+  summary: 表示字体名称 (例如"Calibri") 。 如果文本是复杂文种或东亚语言，则这是相应的字体名称;否则为拉丁语字体名称。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setSize:member(1)
   package: ExcelScript!
   fullName: setSize(size)
-  summary: 表示字体大小，以磅为单位 (例如，11) 。 如果 TextRange 包含具有不同字体大小的文本片段，则返回 null。
+  summary: 表示字号（以 (，例如 11) ）。 如果 `null` 包含 `TextRange` 字体大小不同的文本片段，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: 应用于字体的下划线类型。 如果 TextRange 包含具有不同下划线样式的文本片段，则返回 null。 有关详细信息，请参阅 ExcelScript。
+  summary: 应用于字体的下划线类型。 如果 `null` 包含 `TextRange` 不同下划线样式的文本片段，则返回 。 有关详细信息，请参阅 `ExcelScript.ShapeFontUnderlineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6b66c4e96e389d47663061a6e517e950dca9b0d2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 924be3475b94ead2e38bc97980c97bb046cb5707
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420648"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607380"

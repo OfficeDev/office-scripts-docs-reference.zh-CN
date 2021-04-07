@@ -57,9 +57,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 78fcc6042f655d841c8330506ca305e7533ac0f6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c3744f882474aedd6d50bdbb466cf704b3b5b143
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415160"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607289"

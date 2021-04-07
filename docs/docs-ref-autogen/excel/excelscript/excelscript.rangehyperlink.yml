@@ -3,7 +3,7 @@ name: ExcelScript.RangeHyperlink
 uid: ExcelScript!ExcelScript.RangeHyperlink:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeHyperlink
-summary: 表示获取/设置超链接 (XHL) 对象所需的字符串。
+summary: 表示获取/设置 XHL 对象 (超链接) 字符串。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 8ff934a57f355a4480ae8c939e77b1f07a7b6c3e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b296ffb565aa120c41ff01fd95e8f8e92b0d3dc3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416594"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607422"

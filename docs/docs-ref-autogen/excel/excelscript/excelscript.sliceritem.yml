@@ -3,7 +3,7 @@ name: ExcelScript.SlicerItem
 uid: ExcelScript!ExcelScript.SlicerItem:interface
 package: ExcelScript!
 fullName: ExcelScript.SlicerItem
-summary: 表示切片器中的切片器项目。
+summary: 表示切片器中的切片器项。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
   package: ExcelScript!
   fullName: getHasData()
-  summary: 如果切片器项包含数据，则为 True。
+  summary: 如果 `true` 切片器项具有数据，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
   package: ExcelScript!
   fullName: getIsSelected()
-  summary: 如果选择了切片器项，则为 True。 设置此值不会清除其他 SlicerItems 的选定状态。 默认情况下，如果仅选择了切片器项目，则取消选择该项目时，将会选择所有项目。
+  summary: 如果选择了 `true` 切片器项，则值为 。 设置此值不会清除其他切片器项的选定状态。 默认情况下，如果切片器项是唯一选择的项目，则当取消选择该切片器项时，将选择所有项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 代表 UI 中显示的标题。
+  summary: 表示 Excel UI 中显示的标题。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
   package: ExcelScript!
   fullName: setIsSelected(isSelected)
-  summary: 如果选择了切片器项，则为 True。 设置此值不会清除其他 SlicerItems 的选定状态。 默认情况下，如果仅选择了切片器项目，则取消选择该项目时，将会选择所有项目。
+  summary: 如果选择了 `true` 切片器项，则值为 。 设置此值不会清除其他切片器项的选定状态。 默认情况下，如果切片器项是唯一选择的项目，则当取消选择该切片器项时，将选择所有项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 198e28e187b64e9c64d0b94e95fb91eb7720156c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdfae7429391b3992f4f885b23794f5876c6c7fd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420480"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607352"

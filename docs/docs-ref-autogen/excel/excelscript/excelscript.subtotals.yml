@@ -3,7 +3,7 @@ name: ExcelScript.Subtotals
 uid: ExcelScript!ExcelScript.Subtotals:interface
 package: ExcelScript!
 fullName: ExcelScript.Subtotals
-summary: 数据透视字段的分类汇总。
+summary: 透视字段的汇总。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#automatic:member
   package: ExcelScript!
   fullName: automatic
-  summary: 如果将“Automatic”设为 true，则在设置 Subtotals 时，所有其他值均会被忽略。
+  summary: If `Automatic` 设置为 `true`<!-- -->，则所有其他值将在设置 `Subtotals`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#count:member
   package: ExcelScript!
   fullName: count
-  summary: Count
+  summary: 计数
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#variance:member
   package: ExcelScript!
   fullName: variance
-  summary: 差
+  summary: 方差
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -154,9 +154,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: c75a609fc36f6b00544f4d9437c9c149bcb64848
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c34f149472ce8c2cde19ce23c5f3cb1e84c2a28a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419325"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607331"
