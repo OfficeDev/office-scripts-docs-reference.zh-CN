@@ -3,7 +3,7 @@ name: ExcelScript.Comment
 uid: ExcelScript!ExcelScript.Comment:interface
 package: ExcelScript!
 fullName: ExcelScript.Comment
-summary: 代表工作簿中的注释。
+summary: 表示工作簿中的注释。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,10 +25,10 @@ methods:
               ): CommentReply;
     parameters:
     - id: content
-      description: 批注的内容。 此值可以是字符串或接口 CommentRichContent (例如，对于提及) 的注释。
+      description: 注释的内容。 它可以是字符串或对象 (例如，对于包含提及内容 `CommentRichContent`) 。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 可选。 包含在注释中的内容类型。 默认值为枚举 `ContentType.Plain`<!-- -->.
+      description: 可选。 注释中包含的内容类型。 默认值为 enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
@@ -37,7 +37,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: 删除批注和所有连接的答复。
+  summary: 删除注释以及所有连接的回复。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -84,7 +84,7 @@ methods:
     content: 'getCommentReply(commentReplyId: string): CommentReply;'
     parameters:
     - id: commentReplyId
-      description: 批注答复的标识符。
+      description: 批注回复的标识符。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getContent:member(1)
   package: ExcelScript!
   fullName: getContent()
-  summary: 批注的内容。 字符串为纯文本。
+  summary: 注释的内容。 字符串为纯文本。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -119,7 +119,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: 获取批注的创建时间。 如果批注是从备注转换而来的，则返回 null，因为批注没有创建日期。
+  summary: 获取批注的创建时间。 如果 `null` 批注从注释转换，则返回 ，因为注释没有创建日期。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: 获取此注释所在的单元格。
+  summary: 获取此批注所在的单元格。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -158,7 +158,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getMentions:member(1)
   package: ExcelScript!
   fullName: getMentions()
-  summary: 获取实体 (例如，在注释中提到的人) 。
+  summary: 获取 (实体，例如) 中提到的人员。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -184,7 +184,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: 注释线程状态。 值为 "true" 表示解析注释线程。
+  summary: 注释线程状态。 的值 `true` 表示注释线程已解析。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -197,7 +197,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: 获取丰富的注释内容 (例如，注释) 中提及。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
+  summary: 获取丰富的注释内容 (例如，注释和批注中的) 。 此字符串不应向最终用户显示。 您的外接程序应仅使用它来分析丰富的注释内容。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -210,7 +210,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#setContent:member(1)
   package: ExcelScript!
   fullName: setContent(content)
-  summary: 批注的内容。 字符串为纯文本。
+  summary: 注释的内容。 字符串为纯文本。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -227,7 +227,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#setResolved:member(1)
   package: ExcelScript!
   fullName: setResolved(resolved)
-  summary: 注释线程状态。 值为 "true" 表示解析注释线程。
+  summary: 注释线程状态。 的值 `true` 表示注释线程已解析。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -252,15 +252,15 @@ methods:
     content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
     parameters:
     - id: contentWithMentions
-      description: 批注的内容。 这包含一个特殊格式的字符串和在 Excel 显示时将解析为字符串的提及的列表。
+      description: 注释的内容。 其中包含一个特殊格式的字符串和一个提及列表，当 Excel 显示时，这些提及内容将被解析为字符串。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 99f2cf48b37e0d1b0db82fa78492b823e4d5eee7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3417d9212461ffdd5ba0314f41491575206a4e65
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415972"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606776"

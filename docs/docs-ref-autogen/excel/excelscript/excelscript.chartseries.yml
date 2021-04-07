@@ -21,7 +21,7 @@ methods:
     content: 'addChartTrendline(type?: ChartTrendlineType): ChartTrendline;'
     parameters:
     - id: type
-      description: 指定趋势线类型。 默认值为 "线性"。 有关详细信息，请参阅 ExcelScript。
+      description: 指定趋势线类型。 默认值为"Linear"。 有关详细信息，请参阅 `ExcelScript.ChartTrendline`。
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartTrendline:interface" />
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartTrendline:member(1)
   package: ExcelScript!
   fullName: getChartTrendline(index)
-  summary: 按索引（在项目数组中的插入顺序）获取 Trendline 对象。
+  summary: 按索引获取趋势线对象，即项数组中的插入顺序。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: 表示系列的图表类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示系列的图表类型。 有关详细信息，请参阅 `ExcelScript.ChartType`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDimensionValues:member(1)
   package: ExcelScript!
   fullName: getDimensionValues(dimension)
-  summary: 从图表系列的单个维中获取值。 这些值可以是类别值，也可以是数据值，具体取决于指定的维度和为图表系列映射数据的方式。
+  summary: 获取图表系列的单个维度中的值。 这些值可以是类别值或数据值，具体取决于指定的维度以及图表系列的数据的映射方式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -146,7 +146,7 @@ methods:
     content: 'getDimensionValues(dimension: ChartSeriesDimension): string[];'
     parameters:
     - id: dimension
-      description: 数据从其开始的轴的维度
+      description: 数据来自的轴的尺寸。
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesDimension:enum" />
     return:
       type: string[]
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: getDoughnutHoleSize()
-  summary: 表示图表系列的圆环孔大小。 仅对圆环图和分离型圆环图有效。 对无效图表引发无效参数异常。
+  summary: 表示图表系列的圆环孔大小。 仅在圆环图和圆环图分离图表上有效。 在无效 `InvalidArgument` 图表上引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getExplosion:member(1)
   package: ExcelScript!
   fullName: getExplosion()
-  summary: 指定饼图或圆环图切片的爆炸值。 如果未分解（切片尖端位于饼图中心），则返回 0（零）。
+  summary: 指定饼图或圆环图扇区的分解值。 如果未分解（切片尖端位于饼图中心），则返回 0（零）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: getFirstSliceAngle()
-  summary: 指定第一个饼图或圆环图的扇区的角度，以度为单位从垂直) 顺时针 (。 只适用于饼图、三维饼图和圆环图。 可以是 0 到 360 之间的值。
+  summary: 指定第一个饼图或圆环图扇区的角度（以度 (从垂直方向顺) 。 只适用于饼图、三维饼图和圆环图。 可以是 0 到 360 之间的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getGapWidth:member(1)
   package: ExcelScript!
   fullName: getGapWidth()
-  summary: 表示图表系列的间隙宽度。 仅对条形图和柱形图有效，以及折线图和饼图的特定类。 对无效图表引发无效参数异常。
+  summary: 表示图表系列的间隙宽度。 仅在条形图和柱形图，以及特定的线和饼图类上有效。 在无效图表上引发无效参数异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -363,7 +363,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getHasDataLabels:member(1)
   package: ExcelScript!
   fullName: getHasDataLabels()
-  summary: 指定该系列是否具有数据标签。
+  summary: 指定系列是否具有数据标签。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -376,7 +376,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertColor:member(1)
   package: ExcelScript!
   fullName: getInvertColor()
-  summary: 指定系列中的负数据点的填充颜色。
+  summary: 指定系列中负数据点的填充颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: getInvertIfNegative()
-  summary: 如此如果当 Excel 中的模式与一个负数相对应时反转该模式。
+  summary: 如果 Excel 在对应于负数时反转项中的图案，则其为 True。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -454,7 +454,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: 指定图表系列的标记样式。 有关详细信息，请参阅 ExcelScript。
+  summary: 指定图表系列的标记样式。 有关详细信息，请参阅 `ExcelScript.ChartMarkerStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -467,7 +467,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 指定图表中系列的名称。 名称的长度不应超过255个字符。
+  summary: 指定图表中系列的名称。 名称的长度不应超过 255 个字符。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -480,7 +480,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getOverlap:member(1)
   package: ExcelScript!
   fullName: getOverlap()
-  summary: 指定条柱的摆放方式。 可以是–100到100之间的值。 只适用于二维条形图和二维柱形图。
+  summary: 指定条柱的摆放方式。 可以是 –100 到 100 之间的值。 只适用于二维条形图和二维柱形图。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -493,7 +493,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: getParentLabelStrategy()
-  summary: 指定树状图图表的系列父标签策略区域。
+  summary: 指定树图的系列父标签策略区域。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -506,7 +506,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getPlotOrder:member(1)
   package: ExcelScript!
   fullName: getPlotOrder()
-  summary: 指定图表系列在图表组中的绘制顺序。
+  summary: 指定图表组中图表系列的绘制顺序。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSecondPlotSize:member(1)
   package: ExcelScript!
   fullName: getSecondPlotSize()
-  summary: 指定复合饼图或复合条饼图条形图的第二部分的大小，以主饼图大小的百分比形式表示。 可以是 5 到 200 之间的值。
+  summary: 指定复合饼图或复合条饼图的第二部分的大小，以主饼图大小的百分比表示。 可以是 5 到 200 之间的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -545,7 +545,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: getShowConnectorLines()
-  summary: 指定是否在瀑布图中显示连接符线。
+  summary: 指定是否在瀑布图中显示连接线。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -558,7 +558,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: getShowLeaderLines()
-  summary: 指定是否为系列中的每个数据标签显示引导线。
+  summary: 指定是否为系列中每个数据标签显示前导线。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -584,7 +584,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSmooth:member(1)
   package: ExcelScript!
   fullName: getSmooth()
-  summary: 指定系列是否平滑。 仅适用于折线图和散点图。
+  summary: 指定系列是否平滑。 仅适用于线图和散点图。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -597,7 +597,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSplitType:member(1)
   package: ExcelScript!
   fullName: getSplitType()
-  summary: 指定拆分复合饼图或复合条饼图条形图的两个部分的方式。
+  summary: 指定拆分复合饼图或复合条饼图的两部分的方式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -610,7 +610,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getSplitValue:member(1)
   package: ExcelScript!
   fullName: getSplitValue()
-  summary: 指定用于分隔复合饼图或复合条饼图中的两个节的临界值。
+  summary: 指定分隔复合饼图或复合条饼图的两个部分的阈值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -636,7 +636,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#getVaryByCategories:member(1)
   package: ExcelScript!
   fullName: getVaryByCategories()
-  summary: 如此如果 Excel 为每个数据标记分配不同的颜色或图案。 图表必须只包含一个系列。
+  summary: 如此 如果 Excel 为每个数据标记分配不同的颜色或图案。 图表必须只包含一个系列。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -717,7 +717,7 @@ methods:
     content: 'setBubbleSizes(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: 对应于源数据的 Range 对象。
+      description: '`Range`对应于源数据的对象。'
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -726,7 +726,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: 表示系列的图表类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示系列的图表类型。 有关详细信息，请参阅 `ExcelScript.ChartType`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -743,7 +743,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setDoughnutHoleSize:member(1)
   package: ExcelScript!
   fullName: setDoughnutHoleSize(doughnutHoleSize)
-  summary: 表示图表系列的圆环孔大小。 仅对圆环图和分离型圆环图有效。 对无效图表引发无效参数异常。
+  summary: 表示图表系列的圆环孔大小。 仅在圆环图和圆环图分离图表上有效。 在无效 `InvalidArgument` 图表上引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -760,7 +760,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setExplosion:member(1)
   package: ExcelScript!
   fullName: setExplosion(explosion)
-  summary: 指定饼图或圆环图切片的爆炸值。 如果未分解（切片尖端位于饼图中心），则返回 0（零）。
+  summary: 指定饼图或圆环图扇区的分解值。 如果未分解（切片尖端位于饼图中心），则返回 0（零）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -794,7 +794,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setFirstSliceAngle:member(1)
   package: ExcelScript!
   fullName: setFirstSliceAngle(firstSliceAngle)
-  summary: 指定第一个饼图或圆环图的扇区的角度，以度为单位从垂直) 顺时针 (。 只适用于饼图、三维饼图和圆环图。 可以是 0 到 360 之间的值。
+  summary: 指定第一个饼图或圆环图扇区的角度（以度 (从垂直方向顺) 。 只适用于饼图、三维饼图和圆环图。 可以是 0 到 360 之间的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -811,7 +811,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setGapWidth:member(1)
   package: ExcelScript!
   fullName: setGapWidth(gapWidth)
-  summary: 表示图表系列的间隙宽度。 仅对条形图和柱形图有效，以及折线图和饼图的特定类。 对无效图表引发无效参数异常。
+  summary: 表示图表系列的间隙宽度。 仅在条形图和柱形图，以及特定的线和饼图类上有效。 在无效图表上引发无效参数异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1007,7 +1007,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setHasDataLabels:member(1)
   package: ExcelScript!
   fullName: setHasDataLabels(hasDataLabels)
-  summary: 指定该系列是否具有数据标签。
+  summary: 指定系列是否具有数据标签。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1024,7 +1024,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertColor:member(1)
   package: ExcelScript!
   fullName: setInvertColor(invertColor)
-  summary: 指定系列中的负数据点的填充颜色。
+  summary: 指定系列中负数据点的填充颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1041,7 +1041,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setInvertIfNegative:member(1)
   package: ExcelScript!
   fullName: setInvertIfNegative(invertIfNegative)
-  summary: 如此如果当 Excel 中的模式与一个负数相对应时反转该模式。
+  summary: 如果 Excel 在对应于负数时反转项中的图案，则其为 True。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1109,7 +1109,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: 指定图表系列的标记样式。 有关详细信息，请参阅 ExcelScript。
+  summary: 指定图表系列的标记样式。 有关详细信息，请参阅 `ExcelScript.ChartMarkerStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1126,7 +1126,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: 指定图表中系列的名称。 名称的长度不应超过255个字符。
+  summary: 指定图表中系列的名称。 名称的长度不应超过 255 个字符。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1143,7 +1143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setOverlap:member(1)
   package: ExcelScript!
   fullName: setOverlap(overlap)
-  summary: 指定条柱的摆放方式。 可以是–100到100之间的值。 只适用于二维条形图和二维柱形图。
+  summary: 指定条柱的摆放方式。 可以是 –100 到 100 之间的值。 只适用于二维条形图和二维柱形图。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1160,7 +1160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setParentLabelStrategy:member(1)
   package: ExcelScript!
   fullName: setParentLabelStrategy(parentLabelStrategy)
-  summary: 指定树状图图表的系列父标签策略区域。
+  summary: 指定树图的系列父标签策略区域。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1180,7 +1180,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setPlotOrder:member(1)
   package: ExcelScript!
   fullName: setPlotOrder(plotOrder)
-  summary: 指定图表系列在图表组中的绘制顺序。
+  summary: 指定图表组中图表系列的绘制顺序。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1197,7 +1197,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSecondPlotSize:member(1)
   package: ExcelScript!
   fullName: setSecondPlotSize(secondPlotSize)
-  summary: 指定复合饼图或复合条饼图条形图的第二部分的大小，以主饼图大小的百分比形式表示。 可以是 5 到 200 之间的值。
+  summary: 指定复合饼图或复合条饼图的第二部分的大小，以主饼图大小的百分比表示。 可以是 5 到 200 之间的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1214,7 +1214,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowConnectorLines:member(1)
   package: ExcelScript!
   fullName: setShowConnectorLines(showConnectorLines)
-  summary: 指定是否在瀑布图中显示连接符线。
+  summary: 指定是否在瀑布图中显示连接线。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1231,7 +1231,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setShowLeaderLines:member(1)
   package: ExcelScript!
   fullName: setShowLeaderLines(showLeaderLines)
-  summary: 指定是否为系列中的每个数据标签显示引导线。
+  summary: 指定是否为系列中每个数据标签显示前导线。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1265,7 +1265,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSmooth:member(1)
   package: ExcelScript!
   fullName: setSmooth(smooth)
-  summary: 指定系列是否平滑。 仅适用于折线图和散点图。
+  summary: 指定系列是否平滑。 仅适用于线图和散点图。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1282,7 +1282,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSplitType:member(1)
   package: ExcelScript!
   fullName: setSplitType(splitType)
-  summary: 指定拆分复合饼图或复合条饼图条形图的两个部分的方式。
+  summary: 指定拆分复合饼图或复合条饼图的两部分的方式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1299,7 +1299,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setSplitValue:member(1)
   package: ExcelScript!
   fullName: setSplitValue(splitValue)
-  summary: 指定用于分隔复合饼图或复合条饼图中的两个节的临界值。
+  summary: 指定分隔复合饼图或复合条饼图的两个部分的阈值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1316,7 +1316,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(sourceData)
-  summary: 设置图表系列的值。 对于散点图，它表示 Y 轴的值。
+  summary: 设置图表系列的值。 对于散点图，它引用 y 轴值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1324,7 +1324,7 @@ methods:
     content: 'setValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: 对应于源数据的 Range 对象。
+      description: '`Range`对应于源数据的对象。'
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setVaryByCategories:member(1)
   package: ExcelScript!
   fullName: setVaryByCategories(varyByCategories)
-  summary: 如此如果 Excel 为每个数据标记分配不同的颜色或图案。 图表必须只包含一个系列。
+  summary: 如此 如果 Excel 为每个数据标记分配不同的颜色或图案。 图表必须只包含一个系列。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1350,7 +1350,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartSeries#setXAxisValues:member(1)
   package: ExcelScript!
   fullName: setXAxisValues(sourceData)
-  summary: 设置图表系列的 X 轴的值。 仅适用于散点图。
+  summary: 设置图表系列的 x 轴的值。 仅适用于散点图。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1358,15 +1358,15 @@ methods:
     content: 'setXAxisValues(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: 对应于源数据的 Range 对象。
+      description: '`Range`对应于源数据的对象。'
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8b9c62141ae265c4c4435ac88caf93de77fd4d84
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 81c5a9a881511db17fcc6ac1650410ef94dc472d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419598"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606848"

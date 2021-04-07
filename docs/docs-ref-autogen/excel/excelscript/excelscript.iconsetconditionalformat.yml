@@ -3,7 +3,7 @@ name: ExcelScript.IconSetConditionalFormat
 uid: ExcelScript!ExcelScript.IconSetConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.IconSetConditionalFormat
-summary: 表示条件格式的 IconSet 条件。
+summary: 表示条件格式的图标集条件。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)
   package: ExcelScript!
   fullName: getCriteria()
-  summary: 用于条件图标的规则和潜在自定义图标的条件和 IconSets 的数组。 请注意，对于第一个条件，只有自定义图标可以修改，而类型、公式和运算符在设置时将被忽略。
+  summary: 规则和条件图标的规则和图标集数组，以及条件图标的潜在自定义图标。 请注意，对于第一个条件，只能修改自定义图标，而类型、公式和运算符在设置时将被忽略。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: getReverseIconOrder()
-  summary: 如果为 true，则反转 IconSet 的图标订单。 请注意，如果使用自定义图标，则不能设置此设置。
+  summary: If `true`<!-- -->，则反转图标集的图标顺序。 请注意，如果使用自定义图标，则不能设置此选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)
   package: ExcelScript!
   fullName: getShowIconOnly()
-  summary: 如果为 true，则隐藏值并仅显示图标。
+  summary: If `true`<!-- -->，则隐藏值，并且只显示图标。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 如果设置，则显示条件格式的 IconSet 选项。
+  summary: 如果设置，则显示条件格式的图标集选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)
   package: ExcelScript!
   fullName: setCriteria(criteria)
-  summary: 用于条件图标的规则和潜在自定义图标的条件和 IconSets 的数组。 请注意，对于第一个条件，只有自定义图标可以修改，而类型、公式和运算符在设置时将被忽略。
+  summary: 规则和条件图标的规则和图标集数组，以及条件图标的潜在自定义图标。 请注意，对于第一个条件，只能修改自定义图标，而类型、公式和运算符在设置时将被忽略。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: setReverseIconOrder(reverseIconOrder)
-  summary: 如果为 true，则反转 IconSet 的图标订单。 请注意，如果使用自定义图标，则不能设置此设置。
+  summary: If `true`<!-- -->，则反转图标集的图标顺序。 请注意，如果使用自定义图标，则不能设置此选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)
   package: ExcelScript!
   fullName: setShowIconOnly(showIconOnly)
-  summary: 如果为 true，则隐藏值并仅显示图标。
+  summary: If `true`<!-- -->，则隐藏值，并且只显示图标。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 如果设置，则显示条件格式的 IconSet 选项。
+  summary: 如果设置，则显示条件格式的图标集选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 097baba5d4e77c03e543300da7c48c70638dd62c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0fd12949aad6fc518834dfe02a0fd9aa01dae20a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412326"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607226"

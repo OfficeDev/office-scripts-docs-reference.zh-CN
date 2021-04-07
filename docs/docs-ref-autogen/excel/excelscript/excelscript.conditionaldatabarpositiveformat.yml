@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalDataBarPositiveFormat
 uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarPositiveFormat
-summary: 代表数据栏的正一侧的条件格式 DataBar 格式。
+summary: 表示数据栏正边的条件格式。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)
   package: ExcelScript!
   fullName: getBorderColor()
-  summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。 "" (空字符串) 如果不存在或未设置边框。
+  summary: HTML 颜色代码，表示边框线条的颜色，格式为 \# RRGGBB (例如，"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。 如果不存在或 (边框，则) "表示空字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)
   package: ExcelScript!
   fullName: getFillColor()
-  summary: 代表表单 RRGGBB 的填充颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  summary: 表示填充颜色的 HTML 颜色代码，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)
   package: ExcelScript!
   fullName: getGradientFill()
-  summary: 指定 DataBar 是否具有渐变。
+  summary: 指定数据条是否具有渐变。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)
   package: ExcelScript!
   fullName: setBorderColor(borderColor)
-  summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。 "" (空字符串) 如果不存在或未设置边框。
+  summary: HTML 颜色代码，表示边框线条的颜色，格式为 \# RRGGBB (例如，"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。 如果不存在或 (边框，则) "表示空字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)
   package: ExcelScript!
   fullName: setFillColor(fillColor)
-  summary: 代表表单 RRGGBB 的填充颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  summary: 表示填充颜色的 HTML 颜色代码，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)
   package: ExcelScript!
   fullName: setGradientFill(gradientFill)
-  summary: 指定 DataBar 是否具有渐变。
+  summary: 指定数据条是否具有渐变。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,9 +100,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e2477aab79cb1074e976aa71eb0748a362c1cda3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 14b0d49be1628d431e11f9eeb3b2534ab09bbeb2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420683"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607100"

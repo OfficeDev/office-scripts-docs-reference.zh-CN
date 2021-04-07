@@ -3,7 +3,7 @@ name: ExcelScript.PivotField
 uid: ExcelScript!ExcelScript.PivotField:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotField
-summary: 表示 Excel 透视字段。
+summary: 代表 Excel 透视字段。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: 设置一个或多个字段的当前 PivotFilters，并将其应用于字段。 如果提供的筛选器无效或无法应用，则会引发异常。
+  summary: 设置字段的一个或多个当前 PivotFilter，并应用于该字段。 如果提供的筛选器无效或无法应用，则会引发异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: 配置的特定 PivotFilter 或包含多个配置的筛选器的 PivotFilters 接口。
+      description: 配置的特定 PivotFilter 或包含多个已配置筛选器的 PivotFilters 接口。
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: 从字段的所有筛选器中清除所有条件。 这将删除对字段的任何活动筛选。
+  summary: 清除字段的所有筛选器的所有条件。 这将删除对字段的任何活动筛选。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: 清除给定类型的字段筛选器中的所有现有条件 (如果当前已将其应用) 。
+  summary: 从给定类型的字段筛选器中清除所有现有条件 (如果当前应用了一个) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -51,7 +51,7 @@ methods:
     content: 'clearFilter(filterType: PivotFilterType): void;'
     parameters:
     - id: filterType
-      description: 要清除其所有条件的字段的筛选器类型。
+      description: 要清除其所有条件的字段上的筛选器类型。
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: void
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: PivotField 的 ID。
+  summary: 透视字段的 ID。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: 按名称获取 PivotItem。 如果 PivotItem 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 按名称获取 PivotItem。 如果 PivotItem 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
   package: ExcelScript!
   fullName: isFiltered(filterType)
-  summary: 检查字段上是否有任何已应用的筛选器。
+  summary: 检查字段上是否有已应用的筛选器。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
     content: 'isFiltered(filterType?: PivotFilterType): boolean;'
     parameters:
     - id: filterType
-      description: 要检查的筛选器类型。 如果未提供任何类型，此方法将检查是否应用了任何筛选器。
+      description: 要检查的筛选器类型。 如果未提供类型，此方法将检查是否应用了任何筛选器。
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: boolean
@@ -240,7 +240,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
   package: ExcelScript!
   fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: 按给定范围中的指定值对 PivotField 进行排序。 作用域定义在具有相同 DataPivotHierarchy 中的多个值时，将使用哪些特定值进行排序。
+  summary: 按给定范围中的指定值对 PivotField 进行排序。 范围定义当同一 DataPivotHierarchy 中有多个值时将用于排序的特定值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -256,18 +256,18 @@ methods:
       description: 指定是按升序还是降序进行排序。
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
-      description: 指定要用于排序的数据轴上的值层次结构。
+      description: 指定数据轴上用于排序的值层次结构。
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: 应在排序范围中使用的项。 这些项目将构成要作为排序依据的行或列。 如果使用字符串而不是 PivotItem，则该字符串表示 PivotItem 的 ID。 如果您要对其进行排序的轴上没有数据层次结构以外的任何项目，则可以为空。
+      description: 应用于排序范围的项。 这些项目将成为要排序的行或列的项。 如果使用字符串而不是 PivotItem，则字符串表示 PivotItem 的 ID。 如果除要排序的轴上没有数据层次结构外的其他项，则此关系可能为空。
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f9bc753c30f6ec8c165cdf9966aab8c5be2040cc
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 4228e7c2e7435e23e1566b570c05a7c18505e14e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554613"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606397"

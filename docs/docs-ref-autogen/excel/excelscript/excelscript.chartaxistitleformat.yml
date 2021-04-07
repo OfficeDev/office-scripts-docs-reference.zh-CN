@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: 指定图表坐标轴标题的边框格式，包括颜色、linestyle 和粗细。
+  summary: 指定图表坐标轴标题的边框格式，包括颜色、线条和粗细。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: 指定图表轴标题的字体属性，例如字体名称、字体大小、颜色等图表轴标题对象的字体。
+  summary: 指定图表坐标轴标题的字体属性，如图表坐标轴标题对象的字体名称、字号或颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: aa3d5e5f80de2db848dd49faa79439f0a0490d45
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2a8b4cfada09ede9adb3bf5501b9032ad26247ea
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420060"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606598"

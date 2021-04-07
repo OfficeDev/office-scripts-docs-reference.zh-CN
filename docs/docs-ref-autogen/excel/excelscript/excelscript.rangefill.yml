@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: '代表表单 RRGGBB 的背景色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) '
+  summary: '表示背景颜色的 HTML 颜色代码，格式为 \# RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
   package: ExcelScript!
   fullName: getPattern()
-  summary: 区域的图案。 有关详细信息，请参阅 ExcelScript。 不支持 LinearGradient 和 RectangularGradient。 如果为 null 值，则表示整个区域没有统一的模式设置。
+  summary: 范围的图案。 有关详细信息，请参阅 `ExcelScript.FillPattern`。 不支持 LinearGradient 和 RectangularGradient。 `null`值表示整个区域没有统一的图案设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
   package: ExcelScript!
   fullName: getPatternColor()
-  summary: 表示范围模式的颜色的 HTML 颜色代码，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  summary: 表示区域图案的颜色的 HTML 颜色代码，格式为 \# RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: getPatternTintAndShade()
-  summary: 指定用于使区域填充的图案颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (明亮的) ，0表示原始颜色。 如果模式 tintAndShades 不一致，则将返回 null。
+  summary: 指定使区域填充的图案颜色变亮或变暗的双精度型。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示区域没有统一 `patternTintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: 指定用于将区域填充的颜色变浅或变暗的双精度。 该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 如果 tintAndShades 不是统一的，将返回 null。
+  summary: 指定使区域填充的颜色变亮或变暗的双精度值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示区域没有统一 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: '代表表单 RRGGBB 的背景色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) '
+  summary: '表示背景颜色的 HTML 颜色代码，格式为 \# RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
   package: ExcelScript!
   fullName: setPattern(pattern)
-  summary: 区域的图案。 有关详细信息，请参阅 ExcelScript。 不支持 LinearGradient 和 RectangularGradient。 如果为 null 值，则表示整个区域没有统一的模式设置。
+  summary: 范围的图案。 有关详细信息，请参阅 `ExcelScript.FillPattern`。 不支持 LinearGradient 和 RectangularGradient。 `null`值表示整个区域没有统一的图案设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
   package: ExcelScript!
   fullName: setPatternColor(patternColor)
-  summary: 表示范围模式的颜色的 HTML 颜色代码，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  summary: 表示区域图案的颜色的 HTML 颜色代码，格式为 \# RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: setPatternTintAndShade(patternTintAndShade)
-  summary: 指定用于使区域填充的图案颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (明亮的) ，0表示原始颜色。 如果模式 tintAndShades 不一致，则将返回 null。
+  summary: 指定使区域填充的图案颜色变亮或变暗的双精度型。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示区域没有统一 `patternTintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: 指定用于将区域填充的颜色变浅或变暗的双精度。 该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 如果 tintAndShades 不是统一的，将返回 null。
+  summary: 指定使区域填充的颜色变亮或变暗的双精度值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示区域没有统一 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b9076fea426531db99f583e031e3474e5b30e5e7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6bf9cb6b2e535971d2b4323e3c078d50e0df6894
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411934"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607170"

@@ -3,7 +3,7 @@ name: ExcelScript.PivotFilterType
 uid: ExcelScript!ExcelScript.PivotFilterType:enum
 package: ExcelScript!
 fullName: ExcelScript.PivotFilterType
-summary: 一个代表透视字段的筛选器类型的简单枚举。
+summary: 一个简单的枚举，表示透视字段的筛选器类型。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,27 +11,27 @@ fields:
 - name: date
   uid: ExcelScript!ExcelScript.PivotFilterType.date:member
   package: ExcelScript!
-  summary: 使用日期替换标签筛选 PivotItems。 注意：透视字段不能同时应用标签筛选和日期筛选器。
+  summary: 使用日期来筛选数据透视项目，以更换标签。 注意：透视字段不能同时应用标签筛选器和日期筛选器。
 - name: label
   uid: ExcelScript!ExcelScript.PivotFilterType.label:member
   package: ExcelScript!
-  summary: 根据其标签筛选 PivotItems。 注意：透视字段不能同时应用标签筛选和日期筛选器。
+  summary: 根据数据透视表标签筛选 PivotItems。 注意：透视字段不能同时应用标签筛选器和日期筛选器。
 - name: manual
   uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
   package: ExcelScript!
-  summary: 从数据透视表中筛选特定的手动选定 PivotItems。
+  summary: 从数据透视表中筛选特定手动选择的数据透视项目。
 - name: unknown
   uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
   package: ExcelScript!
-  summary: PivotFilterType 未知或不受支持。
+  summary: '`PivotFilterType` 未知或不受支持。'
 - name: value
   uid: ExcelScript!ExcelScript.PivotFilterType.value:member
   package: ExcelScript!
-  summary: 基于 PivotItem 的值与 DataPivotHierarchy 的筛选器相关的筛选器。
+  summary: 基于 PivotItem 与 `DataPivotHierarchy`<!-- -->.
 metadata:
-  ms.openlocfilehash: 3c8b99c254d001d641d6a9cb6ae7de55c404b69a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 156d677d365b0975bf3c8238594d3c39348a5afa
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415244"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607009"

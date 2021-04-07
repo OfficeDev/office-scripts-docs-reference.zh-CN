@@ -3,7 +3,7 @@ name: ExcelScript.CommentReply
 uid: ExcelScript!ExcelScript.CommentReply:interface
 package: ExcelScript!
 fullName: ExcelScript.CommentReply
-summary: 代表工作簿中的注释答复。
+summary: 表示工作簿中的批注回复。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getContent:member(1)
   package: ExcelScript!
   fullName: getContent()
-  summary: 批注答复的内容。 字符串为纯文本。
+  summary: 批注回复的内容。 字符串为纯文本。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getContentType:member(1)
   package: ExcelScript!
   fullName: getContentType()
-  summary: 答复的内容类型。
+  summary: 回复的内容类型。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: 指定批注答复标识符。
+  summary: 指定批注回复标识符。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: 获取此批注答复所在的单元格。
+  summary: 获取此批注回复所在的单元格。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getMentions:member(1)
   package: ExcelScript!
   fullName: getMentions()
-  summary: 实体 (例如，在注释中提到的人) 。
+  summary: 实体 (，例如) 中提到的人员。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getParentComment:member(1)
   package: ExcelScript!
   fullName: getParentComment()
-  summary: 获取此回复的父注释。
+  summary: 获取此回复的父批注。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: 批注答复状态。 值为 "true" 表示答复处于 "已解决" 状态。
+  summary: 批注回复状态。 值 `true` 表示答复的状态为已解决。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: 富注释内容 (例如，注释) 中提到的内容。 此字符串不应显示给最终用户。 您的外接程序应仅使用此信息分析丰富的注释内容。
+  summary: 丰富的评论内容 (例如，注释和批注) 。 此字符串不应向最终用户显示。 您的外接程序应仅使用它来分析丰富的注释内容。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#setContent:member(1)
   package: ExcelScript!
   fullName: setContent(content)
-  summary: 批注答复的内容。 字符串为纯文本。
+  summary: 批注回复的内容。 字符串为纯文本。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,15 +194,15 @@ methods:
     content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
     parameters:
     - id: contentWithMentions
-      description: 批注的内容。 这包含一个特殊格式的字符串和在 Excel 显示时将解析为字符串的提及的列表。
+      description: 注释的内容。 其中包含一个特殊格式的字符串和一个提及列表，当 Excel 显示时，这些提及内容将被解析为字符串。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 31bdb0a4b91653fb02a9f9d3d5612bc4de4dcc97
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 979eadeede217100141cf9aa45a39fbaf0c6ab6f
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416797"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606766"

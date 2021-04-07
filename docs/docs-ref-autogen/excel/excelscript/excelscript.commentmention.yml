@@ -3,7 +3,7 @@ name: ExcelScript.CommentMention
 uid: ExcelScript!ExcelScript.CommentMention:interface
 package: ExcelScript!
 fullName: ExcelScript.CommentMention
-summary: 表示在注释中提到的实体。
+summary: 表示注释中提到的实体。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#email:member
   package: ExcelScript!
   fullName: email
-  summary: Comment 中提到的实体的电子邮件地址。
+  summary: 注释中提到的实体的电子邮件地址。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#id:member
   package: ExcelScript!
   fullName: id
-  summary: 实体的 id。 Id 与中的一个 id 匹配 `CommentRichContent.richContent`<!-- -->.
+  summary: 实体的 ID。 ID 与 中的其中一个 ID 匹配 `CommentRichContent.richContent`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#name:member
   package: ExcelScript!
   fullName: name
-  summary: Comment 中提到的实体的名称。
+  summary: 注释中提到的实体的名称。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 82bf472cdb4e1dae90dc50e8f4d52deae37ed1ef
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 44c3197151b14d7a6954531d9e086f9fe33a53a6
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419507"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606784"

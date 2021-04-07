@@ -15,7 +15,7 @@ fields:
 - name: conditionalFormats
   uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
   package: ExcelScript!
-  summary: 包含条件格式的所有单元格
+  summary: 具有条件格式的所有单元格。
 - name: constants
   uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
   package: ExcelScript!
@@ -23,7 +23,7 @@ fields:
 - name: dataValidations
   uid: ExcelScript!ExcelScript.SpecialCellType.dataValidations:member
   package: ExcelScript!
-  summary: 含有验证条件的单元格。
+  summary: 具有验证条件的单元格。
 - name: formulas
   uid: ExcelScript!ExcelScript.SpecialCellType.formulas:member
   package: ExcelScript!
@@ -31,19 +31,19 @@ fields:
 - name: sameConditionalFormat
   uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
   package: ExcelScript!
-  summary: 与区域中的第一个单元格具有相同条件格式的单元格。
+  summary: 与区域的第一个单元格条件格式相同的单元格。
 - name: sameDataValidation
   uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
   package: ExcelScript!
-  summary: 与区域中的第一个单元格具有相同的数据有效性条件的单元格。
+  summary: 与区域的第一个单元格具有相同的数据有效性条件的单元格。
 - name: visible
   uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
   package: ExcelScript!
   summary: 可见的单元格。
 metadata:
-  ms.openlocfilehash: e267008031fc63a772a4410ae996daf5b1352f86
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abfcbb551319211b6da5a509bc9ab75e2f24dea8
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420347"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605988"

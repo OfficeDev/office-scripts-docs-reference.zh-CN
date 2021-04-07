@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: 指定数据透视表是否允许对表中给定的透视字段上的多个 PivotFilters 进行应用。
+  summary: 指定数据透视表是否允许在表中的给定透视字段上应用多个 PivotFilter。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: 按名称获取 DataPivotHierarchy。 如果 DataPivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 按名称获取 DataPivotHierarchy。 如果 DataPivotHierarchy 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: getEnableDataValueEditing()
-  summary: 指定数据透视表是否允许用户对数据正文中的值进行编辑。
+  summary: 指定数据透视表是否允许用户编辑数据正文中的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: 按名称获取 FilterPivotHierarchy。 如果 FilterPivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 按名称获取 FilterPivotHierarchy。 如果 FilterPivotHierarchy 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: 按名称获取 PivotHierarchy。 如果 PivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 按名称获取 PivotHierarchy。 如果 PivotHierarchy 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -318,7 +318,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: getUseCustomSortLists()
-  summary: 指定在排序时数据透视表是否使用自定义列表。
+  summary: 指定数据透视表在排序时是否使用自定义列表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: 指定数据透视表是否允许对表中给定的透视字段上的多个 PivotFilters 进行应用。
+  summary: 指定数据透视表是否允许在表中的给定透视字段上应用多个 PivotFilter。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -451,7 +451,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: setEnableDataValueEditing(enableDataValueEditing)
-  summary: 指定数据透视表是否允许用户对数据正文中的值进行编辑。
+  summary: 指定数据透视表是否允许用户编辑数据正文中的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -485,7 +485,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)
   package: ExcelScript!
   fullName: setUseCustomSortLists(useCustomSortLists)
-  summary: 指定在排序时数据透视表是否使用自定义列表。
+  summary: 指定数据透视表在排序时是否使用自定义列表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cae3d58cfae8798085df614005461abe574927ec
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 46b240d2029153fbbc2cbcfca1d15f2e54430414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554606"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606376"

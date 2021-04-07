@@ -3,7 +3,7 @@ name: ExcelScript.PageLayout
 uid: ExcelScript!ExcelScript.PageLayout:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayout
-summary: 表示不依赖于任何特定于打印机的实现的布局和打印设置。 这些设置包括页边距、方向、页码编号、标题行，并打印区域。
+summary: 表示不依赖于任何打印机特定实现的布局和打印设置。 这些设置包括页边距、方向、页码编号、标题行，并打印区域。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getBlackAndWhite:member(1)
   package: ExcelScript!
   fullName: getBlackAndWhite()
-  summary: 工作表的黑色和白色打印选项。
+  summary: 工作表的黑白打印选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getBottomMargin:member(1)
   package: ExcelScript!
   fullName: getBottomMargin()
-  summary: 工作表的下一页边距，用于以磅为单位打印。
+  summary: 要用于打印的工作表的底部页边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: getCenterHorizontally()
-  summary: 工作表的水平标记。 此标记确定在打印时是否水平居中工作表。
+  summary: 工作表的中心水平标记。 此标记确定在打印时是否水平居中工作表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getCenterVertically:member(1)
   package: ExcelScript!
   fullName: getCenterVertically()
-  summary: 工作表的垂直居中标志。 此标记确定在打印时是否垂直居中工作表。
+  summary: 工作表的中心垂直标记。 此标记确定在打印时是否垂直居中工作表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getDraftMode:member(1)
   package: ExcelScript!
   fullName: getDraftMode()
-  summary: 工作表的草稿模式选项。 如果为 True，则将打印没有图形的工作表。
+  summary: 工作表的草稿模式选项。 If `true`<!-- -->，则打印工作表时不打印图形。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: getFirstPageNumber()
-  summary: 要打印的工作表的第一个页码。 Null 值表示“自动”页码编号。
+  summary: 要打印的工作表的第一页码。 值 `null` 表示"自动"页码编号。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFooterMargin:member(1)
   package: ExcelScript!
   fullName: getFooterMargin()
-  summary: 工作表的页脚边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的页脚边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getHeaderMargin:member(1)
   package: ExcelScript!
   fullName: getHeaderMargin()
-  summary: 工作表的页眉边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的页眉边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getLeftMargin:member(1)
   package: ExcelScript!
   fullName: getLeftMargin()
-  summary: 工作表的左边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的左边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: 页面的工作表方向。
+  summary: 工作表的页面方向。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPaperSize:member(1)
   package: ExcelScript!
   fullName: getPaperSize()
-  summary: 页面的工作表纸张大小。
+  summary: 工作表的页面纸张大小。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)
   package: ExcelScript!
   fullName: getPrintArea()
-  summary: 获取包含一个或多个矩形区域的 RangeAreas 对象，它表示工作表的打印区域。 如果没有打印区域，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 获取包含一个或多个矩形区域的对象， `RangeAreas` 该对象表示工作表的打印区域。 如果没有打印区域，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintComments:member(1)
   package: ExcelScript!
   fullName: getPrintComments()
-  summary: 指定是否应在打印时显示工作表的批注。
+  summary: 指定打印时是否显示工作表的注释。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintErrors:member(1)
   package: ExcelScript!
   fullName: getPrintErrors()
-  summary: 工作表的 "打印错误" 选项。
+  summary: 工作表的打印错误选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -221,7 +221,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintHeadings:member(1)
   package: ExcelScript!
   fullName: getPrintHeadings()
-  summary: 指定是否将打印工作表的标题。
+  summary: 指定是否打印工作表的标题。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintOrder:member(1)
   package: ExcelScript!
   fullName: getPrintOrder()
-  summary: 工作表的 "页面打印顺序" 选项。 它指定用于处理打印页码的顺序。
+  summary: 工作表的页面打印顺序选项。 它指定用于处理打印页码的顺序。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleColumns:member(1)
   package: ExcelScript!
   fullName: getPrintTitleColumns()
-  summary: 获取表示标题列的 Range 对象。 如果未设置，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
+  summary: 获取表示标题列的 Range 对象。 如果未设置，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleRows:member(1)
   package: ExcelScript!
   fullName: getPrintTitleRows()
-  summary: 获取表示标题行的 Range 对象。 如果未设置，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
+  summary: 获取表示标题行的 Range 对象。 如果未设置，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getRightMargin:member(1)
   package: ExcelScript!
   fullName: getRightMargin()
-  summary: 工作表的右边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的右边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getTopMargin:member(1)
   package: ExcelScript!
   fullName: getTopMargin()
-  summary: 工作表的上边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的上边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -299,7 +299,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getZoom:member(1)
   package: ExcelScript!
   fullName: getZoom()
-  summary: 工作表的打印缩放选项。 `PageLayoutZoomOptions`必须将对象设置为 (使用的 JSON 对象， `x.zoom = {...}` 而不是`x.zoom.scale = ...`<!-- -->).
+  summary: 工作表的打印缩放选项。 必须将 `PageLayoutZoomOptions` 对象设置为 JSON 对象 (`x.zoom = {...}` 而不是 `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -312,7 +312,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setBlackAndWhite:member(1)
   package: ExcelScript!
   fullName: setBlackAndWhite(blackAndWhite)
-  summary: 工作表的黑色和白色打印选项。
+  summary: 工作表的黑白打印选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -329,7 +329,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setBottomMargin:member(1)
   package: ExcelScript!
   fullName: setBottomMargin(bottomMargin)
-  summary: 工作表的下一页边距，用于以磅为单位打印。
+  summary: 要用于打印的工作表的底部页边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -346,7 +346,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterHorizontally:member(1)
   package: ExcelScript!
   fullName: setCenterHorizontally(centerHorizontally)
-  summary: 工作表的水平标记。 此标记确定在打印时是否水平居中工作表。
+  summary: 工作表的中心水平标记。 此标记确定在打印时是否水平居中工作表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -363,7 +363,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setCenterVertically:member(1)
   package: ExcelScript!
   fullName: setCenterVertically(centerVertically)
-  summary: 工作表的垂直居中标志。 此标记确定在打印时是否垂直居中工作表。
+  summary: 工作表的中心垂直标记。 此标记确定在打印时是否垂直居中工作表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -380,7 +380,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setDraftMode:member(1)
   package: ExcelScript!
   fullName: setDraftMode(draftMode)
-  summary: 工作表的草稿模式选项。 如果为 True，则将打印没有图形的工作表。
+  summary: 工作表的草稿模式选项。 If `true`<!-- -->，则打印工作表时不打印图形。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -397,7 +397,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: setFirstPageNumber(firstPageNumber)
-  summary: 要打印的工作表的第一个页码。 Null 值表示“自动”页码编号。
+  summary: 要打印的工作表的第一页码。 值 `null` 表示"自动"页码编号。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -414,7 +414,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFooterMargin:member(1)
   package: ExcelScript!
   fullName: setFooterMargin(footerMargin)
-  summary: 工作表的页脚边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的页脚边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setHeaderMargin:member(1)
   package: ExcelScript!
   fullName: setHeaderMargin(headerMargin)
-  summary: 工作表的页眉边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的页眉边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -448,7 +448,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setLeftMargin:member(1)
   package: ExcelScript!
   fullName: setLeftMargin(leftMargin)
-  summary: 工作表的左边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的左边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -465,7 +465,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: 页面的工作表方向。
+  summary: 工作表的页面方向。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -482,7 +482,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPaperSize:member(1)
   package: ExcelScript!
   fullName: setPaperSize(paperSize)
-  summary: 页面的工作表纸张大小。
+  summary: 工作表的页面纸张大小。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -507,7 +507,7 @@ methods:
     content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
     parameters:
     - id: printArea
-      description: 要打印的内容的范围或 RangeAreas。
+      description: 要打印的内容的范围。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     return:
       type: void
@@ -516,7 +516,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintComments:member(1)
   package: ExcelScript!
   fullName: setPrintComments(printComments)
-  summary: 指定是否应在打印时显示工作表的批注。
+  summary: 指定打印时是否显示工作表的注释。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -533,7 +533,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintErrors:member(1)
   package: ExcelScript!
   fullName: setPrintErrors(printErrors)
-  summary: 工作表的 "打印错误" 选项。
+  summary: 工作表的打印错误选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -567,7 +567,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintHeadings:member(1)
   package: ExcelScript!
   fullName: setPrintHeadings(printHeadings)
-  summary: 指定是否将打印工作表的标题。
+  summary: 指定是否打印工作表的标题。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -596,10 +596,10 @@ methods:
               ): void;
     parameters:
     - id: unit
-      description: 提供的边距度量单位。
+      description: 提供的边距的度量单位。
       type: <xref uid="ExcelScript!ExcelScript.PrintMarginUnit:enum" />
     - id: marginOptions
-      description: 要设置的边距值，未提供边距将保持不变。
+      description: 要设置的边距值。 未提供的边距保持不变。
       type: <xref uid="ExcelScript!ExcelScript.PageLayoutMarginOptions:interface" />
     return:
       type: void
@@ -608,7 +608,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintOrder:member(1)
   package: ExcelScript!
   fullName: setPrintOrder(printOrder)
-  summary: 工作表的 "页面打印顺序" 选项。 它指定用于处理打印页码的顺序。
+  summary: 工作表的页面打印顺序选项。 它指定用于处理打印页码的顺序。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -633,7 +633,7 @@ methods:
     content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
     parameters:
     - id: printTitleColumns
-      description: 每页的左侧要重复的列，区域必须跨越整个列才能有效。
+      description: 每页左侧要重复的列。 区域必须跨越整个列，它是有效的。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -650,7 +650,7 @@ methods:
     content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
     parameters:
     - id: printTitleRows
-      description: 要在每个页面顶部重复的行，范围必须跨整个行才能有效。
+      description: 每页顶部要重复的行。 区域必须跨越整行，它是有效的。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -659,7 +659,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setRightMargin:member(1)
   package: ExcelScript!
   fullName: setRightMargin(rightMargin)
-  summary: 工作表的右边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的右边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -676,7 +676,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setTopMargin:member(1)
   package: ExcelScript!
   fullName: setTopMargin(topMargin)
-  summary: 工作表的上边距（以磅为单位）在打印时使用。
+  summary: 打印时工作表的上边距（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -693,7 +693,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setZoom:member(1)
   package: ExcelScript!
   fullName: setZoom(zoom)
-  summary: 工作表的打印缩放选项。 `PageLayoutZoomOptions`必须将对象设置为 (使用的 JSON 对象， `x.zoom = {...}` 而不是`x.zoom.scale = ...`<!-- -->).
+  summary: 工作表的打印缩放选项。 必须将 `PageLayoutZoomOptions` 对象设置为 JSON 对象 (`x.zoom = {...}` 而不是 `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,9 +707,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c66cd735b4fd357bcd164da80cd31bf6c71e7272
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: aae80d1e742b409dc59fde56b83a1f03f64fc177
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554620"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606411"

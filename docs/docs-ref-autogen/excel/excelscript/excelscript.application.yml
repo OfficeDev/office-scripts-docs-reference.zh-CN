@@ -21,7 +21,7 @@ methods:
     content: 'calculate(calculationType: CalculationType): void;'
     parameters:
     - id: calculationType
-      description: 指定要使用的计算类型。 有关详细信息，请参阅 ExcelScript。
+      description: 指定要使用的计算类型。 有关详细信息，请参阅 `ExcelScript.CalculationType`。
       type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
     return:
       type: void
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
   package: ExcelScript!
   fullName: getCalculationMode()
-  summary: 返回工作簿中使用的计算模式，由 ExcelScript 中的常量定义。 可能的值包括： `Automatic`<!-- -->，Excel 控制重新计算的位置; `AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。 `Manual`<!-- -->，在用户请求计算时完成计算。
+  summary: 返回工作簿中使用的计算模式，如 `ExcelScript.CalculationMode`<!-- -->. 可能的值包括： `Automatic`<!-- -->，其中 Excel 控制重新计算; `AutomaticExceptTables`<!-- -->，其中 Excel 控制重新计算，但忽略表中的更改; `Manual`<!-- -->，其中计算在用户请求时完成。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
   package: ExcelScript!
   fullName: getCalculationState()
-  summary: 返回应用程序的计算状态。 有关详细信息，请参阅 ExcelScript。
+  summary: 返回应用程序的计算状态。 有关详细信息，请参阅 `ExcelScript.CalculationState`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
   package: ExcelScript!
   fullName: getCultureInfo()
-  summary: 基于当前系统区域性设置提供信息。 这包括区域性名称、数字格式和其他区域性相关设置。
+  summary: 基于当前系统区域性设置提供相关信息。 这包括区域性名称、数字格式和其他与文化相关的设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
   package: ExcelScript!
   fullName: getDecimalSeparator()
-  summary: 获取用作数值的小数分隔符的字符串。 这是基于 Excel 的本地设置。
+  summary: 获取用作数值的小数分隔符的字符串。 这基于本地 Excel 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
   package: ExcelScript!
   fullName: getIterativeCalculation()
-  summary: 返回“迭代计算”设置。 在 Windows 和 Mac 上的 Excel 中，这些设置将应用于 Excel 应用程序。 在 Excel 中的 web 和其他平台上，这些设置将应用于活动工作簿。
+  summary: 返回迭代计算设置。 在 Windows 和 Mac 上的 Excel 中，这些设置将应用于 Excel 应用程序。 在 Excel 网页和其他平台上，这些设置将应用于活动工作簿。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
   package: ExcelScript!
   fullName: getThousandsSeparator()
-  summary: 获取一个字符串，用于将数字值的小数位数与小数的左边隔开。 这是基于 Excel 的本地设置。
+  summary: 获取用于分隔数字值小数左侧的一组数字的字符串。 这基于本地 Excel 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
   package: ExcelScript!
   fullName: setCalculationMode(calculationMode)
-  summary: 返回工作簿中使用的计算模式，由 ExcelScript 中的常量定义。 可能的值包括： `Automatic`<!-- -->，Excel 控制重新计算的位置; `AutomaticExceptTables`<!-- -->，Excel 在其中控制重新计算，但忽略表中的更改。 `Manual`<!-- -->，在用户请求计算时完成计算。
+  summary: 返回工作簿中使用的计算模式，如 `ExcelScript.CalculationMode`<!-- -->. 可能的值包括： `Automatic`<!-- -->，其中 Excel 控制重新计算; `AutomaticExceptTables`<!-- -->，其中 Excel 控制重新计算，但忽略表中的更改; `Manual`<!-- -->，其中计算在用户请求时完成。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -148,9 +148,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3bb99af272686a3303d2564bbed7e972f6cde6e7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdcd7a220d23bc540129c9547789a241c15fd3b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418126"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606633"

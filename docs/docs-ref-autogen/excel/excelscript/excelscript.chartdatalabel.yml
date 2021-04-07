@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: 返回图表数据标签的高度，以磅为单位。 如果图表数据标签不可见，则为 Null。
+  summary: 返回图表数据标签的高度，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
+  summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextHorizontalAlignment`。 此属性仅在数据标签为 `TextOrientation` -90、90 或 180 时有效。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: 表示图表数据标签左边缘到图表区域左边缘的距离，以磅为单位。 如果图表数据标签不可见，则为 Null。
+  summary: 表示图表数据标签左边缘到图表区域左边缘的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: 指定数字格式是否链接到单元格 (以便在标签中的) 单元格区域发生更改时，数字格式的更改将发生变化。
+  summary: 指定数字格式是否链接到单元格 (以便当数字格式在单元格区域更改时标签) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示数据标签的位置的值。 有关详细信息，请参阅 `ExcelScript.ChartDataLabelPosition`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getShowLegendKey:member(1)
   package: ExcelScript!
   fullName: getShowLegendKey()
-  summary: 指定数据标签图例标示是否可见。
+  summary: 指定数据标签图例项标示是否可见。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: 表示文本面向图表数据标签的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+  summary: 表示文本面向图表数据标签的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: 表示图表数据标签上边缘到图表区域顶部的距离，以磅为单位。 如果图表数据标签不可见，则为 Null。
+  summary: 表示图表数据标签上边缘到图表区域顶部的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
+  summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。 此属性仅在数据标签为 `TextOrientation` 0 时有效。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: 返回图表数据标签的宽度，以磅为单位。 如果图表数据标签不可见，则为 Null。
+  summary: 返回图表数据标签的宽度，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,7 +320,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为-90、90或180时，此属性才有效。
+  summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextHorizontalAlignment`。 此属性仅在数据标签为 `TextOrientation` -90、90 或 180 时有效。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -340,7 +340,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: 表示图表数据标签左边缘到图表区域左边缘的距离，以磅为单位。 如果图表数据标签不可见，则为 Null。
+  summary: 表示图表数据标签左边缘到图表区域左边缘的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -357,7 +357,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: 指定数字格式是否链接到单元格 (以便在标签中的) 单元格区域发生更改时，数字格式的更改将发生变化。
+  summary: 指定数字格式是否链接到单元格 (以便当数字格式在单元格区域更改时标签) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -391,7 +391,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: 表示数据标签的位置的 DataLabelPosition 值。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示数据标签的位置的值。 有关详细信息，请参阅 `ExcelScript.ChartDataLabelPosition`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -459,7 +459,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setShowLegendKey:member(1)
   package: ExcelScript!
   fullName: setShowLegendKey(showLegendKey)
-  summary: 指定数据标签图例标示是否可见。
+  summary: 指定数据标签图例项标示是否可见。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -544,7 +544,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: 表示文本面向图表数据标签的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+  summary: 表示文本面向图表数据标签的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -561,7 +561,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: 表示图表数据标签上边缘到图表区域顶部的距离，以磅为单位。 如果图表数据标签不可见，则为 Null。
+  summary: 表示图表数据标签上边缘到图表区域顶部的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -578,7 +578,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的数据标签为0时，此属性才有效。
+  summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。 此属性仅在数据标签为 `TextOrientation` 0 时有效。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,9 +595,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e9e4ee0ef279f72e3112389ba5580f4d07a52649
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2d44571d609deb3e2c38dba5a3afe01a88bfbaee
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419969"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606918"

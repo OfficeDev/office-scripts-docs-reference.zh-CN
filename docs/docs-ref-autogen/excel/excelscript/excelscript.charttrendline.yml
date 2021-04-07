@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)
   package: ExcelScript!
   fullName: getMovingAveragePeriod()
-  summary: 表示图表趋势线的周期。 仅适用于 MovingAverage 类型的趋势线。
+  summary: 表示图表趋势线的周期。 仅适用于类型为趋势线 `MovingAverage`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 表示趋势线的名称。 可设为字符串值，或者设为 Null 值（表示自动值）。 返回的值始终为字符串
+  summary: 表示趋势线的名称。 可以设置为字符串值，值 `null` 表示自动值。 返回的值始终为字符串
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)
   package: ExcelScript!
   fullName: getPolynomialOrder()
-  summary: 表示图表趋势线的顺序。 仅适用于具有多项式类型的趋势线。
+  summary: 表示图表趋势线的顺序。 仅适用于类型为趋势线 `Polynomial`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)
   package: ExcelScript!
   fullName: getShowRSquared()
-  summary: 如果图表上显示趋势线的 R 平方值，则为 True。
+  summary: 如此 如果趋势线的 r 平方值显示在图表上。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)
   package: ExcelScript!
   fullName: setMovingAveragePeriod(movingAveragePeriod)
-  summary: 表示图表趋势线的周期。 仅适用于 MovingAverage 类型的趋势线。
+  summary: 表示图表趋势线的周期。 仅适用于类型为趋势线 `MovingAverage`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -237,7 +237,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: 表示趋势线的名称。 可设为字符串值，或者设为 Null 值（表示自动值）。 返回的值始终为字符串
+  summary: 表示趋势线的名称。 可以设置为字符串值，值 `null` 表示自动值。 返回的值始终为字符串
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -254,7 +254,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)
   package: ExcelScript!
   fullName: setPolynomialOrder(polynomialOrder)
-  summary: 表示图表趋势线的顺序。 仅适用于具有多项式类型的趋势线。
+  summary: 表示图表趋势线的顺序。 仅适用于类型为趋势线 `Polynomial`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -288,7 +288,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)
   package: ExcelScript!
   fullName: setShowRSquared(showRSquared)
-  summary: 如果图表上显示趋势线的 R 平方值，则为 True。
+  summary: 如此 如果趋势线的 r 平方值显示在图表上。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -319,9 +319,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f529a31774e6430cd11a32826f876b48d7c3c43c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5ce9ab90bf97fbe09577aca7d44bfa1d09f59414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416000"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606813"

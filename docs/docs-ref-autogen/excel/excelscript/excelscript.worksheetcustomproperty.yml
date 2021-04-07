@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: '获取 customProperty 的键。 自定义属性键不区分大小写。 密钥限制为255个字符 (较大的值将导致引发 "InvalidArgument" 错误。 ) '
+  summary: '获取 customProperty 的键。 自定义属性键不区分大小写。 键限制为 255 个字符 (较大的值将导致引发 `InvalidArgument` 错误。) '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 663e655b4570ccbf1294b000127f86bf21e2d844
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1ff07614ff8fe9bc3921fae37293065a192aead1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419234"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605259"

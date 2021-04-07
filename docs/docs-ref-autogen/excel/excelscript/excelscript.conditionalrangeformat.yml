@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFormat
 uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
-summary: 将条件格式区域的字体、填充、边框和其他属性封装在一起的格式对象。
+summary: 封装条件格式范围的字体、填充、边框和其他属性的格式对象。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -37,7 +37,7 @@ methods:
               ): ConditionalRangeBorder;
     parameters:
     - id: index
-      description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 ExcelScript。
+      description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 `ExcelScript.ConditionalRangeBorderIndex`。
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
@@ -46,7 +46,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)
   package: ExcelScript!
   fullName: getConditionalRangeBorderBottom()
-  summary: 获取下边框。
+  summary: 获取底部边框。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: 返回在整体条件格式范围上定义的 fill 对象。
+  summary: 返回在整体条件格式范围内定义的 fill 对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: 返回在整体条件格式区域上定义的 font 对象。
+  summary: 返回在整体条件格式范围内定义的 font 对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 表示给定范围的 Excel 数字格式代码。 如果传入 null，则清除。
+  summary: 表示给定区域 Excel 的编号格式代码。 如果 `null` 传入，则清除 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: 表示给定范围的 Excel 数字格式代码。 如果传入 null，则清除。
+  summary: 表示给定区域 Excel 的编号格式代码。 如果 `null` 传入，则清除 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,9 +151,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: be58369049f9a2cb9cd0fe4054310f143edad700
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e63b2c2a317b000595bc16de7e43ca89a08fa57a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419374"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606701"

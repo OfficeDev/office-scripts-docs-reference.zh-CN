@@ -3,7 +3,7 @@ name: ExcelScript.ListDataValidation
 uid: ExcelScript!ExcelScript.ListDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.ListDataValidation
-summary: 表示列表数据验证条件。
+summary: 代表"列表"数据有效性条件。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
   package: ExcelScript!
   fullName: inCellDropDown
-  summary: 是否显示单元格下拉菜单中的列表，默认为 true。
+  summary: 指定是否在单元格下拉列表中显示列表。 默认值为 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#source:member
   package: ExcelScript!
   fullName: source
-  summary: 数据验证列表的源。设置值时，可以将其作为 Excel 区域对象传入，或包含逗号分隔的数字、布尔值或日期的字符串。
+  summary: 数据验证列表的源 设置值时，它可以作为对象或包含逗号分隔数字、布尔值或日期的 `Range` 字符串传入。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
 metadata:
-  ms.openlocfilehash: cf8940b22ffc0ff1b79c1a55297fc2f97e4b43ea
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 9b241254b4ff28826e267a10e68a801a7535d4bf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412179"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607219"

@@ -3,7 +3,7 @@ name: ExcelScript.RowColumnPivotHierarchy
 uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.RowColumnPivotHierarchy
-summary: 表示 Excel RowColumnPivotHierarchy。
+summary: 代表 Excel RowColumnPivotHierarchy。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: 按名称获取透视字段。 如果透视字段不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 按名称获取 PivotField。 如果 PivotField 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -126,9 +126,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5a134274f2e2e795189bda817df67130072ea113
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 9a12efdc954ddec358bb105966562175906974f0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554529"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606086"

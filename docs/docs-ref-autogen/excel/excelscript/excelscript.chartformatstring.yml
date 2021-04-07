@@ -3,7 +3,7 @@ name: ExcelScript.ChartFormatString
 uid: ExcelScript!ExcelScript.ChartFormatString:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartFormatString
-summary: 表示与图表相关的对象中包含文本的子字符串，如 ChartTitle 对象、ChartAxisTitle 对象等。
+summary: 表示图表相关对象（如对象或对象）中的子字符串，这些对象包含 `ChartTitle` `ChartAxisTitle` 文本。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: 代表 "图表字符" 对象的字体属性，如字体名称、字体大小、颜色等。
+  summary: 表示字体属性，如字体名称、字体大小和图表字符对象的颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -23,9 +23,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 7f4eca8722a3d7be62cb047ff2e679a4da3ac7a9
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 09e640d730e96f3d0b653d78688c6e88bc07fb98
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416874"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606577"

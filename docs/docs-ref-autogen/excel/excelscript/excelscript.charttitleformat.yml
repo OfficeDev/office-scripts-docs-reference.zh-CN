@@ -3,7 +3,7 @@ name: ExcelScript.ChartTitleFormat
 uid: ExcelScript!ExcelScript.ChartTitleFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartTitleFormat
-summary: 提供对图表标题的 Office 艺术格式的访问权限。
+summary: 提供对图表标题的格式设置选项的访问权限。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitleFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: 代表图表标题的边框格式，包括颜色、linestyle 和粗细。
+  summary: 表示图表标题的边框格式，包括颜色、线条和粗细。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitleFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: 表示对象的字体属性（字体名称、字体大小、颜色等）。
+  summary: 代表对象的字体 (字体名称、字号和颜色) 等。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: fd2f4dd5f848a50004c41c46601def48bd710026
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c9eba7efeaa42e00ebb73c9b4aeeb2ba736dec61
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416007"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606827"
