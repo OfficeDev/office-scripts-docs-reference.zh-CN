@@ -3,7 +3,7 @@ name: ExcelScript.TopBottomSelectionType
 uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
 package: ExcelScript!
 fullName: ExcelScript.TopBottomSelectionType
-summary: Top/底端筛选器的简单枚举，用于选择是否按前 N 个或前 N 个百分比、数字或值总和进行筛选。
+summary: 用于顶部/底部筛选器的简单枚举，用于选择是按顶部的 N% 还是底部 N%、数字或值的总和进行筛选。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,19 +11,19 @@ fields:
 - name: items
   uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
   package: ExcelScript!
-  summary: 按所选值筛选出前/后 N 项数目。
+  summary: 按所选值度量筛选上/下 N 个项目数。
 - name: percent
   uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
   package: ExcelScript!
-  summary: 按照所选的值来筛选项目的前/后 N 个百分比。
+  summary: 按所选值度量筛选项的上/下 N%。
 - name: sum
   uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
   package: ExcelScript!
-  summary: 按所选值的度量值来筛选前/后 N 求和。
+  summary: 按所选值度量筛选上/下 N 个和。
 metadata:
-  ms.openlocfilehash: 4772398cc7e7f7f89cef3dcb6148c47eab247ce4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b9352750a5222ad7c57c6933a3cc26c4c78e7c34
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415167"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607296"

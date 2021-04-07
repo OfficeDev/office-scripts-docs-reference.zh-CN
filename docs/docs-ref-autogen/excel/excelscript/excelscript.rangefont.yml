@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
+  summary: 文本颜色格式的 HTML 颜色代码表示 (例如 \# ，FF0000 表示红色) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: 指定字体的斜体状态。
+  summary: 指定字体的 italic 状态。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 字体名称 (例如，"Calibri" ) 。 名称的长度不应超过31个字符。
+  summary: 字体名称 (例如"Calibri") 。 名称的长度不应大于 31 个字符。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: 指定字体的删除线状态。 Null 值表示整个区域没有统一的删除线设置。
+  summary: 指定字体的删除线状态。 `null`值表示整个区域没有统一删除线设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)
   package: ExcelScript!
   fullName: getSubscript()
-  summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal (不是上标，也不是下标) ，则返回 False。 否则返回 Null。
+  summary: 指定字体的下标状态。 如果 `true` 区域的所有字体都是下标，则返回 。 如果区域的所有字体都是上标或普通字体，则返回 (上标或下标 `false`) 。 否则 `null` 返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)
   package: ExcelScript!
   fullName: getSuperscript()
-  summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体均为下标或普通 (既不是上标，也不是下标) ，则返回 False。 否则返回 Null。
+  summary: 指定字体的上标状态。 如果 `true` 区域的所有字体都是上标，则返回 。 如果区域的所有字体都是下标或普通字体，则返回 (上标或下标 `false`) 。 否则 `null` 返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: 指定将区域字体的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示整个区域没有统一的字体 tintAndShade 设置。
+  summary: 指定使区域字体的颜色变亮或变暗的双精度值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示整个区域没有统一的字体 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 `ExcelScript.RangeUnderlineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
+  summary: 文本颜色格式的 HTML 颜色代码表示 (例如 \# ，FF0000 表示红色) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: 指定字体的斜体状态。
+  summary: 指定字体的 italic 状态。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: 字体名称 (例如，"Calibri" ) 。 名称的长度不应超过31个字符。
+  summary: 字体名称 (例如"Calibri") 。 名称的长度不应大于 31 个字符。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -228,7 +228,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: 指定字体的删除线状态。 Null 值表示整个区域没有统一的删除线设置。
+  summary: 指定字体的删除线状态。 `null`值表示整个区域没有统一删除线设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)
   package: ExcelScript!
   fullName: setSubscript(subscript)
-  summary: 指定字体的下标状态。 如果区域中的所有字体均为下标，则返回 True。 如果区域的所有字体都是上标或 normal (不是上标，也不是下标) ，则返回 False。 否则返回 Null。
+  summary: 指定字体的下标状态。 如果 `true` 区域的所有字体都是下标，则返回 。 如果区域的所有字体都是上标或普通字体，则返回 (上标或下标 `false`) 。 否则 `null` 返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)
   package: ExcelScript!
   fullName: setSuperscript(superscript)
-  summary: 指定字体的上标状态。 如果区域中的所有字体均为上标，则返回 True。 如果区域的所有字体均为下标或普通 (既不是上标，也不是下标) ，则返回 False。 否则返回 Null。
+  summary: 指定字体的上标状态。 如果 `true` 区域的所有字体都是上标，则返回 。 如果区域的所有字体都是下标或普通字体，则返回 (上标或下标 `false`) 。 否则 `null` 返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: 指定将区域字体的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示整个区域没有统一的字体 tintAndShade 设置。
+  summary: 指定使区域字体的颜色变亮或变暗的双精度值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示整个区域没有统一的字体 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -296,7 +296,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 `ExcelScript.RangeUnderlineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,9 +310,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 781829703544f58260b7c42b429af492f6d99846
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f7f26828af5dee973e65c3e48089a1c2ce1b2ebd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416615"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607429"

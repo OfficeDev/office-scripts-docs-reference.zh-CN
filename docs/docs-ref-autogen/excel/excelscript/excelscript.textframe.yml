@@ -3,7 +3,7 @@ name: ExcelScript.TextFrame
 uid: ExcelScript!ExcelScript.TextFrame:interface
 package: ExcelScript!
 fullName: ExcelScript.TextFrame
-summary: 代表 shape 对象的文本框架。
+summary: 代表 shape 对象的文本框。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: getAutoSizeSetting()
-  summary: 文本框架的自动调整大小设置。 可以将文本框设置为自动调整文本大小以适应文本框，或自动调整文本框大小以适应文本，或者不使用自动调整大小设置。
+  summary: 文本框的自动大小调整设置。 可以将文本框设置为自动调整文本大小以适应文本框，或自动调整文本框大小以适应文本，或者不使用自动调整大小设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHasText:member(1)
   package: ExcelScript!
   fullName: getHasText()
-  summary: 指定文本框架是否包含文本。
+  summary: 指定文本框是否包含文本。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: 表示文本框的水平对齐方式。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框的水平对齐方式。 有关详细信息，请参阅 `ExcelScript.ShapeTextHorizontalAlignment`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: getHorizontalOverflow()
-  summary: 表示文本框的水平溢出行为。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框的水平溢出行为。 有关详细信息，请参阅 `ExcelScript.ShapeTextHorizontalOverflow`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: 表示文本在文本框架中定向到的角度。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本面向文本框的角度。 有关详细信息，请参阅 `ExcelScript.ShapeTextOrientation`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getReadingOrder:member(1)
   package: ExcelScript!
   fullName: getReadingOrder()
-  summary: 表示文本框从左到右或从右到左的读取顺序。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框从左到右或从右到左的读取顺序。 有关详细信息，请参阅 `ExcelScript.ShapeTextReadingOrder`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getTextRange:member(1)
   package: ExcelScript!
   fullName: getTextRange()
-  summary: 表示附加到文本框中形状上的文本，以及用于操作文本的属性和方法。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示附加到文本框中形状上的文本，以及用于操作文本的属性和方法。 有关详细信息，请参阅 `ExcelScript.TextRange`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: 表示文本框的垂直对齐方式。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.ShapeTextVerticalAlignment`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: getVerticalOverflow()
-  summary: 表示文本框的垂直溢出行为。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框的垂直溢出行为。 有关详细信息，请参阅 `ExcelScript.ShapeTextVerticalOverflow`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: setAutoSizeSetting(autoSizeSetting)
-  summary: 文本框架的自动调整大小设置。 可以将文本框设置为自动调整文本大小以适应文本框，或自动调整文本框大小以适应文本，或者不使用自动调整大小设置。
+  summary: 文本框的自动大小调整设置。 可以将文本框设置为自动调整文本大小以适应文本框，或自动调整文本框大小以适应文本，或者不使用自动调整大小设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: 表示文本框的水平对齐方式。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框的水平对齐方式。 有关详细信息，请参阅 `ExcelScript.ShapeTextHorizontalAlignment`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: setHorizontalOverflow(horizontalOverflow)
-  summary: 表示文本框的水平溢出行为。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框的水平溢出行为。 有关详细信息，请参阅 `ExcelScript.ShapeTextHorizontalOverflow`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: 表示文本在文本框架中定向到的角度。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本面向文本框的角度。 有关详细信息，请参阅 `ExcelScript.ShapeTextOrientation`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setReadingOrder:member(1)
   package: ExcelScript!
   fullName: setReadingOrder(readingOrder)
-  summary: 表示文本框从左到右或从右到左的读取顺序。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框从左到右或从右到左的读取顺序。 有关详细信息，请参阅 `ExcelScript.ShapeTextReadingOrder`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -354,7 +354,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: 表示文本框的垂直对齐方式。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.ShapeTextVerticalAlignment`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -374,7 +374,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: setVerticalOverflow(verticalOverflow)
-  summary: 表示文本框的垂直溢出行为。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示文本框的垂直溢出行为。 有关详细信息，请参阅 `ExcelScript.ShapeTextVerticalOverflow`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -388,9 +388,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ecc8ca404ec0d89960a592962c74e1f4e0fd5ce
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cea8dceea74129d42e754dfb4acde0c1518acd90
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419262"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607310"

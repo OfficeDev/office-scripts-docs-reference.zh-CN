@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: 代表 HTML 颜色格式的线条颜色，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如，"橙色" ) 。
+  summary: 以 HTML 颜色格式表示线条颜色，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)
   package: ExcelScript!
   fullName: getDashStyle()
-  summary: 表示形状的线条样式。 当线条不可见或短划线样式不一致时，返回 null。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示形状的线条样式。 当 `null` 线条不可见或虚线样式不一致时返回。 有关详细信息，请参阅 `ExcelScript.ShapeLineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 表示形状的线条样式。 当线条不可见或样式不一致时，返回 null。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示形状的线条样式。 当 `null` 线条不可见或样式不一致时返回。 有关详细信息，请参阅 `ExcelScript.ShapeLineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)
   package: ExcelScript!
   fullName: getTransparency()
-  summary: 将指定线条的透明度表示为从 0.0（不透明）到 1.0（清晰）的值。 当形状的透明度不一致时，返回 null。
+  summary: 将指定线条的透明度表示为从 0.0（不透明）到 1.0（清晰）的值。 当 `null` 形状的透明度不一致时返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: 指定是否显示 shape 元素的线条格式。 当形状的可见性不一致时，返回 null。
+  summary: 指定形状元素的线条格式是否可见。 当 `null` 形状的可见性不一致时返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: 表示线条的粗细（以磅为单位）。 当线条不可见或线条粗细不一致时，返回 null。
+  summary: 表示线条的粗细（以磅为单位）。 返回 `null` 线条不可见或线条粗细不一致的情况。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: 代表 HTML 颜色格式的线条颜色，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如，"橙色" ) 。
+  summary: 以 HTML 颜色格式表示线条颜色，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)
   package: ExcelScript!
   fullName: setDashStyle(dashStyle)
-  summary: 表示形状的线条样式。 当线条不可见或短划线样式不一致时，返回 null。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示形状的线条样式。 当 `null` 线条不可见或虚线样式不一致时返回。 有关详细信息，请参阅 `ExcelScript.ShapeLineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 表示形状的线条样式。 当线条不可见或样式不一致时，返回 null。 有关详细信息，请参阅 ExcelScript。
+  summary: 表示形状的线条样式。 当 `null` 线条不可见或样式不一致时返回。 有关详细信息，请参阅 `ExcelScript.ShapeLineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)
   package: ExcelScript!
   fullName: setTransparency(transparency)
-  summary: 将指定线条的透明度表示为从 0.0（不透明）到 1.0（清晰）的值。 当形状的透明度不一致时，返回 null。
+  summary: 将指定线条的透明度表示为从 0.0（不透明）到 1.0（清晰）的值。 当 `null` 形状的透明度不一致时返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: 指定是否显示 shape 元素的线条格式。 当形状的可见性不一致时，返回 null。
+  summary: 指定形状元素的线条格式是否可见。 当 `null` 形状的可见性不一致时返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: 表示线条的粗细（以磅为单位）。 当线条不可见或线条粗细不一致时，返回 null。
+  summary: 表示线条的粗细（以磅为单位）。 返回 `null` 线条不可见或线条粗细不一致的情况。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: bad1df9e2238ca401ec4f8ca3d3e30198db219d8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2ea61848a51fe162e684d79d1b1439a1ffdf5356
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420627"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607366"

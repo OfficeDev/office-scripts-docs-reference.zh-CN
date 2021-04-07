@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
   package: ExcelScript!
   fullName: freezeAt(frozenRange)
-  summary: 设置活动工作表视图中的冻结单元格。 提供的范围与将在最顶部和最左侧窗格中冻结的单元格相对应。
+  summary: 设置活动工作表视图中的冻结单元格。 提供的范围对应于将在顶部和左侧窗格中冻结的单元格。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'freezeAt(frozenRange: Range | string): void;'
     parameters:
     - id: frozenRange
-      description: 一个代表要冻结的单元格的区域，或为 null 以删除所有冻结的窗格。
+      description: 一个代表要冻结的单元格或移除所有冻结 `null` 窗格的范围。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
   package: ExcelScript!
   fullName: freezeColumns(count)
-  summary: 就地冻结工作表的第一列或多列。
+  summary: 就地冻结工作表的第一列。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -38,7 +38,7 @@ methods:
     content: 'freezeColumns(count?: number): void;'
     parameters:
     - id: count
-      description: 可选的要冻结的列数，或为零取消对所有列的冻结
+      description: 要冻结的列数（可选）或零（以解除冻结所有列）
       type: number
     return:
       type: void
@@ -47,7 +47,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
   package: ExcelScript!
   fullName: freezeRows(count)
-  summary: 就地冻结工作表的首行或多行。
+  summary: 就地冻结工作表的首行。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -55,7 +55,7 @@ methods:
     content: 'freezeRows(count?: number): void;'
     parameters:
     - id: count
-      description: 可选的要冻结的行数，或零取消对所有行的冻结
+      description: 要冻结的行数（可选）或零（以解除冻结所有行）
       type: number
     return:
       type: void
@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: 获取用于描述活动工作表视图中的冻结单元格的区域。 冻结的范围对应于顶部和最左侧窗格中冻结的单元格。 如果没有冻结的窗格，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 获取用于描述活动工作表视图中的冻结单元格的区域。 冻结区域对应于在顶部和左侧窗格中冻结的单元格。 如果没有冻结窗格，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6e5fbac54802cd580aee48a168245ddc3f4bb59a
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 3ee4e99a62a7adfff3ab84a75424673c3cb9f59c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554046"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607275"
