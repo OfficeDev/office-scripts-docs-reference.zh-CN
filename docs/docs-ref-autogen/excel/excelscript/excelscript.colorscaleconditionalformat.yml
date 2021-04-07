@@ -3,7 +3,7 @@ name: ExcelScript.ColorScaleConditionalFormat
 uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ColorScaleConditionalFormat
-summary: 表示条件格式设置的色阶条件。
+summary: 表示条件格式的色标条件。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)
   package: ExcelScript!
   fullName: getCriteria()
-  summary: 色阶的条件。 使用两个点的色阶时，中点是可选的。
+  summary: 色标的条件。 使用双点色标时，中点是可选的。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)
   package: ExcelScript!
   fullName: getThreeColorScale()
-  summary: 如果为 true，则色阶将具有三个点 (最小、中点、最大) ，否则它将有两个 (最小值，最大) 。
+  summary: If `true`<!-- -->，色标的最小 (中点、最大色) ，否则色标将具有 (最小、最大) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)
   package: ExcelScript!
   fullName: setCriteria(criteria)
-  summary: 色阶的条件。 使用两个点的色阶时，中点是可选的。
+  summary: 色标的条件。 使用双点色标时，中点是可选的。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 205bac27656484bc9e52d59f40d9d0dc4b826a8b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d8ddc5ccca6eb6fec86803edb68e9f3c917a47b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416818"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606765"

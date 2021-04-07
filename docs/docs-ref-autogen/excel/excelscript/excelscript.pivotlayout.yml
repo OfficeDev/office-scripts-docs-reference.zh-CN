@@ -3,7 +3,7 @@ name: ExcelScript.PivotLayout
 uid: ExcelScript!ExcelScript.PivotLayout:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotLayout
-summary: 表示数据透视表的可视化布局。
+summary: 表示数据透视表的可视布局。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)
   package: ExcelScript!
   fullName: getAutoFormat()
-  summary: 指定在刷新或移动域时是否自动设置格式。
+  summary: 指定在刷新格式或移动字段时是否自动设置格式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getEnableFieldList:member(1)
   package: ExcelScript!
   fullName: getEnableFieldList()
-  summary: 指定是否可以在 UI 中显示字段列表。
+  summary: 指定字段列表是否可在 UI 中显示。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: getPreserveFormatting()
-  summary: 指定当通过透视、排序或更改页字段项等操作刷新或重新计算报表时，是否保留格式设置。
+  summary: 指定在通过透视、排序或更改页字段项等操作刷新或重新计算报表时是否保留格式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowColumnGrandTotals()
-  summary: 指定数据透视表是否显示列总计。
+  summary: 指定数据透视表是否显示列的总计。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: getSubtotalLocation()
-  summary: 此属性指示数据透视表上的所有字段的 SubtotalLocationType。 如果字段状态不同，则为 null。
+  summary: 此属性指示数据 `SubtotalLocationType` 透视表上所有字段的 。 如果字段具有不同的状态，则 `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)
   package: ExcelScript!
   fullName: setAutoFormat(autoFormat)
-  summary: 指定在刷新或移动域时是否自动设置格式。
+  summary: 指定在刷新格式或移动字段时是否自动设置格式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,7 +211,7 @@ methods:
     content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
     parameters:
     - id: cell
-      description: 要使用的单个单元格获取应用自动排序的条件。
+      description: 用于获取应用 autosort 的条件的单个单元格。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: sortBy
       description: 排序的方向。
@@ -223,7 +223,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setEnableFieldList:member(1)
   package: ExcelScript!
   fullName: setEnableFieldList(enableFieldList)
-  summary: 指定是否可以在 UI 中显示字段列表。
+  summary: 指定字段列表是否可在 UI 中显示。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -257,7 +257,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: setPreserveFormatting(preserveFormatting)
-  summary: 指定当通过透视、排序或更改页字段项等操作刷新或重新计算报表时，是否保留格式设置。
+  summary: 指定在通过透视、排序或更改页字段项等操作刷新或重新计算报表时是否保留格式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -274,7 +274,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowColumnGrandTotals(showColumnGrandTotals)
-  summary: 指定数据透视表是否显示列总计。
+  summary: 指定数据透视表是否显示列的总计。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: setSubtotalLocation(subtotalLocation)
-  summary: 此属性指示数据透视表上的所有字段的 SubtotalLocationType。 如果字段状态不同，则为 null。
+  summary: 此属性指示数据 `SubtotalLocationType` 透视表上所有字段的 。 如果字段具有不同的状态，则 `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -322,9 +322,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: edb6b050eb6f004b74bf38c57764bf5292367016
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4612183d3dca994b991b7f65659024e46fb06a13
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416734"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607191"

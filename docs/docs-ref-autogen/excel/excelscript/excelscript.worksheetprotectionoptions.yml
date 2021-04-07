@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member
   package: ExcelScript!
   fullName: allowAutoFilter
-  summary: 表示允许使用自动筛选功能的工作表保护选项。
+  summary: 表示允许使用自动筛选功能工作表保护选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member
   package: ExcelScript!
   fullName: allowEditScenarios
-  summary: 表示允许编辑应用场景的工作表保护选项。
+  summary: 表示允许编辑方案的工作表保护选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member
   package: ExcelScript!
   fullName: allowFormatCells
-  summary: 表示允许格式化单元格的工作表保护选项。
+  summary: 表示允许设置单元格格式的工作表保护选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member
   package: ExcelScript!
   fullName: allowFormatRows
-  summary: 表示允许格式化行的工作表保护选项。
+  summary: 表示允许设置行格式的工作表保护选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member
   package: ExcelScript!
   fullName: allowPivotTables
-  summary: 表示允许使用数据透视表功能的工作表保护选项。
+  summary: 表示允许使用数据透视表功能工作表保护选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -157,7 +157,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member
   package: ExcelScript!
   fullName: allowSort
-  summary: 表示允许使用排序功能的工作表保护选项。
+  summary: 表示允许使用排序功能工作表保护选项。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -178,9 +178,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />
 metadata:
-  ms.openlocfilehash: d4d1d23a781e1be35d76429ab5af1d60d5d696c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0772bfad59e8d426f5f989afdd69557ba5d49c10
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419227"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605288"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  summary: HTML 颜色代码，表示边框线条的颜色，格式为 \# RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)
   package: ExcelScript!
   fullName: getSideIndex()
-  summary: 指示边框的特定边的常量值。 有关详细信息，请参阅 ExcelScript。
+  summary: 指示边框的特定边的常量值。 有关详细信息，请参阅 `ExcelScript.BorderIndex`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 ExcelScript。
+  summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 `ExcelScript.BorderLineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示边框没有统一的 tintAndShade 设置。
+  summary: 指定一个使区域边框的颜色变亮或变暗的双精度值，该值介于 -1 (最暗) 和 1 (最亮) 之间，原始颜色为 0。 `null`值表示边框没有统一 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 ExcelScript。
+  summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 `ExcelScript.BorderWeight`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: 代表 RRGGBB 格式的边框线颜色的 HTML 颜色代码 \# (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。
+  summary: HTML 颜色代码，表示边框线条的颜色，格式为 \# RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 ExcelScript。
+  summary: 线条样式的常量之一，指定边框的线条样式。 有关详细信息，请参阅 `ExcelScript.BorderLineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: 指定将区域边框的颜色变浅或变暗的双精度值，该值介于-1 (最暗) 和 1 (最明亮的) ，0表示原始颜色。 空值表示边框没有统一的 tintAndShade 设置。
+  summary: 指定一个使区域边框的颜色变亮或变暗的双精度值，该值介于 -1 (最暗) 和 1 (最亮) 之间，原始颜色为 0。 `null`值表示边框没有统一 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 ExcelScript。
+  summary: 指定区域周围的边框的粗细。 有关详细信息，请参阅 `ExcelScript.BorderWeight`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,9 +143,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5f8e2551cc91dde4ada9a6226243454c3213a1d6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c807283501f63bac9e10c3d2e16e3b91ea5be940
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411955"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607177"

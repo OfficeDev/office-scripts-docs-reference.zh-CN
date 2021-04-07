@@ -3,7 +3,7 @@ name: ExcelScript.RangeReference
 uid: ExcelScript!ExcelScript.RangeReference:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeReference
-summary: 代表表单 SheetName 的字符串引用！A1： B5，或全局或本地命名区域。
+summary: 表示"SheetName！A1：B5"或全局或本地命名区域。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.RangeReference#address:member
   package: ExcelScript!
   fullName: address
-  summary: 区域的地址;例如，"SheetName！A1： B5 '。
+  summary: 区域的地址，例如"SheetName！A1：B5".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -22,9 +22,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: f6b7b4d465148aa0ef601a71a1fa5f1e56d34e6f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2502eba04073c8ec8349a3371d2744831d5b2f28
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411913"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607156"

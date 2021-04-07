@@ -3,7 +3,7 @@ name: ExcelScript.ChartFont
 uid: ExcelScript!ExcelScript.ChartFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartFont
-summary: 此对象表示 chart 对象的字体属性（字体名称、字体大小、颜色等）。
+summary: 此对象表示图表 (字体名称、字号和颜色) 字体属性。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
+  summary: 文本颜色格式的 HTML 颜色代码表示 (例如 \# ，FF0000 表示红色) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: '字体名称 (例如，"Calibri" ) '
+  summary: '字体名称 (例如"Calibri") '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getSize:member(1)
   package: ExcelScript!
   fullName: getSize()
-  summary: '字体大小 (例如，11) '
+  summary: '字体大小 (例如 11) '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 `ExcelScript.ChartUnderlineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
+  summary: 文本颜色格式的 HTML 颜色代码表示 (例如 \# ，FF0000 表示红色) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: '字体名称 (例如，"Calibri" ) '
+  summary: '字体名称 (例如"Calibri") '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setSize:member(1)
   package: ExcelScript!
   fullName: setSize(size)
-  summary: '字体大小 (例如，11) '
+  summary: '字体大小 (例如 11) '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 `ExcelScript.ChartUnderlineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ef4d91ec8835380a3af1b0de7def9ab52d8dda8c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 58486871c20f86feee8008975bd8790f284b09d0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419934"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606897"

@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFont
 uid: ExcelScript!ExcelScript.ConditionalRangeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFont
-summary: 此对象表示对象的字体样式、颜色等 )  (字体属性。
+summary: 此对象表示对象的字体 (、字体样式、颜色) 等。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: 指定字体是否为粗体。
+  summary: 指定字体是否加粗。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
+  summary: 文本颜色格式的 HTML 颜色代码表示 (例如 \# ，FF0000 表示红色) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: 指定字体是否为斜体。
+  summary: 指定字体是否为 italic。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 `ExcelScript.ConditionalRangeFontUnderlineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: 指定字体是否为粗体。
+  summary: 指定字体是否加粗。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: 文本颜色的 HTML 颜色代码表示 (例如， \# FF0000 表示红色) 。
+  summary: 文本颜色格式的 HTML 颜色代码表示 (例如 \# ，FF0000 表示红色) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: 指定字体是否为斜体。
+  summary: 指定字体是否为 italic。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 应用于字体的下划线类型。 有关详细信息，请参阅 `ExcelScript.ConditionalRangeFontUnderlineStyle`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4b59e433ac3535d4aa352158485d17289731760a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0baa0c9251cd94135e208c7592d45e78dace77ca
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419367"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606708"

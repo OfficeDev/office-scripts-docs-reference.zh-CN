@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#addChartSeries:member(1)
   package: ExcelScript!
   fullName: addChartSeries(name, index)
-  summary: 向集合添加新系列。 在为其设置值/x 轴值/气泡大小之前，新添加的系列将不可见， (取决于图表类型) 。
+  summary: 向集合添加新系列。 新添加的系列在设置其值、x 轴值或气泡大小之前不可见 (取决于图表类型) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getCategoryLabelLevel:member(1)
   package: ExcelScript!
   fullName: getCategoryLabelLevel()
-  summary: 指定一个 ChartCategoryLabelLevel 枚举常量，该常量引用分类标签的来源级别。
+  summary: 指定图表类别标签级别枚举常量，该常量引用源分类标签的级别。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getChartType:member(1)
   package: ExcelScript!
   fullName: getChartType()
-  summary: 指定图表的类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 指定图表的类型。 有关详细信息，请参阅 `ExcelScript.ChartType`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: 指定 chart 对象的高度（以磅为单位）。
+  summary: 指定图表对象的高度（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getImage:member(1)
   package: ExcelScript!
   fullName: getImage(width, height, fittingMode)
-  summary: 通过缩放图表以适应指定的尺寸，将图表呈现为 base64 编码的图像。 在调整大小的过程中保留纵横比。
+  summary: 通过缩放图表以适应指定的尺寸，将图表呈现为 base64 编码的图像。 纵横比在调整大小时保留。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,13 +176,13 @@ methods:
               ): string;
     parameters:
     - id: width
-      description: （可选）生成的图像所需的宽度。
+      description: 可选。 生成的图像的所需宽度。
       type: number
     - id: height
-      description: （可选）生成的图像所需的高度。
+      description: 可选。 生成的图像的所需高度。
       type: number
     - id: fittingMode
-      description: " (可选) 如果高度和宽度均设置) ，用于将图表缩放到指定尺寸的方法 (。"
+      description: 可选。 用于将图表缩放到指定尺寸的方法 (如果高度和宽度都设置为) 。
       type: <xref uid="ExcelScript!ExcelScript.ImageFittingMode:enum" />
     return:
       type: string
@@ -217,7 +217,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 指定 chart 对象的名称。
+  summary: 指定图表对象的名称。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -243,7 +243,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getPlotArea:member(1)
   package: ExcelScript!
   fullName: getPlotArea()
-  summary: 表示图表的绘制区域。
+  summary: 表示图表的绘图区。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getSeriesNameLevel:member(1)
   package: ExcelScript!
   fullName: getSeriesNameLevel()
-  summary: 指定一个 ChartSeriesNameLevel 枚举常量，该常量引用系列名称的来源级别。
+  summary: 指定图表系列名称级别枚举常量，该常量引用源系列名称的级别。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getShowDataLabelsOverMaximum:member(1)
   package: ExcelScript!
   fullName: getShowDataLabelsOverMaximum()
-  summary: 指定当值大于数值轴上的最大值时是否显示数据标签。 如果数值轴变为小于数据点的大小，则可以使用此属性来设置是否显示数据标签。 该属性只适用于二维图表。
+  summary: 指定当值大于数值轴上的最大值时是否显示数据标签。 如果数值轴变得小于数据点的大小，可以使用此属性设置是否显示数据标签。 该属性只适用于二维图表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: 指定指定图表的标题，包括文本、可见性、位置和标题的格式。
+  summary: 表示指定图表的标题，包括标题的文本、可见性、位置和格式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: 指定一个距离，以磅为单位，从工作表上的第1行顶部 (工作) 表上，或图表) 上的图表区 (顶部的距离（以磅为单位）。
+  summary: 指定从对象上边缘到工作表上第 1 (行顶端的距离（以) 或图表 (图表区域的顶部) ）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -373,7 +373,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: 指定 chart 对象的宽度（以磅为单位）。
+  summary: 指定图表对象的宽度（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setCategoryLabelLevel:member(1)
   package: ExcelScript!
   fullName: setCategoryLabelLevel(categoryLabelLevel)
-  summary: 指定一个 ChartCategoryLabelLevel 枚举常量，该常量引用分类标签的来源级别。
+  summary: 指定图表类别标签级别枚举常量，该常量引用源分类标签的级别。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setChartType:member(1)
   package: ExcelScript!
   fullName: setChartType(chartType)
-  summary: 指定图表的类型。 有关详细信息，请参阅 ExcelScript。
+  summary: 指定图表的类型。 有关详细信息，请参阅 `ExcelScript.ChartType`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -444,7 +444,7 @@ methods:
       description: 与源数据对应的 range 对象。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: 指定列或行在图表上用作数据系列的方式。 可以是下列值之一： Auto (默认) 、行和列。 有关详细信息，请参阅 ExcelScript。
+      description: 指定列或行在图表上用作数据系列的方式。 可以是下列值之一：自动 (、) 、行和列。 有关详细信息，请参阅 `ExcelScript.ChartSeriesBy`。
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: void
@@ -470,7 +470,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: 指定 chart 对象的高度（以磅为单位）。
+  summary: 指定图表对象的高度（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -504,7 +504,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: 指定 chart 对象的名称。
+  summary: 指定图表对象的名称。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
       description: 起始单元格。这是图表将移动到的位置。起始单元格为左上角或右上角的单元格，具体取决于用户的从右到左显示设置。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: endCell
-      description: （可选）结束单元格。 如果指定，图表的宽度和高度将设置为完全覆盖此单元格/区域。
+      description: 可选。 结束单元格。 如果已指定，图表的宽度和高度将设置为完全覆盖此单元格/区域。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -575,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setSeriesNameLevel:member(1)
   package: ExcelScript!
   fullName: setSeriesNameLevel(seriesNameLevel)
-  summary: 指定一个 ChartSeriesNameLevel 枚举常量，该常量引用系列名称的来源级别。
+  summary: 指定图表系列名称级别枚举常量，该常量引用源系列名称的级别。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -609,7 +609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setShowDataLabelsOverMaximum:member(1)
   package: ExcelScript!
   fullName: setShowDataLabelsOverMaximum(showDataLabelsOverMaximum)
-  summary: 指定当值大于数值轴上的最大值时是否显示数据标签。 如果数值轴变为小于数据点的大小，则可以使用此属性来设置是否显示数据标签。 该属性只适用于二维图表。
+  summary: 指定当值大于数值轴上的最大值时是否显示数据标签。 如果数值轴变得小于数据点的大小，可以使用此属性设置是否显示数据标签。 该属性只适用于二维图表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -643,7 +643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: 指定一个距离，以磅为单位，从工作表上的第1行顶部 (工作) 表上，或图表) 上的图表区 (顶部的距离（以磅为单位）。
+  summary: 指定从对象上边缘到工作表上第 1 (行顶端的距离（以) 或图表 (图表区域的顶部) ）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -660,7 +660,7 @@ methods:
   uid: ExcelScript!ExcelScript.Chart#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: 指定 chart 对象的宽度（以磅为单位）。
+  summary: 指定图表对象的宽度（以点表示）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -674,9 +674,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 16db85eee5fc6327494e016ddfc9584f3d263d5c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 622f7bc0491202803f57b7644468ee49e2787d89
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420158"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606953"

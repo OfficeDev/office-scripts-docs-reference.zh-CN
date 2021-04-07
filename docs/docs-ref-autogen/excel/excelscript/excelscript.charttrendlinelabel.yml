@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: 该字符串值表示采用 A1 表示法的图表趋势线标签的公式。
+  summary: 字符串值，表示使用 A1 样式表示法的图表趋势线标签的公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: 返回图表趋势线标签的高度，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+  summary: 返回图表趋势线标签的高度，以磅为单位。 如果 `null` 图表趋势线标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: 表示图表趋势线标签水平对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的趋势线标签为-90、90或180时，此属性才有效。
+  summary: 表示图表趋势线标签的水平对齐方式。 有关详细信息，请参阅 `ExcelScript.ChartTextHorizontalAlignment`。 此属性仅在趋势线标签 `TextOrientation` 为 -90、90 或 180 时有效。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: 表示图表趋势线标签左边缘到图表区域左边缘的距离，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+  summary: 表示从图表趋势线标签的左边缘到图表区左边缘的距离（以点表示）。 如果 `null` 图表趋势线标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: 指定数字格式是否链接到单元格 (以便在标签中的) 单元格区域发生更改时，数字格式的更改将发生变化。
+  summary: 指定数字格式是否链接到单元格 (以便当数字格式在单元格区域更改时标签) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 该字符串值表示趋势线标签的格式代码。
+  summary: 字符串值，表示趋势线标签的格式代码。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: 表示文本面向图表趋势线标签的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+  summary: 表示文本面向图表趋势线标签的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: 表示图表趋势线标签上边缘到图表区域顶部的距离，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+  summary: 表示从图表趋势线标签的上边缘到图表区域顶部的距离（以点表示）。 如果 `null` 图表趋势线标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: 表示图表趋势线标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的趋势线标签为0时，此属性才有效。
+  summary: 表示图表趋势线标签的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。 此属性仅在趋势线 `TextOrientation` 标签为 0 时有效。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: 返回图表趋势线标签的宽度，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+  summary: 返回图表趋势线标签的宽度，以磅为单位。 如果 `null` 图表趋势线标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: 该字符串值表示采用 A1 表示法的图表趋势线标签的公式。
+  summary: 字符串值，表示使用 A1 样式表示法的图表趋势线标签的公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,7 +216,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: 表示图表趋势线标签水平对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的趋势线标签为-90、90或180时，此属性才有效。
+  summary: 表示图表趋势线标签的水平对齐方式。 有关详细信息，请参阅 `ExcelScript.ChartTextHorizontalAlignment`。 此属性仅在趋势线标签 `TextOrientation` 为 -90、90 或 180 时有效。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -236,7 +236,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: 表示图表趋势线标签左边缘到图表区域左边缘的距离，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+  summary: 表示从图表趋势线标签的左边缘到图表区左边缘的距离（以点表示）。 如果 `null` 图表趋势线标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,7 +253,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: 指定数字格式是否链接到单元格 (以便在标签中的) 单元格区域发生更改时，数字格式的更改将发生变化。
+  summary: 指定数字格式是否链接到单元格 (以便当数字格式在单元格区域更改时标签) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -270,7 +270,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: 该字符串值表示趋势线标签的格式代码。
+  summary: 字符串值，表示趋势线标签的格式代码。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -304,7 +304,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: 表示文本面向图表趋势线标签的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+  summary: 表示文本面向图表趋势线标签的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: 表示图表趋势线标签上边缘到图表区域顶部的距离，以磅为单位。 如果图表趋势线标签不可见，则为 Null。
+  summary: 表示从图表趋势线标签的上边缘到图表区域顶部的距离（以点表示）。 如果 `null` 图表趋势线标签不可见，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: 表示图表趋势线标签垂直对齐。 有关详细信息，请参阅 ExcelScript。 仅当 TextOrientation 的趋势线标签为0时，此属性才有效。
+  summary: 表示图表趋势线标签的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。 此属性仅在趋势线 `TextOrientation` 标签为 0 时有效。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,9 +355,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 9fd0242c831cb51763ebbc98cd2a6fde6909bab4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 362e5cc45beb64d9ecb31e8f252ccc2d56460844
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415986"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606799"

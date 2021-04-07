@@ -3,7 +3,7 @@ name: ExcelScript.CellPropertiesProtection
 uid: ExcelScript!ExcelScript.CellPropertiesProtection:interface
 package: ExcelScript!
 fullName: ExcelScript.CellPropertiesProtection
-summary: 表示 `format.protection` 的属性 `getCellProperties`<!-- -->, `getRowProperties`<!-- -->，和 `getColumnProperties` 或的 `format.protection` 输入参数 `setCellProperties`<!-- -->, `setRowProperties`<!-- -->，并 `setColumnProperties`<!-- -->.
+summary: 表示 `format.protection``getCellProperties`<!-- -->, `getRowProperties`<!-- -->、 和 `getColumnProperties`<!-- -->或 `format.protection` 的输入参数 `setCellProperties`<!-- -->, `setRowProperties`<!-- -->、 和 `setColumnProperties`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 915a79071010cc018c938587b9868656578e2d29
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 56fb39bdf6eb1a7c5160bdbfb0a25011bee9eb22
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420179"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606995"

@@ -3,7 +3,7 @@ name: ExcelScript.DataBarConditionalFormat
 uid: ExcelScript!ExcelScript.DataBarConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.DataBarConditionalFormat
-summary: 表示 Excel 条件数据栏类型。
+summary: 表示 Excel 条件数据条类型。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)
   package: ExcelScript!
   fullName: getAxisColor()
-  summary: 代表轴线的颜色的 HTML 颜色代码，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。 "" (空字符串) 如果不存在或未设置轴）。
+  summary: HTML 颜色代码，表示轴线的颜色，格式为 \# RRGGBB (例如，"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。 如果不存在或 (坐标轴，则) "表示空字符串值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisFormat:member(1)
   package: ExcelScript!
   fullName: getAxisFormat()
-  summary: 为 Excel 数据栏确定轴的方式的表示形式。
+  summary: 如何为 Excel 数据栏确定坐标轴的表示形式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)
   package: ExcelScript!
   fullName: getBarDirection()
-  summary: 指定数据条图形的基于方向。
+  summary: 指定数据条图形应基于的方向。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)
   package: ExcelScript!
   fullName: getLowerBoundRule()
-  summary: 构成数据栏的下限（以及如何计算，如果适用）的规则。 `ConditionalDataBarRule`必须将对象设置为 (使用的 JSON 对象， `x.lowerBoundRule = {...}` 而不是`x.lowerBoundRule.formula = ...`<!-- -->).
+  summary: 构成数据栏的下限（以及如何计算，如果适用）的规则。 必须将 `ConditionalDataBarRule` 对象设置为 JSON 对象 (`x.lowerBoundRule = {...}` 而不是 `x.lowerBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getNegativeFormat:member(1)
   package: ExcelScript!
   fullName: getNegativeFormat()
-  summary: 在 Excel 数据栏中的轴左侧的所有值的表示形式。
+  summary: Excel 数据栏中轴左侧的所有值的表示形式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getPositiveFormat:member(1)
   package: ExcelScript!
   fullName: getPositiveFormat()
-  summary: 在 Excel 数据栏中的轴右侧的所有值的表示形式。
+  summary: Excel 数据栏中轴右侧所有值的表示形式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)
   package: ExcelScript!
   fullName: getShowDataBarOnly()
-  summary: 如果为 true，则对应用数据栏的单元格隐藏值。
+  summary: If `true`<!-- -->，则隐藏应用数据栏的单元格的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)
   package: ExcelScript!
   fullName: getUpperBoundRule()
-  summary: 构成数据栏的上限（以及如何计算，如果适用）的规则。 `ConditionalDataBarRule`必须将对象设置为 (使用的 JSON 对象， `x.upperBoundRule = {...}` 而不是`x.upperBoundRule.formula = ...`<!-- -->).
+  summary: 构成数据栏的上限（以及如何计算，如果适用）的规则。 必须将 `ConditionalDataBarRule` 对象设置为 JSON 对象 (`x.upperBoundRule = {...}` 而不是 `x.upperBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)
   package: ExcelScript!
   fullName: setAxisColor(axisColor)
-  summary: 代表轴线的颜色的 HTML 颜色代码，格式 \# RRGGBB (例如，"FFA500" ) 或作为命名的 HTML 颜色 (例如 "橙色" ) 。 "" (空字符串) 如果不存在或未设置轴）。
+  summary: HTML 颜色代码，表示轴线的颜色，格式为 \# RRGGBB (例如，"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。 如果不存在或 (坐标轴，则) "表示空字符串值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisFormat:member(1)
   package: ExcelScript!
   fullName: setAxisFormat(axisFormat)
-  summary: 为 Excel 数据栏确定轴的方式的表示形式。
+  summary: 如何为 Excel 数据栏确定坐标轴的表示形式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)
   package: ExcelScript!
   fullName: setBarDirection(barDirection)
-  summary: 指定数据条图形的基于方向。
+  summary: 指定数据条图形应基于的方向。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)
   package: ExcelScript!
   fullName: setLowerBoundRule(lowerBoundRule)
-  summary: 构成数据栏的下限（以及如何计算，如果适用）的规则。 `ConditionalDataBarRule`必须将对象设置为 (使用的 JSON 对象， `x.lowerBoundRule = {...}` 而不是`x.lowerBoundRule.formula = ...`<!-- -->).
+  summary: 构成数据栏的下限（以及如何计算，如果适用）的规则。 必须将 `ConditionalDataBarRule` 对象设置为 JSON 对象 (`x.lowerBoundRule = {...}` 而不是 `x.lowerBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -185,7 +185,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)
   package: ExcelScript!
   fullName: setShowDataBarOnly(showDataBarOnly)
-  summary: 如果为 true，则对应用数据栏的单元格隐藏值。
+  summary: If `true`<!-- -->，则隐藏应用数据栏的单元格的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)
   package: ExcelScript!
   fullName: setUpperBoundRule(upperBoundRule)
-  summary: 构成数据栏的上限（以及如何计算，如果适用）的规则。 `ConditionalDataBarRule`必须将对象设置为 (使用的 JSON 对象， `x.upperBoundRule = {...}` 而不是`x.upperBoundRule.formula = ...`<!-- -->).
+  summary: 构成数据栏的上限（以及如何计算，如果适用）的规则。 必须将 `ConditionalDataBarRule` 对象设置为 JSON 对象 (`x.upperBoundRule = {...}` 而不是 `x.upperBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,9 +216,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 71067c46b38608eb87a203c02f0406f1b68d0d2e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3a334c053c4f5bbddbcc87db22e43f21cbe47260
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415566"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606542"

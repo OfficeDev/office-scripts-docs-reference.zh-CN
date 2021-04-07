@@ -34,10 +34,10 @@ methods:
     content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
     parameters:
     - id: type
-      description: 指定坐标轴类型。 有关详细信息，请参阅 ExcelScript。
+      description: 指定坐标轴类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisType`。
       type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
     - id: group
-      description: 可选。 指定坐标轴组。 有关详细信息，请参阅 ExcelScript。
+      description: 可选。 指定坐标轴组。 有关详细信息，请参阅 `ExcelScript.ChartAxisGroup`。
       type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
@@ -69,9 +69,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 5228c8107a7d138be68485c568f89a67578a44dd
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3e931303394e4db4ad29430321ba35ee32ca4018
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420109"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606946"

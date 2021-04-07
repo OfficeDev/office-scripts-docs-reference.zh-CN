@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#ascending:member
   package: ExcelScript!
   fullName: ascending
-  summary: 指定是否以升序方式进行排序。
+  summary: 指定是否以升序完成排序。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#color:member
   package: ExcelScript!
   fullName: color
-  summary: 指定在对字体或单元格颜色进行排序时，作为条件目标的颜色。
+  summary: 如果排序是字体或单元格颜色，则指定作为条件目标的颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#icon:member
   package: ExcelScript!
   fullName: icon
-  summary: 指定当排序在单元格的图标上时作为条件目标的图标。
+  summary: 指定作为条件目标的图标（如果排序位于单元格的图标上）。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#key:member
   package: ExcelScript!
   fullName: key
-  summary: 指定 (或行的列，具体取决于条件所在) 的排序方向。 表示与第一列（或行）的偏移量。
+  summary: 根据条件 (排序方向，指定) 或行。 表示与第一列（或行）的偏移量。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#subField:member
   package: ExcelScript!
   fullName: subField
-  summary: 指定作为排序依据的格式值的目标属性名称的子字段。
+  summary: 指定作为要排序的丰富值的目标属性名称的子字段。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -94,9 +94,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: ebc6a6627cee8a97f7f156534f43fb99f731efa4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e357fd813e45dcb01b36c18a57e930c7b07708da
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420382"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605995"

@@ -3,7 +3,7 @@ name: ExcelScript.WorkbookRangeAreas
 uid: ExcelScript!ExcelScript.WorkbookRangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.WorkbookRangeAreas
-summary: 代表多个工作表中的一个或多个矩形区域的集合。
+summary: 表示多个工作表中一个或多个矩形区域的集合。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
   package: ExcelScript!
   fullName: getAddresses()
-  summary: 返回 A1 样式的地址数组。 Address 值将包含单元格每个矩形块的工作表名称 (例如，"Sheet1！A1： B4、Sheet1！D1： D4 ") 。 只读。
+  summary: 返回 A1 样式的地址数组。 地址值包含单元格区域的每个矩形块的工作表 (例如，"Sheet1！A1：B4，Sheet1！D1：D4") 。 只读。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
   package: ExcelScript!
   fullName: getAreas()
-  summary: 返回 RangeAreasCollection 对象，集合中的每个 RangeAreas 代表一个工作表中的一个或多个矩形区域。
+  summary: 返回 `RangeAreasCollection` 对象。 集合 `RangeAreas` 中的每个区域都代表一个工作表中的一个或多个矩形区域。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: 基于集合中的工作表名称或 id 返回 RangeAreas 对象。 如果工作表不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 基于 `RangeAreas` 集合中的工作表名称或 ID 返回对象。 如果工作表不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -47,7 +47,7 @@ methods:
     content: 'getRangeAreasBySheet(key: string): RangeAreas;'
     parameters:
     - id: key
-      description: 工作表的名称或 id。
+      description: 工作表的名称或 ID。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: 返回在 RangeCollection 对象中组成此对象的范围。
+  summary: 返回在对象中组成此对象 `RangeCollection` 的范围。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: 314209691b999d9cbfe9b31caec70a30bb490d93
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 2a4a022464cf1f54246d451331da6d84f2d57ec3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554748"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605302"

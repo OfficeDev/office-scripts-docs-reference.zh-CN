@@ -3,7 +3,7 @@ name: ExcelScript.Slicer
 uid: ExcelScript!ExcelScript.Slicer:interface
 package: ExcelScript!
 fullName: ExcelScript.Slicer
-summary: 表示工作簿中的切片器对象。
+summary: 表示 `Slicer` 工作簿中的对象。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: 表示切片器的高度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
+  summary: 表示切片器的高度（以磅为单位）。 当设置为负值或零作为输入时 `InvalidArgument` 引发异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)
   package: ExcelScript!
   fullName: getIsFilterCleared()
-  summary: 如果已清除当前切片器上应用的所有筛选器，则为 True。
+  summary: 如果 `true` 当前在切片器上应用的所有筛选器已清除，则值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: 表示从切片器左侧到工作表左侧的距离（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 将负值设置为 input 时出现异常。
+  summary: 表示从切片器左侧到工作表左侧的距离（以磅为单位）。 将负 `InvalidArgument` 值设置为输入时引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
   package: ExcelScript!
   fullName: getSlicerItem(key)
-  summary: 使用其键或名称获取切片器项。 如果切片器项目不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 使用其键或名称获取切片器项。 如果切片器项不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
     content: 'getSlicerItem(key: string): SlicerItem | undefined;'
     parameters:
     - id: key
-      description: 要检索的切片器的键或名称。
+      description: 要检索的切片器键或名称。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerItem:interface" /> | undefined
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)
   package: ExcelScript!
   fullName: getSlicerItems()
-  summary: 表示作为切片器一部分的 SlicerItems 的集合。
+  summary: 表示属于切片器一部分的切片器项的集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSortBy:member(1)
   package: ExcelScript!
   fullName: getSortBy()
-  summary: 表示切片器中的项目的排序顺序。 可能的值为： "DataSourceOrder"、"升序"、"降序"。
+  summary: 表示切片器中的项目的排序顺序。 可能的值是："DataSourceOrder"、"Ascending"、"Descending"。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 表示切片器样式的常量值。 可能的值为： "SlicerStyleLight1" 到 "SlicerStyleLight6"、"TableStyleOther1" 通过 "TableStyleOther2"、"SlicerStyleDark1" 到 "SlicerStyleDark6"。 还可以指定工作簿中显示的用户定义的自定义样式。
+  summary: 代表切片器样式的常量值。 可能的值包括："SlicerStyleLight1"到"SlicerStyleLight6"，"TableStyleOther1"到"TableStyleOther2"，"SlicerStyleDark1"到"SlicerStyleDark6"。 还可以指定工作簿中显示的用户定义的自定义样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: 表示从切片器上边缘到工作表顶部的距离（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 将负值设置为 input 时出现异常。
+  summary: 表示从切片器上边缘到工作表顶部的距离（以磅为单位）。 将负 `InvalidArgument` 值设置为输入时引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: 表示切片器的宽度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
+  summary: 表示切片器的宽度（以磅为单位）。 设置为负值或零作为输入时 `InvalidArgument` 引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#selectItems:member(1)
   package: ExcelScript!
   fullName: selectItems(items)
-  summary: 根据它们的键选择切片器项目。 将清除以前的选择。 如果数组为空，则默认情况下将选择所有项目。
+  summary: 根据切片器项的键选择切片器项。 清除前面的选择。 如果数组为空，则默认情况下将选择所有项目。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
     content: 'selectItems(items?: string[]): void;'
     parameters:
     - id: items
-      description: 可选。 要选择的指定切片器项目名称。
+      description: 可选。 要选择的指定切片器项名称。
       type: string[]
     return:
       type: void
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: 表示切片器的高度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
+  summary: 表示切片器的高度（以磅为单位）。 当设置为负值或零作为输入时 `InvalidArgument` 引发异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,7 +276,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: 表示从切片器左侧到工作表左侧的距离（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 将负值设置为 input 时出现异常。
+  summary: 表示从切片器左侧到工作表左侧的距离（以磅为单位）。 将负 `InvalidArgument` 值设置为输入时引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,7 +310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setSortBy:member(1)
   package: ExcelScript!
   fullName: setSortBy(sortBy)
-  summary: 表示切片器中的项目的排序顺序。 可能的值为： "DataSourceOrder"、"升序"、"降序"。
+  summary: 表示切片器中的项目的排序顺序。 可能的值是："DataSourceOrder"、"Ascending"、"Descending"。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -327,7 +327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 表示切片器样式的常量值。 可能的值为： "SlicerStyleLight1" 到 "SlicerStyleLight6"、"TableStyleOther1" 通过 "TableStyleOther2"、"SlicerStyleDark1" 到 "SlicerStyleDark6"。 还可以指定工作簿中显示的用户定义的自定义样式。
+  summary: 代表切片器样式的常量值。 可能的值包括："SlicerStyleLight1"到"SlicerStyleLight6"，"TableStyleOther1"到"TableStyleOther2"，"SlicerStyleDark1"到"SlicerStyleDark6"。 还可以指定工作簿中显示的用户定义的自定义样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -344,7 +344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: 表示从切片器上边缘到工作表顶部的距离（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 将负值设置为 input 时出现异常。
+  summary: 表示从切片器上边缘到工作表顶部的距离（以磅为单位）。 将负 `InvalidArgument` 值设置为输入时引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -361,7 +361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: 表示切片器的宽度（以磅为单位）。 引发 "参数无效或丢失或格式不正确"。 在设置为负值或零作为输入时出现异常。
+  summary: 表示切片器的宽度（以磅为单位）。 设置为负值或零作为输入时 `InvalidArgument` 引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -375,9 +375,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4136caf5e44c73d4f4a4ef5d7379a80e370d5ef9
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: e77939566a567014410472a3a707d5c624220469
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554769"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606009"

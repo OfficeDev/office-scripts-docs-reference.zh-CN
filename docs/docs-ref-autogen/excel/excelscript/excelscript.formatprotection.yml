@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)
   package: ExcelScript!
   fullName: getFormulaHidden()
-  summary: 指定 Excel 是否隐藏区域中单元格的公式。 指示整个区域不具有统一公式隐藏设置的空值。
+  summary: 指定 Excel 是否隐藏区域单元格的公式。 `null`值表示整个区域没有统一公式隐藏设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)
   package: ExcelScript!
   fullName: getLocked()
-  summary: 指定 Excel 是否锁定对象中的单元格。 指示整个区域不具有统一锁定设置的空值。
+  summary: 指定 Excel 是否锁定对象中的单元格。 `null`值表示整个区域没有统一锁定设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)
   package: ExcelScript!
   fullName: setFormulaHidden(formulaHidden)
-  summary: 指定 Excel 是否隐藏区域中单元格的公式。 指示整个区域不具有统一公式隐藏设置的空值。
+  summary: 指定 Excel 是否隐藏区域单元格的公式。 `null`值表示整个区域没有统一公式隐藏设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)
   package: ExcelScript!
   fullName: setLocked(locked)
-  summary: 指定 Excel 是否锁定对象中的单元格。 指示整个区域不具有统一锁定设置的空值。
+  summary: 指定 Excel 是否锁定对象中的单元格。 `null`值表示整个区域没有统一锁定设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -70,9 +70,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 91b7c8a1aebc842baacb87ae53c768d1cb0a097f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abbdbc1d833fa3521bfd2966a187a6d5b274d7ac
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412466"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607247"

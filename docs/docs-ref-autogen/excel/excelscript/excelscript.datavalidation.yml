@@ -3,7 +3,7 @@ name: ExcelScript.DataValidation
 uid: ExcelScript!ExcelScript.DataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidation
-summary: 表示应用于当前范围的数据验证。
+summary: 表示应用于当前区域的数据验证。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: getIgnoreBlanks()
-  summary: 指定是否对空单元格执行数据验证，其默认值为 true。
+  summary: 指定是否对空白单元格执行数据验证。 默认值为 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
   package: ExcelScript!
   fullName: getInvalidCells()
-  summary: 返回包含一个或多个矩形区域的 RangeAreas，它具有无效单元格值。 如果所有单元格值都有效，则此函数将返回 null。
+  summary: 返回包含 `RangeAreas` 一个或多个矩形区域的对象，其中单元格值无效。 如果所有单元格值都有效，此函数将返回 `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: 包含不同类型的数据验证条件的数据有效性规则。
+  summary: 包含不同类型的数据有效性条件的数据有效性规则。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: 数据验证类型。有关详细信息，请参阅 ExcelScript。
+  summary: 数据验证的类型，有关详细信息 `ExcelScript.DataValidationType` ，请参阅。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: 表示所有单元格值根据数据有效性规则是否全部有效。 如果所有单元格的值都有效，则返回 true; 如果所有单元格值无效，则返回 false。 如果区域中存在有效和无效的单元格值，则返回 null。
+  summary: 表示所有单元格值根据数据有效性规则是否全部有效。 如果 `true` 所有单元格值都有效，或者所有 `false` 单元格值都无效，则返回 。 如果 `null` 范围内同时存在有效和无效单元格值，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: setIgnoreBlanks(ignoreBlanks)
-  summary: 指定是否对空单元格执行数据验证，其默认值为 true。
+  summary: 指定是否对空白单元格执行数据验证。 默认值为 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: 包含不同类型的数据验证条件的数据有效性规则。
+  summary: 包含不同类型的数据有效性条件的数据有效性规则。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,9 +182,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0a1ef3975375fe45241680d6b0228b2ba31aefd0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6d3151f99740e7628302eb6bea65e58fe153cc6
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415559"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606535"

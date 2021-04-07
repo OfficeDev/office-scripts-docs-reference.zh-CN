@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: 指定轴标题。
+  summary: 指定坐标轴标题。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: 指定文本面向图表轴标题的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+  summary: 指定文本面向图表坐标轴标题的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: 指定轴标题是否为 shape.visibile。
+  summary: 指定坐标轴标题是否可见。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
     content: 'setFormula(formula: string): void;'
     parameters:
     - id: formula
-      description: 一个显示要设置的公式的字符串
+      description: 一个代表要设置的公式的字符串。
       type: string
     return:
       type: void
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)
   package: ExcelScript!
   fullName: setText(text)
-  summary: 指定轴标题。
+  summary: 指定坐标轴标题。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: 指定文本面向图表轴标题的角度。 该值应为-90 到90的整数或垂直方向的文本的整数180。
+  summary: 指定文本面向图表坐标轴标题的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: 指定轴标题是否为 shape.visibile。
+  summary: 指定坐标轴标题是否可见。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cc90d8c96c4846a97eb80b1c44317def1d5a9e51
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3ac4a54e34535c1f4198a7ea2f714ef83f0e45b1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417007"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606932"

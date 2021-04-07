@@ -3,7 +3,7 @@ name: ExcelScript.AutoFillType
 uid: ExcelScript!ExcelScript.AutoFillType:enum
 package: ExcelScript!
 fullName: ExcelScript.AutoFillType
-summary: 在工作簿中的区域上使用自动填充时的行为类型。
+summary: 当对工作簿中的区域使用"自动填充"时的行为类型。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,55 +11,55 @@ fields:
 - name: fillCopy
   uid: ExcelScript!ExcelScript.AutoFillType.fillCopy:member
   package: ExcelScript!
-  summary: 根据所选数据使用数据填充相邻单元格。
+  summary: 使用基于选定数据的数据填充相邻单元格。
 - name: fillDays
   uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
   package: ExcelScript!
-  summary: 一个版本的 "FillSeries"，用于基于月中的某一天或一周中的某一天的日期，具体取决于上下文。
+  summary: "\"FillSeries\"的版本，它基于月中的一天或一周中的一天，具体取决于上下文。"
 - name: fillDefault
   uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
   package: ExcelScript!
-  summary: 根据) 的标准自动填充行为 (周围的数据填充相邻的单元格。
+  summary: 根据标准"自动填充"行为模型 (周围数据填充相邻) 。
 - name: fillFormats
   uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
   package: ExcelScript!
-  summary: 使用选定的公式填充相邻单元格。
+  summary: 用选定的公式填充相邻的单元格。
 - name: fillMonths
   uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
   package: ExcelScript!
-  summary: 基于月的模式的日期的 "FillSeries" 版本。
+  summary: 基于月的模式的日期的"FillSeries"版本。
 - name: fillSeries
   uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
   package: ExcelScript!
-  summary: 使用在复制的单元格中的数据之后填充相邻单元格。
+  summary: 使用复制的单元格中遵循模式的数据填充相邻单元格。
 - name: fillValues
   uid: ExcelScript!ExcelScript.AutoFillType.fillValues:member
   package: ExcelScript!
-  summary: 用选定的值填充相邻的单元格。
+  summary: 使用选定值填充相邻的单元格。
 - name: fillWeekdays
   uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
   package: ExcelScript!
-  summary: 基于一周中某一天的模式的日期的 "FillSeries" 版本，并且仅包含工作日。
+  summary: 一个版本的"FillSeries"，用于将模式基于一周中的一天并且仅包括工作日的日期。
 - name: fillYears
   uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
   package: ExcelScript!
-  summary: 基于一年的模式的日期的 "FillSeries" 版本。
+  summary: 一个版本的"FillSeries"，用于基于年的模式的日期。
 - name: flashFill
   uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
   package: ExcelScript!
-  summary: 使用 Excel 的 FlashFill 功能填充相邻单元格。
+  summary: 使用 Excel 的快速填充功能填充相邻的单元格。
 - name: growthTrend
   uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
   package: ExcelScript!
-  summary: 根据等比趋势模型填充相邻单元格中的值的数字的 "FillSeries" 版本。
+  summary: "\"FillSeries\"的版本，用于根据增长趋势模型填充相邻单元格中的值的数字。"
 - name: linearTrend
   uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
   package: ExcelScript!
-  summary: 用于根据线性趋势模型填充相邻单元格的值的数字的 "FillSeries" 版本。
+  summary: "\"FillSeries\"的版本，用于根据线性趋势模型填充相邻单元格中的值的数字。"
 metadata:
-  ms.openlocfilehash: d9d6e6a7f8b28503a3c39ab71c66cbcbf5581dec
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 60a16fedc18165357a796d52d714408cb4288ca7
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417311"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606626"

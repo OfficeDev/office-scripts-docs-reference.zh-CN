@@ -3,7 +3,7 @@ name: ExcelScript.TableSort
 uid: ExcelScript!ExcelScript.TableSort:interface
 package: ExcelScript!
 fullName: ExcelScript.TableSort
-summary: 管理对 Table 对象的排序操作。
+summary: 管理对象的排序 `Table` 操作。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -54,7 +54,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableSort#getFields:member(1)
   package: ExcelScript!
   fullName: getFields()
-  summary: 指定用于最后对表进行排序的当前条件。
+  summary: 指定上次对表进行排序时所使用的当前条件。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -80,7 +80,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableSort#getMethod:member(1)
   package: ExcelScript!
   fullName: getMethod()
-  summary: 表示最后一次对表排序所使用的中文字符排序方法。
+  summary: 表示上一次用于对表进行排序的中文字符排序方法。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -103,9 +103,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 9413405e10e29eb2da40f194e2d53a3fc4d10847
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1915c44c5d549450c2a58e3c9b423bbb8e979c2e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420242"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605225"

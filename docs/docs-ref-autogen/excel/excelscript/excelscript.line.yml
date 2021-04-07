@@ -3,7 +3,7 @@ name: ExcelScript.Line
 uid: ExcelScript!ExcelScript.Line:interface
 package: ExcelScript!
 fullName: ExcelScript.Line
-summary: 代表工作表中的一条线。 若要获取相应的 Shape 对象，请使用 `Line.shape`<!-- -->.
+summary: 表示工作表内的一行。 若要获取相应的 `Shape` 对象，请使用 `Line.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -24,7 +24,7 @@ methods:
       description: 要连接的形状。
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
     - id: connectionSite
-      description: 连接符的起点所附加到的形状上的连接点。 必须是介于 0 (非独占性) 和指定形状 (独占) 的连接网站数之间的整数。
+      description: 连接符起点所连接的形状上的连接位置。 必须是一个介于 0 和 0 (（含 0) ）之间的整数，以及指定形状的连接站点计数 (独占) 。
       type: number
     return:
       type: void
@@ -44,7 +44,7 @@ methods:
       description: 要连接的形状。
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
     - id: connectionSite
-      description: 连接符的终点所连接的形状上的连接点。 必须是介于 0 (非独占性) 和指定形状 (独占) 的连接网站数之间的整数。
+      description: 连接符终点所连接的形状上的连接位置。 必须是一个介于 0 和 0 (（含 0) ）之间的整数，以及指定形状的连接站点计数 (独占) 。
       type: number
     return:
       type: void
@@ -131,7 +131,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)
   package: ExcelScript!
   fullName: getBeginConnectedSite()
-  summary: 表示连接线始端所连接的连接站点。 当线条的始端没有附加到任何形状时，返回 null。
+  summary: 表示连接线始端所连接的连接站点。 返回 `null` 线条的开头未附加到任何形状时。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -209,7 +209,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)
   package: ExcelScript!
   fullName: getEndConnectedSite()
-  summary: 表示连接线末端所连接的连接站点。 当线条的末端没有附加到任何形状时，返回 null。
+  summary: 表示连接线末端所连接的连接站点。 当 `null` 线条的终点未附加到任何形状时返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -235,7 +235,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getIsBeginConnected:member(1)
   package: ExcelScript!
   fullName: getIsBeginConnected()
-  summary: 指定是否将指定线条的起点连接到形状。
+  summary: 指定指定线条的始值是否连接到形状。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -248,7 +248,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getIsEndConnected:member(1)
   package: ExcelScript!
   fullName: getIsEndConnected()
-  summary: 指定是否将指定线条的终点连接到形状。
+  summary: 指定指定线条的终点是否连接到形状。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -261,7 +261,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getShape:member(1)
   package: ExcelScript!
   fullName: getShape()
-  summary: 返回与线条关联的形状对象。
+  summary: 返回 `Shape` 与线条关联的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -390,9 +390,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 07e52040452894f6382b0b022b9642037d8d4168
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 629957813ed37575e86ba1cf38ed57403a7d2b20
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412256"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606425"

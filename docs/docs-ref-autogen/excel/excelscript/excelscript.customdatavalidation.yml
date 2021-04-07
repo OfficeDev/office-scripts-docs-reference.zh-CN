@@ -3,7 +3,7 @@ name: ExcelScript.CustomDataValidation
 uid: ExcelScript!ExcelScript.CustomDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.CustomDataValidation
-summary: 代表自定义数据验证条件。
+summary: 表示自定义数据有效性条件。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CustomDataValidation#formula:member
   package: ExcelScript!
   fullName: formula
-  summary: 自定义数据验证公式。 这将创建特殊的输入规则，如阻止重复项或限制单元格范围中的总计。
+  summary: 自定义数据验证公式。 这将创建特殊的输入规则，如防止重复或限制单元格区域的总和。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -22,9 +22,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 00ca951e7f8db10335c4f605a4b8d1e9a44d1a0a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abceba6296f70e4098ed3fd999ce8e04638d3048
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415636"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607149"
