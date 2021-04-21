@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: 自定义属性的键。 密钥限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符进行修整 (较长的字符) 。
+  summary: 自定义属性的键。 该密钥限制为 Excel 网页版之外的 255 个字符， (在其他平台上自动将大键剪裁为 255) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符 (较大值进行修整) 。
+  summary: 自定义属性的值。 该值限制为 Excel 网页版之外的 255 个字符 (在其他平台上，较大的值将自动剪裁为 255 个字符) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomProperty#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符 (较大值进行修整) 。
+  summary: 自定义属性的值。 该值限制为 Excel 网页版之外的 255 个字符 (在其他平台上，较大的值将自动剪裁为 255 个字符) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c1a2f549413c7c33b66a60e232fb80bfeb60658a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 816d6f4b2634092596bba7e6f92e5d414be58d7b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415601"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914490"

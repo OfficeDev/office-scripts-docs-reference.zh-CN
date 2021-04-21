@@ -3,7 +3,7 @@ name: ExcelScript.ChartBoxQuartileCalculation
 uid: ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxQuartileCalculation
-summary: 表示图表系列布局的四分数计算类型。 仅适用于 box 和形图。
+summary: 表示图表系列布局的四分位点计算类型。 仅适用于箱形图。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -17,9 +17,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: c0a40a371a515687d67fab953cc7321300bc10d5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5cfb86474f54105a9c938574813904e9ea665eb7
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416979"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914567"

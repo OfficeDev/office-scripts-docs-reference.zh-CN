@@ -3,7 +3,7 @@ name: ExcelScript.GeometricShape
 uid: ExcelScript!ExcelScript.GeometricShape:interface
 package: ExcelScript!
 fullName: ExcelScript.GeometricShape
-summary: 代表工作表中的几何形状。 在 Excel 中，几何形状可以是矩形、箭头总汇、公式符号、流程图项、星形、横幅、标注或任何其他基本形状。
+summary: 表示工作表内的几何形状。 几何形状可以是矩形、箭头、公式符号、流程图项、星形、横幅、标注或 Excel 中任何其他基本形状。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,9 +23,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: cf8298436ba13df23d8be7bfd41aee7612240f70
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4dfea045b85b1e12ab56c49603ae13d4e82f6b12
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412459"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914378"
