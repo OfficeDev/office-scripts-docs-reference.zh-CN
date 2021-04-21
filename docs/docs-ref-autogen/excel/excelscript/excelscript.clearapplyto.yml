@@ -23,15 +23,15 @@ fields:
 - name: hyperlinks
   uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
   package: ExcelScript!
-  summary: 清除所有超链接，但保留所有内容和格式不变。
+  summary: 清除所有超链接，但保留所有内容和格式。
 - name: removeHyperlinks
   uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
   package: ExcelScript!
   summary: 删除单元格的超链接和格式，但保留内容、条件格式和数据验证不变。
 metadata:
-  ms.openlocfilehash: ac23bc453e0ec416e0d2f4bde26e0f69a7270ccf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 71f3e0f6a14f8aff49e539b9078306047c60a77d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415979"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913906"
