@@ -3,7 +3,7 @@ name: ExcelScript.CultureInfo
 uid: ExcelScript!ExcelScript.CultureInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.CultureInfo
-summary: 基于当前系统区域性设置提供信息。 这包括区域性名称、数字格式和其他区域性相关设置。
+summary: 基于当前系统区域性设置提供相关信息。 这包括区域性名称、数字格式和其他与文化相关的设置。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
   package: ExcelScript!
   fullName: getDatetimeFormat()
-  summary: 定义适当的区域性格式，以显示日期和时间。 这取决于当前的系统区域性设置。
+  summary: 定义显示日期和时间的适合文化的格式。 这基于当前系统区域性设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: 以 languagecode2/regioncode2 (格式获取区域性名称，例如 "zh-tw-cn" or "en-us" ) 。 这取决于当前的系统设置。
+  summary: 获取语言代码 2-国家/地区代码2 格式的区域性名称 (例如，"zh-cn"或"en-us") 。 这基于当前系统设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 定义适当的区域性格式，以显示数字。 这取决于当前的系统区域性设置。
+  summary: 定义在文化上适合显示数字的格式。 这基于当前系统区域性设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: a399c6a2970feddfa20b995cbb9e55cb565f9f07
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6d1e2ed04dfcdbb0275fc42382fa9a9e3f0c819b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415657"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913708"

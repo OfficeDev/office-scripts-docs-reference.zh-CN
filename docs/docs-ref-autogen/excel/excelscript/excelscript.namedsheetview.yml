@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: ExcelScript.NamedSheetView
+uid: ExcelScript!ExcelScript.NamedSheetView:interface
+package: ExcelScript!
+fullName: ExcelScript.NamedSheetView
+summary: 表示工作表的命名工作表视图。 工作表视图存储特定工作表的排序和筛选规则。 每个工作表 (一个临时工作表) 具有用于访问该视图的唯一工作表范围名称。
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: activate()
+  uid: ExcelScript!ExcelScript.NamedSheetView#activate:member(1)
+  package: ExcelScript!
+  fullName: activate()
+  summary: 激活此工作表视图。 这等效于在 Excel UI 中使用"切换到"。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'activate(): void;'
+    return:
+      type: void
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.NamedSheetView#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: 从工作表中删除工作表视图。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate(name)
+  uid: ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate(name)
+  summary: 创建此工作表视图的副本。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(name?: string): NamedSheetView;'
+    parameters:
+    - id: name
+      description: 重复的工作表视图的名称。 如果未提供名称，将生成一个名称。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.NamedSheetView#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: 获取或设置工作表视图的名称。 临时工作表视图名称是空字符串 ("") 。 使用 name 属性命名视图会导致保存工作表视图。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.NamedSheetView#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: 获取或设置工作表视图的名称。 临时工作表视图名称是空字符串 ("") 。 使用 name 属性命名视图会导致保存工作表视图。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1db6ac57a9824763fd56594c4d8e94abb9ad9211
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913680"

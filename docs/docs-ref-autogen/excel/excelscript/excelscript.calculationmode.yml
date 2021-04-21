@@ -11,19 +11,19 @@ fields:
 - name: automatic
   uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
   package: ExcelScript!
-  summary: Excel 在每次相关数据发生更改时计算新公式结果的默认重新计算行为。
+  summary: Excel 每次更改相关数据时计算新公式结果的默认重新计算行为。
 - name: automaticExceptTables
   uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
   package: ExcelScript!
-  summary: 在每次相关数据发生更改时计算新的公式结果，除非公式在数据表中。
+  summary: 每次更改相关的数据时计算新的公式结果，除非公式位于数据表中。
 - name: manual
   uid: ExcelScript!ExcelScript.CalculationMode.manual:member
   package: ExcelScript!
-  summary: 仅当用户或加载项请求时，才会进行计算。
+  summary: 计算仅在用户或外接程序请求计算时发生。
 metadata:
-  ms.openlocfilehash: 21802549487f1e9e5b59b90c31094a5d2cdfc0c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: f7df42bfa4aee3c3bd6e39aabfc1140e64088d58
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417224"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913983"

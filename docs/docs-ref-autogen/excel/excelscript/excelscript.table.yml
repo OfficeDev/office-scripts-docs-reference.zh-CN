@@ -460,6 +460,23 @@ methods:
     return:
       type: void
       description: ''
+- name: resize(newRange)
+  uid: ExcelScript!ExcelScript.Table#resize:member(1)
+  package: ExcelScript!
+  fullName: resize(newRange)
+  summary: 将表格调整到新区域。 新区域必须与原始表格区域重叠， (或表格顶端的页眉) 必须在同一行中。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'resize(newRange: Range | string): void;'
+    parameters:
+    - id: newRange
+      description: 用于确定表的新大小的 range 对象或区域地址。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
 - name: setHighlightFirstColumn(highlightFirstColumn)
   uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
   package: ExcelScript!
@@ -614,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: fda7deca11fe0eae9282d9c9c54ac289e4e39df4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 9b5569c566237ce34403752541bc7ebcfc4f4f17
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51605246"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913340"

@@ -11,51 +11,51 @@ fields:
 - name: billions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member
   package: ExcelScript!
-  summary: 这将设置以十亿为单位的坐标轴。
+  summary: 这将以十亿为单位设置坐标轴。
 - name: custom
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member
   package: ExcelScript!
-  summary: 这将设置以自定义值为单位的轴。
+  summary: 这将以自定义值单位设置坐标轴。
 - name: hundredMillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member
   package: ExcelScript!
-  summary: 这将设置以数亿为单位的坐标轴。
+  summary: 这将以亿为单位设置坐标轴。
 - name: hundreds
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member
   package: ExcelScript!
-  summary: 这将设置以成百上千为单位的轴。
+  summary: 这将以百为单位设置坐标轴。
 - name: hundredThousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member
   package: ExcelScript!
-  summary: 这将设置以几十万为单位的坐标轴。
+  summary: 这将以数十万为单位设置坐标轴。
 - name: millions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member
   package: ExcelScript!
-  summary: 这将设置以百万为单位的坐标轴。
+  summary: 这将以百万为单位设置坐标轴。
 - name: none
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member
   package: ExcelScript!
-  summary: 默认选项。 这会将显示单元重置为轴，并将 "设置单位标签" 不可见。
+  summary: 默认选项。 这会将显示单位重置为坐标轴，并设置单位标签不可见。
 - name: tenMillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member
   package: ExcelScript!
-  summary: 这将设置以上百万为单位的坐标轴。
+  summary: 这会将坐标轴设置为千万单位。
 - name: tenThousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member
   package: ExcelScript!
-  summary: 这将设置以成千上万为单位的轴。
+  summary: 这会将坐标轴设置为数万单位。
 - name: thousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member
   package: ExcelScript!
-  summary: 这将设置单位为千单位的轴。
+  summary: 这将以千为单位设置坐标轴。
 - name: trillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member
   package: ExcelScript!
-  summary: 这将设置 trillions 的单位坐标轴。
+  summary: 这将以万亿为单位设置坐标轴。
 metadata:
-  ms.openlocfilehash: ce73f608460520b055d6e811a4691fc16517df76
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 08e418c2cfe3a94b7d9293a1c4fa239af1044b0e
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417084"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913257"

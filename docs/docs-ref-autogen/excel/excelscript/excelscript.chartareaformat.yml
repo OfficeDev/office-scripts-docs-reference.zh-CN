@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: 代表图表区域的边框格式，包括颜色、linestyle 和粗细。
+  summary: 表示图表区的边框格式，包括颜色、线条和粗细。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getRoundedCorners:member(1)
   package: ExcelScript!
   fullName: getRoundedCorners()
-  summary: 指定图表的图表区是否有圆角。
+  summary: 指定图表的图表区域是否具有圆角。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#setRoundedCorners:member(1)
   package: ExcelScript!
   fullName: setRoundedCorners(roundedCorners)
-  summary: 指定图表的图表区是否有圆角。
+  summary: 指定图表的图表区域是否具有圆角。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,9 +109,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6894650c0e66dcdef8411a1877aa0f7eb2d96c06
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: eac32298d707fb25dc7fb8584ba83799ac279453
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417105"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913264"

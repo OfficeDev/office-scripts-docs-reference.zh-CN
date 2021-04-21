@@ -456,6 +456,30 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
+- name: getExtendedRange(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
+  package: ExcelScript!
+  fullName: getExtendedRange(direction, activeCell)
+  summary: 返回一个 range 对象，该对象包括当前区域以及区域边缘，根据提供的方向。 这与 Windows UI 上的 Excel 中的 Ctrl+Shift+Arrow 键行为匹配。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getExtendedRange(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: 从活动单元格的方向。
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: 此范围中的活动单元格。 默认情况下，活动单元格是区域左上方的单元格。 如果活动单元格不在此范围内，则会引发错误。
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
 - name: getFormat()
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
@@ -733,19 +757,6 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
-- name: getMergedAreas()
-  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
-  package: ExcelScript!
-  fullName: getMergedAreas()
-  summary: 返回 `RangeAreas` 一个对象，该对象代表此范围中的合并区域。 请注意，如果此范围中的合并区域计数大于 512，将 `InvalidOperation` 引发错误。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMergedAreas(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
 - name: getNumberFormat()
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
@@ -873,6 +884,30 @@ methods:
     content: 'getPredefinedCellStyle(): string;'
     return:
       type: string
+      description: ''
+- name: getRangeEdge(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
+  package: ExcelScript!
+  fullName: getRangeEdge(direction, activeCell)
+  summary: 返回一个 range 对象，该对象是数据区域的边缘单元格，对应于提供的方向。 这与 Windows UI 上的 Excel 中的 Ctrl+箭头键行为匹配。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getRangeEdge(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: 从活动单元格的方向。
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: 此范围中的活动单元格。 默认情况下，活动单元格是区域左上方的单元格。 如果活动单元格不在此范围内，则会引发错误。
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
 - name: getResizedRange(deltaRows, deltaColumns)
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
@@ -1733,9 +1768,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 14625f148749589d974e094e1dc33f24a04b8a06
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: da511bf9e95a19149c3cf48a6df97c9a50ba5299
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607184"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914256"

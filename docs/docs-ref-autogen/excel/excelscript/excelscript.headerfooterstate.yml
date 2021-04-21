@@ -11,23 +11,23 @@ fields:
 - name: default
   uid: ExcelScript!ExcelScript.HeaderFooterState.default:member
   package: ExcelScript!
-  summary: 仅一个常规页眉/页脚用于打印的所有页面。
+  summary: 只对打印的所有页面使用一个常规页眉/页脚。
 - name: firstAndDefault
   uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
   package: ExcelScript!
-  summary: 有单独的首页页眉/页脚和用于所有其他页面的常规页眉/页脚。
+  summary: 有单独的首页页眉/页脚，以及用于所有其他页面的常规页眉/页脚。
 - name: firstOddAndEven
   uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
   package: ExcelScript!
-  summary: 第一个首页页眉/页脚是单独的页眉/页脚，为奇数页和偶数页有单独的页眉/页脚。
+  summary: 有单独的首页页眉/页脚，然后是奇数页和偶数页的单独页眉/页脚。
 - name: oddAndEven
   uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
   package: ExcelScript!
-  summary: 奇数页和偶数页有不同的页眉/页脚。
+  summary: 奇数页和偶数页具有不同的页眉/页脚。
 metadata:
-  ms.openlocfilehash: c8340881b74c9fb1761bbe3721c6031136668e3b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 56adb02d9f1d03352bfb5382c00767ba553f376f
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412340"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913616"

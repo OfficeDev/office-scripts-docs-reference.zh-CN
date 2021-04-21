@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: 指定图表轴元素的字体名称、字体大小、颜色等 )  (字体属性。
+  summary: 指定图表坐标轴 (的字体属性) 字体名称、字体大小、颜色等。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)
   package: ExcelScript!
   fullName: getLine()
-  summary: 指定图表线格式。
+  summary: 指定图表线条格式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 7a45fe459150d9ea8ccad9dfcca8ef833298db96
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6f74fcae0950ec6307702d2075e3258acf4c7d81
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420095"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913962"
