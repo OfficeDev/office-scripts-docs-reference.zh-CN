@@ -3,7 +3,7 @@ name: ExcelScript.ChartBoxwhiskerOptions
 uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxwhiskerOptions
-summary: 表示 "box" 和 "图" 图的属性。
+summary: 表示箱形图的属性。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: getQuartileCalculation()
-  summary: 指定 box 和形图的四分四个计算类型。
+  summary: 指定箱形图的四分位数计算类型。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: getShowInnerPoints()
-  summary: 指定是否在 box 和形图中显示内部点。
+  summary: 指定内部点是否显示在箱形图中。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)
   package: ExcelScript!
   fullName: getShowMeanLine()
-  summary: 指定是否在 box 和线形图中显示 "均值" 线。
+  summary: 指定在箱形图中是否显示平均值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: getShowMeanMarker()
-  summary: 指定是否在框和形图中显示 "均值" 标记。
+  summary: 指定是否将平均值标记显示在箱形图中。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: getShowOutlierPoints()
-  summary: 指定框和形图中是否显示了异常点。
+  summary: 指定在箱形图中是否显示离群值点。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: setQuartileCalculation(quartileCalculation)
-  summary: 指定 box 和形图的四分四个计算类型。
+  summary: 指定箱形图的四分位数计算类型。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: setShowInnerPoints(showInnerPoints)
-  summary: 指定是否在 box 和形图中显示内部点。
+  summary: 指定内部点是否显示在箱形图中。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -115,7 +115,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)
   package: ExcelScript!
   fullName: setShowMeanLine(showMeanLine)
-  summary: 指定是否在 box 和线形图中显示 "均值" 线。
+  summary: 指定在箱形图中是否显示平均值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: setShowMeanMarker(showMeanMarker)
-  summary: 指定是否在框和形图中显示 "均值" 标记。
+  summary: 指定是否将平均值标记显示在箱形图中。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -149,7 +149,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: setShowOutlierPoints(showOutlierPoints)
-  summary: 指定框和形图中是否显示了异常点。
+  summary: 指定在箱形图中是否显示离群值点。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,9 +163,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 12b3f06b1036fee3892bdc0ab9a63c1dbff335b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b53c861761fa2dbead962e9ec6e1b011af51f12b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420018"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914560"

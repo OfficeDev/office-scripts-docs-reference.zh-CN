@@ -3,7 +3,7 @@ name: ExcelScript.DocumentProperties
 uid: ExcelScript!ExcelScript.DocumentProperties:interface
 package: ExcelScript!
 fullName: ExcelScript.DocumentProperties
-summary: 代表工作簿属性。
+summary: 表示工作簿属性。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: 必需。 自定义属性的键，它不区分大小写。 密钥限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符进行修整 (较长的字符) 。
+      description: 必需。 自定义属性的键，不区分大小写。 该密钥限制为 Excel 网页版之外的 255 个字符， (在其他平台上自动将大键剪裁为 255) 。
       type: string
     - id: value
-      description: 必需。 自定义属性的值。 该值限制为在 web 上的 Excel 之外的255个字符。在其他平台上，将自动对其他平台上的255个字符 (较大值进行修整) 。
+      description: 必需。 自定义属性的值。 该值限制为 Excel 网页版之外的 255 个字符 (在其他平台上，较大的值将自动剪裁为 255 个字符) 。
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则此函数将返回其 `isNullObject` 属性设置为的对象。 `true`<!-- -->.
+  summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5eab007d84d344b973beabd9d62c7753486d3895
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: b6ba5c9e2e1da6c6fddfee819fc8bc43a4cf24a9
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554651"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914413"
