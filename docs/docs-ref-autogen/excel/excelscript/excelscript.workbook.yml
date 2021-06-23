@@ -318,7 +318,7 @@ methods:
       description: 对象 `Range` ，或表示数据源的范围的字符串地址或名称。 如果地址不包含工作表名称，将使用当前活动的工作表。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，例如，当此属性设置为 `false`<!-- -->) ，Excel 将自动生成页眉，数据向下移动一行。
+      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，例如，当此属性设置为 `false`<!-- -->) ，Excel将自动生成页眉，数据向下移动一行。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -436,7 +436,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getApplication:member(1)
   package: ExcelScript!
   fullName: getApplication()
-  summary: 表示包含此工作簿的 Excel 应用程序实例。
+  summary: 表示Excel工作簿的应用程序实例。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -602,7 +602,8 @@ methods:
   summary: 获取其命名空间与给定命名空间匹配的自定义 XML 部件的新集合。
   remarks: ''
   isPreview: false
-  isDeprecated: false
+  isDeprecated: true
+  customDeprecatedMessage: Use `getCustomXmlPartsByNamespace` instead.
   syntax:
     content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
@@ -622,6 +623,23 @@ methods:
   isDeprecated: false
   syntax:
     content: 'getCustomXmlParts(): CustomXmlPart[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
+      description: ''
+- name: getCustomXmlPartsByNamespace(namespaceUri)
+  uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartsByNamespace:member(1)
+  package: ExcelScript!
+  fullName: getCustomXmlPartsByNamespace(namespaceUri)
+  summary: 获取其命名空间与给定命名空间匹配的自定义 XML 部件的新集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustomXmlPartsByNamespace(namespaceUri: string): CustomXmlPart[];'
+    parameters:
+    - id: namespaceUri
+      description: 这必须是完全限定的架构 URI;例如，" http://schemas.contoso.com/review/1.0 "。
+      type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
       description: ''
@@ -1277,9 +1295,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ba82a40b51a08dec4e026d99bcd69f4783fe59d
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
+  ms.openlocfilehash: 2f75d4bf3e477731c8919ac209b614d562c7753e
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330367"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068246"
