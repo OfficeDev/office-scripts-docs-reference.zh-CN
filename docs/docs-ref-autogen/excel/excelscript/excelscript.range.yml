@@ -9,7 +9,7 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: addConditionalFormat(type)
+- name: 'addConditionalFormat (类型) '
   uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
   package: ExcelScript!
   fullName: addConditionalFormat(type)
@@ -18,7 +18,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+    content: addConditionalFormat (类型：ConditionalFormatType) ：ConditionalFormat;
     parameters:
     - id: type
       description: 要添加的条件格式的类型。 有关详细信息，请参阅 `ExcelScript.ConditionalFormatType`。
@@ -26,7 +26,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
-- name: autoFill(destinationRange, autoFillType)
+- name: 'autoFill (destinationRange，autoFillType) '
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
@@ -35,11 +35,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      autoFill(
-                  destinationRange?: Range | string,
-                  autoFillType?: AutoFillType
-              ): void;
+    content: autoFill ( destinationRange？： Range |string， autoFillType？： AutoFillType ) ： void;
     parameters:
     - id: destinationRange
       description: 目标区域为"自动填充"。 如果目标区域为 `null`<!-- -->，则基于周围单元格 (填充数据，这是双击 UI 的范围填充句柄或) 。
@@ -59,11 +55,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'calculate(): void;'
+    content: calculate () ： void;
     return:
       type: void
       description: ''
-- name: clear(applyTo)
+- name: '清除 (applyTo) '
   uid: ExcelScript!ExcelScript.Range#clear:member(1)
   package: ExcelScript!
   fullName: clear(applyTo)
@@ -72,7 +68,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'clear(applyTo?: ClearApplyTo): void;'
+    content: clear (applyTo？： ClearApplyTo) ： void;
     parameters:
     - id: applyTo
       description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 `ExcelScript.ClearApplyTo`。
@@ -80,7 +76,7 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script removes all the formatting from the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let range = workbook.getSelectedRange();\n\n  // Clear all the formatting in that range.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
-- name: clearAllConditionalFormats()
+- name: 'clearAllConditionalFormats () '
   uid: ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)
   package: ExcelScript!
   fullName: clearAllConditionalFormats()
@@ -89,7 +85,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'clearAllConditionalFormats(): void;'
+    content: clearAllConditionalFormats () ： void;
     return:
       type: void
       description: ''
@@ -102,11 +98,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'convertDataTypeToText(): void;'
+    content: convertDataTypeToText () ：void;
     return:
       type: void
       description: ''
-- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+- name: 'copyFrom (sourceRange， copyType， skipBlanks， transpose) '
   uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
@@ -115,13 +111,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      copyFrom(
-                  sourceRange: Range | RangeAreas | string,
-                  copyType?: RangeCopyType,
-                  skipBlanks?: boolean,
-                  transpose?: boolean
-              ): void;
+    content: copyFrom ( sourceRange：Range |RangeAreas |string， copyType？： RangeCopyType， skipBlanks？： boolean， transpose？： boolean ) ： void;
     parameters:
     - id: sourceRange
       description: 源区域或 `RangeAreas` 复制源区域。 当源具有多个区域时，必须通过从矩形区域中删除整行或整列来 `RangeAreas` 创建其形式。
@@ -138,7 +128,7 @@ methods:
     return:
       type: void
       description: ''
-- name: delete(shift)
+- name: '删除 (班次) '
   uid: ExcelScript!ExcelScript.Range#delete:member(1)
   package: ExcelScript!
   fullName: delete(shift)
@@ -147,7 +137,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'delete(shift: DeleteShiftDirection): void;'
+    content: delete (shift： DeleteShiftDirection) ： void;
     parameters:
     - id: shift
       description: 指定移动单元格的方式。 有关详细信息，请参阅 `ExcelScript.DeleteShiftDirection`。
@@ -155,7 +145,7 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample creates a sample range, then deletes\n * \"A1\" using different DeleteShiftDirection values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add sample data to better visualize the delete changes.\n  const currentSheet = workbook.getActiveWorksheet();\n  currentSheet.getRange(\"A1:D4\").setValues([\n    [1,2,3,4],\n    [5,6,7,8],\n    [9,10,11,12],\n    [13,14,15,16]]);\n\n  // Delete A1 and shift the cells from the right to fill the space.\n  // The value being deleted is 1.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.left);\n\n  // Delete A1 and shift the cells from the bottom to fill the space.\n  // The value being deleted is 2.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.up);\n\n  // Log the sample range. The values should be:\n  /*\n    5, 3, 4, \"\",\n    9, 6, 7, 8,\n    13, 10, 11, 12,\n    \"\", 14, 15, 16\n  */\n  console.log(currentSheet.getRange(\"A1:D4\").getValues()); \n}\n```"
-- name: find(text, criteria)
+- name: 'find (text， criteria) '
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
@@ -164,7 +154,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'find(text: string, criteria: SearchCriteria): Range;'
+    content: find (text： string， criteria： SearchCriteria) ： Range;
     parameters:
     - id: text
       description: 要查找的字符串。
@@ -175,7 +165,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: flashFill()
+- name: 'flashFill () '
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
   fullName: flashFill()
@@ -184,11 +174,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'flashFill(): void;'
+    content: flashFill () ： void;
     return:
       type: void
       description: ''
-- name: getAbsoluteResizedRange(numRows, numColumns)
+- name: 'getAbsoluteResizedRange (numRows、 numColumns) '
   uid: ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)
   package: ExcelScript!
   fullName: getAbsoluteResizedRange(numRows, numColumns)
@@ -197,7 +187,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
+    content: getAbsoluteResizedRange (numRows： number， numColumns： number) ： Range;
     parameters:
     - id: numRows
       description: 新区域大小的行数。
@@ -208,7 +198,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getAddress()
+- name: 'getAddress () '
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
@@ -217,11 +207,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getAddress(): string;'
+    content: getAddress () ： string;
     return:
       type: string
       description: ''
-- name: getAddressLocal()
+- name: 'getAddressLocal () '
   uid: ExcelScript!ExcelScript.Range#getAddressLocal:member(1)
   package: ExcelScript!
   fullName: getAddressLocal()
@@ -230,11 +220,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getAddressLocal(): string;'
+    content: getAddressLocal () ： string;
     return:
       type: string
       description: ''
-- name: getBoundingRect(anotherRange)
+- name: 'getBoundingRect (anotherRange) '
   uid: ExcelScript!ExcelScript.Range#getBoundingRect:member(1)
   package: ExcelScript!
   fullName: getBoundingRect(anotherRange)
@@ -243,7 +233,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getBoundingRect(anotherRange: Range | string): Range;'
+    content: getBoundingRect (anotherRange：Range |字符串) ：Range;
     parameters:
     - id: anotherRange
       description: range 对象、地址或区域名称。
@@ -251,7 +241,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getCell(row, column)
+- name: 'getCell (行、列) '
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
@@ -260,7 +250,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getCell(row: number, column: number): Range;'
+    content: getCell (行： number， column： number) ： Range;
     parameters:
     - id: row
       description: 要检索的单元格的行号。从零开始编制索引。
@@ -271,7 +261,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getCellCount()
+- name: 'getCellCount () '
   uid: ExcelScript!ExcelScript.Range#getCellCount:member(1)
   package: ExcelScript!
   fullName: getCellCount()
@@ -280,11 +270,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getCellCount(): number;'
+    content: getCellCount () ： number;
     return:
       type: number
       description: ''
-- name: getColumn(column)
+- name: 'getColumn (列) '
   uid: ExcelScript!ExcelScript.Range#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(column)
@@ -293,7 +283,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumn(column: number): Range;'
+    content: getColumn (列：number) ：Range;
     parameters:
     - id: column
       description: 要检索的区域的列号。从零开始编制索引。
@@ -301,7 +291,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getColumnCount()
+- name: 'getColumnCount () '
   uid: ExcelScript!ExcelScript.Range#getColumnCount:member(1)
   package: ExcelScript!
   fullName: getColumnCount()
@@ -310,11 +300,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnCount(): number;'
+    content: getColumnCount () ： number;
     return:
       type: number
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
-- name: getColumnHidden()
+- name: 'getColumnHidden () '
   uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
   package: ExcelScript!
   fullName: getColumnHidden()
@@ -323,11 +313,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnHidden(): boolean;'
+    content: getColumnHidden () ：boolean;
     return:
       type: boolean
       description: ''
-- name: getColumnIndex()
+- name: 'getColumnIndex () '
   uid: ExcelScript!ExcelScript.Range#getColumnIndex:member(1)
   package: ExcelScript!
   fullName: getColumnIndex()
@@ -336,11 +326,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnIndex(): number;'
+    content: getColumnIndex () ： number;
     return:
       type: number
       description: ''
-- name: getColumnsAfter(count)
+- name: 'getColumnsAfter (count) '
   uid: ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)
   package: ExcelScript!
   fullName: getColumnsAfter(count)
@@ -349,7 +339,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnsAfter(count?: number): Range;'
+    content: getColumnsAfter (count？： number) ： Range;
     parameters:
     - id: count
       description: 可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
@@ -357,7 +347,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getColumnsBefore(count)
+- name: 'getColumnsBefore (count) '
   uid: ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)
   package: ExcelScript!
   fullName: getColumnsBefore(count)
@@ -366,7 +356,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnsBefore(count?: number): Range;'
+    content: getColumnsBefore (count？： number) ： Range;
     parameters:
     - id: count
       description: 可选。生成的范围中要包含的列数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
@@ -374,7 +364,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getConditionalFormat(id)
+- name: 'getConditionalFormat (id) '
   uid: ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)
   package: ExcelScript!
   fullName: getConditionalFormat(id)
@@ -383,7 +373,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getConditionalFormat(id: string): ConditionalFormat;'
+    content: getConditionalFormat (id： string) ： ConditionalFormat;
     parameters:
     - id: id
       description: 条件格式的 ID。
@@ -391,7 +381,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
       description: ''
-- name: getConditionalFormats()
+- name: 'getConditionalFormats () '
   uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
@@ -400,11 +390,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getConditionalFormats(): ConditionalFormat[];'
+    content: getConditionalFormats () ：ConditionalFormat[];
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]
       description: ''
-- name: getDataValidation()
+- name: 'getDataValidation () '
   uid: ExcelScript!ExcelScript.Range#getDataValidation:member(1)
   package: ExcelScript!
   fullName: getDataValidation()
@@ -413,11 +403,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getDataValidation(): DataValidation;'
+    content: getDataValidation () ：DataValidation;
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidation:interface" />
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script creates a drop-down selection list for a cell. It uses the existing values of the selected range as the choices for the list.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the values for data validation.\n  let selectedRange = workbook.getSelectedRange();\n  let rangeValues = selectedRange.getValues();\n\n  // Convert the values into a comma-delimited string.\n  let dataValidationListString = \"\";\n  rangeValues.forEach((rangeValueRow) => {\n    rangeValueRow.forEach((value) => {\n      dataValidationListString += value + \",\";\n    });\n  });\n\n  // Clear the old range.\n  selectedRange.clear(ExcelScript.ClearApplyTo.contents);\n\n  // Apply the data validation to the first cell in the selected range.\n  let targetCell = selectedRange.getCell(0,0);\n  let dataValidation = targetCell.getDataValidation();\n\n  // Set the content of the drop-down list.\n  dataValidation.setRule({\n      list: {\n        inCellDropDown: true,\n        source: dataValidationListString\n      }\n    });\n}\n```"
-- name: getDirectPrecedents()
+- name: 'getDirectPrecedents () '
   uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
   package: ExcelScript!
   fullName: getDirectPrecedents()
@@ -426,7 +416,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getDirectPrecedents(): WorkbookRangeAreas;'
+    content: getDirectPrecedents () ：WorkbookRangeAreas;
     return:
       type: <xref uid="ExcelScript!ExcelScript.WorkbookRangeAreas:interface" />
       description: ''
@@ -439,7 +429,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getEntireColumn(): Range;'
+    content: getEntireColumn () ：Range;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -452,11 +442,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getEntireRow(): Range;'
+    content: getEntireRow () ：Range;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getExtendedRange(direction, activeCell)
+- name: 'getExtendedRange (direction，activeCell) '
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
@@ -465,11 +455,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getExtendedRange(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: getExtendedRange (方向： KeyboardDirection， activeCell？： Range |字符串) ：Range;
     parameters:
     - id: direction
       description: 从活动单元格的方向。
@@ -480,7 +466,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getFormat()
+- name: 'getFormat () '
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
@@ -489,11 +475,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormat(): RangeFormat;'
+    content: getFormat () ：RangeFormat;
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
       description: ''
-- name: getFormula()
+- name: 'getFormula () '
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
@@ -502,11 +488,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormula(): string;'
+    content: getFormula () ： string;
     return:
       type: string
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
-- name: getFormulaLocal()
+- name: 'getFormulaLocal () '
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
@@ -515,11 +501,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormulaLocal(): string;'
+    content: getFormulaLocal () ：string;
     return:
       type: string
       description: ''
-- name: getFormulaR1C1()
+- name: 'getFormulaR1C1 () '
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
@@ -528,11 +514,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormulaR1C1(): string;'
+    content: getFormulaR1C1 () ：string;
     return:
       type: string
       description: ''
-- name: getFormulas()
+- name: 'getFormulas () '
   uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
@@ -541,11 +527,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormulas(): string[][];'
+    content: getFormulas () ： string[][];
     return:
       type: string[][]
       description: ''
-- name: getFormulasLocal()
+- name: 'getFormulasLocal () '
   uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
@@ -554,11 +540,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormulasLocal(): string[][];'
+    content: getFormulasLocal () ：string[][];
     return:
       type: string[][]
       description: ''
-- name: getFormulasR1C1()
+- name: 'getFormulasR1C1 () '
   uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
@@ -567,11 +553,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormulasR1C1(): string[][];'
+    content: getFormulasR1C1 () ：string[][];
     return:
       type: string[][]
       description: ''
-- name: getHasSpill()
+- name: 'getHasSpill () '
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
@@ -580,11 +566,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getHasSpill(): boolean;'
+    content: getHasSpill () ：boolean;
     return:
       type: boolean
       description: ''
-- name: getHeight()
+- name: 'getHeight () '
   uid: ExcelScript!ExcelScript.Range#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
@@ -593,11 +579,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getHeight(): number;'
+    content: getHeight () ： number;
     return:
       type: number
       description: ''
-- name: getHidden()
+- name: 'getHidden () '
   uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
   package: ExcelScript!
   fullName: getHidden()
@@ -606,11 +592,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getHidden(): boolean;'
+    content: getHidden () ：boolean;
     return:
       type: boolean
       description: ''
-- name: getHyperlink()
+- name: 'getHyperlink () '
   uid: ExcelScript!ExcelScript.Range#getHyperlink:member(1)
   package: ExcelScript!
   fullName: getHyperlink()
@@ -619,11 +605,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getHyperlink(): RangeHyperlink;'
+    content: getHyperlink () ：RangeHyperlink;
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample clears all of the hyperlinks from the current worksheet\n * and removes the usual hyperlink formatting.\n */\nfunction main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {\n  // Get the active worksheet. \n  let sheet = workbook.getWorksheet(sheetName);\n\n  // Get the used range to operate on.\n  // For large ranges (over 10000 entries), consider splitting the operation into batches for performance.\n  const targetRange = sheet.getUsedRange(true);\n  console.log(`Target Range to clear hyperlinks from: ${targetRange.getAddress()}`);\n\n  const rowCount = targetRange.getRowCount();\n  const colCount = targetRange.getColumnCount();\n  console.log(`Searching for hyperlinks in ${targetRange.getAddress()} which contains ${(rowCount * colCount)} cells`);\n\n  // Go through each individual cell looking for a hyperlink. \n  // This allows us to limit the formatting changes to only the cells with hyperlink formatting.\n  let clearedCount = 0;\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < colCount; j++) {\n      const cell = targetRange.getCell(i, j);\n      const hyperlink = cell.getHyperlink();\n      if (hyperlink) {\n        cell.clear(ExcelScript.ClearApplyTo.hyperlinks);\n        cell.getFormat().getFont().setUnderline(ExcelScript.RangeUnderlineStyle.none);\n        cell.getFormat().getFont().setColor('Black');\n        clearedCount++;\n      }\n    }\n  }\n\n  console.log(`Done. Cleared hyperlinks from ${clearedCount} cells`);\n}\n```"
-- name: getImage()
+- name: 'getImage () '
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
@@ -632,11 +618,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getImage(): string;'
+    content: getImage () ： string;
     return:
       type: string
       description: ''
-- name: getIntersection(anotherRange)
+- name: 'getIntersection (anotherRange) '
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
@@ -645,7 +631,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIntersection(anotherRange: Range | string): Range;'
+    content: getIntersection (anotherRange：Range |字符串) ：Range;
     parameters:
     - id: anotherRange
       description: 将用于确定区域交集的 range 对象或区域地址。
@@ -653,7 +639,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getIsEntireColumn()
+- name: 'getIsEntireColumn () '
   uid: ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)
   package: ExcelScript!
   fullName: getIsEntireColumn()
@@ -662,11 +648,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIsEntireColumn(): boolean;'
+    content: getIsEntireColumn () ：boolean;
     return:
       type: boolean
       description: ''
-- name: getIsEntireRow()
+- name: 'getIsEntireRow () '
   uid: ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)
   package: ExcelScript!
   fullName: getIsEntireRow()
@@ -675,11 +661,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIsEntireRow(): boolean;'
+    content: getIsEntireRow () ：boolean;
     return:
       type: boolean
       description: ''
-- name: getLastCell()
+- name: 'getLastCell () '
   uid: ExcelScript!ExcelScript.Range#getLastCell:member(1)
   package: ExcelScript!
   fullName: getLastCell()
@@ -688,11 +674,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLastCell(): Range;'
+    content: getLastCell () ：Range;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getLastColumn()
+- name: 'getLastColumn () '
   uid: ExcelScript!ExcelScript.Range#getLastColumn:member(1)
   package: ExcelScript!
   fullName: getLastColumn()
@@ -701,11 +687,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLastColumn(): Range;'
+    content: getLastColumn () ：Range;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getLastRow()
+- name: 'getLastRow () '
   uid: ExcelScript!ExcelScript.Range#getLastRow:member(1)
   package: ExcelScript!
   fullName: getLastRow()
@@ -714,11 +700,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLastRow(): Range;'
+    content: getLastRow () ：Range;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getLeft()
+- name: 'getLeft () '
   uid: ExcelScript!ExcelScript.Range#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
@@ -727,11 +713,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLeft(): number;'
+    content: getLeft () ： number;
     return:
       type: number
       description: ''
-- name: getLinkedDataTypeState()
+- name: 'getLinkedDataTypeState () '
   uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)
   package: ExcelScript!
   fullName: getLinkedDataTypeState()
@@ -740,11 +726,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLinkedDataTypeState(): LinkedDataTypeState;'
+    content: getLinkedDataTypeState () ：LinkedDataTypeState;
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />
       description: ''
-- name: getLinkedDataTypeStates()
+- name: 'getLinkedDataTypeStates () '
   uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)
   package: ExcelScript!
   fullName: getLinkedDataTypeStates()
@@ -753,11 +739,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLinkedDataTypeStates(): LinkedDataTypeState[][];'
+    content: getLinkedDataTypeStates () ：LinkedDataTypeState[][];
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
-- name: getMergedAreas()
+- name: 'getMergedAreas () '
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
@@ -766,11 +752,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getMergedAreas(): RangeAreas;'
+    content: getMergedAreas () ：RangeAreas;
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
       description: ''
-- name: getNumberFormat()
+- name: 'getNumberFormat () '
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
@@ -779,11 +765,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormat(): string;'
+    content: getNumberFormat () ： string;
     return:
       type: string
       description: ''
-- name: getNumberFormatCategories()
+- name: 'getNumberFormatCategories () '
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)
   package: ExcelScript!
   fullName: getNumberFormatCategories()
@@ -792,11 +778,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
+    content: getNumberFormatCategories () ： NumberFormatCategory[][];
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
       description: ''
-- name: getNumberFormatCategory()
+- name: 'getNumberFormatCategory () '
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
   package: ExcelScript!
   fullName: getNumberFormatCategory()
@@ -805,11 +791,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormatCategory(): NumberFormatCategory;'
+    content: getNumberFormatCategory () ：NumberFormatCategory;
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
       description: ''
-- name: getNumberFormatLocal()
+- name: 'getNumberFormatLocal () '
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
@@ -818,11 +804,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormatLocal(): string;'
+    content: getNumberFormatLocal () ：string;
     return:
       type: string
       description: ''
-- name: getNumberFormats()
+- name: 'getNumberFormats () '
   uid: ExcelScript!ExcelScript.Range#getNumberFormats:member(1)
   package: ExcelScript!
   fullName: getNumberFormats()
@@ -831,11 +817,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormats(): string[][];'
+    content: getNumberFormats () ：string[][];
     return:
       type: string[][]
       description: ''
-- name: getNumberFormatsLocal()
+- name: 'getNumberFormatsLocal () '
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
@@ -844,11 +830,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormatsLocal(): string[][];'
+    content: getNumberFormatsLocal () ：string[][];
     return:
       type: string[][]
       description: ''
-- name: getOffsetRange(rowOffset, columnOffset)
+- name: 'getOffsetRange (rowOffset、 columnOffset) '
   uid: ExcelScript!ExcelScript.Range#getOffsetRange:member(1)
   package: ExcelScript!
   fullName: getOffsetRange(rowOffset, columnOffset)
@@ -857,7 +843,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
+    content: getOffsetRange (rowOffset： number， columnOffset： number) ： Range;
     parameters:
     - id: rowOffset
       description: 区域偏移的行数（正数、负数或 0）。正数表示向下偏移，负数表示向上偏移。
@@ -868,7 +854,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script gets adjacent cells using relative references.\n * Note that if the active cell is on the top row, part of the script fails, \n * because it references the cell above the currently selected one.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently active cell in the workbook.\n  let activeCell = workbook.getActiveCell();\n  console.log(`The active cell's address is: ${activeCell.getAddress()}`);\n\n  // Get the cell to the right of the active cell and set its value and color.\n  let rightCell = activeCell.getOffsetRange(0,1);\n  rightCell.setValue(\"Right cell\");\n  console.log(`The right cell's address is: ${rightCell.getAddress()}`);\n  rightCell.getFormat().getFont().setColor(\"Magenta\");\n  rightCell.getFormat().getFill().setColor(\"Cyan\");\n\n  // Get the cell to the above of the active cell and set its value and color.\n  // Note that this operation will fail if the active cell is in the top row.\n  let aboveCell = activeCell.getOffsetRange(-1, 0);\n  aboveCell.setValue(\"Above cell\");\n  console.log(`The above cell's address is: ${aboveCell.getAddress()}`);\n  aboveCell.getFormat().getFont().setColor(\"White\");\n  aboveCell.getFormat().getFill().setColor(\"Black\");\n}\n```"
-- name: getPivotTables(fullyContained)
+- name: 'getPivotTables (fullyContained) '
   uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
   package: ExcelScript!
   fullName: getPivotTables(fullyContained)
@@ -877,7 +863,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
+    content: getPivotTables (fullyContained？： boolean) ： PivotTable[];
     parameters:
     - id: fullyContained
       description: If `true`<!-- -->，则仅返回范围边界内完全包含的数据透视表。 默认值为 `false`<!-- -->.
@@ -885,7 +871,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
       description: ''
-- name: getPredefinedCellStyle()
+- name: 'getPredefinedCellStyle () '
   uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
@@ -894,11 +880,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getPredefinedCellStyle(): string;'
+    content: getPredefinedCellStyle () ： string;
     return:
       type: string
       description: ''
-- name: getRangeEdge(direction, activeCell)
+- name: 'getRangeEdge (direction，activeCell) '
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
@@ -907,11 +893,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getRangeEdge(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: getRangeEdge (方向：KeyboardDirection，activeCell？：range |字符串) ：Range;
     parameters:
     - id: direction
       description: 从活动单元格的方向。
@@ -922,7 +904,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getResizedRange(deltaRows, deltaColumns)
+- name: 'getResizedRange (deltaRows、deltaColumns) '
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
   fullName: getResizedRange(deltaRows, deltaColumns)
@@ -931,7 +913,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
+    content: getResizedRange (deltaRows： number， deltaColumns： number) ： Range;
     parameters:
     - id: deltaRows
       description: 相对于当前范围，展开右下角的行数。使用正数可展开范围，使用负数可合拢范围。
@@ -942,7 +924,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n  );\n}\n```"
-- name: getRow(row)
+- name: 'getRow (行) '
   uid: ExcelScript!ExcelScript.Range#getRow:member(1)
   package: ExcelScript!
   fullName: getRow(row)
@@ -951,7 +933,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRow(row: number): Range;'
+    content: getRow (行： number) ： Range;
     parameters:
     - id: row
       description: 要检索的区域的行号。从零开始编制索引。
@@ -959,7 +941,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getRowCount()
+- name: 'getRowCount () '
   uid: ExcelScript!ExcelScript.Range#getRowCount:member(1)
   package: ExcelScript!
   fullName: getRowCount()
@@ -968,11 +950,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowCount(): number;'
+    content: getRowCount () ： number;
     return:
       type: number
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
-- name: getRowHidden()
+- name: 'getRowHidden () '
   uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
   package: ExcelScript!
   fullName: getRowHidden()
@@ -981,11 +963,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowHidden(): boolean;'
+    content: getRowHidden () ：boolean;
     return:
       type: boolean
       description: ''
-- name: getRowIndex()
+- name: 'getRowIndex () '
   uid: ExcelScript!ExcelScript.Range#getRowIndex:member(1)
   package: ExcelScript!
   fullName: getRowIndex()
@@ -994,11 +976,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowIndex(): number;'
+    content: getRowIndex () ： number;
     return:
       type: number
       description: ''
-- name: getRowsAbove(count)
+- name: 'getRowsAbove (count) '
   uid: ExcelScript!ExcelScript.Range#getRowsAbove:member(1)
   package: ExcelScript!
   fullName: getRowsAbove(count)
@@ -1007,7 +989,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowsAbove(count?: number): Range;'
+    content: getRowsAbove (count？： number) ： Range;
     parameters:
     - id: count
       description: 可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
@@ -1015,7 +997,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getRowsBelow(count)
+- name: 'getRowsBelow (count) '
   uid: ExcelScript!ExcelScript.Range#getRowsBelow:member(1)
   package: ExcelScript!
   fullName: getRowsBelow(count)
@@ -1024,7 +1006,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowsBelow(count?: number): Range;'
+    content: getRowsBelow (count？： number) ： Range;
     parameters:
     - id: count
       description: 可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。
@@ -1032,7 +1014,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getSavedAsArray()
+- name: 'getSavedAsArray () '
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
@@ -1041,11 +1023,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSavedAsArray(): boolean;'
+    content: getSavedAsArray () ：boolean;
     return:
       type: boolean
       description: ''
-- name: getSort()
+- name: 'getSort () '
   uid: ExcelScript!ExcelScript.Range#getSort:member(1)
   package: ExcelScript!
   fullName: getSort()
@@ -1054,11 +1036,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSort(): RangeSort;'
+    content: getSort () ：RangeSort;
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeSort:interface" />
       description: ''
-- name: getSpecialCells(cellType, cellValueType)
+- name: 'getSpecialCells (cellType， cellValueType) '
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
@@ -1067,11 +1049,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getSpecialCells(
-                  cellType: SpecialCellType,
-                  cellValueType?: SpecialCellValueType
-              ): RangeAreas;
+    content: getSpecialCells ( cellType： SpecialCellType， cellValueType？： SpecialCellValueType ) ： RangeAreas;
     parameters:
     - id: cellType
       description: 要包含的单元格的类型。
@@ -1091,7 +1069,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSpillingToRange(): Range;'
+    content: getSpillingToRange () ：Range;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -1104,11 +1082,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSpillParent(): Range;'
+    content: getSpillParent () ：Range;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getSurroundingRegion()
+- name: 'getSurroundingRegion () '
   uid: ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)
   package: ExcelScript!
   fullName: getSurroundingRegion()
@@ -1117,11 +1095,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSurroundingRegion(): Range;'
+    content: getSurroundingRegion () ：Range;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getTables(fullyContained)
+- name: 'getTables (完全包含) '
   uid: ExcelScript!ExcelScript.Range#getTables:member(1)
   package: ExcelScript!
   fullName: getTables(fullyContained)
@@ -1130,7 +1108,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getTables(fullyContained?: boolean): Table[];'
+    content: getTables (fullyContained？： boolean) ： Table[];
     parameters:
     - id: fullyContained
       description: If `true`<!-- -->，则仅返回范围边界内完全包含的表。 默认值为 `false`<!-- -->.
@@ -1147,11 +1125,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getText(): string;'
+    content: getText () ： string;
     return:
       type: string
       description: ''
-- name: getTexts()
+- name: 'getTexts () '
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
@@ -1160,11 +1138,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getTexts(): string[][];'
+    content: getTexts () ： string[][];
     return:
       type: string[][]
       description: ''
-- name: getTop()
+- name: 'getTop () '
   uid: ExcelScript!ExcelScript.Range#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
@@ -1173,11 +1151,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getTop(): number;'
+    content: getTop () ： number;
     return:
       type: number
       description: ''
-- name: getUsedRange(valuesOnly)
+- name: 'getUsedRange (valuesOnly) '
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
@@ -1186,7 +1164,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    content: getUsedRange (valuesOnly？： boolean) ： Range;
     parameters:
     - id: valuesOnly
       description: 仅将有值的单元格视为已使用的单元格。
@@ -1194,7 +1172,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getValue()
+- name: 'getValue () '
   uid: ExcelScript!ExcelScript.Range#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
@@ -1203,11 +1181,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): string | number | boolean;'
+    content: getValue () ： string |number |boolean;
     return:
       type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
-- name: getValues()
+- name: 'getValues () '
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
   fullName: getValues()
@@ -1216,11 +1194,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): (string | number | boolean)[][];'
+    content: getValues () ： (字符串|number |boolean) [][];
     return:
       type: (string | number | boolean)[][]
       description: ''
-- name: getValueType()
+- name: 'getValueType () '
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
   package: ExcelScript!
   fullName: getValueType()
@@ -1229,11 +1207,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValueType(): RangeValueType;'
+    content: getValueType () ：RangeValueType;
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />
       description: ''
-- name: getValueTypes()
+- name: 'getValueTypes () '
   uid: ExcelScript!ExcelScript.Range#getValueTypes:member(1)
   package: ExcelScript!
   fullName: getValueTypes()
@@ -1242,11 +1220,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValueTypes(): RangeValueType[][];'
+    content: getValueTypes () ：RangeValueType[][];
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
       description: ''
-- name: getVisibleView()
+- name: 'getVisibleView () '
   uid: ExcelScript!ExcelScript.Range#getVisibleView:member(1)
   package: ExcelScript!
   fullName: getVisibleView()
@@ -1255,11 +1233,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getVisibleView(): RangeView;'
+    content: getVisibleView () ：RangeView;
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeView:interface" />
       description: ''
-- name: getWidth()
+- name: 'getWidth () '
   uid: ExcelScript!ExcelScript.Range#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
@@ -1268,11 +1246,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getWidth(): number;'
+    content: getWidth () ： number;
     return:
       type: number
       description: ''
-- name: getWorksheet()
+- name: 'getWorksheet () '
   uid: ExcelScript!ExcelScript.Range#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
@@ -1281,11 +1259,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getWorksheet(): Worksheet;'
+    content: getWorksheet () ：Worksheet;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
       description: ''
-- name: group(groupOption)
+- name: 'group (groupOption) '
   uid: ExcelScript!ExcelScript.Range#group:member(1)
   package: ExcelScript!
   fullName: group(groupOption)
@@ -1294,7 +1272,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'group(groupOption: GroupOption): void;'
+    content: group (groupOption： GroupOption) ： void;
     parameters:
     - id: groupOption
       description: 指定如何按行或列对区域进行分组。 当组选项与区域或属性不同时将引发错误 (即为 `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` true，为 `groupOption` "ByColumns"或 `range.isEntireColumn` true，为 `groupOption` "ByRows") 。
@@ -1302,7 +1280,7 @@ methods:
     return:
       type: void
       description: ''
-- name: hideGroupDetails(groupOption)
+- name: 'hideGroupDetails (groupOption) '
   uid: ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)
   package: ExcelScript!
   fullName: hideGroupDetails(groupOption)
@@ -1311,7 +1289,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'hideGroupDetails(groupOption: GroupOption): void;'
+    content: hideGroupDetails (groupOption： GroupOption) ： void;
     parameters:
     - id: groupOption
       description: 指定是否隐藏分组行或分组列的详细信息。
@@ -1319,7 +1297,7 @@ methods:
     return:
       type: void
       description: ''
-- name: insert(shift)
+- name: '插入 (班次) '
   uid: ExcelScript!ExcelScript.Range#insert:member(1)
   package: ExcelScript!
   fullName: insert(shift)
@@ -1328,7 +1306,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'insert(shift: InsertShiftDirection): Range;'
+    content: insert (shift： InsertShiftDirection) ： Range;
     parameters:
     - id: shift
       description: 指定移动单元格的方式。 有关详细信息，请参阅 `ExcelScript.InsertShiftDirection`。
@@ -1336,7 +1314,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: merge(across)
+- name: '跨 (合并) '
   uid: ExcelScript!ExcelScript.Range#merge:member(1)
   package: ExcelScript!
   fullName: merge(across)
@@ -1345,7 +1323,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'merge(across?: boolean): void;'
+    content: merge (across？： boolean) ： void;
     parameters:
     - id: across
       description: 可选。 设置为 `true` 将指定区域的每一行中的单元格合并为单独的合并单元格。 默认值为 `false`<!-- -->.
@@ -1353,7 +1331,7 @@ methods:
     return:
       type: void
       description: ''
-- name: moveTo(destinationRange)
+- name: 'moveTo (destinationRange) '
   uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
   package: ExcelScript!
   fullName: moveTo(destinationRange)
@@ -1362,7 +1340,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'moveTo(destinationRange: Range | string): void;'
+    content: moveTo (destinationRange：Range |string) ： void;
     parameters:
     - id: destinationRange
       description: destinationRange 指定此范围中信息将移动到的范围。
@@ -1370,7 +1348,7 @@ methods:
     return:
       type: void
       description: ''
-- name: removeDuplicates(columns, includesHeader)
+- name: 'removeDuplicates (列，包括Header) '
   uid: ExcelScript!ExcelScript.Range#removeDuplicates:member(1)
   package: ExcelScript!
   fullName: removeDuplicates(columns, includesHeader)
@@ -1379,11 +1357,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      removeDuplicates(
-                  columns: number[],
-                  includesHeader: boolean
-              ): RemoveDuplicatesResult;
+    content: removeDuplicates (列： number[]， includesHeader： boolean ) ： RemoveDuplicatesResult;
     parameters:
     - id: columns
       description: 区域内可能包含重复项的列。 至少需要指定一列。 从零开始编制索引。
@@ -1394,7 +1368,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
       description: ''
-- name: replaceAll(text, replacement, criteria)
+- name: 'replaceAll (text， replacement， criteria) '
   uid: ExcelScript!ExcelScript.Range#replaceAll:member(1)
   package: ExcelScript!
   fullName: replaceAll(text, replacement, criteria)
@@ -1403,12 +1377,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      replaceAll(
-                  text: string,
-                  replacement: string,
-                  criteria: ReplaceCriteria
-              ): number;
+    content: replaceAll ( text： string， replacement： string， criteria： ReplaceCriteria ) ： number;
     parameters:
     - id: text
       description: 要查找的字符串。
@@ -1431,11 +1400,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'select(): void;'
+    content: select () ： void;
     return:
       type: void
       description: ''
-- name: setColumnHidden(columnHidden)
+- name: 'setColumnHidden (columnHidden) '
   uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
   package: ExcelScript!
   fullName: setColumnHidden(columnHidden)
@@ -1444,7 +1413,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setColumnHidden(columnHidden: boolean): void;'
+    content: setColumnHidden (columnHidden： boolean) ： void;
     parameters:
     - id: columnHidden
       description: ''
@@ -1461,11 +1430,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setDirty(): void;'
+    content: setDirty () ： void;
     return:
       type: void
       description: ''
-- name: setFormula(formula)
+- name: 'setFormula (公式) '
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
@@ -1474,7 +1443,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormula(formula: string): void;'
+    content: setFormula (formula： string) ： void;
     parameters:
     - id: formula
       description: ''
@@ -1482,7 +1451,7 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
-- name: setFormulaLocal(formulaLocal)
+- name: 'setFormulaLocal (formulaLocal) '
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
   fullName: setFormulaLocal(formulaLocal)
@@ -1491,7 +1460,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulaLocal(formulaLocal: string): void;'
+    content: setFormulaLocal (formulaLocal： string) ： void;
     parameters:
     - id: formulaLocal
       description: ''
@@ -1499,7 +1468,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setFormulaR1C1(formulaR1C1)
+- name: 'setFormulaR1C1 (formulaR1C1) '
   uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulaR1C1(formulaR1C1)
@@ -1508,7 +1477,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulaR1C1(formulaR1C1: string): void;'
+    content: setFormulaR1C1 (formulaR1C1：string) ：void;
     parameters:
     - id: formulaR1C1
       description: ''
@@ -1516,7 +1485,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setFormulas(formulas)
+- name: 'setFormulas (公式) '
   uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
@@ -1525,7 +1494,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulas(formulas: string[][]): void;'
+    content: setFormulas (公式：string[][]) ：void;
     parameters:
     - id: formulas
       description: ''
@@ -1533,7 +1502,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setFormulasLocal(formulasLocal)
+- name: 'setFormulasLocal (formulasLocal) '
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
@@ -1542,7 +1511,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulasLocal(formulasLocal: string[][]): void;'
+    content: setFormulasLocal (formulasLocal： string[][]) ： void;
     parameters:
     - id: formulasLocal
       description: ''
@@ -1550,7 +1519,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setFormulasR1C1(formulasR1C1)
+- name: 'setFormulasR1C1 (formulasR1C1) '
   uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
@@ -1559,7 +1528,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
+    content: setFormulasR1C1 (formulasR1C1： string[][]) ： void;
     parameters:
     - id: formulasR1C1
       description: ''
@@ -1567,7 +1536,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setHyperlink(hyperlink)
+- name: 'setHyperlink (超链接) '
   uid: ExcelScript!ExcelScript.Range#setHyperlink:member(1)
   package: ExcelScript!
   fullName: setHyperlink(hyperlink)
@@ -1576,7 +1545,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
+    content: setHyperlink (：RangeHyperlink) ：void;
     parameters:
     - id: hyperlink
       description: ''
@@ -1584,7 +1553,7 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
-- name: setNumberFormat(numberFormat)
+- name: 'setNumberFormat (numberFormat) '
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
@@ -1593,7 +1562,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
+    content: setNumberFormat (numberFormat： string) ： void;
     parameters:
     - id: numberFormat
       description: ''
@@ -1601,7 +1570,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setNumberFormatLocal(numberFormatLocal)
+- name: 'setNumberFormatLocal (numberFormatLocal) '
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
@@ -1610,7 +1579,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
+    content: setNumberFormatLocal (numberFormatLocal： string) ： void;
     parameters:
     - id: numberFormatLocal
       description: ''
@@ -1618,7 +1587,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setNumberFormats(numberFormats)
+- name: 'setNumberFormats (numberFormats) '
   uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
   package: ExcelScript!
   fullName: setNumberFormats(numberFormats)
@@ -1627,7 +1596,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormats(numberFormats: string[][]): void;'
+    content: setNumberFormats (numberFormats： string[][]) ： void;
     parameters:
     - id: numberFormats
       description: ''
@@ -1635,7 +1604,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setNumberFormatsLocal(numberFormatsLocal)
+- name: 'setNumberFormatsLocal (numberFormatsLocal) '
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
@@ -1644,7 +1613,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormatsLocal(numberFormatsLocal: string[][]): void;'
+    content: setNumberFormatsLocal (numberFormatsLocal： string[][]) ： void;
     parameters:
     - id: numberFormatsLocal
       description: ''
@@ -1652,7 +1621,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setPredefinedCellStyle(predefinedCellStyle)
+- name: 'setPredefinedCellStyle (PredefinedCellStyle) '
   uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
@@ -1661,7 +1630,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
+    content: setPredefinedCellStyle (predefinedCellStyle：string) ：void;
     parameters:
     - id: predefinedCellStyle
       description: ''
@@ -1669,7 +1638,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setRowHidden(rowHidden)
+- name: 'setRowHidden (rowHidden) '
   uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
   package: ExcelScript!
   fullName: setRowHidden(rowHidden)
@@ -1678,7 +1647,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setRowHidden(rowHidden: boolean): void;'
+    content: setRowHidden (rowHidden： boolean) ： void;
     parameters:
     - id: rowHidden
       description: ''
@@ -1686,7 +1655,7 @@ methods:
     return:
       type: void
       description: ''
-- name: setValue(value)
+- name: 'setValue (值) '
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
@@ -1695,7 +1664,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValue(value: any): void;'
+    content: setValue (值：任何) ：void;
     parameters:
     - id: value
       description: ''
@@ -1703,16 +1672,16 @@ methods:
     return:
       type: void
       description: ''
-- name: setValues(values)
+- name: 'setValues (值) '
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: 表示指定区域的原始值。 返回的数据可以是字符串、数字或布尔值。 包含错误的单元格将返回错误字符串。 如果返回的值以加号 ("+") 、减号 ("-") 或等号 ("=") 开头，Excel 将此值解释为公式。
+  summary: 设置指定区域的原始值。 提供的数据可以是字符串、数字或布尔值。 如果提供的值以加号 ("+") 、减 ("-") 或等号 ("=") 开头，Excel将此值解释为公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValues(values: (string | number | boolean)[][]): void;'
+    content: setValues (值： (字符串|number |boolean) [][]) ： void;
     parameters:
     - id: values
       description: ''
@@ -1720,7 +1689,7 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
-- name: showCard()
+- name: 'showCard () '
   uid: ExcelScript!ExcelScript.Range#showCard:member(1)
   package: ExcelScript!
   fullName: showCard()
@@ -1729,11 +1698,11 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'showCard(): void;'
+    content: showCard () ： void;
     return:
       type: void
       description: ''
-- name: showGroupDetails(groupOption)
+- name: 'showGroupDetails (groupOption) '
   uid: ExcelScript!ExcelScript.Range#showGroupDetails:member(1)
   package: ExcelScript!
   fullName: showGroupDetails(groupOption)
@@ -1742,7 +1711,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'showGroupDetails(groupOption: GroupOption): void;'
+    content: showGroupDetails (groupOption： GroupOption) ： void;
     parameters:
     - id: groupOption
       description: 指定是显示分组行的详细信息还是分组列的详细信息。
@@ -1750,7 +1719,7 @@ methods:
     return:
       type: void
       description: ''
-- name: ungroup(groupOption)
+- name: '取消分组 (组选项) '
   uid: ExcelScript!ExcelScript.Range#ungroup:member(1)
   package: ExcelScript!
   fullName: ungroup(groupOption)
@@ -1759,7 +1728,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'ungroup(groupOption: GroupOption): void;'
+    content: ungroup (groupOption： GroupOption) ： void;
     parameters:
     - id: groupOption
       description: 指定如何按行或列取消区域组合。
@@ -1776,14 +1745,14 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'unmerge(): void;'
+    content: unmerge () ： void;
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.openlocfilehash: bc3d9a01cbb2a67d6461bbbd97c67014fae0e2fc
+  ms.sourcegitcommit: 95be94d379c5184e2db071999e3367c51e927a27
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068288"
+  ms.lasthandoff: 07/28/2021
+  ms.locfileid: "53617911"
