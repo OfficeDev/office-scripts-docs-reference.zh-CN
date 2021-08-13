@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotLabelFilter
-uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
+uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
 summary: 要应用于透视字段的标签筛选器的可配置模板。 `condition`定义需要设置哪些条件才能运行筛选器。
@@ -9,70 +9,63 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: condition
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
-  package: ExcelScript!
-  fullName: condition
-  summary: 指定筛选器的条件，该条件定义必要的筛选条件。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'condition: LabelFilterCondition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />
-- name: exclusive
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
-  package: ExcelScript!
-  fullName: exclusive
-  summary: If `true`<!-- -->， *筛选器排除* 满足条件的项目。 默认设置是 (`false` 筛选器，以包含符合条件) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'exclusive?: boolean;'
-    return:
-      type: boolean
-- name: lowerBound
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
-  package: ExcelScript!
-  fullName: lowerBound
-  summary: 筛选条件的范围的 `between` 下限。 注意：将数字字符串与其他数字字符串进行比较时，该字符串被视为数字。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'lowerBound?: string;'
-    return:
-      type: string
-- name: substring
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
-  package: ExcelScript!
-  fullName: substring
-  summary: 用于的子字符串 `beginsWith`<!-- -->, `endsWith`<!-- -->和 `contains` 筛选条件。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'substring?: string;'
-    return:
-      type: string
-- name: upperBound
-  uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
-  package: ExcelScript!
-  fullName: upperBound
-  summary: 筛选条件的范围 `between` 上限。 注意：将数字字符串与其他数字字符串进行比较时，该字符串被视为数字。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'upperBound?: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: aff1aa4aa7669b1e8608c3eb22a55abc9c0ee320
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913545"
+  - name: condition
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
+    package: ExcelScript!
+    fullName: condition
+    summary: 指定筛选器的条件，该条件定义必要的筛选条件。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'condition: LabelFilterCondition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.LabelFilterCondition:enum" />'
+  - name: exclusive
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
+    package: ExcelScript!
+    fullName: exclusive
+    summary: If `true`<!-- -->， *筛选器排除* 满足条件的项目。 默认设置是 (`false` 筛选器，以包含符合条件) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exclusive?: boolean;'
+      return:
+        type: boolean
+  - name: lowerBound
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
+    package: ExcelScript!
+    fullName: lowerBound
+    summary: 筛选条件的范围的 `between` 下限。 注意：将数值字符串与其他数字字符串进行比较时，该字符串被视为数字。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lowerBound?: string;'
+      return:
+        type: string
+  - name: substring
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
+    package: ExcelScript!
+    fullName: substring
+    summary: '用于的子字符串 `beginsWith`<!-- -->, `endsWith`<!-- -->和 `contains` 筛选条件。'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'substring?: string;'
+      return:
+        type: string
+  - name: upperBound
+    uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
+    package: ExcelScript!
+    fullName: upperBound
+    summary: 筛选条件的范围 `between` 上限。 注意：将数值字符串与其他数字字符串进行比较时，该字符串被视为数字。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'upperBound?: string;'
+      return:
+        type: string

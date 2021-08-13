@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterCriteria
-uid: ExcelScript!ExcelScript.FilterCriteria:interface
+uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.FilterCriteria
 summary: 表示应用于列的筛选条件。
@@ -9,122 +9,114 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: color
-  uid: ExcelScript!ExcelScript.FilterCriteria#color:member
-  package: ExcelScript!
-  fullName: color
-  summary: 用于筛选单元格的 HTML 颜色字符串。 与 和 `cellColor` `fontColor` 筛选一同使用。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'color?: string;'
-    return:
-      type: string
-- name: criterion1
-  uid: ExcelScript!ExcelScript.FilterCriteria#criterion1:member
-  package: ExcelScript!
-  fullName: criterion1
-  summary: >-
-    第一个条件用于筛选数据。 用作筛选情况下的 `custom` 运算符。 例如"<!-- -->&gt;<!-- -->对于大于 50 的数字，为 50";对于以"s"结尾的值，为"=*s"。
+  - name: color
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#color:member'
+    package: ExcelScript!
+    fullName: color
+    summary: 用于筛选单元格的 HTML 颜色字符串。 与 和 `cellColor` `fontColor` 筛选一同使用。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: criterion1
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#criterion1:member'
+    package: ExcelScript!
+    fullName: criterion1
+    summary: |-
+      第一个条件用于筛选数据。 用作筛选情况下的 `custom` 运算符。 例如"<!-- -->&gt;<!-- -->对于大于 50 的数字，为 50";对于以"s"结尾的值，为"=*s"。
 
-
-    用作顶部/底部项/百分比 (例如，设置为前 5 项的 `filterOn` "5" `topItems`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'criterion1?: string;'
-    return:
-      type: string
-- name: criterion2
-  uid: ExcelScript!ExcelScript.FilterCriteria#criterion2:member
-  package: ExcelScript!
-  fullName: criterion2
-  summary: 第二个条件用于筛选数据。 仅用作筛选情况下的 `custom` 运算符。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'criterion2?: string;'
-    return:
-      type: string
-- name: dynamicCriteria
-  uid: ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member
-  package: ExcelScript!
-  fullName: dynamicCriteria
-  summary: 要应用于此 `ExcelScript.DynamicFilterCriteria` 列的集合中的动态条件。 与筛选 `dynamic` 一起使用。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'dynamicCriteria?: DynamicFilterCriteria;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />
-- name: filterOn
-  uid: ExcelScript!ExcelScript.FilterCriteria#filterOn:member
-  package: ExcelScript!
-  fullName: filterOn
-  summary: 筛选器使用的属性，用于确定是否应将值保持为可见时。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'filterOn: FilterOn;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterOn:enum" />
-- name: icon
-  uid: ExcelScript!ExcelScript.FilterCriteria#icon:member
-  package: ExcelScript!
-  fullName: icon
-  summary: 用于筛选单元格的图标。 与筛选 `icon` 一起使用。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'icon?: Icon;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
-- name: operator
-  uid: ExcelScript!ExcelScript.FilterCriteria#operator:member
-  package: ExcelScript!
-  fullName: operator
-  summary: 使用筛选时用于组合条件 1 和 2 `custom` 的运算符。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'operator?: FilterOperator;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />
-- name: subField
-  uid: ExcelScript!ExcelScript.FilterCriteria#subField:member
-  package: ExcelScript!
-  fullName: subField
-  summary: 筛选器用于对丰富值执行丰富筛选器的属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'subField?: string;'
-    return:
-      type: string
-- name: values
-  uid: ExcelScript!ExcelScript.FilterCriteria#values:member
-  package: ExcelScript!
-  fullName: values
-  summary: 要用作筛选一部分的值 `values` 集。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'values?: Array<string | FilterDatetime>;'
-    return:
-      type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
-metadata:
-  ms.openlocfilehash: 087f822eceff7977613701fd62ff6d763a6df8ad
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913644"
+      用作顶部/底部项/百分比 (例如，设置为前 5 项的 `filterOn` "5" `topItems`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'criterion1?: string;'
+      return:
+        type: string
+  - name: criterion2
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#criterion2:member'
+    package: ExcelScript!
+    fullName: criterion2
+    summary: 第二个条件用于筛选数据。 仅用作筛选情况下的 `custom` 运算符。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'criterion2?: string;'
+      return:
+        type: string
+  - name: dynamicCriteria
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member'
+    package: ExcelScript!
+    fullName: dynamicCriteria
+    summary: 要应用于此 `ExcelScript.DynamicFilterCriteria` 列的集合中的动态条件。 与筛选 `dynamic` 一起使用。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dynamicCriteria?: DynamicFilterCriteria;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />'
+  - name: filterOn
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#filterOn:member'
+    package: ExcelScript!
+    fullName: filterOn
+    summary: 筛选器使用的属性，用于确定是否应将值保持为可见时。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'filterOn: FilterOn;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterOn:enum" />'
+  - name: icon
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#icon:member'
+    package: ExcelScript!
+    fullName: icon
+    summary: 用于筛选单元格的图标。 与筛选 `icon` 一起使用。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'icon?: Icon;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
+  - name: operator
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#operator:member'
+    package: ExcelScript!
+    fullName: operator
+    summary: 使用筛选时用于组合条件 1 和 2 `custom` 的运算符。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator?: FilterOperator;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />'
+  - name: subField
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#subField:member'
+    package: ExcelScript!
+    fullName: subField
+    summary: 筛选器用于对丰富值执行丰富筛选器的属性。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type: string
+  - name: values
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#values:member'
+    package: ExcelScript!
+    fullName: values
+    summary: 要用作筛选一部分的值 `values` 集。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'values?: Array<string | FilterDatetime>;'
+      return:
+        type: 'Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;'

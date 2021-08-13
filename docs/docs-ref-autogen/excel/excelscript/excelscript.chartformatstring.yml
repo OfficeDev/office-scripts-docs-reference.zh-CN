@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartFormatString
-uid: ExcelScript!ExcelScript.ChartFormatString:interface
+uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartFormatString
 summary: 表示图表相关对象（如对象或对象）中的子字符串，这些对象包含 `ChartTitle` `ChartAxisTitle` 文本。
@@ -9,23 +9,16 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: 表示字体属性，如字体名称、字体大小和图表字符对象的颜色。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 117644700d3730164127e2c31f04b633b42ac244
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914081"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 表示字体属性，如字体名称、字体大小和图表字符对象的颜色。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

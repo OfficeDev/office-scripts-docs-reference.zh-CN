@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ReadingOrder
-uid: ExcelScript!ExcelScript.ReadingOrder:enum
+uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.ReadingOrder
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: context
-  uid: ExcelScript!ExcelScript.ReadingOrder.context:member
-  package: ExcelScript!
-  summary: 读取顺序由所输入的首字符的语言所确定。如果首先输入从右到左的语言字符，则读取顺序就为从右到左。如果首先输入从左到右的语言字符，则读取顺序就为从左到右。
-- name: leftToRight
-  uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
-  package: ExcelScript!
-  summary: 从左到右读取顺序
-- name: rightToLeft
-  uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
-  package: ExcelScript!
-  summary: 从右向左阅读顺序
-metadata:
-  ms.openlocfilehash: 364d838721992c4fb52488de1652cc03750a8eaa
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914228"
+  - name: context
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
+    package: ExcelScript!
+    summary: 读取顺序由所输入的首字符的语言所确定。如果首先输入从右到左的语言字符，则读取顺序就为从右到左。如果首先输入从左到右的语言字符，则读取顺序就为从左到右。
+  - name: leftToRight
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
+    package: ExcelScript!
+    summary: 从左到右读取顺序
+  - name: rightToLeft
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
+    package: ExcelScript!
+    summary: 从右向左阅读顺序

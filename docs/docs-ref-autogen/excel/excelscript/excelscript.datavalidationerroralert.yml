@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidationErrorAlert
-uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
+uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationErrorAlert
 summary: 表示数据验证的错误警报属性。
@@ -9,58 +9,51 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: message
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
-  package: ExcelScript!
-  fullName: message
-  summary: 表示错误警报消息。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'message: string;'
-    return:
-      type: string
-- name: showAlert
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
-  package: ExcelScript!
-  fullName: showAlert
-  summary: 指定在用户输入无效数据时是否显示错误警报对话框。 默认值为 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'showAlert: boolean;'
-    return:
-      type: boolean
-- name: style
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
-  package: ExcelScript!
-  fullName: style
-  summary: 数据有效性警报类型，请参阅 `ExcelScript.DataValidationAlertStyle` 了解详细信息。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'style: DataValidationAlertStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />
-- name: title
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
-  package: ExcelScript!
-  fullName: title
-  summary: 表示错误警报对话框标题。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'title: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: 9d8d4761c2e4e0870d03a3c1fafb66a46d9a839a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913672"
+  - name: message
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+    package: ExcelScript!
+    fullName: message
+    summary: 表示错误警报消息。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string;'
+      return:
+        type: string
+  - name: showAlert
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+    package: ExcelScript!
+    fullName: showAlert
+    summary: 指定在用户输入无效数据时是否显示错误警报对话框。 默认值为 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAlert: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+    package: ExcelScript!
+    fullName: style
+    summary: 数据有效性警报类型，请参阅 `ExcelScript.DataValidationAlertStyle` 了解详细信息。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style: DataValidationAlertStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />'
+  - name: title
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+    package: ExcelScript!
+    fullName: title
+    summary: 表示错误警报对话框标题。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string

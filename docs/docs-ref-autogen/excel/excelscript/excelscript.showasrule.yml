@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ShowAsRule
-uid: ExcelScript!ExcelScript.ShowAsRule:interface
+uid: 'ExcelScript!ExcelScript.ShowAsRule:interface'
 package: ExcelScript!
 fullName: ExcelScript.ShowAsRule
 summary: ''
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: baseField
-  uid: ExcelScript!ExcelScript.ShowAsRule#baseField:member
-  package: ExcelScript!
-  fullName: baseField
-  summary: 要基于计算依据的透视字段（如果适用， `ShowAs` 根据 `ShowAsCalculation` 类型）其他 `null`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'baseField?: PivotField;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />
-- name: baseItem
-  uid: ExcelScript!ExcelScript.ShowAsRule#baseItem:member
-  package: ExcelScript!
-  fullName: baseItem
-  summary: 计算依据 `ShowAs` 的项（如果适用，则根据 `ShowAsCalculation` 类型）else `null`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'baseItem?: PivotItem;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />
-- name: calculation
-  uid: ExcelScript!ExcelScript.ShowAsRule#calculation:member
-  package: ExcelScript!
-  fullName: calculation
-  summary: '`ShowAs`用于透视字段的计算。 有关详细信息，请参阅 `ExcelScript.ShowAsCalculation`。'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'calculation: ShowAsCalculation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShowAsCalculation:enum" />
-metadata:
-  ms.openlocfilehash: 8f43388b73daaccb336aa1b179e94c98a6e65b4f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914158"
+  - name: baseField
+    uid: 'ExcelScript!ExcelScript.ShowAsRule#baseField:member'
+    package: ExcelScript!
+    fullName: baseField
+    summary: 要基于计算依据的透视字段（如果适用， `ShowAs` 根据 `ShowAsCalculation` 类型）其他 `null`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseField?: PivotField;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />'
+  - name: baseItem
+    uid: 'ExcelScript!ExcelScript.ShowAsRule#baseItem:member'
+    package: ExcelScript!
+    fullName: baseItem
+    summary: 计算依据 `ShowAs` 的项（如果适用，则根据 `ShowAsCalculation` 类型）else `null`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseItem?: PivotItem;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotItem:interface" />'
+  - name: calculation
+    uid: 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
+    package: ExcelScript!
+    fullName: calculation
+    summary: '`ShowAs`用于透视字段的计算。 有关详细信息，请参阅 `ExcelScript.ShowAsCalculation`。'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calculation: ShowAsCalculation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShowAsCalculation:enum" />'

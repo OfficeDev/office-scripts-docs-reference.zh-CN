@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetProtectionOptions
-uid: ExcelScript!ExcelScript.WorksheetProtectionOptions:interface
+uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorksheetProtectionOptions
 summary: 代表工作表保护中的选项。
@@ -9,178 +9,171 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: allowAutoFilter
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member
-  package: ExcelScript!
-  fullName: allowAutoFilter
-  summary: 表示允许使用自动筛选功能工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowAutoFilter?: boolean;'
-    return:
-      type: boolean
-- name: allowDeleteColumns
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member
-  package: ExcelScript!
-  fullName: allowDeleteColumns
-  summary: 表示允许删除列的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowDeleteColumns?: boolean;'
-    return:
-      type: boolean
-- name: allowDeleteRows
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member
-  package: ExcelScript!
-  fullName: allowDeleteRows
-  summary: 表示允许删除行的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowDeleteRows?: boolean;'
-    return:
-      type: boolean
-- name: allowEditObjects
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member
-  package: ExcelScript!
-  fullName: allowEditObjects
-  summary: 表示允许编辑对象的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowEditObjects?: boolean;'
-    return:
-      type: boolean
-- name: allowEditScenarios
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member
-  package: ExcelScript!
-  fullName: allowEditScenarios
-  summary: 表示允许编辑方案的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowEditScenarios?: boolean;'
-    return:
-      type: boolean
-- name: allowFormatCells
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member
-  package: ExcelScript!
-  fullName: allowFormatCells
-  summary: 表示允许设置单元格格式的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowFormatCells?: boolean;'
-    return:
-      type: boolean
-- name: allowFormatColumns
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member
-  package: ExcelScript!
-  fullName: allowFormatColumns
-  summary: 表示允许格式化列的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowFormatColumns?: boolean;'
-    return:
-      type: boolean
-- name: allowFormatRows
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member
-  package: ExcelScript!
-  fullName: allowFormatRows
-  summary: 表示允许设置行格式的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowFormatRows?: boolean;'
-    return:
-      type: boolean
-- name: allowInsertColumns
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member
-  package: ExcelScript!
-  fullName: allowInsertColumns
-  summary: 表示允许插入列的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowInsertColumns?: boolean;'
-    return:
-      type: boolean
-- name: allowInsertHyperlinks
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member
-  package: ExcelScript!
-  fullName: allowInsertHyperlinks
-  summary: 表示允许插入超链接的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowInsertHyperlinks?: boolean;'
-    return:
-      type: boolean
-- name: allowInsertRows
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member
-  package: ExcelScript!
-  fullName: allowInsertRows
-  summary: 表示允许插入行的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowInsertRows?: boolean;'
-    return:
-      type: boolean
-- name: allowPivotTables
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member
-  package: ExcelScript!
-  fullName: allowPivotTables
-  summary: 表示允许使用数据透视表功能工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowPivotTables?: boolean;'
-    return:
-      type: boolean
-- name: allowSort
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member
-  package: ExcelScript!
-  fullName: allowSort
-  summary: 表示允许使用排序功能工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'allowSort?: boolean;'
-    return:
-      type: boolean
-- name: selectionMode
-  uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#selectionMode:member
-  package: ExcelScript!
-  fullName: selectionMode
-  summary: 表示选择模式的工作表保护选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'selectionMode?: ProtectionSelectionMode;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />
-metadata:
-  ms.openlocfilehash: 6c51d25920b0502eedd28e20d0ce867d79410d6e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914584"
+  - name: allowAutoFilter
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member'
+    package: ExcelScript!
+    fullName: allowAutoFilter
+    summary: 表示允许使用自动筛选功能工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowAutoFilter?: boolean;'
+      return:
+        type: boolean
+  - name: allowDeleteColumns
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member'
+    package: ExcelScript!
+    fullName: allowDeleteColumns
+    summary: 表示允许删除列的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowDeleteColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowDeleteRows
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member'
+    package: ExcelScript!
+    fullName: allowDeleteRows
+    summary: 表示允许删除行的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowDeleteRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowEditObjects
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member'
+    package: ExcelScript!
+    fullName: allowEditObjects
+    summary: 表示允许编辑对象的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEditObjects?: boolean;'
+      return:
+        type: boolean
+  - name: allowEditScenarios
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member'
+    package: ExcelScript!
+    fullName: allowEditScenarios
+    summary: 表示允许编辑方案的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEditScenarios?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatCells
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member'
+    package: ExcelScript!
+    fullName: allowFormatCells
+    summary: 表示允许设置单元格格式的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatCells?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatColumns
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member'
+    package: ExcelScript!
+    fullName: allowFormatColumns
+    summary: 表示允许格式化列的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatRows
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member'
+    package: ExcelScript!
+    fullName: allowFormatRows
+    summary: 表示允许设置行格式的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertColumns
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member'
+    package: ExcelScript!
+    fullName: allowInsertColumns
+    summary: 表示允许插入列的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertHyperlinks
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member'
+    package: ExcelScript!
+    fullName: allowInsertHyperlinks
+    summary: 表示允许插入超链接的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertHyperlinks?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertRows
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member'
+    package: ExcelScript!
+    fullName: allowInsertRows
+    summary: 表示允许插入行的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowPivotTables
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member'
+    package: ExcelScript!
+    fullName: allowPivotTables
+    summary: 表示允许使用数据透视表功能工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowPivotTables?: boolean;'
+      return:
+        type: boolean
+  - name: allowSort
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member'
+    package: ExcelScript!
+    fullName: allowSort
+    summary: 表示允许使用排序功能工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowSort?: boolean;'
+      return:
+        type: boolean
+  - name: selectionMode
+    uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions#selectionMode:member'
+    package: ExcelScript!
+    fullName: selectionMode
+    summary: 表示选择模式的工作表保护选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionMode?: ProtectionSelectionMode;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />'

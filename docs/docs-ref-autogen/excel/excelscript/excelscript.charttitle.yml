@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartTitle
-uid: ExcelScript!ExcelScript.ChartTitle:interface
+uid: 'ExcelScript!ExcelScript.ChartTitle:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartTitle
 summary: 表示图表的图表标题对象。
@@ -9,392 +9,385 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: 表示图表标题的格式，包括填充和字体格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartTitleFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTitleFormat:interface" />
-      description: ''
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: 返回图表标题的高度，以磅为单位。 如果 `null` 图表标题不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getHorizontalAlignment()
-  uid: ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)
-  package: ExcelScript!
-  fullName: getHorizontalAlignment()
-  summary: 指定图表标题的水平对齐方式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: 指定图表标题左边缘到图表区域左边缘的距离（以点表示）。 如果 `null` 图表标题不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getOverlay()
-  uid: ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)
-  package: ExcelScript!
-  fullName: getOverlay()
-  summary: 指定图表标题是否覆盖图表。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getOverlay(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: 表示图表标题的位置。 有关详细信息，请参阅 `ExcelScript.ChartTitlePosition`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): ChartTitlePosition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTitlePosition:enum" />
-      description: ''
-- name: getShowShadow()
-  uid: ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)
-  package: ExcelScript!
-  fullName: getShowShadow()
-  summary: 表示一个布尔值，用于确定图表标题是否具有阴影。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowShadow(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSubstring(start, length)
-  uid: ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)
-  package: ExcelScript!
-  fullName: getSubstring(start, length)
-  summary: 获取图表标题的子字符串。 换行符 '<!-- -->\\<!-- -->n' 计数为一个字符。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubstring(start: number, length: number): ChartFormatString;'
-    parameters:
-    - id: start
-      description: 要检索的子字符串的起始位置。 从零开始编制索引。
-      type: number
-    - id: length
-      description: 要检索的子字符串的长度。
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFormatString:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.ChartTitle#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: 指定图表的标题文本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTextOrientation()
-  uid: ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: getTextOrientation()
-  summary: 指定文本面向图表标题的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextOrientation(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.ChartTitle#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: 指定图表标题的上边缘到图表区域顶部的距离（以点表示）。 如果 `null` 图表标题不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getVerticalAlignment()
-  uid: ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)
-  package: ExcelScript!
-  fullName: getVerticalAlignment()
-  summary: 指定图表标题的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: 指定图表标题是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: 指定图表标题的宽度（以点表示）。 如果 `null` 图表标题不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: setFormula(formula)
-  uid: ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)
-  package: ExcelScript!
-  fullName: setFormula(formula)
-  summary: 设置一个字符串值，用于表示采用 A1 表示法的图表标题的公式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormula(formula: string): void;'
-    parameters:
-    - id: formula
-      description: 一个代表要设置的公式的字符串。
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setHorizontalAlignment(horizontalAlignment)
-  uid: ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)
-  package: ExcelScript!
-  fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: 指定图表标题的水平对齐方式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setHorizontalAlignment(
-                  horizontalAlignment: ChartTextHorizontalAlignment
-              ): void;
-    parameters:
-    - id: horizontalAlignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
-    return:
-      type: void
-      description: ''
-- name: setLeft(left)
-  uid: ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)
-  package: ExcelScript!
-  fullName: setLeft(left)
-  summary: 指定图表标题左边缘到图表区域左边缘的距离（以点表示）。 如果 `null` 图表标题不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLeft(left: number): void;'
-    parameters:
-    - id: left
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setOverlay(overlay)
-  uid: ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)
-  package: ExcelScript!
-  fullName: setOverlay(overlay)
-  summary: 指定图表标题是否覆盖图表。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setOverlay(overlay: boolean): void;'
-    parameters:
-    - id: overlay
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: 表示图表标题的位置。 有关详细信息，请参阅 `ExcelScript.ChartTitlePosition`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: ChartTitlePosition): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTitlePosition:enum" />
-    return:
-      type: void
-      description: ''
-- name: setShowShadow(showShadow)
-  uid: ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)
-  package: ExcelScript!
-  fullName: setShowShadow(showShadow)
-  summary: 表示一个布尔值，用于确定图表标题是否具有阴影。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowShadow(showShadow: boolean): void;'
-    parameters:
-    - id: showShadow
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.ChartTitle#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: 指定图表的标题文本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTextOrientation(textOrientation)
-  uid: ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: setTextOrientation(textOrientation)
-  summary: 指定文本面向图表标题的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTextOrientation(textOrientation: number): void;'
-    parameters:
-    - id: textOrientation
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTop(top)
-  uid: ExcelScript!ExcelScript.ChartTitle#setTop:member(1)
-  package: ExcelScript!
-  fullName: setTop(top)
-  summary: 指定图表标题的上边缘到图表区域顶部的距离（以点表示）。 如果 `null` 图表标题不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTop(top: number): void;'
-    parameters:
-    - id: top
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setVerticalAlignment(verticalAlignment)
-  uid: ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)
-  package: ExcelScript!
-  fullName: setVerticalAlignment(verticalAlignment)
-  summary: 指定图表标题的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setVerticalAlignment(
-                  verticalAlignment: ChartTextVerticalAlignment
-              ): void;
-    parameters:
-    - id: verticalAlignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
-    return:
-      type: void
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: 指定图表标题是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 81022ece239a4886f619050f26f07c9e514010e3
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913913"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 表示图表标题的格式，包括填充和字体格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartTitleFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTitleFormat:interface" />'
+        description: ''
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: 返回图表标题的高度，以磅为单位。 如果 `null` 图表标题不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getHorizontalAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getHorizontalAlignment()
+    summary: 指定图表标题的水平对齐方式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />'
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: 指定图表标题左边缘到图表区域左边缘的距离（以点表示）。 如果 `null` 图表标题不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getOverlay()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)'
+    package: ExcelScript!
+    fullName: getOverlay()
+    summary: 指定图表标题是否覆盖图表。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOverlay(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: 表示图表标题的位置。 有关详细信息，请参阅 `ExcelScript.ChartTitlePosition`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): ChartTitlePosition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTitlePosition:enum" />'
+        description: ''
+  - name: getShowShadow()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)'
+    package: ExcelScript!
+    fullName: getShowShadow()
+    summary: 表示一个布尔值，用于确定图表标题是否具有阴影。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowShadow(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: 'getSubstring(start, length)'
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)'
+    package: ExcelScript!
+    fullName: 'getSubstring(start, length)'
+    summary: 获取图表标题的子字符串。 换行符 '<!-- -->\\<!-- -->n' 计数为一个字符。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubstring(start: number, length: number): ChartFormatString;'
+      parameters:
+        - id: start
+          description: 要检索的子字符串的起始位置。 从零开始编制索引。
+          type: number
+        - id: length
+          description: 要检索的子字符串的长度。
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFormatString:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: 指定图表的标题文本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTextOrientation()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: getTextOrientation()
+    summary: 指定文本面向图表标题的角度。 该值应为 -90 到 90 的整数或垂直方向文本的整数 180。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: 指定图表标题的上边缘到图表区域顶部的距离（以点表示）。 如果 `null` 图表标题不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getVerticalAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getVerticalAlignment()
+    summary: 指定图表标题的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />'
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: 指定图表标题是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: 指定图表标题的宽度（以点表示）。 如果 `null` 图表标题不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setFormula(formula)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)'
+    package: ExcelScript!
+    fullName: setFormula(formula)
+    summary: 设置一个字符串值，用于表示采用 A1 表示法的图表标题的公式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      parameters:
+        - id: formula
+          description: 一个代表要设置的公式的字符串。
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setHorizontalAlignment(horizontalAlignment)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    summary: 指定图表标题的水平对齐方式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setHorizontalAlignment(
+                    horizontalAlignment: ChartTextHorizontalAlignment
+                ): void;
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setLeft(left)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)'
+    package: ExcelScript!
+    fullName: setLeft(left)
+    summary: 指定图表标题左边缘到图表区域左边缘的距离（以点表示）。 如果 `null` 图表标题不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLeft(left: number): void;'
+      parameters:
+        - id: left
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setOverlay(overlay)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)'
+    package: ExcelScript!
+    fullName: setOverlay(overlay)
+    summary: 指定图表标题是否覆盖图表。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setOverlay(overlay: boolean): void;'
+      parameters:
+        - id: overlay
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: 表示图表标题的位置。 有关详细信息，请参阅 `ExcelScript.ChartTitlePosition`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: ChartTitlePosition): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTitlePosition:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setShowShadow(showShadow)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)'
+    package: ExcelScript!
+    fullName: setShowShadow(showShadow)
+    summary: 表示一个布尔值，用于确定图表标题是否具有阴影。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowShadow(showShadow: boolean): void;'
+      parameters:
+        - id: showShadow
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: 指定图表的标题文本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTextOrientation(textOrientation)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: setTextOrientation(textOrientation)
+    summary: 指定文本面向图表标题的角度。 该值应为 -90 到 90 的整数或垂直方向文本的整数 180。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      parameters:
+        - id: textOrientation
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTop(top)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setTop:member(1)'
+    package: ExcelScript!
+    fullName: setTop(top)
+    summary: 指定图表标题的上边缘到图表区域顶部的距离（以点表示）。 如果 `null` 图表标题不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTop(top: number): void;'
+      parameters:
+        - id: top
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setVerticalAlignment(verticalAlignment)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setVerticalAlignment(verticalAlignment)
+    summary: 指定图表标题的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setVerticalAlignment(
+                    verticalAlignment: ChartTextVerticalAlignment
+                ): void;
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: 指定图表标题是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

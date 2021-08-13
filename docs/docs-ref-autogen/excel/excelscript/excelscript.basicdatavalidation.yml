@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.BasicDataValidation
-uid: ExcelScript!ExcelScript.BasicDataValidation:interface
+uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.BasicDataValidation
 summary: 表示基本类型数据验证条件。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: formula1
-  uid: ExcelScript!ExcelScript.BasicDataValidation#formula1:member
-  package: ExcelScript!
-  fullName: formula1
-  summary: 当运算符属性设置为二进制运算符（如 GreaterThan (）时，指定右侧操作数 (左侧操作数是用户尝试在单元格) 中输入的值。 使用三元运算符 Between 和 NotBetween 指定下限操作数。 例如，将 formula1 设置为 10，将运算符设置为 GreaterThan 意味着区域的有效数据必须大于 10。 设置值时，它可以作为数字、range 对象或字符串公式 (其中字符串是字符串化数字、类似"=A1"的单元格引用或类似"=MIN (A1， B1) ") 的公式传入。 检索值时，该值将始终作为字符串公式返回，例如："=10"、"=A1"、"=SUM (A1：B5) "等。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula1: string | number | Range;'
-    return:
-      type: string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />
-- name: formula2
-  uid: ExcelScript!ExcelScript.BasicDataValidation#formula2:member
-  package: ExcelScript!
-  fullName: formula2
-  summary: 使用三元运算符 Between 和 NotBetween 指定上限操作数。 不与二进制运算符（如 GreaterThan）一同使用。 设置值时，它可以作为数字、range 对象或字符串公式 (其中字符串是字符串化数字、类似"=A1"的单元格引用或类似"=MIN (A1， B1) ") 的公式传入。 检索值时，该值将始终作为字符串公式返回，例如："=10"、"=A1"、"=SUM (A1：B5) "等。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula2?: string | number | Range;'
-    return:
-      type: string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />
-- name: operator
-  uid: ExcelScript!ExcelScript.BasicDataValidation#operator:member
-  package: ExcelScript!
-  fullName: operator
-  summary: 用于验证数据有效性的运算符。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'operator: DataValidationOperator;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
-metadata:
-  ms.openlocfilehash: 41804b41142fde3a8e0c2fe3588d26b7041dab4b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913927"
+  - name: formula1
+    uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula1:member'
+    package: ExcelScript!
+    fullName: formula1
+    summary: 当运算符属性设置为二进制运算符（如 GreaterThan (）时，指定右侧操作数 (左侧操作数是用户尝试在单元格单元格中输入的值) 。 使用三元运算符 Between 和 NotBetween，指定下限操作数。 例如，将 formula1 设置为 10，将运算符设置为 GreaterThan 意味着区域的有效数据必须大于 10。 设置值时，它可以作为数字、range 对象或字符串公式 (其中字符串是字符串化数字、类似"=A1"的单元格引用或类似"=MIN (A1， B1) ") 的公式传入。 检索值时，该值将始终作为字符串公式返回，例如："=10"、"=A1"、"=SUM (A1：B5) "等。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula1: string | number | Range;'
+      return:
+        type: 'string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />'
+  - name: formula2
+    uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula2:member'
+    package: ExcelScript!
+    fullName: formula2
+    summary: 使用三元运算符 Between 和 NotBetween 指定上限操作数。 不与二进制运算符（如 GreaterThan）一同使用。 设置值时，它可以作为数字、range 对象或字符串公式 (其中字符串是字符串化数字、类似"=A1"的单元格引用或类似"=MIN (A1， B1) ") 的公式传入。 检索值时，该值将始终作为字符串公式返回，例如："=10"、"=A1"、"=SUM (A1：B5) "等。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula2?: string | number | Range;'
+      return:
+        type: 'string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />'
+  - name: operator
+    uid: 'ExcelScript!ExcelScript.BasicDataValidation#operator:member'
+    package: ExcelScript!
+    fullName: operator
+    summary: 用于验证数据有效性的运算符。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: DataValidationOperator;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />'

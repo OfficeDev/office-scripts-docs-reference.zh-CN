@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartDataLabel
-uid: ExcelScript!ExcelScript.ChartDataLabel:interface
+uid: 'ExcelScript!ExcelScript.ChartDataLabel:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartDataLabel
 summary: 表示图表点的数据标签。
@@ -9,595 +9,588 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getAutoText()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getAutoText:member(1)
-  package: ExcelScript!
-  fullName: getAutoText()
-  summary: 指定数据标签是否根据上下文自动生成相应的文本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAutoText(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: 表示图表数据标签的格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartDataLabelFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelFormat:interface" />
-      description: ''
-- name: getFormula()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getFormula:member(1)
-  package: ExcelScript!
-  fullName: getFormula()
-  summary: 该字符串值表示采用 A1 表示法的图表数据标签的公式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormula(): string;'
-    return:
-      type: string
-      description: ''
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: 返回图表数据标签的高度，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getHorizontalAlignment()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getHorizontalAlignment:member(1)
-  package: ExcelScript!
-  fullName: getHorizontalAlignment()
-  summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextHorizontalAlignment`。 此属性仅在数据标签为 `TextOrientation` -90、90 或 180 时有效。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: 表示图表数据标签左边缘到图表区域左边缘的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getLinkNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getLinkNumberFormat()
-  summary: 指定数字格式是否链接到单元格 (以便当数字格式在单元格区域更改时标签) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLinkNumberFormat(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: 该字符串值表示数据标签的格式代码。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: 表示数据标签的位置的值。 有关详细信息，请参阅 `ExcelScript.ChartDataLabelPosition`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): ChartDataLabelPosition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />
-      description: ''
-- name: getSeparator()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getSeparator:member(1)
-  package: ExcelScript!
-  fullName: getSeparator()
-  summary: 该字符串表示用于图表中数据标签的分隔符。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShowBubbleSize()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowBubbleSize:member(1)
-  package: ExcelScript!
-  fullName: getShowBubbleSize()
-  summary: 指定数据标签气泡大小是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowBubbleSize(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowCategoryName()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowCategoryName:member(1)
-  package: ExcelScript!
-  fullName: getShowCategoryName()
-  summary: 指定数据标签类别名称是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowCategoryName(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowLegendKey()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowLegendKey:member(1)
-  package: ExcelScript!
-  fullName: getShowLegendKey()
-  summary: 指定数据标签图例项标示是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowLegendKey(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowPercentage()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowPercentage:member(1)
-  package: ExcelScript!
-  fullName: getShowPercentage()
-  summary: 指定数据标签百分比是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowPercentage(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowSeriesName()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowSeriesName:member(1)
-  package: ExcelScript!
-  fullName: getShowSeriesName()
-  summary: 指定数据标签系列名称是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowSeriesName(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowValue()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getShowValue:member(1)
-  package: ExcelScript!
-  fullName: getShowValue()
-  summary: 指定数据标签值是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowValue(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: 该字符串表示图表上的数据标签文本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTextOrientation()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: getTextOrientation()
-  summary: 表示文本面向图表数据标签的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextOrientation(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: 表示图表数据标签上边缘到图表区域顶部的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getVerticalAlignment()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getVerticalAlignment:member(1)
-  package: ExcelScript!
-  fullName: getVerticalAlignment()
-  summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。 此属性仅在数据标签为 `TextOrientation` 0 时有效。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.ChartDataLabel#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: 返回图表数据标签的宽度，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: setAutoText(autoText)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setAutoText:member(1)
-  package: ExcelScript!
-  fullName: setAutoText(autoText)
-  summary: 指定数据标签是否根据上下文自动生成相应的文本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setAutoText(autoText: boolean): void;'
-    parameters:
-    - id: autoText
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setFormula(formula)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setFormula:member(1)
-  package: ExcelScript!
-  fullName: setFormula(formula)
-  summary: 该字符串值表示采用 A1 表示法的图表数据标签的公式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormula(formula: string): void;'
-    parameters:
-    - id: formula
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setHorizontalAlignment(horizontalAlignment)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setHorizontalAlignment:member(1)
-  package: ExcelScript!
-  fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextHorizontalAlignment`。 此属性仅在数据标签为 `TextOrientation` -90、90 或 180 时有效。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setHorizontalAlignment(
-                  horizontalAlignment: ChartTextHorizontalAlignment
-              ): void;
-    parameters:
-    - id: horizontalAlignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
-    return:
-      type: void
-      description: ''
-- name: setLeft(left)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setLeft:member(1)
-  package: ExcelScript!
-  fullName: setLeft(left)
-  summary: 表示图表数据标签左边缘到图表区域左边缘的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLeft(left: number): void;'
-    parameters:
-    - id: left
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setLinkNumberFormat(linkNumberFormat)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: 指定数字格式是否链接到单元格 (以便当数字格式在单元格区域更改时标签) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
-    parameters:
-    - id: linkNumberFormat
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: 该字符串值表示数据标签的格式代码。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: 表示数据标签的位置的值。 有关详细信息，请参阅 `ExcelScript.ChartDataLabelPosition`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: ChartDataLabelPosition): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />
-    return:
-      type: void
-      description: ''
-- name: setSeparator(separator)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setSeparator:member(1)
-  package: ExcelScript!
-  fullName: setSeparator(separator)
-  summary: 该字符串表示用于图表中数据标签的分隔符。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSeparator(separator: string): void;'
-    parameters:
-    - id: separator
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setShowBubbleSize(showBubbleSize)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowBubbleSize:member(1)
-  package: ExcelScript!
-  fullName: setShowBubbleSize(showBubbleSize)
-  summary: 指定数据标签气泡大小是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowBubbleSize(showBubbleSize: boolean): void;'
-    parameters:
-    - id: showBubbleSize
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowCategoryName(showCategoryName)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowCategoryName:member(1)
-  package: ExcelScript!
-  fullName: setShowCategoryName(showCategoryName)
-  summary: 指定数据标签类别名称是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowCategoryName(showCategoryName: boolean): void;'
-    parameters:
-    - id: showCategoryName
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowLegendKey(showLegendKey)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowLegendKey:member(1)
-  package: ExcelScript!
-  fullName: setShowLegendKey(showLegendKey)
-  summary: 指定数据标签图例项标示是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowLegendKey(showLegendKey: boolean): void;'
-    parameters:
-    - id: showLegendKey
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowPercentage(showPercentage)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowPercentage:member(1)
-  package: ExcelScript!
-  fullName: setShowPercentage(showPercentage)
-  summary: 指定数据标签百分比是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowPercentage(showPercentage: boolean): void;'
-    parameters:
-    - id: showPercentage
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowSeriesName(showSeriesName)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowSeriesName:member(1)
-  package: ExcelScript!
-  fullName: setShowSeriesName(showSeriesName)
-  summary: 指定数据标签系列名称是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowSeriesName(showSeriesName: boolean): void;'
-    parameters:
-    - id: showSeriesName
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowValue(showValue)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setShowValue:member(1)
-  package: ExcelScript!
-  fullName: setShowValue(showValue)
-  summary: 指定数据标签值是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowValue(showValue: boolean): void;'
-    parameters:
-    - id: showValue
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: 该字符串表示图表上的数据标签文本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTextOrientation(textOrientation)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: setTextOrientation(textOrientation)
-  summary: 表示文本面向图表数据标签的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTextOrientation(textOrientation: number): void;'
-    parameters:
-    - id: textOrientation
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTop(top)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setTop:member(1)
-  package: ExcelScript!
-  fullName: setTop(top)
-  summary: 表示图表数据标签上边缘到图表区域顶部的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTop(top: number): void;'
-    parameters:
-    - id: top
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setVerticalAlignment(verticalAlignment)
-  uid: ExcelScript!ExcelScript.ChartDataLabel#setVerticalAlignment:member(1)
-  package: ExcelScript!
-  fullName: setVerticalAlignment(verticalAlignment)
-  summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。 此属性仅在数据标签为 `TextOrientation` 0 时有效。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setVerticalAlignment(
-                  verticalAlignment: ChartTextVerticalAlignment
-              ): void;
-    parameters:
-    - id: verticalAlignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 671a8903121d1f320f3292adf2effd1902b912a3
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914553"
+  - name: getAutoText()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getAutoText:member(1)'
+    package: ExcelScript!
+    fullName: getAutoText()
+    summary: 指定数据标签是否根据上下文自动生成相应的文本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAutoText(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 表示图表数据标签的格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartDataLabelFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartDataLabelFormat:interface" />'
+        description: ''
+  - name: getFormula()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getFormula:member(1)'
+    package: ExcelScript!
+    fullName: getFormula()
+    summary: 该字符串值表示采用 A1 表示法的图表数据标签的公式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: 返回图表数据标签的高度，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getHorizontalAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getHorizontalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getHorizontalAlignment()
+    summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextHorizontalAlignment`。 此属性仅在数据标签为 `TextOrientation` -90、90 或 180 时有效。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />'
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: 表示图表数据标签左边缘到图表区域左边缘的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getLinkNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getLinkNumberFormat()
+    summary: 指定数字格式是否链接到单元格 (以便当数字格式在单元格区域更改时标签) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLinkNumberFormat(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: 该字符串值表示数据标签的格式代码。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: 表示数据标签的位置的值。 有关详细信息，请参阅 `ExcelScript.ChartDataLabelPosition`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): ChartDataLabelPosition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />'
+        description: ''
+  - name: getSeparator()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getSeparator()
+    summary: 该字符串表示用于图表中数据标签的分隔符。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShowBubbleSize()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowBubbleSize:member(1)'
+    package: ExcelScript!
+    fullName: getShowBubbleSize()
+    summary: 指定数据标签气泡大小是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowBubbleSize(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowCategoryName()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowCategoryName:member(1)'
+    package: ExcelScript!
+    fullName: getShowCategoryName()
+    summary: 指定数据标签类别名称是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowCategoryName(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowLegendKey()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowLegendKey:member(1)'
+    package: ExcelScript!
+    fullName: getShowLegendKey()
+    summary: 指定数据标签图例项标示是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowLegendKey(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowPercentage()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowPercentage:member(1)'
+    package: ExcelScript!
+    fullName: getShowPercentage()
+    summary: 指定数据标签百分比是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowPercentage(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowSeriesName()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowSeriesName:member(1)'
+    package: ExcelScript!
+    fullName: getShowSeriesName()
+    summary: 指定数据标签系列名称是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowSeriesName(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowValue()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getShowValue:member(1)'
+    package: ExcelScript!
+    fullName: getShowValue()
+    summary: 指定数据标签值是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowValue(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: 该字符串表示图表上的数据标签文本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTextOrientation()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: getTextOrientation()
+    summary: 表示文本面向图表数据标签的角度。 该值应为 -90 到 90 的整数或垂直方向文本的整数 180。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: 表示图表数据标签上边缘到图表区域顶部的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getVerticalAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getVerticalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getVerticalAlignment()
+    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。 此属性仅在数据标签为 `TextOrientation` 0 时有效。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />'
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: 返回图表数据标签的宽度，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setAutoText(autoText)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setAutoText:member(1)'
+    package: ExcelScript!
+    fullName: setAutoText(autoText)
+    summary: 指定数据标签是否根据上下文自动生成相应的文本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAutoText(autoText: boolean): void;'
+      parameters:
+        - id: autoText
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setFormula(formula)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setFormula:member(1)'
+    package: ExcelScript!
+    fullName: setFormula(formula)
+    summary: 该字符串值表示采用 A1 表示法的图表数据标签的公式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      parameters:
+        - id: formula
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setHorizontalAlignment(horizontalAlignment)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setHorizontalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    summary: 表示图表数据标签水平对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextHorizontalAlignment`。 此属性仅在数据标签为 `TextOrientation` -90、90 或 180 时有效。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setHorizontalAlignment(
+                    horizontalAlignment: ChartTextHorizontalAlignment
+                ): void;
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setLeft(left)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setLeft:member(1)'
+    package: ExcelScript!
+    fullName: setLeft(left)
+    summary: 表示图表数据标签左边缘到图表区域左边缘的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLeft(left: number): void;'
+      parameters:
+        - id: left
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setLinkNumberFormat(linkNumberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setLinkNumberFormat(linkNumberFormat)
+    summary: 指定数字格式是否链接到单元格 (以便当数字格式在单元格区域更改时标签) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+      parameters:
+        - id: linkNumberFormat
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: 该字符串值表示数据标签的格式代码。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: 表示数据标签的位置的值。 有关详细信息，请参阅 `ExcelScript.ChartDataLabelPosition`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: ChartDataLabelPosition): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setSeparator(separator)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setSeparator:member(1)'
+    package: ExcelScript!
+    fullName: setSeparator(separator)
+    summary: 该字符串表示用于图表中数据标签的分隔符。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSeparator(separator: string): void;'
+      parameters:
+        - id: separator
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setShowBubbleSize(showBubbleSize)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowBubbleSize:member(1)'
+    package: ExcelScript!
+    fullName: setShowBubbleSize(showBubbleSize)
+    summary: 指定数据标签气泡大小是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowBubbleSize(showBubbleSize: boolean): void;'
+      parameters:
+        - id: showBubbleSize
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowCategoryName(showCategoryName)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowCategoryName:member(1)'
+    package: ExcelScript!
+    fullName: setShowCategoryName(showCategoryName)
+    summary: 指定数据标签类别名称是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowCategoryName(showCategoryName: boolean): void;'
+      parameters:
+        - id: showCategoryName
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowLegendKey(showLegendKey)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowLegendKey:member(1)'
+    package: ExcelScript!
+    fullName: setShowLegendKey(showLegendKey)
+    summary: 指定数据标签图例项标示是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowLegendKey(showLegendKey: boolean): void;'
+      parameters:
+        - id: showLegendKey
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowPercentage(showPercentage)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowPercentage:member(1)'
+    package: ExcelScript!
+    fullName: setShowPercentage(showPercentage)
+    summary: 指定数据标签百分比是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowPercentage(showPercentage: boolean): void;'
+      parameters:
+        - id: showPercentage
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowSeriesName(showSeriesName)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowSeriesName:member(1)'
+    package: ExcelScript!
+    fullName: setShowSeriesName(showSeriesName)
+    summary: 指定数据标签系列名称是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowSeriesName(showSeriesName: boolean): void;'
+      parameters:
+        - id: showSeriesName
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowValue(showValue)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setShowValue:member(1)'
+    package: ExcelScript!
+    fullName: setShowValue(showValue)
+    summary: 指定数据标签值是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowValue(showValue: boolean): void;'
+      parameters:
+        - id: showValue
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: 该字符串表示图表上的数据标签文本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTextOrientation(textOrientation)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: setTextOrientation(textOrientation)
+    summary: 表示文本面向图表数据标签的角度。 该值应为 -90 到 90 的整数或垂直方向文本的整数 180。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      parameters:
+        - id: textOrientation
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTop(top)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setTop:member(1)'
+    package: ExcelScript!
+    fullName: setTop(top)
+    summary: 表示图表数据标签上边缘到图表区域顶部的距离，以磅为单位。 如果 `null` 图表数据标签不可见，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTop(top: number): void;'
+      parameters:
+        - id: top
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setVerticalAlignment(verticalAlignment)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabel#setVerticalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setVerticalAlignment(verticalAlignment)
+    summary: 表示图表数据标签垂直对齐。 有关详细信息，请参阅 `ExcelScript.ChartTextVerticalAlignment`。 此属性仅在数据标签为 `TextOrientation` 0 时有效。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setVerticalAlignment(
+                    verticalAlignment: ChartTextVerticalAlignment
+                ): void;
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />'
+      return:
+        type: void
+        description: ''

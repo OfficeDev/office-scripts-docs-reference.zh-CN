@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartTrendlineLabelFormat
-uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendlineLabelFormat
 summary: 封装图表趋势线标签的格式属性。
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: 指定边框格式，包括颜色、线条和粗细。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: 指定当前图表趋势线标签的填充格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: 指定图表趋势 (字体名称、字体大小和颜色) 字体属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 1f2e513507dd716804ca316d62016579c072b710
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914518"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: 指定边框格式，包括颜色、线条和粗细。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 指定当前图表趋势线标签的填充格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 指定图表趋势 (的字体) 字体名称、字号和颜色值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

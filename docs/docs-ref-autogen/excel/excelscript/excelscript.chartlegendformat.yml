@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartLegendFormat
-uid: ExcelScript!ExcelScript.ChartLegendFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartLegendFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartLegendFormat
 summary: 封装图表图例的格式属性。
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartLegendFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: 表示边框格式，包括颜色、线条样式和粗细。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartLegendFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: 表示对象的填充格式，包括背景格式信息。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartLegendFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: 表示字体属性，如图表图例的字体名称、字号和颜色。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 818764184a7af37ddedaefe68ef6d0eb4852d25f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912024"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartLegendFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: 表示边框格式，包括颜色、线条样式和粗细。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartLegendFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 表示对象的填充格式，包括背景格式信息。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartLegendFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 表示字体属性，如图表图例的字体名称、字号和颜色。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

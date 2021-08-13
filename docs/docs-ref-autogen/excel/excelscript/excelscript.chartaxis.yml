@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartAxis
-uid: ExcelScript!ExcelScript.ChartAxis:interface
+uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxis
 summary: 代表图表中的单个坐标轴。
@@ -9,1030 +9,1023 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getAlignment()
-  uid: ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)
-  package: ExcelScript!
-  fullName: getAlignment()
-  summary: 指定指定坐标轴刻度线标签的对齐方式。 有关详细信息 `ExcelScript.ChartTextHorizontalAlignment` ，请参阅。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAlignment(): ChartTickLabelAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />
-      description: ''
-- name: getAxisGroup()
-  uid: ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)
-  package: ExcelScript!
-  fullName: getAxisGroup()
-  summary: 指定指定坐标轴的组。 有关详细信息，请参阅 `ExcelScript.ChartAxisGroup`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAxisGroup(): ChartAxisGroup;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
-      description: ''
-- name: getBaseTimeUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)
-  package: ExcelScript!
-  fullName: getBaseTimeUnit()
-  summary: 指定指定分类轴的基本单位。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBaseTimeUnit(): ChartAxisTimeUnit;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-      description: ''
-- name: getCategoryType()
-  uid: ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)
-  package: ExcelScript!
-  fullName: getCategoryType()
-  summary: 指定分类轴类型。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCategoryType(): ChartAxisCategoryType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />
-      description: ''
-- name: getCustomDisplayUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)
-  package: ExcelScript!
-  fullName: getCustomDisplayUnit()
-  summary: 指定自定义轴显示单位值。 若要设置此属性，请使用 `SetCustomDisplayUnit(double)` 方法。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCustomDisplayUnit(): number;'
-    return:
-      type: number
-      description: ''
-- name: getDisplayUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)
-  package: ExcelScript!
-  fullName: getDisplayUnit()
-  summary: 表示轴显示单位。 有关详细信息，请参阅 `ExcelScript.ChartAxisDisplayUnit`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDisplayUnit(): ChartAxisDisplayUnit;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />
-      description: ''
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: 表示 chart 对象的格式，包括线条和字体格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartAxisFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisFormat:interface" />
-      description: ''
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: 指定图表轴的高度（以点表示）。 如果 `null` 坐标轴不可见，则返回 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getIsBetweenCategories()
-  uid: ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)
-  package: ExcelScript!
-  fullName: getIsBetweenCategories()
-  summary: 指定数值轴是否与分类之间的分类轴相交。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsBetweenCategories(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: 指定从坐标轴左边缘到图表区左侧的距离（以点表示）。 如果 `null` 坐标轴不可见，则返回 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getLinkNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getLinkNumberFormat()
-  summary: 指定数字格式是否链接到单元格。 If `true`<!-- -->，数字格式将在单元格中更改时在标签中更改。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLinkNumberFormat(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getLogBase()
-  uid: ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)
-  package: ExcelScript!
-  fullName: getLogBase()
-  summary: 指定使用对数刻度时对数的底数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLogBase(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMajorGridlines()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)
-  package: ExcelScript!
-  fullName: getMajorGridlines()
-  summary: 返回一个对象，该对象代表指定坐标轴的主要网格线。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMajorGridlines(): ChartGridlines;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />
-      description: ''
-- name: getMajorTickMark()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)
-  package: ExcelScript!
-  fullName: getMajorTickMark()
-  summary: 指定指定坐标轴的主要刻度线类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickMark`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMajorTickMark(): ChartAxisTickMark;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
-      description: ''
-- name: getMajorTimeUnitScale()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)
-  package: ExcelScript!
-  fullName: getMajorTimeUnitScale()
-  summary: 指定当属性设置为时分类轴的主要 `categoryType` 单位刻度值 `dateAxis`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMajorTimeUnitScale(): ChartAxisTimeUnit;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-      description: ''
-- name: getMajorUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)
-  package: ExcelScript!
-  fullName: getMajorUnit()
-  summary: 指定两个主要刻度线之间的间隔。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMajorUnit(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMaximum()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)
-  package: ExcelScript!
-  fullName: getMaximum()
-  summary: 指定数值轴上的最大值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaximum(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMinimum()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)
-  package: ExcelScript!
-  fullName: getMinimum()
-  summary: 指定数值轴上的最小值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinimum(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMinorGridlines()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)
-  package: ExcelScript!
-  fullName: getMinorGridlines()
-  summary: 返回一个对象，该对象代表指定坐标轴的次要网格线。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinorGridlines(): ChartGridlines;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />
-      description: ''
-- name: getMinorTickMark()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)
-  package: ExcelScript!
-  fullName: getMinorTickMark()
-  summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickMark`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinorTickMark(): ChartAxisTickMark;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
-      description: ''
-- name: getMinorTimeUnitScale()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)
-  package: ExcelScript!
-  fullName: getMinorTimeUnitScale()
-  summary: 指定当属性设置为时分类轴的次要 `categoryType` 单位刻度值 `dateAxis`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinorTimeUnitScale(): ChartAxisTimeUnit;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-      description: ''
-- name: getMinorUnit()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)
-  package: ExcelScript!
-  fullName: getMinorUnit()
-  summary: 指定两个次要刻度线之间的间隔。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMinorUnit(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMultiLevel()
-  uid: ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)
-  package: ExcelScript!
-  fullName: getMultiLevel()
-  summary: 指定坐标轴是否多级。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMultiLevel(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: 指定坐标轴刻度线标签的格式代码。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: getOffset()
-  uid: ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)
-  package: ExcelScript!
-  fullName: getOffset()
-  summary: 指定标签级别之间的距离，以及第一级标签与轴线之间的距离。 此值应该是 0 到 1000 之间的整数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getOffset(): number;'
-    return:
-      type: number
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: 指定两轴交叉的指定坐标轴位置。 有关详细信息，请参阅 `ExcelScript.ChartAxisPosition`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): ChartAxisPosition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />
-      description: ''
-- name: getPositionAt()
-  uid: ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)
-  package: ExcelScript!
-  fullName: getPositionAt()
-  summary: 指定两轴交叉的轴位置。 您应使用 `SetPositionAt(double)` 方法设置此属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPositionAt(): number;'
-    return:
-      type: number
-      description: ''
-- name: getReversePlotOrder()
-  uid: ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)
-  package: ExcelScript!
-  fullName: getReversePlotOrder()
-  summary: 指定 Excel 是否绘制从最后一个到第一个的数据点。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReversePlotOrder(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getScaleType()
-  uid: ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)
-  package: ExcelScript!
-  fullName: getScaleType()
-  summary: 指定数值轴刻度类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisScaleType`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getScaleType(): ChartAxisScaleType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />
-      description: ''
-- name: getShowDisplayUnitLabel()
-  uid: ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)
-  package: ExcelScript!
-  fullName: getShowDisplayUnitLabel()
-  summary: 指定坐标轴显示单位标签是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowDisplayUnitLabel(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getTextOrientation()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: getTextOrientation()
-  summary: 指定文本面向图表坐标轴刻度线标签的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextOrientation(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTickLabelPosition()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)
-  package: ExcelScript!
-  fullName: getTickLabelPosition()
-  summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickLabelPosition`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTickLabelPosition(): ChartAxisTickLabelPosition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />
-      description: ''
-- name: getTickLabelSpacing()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)
-  package: ExcelScript!
-  fullName: getTickLabelSpacing()
-  summary: 指定刻度线标签之间的分类数或系列数。 可以是 1 到 31999 之间的一个数值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTickLabelSpacing(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTickMarkSpacing()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)
-  package: ExcelScript!
-  fullName: getTickMarkSpacing()
-  summary: 指定刻度线之间的分类数或系列数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTickMarkSpacing(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTitle()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)
-  package: ExcelScript!
-  fullName: getTitle()
-  summary: 表示坐标轴标题。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTitle(): ChartAxisTitle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTitle:interface" />
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.ChartAxis#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: 指定从坐标轴上边缘到图表区顶部的距离（以点表示）。 如果 `null` 坐标轴不可见，则返回 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.ChartAxis#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: 指定坐标轴类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisType`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): ChartAxisType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: 指定坐标轴是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: 指定图表轴的宽度（以点表示）。 如果 `null` 坐标轴不可见，则返回 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: setAlignment(alignment)
-  uid: ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)
-  package: ExcelScript!
-  fullName: setAlignment(alignment)
-  summary: 指定指定坐标轴刻度线标签的对齐方式。 有关详细信息 `ExcelScript.ChartTextHorizontalAlignment` ，请参阅。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setAlignment(alignment: ChartTickLabelAlignment): void;'
-    parameters:
-    - id: alignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />
-    return:
-      type: void
-      description: ''
-- name: setBaseTimeUnit(baseTimeUnit)
-  uid: ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)
-  package: ExcelScript!
-  fullName: setBaseTimeUnit(baseTimeUnit)
-  summary: 指定指定分类轴的基本单位。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBaseTimeUnit(baseTimeUnit: ChartAxisTimeUnit): void;'
-    parameters:
-    - id: baseTimeUnit
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-    return:
-      type: void
-      description: ''
-- name: setCategoryNames(sourceData)
-  uid: ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)
-  package: ExcelScript!
-  fullName: setCategoryNames(sourceData)
-  summary: 设置指定轴的所有分类名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCategoryNames(sourceData: Range): void;'
-    parameters:
-    - id: sourceData
-      description: '`Range`对应于源数据的对象。'
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-    return:
-      type: void
-      description: ''
-- name: setCategoryType(categoryType)
-  uid: ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)
-  package: ExcelScript!
-  fullName: setCategoryType(categoryType)
-  summary: 指定分类轴类型。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCategoryType(categoryType: ChartAxisCategoryType): void;'
-    parameters:
-    - id: categoryType
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />
-    return:
-      type: void
-      description: ''
-- name: setCustomDisplayUnit(value)
-  uid: ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)
-  package: ExcelScript!
-  fullName: setCustomDisplayUnit(value)
-  summary: 将轴显示单位设为自定义值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCustomDisplayUnit(value: number): void;'
-    parameters:
-    - id: value
-      description: 显示单位的自定义值。
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setDisplayUnit(displayUnit)
-  uid: ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)
-  package: ExcelScript!
-  fullName: setDisplayUnit(displayUnit)
-  summary: 表示轴显示单位。 有关详细信息，请参阅 `ExcelScript.ChartAxisDisplayUnit`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setDisplayUnit(displayUnit: ChartAxisDisplayUnit): void;'
-    parameters:
-    - id: displayUnit
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />
-    return:
-      type: void
-      description: ''
-- name: setIsBetweenCategories(isBetweenCategories)
-  uid: ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)
-  package: ExcelScript!
-  fullName: setIsBetweenCategories(isBetweenCategories)
-  summary: 指定数值轴是否与分类之间的分类轴相交。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setIsBetweenCategories(isBetweenCategories: boolean): void;'
-    parameters:
-    - id: isBetweenCategories
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setLinkNumberFormat(linkNumberFormat)
-  uid: ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: 指定数字格式是否链接到单元格。 If `true`<!-- -->，数字格式将在单元格中更改时在标签中更改。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
-    parameters:
-    - id: linkNumberFormat
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setLogBase(logBase)
-  uid: ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)
-  package: ExcelScript!
-  fullName: setLogBase(logBase)
-  summary: 指定使用对数刻度时对数的底数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLogBase(logBase: number): void;'
-    parameters:
-    - id: logBase
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMajorTickMark(majorTickMark)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)
-  package: ExcelScript!
-  fullName: setMajorTickMark(majorTickMark)
-  summary: 指定指定坐标轴的主要刻度线类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickMark`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMajorTickMark(majorTickMark: ChartAxisTickMark): void;'
-    parameters:
-    - id: majorTickMark
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
-    return:
-      type: void
-      description: ''
-- name: setMajorTimeUnitScale(majorTimeUnitScale)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)
-  package: ExcelScript!
-  fullName: setMajorTimeUnitScale(majorTimeUnitScale)
-  summary: 指定当属性设置为时分类轴的主要 `categoryType` 单位刻度值 `dateAxis`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMajorTimeUnitScale(majorTimeUnitScale: ChartAxisTimeUnit): void;'
-    parameters:
-    - id: majorTimeUnitScale
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-    return:
-      type: void
-      description: ''
-- name: setMajorUnit(majorUnit)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)
-  package: ExcelScript!
-  fullName: setMajorUnit(majorUnit)
-  summary: 指定两个主要刻度线之间的间隔。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMajorUnit(majorUnit: number): void;'
-    parameters:
-    - id: majorUnit
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMaximum(maximum)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)
-  package: ExcelScript!
-  fullName: setMaximum(maximum)
-  summary: 指定数值轴上的最大值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaximum(maximum: number): void;'
-    parameters:
-    - id: maximum
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMinimum(minimum)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)
-  package: ExcelScript!
-  fullName: setMinimum(minimum)
-  summary: 指定数值轴上的最小值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMinimum(minimum: number): void;'
-    parameters:
-    - id: minimum
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMinorTickMark(minorTickMark)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)
-  package: ExcelScript!
-  fullName: setMinorTickMark(minorTickMark)
-  summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickMark`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMinorTickMark(minorTickMark: ChartAxisTickMark): void;'
-    parameters:
-    - id: minorTickMark
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
-    return:
-      type: void
-      description: ''
-- name: setMinorTimeUnitScale(minorTimeUnitScale)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)
-  package: ExcelScript!
-  fullName: setMinorTimeUnitScale(minorTimeUnitScale)
-  summary: 指定当属性设置为时分类轴的次要 `categoryType` 单位刻度值 `dateAxis`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMinorTimeUnitScale(minorTimeUnitScale: ChartAxisTimeUnit): void;'
-    parameters:
-    - id: minorTimeUnitScale
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
-    return:
-      type: void
-      description: ''
-- name: setMinorUnit(minorUnit)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)
-  package: ExcelScript!
-  fullName: setMinorUnit(minorUnit)
-  summary: 指定两个次要刻度线之间的间隔。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMinorUnit(minorUnit: number): void;'
-    parameters:
-    - id: minorUnit
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMultiLevel(multiLevel)
-  uid: ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)
-  package: ExcelScript!
-  fullName: setMultiLevel(multiLevel)
-  summary: 指定坐标轴是否多级。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMultiLevel(multiLevel: boolean): void;'
-    parameters:
-    - id: multiLevel
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: 指定坐标轴刻度线标签的格式代码。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setOffset(offset)
-  uid: ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)
-  package: ExcelScript!
-  fullName: setOffset(offset)
-  summary: 指定标签级别之间的距离，以及第一级标签与轴线之间的距离。 此值应该是 0 到 1000 之间的整数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setOffset(offset: number): void;'
-    parameters:
-    - id: offset
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: 指定两轴交叉的指定坐标轴位置。 有关详细信息，请参阅 `ExcelScript.ChartAxisPosition`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: ChartAxisPosition): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />
-    return:
-      type: void
-      description: ''
-- name: setPositionAt(value)
-  uid: ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)
-  package: ExcelScript!
-  fullName: setPositionAt(value)
-  summary: 设置指定坐标轴与其他坐标轴交叉的位置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPositionAt(value: number): void;'
-    parameters:
-    - id: value
-      description: 交叉点的自定义值。
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setReversePlotOrder(reversePlotOrder)
-  uid: ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)
-  package: ExcelScript!
-  fullName: setReversePlotOrder(reversePlotOrder)
-  summary: 指定 Excel 是否绘制从最后一个到第一个的数据点。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setReversePlotOrder(reversePlotOrder: boolean): void;'
-    parameters:
-    - id: reversePlotOrder
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setScaleType(scaleType)
-  uid: ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)
-  package: ExcelScript!
-  fullName: setScaleType(scaleType)
-  summary: 指定数值轴刻度类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisScaleType`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setScaleType(scaleType: ChartAxisScaleType): void;'
-    parameters:
-    - id: scaleType
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />
-    return:
-      type: void
-      description: ''
-- name: setShowDisplayUnitLabel(showDisplayUnitLabel)
-  uid: ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)
-  package: ExcelScript!
-  fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
-  summary: 指定坐标轴显示单位标签是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowDisplayUnitLabel(showDisplayUnitLabel: boolean): void;'
-    parameters:
-    - id: showDisplayUnitLabel
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setTextOrientation(textOrientation)
-  uid: ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: setTextOrientation(textOrientation)
-  summary: 指定文本面向图表坐标轴刻度线标签的角度。 该值应为 -90 到 90 的整数，或垂直方向文本的整数 180。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTextOrientation(textOrientation: number): void;'
-    parameters:
-    - id: textOrientation
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTickLabelPosition(tickLabelPosition)
-  uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)
-  package: ExcelScript!
-  fullName: setTickLabelPosition(tickLabelPosition)
-  summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickLabelPosition`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setTickLabelPosition(
-                  tickLabelPosition: ChartAxisTickLabelPosition
-              ): void;
-    parameters:
-    - id: tickLabelPosition
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />
-    return:
-      type: void
-      description: ''
-- name: setTickLabelSpacing(tickLabelSpacing)
-  uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)
-  package: ExcelScript!
-  fullName: setTickLabelSpacing(tickLabelSpacing)
-  summary: 指定刻度线标签之间的分类数或系列数。 可以是 1 到 31999 之间的一个数值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTickLabelSpacing(tickLabelSpacing: number): void;'
-    parameters:
-    - id: tickLabelSpacing
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTickMarkSpacing(tickMarkSpacing)
-  uid: ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)
-  package: ExcelScript!
-  fullName: setTickMarkSpacing(tickMarkSpacing)
-  summary: 指定刻度线之间的分类数或系列数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTickMarkSpacing(tickMarkSpacing: number): void;'
-    parameters:
-    - id: tickMarkSpacing
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: 指定坐标轴是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 2c55f9587deac5994c689b5725c1cd76809d45c8
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913969"
+  - name: getAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getAlignment()
+    summary: 指定指定坐标轴刻度线标签的对齐方式。 有关详细信息 `ExcelScript.ChartTextHorizontalAlignment` ，请参阅。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAlignment(): ChartTickLabelAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />'
+        description: ''
+  - name: getAxisGroup()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
+    package: ExcelScript!
+    fullName: getAxisGroup()
+    summary: 指定指定坐标轴的组。 有关详细信息，请参阅 `ExcelScript.ChartAxisGroup`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAxisGroup(): ChartAxisGroup;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />'
+        description: ''
+  - name: getBaseTimeUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)'
+    package: ExcelScript!
+    fullName: getBaseTimeUnit()
+    summary: 指定指定分类轴的基本单位。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBaseTimeUnit(): ChartAxisTimeUnit;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+        description: ''
+  - name: getCategoryType()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)'
+    package: ExcelScript!
+    fullName: getCategoryType()
+    summary: 指定分类轴类型。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCategoryType(): ChartAxisCategoryType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />'
+        description: ''
+  - name: getCustomDisplayUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)'
+    package: ExcelScript!
+    fullName: getCustomDisplayUnit()
+    summary: 指定自定义轴显示单位值。 若要设置此属性，请使用 `SetCustomDisplayUnit(double)` 方法。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCustomDisplayUnit(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getDisplayUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
+    package: ExcelScript!
+    fullName: getDisplayUnit()
+    summary: 表示轴显示单位。 有关详细信息，请参阅 `ExcelScript.ChartAxisDisplayUnit`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDisplayUnit(): ChartAxisDisplayUnit;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />'
+        description: ''
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 表示 chart 对象的格式，包括线条和字体格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartAxisFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisFormat:interface" />'
+        description: ''
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: 指定图表轴的高度（以点表示）。 如果 `null` 坐标轴不可见，则返回 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getIsBetweenCategories()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)'
+    package: ExcelScript!
+    fullName: getIsBetweenCategories()
+    summary: 指定数值轴是否与分类之间的分类轴相交。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsBetweenCategories(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: 指定从坐标轴左边缘到图表区左侧的距离（以点表示）。 如果 `null` 坐标轴不可见，则返回 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getLinkNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getLinkNumberFormat()
+    summary: 指定数字格式是否链接到单元格。 If `true`<!-- -->，数字格式将在单元格中更改时在标签中更改。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLinkNumberFormat(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getLogBase()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)'
+    package: ExcelScript!
+    fullName: getLogBase()
+    summary: 指定使用对数刻度时对数的底数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLogBase(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMajorGridlines()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)'
+    package: ExcelScript!
+    fullName: getMajorGridlines()
+    summary: 返回一个对象，该对象代表指定坐标轴的主要网格线。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMajorGridlines(): ChartGridlines;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />'
+        description: ''
+  - name: getMajorTickMark()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
+    package: ExcelScript!
+    fullName: getMajorTickMark()
+    summary: 指定指定坐标轴的主要刻度线类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickMark`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMajorTickMark(): ChartAxisTickMark;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />'
+        description: ''
+  - name: getMajorTimeUnitScale()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)'
+    package: ExcelScript!
+    fullName: getMajorTimeUnitScale()
+    summary: 指定当属性设置为时分类轴的主要 `categoryType` 单位刻度值 `dateAxis`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMajorTimeUnitScale(): ChartAxisTimeUnit;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+        description: ''
+  - name: getMajorUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
+    package: ExcelScript!
+    fullName: getMajorUnit()
+    summary: 指定两个主要刻度线之间的间隔。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMajorUnit(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMaximum()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
+    package: ExcelScript!
+    fullName: getMaximum()
+    summary: 指定数值轴上的最大值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaximum(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMinimum()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
+    package: ExcelScript!
+    fullName: getMinimum()
+    summary: 指定数值轴上的最小值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinimum(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMinorGridlines()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)'
+    package: ExcelScript!
+    fullName: getMinorGridlines()
+    summary: 返回一个对象，该对象代表指定坐标轴的次要网格线。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinorGridlines(): ChartGridlines;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />'
+        description: ''
+  - name: getMinorTickMark()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
+    package: ExcelScript!
+    fullName: getMinorTickMark()
+    summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickMark`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinorTickMark(): ChartAxisTickMark;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />'
+        description: ''
+  - name: getMinorTimeUnitScale()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)'
+    package: ExcelScript!
+    fullName: getMinorTimeUnitScale()
+    summary: 指定当属性设置为时分类轴的次要 `categoryType` 单位刻度值 `dateAxis`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinorTimeUnitScale(): ChartAxisTimeUnit;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+        description: ''
+  - name: getMinorUnit()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
+    package: ExcelScript!
+    fullName: getMinorUnit()
+    summary: 指定两个次要刻度线之间的间隔。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMinorUnit(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMultiLevel()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)'
+    package: ExcelScript!
+    fullName: getMultiLevel()
+    summary: 指定坐标轴是否多级。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMultiLevel(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: 指定坐标轴刻度线标签的格式代码。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getOffset()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)'
+    package: ExcelScript!
+    fullName: getOffset()
+    summary: 指定标签级别之间的距离，以及第一级标签与轴线之间的距离。 此值应该是 0 到 1000 之间的整数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOffset(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: 指定两轴交叉的指定坐标轴位置。 有关详细信息，请参阅 `ExcelScript.ChartAxisPosition`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): ChartAxisPosition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />'
+        description: ''
+  - name: getPositionAt()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)'
+    package: ExcelScript!
+    fullName: getPositionAt()
+    summary: 指定两轴交叉的轴位置。 您应使用 `SetPositionAt(double)` 方法设置此属性。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPositionAt(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getReversePlotOrder()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)'
+    package: ExcelScript!
+    fullName: getReversePlotOrder()
+    summary: 指定是否Excel从最后一个到第一个数据点。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReversePlotOrder(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getScaleType()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
+    package: ExcelScript!
+    fullName: getScaleType()
+    summary: 指定数值轴刻度类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisScaleType`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getScaleType(): ChartAxisScaleType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />'
+        description: ''
+  - name: getShowDisplayUnitLabel()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)'
+    package: ExcelScript!
+    fullName: getShowDisplayUnitLabel()
+    summary: 指定坐标轴显示单位标签是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowDisplayUnitLabel(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getTextOrientation()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: getTextOrientation()
+    summary: 指定文本面向图表坐标轴刻度线标签的角度。 该值应为 -90 到 90 的整数或垂直方向文本的整数 180。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTickLabelPosition()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
+    package: ExcelScript!
+    fullName: getTickLabelPosition()
+    summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickLabelPosition`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTickLabelPosition(): ChartAxisTickLabelPosition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />'
+        description: ''
+  - name: getTickLabelSpacing()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
+    package: ExcelScript!
+    fullName: getTickLabelSpacing()
+    summary: 指定刻度线标签之间的分类数或系列数。 可以是 1 到 31999 之间的一个数值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTickLabelSpacing(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTickMarkSpacing()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)'
+    package: ExcelScript!
+    fullName: getTickMarkSpacing()
+    summary: 指定刻度线之间的分类数或系列数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTickMarkSpacing(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTitle()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)'
+    package: ExcelScript!
+    fullName: getTitle()
+    summary: 表示坐标轴标题。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTitle(): ChartAxisTitle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTitle:interface" />'
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: 指定从坐标轴上边缘到图表区顶部的距离（以点表示）。 如果 `null` 坐标轴不可见，则返回 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: 指定坐标轴类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisType`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): ChartAxisType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />'
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: 指定坐标轴是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: 指定图表轴的宽度（以点表示）。 如果 `null` 坐标轴不可见，则返回 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setAlignment(alignment)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setAlignment(alignment)
+    summary: 指定指定坐标轴刻度线标签的对齐方式。 有关详细信息 `ExcelScript.ChartTextHorizontalAlignment` ，请参阅。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAlignment(alignment: ChartTickLabelAlignment): void;'
+      parameters:
+        - id: alignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setBaseTimeUnit(baseTimeUnit)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)'
+    package: ExcelScript!
+    fullName: setBaseTimeUnit(baseTimeUnit)
+    summary: 指定指定分类轴的基本单位。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBaseTimeUnit(baseTimeUnit: ChartAxisTimeUnit): void;'
+      parameters:
+        - id: baseTimeUnit
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setCategoryNames(sourceData)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)'
+    package: ExcelScript!
+    fullName: setCategoryNames(sourceData)
+    summary: 设置指定轴的所有分类名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCategoryNames(sourceData: Range): void;'
+      parameters:
+        - id: sourceData
+          description: '`Range`对应于源数据的对象。'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: setCategoryType(categoryType)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)'
+    package: ExcelScript!
+    fullName: setCategoryType(categoryType)
+    summary: 指定分类轴类型。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCategoryType(categoryType: ChartAxisCategoryType): void;'
+      parameters:
+        - id: categoryType
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setCustomDisplayUnit(value)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)'
+    package: ExcelScript!
+    fullName: setCustomDisplayUnit(value)
+    summary: 将轴显示单位设为自定义值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCustomDisplayUnit(value: number): void;'
+      parameters:
+        - id: value
+          description: 显示单位的自定义值。
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setDisplayUnit(displayUnit)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
+    package: ExcelScript!
+    fullName: setDisplayUnit(displayUnit)
+    summary: 表示轴显示单位。 有关详细信息，请参阅 `ExcelScript.ChartAxisDisplayUnit`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setDisplayUnit(displayUnit: ChartAxisDisplayUnit): void;'
+      parameters:
+        - id: displayUnit
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setIsBetweenCategories(isBetweenCategories)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)'
+    package: ExcelScript!
+    fullName: setIsBetweenCategories(isBetweenCategories)
+    summary: 指定数值轴是否与分类之间的分类轴相交。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setIsBetweenCategories(isBetweenCategories: boolean): void;'
+      parameters:
+        - id: isBetweenCategories
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setLinkNumberFormat(linkNumberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setLinkNumberFormat(linkNumberFormat)
+    summary: 指定数字格式是否链接到单元格。 If `true`<!-- -->，数字格式将在单元格中更改时在标签中更改。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+      parameters:
+        - id: linkNumberFormat
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setLogBase(logBase)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)'
+    package: ExcelScript!
+    fullName: setLogBase(logBase)
+    summary: 指定使用对数刻度时对数的底数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLogBase(logBase: number): void;'
+      parameters:
+        - id: logBase
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMajorTickMark(majorTickMark)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
+    package: ExcelScript!
+    fullName: setMajorTickMark(majorTickMark)
+    summary: 指定指定坐标轴的主要刻度线类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickMark`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMajorTickMark(majorTickMark: ChartAxisTickMark): void;'
+      parameters:
+        - id: majorTickMark
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setMajorTimeUnitScale(majorTimeUnitScale)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)'
+    package: ExcelScript!
+    fullName: setMajorTimeUnitScale(majorTimeUnitScale)
+    summary: 指定当属性设置为时分类轴的主要 `categoryType` 单位刻度值 `dateAxis`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMajorTimeUnitScale(majorTimeUnitScale: ChartAxisTimeUnit): void;'
+      parameters:
+        - id: majorTimeUnitScale
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setMajorUnit(majorUnit)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
+    package: ExcelScript!
+    fullName: setMajorUnit(majorUnit)
+    summary: 指定两个主要刻度线之间的间隔。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMajorUnit(majorUnit: number): void;'
+      parameters:
+        - id: majorUnit
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMaximum(maximum)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
+    package: ExcelScript!
+    fullName: setMaximum(maximum)
+    summary: 指定数值轴上的最大值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaximum(maximum: number): void;'
+      parameters:
+        - id: maximum
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMinimum(minimum)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
+    package: ExcelScript!
+    fullName: setMinimum(minimum)
+    summary: 指定数值轴上的最小值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMinimum(minimum: number): void;'
+      parameters:
+        - id: minimum
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMinorTickMark(minorTickMark)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
+    package: ExcelScript!
+    fullName: setMinorTickMark(minorTickMark)
+    summary: 指定指定坐标轴的次要刻度线类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickMark`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMinorTickMark(minorTickMark: ChartAxisTickMark): void;'
+      parameters:
+        - id: minorTickMark
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setMinorTimeUnitScale(minorTimeUnitScale)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)'
+    package: ExcelScript!
+    fullName: setMinorTimeUnitScale(minorTimeUnitScale)
+    summary: 指定当属性设置为时分类轴的次要 `categoryType` 单位刻度值 `dateAxis`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMinorTimeUnitScale(minorTimeUnitScale: ChartAxisTimeUnit): void;'
+      parameters:
+        - id: minorTimeUnitScale
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setMinorUnit(minorUnit)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
+    package: ExcelScript!
+    fullName: setMinorUnit(minorUnit)
+    summary: 指定两个次要刻度线之间的间隔。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMinorUnit(minorUnit: number): void;'
+      parameters:
+        - id: minorUnit
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMultiLevel(multiLevel)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)'
+    package: ExcelScript!
+    fullName: setMultiLevel(multiLevel)
+    summary: 指定坐标轴是否多级。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMultiLevel(multiLevel: boolean): void;'
+      parameters:
+        - id: multiLevel
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: 指定坐标轴刻度线标签的格式代码。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setOffset(offset)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)'
+    package: ExcelScript!
+    fullName: setOffset(offset)
+    summary: 指定标签级别之间的距离，以及第一级标签与轴线之间的距离。 此值应该是 0 到 1000 之间的整数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setOffset(offset: number): void;'
+      parameters:
+        - id: offset
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: 指定两轴交叉的指定坐标轴位置。 有关详细信息，请参阅 `ExcelScript.ChartAxisPosition`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: ChartAxisPosition): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setPositionAt(value)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)'
+    package: ExcelScript!
+    fullName: setPositionAt(value)
+    summary: 设置指定坐标轴与其他坐标轴交叉的位置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPositionAt(value: number): void;'
+      parameters:
+        - id: value
+          description: 交叉点的自定义值。
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setReversePlotOrder(reversePlotOrder)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)'
+    package: ExcelScript!
+    fullName: setReversePlotOrder(reversePlotOrder)
+    summary: 指定是否Excel从最后一个到第一个数据点。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setReversePlotOrder(reversePlotOrder: boolean): void;'
+      parameters:
+        - id: reversePlotOrder
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setScaleType(scaleType)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
+    package: ExcelScript!
+    fullName: setScaleType(scaleType)
+    summary: 指定数值轴刻度类型。 有关详细信息，请参阅 `ExcelScript.ChartAxisScaleType`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setScaleType(scaleType: ChartAxisScaleType): void;'
+      parameters:
+        - id: scaleType
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setShowDisplayUnitLabel(showDisplayUnitLabel)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)'
+    package: ExcelScript!
+    fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
+    summary: 指定坐标轴显示单位标签是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowDisplayUnitLabel(showDisplayUnitLabel: boolean): void;'
+      parameters:
+        - id: showDisplayUnitLabel
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setTextOrientation(textOrientation)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: setTextOrientation(textOrientation)
+    summary: 指定文本面向图表坐标轴刻度线标签的角度。 该值应为 -90 到 90 的整数或垂直方向文本的整数 180。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      parameters:
+        - id: textOrientation
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTickLabelPosition(tickLabelPosition)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
+    package: ExcelScript!
+    fullName: setTickLabelPosition(tickLabelPosition)
+    summary: 在指定坐标轴上指定刻度线标签的位置。 有关详细信息，请参阅 `ExcelScript.ChartAxisTickLabelPosition`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setTickLabelPosition(
+                    tickLabelPosition: ChartAxisTickLabelPosition
+                ): void;
+      parameters:
+        - id: tickLabelPosition
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setTickLabelSpacing(tickLabelSpacing)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
+    package: ExcelScript!
+    fullName: setTickLabelSpacing(tickLabelSpacing)
+    summary: 指定刻度线标签之间的分类数或系列数。 可以是 1 到 31999 之间的一个数值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTickLabelSpacing(tickLabelSpacing: number): void;'
+      parameters:
+        - id: tickLabelSpacing
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTickMarkSpacing(tickMarkSpacing)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
+    package: ExcelScript!
+    fullName: setTickMarkSpacing(tickMarkSpacing)
+    summary: 指定刻度线之间的分类数或系列数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTickMarkSpacing(tickMarkSpacing: number): void;'
+      parameters:
+        - id: tickMarkSpacing
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: 指定坐标轴是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

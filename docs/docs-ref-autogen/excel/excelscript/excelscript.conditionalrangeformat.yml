@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalRangeFormat
-uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
 summary: 封装条件格式范围的字体、填充、边框和其他属性的格式对象。
@@ -9,151 +9,144 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorders()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)
-  package: ExcelScript!
-  fullName: getBorders()
-  summary: 应用于整体条件格式范围的 border 对象的集合。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorders(): ConditionalRangeBorder[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />[]
-      description: ''
-- name: getConditionalRangeBorder(index)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorder(index)
-  summary: 使用其名称获取 border 对象
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      getConditionalRangeBorder(
-                  index: ConditionalRangeBorderIndex
-              ): ConditionalRangeBorder;
-    parameters:
-    - id: index
-      description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 `ExcelScript.ConditionalRangeBorderIndex`。
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderBottom()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderBottom()
-  summary: 获取底部边框。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderLeft()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderLeft()
-  summary: 获取左边框。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderRight()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderRight()
-  summary: 获取右边框。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderTop()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderTop()
-  summary: 获取上边框。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: 返回在整体条件格式范围内定义的 fill 对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ConditionalRangeFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: 返回在整体条件格式范围内定义的 font 对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ConditionalRangeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFont:interface" />
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: 表示给定区域 Excel 的编号格式代码。 如果 `null` 传入，则清除 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: 表示给定区域 Excel 的编号格式代码。 如果 `null` 传入，则清除 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: fa181e54c3f71c44ba2e1bb08a890674d7e6f027
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913729"
+  - name: getBorders()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)'
+    package: ExcelScript!
+    fullName: getBorders()
+    summary: 应用于整体条件格式范围的 border 对象的集合。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorders(): ConditionalRangeBorder[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />[]'
+        description: ''
+  - name: getConditionalRangeBorder(index)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorder(index)
+    summary: 使用其名称获取 border 对象
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getConditionalRangeBorder(
+                    index: ConditionalRangeBorderIndex
+                ): ConditionalRangeBorder;
+      parameters:
+        - id: index
+          description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 `ExcelScript.ConditionalRangeBorderIndex`。
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderBottom()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderBottom()
+    summary: 获取底部边框。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderLeft()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderLeft()
+    summary: 获取左边框。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderRight()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderRight()
+    summary: 获取右边框。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderTop()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderTop()
+    summary: 获取上边框。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 返回在整体条件格式范围内定义的 fill 对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ConditionalRangeFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 返回在整体条件格式范围内定义的 font 对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ConditionalRangeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFont:interface" />'
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: 表示Excel区域的电话号码格式代码。 如果 `null` 传入，则清除 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: 表示Excel区域的电话号码格式代码。 如果 `null` 传入，则清除 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

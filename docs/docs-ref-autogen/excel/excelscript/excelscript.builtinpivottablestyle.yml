@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.BuiltInPivotTableStyle
-uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum
+uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.BuiltInPivotTableStyle
 summary: 代表内置数据透视表样式
@@ -8,350 +8,343 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: dark1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (使用填充标题、带区行) 带阴影正文的默认\"Office\"主题文本中显示为黑色。"
-- name: dark10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (使用填充标题、带状行和外边框) 默认\"Office\"主题标题中显示橙色。"
-- name: dark11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"强调文字Office\"主题) 填充标题、带状行和外边框。"
-- name: dark12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充标题、带状行和外边框。
-- name: dark13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充标题、带状行和外边框。"
-- name: dark14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充标题、带状行和外边框。"
-- name: dark15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member
-  package: ExcelScript!
-  summary: 默认"深色 1" ("深色"主题Office填充的页眉) 填充的页脚和带状行。
-- name: dark16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充页眉、填充页脚和带状行。"
-- name: dark17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (默认\"Office\"主题) 填充的页眉、填充的页脚和带状行中显示橙色。"
-- name: dark18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 填充页眉、填充页脚和带状行。"
-- name: dark19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充页眉、填充页脚和带状行。
-- name: dark2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题、带区行和带阴影正文。"
-- name: dark20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充页眉、填充页脚和带状行。"
-- name: dark21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充页眉、填充页脚和带状行。"
-- name: dark22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (默认\"Office\"主题中为黑色) 带底纹正文，白色边框。"
-- name: dark23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 带底纹正文和白色边框。"
-- name: dark24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (默认\"Office\"主题) 带底纹正文和白色边框的橙色。"
-- name: dark25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 带底纹正文和白色边框的灰色。"
-- name: dark26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (为黄色，默认为\"Office\"主题) 带底纹正文和白色边框。"
-- name: dark27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 5\" (浅蓝色，默认为\"Office\"主题) 带底纹正文和白色边框。"
-- name: dark28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 带底纹正文和白色边框。"
-- name: dark3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (使用填充标题、带区行和带阴影正文Office\"主题) 橙色。"
-- name: dark4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (Office使用填充标题、带状行和带阴影正文) 默认\"强调文字颜色\"主题文本中的灰色。"
-- name: dark5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (默认\"Office\"主题) 填充标题、带区行和带阴影正文。"
-- name: dark6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (使用填充标题、带区行和带阴影正文) 默认\"Office\"主题设置中浅蓝色。"
-- name: dark7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充标题、带区行和带阴影正文。"
-- name: dark8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (默认\"Office\"主题) 填充标题、带状行和外边框。"
-- name: dark9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题、带状行和外边框。"
-- name: light1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (标题边框和页脚边框的默认\"Office\"主题) 黑色。"
-- name: light10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (默认\"Office\"主题) 标题边框、页脚边框、第一列边框和带状行中显示橙色。"
-- name: light11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 标题边框、页脚边框、第一列边框和带状行中为灰色。"
-- name: light12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member
-  package: ExcelScript!
-  summary: 默认"Office ("主题) 标题边框、页脚边框、第一列边框和带状行，默认"强调文字颜色 4"为黄色。
-- name: light13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (默认\"Office\"主题栏中使用浅蓝色) 标题边框、页脚边框、第一列边框和带状行。"
-- name: light14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (默认\"Office\"主题) 标题边框、页脚边框、第一列边框和带状行。"
-- name: light15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member
-  package: ExcelScript!
-  summary: "\"深 1\" (默认\"Office\"主题) 填充标题和带状边框的行中为黑色。"
-- name: light16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题和带状边框的行。"
-- name: light17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (使用填充标题和带状Office带边框的行) 默认\"强调文字颜色\"主题文本中的橙色。"
-- name: light18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"强调文字颜色\"Office\"主题) 填充标题和带状边框的行。"
-- name: light19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充标题和带状边框的行。
-- name: light2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (标题边框和页脚边框的默认\"Office\"主题) 为蓝色。"
-- name: light20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充标题和带状边框的行。"
-- name: light21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充标题和带状边框的行。"
-- name: light22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (标题边框、页脚边框和带边框的列) 默认\"Office\"主题主题中为黑色。"
-- name: light23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (标题边框、页脚边框和带边框的列Office默认\") \"主题设置中为蓝色。"
-- name: light24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (标题边框、页脚边框和带边框的列) 默认\"Office\"主题标题中显示橙色。"
-- name: light25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (标题边框、页脚边框和带边框的列) 默认\"Office\"主题设置中显示为灰色。"
-- name: light26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (标题边框、页脚边框) 带边框的列的默认\"Office\"主题主题中为黄色。"
-- name: light27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 5\" (标题边框、页脚边框和带边框的列) 默认\"Office\"主题设置中为浅蓝色。"
-- name: light28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (默认\"Office\"主题) 标题边框、页脚边框和带边框的列。"
-- name: light3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member
-  package: ExcelScript!
-  summary: "\"强调文字 2\" (标题边框和页脚边框Office\"主题) 橙色。"
-- name: light4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (标题边框和页脚边框的默认\"Office\"主题) 为灰色。"
-- name: light5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (标题边框和页脚边框的默认Office\"主题) 为黄色。"
-- name: light6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 5\" (标题边框和页脚边框Office\"主题) 浅蓝色。"
-- name: light7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 页眉边框和页脚边框。"
-- name: light8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (默认\"Office\"主题) 标题边框、页脚边框、第一列边框和带状行中为黑色。"
-- name: light9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (默认\"Office\"主题) 标题边框、页脚边框、第一列边框和带状行中为蓝色。"
-- name: medium1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (默认\"Office\"主题) 填充标题、带状行和页脚边框。"
-- name: medium10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (默认\"Office\"主题) 填充标题、带状行和总行边框的橙色。"
-- name: medium11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 填充标题、带状行和总行边框。"
-- name: medium12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充标题、带区行和总行边框。
-- name: medium13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 5\" (填充标题、带区行和总行边框的默认\"Office\"主题) 浅蓝色。"
-- name: medium14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (默认\"Office\"主题) 填充标题、带状行和总行边框。"
-- name: medium15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member
-  package: ExcelScript!
-  summary: 在默认"Office"主题) 填充页眉、填充页脚和底纹正文中，"深色 (1"表示黑色。
-- name: medium16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充页眉、填充页脚和底纹正文。"
-- name: medium17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (默认\"Office\"主题) 填充的页眉、填充的页脚和带底纹的正文中显示橙色。"
-- name: medium18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 填充页眉、填充页脚和底纹正文中为灰色。"
-- name: medium19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充的页眉、填充的页脚和带底纹的正文。
-- name: medium2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充页眉、带状行和页脚边框。"
-- name: medium20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充页眉、填充页脚和底纹正文。"
-- name: medium21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充页眉、填充页脚和带底纹的正文。"
-- name: medium22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member
-  package: ExcelScript!
-  summary: "\"深 1\" (默认\"Office\"主题) 填充的第一列和底纹正文中为黑色。"
-- name: medium23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充第一列，带有底纹正文。"
-- name: medium24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (为默认\"Office\"主题) 填充的第一列和带有底纹的正文中的橙色。"
-- name: medium25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 3" ("第一列Office填充的第一列，带有底纹正文) 灰色。
-- name: medium26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (为黄色，默认为\"Office\"主题) 填充的第一列，并带有底纹正文。"
-- name: medium27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 5\" (为浅蓝色，默认为\"Office\"主题) 填充的第一列，并带有底纹正文。"
-- name: medium28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充的第一列，带有底纹正文。"
-- name: medium3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (默认\"Office\"主题) 填充标题、带状行和页脚边框。"
-- name: medium4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 填充标题、带状行和页脚边框。"
-- name: medium5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" ("强调文字颜色Office"主题) 填充页眉、带状行和页脚边框。
-- name: medium6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充页眉、带状行和页脚边框。"
-- name: medium7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充页眉、带状行和页脚边框。"
-- name: medium8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member
-  package: ExcelScript!
-  summary: 默认"Office ("主题) "深色 1"表示黑色，带区行和总行边框。
-- name: medium9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题、带区行和总行边框。"
-- name: none
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member
-  package: ExcelScript!
-  summary: 无
-metadata:
-  ms.openlocfilehash: 3d3c366ae0a5114c1cf82f16bf4dd37bc476d202
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068305"
+  - name: dark1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member'
+    package: ExcelScript!
+    summary: 默认"Office ("主题) 填充标题、带区行和带阴影正文的"深色 1"表示黑色。
+  - name: dark10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (默认"Office"主题) 填充标题、带状行和外边框显示橙色。'
+  - name: dark11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充标题、带状行和外边框。'
+  - name: dark12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member'
+    package: ExcelScript!
+    summary: 默认"强调文字颜色 4" ("Office"主题) 填充标题、带状行和外边框。
+  - name: dark13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 5" (浅蓝色，默认为"Office"主题) 填充标题、带状行和外边框。'
+  - name: dark14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充标题、带状行和外边框。'
+  - name: dark15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 填充页眉、填充页脚和带状行。'
+  - name: dark16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充页眉、填充页脚和带状行。'
+  - name: dark17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (默认"Office"主题) 填充页眉、填充页脚和带状行中显示橙色。'
+  - name: dark18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (Office默认"强调文字颜色"主题) 填充页眉、填充页脚和带状行。'
+  - name: dark19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member'
+    package: ExcelScript!
+    summary: 在默认"Office"主题 (填充页眉、填充页脚和带状行) "强调文字颜色 4"为黄色。
+  - name: dark2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充标题、带区行和带阴影正文。'
+  - name: dark20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认"Office"主题) 填充页眉、填充页脚和带状行。'
+  - name: dark21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充页眉、填充页脚和带状行。'
+  - name: dark22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 带底纹正文和白色边框的黑色。'
+  - name: dark23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 带底纹正文和白色边框。'
+  - name: dark24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (Office默认"强调文字颜色"主题) 带有底纹正文和白色边框的橙色。'
+  - name: dark25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 带底纹正文和白色边框的灰色。'
+  - name: dark26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (默认"Office"主题) 带底纹正文和白色边框。。'
+  - name: dark27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 带底纹正文和白色边框。'
+  - name: dark28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 带底纹正文和白色边框。'
+  - name: dark3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (使用填充标题、带区行和带阴影正文) 默认"Office"主题设置中显示橙色。'
+  - name: dark4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (Office带有填充标题、带区行) 带阴影正文的默认"强调文字颜色"主题设置中显示为灰色。'
+  - name: dark5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member'
+    package: ExcelScript!
+    summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充标题、带区行和带阴影正文。
+  - name: dark6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 填充标题、带区行和带阴影正文。'
+  - name: dark7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充标题、带区行和底纹正文。'
+  - name: dark8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 填充标题、带状行和外边框为黑色。'
+  - name: dark9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充标题、带状行和外边框。'
+  - name: light1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member'
+    package: ExcelScript!
+    summary: '"深色 1" (标题边框和页脚边框的默认"Office"主题) 黑色。'
+  - name: light10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (默认"Office"主题) 标题边框、页脚边框、第一列边框和带状行中显示橙色。'
+  - name: light11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 带有页眉边框、页脚边框、第一列边框和带状行。'
+  - name: light12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (默认"Office"主题) 带有页眉边框、页脚边框、第一列边框和带状行。'
+  - name: light13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 5" (默认"Office"主题) 标题边框、页脚边框、第一列边框和带状行中浅蓝色。'
+  - name: light14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (默认"Office"主题) 标题边框、页脚边框、第一列边框和带状行。'
+  - name: light15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 填充标题和带状边框的行中为黑色。'
+  - name: light16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充标题和带状边框的行。'
+  - name: light17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (默认"强调文字Office"主题) 带有填充标题和带状边框的行。'
+  - name: light18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充标题和带状边框的行中为灰色。'
+  - name: light19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (为黄色，默认为"Office"主题) 填充标题和带状边框的行。'
+  - name: light2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (标题边框和页脚边框的默认"Office"主题) 为蓝色。'
+  - name: light20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 填充标题和带状边框的行。'
+  - name: light21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充标题和带状边框的行。'
+  - name: light22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member'
+    package: ExcelScript!
+    summary: '"深色 1" (标题边框、页脚边框和带边框的列Office"主题) 黑色。'
+  - name: light23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (标题边框、页脚边框和带边框的列) 默认"Office"主题设置中为蓝色。'
+  - name: light24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (标题边框、页脚边框和带边框的列Office默认") "主题中显示橙色。'
+  - name: light25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (标题边框、页脚边框和带边框的列Office"主题) 中为灰色。'
+  - name: light26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (标题边框、页脚边框和Office列的默认") "主题中为黄色。'
+  - name: light27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 5" (标题边框、页脚边框和带边框的列) 默认"Office"主题设置中为浅蓝色。'
+  - name: light28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (默认"Office"主题) 标题边框、页脚边框和带边框的列。'
+  - name: light3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (标题边框和页脚边框Office默认"强调文字颜色"主题) 橙色。'
+  - name: light4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (标题边框和页脚边框Office"主题) 为灰色。'
+  - name: light5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (标题边框和页脚边框Office"主题) 为黄色。'
+  - name: light6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 5" (标题边框和页脚边框的默认"Office"主题) 浅蓝色。'
+  - name: light7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 页眉边框和页脚边框。'
+  - name: light8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 标题边框、页脚边框、第一列边框和带状行中为黑色。'
+  - name: light9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member'
+    package: ExcelScript!
+    summary: 在默认"Office"主题) ，使用页眉边框、页脚边框、第一列边框和带状行，将"强调文字颜色 (1"设置为蓝色。
+  - name: medium1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 填充标题、带状行和页脚边框。'
+  - name: medium10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (默认"Office"主题) 填充标题、带状行和总行边框。'
+  - name: medium11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充标题、带状行和总行边框。'
+  - name: medium12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member'
+    package: ExcelScript!
+    summary: 默认"强调文字颜色 4" (为黄色，Office"主题) 填充标题、带区行和总行边框。
+  - name: medium13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认"Office"主题) 填充标题、带状行和总行边框。'
+  - name: medium14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (默认"Office"主题) 填充标题、带状行和总行边框。'
+  - name: medium15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 填充页眉、填充页脚和底纹正文中为黑色。'
+  - name: medium16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充的页眉、填充的页脚和带底纹的正文。'
+  - name: medium17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (默认"Office"主题) 填充的页眉、填充的页脚和带底纹的正文中显示橙色。'
+  - name: medium18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充的页眉、填充的页脚和底纹正文中为灰色。'
+  - name: medium19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member'
+    package: ExcelScript!
+    summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充的页眉、填充的页脚和带底纹的正文。
+  - name: medium2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充页眉、带状行和页脚边框。'
+  - name: medium20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 5" (填充页眉、填充页脚和底纹正文Office"主题) 浅蓝色。'
+  - name: medium21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充页眉、填充页脚和底纹正文。'
+  - name: medium22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 填充的第一列和底纹正文中为黑色。'
+  - name: medium23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充第一列，带有底纹正文。'
+  - name: medium24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (为默认"Office"主题) 填充第一列，正文为底纹。'
+  - name: medium25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充的第一列和底纹正文中为灰色。'
+  - name: medium26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (为黄色，默认为"Office"主题) 填充的第一列和带底纹的正文。'
+  - name: medium27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 填充第一列，并带有底纹正文。'
+  - name: medium28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充的第一列，带有底纹正文。'
+  - name: medium3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member'
+    package: ExcelScript!
+    summary: '"Accent 2" ("强调文字颜色"主题Office橙色，带有填充标题) 带状行和页脚边框。'
+  - name: medium4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充标题、带状行和页脚边框。'
+  - name: medium5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (默认"Office"主题) 填充标题、带状行和页脚边框。'
+  - name: medium6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 填充页眉、带状行和页脚边框。'
+  - name: medium7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充页眉、带状行和页脚边框。'
+  - name: medium8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member'
+    package: ExcelScript!
+    summary: 默认"Office ("主题) "深色 1"表示黑色，带区行和总行边框。
+  - name: medium9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充标题、带状行和总行边框。'
+  - name: none
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member'
+    package: ExcelScript!
+    summary: 无

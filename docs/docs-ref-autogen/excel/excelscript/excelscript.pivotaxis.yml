@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PivotAxis
-uid: ExcelScript!ExcelScript.PivotAxis:enum
+uid: 'ExcelScript!ExcelScript.PivotAxis:enum'
 package: ExcelScript!
 fullName: ExcelScript.PivotAxis
-summary: 表示要从其获取 PivotItems 的轴。
+summary: 表示从哪个轴获取 PivotItems。
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: column
-  uid: ExcelScript!ExcelScript.PivotAxis.column:member
-  package: ExcelScript!
-  summary: 列轴。
-- name: data
-  uid: ExcelScript!ExcelScript.PivotAxis.data:member
-  package: ExcelScript!
-  summary: 数据轴。
-- name: filter
-  uid: ExcelScript!ExcelScript.PivotAxis.filter:member
-  package: ExcelScript!
-  summary: 筛选轴。
-- name: row
-  uid: ExcelScript!ExcelScript.PivotAxis.row:member
-  package: ExcelScript!
-  summary: 行轴。
-- name: unknown
-  uid: ExcelScript!ExcelScript.PivotAxis.unknown:member
-  package: ExcelScript!
-  summary: 坐标轴或区域未知或不受支持。
-metadata:
-  ms.openlocfilehash: 7d076824c922253177ad28477f105f499431e4d0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412158"
+  - name: column
+    uid: 'ExcelScript!ExcelScript.PivotAxis.column:member'
+    package: ExcelScript!
+    summary: 列轴。
+  - name: data
+    uid: 'ExcelScript!ExcelScript.PivotAxis.data:member'
+    package: ExcelScript!
+    summary: 数据轴。
+  - name: filter
+    uid: 'ExcelScript!ExcelScript.PivotAxis.filter:member'
+    package: ExcelScript!
+    summary: 筛选轴。
+  - name: row
+    uid: 'ExcelScript!ExcelScript.PivotAxis.row:member'
+    package: ExcelScript!
+    summary: 行轴。
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.PivotAxis.unknown:member'
+    package: ExcelScript!
+    summary: 坐标轴或区域未知或不受支持。

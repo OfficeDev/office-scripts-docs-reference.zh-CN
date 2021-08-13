@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ReplaceCriteria
-uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
+uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.ReplaceCriteria
 summary: 表示要使用的替换条件。
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: completeMatch
-  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
-  package: ExcelScript!
-  fullName: completeMatch
-  summary: 指定匹配是需要完成还是部分匹配。 完全匹配匹配单元格的全部内容。 部分匹配匹配单元格内容中的子字符串 (例如，部分 `cat` 匹配和 `caterpillar``scatter`<!-- -->). 默认值为 `false` (部分) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'completeMatch?: boolean;'
-    return:
-      type: boolean
-- name: matchCase
-  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
-  package: ExcelScript!
-  fullName: matchCase
-  summary: 指定匹配是否区分大小写。 默认值 `false` (不区分大小写) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'matchCase?: boolean;'
-    return:
-      type: boolean
-metadata:
-  ms.openlocfilehash: 68dd8e155cf367ff10b8ce7c2fc33bfa1b162a63
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914221"
+  - name: completeMatch
+    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
+    package: ExcelScript!
+    fullName: completeMatch
+    summary: 指定匹配是需要完成还是部分匹配。 完全匹配匹配单元格的全部内容。 部分匹配匹配单元格内容中的子字符串 (，例如部分 `cat` 匹配和 `caterpillar``scatter`<!-- -->). 默认值为 `false` (部分) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
+    package: ExcelScript!
+    fullName: matchCase
+    summary: 指定匹配是否区分大小写。 默认值 `false` (不区分大小写) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean

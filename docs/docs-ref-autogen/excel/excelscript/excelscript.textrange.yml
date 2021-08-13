@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.TextRange
-uid: ExcelScript!ExcelScript.TextRange:interface
+uid: 'ExcelScript!ExcelScript.TextRange:interface'
 package: ExcelScript!
 fullName: ExcelScript.TextRange
 summary: 包含附加到形状上的文本，以及用于操作文本的属性和方法。
@@ -9,73 +9,66 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: 返回 `ShapeFont` 一个对象，该对象代表文本范围的字体属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ShapeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />
-      description: ''
-- name: getSubstring(start, length)
-  uid: ExcelScript!ExcelScript.TextRange#getSubstring:member(1)
-  package: ExcelScript!
-  fullName: getSubstring(start, length)
-  summary: 返回给定区域内子字符串的 TextRange 对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSubstring(start: number, length?: number): TextRange;'
-    parameters:
-    - id: start
-      description: 从文本范围获取的第一个字符的从零开始索引。
-      type: number
-    - id: length
-      description: 可选。 要返回的新文本范围中的字符数。 如果省略 length，将返回文字范围最后一段的开头到结尾的所有字符。
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TextRange:interface" />
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.TextRange#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: 表示文本范围的纯文本内容。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.TextRange#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: 表示文本范围的纯文本内容。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 330faf3cabf13b2c07016407ca922173c1e66519
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913316"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 返回 `ShapeFont` 一个对象，该对象代表文本范围的字体属性。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ShapeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFont:interface" />'
+        description: ''
+  - name: 'getSubstring(start, length)'
+    uid: 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
+    package: ExcelScript!
+    fullName: 'getSubstring(start, length)'
+    summary: 返回给定区域内子字符串的 TextRange 对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSubstring(start: number, length?: number): TextRange;'
+      parameters:
+        - id: start
+          description: 从文本范围获取的第一个字符的从零开始索引。
+          type: number
+        - id: length
+          description: 可选。 要返回的新文本范围中的字符数。 如果省略 length，将返回文字范围最后一段的开头到结尾的所有字符。
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TextRange:interface" />'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: 表示文本范围的纯文本内容。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: 表示文本范围的纯文本内容。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

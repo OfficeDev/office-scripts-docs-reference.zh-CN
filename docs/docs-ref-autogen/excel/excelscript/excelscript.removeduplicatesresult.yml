@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RemoveDuplicatesResult
-uid: ExcelScript!ExcelScript.RemoveDuplicatesResult:interface
+uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
 package: ExcelScript!
 fullName: ExcelScript.RemoveDuplicatesResult
 summary: 表示结果 `Range.removeDuplicates`<!-- -->.
@@ -9,36 +9,29 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getRemoved()
-  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)
-  package: ExcelScript!
-  fullName: getRemoved()
-  summary: 由操作删除的重复行数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRemoved(): number;'
-    return:
-      type: number
-      description: ''
-- name: getUniqueRemaining()
-  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)
-  package: ExcelScript!
-  fullName: getUniqueRemaining()
-  summary: 所生成的区域中存在的剩余唯一行数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUniqueRemaining(): number;'
-    return:
-      type: number
-      description: ''
-metadata:
-  ms.openlocfilehash: 5dd7c6cccc896294adf24064d3525b745a731725
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913410"
+  - name: getRemoved()
+    uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
+    package: ExcelScript!
+    fullName: getRemoved()
+    summary: 由操作删除的重复行数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRemoved(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getUniqueRemaining()
+    uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
+    package: ExcelScript!
+    fullName: getUniqueRemaining()
+    summary: 所生成的区域中存在的剩余唯一行数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUniqueRemaining(): number;'
+      return:
+        type: number
+        description: ''

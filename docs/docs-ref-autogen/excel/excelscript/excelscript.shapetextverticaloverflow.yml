@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextVerticalOverflow
-uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextVerticalOverflow
 summary: 指定形状中文本框的垂直溢出。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: clip
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member
-  package: ExcelScript!
-  summary: 隐藏垂直方向溢出文本框的文本。
-- name: ellipsis
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member
-  package: ExcelScript!
-  summary: 隐藏垂直方向溢出文本框的文本，并在可见文本的最后添加省略号 (...)。
-- name: overflow
-  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member
-  package: ExcelScript!
-  summary: 允许文本在垂直方向溢出文本框（根据文本对齐方式，可从上溢出、自下溢出，或者上下溢出）。
-metadata:
-  ms.openlocfilehash: 11a5caa2c4b41de28d80f7ffb202c8c783478acc
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913382"
+  - name: clip
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    package: ExcelScript!
+    summary: 隐藏垂直方向溢出文本框的文本。
+  - name: ellipsis
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    package: ExcelScript!
+    summary: 隐藏垂直方向溢出文本框的文本，并在可见文本的最后添加省略号 (...)。
+  - name: overflow
+    uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    package: ExcelScript!
+    summary: 允许文本在垂直方向溢出文本框（根据文本对齐方式，可从上溢出、自下溢出，或者上下溢出）。

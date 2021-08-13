@@ -1,57 +1,74 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DataValidationType
-uid: ExcelScript!ExcelScript.DataValidationType:enum
+uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationType
 summary: 表示数据有效性类型枚举。
-remarks: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample reads and logs the data validation type of the currently selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently selected range.\n  let range = workbook.getSelectedRange();\n\n  // Get the type (`DataValidationType`) of data validation applied to the range.\n  let validationType = range.getDataValidation().getType();\n\n  /*\n   * Log the data validation type.\n   * If the range has a single value, it logs that type.\n   * If the range doesn't have data validation applied, it logs \"None\".\n   * If the range has multiple different types of data validation, it logs \"Inconsistent\" or \"MixedCriteria\".\n   */\n  console.log(validationType.toString());\n}\n```"
+remarks: |-
+
+
+  #### <a name="examples"></a>示例
+
+  ```TypeScript
+  /**
+   * This sample reads and logs the data validation type of the currently selected range.
+   */
+  function main(workbook: ExcelScript.Workbook) {
+    // Get the currently selected range.
+    let range = workbook.getSelectedRange();
+
+    // Get the type (`DataValidationType`) of data validation applied to the range.
+    let validationType = range.getDataValidation().getType();
+
+    /*
+     * Log the data validation type.
+     * If the range has a single value, it logs that type.
+     * If the range doesn't have data validation applied, it logs "None".
+     * If the range has multiple different types of data validation, it logs "Inconsistent" or "MixedCriteria".
+     */
+    console.log(validationType.toString());
+  }
+  ```
 isPreview: false
 isDeprecated: false
 fields:
-- name: custom
-  uid: ExcelScript!ExcelScript.DataValidationType.custom:member
-  package: ExcelScript!
-  summary: 自定义数据验证类型。
-- name: date
-  uid: ExcelScript!ExcelScript.DataValidationType.date:member
-  package: ExcelScript!
-  summary: 日期数据验证类型。
-- name: decimal
-  uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
-  package: ExcelScript!
-  summary: 小数数据有效性类型。
-- name: inconsistent
-  uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
-  package: ExcelScript!
-  summary: 不一致意味着区域具有不一致的数据验证，这表示不同单元格存在不同的规则。
-- name: list
-  uid: ExcelScript!ExcelScript.DataValidationType.list:member
-  package: ExcelScript!
-  summary: 列表数据验证类型。
-- name: mixedCriteria
-  uid: ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member
-  package: ExcelScript!
-  summary: 混合条件意味着区域对部分（但不是所有）单元格存在数据验证。
-- name: none
-  uid: ExcelScript!ExcelScript.DataValidationType.none:member
-  package: ExcelScript!
-  summary: None 表示允许任何值，指示范围中没有数据验证。
-- name: textLength
-  uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
-  package: ExcelScript!
-  summary: 文本长度数据验证类型。
-- name: time
-  uid: ExcelScript!ExcelScript.DataValidationType.time:member
-  package: ExcelScript!
-  summary: 时间数据验证类型。
-- name: wholeNumber
-  uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
-  package: ExcelScript!
-  summary: 整个数字数据验证类型。
-metadata:
-  ms.openlocfilehash: 9b0bb4199eff15b3613be84d248341a5484a2bd8
-  ms.sourcegitcommit: 0b4ded26cbb2aa6e90e05b3e0af88b67da159021
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/15/2021
-  ms.locfileid: "53451598"
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.DataValidationType.custom:member'
+    package: ExcelScript!
+    summary: 自定义数据验证类型。
+  - name: date
+    uid: 'ExcelScript!ExcelScript.DataValidationType.date:member'
+    package: ExcelScript!
+    summary: 日期数据验证类型。
+  - name: decimal
+    uid: 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
+    package: ExcelScript!
+    summary: 小数数据有效性类型。
+  - name: inconsistent
+    uid: 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
+    package: ExcelScript!
+    summary: 不一致意味着区域具有不一致的数据验证，这表示不同单元格存在不同的规则。
+  - name: list
+    uid: 'ExcelScript!ExcelScript.DataValidationType.list:member'
+    package: ExcelScript!
+    summary: 列表数据验证类型。
+  - name: mixedCriteria
+    uid: 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
+    package: ExcelScript!
+    summary: 混合条件意味着区域对部分（但不是所有）单元格存在数据验证。
+  - name: none
+    uid: 'ExcelScript!ExcelScript.DataValidationType.none:member'
+    package: ExcelScript!
+    summary: None 表示允许任何值，指示范围中没有数据验证。
+  - name: textLength
+    uid: 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
+    package: ExcelScript!
+    summary: 文本长度数据验证类型。
+  - name: time
+    uid: 'ExcelScript!ExcelScript.DataValidationType.time:member'
+    package: ExcelScript!
+    summary: 时间数据验证类型。
+  - name: wholeNumber
+    uid: 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
+    package: ExcelScript!
+    summary: 整个数字数据验证类型。

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SlicerSortType
-uid: ExcelScript!ExcelScript.SlicerSortType:enum
+uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SlicerSortType
 summary: 指定切片器排序行为 `Slicer.sortBy`<!-- -->.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: ascending
-  uid: ExcelScript!ExcelScript.SlicerSortType.ascending:member
-  package: ExcelScript!
-  summary: 按项目标题按升序对切片器项进行排序。
-- name: dataSourceOrder
-  uid: ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member
-  package: ExcelScript!
-  summary: 按数据源提供的顺序对切片器项进行排序。
-- name: descending
-  uid: ExcelScript!ExcelScript.SlicerSortType.descending:member
-  package: ExcelScript!
-  summary: 按项目标题按降序对切片器项进行排序。
-metadata:
-  ms.openlocfilehash: db45ddcb1ff4913f4f4d76e9303660517f95a4a4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606002"
+  - name: ascending
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+    package: ExcelScript!
+    summary: 按项目标题按升序对切片器项进行排序。
+  - name: dataSourceOrder
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+    package: ExcelScript!
+    summary: 按数据源提供的顺序对切片器项进行排序。
+  - name: descending
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+    package: ExcelScript!
+    summary: 按项目标题按降序对切片器项进行排序。

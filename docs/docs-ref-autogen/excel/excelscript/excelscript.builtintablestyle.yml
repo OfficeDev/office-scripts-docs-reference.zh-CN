@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.BuiltInTableStyle
-uid: ExcelScript!ExcelScript.BuiltInTableStyle:enum
+uid: 'ExcelScript!ExcelScript.BuiltInTableStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.BuiltInTableStyle
 summary: 代表内置表格样式。
@@ -8,250 +8,243 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: dark1
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark1:member
-  package: ExcelScript!
-  summary: "\"深 1\" (默认\"Office\"主题) 填充标题、带状行和深色。"
-- name: dark10
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark10:member
-  package: ExcelScript!
-  summary: 黄色，填充页眉，带状行，浅色
-- name: dark11
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark11:member
-  package: ExcelScript!
-  summary: 绿色，填充页眉，带状行，浅色
-- name: dark2
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark2:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题、带区行和深色。"
-- name: dark3
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark3:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (\"强调文字颜色\"主题Office为橙色，) 填充标题、带区行和深色。"
-- name: dark4
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark4:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (为默认\"Office\"主题) 填充标题、带区行和深色。"
-- name: dark5
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark5:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充标题、带区行和深色。
-- name: dark6
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark6:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充标题、带区行和深色。"
-- name: dark7
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark7:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充标题、带状行和深色。"
-- name: dark8
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark8:member
-  package: ExcelScript!
-  summary: 黑色，填充标题，带状行，浅色
-- name: dark9
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark9:member
-  package: ExcelScript!
-  summary: 橙色，填充标题，带状行，浅色
-- name: light1
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light1:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (标题边框和底部边框Office\"主题) 黑色。"
-- name: light10
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light10:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (默认\"Office\"主题) 填充标题、外边框和行边框中为橙色。"
-- name: light11
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light11:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 填充标题、外边框和行边框中为灰色。"
-- name: light12
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light12:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (默认\"Office\"主题) 填充标题、外边框和行边框。"
-- name: light13
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light13:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充标题、外边框和行边框。"
-- name: light14
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light14:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充标题、外边框和行边框。"
-- name: light15
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light15:member
-  package: ExcelScript!
-  summary: "\"深 1\" (单元格边框的默认\"Office\"主题) 黑色。"
-- name: light16
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light16:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (单元格边框的默认\"Office\"主题) 蓝色。"
-- name: light17
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light17:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (单元格边框的默认\"Office\"主题) 橙色。"
-- name: light18
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light18:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (单元格边框的默认\"Office\"主题) 灰色。"
-- name: light19
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light19:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (单元格边框的默认\"Office\"主题) 为黄色。"
-- name: light2
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light2:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (标题边框和底部边框的默认\"Office\"主题) 为蓝色。"
-- name: light20
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light20:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 5\" (单元格边框的默认\"Office\"主题) 浅蓝色。"
-- name: light21
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light21:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (单元格边框的默认\"Office\"主题) 绿色。"
-- name: light3
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light3:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (标题边框和底部边框Office\"主题) 橙色。"
-- name: light4
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light4:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (标题边框和下边框Office\"主题) 为灰色。"
-- name: light5
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light5:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (标题边框和下边框的默认\"Office\"主题) 为黄色。"
-- name: light6
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light6:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 5\" (标题边框和底部边框的默认\"Office\"主题) 浅蓝色。"
-- name: light7
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light7:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (标题边框和底部边框的默认\"Office\"主题) 绿色。"
-- name: light8
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light8:member
-  package: ExcelScript!
-  summary: "\"深色 1\" (默认\"Office\"主题) 填充标题、外边框和行边框中为黑色。"
-- name: light9
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light9:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题、外边框和行边框。"
-- name: medium1
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium1:member
-  package: ExcelScript!
-  summary: 在默认"Office"主题) 填充标题、带区行、外边框和行边框的"深色 (1"主题中为黑色。
-- name: medium10
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium10:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (使用填充标题和带状行Office\"主题) 橙色。"
-- name: medium11
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium11:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 3" (Office"主题"中为灰色) 填充标题) 带状行。
-- name: medium12
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium12:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充标题和带状行。
-- name: medium13
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium13:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充标题和带状行。"
-- name: medium14
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium14:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充标题和带状行。"
-- name: medium15
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium15:member
-  package: ExcelScript!
-  summary: "\"深 1\" (\"深色\"主题Office\"主题) 填充标题、带状行和单元格边框。"
-- name: medium16
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium16:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题、带状行和单元格边框。"
-- name: medium17
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium17:member
-  package: ExcelScript!
-  summary: "\"Accent 2\" (使用填充标题、带区行和单元格边框Office\"主题) 橙色。"
-- name: medium18
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium18:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 填充标题、带状行和单元格边框。"
-- name: medium19
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium19:member
-  package: ExcelScript!
-  summary: "\"Accent 4\" (默认\"Office\"主题) 填充标题、带状行和单元格边框。"
-- name: medium2
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium2:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题、带状行、外边框和行边框。"
-- name: medium20
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium20:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 填充标题、带区行和单元格边框。"
-- name: medium21
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium21:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 填充标题、带状行和单元格边框。"
-- name: medium22
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium22:member
-  package: ExcelScript!
-  summary: "\"深 1\" (带带行和单元格边框的默认\"Office\"主题) 黑色。"
-- name: medium23
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium23:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (带带行和单元格边框的默认\"Office\"主题) 蓝色。"
-- name: medium24
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium24:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (Office带带行和单元格边框) 默认\"强调文字颜色\"主题) 橙色。"
-- name: medium25
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium25:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (带条行和单元格边框) 默认\"Office\"主题设置中显示为灰色。"
-- name: medium26
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium26:member
-  package: ExcelScript!
-  summary: 默认"强调文字颜色 4" ("Office"主题) 带状行和单元格边框。。
-- name: medium27
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium27:member
-  package: ExcelScript!
-  summary: "\"Accent 5\" (浅蓝色，默认为\"Office\"主题) 带状行和单元格边框。"
-- name: medium28
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium28:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (为绿色，默认为\"Office\"主题) 带状行和单元格边框。"
-- name: medium3
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium3:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 2\" (默认\"Office\"主题) 填充标题、带区行、外边框和行边框的橙色。"
-- name: medium4
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium4:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 3\" (默认\"Office\"主题) 填充标题、带状行、外边框和行边框。"
-- name: medium5
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium5:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 4\" (默认\"Office\"主题) 填充标题、带区行、外边框和行边框。"
-- name: medium6
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium6:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 5\" (默认\"Office\"主题) 填充标题、带区行、外边框和行边框，浅蓝色。"
-- name: medium7
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium7:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 6\" (默认\"Office\"主题) 填充标题、带状行、外边框和行边框。"
-- name: medium8
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium8:member
-  package: ExcelScript!
-  summary: 默认"深色 1" ("深色"主题Office填充标题) 带状行"中为黑色。
-- name: medium9
-  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium9:member
-  package: ExcelScript!
-  summary: "\"强调文字颜色 1\" (为蓝色，默认为\"Office\"主题) 填充标题和带状行。"
-metadata:
-  ms.openlocfilehash: d428840052f4b23e8ceea563919a342cb39ef8ab
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068228"
+  - name: dark1
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark1:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 填充标题、带区行和深色。'
+  - name: dark10
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark10:member'
+    package: ExcelScript!
+    summary: 黄色，填充页眉，带状行，浅色
+  - name: dark11
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark11:member'
+    package: ExcelScript!
+    summary: 绿色，填充页眉，带状行，浅色
+  - name: dark2
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark2:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充标题、带区行和深色。'
+  - name: dark3
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark3:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (为默认"Office"主题) 填充标题、带区行和深色。'
+  - name: dark4
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark4:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"强调文字Office"主题) 填充标题、带区行和深色。'
+  - name: dark5
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark5:member'
+    package: ExcelScript!
+    summary: 默认"强调文字颜色 4" (为黄色，Office"主题) 填充标题、带区行和深色。
+  - name: dark6
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark6:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 填充标题、带区行和深色。'
+  - name: dark7
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark7:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充标题、带状行和深色。'
+  - name: dark8
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark8:member'
+    package: ExcelScript!
+    summary: 黑色，填充标题，带状行，浅色
+  - name: dark9
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.dark9:member'
+    package: ExcelScript!
+    summary: 橙色，填充标题，带区行，浅色
+  - name: light1
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light1:member'
+    package: ExcelScript!
+    summary: '"深色 1" (标题边框和下边框Office"主题) 黑色。'
+  - name: light10
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light10:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (为默认"Office"主题) 填充标题、外边框和行边框。'
+  - name: light11
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light11:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充标题、外边框和行边框。'
+  - name: light12
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light12:member'
+    package: ExcelScript!
+    summary: 默认"强调文字颜色 4" (为黄色，"Office"主题) 填充标题、外边框和行边框。
+  - name: light13
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light13:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 5" (浅蓝色，默认为"Office"主题) 填充标题、外边框和行边框。'
+  - name: light14
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light14:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充标题、外边框和行边框。'
+  - name: light15
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light15:member'
+    package: ExcelScript!
+    summary: '"深 1" (单元格边框的默认"Office"主题) 黑色。'
+  - name: light16
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light16:member'
+    package: ExcelScript!
+    summary: 使用单元格边框 ("Office"主题) "强调文字颜色 1"为蓝色。
+  - name: light17
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light17:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (单元格边框的默认"Office"主题) 橙色。'
+  - name: light18
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light18:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (单元格边框的默认"Office") 中显示为灰色。'
+  - name: light19
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light19:member'
+    package: ExcelScript!
+    summary: 使用单元格边框 (默认"Office"主题) "强调文字颜色 4"。
+  - name: light2
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light2:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (标题边框和下边框的默认"Office"主题) 为蓝色。'
+  - name: light20
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light20:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 5" (单元格边框的默认"Office"主题) 浅蓝色。'
+  - name: light21
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light21:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (单元格边框的默认"Office"主题) 绿色。'
+  - name: light3
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light3:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (标题边框和底部边框Office"主题) 橙色。'
+  - name: light4
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light4:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (标题边框和下边框Office"主题) 中为灰色。'
+  - name: light5
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light5:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (标题边框和下边框Office"主题) 为黄色。'
+  - name: light6
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light6:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 5" (标题边框和底部边框的默认"Office"主题) 浅蓝色。'
+  - name: light7
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light7:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (标题边框和底部边框的默认"Office"主题) 绿色。'
+  - name: light8
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light8:member'
+    package: ExcelScript!
+    summary: '"深色 1" (默认"Office"主题) 填充标题、外边框和行边框中为黑色。'
+  - name: light9
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.light9:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充标题、外边框和行边框。'
+  - name: medium1
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium1:member'
+    package: ExcelScript!
+    summary: '"深色 1" ("Office"主题) 填充标题、带区行、外边框和行边框中为黑色。'
+  - name: medium10
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium10:member'
+    package: ExcelScript!
+    summary: '"Accent 2" (使用填充标题和带状行Office"主题) 橙色。'
+  - name: medium11
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium11:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (使用填充标题和带状行Office"主题) 灰色。'
+  - name: medium12
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium12:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (为黄色，默认为"Office"主题) 填充标题和带状行。'
+  - name: medium13
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium13:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 填充标题和带状行。'
+  - name: medium14
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium14:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充标题和带状行。'
+  - name: medium15
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium15:member'
+    package: ExcelScript!
+    summary: 在默认"Office ("主题) 填充标题、带状行和单元格边框时，"深色 1"表示黑色。
+  - name: medium16
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium16:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充标题、带状行和单元格边框。'
+  - name: medium17
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium17:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (默认"Office"主题) 填充标题、带状行和单元格边框的橙色。'
+  - name: medium18
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium18:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充标题、带状行和单元格边框。'
+  - name: medium19
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium19:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (为黄色，默认为"Office"主题) 填充标题、带状行和单元格边框。'
+  - name: medium2
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium2:member'
+    package: ExcelScript!
+    summary: 在默认"Office ("主题) 填充标题、带区行、外边框和行边框，"强调文字颜色 1"为蓝色。
+  - name: medium20
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium20:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 填充标题、带区行和单元格边框。'
+  - name: medium21
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium21:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 填充标题、带状行和单元格边框。'
+  - name: medium22
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium22:member'
+    package: ExcelScript!
+    summary: '"深 1" (带带行和单元格边框的默认"Office"主题) 黑色。'
+  - name: medium23
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium23:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (Office带条行和单元格边框) 默认"强调文字颜色"主题) 蓝色。'
+  - name: medium24
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium24:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (带带行和单元格边框的默认"Office"主题) 橙色。'
+  - name: medium25
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium25:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (带条的行和单元格边框Office默认"强调文字颜色"主题) 灰色。'
+  - name: medium26
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium26:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 4" (默认"Office"主题) 带状行和单元格边框。。'
+  - name: medium27
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium27:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 带状行和单元格边框。'
+  - name: medium28
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium28:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (为绿色，默认为"Office"主题) 带状行和单元格边框。'
+  - name: medium3
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium3:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 2" (默认"Office"主题) 填充标题、带区行、外边框和行边框的橙色。'
+  - name: medium4
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium4:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 3" (默认"Office"主题) 填充标题、带状行、外边框和行边框。'
+  - name: medium5
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium5:member'
+    package: ExcelScript!
+    summary: 在默认"Office"主题 ("强调文字颜色"中) "强调文字颜色 4"，带有填充标题、带状行、外边框和行边框。
+  - name: medium6
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium6:member'
+    package: ExcelScript!
+    summary: '"Accent 5" (浅蓝色，默认为"Office"主题) 填充标题、带区行、外边框和行边框。'
+  - name: medium7
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium7:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 6" (默认"Office"主题) 填充标题、带状行、外边框和行边框。'
+  - name: medium8
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium8:member'
+    package: ExcelScript!
+    summary: 默认"深色 1" ("深色"主题Office填充标题) 带状行"中为黑色。
+  - name: medium9
+    uid: 'ExcelScript!ExcelScript.BuiltInTableStyle.medium9:member'
+    package: ExcelScript!
+    summary: '"强调文字颜色 1" (为蓝色，默认为"Office"主题) 填充标题和带状行。'

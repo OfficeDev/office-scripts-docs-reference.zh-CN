@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.TopBottomSelectionType
-uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
 package: ExcelScript!
 fullName: ExcelScript.TopBottomSelectionType
 summary: 用于顶部/底部筛选器的简单枚举，用于选择是按顶部的 N% 还是底部 N%、数字或值的总和进行筛选。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: items
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
-  package: ExcelScript!
-  summary: 按所选值度量筛选上/下 N 个项目数。
-- name: percent
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
-  package: ExcelScript!
-  summary: 按所选值度量筛选项的上/下 N%。
-- name: sum
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
-  package: ExcelScript!
-  summary: 按所选值度量筛选上/下 N 个和。
-metadata:
-  ms.openlocfilehash: c58781b98eee7b27807577f9f00af54e048877a9
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914668"
+  - name: items
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    package: ExcelScript!
+    summary: 按所选值度量筛选上/下 N 个项目数。
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    package: ExcelScript!
+    summary: 按所选值度量筛选项的上/下 N%。
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    package: ExcelScript!
+    summary: 按所选值度量筛选上/下 N 个和。

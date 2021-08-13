@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.TimelineStyle
-uid: ExcelScript!ExcelScript.TimelineStyle:interface
+uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
 package: ExcelScript!
 fullName: ExcelScript.TimelineStyle
 summary: 表示 `TimelineStyle`<!-- -->，它按时间线中的区域定义样式元素。
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.TimelineStyle#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: 删除表格样式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate()
-  uid: ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate()
-  summary: 使用所有样式元素的副本创建此时间线样式的副本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(): TimelineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.TimelineStyle#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: 获取日程表样式的名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getReadOnly()
-  uid: ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)
-  package: ExcelScript!
-  fullName: getReadOnly()
-  summary: 指定此 `TimelineStyle` 对象是否只读。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReadOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.TimelineStyle#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: 获取日程表样式的名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 11b929c9721ee10674ea4cb0ab1797c3420d8e5f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914696"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: 删除表格样式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate()
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate()
+    summary: 使用所有样式元素的副本创建此时间线样式的副本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(): TimelineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: 获取日程表样式的名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getReadOnly()
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
+    package: ExcelScript!
+    fullName: getReadOnly()
+    summary: 指定此 `TimelineStyle` 对象是否只读。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: 获取日程表样式的名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

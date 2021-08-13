@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeLineStyle
-uid: ExcelScript!ExcelScript.ShapeLineStyle:enum
+uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineStyle
 summary: 线条的样式。
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: single
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.single:member
-  package: ExcelScript!
-  summary: 单线。
-- name: thickBetweenThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member
-  package: ExcelScript!
-  summary: 粗线每一侧各带一条细线。
-- name: thickThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member
-  package: ExcelScript!
-  summary: 粗线位于细线旁边。 对于水平线，粗线位于细线上方。 对于垂直线，粗线位于细线左侧。
-- name: thinThick
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member
-  package: ExcelScript!
-  summary: 粗线位于细线旁边。 对于水平线，粗线位于细线下方。 对于垂直线，粗线位于细线右侧。
-- name: thinThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member
-  package: ExcelScript!
-  summary: 双细线。
-metadata:
-  ms.openlocfilehash: 05c9927a86ac3301390897d4f09c15ccdb49606a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913396"
+  - name: single
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
+    package: ExcelScript!
+    summary: 单线。
+  - name: thickBetweenThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+    package: ExcelScript!
+    summary: 粗线每一侧各带一条细线。
+  - name: thickThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
+    package: ExcelScript!
+    summary: 粗线位于细线旁边。 对于水平线，粗线位于细线上方。 对于垂直线，粗线位于细线左侧。
+  - name: thinThick
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
+    package: ExcelScript!
+    summary: 粗线位于细线旁边。 对于水平线，粗线位于细线下方。 对于垂直线，粗线位于细线右侧。
+  - name: thinThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
+    package: ExcelScript!
+    summary: 双细线。

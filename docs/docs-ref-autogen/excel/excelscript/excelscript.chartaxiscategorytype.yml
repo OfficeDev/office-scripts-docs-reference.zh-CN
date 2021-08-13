@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisCategoryType
-uid: ExcelScript!ExcelScript.ChartAxisCategoryType:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisCategoryType
 summary: 指定分类轴的类型。
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member
-  package: ExcelScript!
-  summary: Excel 控制轴类型。
-- name: dateAxis
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member
-  package: ExcelScript!
-  summary: 轴按时间刻度组合数据。
-- name: textAxis
-  uid: ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member
-  package: ExcelScript!
-  summary: 轴按一组任意类别组合数据。
-metadata:
-  ms.openlocfilehash: b9018475b15766a4fcf66dad2be5353812923ef5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420102"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+    package: ExcelScript!
+    summary: Excel 控制轴类型。
+  - name: dateAxis
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+    package: ExcelScript!
+    summary: 轴按时间刻度组合数据。
+  - name: textAxis
+    uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+    package: ExcelScript!
+    summary: 轴按一组任意类别组合数据。

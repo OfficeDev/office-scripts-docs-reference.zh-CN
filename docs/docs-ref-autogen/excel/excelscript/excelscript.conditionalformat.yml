@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalFormat
-uid: ExcelScript!ExcelScript.ConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormat
 summary: 封装条件格式的范围、格式、规则和其他属性的对象。
@@ -9,239 +9,232 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: 删除此条件格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getCellValue()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)
-  package: ExcelScript!
-  fullName: getCellValue()
-  summary: 如果当前条件格式为类型，则返回单元格值条件格式 `CellValue` 属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCellValue(): CellValueConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CellValueConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getColorScale()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
-  package: ExcelScript!
-  fullName: getColorScale()
-  summary: 如果当前条件格式为类型，则返回色标条件格式 `ColorScale` 属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getCustom()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)
-  package: ExcelScript!
-  fullName: getCustom()
-  summary: 如果当前的条件格式是自定义类型，则返回自定义条件格式属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCustom(): CustomConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CustomConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getDataBar()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)
-  package: ExcelScript!
-  fullName: getDataBar()
-  summary: 如果当前的条件格式是数据栏，则返回数据栏属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDataBar(): DataBarConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataBarConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getIconSet()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
-  package: ExcelScript!
-  fullName: getIconSet()
-  summary: 如果当前条件格式是类型，则返回图标集条件格式 `IconSet` 属性。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIconSet(): IconSetConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.IconSetConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: 当前条件格式的优先级 `ConditionalFormatCollection`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPreset()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)
-  package: ExcelScript!
-  fullName: getPreset()
-  summary: 返回预设条件条件格式。 有关详细信息，请参阅 `ExcelScript.PresetCriteriaConditionalFormat`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPreset(): PresetCriteriaConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getPriority()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
-  package: ExcelScript!
-  fullName: getPriority()
-  summary: 优先级 (索引) 当前存在此条件格式的条件格式集合中。 更改此顺序也会更改其他条件格式的优先级，以允许连续的优先级顺序。 使用负优先级从后开始。 如果优先级为负，则大于边界的优先级 (设置为最大值或) 最小值。 另请注意，如果更改优先级，如果要进一步更改对象，必须重新获取位于该新优先级位置的新对象副本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPriority(): number;'
-    return:
-      type: number
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: 返回应用了二元格式的范围。 如果条件格式应用于多个区域，则此函数将返回其属性设置为 `isNullObject``true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRanges()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)
-  package: ExcelScript!
-  fullName: getRanges()
-  summary: 返回 `RangeAreas`<!-- -->，包含应用了条件格式的一个或多个矩形区域。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRanges(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
-- name: getStopIfTrue()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
-  package: ExcelScript!
-  fullName: getStopIfTrue()
-  summary: 如果满足此条件格式的条件，则不会有任何低优先级格式应在此单元格上生效。 值 `null` 位于数据条、图标集和色阶上，因为不存在这些 `StopIfTrue` 概念。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStopIfTrue(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getTextComparison()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)
-  package: ExcelScript!
-  fullName: getTextComparison()
-  summary: 如果当前条件格式是文本类型，则返回特定的文本条件格式属性。 例如，设置与单词"Text"匹配的单元格的格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextComparison(): TextConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TextConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getTopBottom()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
-  package: ExcelScript!
-  fullName: getTopBottom()
-  summary: 如果当前条件格式是类型，则返回顶部/底部条件格式 `TopBottom` 属性。 例如，设置前 10% 或后 10 项的格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTopBottom(): TopBottomConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TopBottomConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: 条件格式的类型。 一次只能设置一个。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): ConditionalFormatType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
-      description: ''
-- name: setPriority(priority)
-  uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
-  package: ExcelScript!
-  fullName: setPriority(priority)
-  summary: 优先级 (索引) 当前存在此条件格式的条件格式集合中。 更改此顺序也会更改其他条件格式的优先级，以允许连续的优先级顺序。 使用负优先级从后开始。 如果优先级为负，则大于边界的优先级 (设置为最大值或) 最小值。 另请注意，如果更改优先级，如果要进一步更改对象，必须重新获取位于该新优先级位置的新对象副本。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPriority(priority: number): void;'
-    parameters:
-    - id: priority
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setStopIfTrue(stopIfTrue)
-  uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
-  package: ExcelScript!
-  fullName: setStopIfTrue(stopIfTrue)
-  summary: 如果满足此条件格式的条件，则不会有任何低优先级格式应在此单元格上生效。 值 `null` 位于数据条、图标集和色阶上，因为不存在这些 `StopIfTrue` 概念。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStopIfTrue(stopIfTrue: boolean): void;'
-    parameters:
-    - id: stopIfTrue
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 5cd0ead34677a84a4b10e36b1eafab34eef4739c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913835"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: 删除此条件格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getCellValue()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)'
+    package: ExcelScript!
+    fullName: getCellValue()
+    summary: 如果当前条件格式为类型，则返回单元格值条件格式 `CellValue` 属性。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCellValue(): CellValueConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CellValueConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getColorScale()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)'
+    package: ExcelScript!
+    fullName: getColorScale()
+    summary: 如果当前条件格式为类型，则返回色标条件格式 `ColorScale` 属性。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getCustom()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)'
+    package: ExcelScript!
+    fullName: getCustom()
+    summary: 如果当前的条件格式是自定义类型，则返回自定义条件格式属性。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCustom(): CustomConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CustomConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getDataBar()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)'
+    package: ExcelScript!
+    fullName: getDataBar()
+    summary: 如果当前的条件格式是数据栏，则返回数据栏属性。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDataBar(): DataBarConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataBarConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getIconSet()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)'
+    package: ExcelScript!
+    fullName: getIconSet()
+    summary: 如果当前条件格式是类型，则返回图标集条件格式 `IconSet` 属性。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIconSet(): IconSetConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.IconSetConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 当前条件格式的优先级 `ConditionalFormatCollection`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPreset()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
+    package: ExcelScript!
+    fullName: getPreset()
+    summary: 返回预设条件条件格式。 有关详细信息，请参阅 `ExcelScript.PresetCriteriaConditionalFormat`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPreset(): PresetCriteriaConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getPriority()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)'
+    package: ExcelScript!
+    fullName: getPriority()
+    summary: 优先级 (索引) 当前存在此条件格式的条件格式集合中。 更改此顺序也会更改其他条件格式的优先级，以允许连续的优先级顺序。 使用负优先级从后开始。 如果优先级为负，则大于边界的优先级将 (或最小值) 最大值。 另请注意，如果更改优先级，如果要进一步更改对象，必须重新获取位于该新优先级位置的新对象副本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPriority(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: 返回应用了二元格式的范围。 如果条件格式应用于多个区域，则此函数将返回其属性设置为 `isNullObject``true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRanges()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)'
+    package: ExcelScript!
+    fullName: getRanges()
+    summary: 返回 `RangeAreas`<!-- -->，包含应用了条件格式的一个或多个矩形区域。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRanges(): RangeAreas;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: ''
+  - name: getStopIfTrue()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)'
+    package: ExcelScript!
+    fullName: getStopIfTrue()
+    summary: 如果满足此条件格式的条件，则不会有任何低优先级格式应在此单元格上生效。 值 `null` 位于数据条、图标集和色阶上，因为不存在这些 `StopIfTrue` 概念。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStopIfTrue(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getTextComparison()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)'
+    package: ExcelScript!
+    fullName: getTextComparison()
+    summary: 如果当前条件格式是文本类型，则返回特定的文本条件格式属性。 例如，设置与单词"Text"匹配的单元格的格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextComparison(): TextConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TextConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getTopBottom()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)'
+    package: ExcelScript!
+    fullName: getTopBottom()
+    summary: 如果当前条件格式是类型，则返回顶部/底部条件格式 `TopBottom` 属性。 例如，设置前 10% 或后 10 项的格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTopBottom(): TopBottomConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TopBottomConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: 条件格式的类型。 一次只能设置一个。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): ConditionalFormatType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />'
+        description: ''
+  - name: setPriority(priority)
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)'
+    package: ExcelScript!
+    fullName: setPriority(priority)
+    summary: 优先级 (索引) 当前存在此条件格式的条件格式集合中。 更改此顺序也会更改其他条件格式的优先级，以允许连续的优先级顺序。 使用负优先级从后开始。 如果优先级为负，则大于边界的优先级将 (或最小值) 最大值。 另请注意，如果更改优先级，如果要进一步更改对象，必须重新获取位于该新优先级位置的新对象副本。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPriority(priority: number): void;'
+      parameters:
+        - id: priority
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setStopIfTrue(stopIfTrue)
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)'
+    package: ExcelScript!
+    fullName: setStopIfTrue(stopIfTrue)
+    summary: 如果满足此条件格式的条件，则不会有任何低优先级格式应在此单元格上生效。 值 `null` 位于数据条、图标集和色阶上，因为不存在这些 `StopIfTrue` 概念。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStopIfTrue(stopIfTrue: boolean): void;'
+      parameters:
+        - id: stopIfTrue
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

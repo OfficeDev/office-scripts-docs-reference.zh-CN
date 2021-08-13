@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationType
-uid: ExcelScript!ExcelScript.CalculationType:enum
+uid: 'ExcelScript!ExcelScript.CalculationType:enum'
 package: ExcelScript!
 fullName: ExcelScript.CalculationType
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: full
-  uid: ExcelScript!ExcelScript.CalculationType.full:member
-  package: ExcelScript!
-  summary: ：这会将所有单元格都标记为脏，然后重新计算所有单元格。
-- name: fullRebuild
-  uid: ExcelScript!ExcelScript.CalculationType.fullRebuild:member
-  package: ExcelScript!
-  summary: 这将重新构建完整的依赖关系链，将所有单元格标记为脏单元格，然后重新计算它们。
-- name: recalculate
-  uid: ExcelScript!ExcelScript.CalculationType.recalculate:member
-  package: ExcelScript!
-  summary: 重新计算 Excel 已标记为脏的所有单元格（即可变或已更改的数据的从属单元格），以及以编程方式标记为脏的单元格。
-metadata:
-  ms.openlocfilehash: 8ea006b639ccac5ebe3f44e5c3cf960973b79665
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913976"
+  - name: full
+    uid: 'ExcelScript!ExcelScript.CalculationType.full:member'
+    package: ExcelScript!
+    summary: ：这会将所有单元格都标记为脏，然后重新计算所有单元格。
+  - name: fullRebuild
+    uid: 'ExcelScript!ExcelScript.CalculationType.fullRebuild:member'
+    package: ExcelScript!
+    summary: 这将重新构建完整的依赖关系链，将所有单元格标记为脏单元格，然后重新计算它们。
+  - name: recalculate
+    uid: 'ExcelScript!ExcelScript.CalculationType.recalculate:member'
+    package: ExcelScript!
+    summary: 重新计算 Excel 已标记为脏的所有单元格（即可变或已更改的数据的从属单元格），以及以编程方式标记为脏的单元格。

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DatetimeFormatInfo
-uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
+uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
 package: ExcelScript!
 fullName: ExcelScript.DatetimeFormatInfo
 summary: 定义在文化上适合显示数字的格式。 这基于当前系统区域性设置。
@@ -9,75 +9,68 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getDateSeparator()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)
-  package: ExcelScript!
-  fullName: getDateSeparator()
-  summary: 获取用作日期分隔符的字符串。 这基于当前系统设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDateSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLongDatePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)
-  package: ExcelScript!
-  fullName: getLongDatePattern()
-  summary: 获取长日期值的格式字符串。 这基于当前系统设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLongDatePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLongTimePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
-  package: ExcelScript!
-  fullName: getLongTimePattern()
-  summary: 获取长时间值的格式字符串。 这基于当前系统设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLongTimePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShortDatePattern()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)
-  package: ExcelScript!
-  fullName: getShortDatePattern()
-  summary: 获取短日期值的格式字符串。 这基于当前系统设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShortDatePattern(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTimeSeparator()
-  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)
-  package: ExcelScript!
-  fullName: getTimeSeparator()
-  summary: 获取用作时间分隔符的字符串。 这基于当前系统设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTimeSeparator(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: 41c906081273622c3070f65ff6c49fa4f3931586
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914469"
+  - name: getDateSeparator()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getDateSeparator()
+    summary: 获取用作日期分隔符的字符串。 这基于当前系统设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDateSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLongDatePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)'
+    package: ExcelScript!
+    fullName: getLongDatePattern()
+    summary: 获取长日期值的格式字符串。 这基于当前系统设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLongDatePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLongTimePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)'
+    package: ExcelScript!
+    fullName: getLongTimePattern()
+    summary: 获取长时间值的格式字符串。 这基于当前系统设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLongTimePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShortDatePattern()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)'
+    package: ExcelScript!
+    fullName: getShortDatePattern()
+    summary: 获取短日期值的格式字符串。 这基于当前系统设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShortDatePattern(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTimeSeparator()
+    uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getTimeSeparator()
+    summary: 获取用作时间分隔符的字符串。 这基于当前系统设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTimeSeparator(): string;'
+      return:
+        type: string
+        description: ''

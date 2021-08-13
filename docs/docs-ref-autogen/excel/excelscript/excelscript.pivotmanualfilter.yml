@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotManualFilter
-uid: ExcelScript!ExcelScript.PivotManualFilter:interface
+uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotManualFilter
 summary: 要应用于透视字段的手动筛选器的可配置模板。 `condition`定义需要设置哪些条件才能运行筛选器。
@@ -9,22 +9,15 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: selectedItems
-  uid: ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member
-  package: ExcelScript!
-  fullName: selectedItems
-  summary: 要手动筛选的选定项的列表。 这些项必须是选定字段中的现有项和有效项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'selectedItems?: (string | PivotItem)[];'
-    return:
-      type: (string | <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />)[]
-metadata:
-  ms.openlocfilehash: f6650745d1d034a6a6e5bead877d305905428c5c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914284"
+  - name: selectedItems
+    uid: 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member'
+    package: ExcelScript!
+    fullName: selectedItems
+    summary: 要手动筛选的选定项的列表。 这些项必须是选定字段中的现有项和有效项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedItems?: (string | PivotItem)[];'
+      return:
+        type: '(string | <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />)[]'

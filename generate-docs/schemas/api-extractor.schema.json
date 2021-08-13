@@ -1,32 +1,32 @@
 {
     "title": "API 提取程序配置",
-    "description": "Describes how the API Extractor tool will process a project.",
+    "description": "描述 API 提取程序工具将如何处理项目。",
     "type": "object",
     "properties": {
         "$schema": {
-            "description": "Part of the JSON Schema standard, this optional keyword declares the URL of the schema that the file conforms to. Editors may download the schema and use it to perform syntax highlighting.",
+            "description": "作为 JSON 架构标准的一部分，此可选关键字声明文件符合的架构的 URL。 编辑器可以下载架构，并使用它执行语法突出显示。",
             "type": "string"
         },
         "compiler": {
-            "description": "Determines how the TypeScript compiler will be invoked. The compiler.configType selects the type of configuration. Different options are available according to the configuration type.",
+            "description": "确定 TypeScript 编译器的调用方法。 the compiler.configType selects the type of configuration. 根据配置类型提供不同的选项。",
             "type": "object",
             "oneOf": [
                 {
                     "type": "object",
                     "properties": {
                         "configType": {
-                            "description": "configType=tsconfig indicates that the compiler settings will be taken from a tsconfig.json file",
+                            "description": "configType=tsconfig 指示编译器设置将来自文件上的tsconfig.js文件",
                             "type": "string",
                             "enum": [
                                 "tsconfig"
                             ]
                         },
                         "rootFolder": {
-                            "description": "The root folder for the project. This folder typically contains the tsconfig.json and package.json config files.",
+                            "description": "项目的根文件夹。 此文件夹通常包含配置文件tsconfig.js和package.js的配置文件。",
                             "type": "string"
                         },
                         "overrideTsconfig": {
-                            "description": "Provides already parsed tsconfig.json contents conforming to the TypeScript tsconfig schema: http://json.schemastore.org/tsconfig If omitted, then the tsconfig.json file will be read.",
+                            "description": "针对符合 TypeScript tsconfig 架构tsconfig.js的内容提供已分析的数据：如果省略，tsconfig.jshttp://json.schemastore.org/tsconfig 读取 on 文件。",
                             "type": "object"
                         }
                     },
@@ -40,7 +40,7 @@
                     "type": "object",
                     "properties": {
                         "configType": {
-                            "description": "configType=runtime indicates that the compiler settings will be provided by a tool chain via a runtime API",
+                            "description": "configType=runtime 指示编译器设置由工具链通过运行时 API 提供",
                             "type": "string",
                             "enum": [
                                 "runtime"
@@ -55,15 +55,15 @@
             ]
         },
         "project": {
-            "description": "Describes a specific project that will be analyzed.",
+            "description": "描述将分析的特定项目。",
             "type": "object",
             "properties": {
                 "entryPointSourceFile": {
-                    "description": "Specifies the TypeScript source file that will be treated as the entry point for compilation.",
+                    "description": "指定将视为编译入口点的 TypeScript 源文件。",
                     "type": "string"
                 },
                 "externalJsonFileFolders": {
-                    "description": "Indicates folders containing additional APJ JSON files (*.api.json) that will be consulted during the analysis.  This is useful for providing annotations for external packages that were not built using API Extractor.",
+                    "description": "指示包含其他 APJ JSON 文件 (*.api.js) 将在分析过程中咨询的文件夹。  这可用于为不是使用 API 提取程序构建的外部包提供注释。",
                     "type": "string"
                 }
             },
@@ -73,11 +73,11 @@
             "additionalProperties": false
         },
         "policies": {
-            "description": "These policies determine how API Extractor validates various best practices for API design.",
+            "description": "这些策略确定 API 提取程序如何验证 API 设计的各种最佳做法。",
             "type": "object",
             "properties": {
                 "namespaceSupport": {
-                    "description": "Controls how API Extractor treats the TypeScript namespace keyword:\n\nconservative - (the default) namespaces may only be used to represent tables of constants\n\npermissive - arbitrary nesting of namespaces is allowed",
+                    "description": "控制 API 提取程序如何处理 TypeScript 命名空间关键字：\n\nconservative - (默认) 命名空间只能用于表示常量表\n\npermissive - 允许任意嵌套命名空间",
                     "type": "string",
                     "enum": [
                         "conservative",
@@ -88,19 +88,19 @@
             "additionalProperties": false
         },
         "apiReviewFile": {
-            "description": "Configures how the API review files (*.api.ts) will be generated.",
+            "description": "配置 API 审阅文件 (*.api.ts) 生成方式。",
             "type": "object",
             "properties": {
                 "enabled": {
-                    "description": "Whether to generate review files at all.  The default is true.",
+                    "description": "是否生成审阅文件。  默认值为 True。",
                     "type": "boolean"
                 },
                 "apiReviewFolder": {
-                    "description": "The file path of the folder containing API review file, relative to the project folder. The default value is \"./etc\".",
+                    "description": "包含 API 审阅文件的文件夹的文件路径，相对于项目文件夹。 默认值为\"./etc\"。",
                     "type": "string"
                 },
                 "tempFolder": {
-                    "description": "The *.api.ts report is saved into this folder.  During a production build, the temporary file will be compared with the file in apiReviewFolder; if there are differences, and error will be reported. The default value is \"./temp\".",
+                    "description": "*.api.ts 报告将保存到此文件夹中。  在生产生成期间，临时文件将和 apiReviewFolder 中的文件进行比较;如果存在差异，将报告错误。 默认值为\"./temp\"。",
                     "type": "string"
                 }
             },
@@ -110,15 +110,15 @@
             "additionalProperties": false
         },
         "apiJsonFile": {
-            "description": "Configures how the API JSON files (*.api.json) will be generated.",
+            "description": "配置 API JSON 文件 (*.api.js的) 生成方式。",
             "type": "object",
             "properties": {
                 "enabled": {
-                    "description": "Whether to generate API JSON files at all.  The default is true.",
+                    "description": "是否生成 API JSON 文件。  默认值为 True。",
                     "type": "boolean"
                 },
                 "outputFolder": {
-                    "description": "Specifies where the *.api.json file should be written. The default value is \"./dist\"",
+                    "description": "指定应在.api.js的 *.api.js。 默认值为\"./dist\"",
                     "type": "string"
                 }
             },

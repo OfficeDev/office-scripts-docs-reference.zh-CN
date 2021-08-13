@@ -1,212 +1,205 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedItem
-uid: ExcelScript!ExcelScript.NamedItem:interface
+uid: 'ExcelScript!ExcelScript.NamedItem:interface'
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: 表示单元格区域或值的定义名称。 名称可以是基元 (对象，如以下类型) 、range 对象或对区域的引用所示。 此对象可用于获取与名称相关的 range 对象。
+summary: 表示单元格区域或值的定义名称。 名称可以是基元命名 (，如下面的类型) 、range 对象或对区域的引用所示。 此对象可用于获取与名称相关的 range 对象。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.NamedItem#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: 删除给定的名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getArrayValues()
-  uid: ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)
-  package: ExcelScript!
-  fullName: getArrayValues()
-  summary: 返回包含已命名项目的值和类型的对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getArrayValues(): NamedItemArrayValues;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />
-      description: ''
-- name: getComment()
-  uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
-  package: ExcelScript!
-  fullName: getComment()
-  summary: 指定与此名称关联的注释。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getComment(): string;'
-    return:
-      type: string
-      description: ''
-- name: getFormula()
-  uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
-  package: ExcelScript!
-  fullName: getFormula()
-  summary: 已命名项目的公式。 公式始终以等号 ("=") 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormula(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.NamedItem#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: 对象的名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: 返回与名称相关的 range 对象。 如果命名项的类型不是区域，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getScope()
-  uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
-  package: ExcelScript!
-  fullName: getScope()
-  summary: 指定名称的范围是工作簿还是特定工作表。 可能的值是：Worksheet、Workbook。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getScope(): NamedItemScope;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: 指定名称的公式返回的值的类型。 有关详细信息，请参阅 `ExcelScript.NamedItemType`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): NamedItemType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />
-      description: ''
-- name: getValue()
-  uid: ExcelScript!ExcelScript.NamedItem#getValue:member(1)
-  package: ExcelScript!
-  fullName: getValue()
-  summary: 表示 name 公式计算出的值。 对于已命名区域，将返回区域地址。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValue(): string | number;'
-    return:
-      type: string | number
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: 指定对象是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getWorksheet()
-  uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
-  package: ExcelScript!
-  fullName: getWorksheet()
-  summary: 返回已命名项的作用域的工作表。 如果项的范围改为工作簿，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWorksheet(): Worksheet | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined
-      description: ''
-- name: setComment(comment)
-  uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
-  package: ExcelScript!
-  fullName: setComment(comment)
-  summary: 指定与此名称关联的注释。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setComment(comment: string): void;'
-    parameters:
-    - id: comment
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setFormula(formula)
-  uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
-  package: ExcelScript!
-  fullName: setFormula(formula)
-  summary: 已命名项目的公式。 公式始终以等号 ("=") 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormula(formula: string): void;'
-    parameters:
-    - id: formula
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: 指定对象是否可见。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 66e993a391736f6e86eee57ad703fc334ee36dea
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913587"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.NamedItem#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: 删除给定的名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getArrayValues()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getArrayValues:member(1)'
+    package: ExcelScript!
+    fullName: getArrayValues()
+    summary: 返回包含已命名项目的值和类型的对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getArrayValues(): NamedItemArrayValues;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItemArrayValues:interface" />'
+        description: ''
+  - name: getComment()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getComment:member(1)'
+    package: ExcelScript!
+    fullName: getComment()
+    summary: 指定与此名称关联的注释。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getComment(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getFormula()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getFormula:member(1)'
+    package: ExcelScript!
+    fullName: getFormula()
+    summary: 已命名项目的公式。 公式始终以等号 ("=") 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: 对象的名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: 返回与名称相关的 range 对象。 如果命名项的类型不是区域，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getScope()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getScope:member(1)'
+    package: ExcelScript!
+    fullName: getScope()
+    summary: 指定名称的范围是工作簿还是特定工作表。 可能的值是：Worksheet、Workbook。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getScope(): NamedItemScope;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItemScope:enum" />'
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: 指定名称的公式返回的值的类型。 有关详细信息，请参阅 `ExcelScript.NamedItemType`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): NamedItemType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedItemType:enum" />'
+        description: ''
+  - name: getValue()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getValue:member(1)'
+    package: ExcelScript!
+    fullName: getValue()
+    summary: 表示 name 公式计算出的值。 对于已命名区域，将返回区域地址。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValue(): string | number;'
+      return:
+        type: string | number
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: 指定对象是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getWorksheet()
+    uid: 'ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)'
+    package: ExcelScript!
+    fullName: getWorksheet()
+    summary: 返回已命名项的作用域的工作表。 如果项的范围改为工作簿，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWorksheet(): Worksheet | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined'
+        description: ''
+  - name: setComment(comment)
+    uid: 'ExcelScript!ExcelScript.NamedItem#setComment:member(1)'
+    package: ExcelScript!
+    fullName: setComment(comment)
+    summary: 指定与此名称关联的注释。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setComment(comment: string): void;'
+      parameters:
+        - id: comment
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setFormula(formula)
+    uid: 'ExcelScript!ExcelScript.NamedItem#setFormula:member(1)'
+    package: ExcelScript!
+    fullName: setFormula(formula)
+    summary: 已命名项目的公式。 公式始终以等号 ("=") 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      parameters:
+        - id: formula
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.NamedItem#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: 指定对象是否可见。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

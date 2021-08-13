@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ShapeFill
-uid: ExcelScript!ExcelScript.ShapeFill:interface
+uid: 'ExcelScript!ExcelScript.ShapeFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.ShapeFill
 summary: 代表 shape 对象的填充格式。
@@ -9,113 +9,106 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ShapeFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: 清除此形状的填充格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getForegroundColor()
-  uid: ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)
-  package: ExcelScript!
-  fullName: getForegroundColor()
-  summary: '以 HTML 颜色格式表示形状填充前景色，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") '
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getForegroundColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTransparency()
-  uid: ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)
-  package: ExcelScript!
-  fullName: getTransparency()
-  summary: 将填充的透明度百分比指定为从 0.0 到 1.0 (不透明) 1.0 (透明) 。 如果形状类型不支持透明度或形状填充的透明度不一致，例如渐变填充类型，则 `null` 返回 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTransparency(): number;'
-    return:
-      type: number
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.ShapeFill#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: 返回形状的填充类型。 有关详细信息，请参阅 `ExcelScript.ShapeFillType`。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): ShapeFillType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFillType:enum" />
-      description: ''
-- name: setForegroundColor(foregroundColor)
-  uid: ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)
-  package: ExcelScript!
-  fullName: setForegroundColor(foregroundColor)
-  summary: '以 HTML 颜色格式表示形状填充前景色，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") '
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setForegroundColor(foregroundColor: string): void;'
-    parameters:
-    - id: foregroundColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setSolidColor(color)
-  uid: ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)
-  package: ExcelScript!
-  fullName: setSolidColor(color)
-  summary: 将形状的填充格式设置为统一颜色。 这样可将填充类型更改为“Solid”。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSolidColor(color: string): void;'
-    parameters:
-    - id: color
-      description: 一个字符串，表示 HTML 颜色格式的填充颜色，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTransparency(transparency)
-  uid: ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)
-  package: ExcelScript!
-  fullName: setTransparency(transparency)
-  summary: 将填充的透明度百分比指定为从 0.0 到 1.0 (不透明) 1.0 (透明) 。 如果形状类型不支持透明度或形状填充的透明度不一致，例如渐变填充类型，则 `null` 返回 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTransparency(transparency: number): void;'
-    parameters:
-    - id: transparency
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 62c912b1bff56417669beddab76781e11a03624c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914200"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: 清除此形状的填充格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getForegroundColor()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)'
+    package: ExcelScript!
+    fullName: getForegroundColor()
+    summary: '以 HTML 颜色格式表示形状填充前景色，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") '
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getForegroundColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTransparency()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)'
+    package: ExcelScript!
+    fullName: getTransparency()
+    summary: 将填充的透明度百分比指定为从 0.0 到 1.0 (不透明) 1.0 (透明) 。 如果形状类型不支持透明度或形状填充的透明度不一致，例如渐变填充类型，则 `null` 返回 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTransparency(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: 返回形状的填充类型。 有关详细信息，请参阅 `ExcelScript.ShapeFillType`。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): ShapeFillType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFillType:enum" />'
+        description: ''
+  - name: setForegroundColor(foregroundColor)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)'
+    package: ExcelScript!
+    fullName: setForegroundColor(foregroundColor)
+    summary: '以 HTML 颜色格式表示形状填充前景色，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") '
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setForegroundColor(foregroundColor: string): void;'
+      parameters:
+        - id: foregroundColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setSolidColor(color)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)'
+    package: ExcelScript!
+    fullName: setSolidColor(color)
+    summary: 将形状的填充格式设置为统一颜色。 这样可将填充类型更改为“Solid”。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      parameters:
+        - id: color
+          description: 一个字符串，表示 HTML 颜色格式的填充颜色，格式为 \# RRGGBB (例如"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTransparency(transparency)
+    uid: 'ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)'
+    package: ExcelScript!
+    fullName: setTransparency(transparency)
+    summary: 将填充的透明度百分比指定为从 0.0 到 1.0 (不透明) 1.0 (透明) 。 如果形状类型不支持透明度或形状填充的透明度不一致，例如渐变填充类型，则 `null` 返回 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTransparency(transparency: number): void;'
+      parameters:
+        - id: transparency
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

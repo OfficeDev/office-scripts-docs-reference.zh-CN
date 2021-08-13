@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.AggregationFunction
-uid: ExcelScript!ExcelScript.AggregationFunction:enum
+uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
 package: ExcelScript!
 fullName: ExcelScript.AggregationFunction
 summary: DataPivotField 的聚合函数。
@@ -8,62 +8,55 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: automatic
-  uid: ExcelScript!ExcelScript.AggregationFunction.automatic:member
-  package: ExcelScript!
-  summary: Excel 将基于数据项自动选择聚合。
-- name: average
-  uid: ExcelScript!ExcelScript.AggregationFunction.average:member
-  package: ExcelScript!
-  summary: 使用数据平均值聚合，等同于 AVERAGE 函数。
-- name: count
-  uid: ExcelScript!ExcelScript.AggregationFunction.count:member
-  package: ExcelScript!
-  summary: 使用数据中的项计数聚合，等同于 COUNTA 函数。
-- name: countNumbers
-  uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
-  package: ExcelScript!
-  summary: 使用数据中的数字计数聚合，等同于 COUNT 函数。
-- name: max
-  uid: ExcelScript!ExcelScript.AggregationFunction.max:member
-  package: ExcelScript!
-  summary: 使用数据的最大值聚合，等效于 MAX 函数。
-- name: min
-  uid: ExcelScript!ExcelScript.AggregationFunction.min:member
-  package: ExcelScript!
-  summary: 使用数据的最小值聚合，等效于 MIN 函数。
-- name: product
-  uid: ExcelScript!ExcelScript.AggregationFunction.product:member
-  package: ExcelScript!
-  summary: 使用数据的产品聚合，等效于 PRODUCT 函数。
-- name: standardDeviation
-  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
-  package: ExcelScript!
-  summary: 使用数据的标准偏差聚合，等效于 STDEV 函数。
-- name: standardDeviationP
-  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
-  package: ExcelScript!
-  summary: 使用数据的标准偏差聚合，等效于 STDEVP 函数。
-- name: sum
-  uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
-  package: ExcelScript!
-  summary: 使用数据的总和聚合，等同于 SUM 函数。
-- name: unknown
-  uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
-  package: ExcelScript!
-  summary: 聚合函数未知或不受支持。
-- name: variance
-  uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
-  package: ExcelScript!
-  summary: 使用数据方差聚合，等同于 VAR 函数。
-- name: varianceP
-  uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
-  package: ExcelScript!
-  summary: 使用数据方差聚合，等同于 VARP 函数。
-metadata:
-  ms.openlocfilehash: 092cb76f526a517d2395ea21634e90044d9fd05d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914011"
+  - name: automatic
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+    package: ExcelScript!
+    summary: Excel将基于数据项自动选择聚合。
+  - name: average
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+    package: ExcelScript!
+    summary: 使用与 AVERAGE 函数等效的数据平均值进行聚合。
+  - name: count
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+    package: ExcelScript!
+    summary: 使用数据中的项计数聚合，等同于 COUNTA 函数。
+  - name: countNumbers
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+    package: ExcelScript!
+    summary: 使用数据中的数字计数进行聚合，等同于 COUNT 函数。
+  - name: max
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+    package: ExcelScript!
+    summary: 使用数据的最大值聚合，等效于 MAX 函数。
+  - name: min
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+    package: ExcelScript!
+    summary: 使用数据的最小值聚合，等效于 MIN 函数。
+  - name: product
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+    package: ExcelScript!
+    summary: 使用数据的产品聚合，等效于 PRODUCT 函数。
+  - name: standardDeviation
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+    package: ExcelScript!
+    summary: 使用数据的标准偏差聚合，等效于 STDEV 函数。
+  - name: standardDeviationP
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+    package: ExcelScript!
+    summary: 使用数据的标准偏差聚合，等效于 STDEVP 函数。
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+    package: ExcelScript!
+    summary: 使用数据的总和聚合，等同于 SUM 函数。
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+    package: ExcelScript!
+    summary: 聚合函数未知或不受支持。
+  - name: variance
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+    package: ExcelScript!
+    summary: 使用数据方差聚合，等同于 VAR 函数。
+  - name: varianceP
+    uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+    package: ExcelScript!
+    summary: 使用数据方差聚合，等同于 VARP 函数。

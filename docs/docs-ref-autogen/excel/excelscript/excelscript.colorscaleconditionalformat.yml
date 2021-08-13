@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ColorScaleConditionalFormat
-uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ColorScaleConditionalFormat
 summary: 表示条件格式的色标条件。
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCriteria()
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)
-  package: ExcelScript!
-  fullName: getCriteria()
-  summary: 色标的条件。 使用双点色标时，中点是可选的。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCriteria(): ConditionalColorScaleCriteria;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />
-      description: ''
-- name: getThreeColorScale()
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)
-  package: ExcelScript!
-  fullName: getThreeColorScale()
-  summary: If `true`<!-- -->，色标的最小 (中点、最大色) ，否则色标将具有 (最小、最大) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getThreeColorScale(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setCriteria(criteria)
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)
-  package: ExcelScript!
-  fullName: setCriteria(criteria)
-  summary: 色标的条件。 使用双点色标时，中点是可选的。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
-    parameters:
-    - id: criteria
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 8a890f2b95d90663083c6a1141142e5585f6c160
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913863"
+  - name: getCriteria()
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)'
+    package: ExcelScript!
+    fullName: getCriteria()
+    summary: 色阶的条件。使用两点色阶时，中点可选。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCriteria(): ConditionalColorScaleCriteria;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />'
+        description: ''
+  - name: getThreeColorScale()
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)'
+    package: ExcelScript!
+    fullName: getThreeColorScale()
+    summary: If `true`<!-- -->，色标将具有三个点 (最小、中点、最大) ，否则将具有两个最小 (，最大) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getThreeColorScale(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setCriteria(criteria)
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)'
+    package: ExcelScript!
+    fullName: setCriteria(criteria)
+    summary: 色阶的条件。使用两点色阶时，中点可选。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
+      parameters:
+        - id: criteria
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />'
+      return:
+        type: void
+        description: ''

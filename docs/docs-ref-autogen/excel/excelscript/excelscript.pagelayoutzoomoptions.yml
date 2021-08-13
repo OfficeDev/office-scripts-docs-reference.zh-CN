@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PageLayoutZoomOptions
-uid: ExcelScript!ExcelScript.PageLayoutZoomOptions:interface
+uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.PageLayoutZoomOptions
 summary: 表示页面缩放属性。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: horizontalFitToPages
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member
-  package: ExcelScript!
-  fullName: horizontalFitToPages
-  summary: 水平放置的页数。 如果使用百 `null` 分比缩放，则此值可以是 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'horizontalFitToPages?: number;'
-    return:
-      type: number
-- name: scale
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member
-  package: ExcelScript!
-  fullName: scale
-  summary: 打印页面缩放值可以介于 10 至 400 之间。 如果指定适合 `null` 页面高度或宽，则此值可以是 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'scale?: number;'
-    return:
-      type: number
-- name: verticalFitToPages
-  uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member
-  package: ExcelScript!
-  fullName: verticalFitToPages
-  summary: 垂直放置的页数。 如果使用百 `null` 分比缩放，则此值可以是 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'verticalFitToPages?: number;'
-    return:
-      type: number
-metadata:
-  ms.openlocfilehash: e003103fb547ccfe9c0fcbabbdd5f9d1c7bb042f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913566"
+  - name: horizontalFitToPages
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member'
+    package: ExcelScript!
+    fullName: horizontalFitToPages
+    summary: 水平放置的页数。 如果使用百 `null` 分比缩放，则此值可以是 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'horizontalFitToPages?: number;'
+      return:
+        type: number
+  - name: scale
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member'
+    package: ExcelScript!
+    fullName: scale
+    summary: 打印页面缩放值可以介于 10 至 400 之间。 如果指定适合 `null` 页面高度或宽，则此值可以是 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scale?: number;'
+      return:
+        type: number
+  - name: verticalFitToPages
+    uid: 'ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member'
+    package: ExcelScript!
+    fullName: verticalFitToPages
+    summary: 垂直放置的页数。 如果使用百 `null` 分比缩放，则此值可以是 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalFitToPages?: number;'
+      return:
+        type: number

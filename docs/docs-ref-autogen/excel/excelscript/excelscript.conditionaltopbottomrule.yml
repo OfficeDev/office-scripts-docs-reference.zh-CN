@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalTopBottomRule
-uid: ExcelScript!ExcelScript.ConditionalTopBottomRule:interface
+uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalTopBottomRule
 summary: 表示顶部/底部条件格式的规则。
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: rank
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member
-  package: ExcelScript!
-  fullName: rank
-  summary: 1 和 1000 之间的数字排名或 1 和 100 之间的百分比排名。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'rank: number;'
-    return:
-      type: number
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: 根据排名第一或最后一位设置值的格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalTopBottomCriterionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />
-metadata:
-  ms.openlocfilehash: 7ed95d94dcade1c0fe7b898eae45e7c5b058f9a5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913715"
+  - name: rank
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#rank:member'
+    package: ExcelScript!
+    fullName: rank
+    summary: 1 和 1000 之间的数字排名或 1 和 100 之间的百分比排名。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rank: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: 根据排名第一或最后一位设置值的格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalTopBottomCriterionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTopBottomCriterionType:enum" />'

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalColorScaleCriterion
-uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
+uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriterion
 summary: 表示包含类型、值和颜色的色标。
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: color
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
-  package: ExcelScript!
-  fullName: color
-  summary: 色标颜色格式的 HTML 颜色代码表示 (例如 \# ，FF0000 表示红色) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'color?: string;'
-    return:
-      type: string
-- name: formula
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: 数字、公式或 (`null` 如果 `type` 为 `lowestValue`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula?: string;'
-    return:
-      type: string
-- name: type
-  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
-  package: ExcelScript!
-  fullName: type
-  summary: 条件条件公式应基于什么。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'type: ConditionalFormatColorCriterionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
-metadata:
-  ms.openlocfilehash: eac56501e1a342e131cf192de81a465659d2c41d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914039"
+  - name: color
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
+    package: ExcelScript!
+    fullName: color
+    summary: 色标颜色格式的 HTML 颜色代码表示 (例如 \# ，FF0000 表示红色) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 数字、公式或 (`null` 如果 `type` 为 `lowestValue`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
+    package: ExcelScript!
+    fullName: type
+    summary: 条件条件公式应基于什么。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ConditionalFormatColorCriterionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />'

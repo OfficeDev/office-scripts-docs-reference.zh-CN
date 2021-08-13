@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShowAsCalculation
-uid: ExcelScript!ExcelScript.ShowAsCalculation:enum
+uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShowAsCalculation
 summary: DataPivotField 的 ShowAs 计算函数。
@@ -8,74 +8,67 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: differenceFrom
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member
-  package: ExcelScript!
-  summary: 与指定的"基本"字段和"基项"的区别。
-- name: index
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.index:member
-  package: ExcelScript!
-  summary: '按如下方式计算值：单元格)  ( (x (总计) ) / ( (总计) x (总计总计 (总计) ) '
-- name: none
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.none:member
-  package: ExcelScript!
-  summary: 不应用任何计算。
-- name: percentDifferenceFrom
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member
-  package: ExcelScript!
-  summary: 与指定的"基本"字段和"基项"的区别。
-- name: percentOf
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member
-  package: ExcelScript!
-  summary: 指定"基本"字段和"基项"的百分比。
-- name: percentOfColumnTotal
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member
-  package: ExcelScript!
-  summary: 列总计的百分比。
-- name: percentOfGrandTotal
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member
-  package: ExcelScript!
-  summary: 总计的百分比。
-- name: percentOfParentColumnTotal
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member
-  package: ExcelScript!
-  summary: 指定"基本"字段的列总计百分比。
-- name: percentOfParentRowTotal
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member
-  package: ExcelScript!
-  summary: 指定"基本"字段的行总计百分比。
-- name: percentOfParentTotal
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member
-  package: ExcelScript!
-  summary: 指定"基本"字段的总计百分比。
-- name: percentOfRowTotal
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member
-  package: ExcelScript!
-  summary: 行总计的百分比。
-- name: percentRunningTotal
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member
-  package: ExcelScript!
-  summary: 指定"基本"字段的运行总计百分比。
-- name: rankAscending
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member
-  package: ExcelScript!
-  summary: 指定基字段的升序排名。
-- name: rankDecending
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member
-  package: ExcelScript!
-  summary: 指定基字段的降序排名。
-- name: runningTotal
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member
-  package: ExcelScript!
-  summary: 运行指定基字段的总计。
-- name: unknown
-  uid: ExcelScript!ExcelScript.ShowAsCalculation.unknown:member
-  package: ExcelScript!
-  summary: 计算未知或不受支持。
-metadata:
-  ms.openlocfilehash: a5a8b7f6787e483642c183627ef1400ab7c84def
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913368"
+  - name: differenceFrom
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
+    package: ExcelScript!
+    summary: 与指定的"基本"字段和"基项"的区别。
+  - name: index
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
+    package: ExcelScript!
+    summary: 按如下方式计算值：单元格)  ( (x (总计) ) / ( (总计) x () ) 总计总计 (
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
+    package: ExcelScript!
+    summary: 不应用任何计算。
+  - name: percentDifferenceFrom
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
+    package: ExcelScript!
+    summary: 与指定的"基本"字段和"基项"的区别。
+  - name: percentOf
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
+    package: ExcelScript!
+    summary: 指定"基本"字段和"基项"的百分比。
+  - name: percentOfColumnTotal
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
+    package: ExcelScript!
+    summary: 列总计的百分比。
+  - name: percentOfGrandTotal
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
+    package: ExcelScript!
+    summary: 总计的百分比。
+  - name: percentOfParentColumnTotal
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
+    package: ExcelScript!
+    summary: 指定"基本"字段的列总计百分比。
+  - name: percentOfParentRowTotal
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
+    package: ExcelScript!
+    summary: 指定"基本"字段的行总计百分比。
+  - name: percentOfParentTotal
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
+    package: ExcelScript!
+    summary: 指定"基本"字段的总计百分比。
+  - name: percentOfRowTotal
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
+    package: ExcelScript!
+    summary: 行总计的百分比。
+  - name: percentRunningTotal
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
+    package: ExcelScript!
+    summary: 指定"基本"字段的运行总计百分比。
+  - name: rankAscending
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
+    package: ExcelScript!
+    summary: 指定基字段的升序排名。
+  - name: rankDecending
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
+    package: ExcelScript!
+    summary: 指定基字段的降序排名。
+  - name: runningTotal
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
+    package: ExcelScript!
+    summary: 运行指定基字段的总计。
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
+    package: ExcelScript!
+    summary: 计算未知或不受支持的。

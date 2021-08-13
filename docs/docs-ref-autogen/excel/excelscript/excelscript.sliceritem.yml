@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SlicerItem
-uid: ExcelScript!ExcelScript.SlicerItem:interface
+uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
 package: ExcelScript!
 fullName: ExcelScript.SlicerItem
 summary: 表示切片器中的切片器项。
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getHasData()
-  uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
-  package: ExcelScript!
-  fullName: getHasData()
-  summary: 如果 `true` 切片器项具有数据，则值为 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHasData(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getIsSelected()
-  uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
-  package: ExcelScript!
-  fullName: getIsSelected()
-  summary: 如果选择了 `true` 切片器项，则值为 。 设置此值不会清除其他切片器项的选定状态。 默认情况下，如果切片器项是唯一选择的项目，则当取消选择该切片器项时，将选择所有项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsSelected(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.SlicerItem#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: 表示代表切片器项的唯一值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: 表示 Excel UI 中显示的标题。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: setIsSelected(isSelected)
-  uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
-  package: ExcelScript!
-  fullName: setIsSelected(isSelected)
-  summary: 如果选择了 `true` 切片器项，则值为 。 设置此值不会清除其他切片器项的选定状态。 默认情况下，如果切片器项是唯一选择的项目，则当取消选择该切片器项时，将选择所有项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setIsSelected(isSelected: boolean): void;'
-    parameters:
-    - id: isSelected
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 10c0521469d6d8f2a916ba92fb907da2b1ef9d4c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914151"
+  - name: getHasData()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
+    package: ExcelScript!
+    fullName: getHasData()
+    summary: 如果 `true` 切片器项具有数据，则值为 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHasData(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getIsSelected()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
+    package: ExcelScript!
+    fullName: getIsSelected()
+    summary: 如果选择了 `true` 切片器项，则值为 。 设置此值不会清除其他切片器项的选定状态。 默认情况下，如果切片器项是唯一选择的项目，则当取消选择该切片器项时，将选择所有项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsSelected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: 表示代表切片器项的唯一值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: 表示在用户界面中显示的Excel。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setIsSelected(isSelected)
+    uid: 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
+    package: ExcelScript!
+    fullName: setIsSelected(isSelected)
+    summary: 如果选择了 `true` 切片器项，则值为 。 设置此值不会清除其他切片器项的选定状态。 默认情况下，如果切片器项是唯一选择的项目，则当取消选择该切片器项时，将选择所有项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setIsSelected(isSelected: boolean): void;'
+      parameters:
+        - id: isSelected
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

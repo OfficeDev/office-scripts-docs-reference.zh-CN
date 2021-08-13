@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Table
-uid: ExcelScript!ExcelScript.Table:interface
+uid: 'ExcelScript!ExcelScript.Table:interface'
 package: ExcelScript!
 fullName: ExcelScript.Table
 summary: 表示 Excel 表格。
@@ -9,631 +9,624 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: addColumn(index, values, name)
-  uid: ExcelScript!ExcelScript.Table#addColumn:member(1)
-  package: ExcelScript!
-  fullName: addColumn(index, values, name)
-  summary: 向表中添加新列。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addColumn(
-                  index?: number,
-                  values?: (boolean | string | number)[],
-                  name?: string
-              ): TableColumn;
-    parameters:
-    - id: index
-      description: 可选。指定新列的相对位置。如果为 NULL 或 -1，将在末尾进行添加。索引更高的列将被移到一侧。从零开始编制索引。
-      type: number
-    - id: values
-      description: 可选。 表格列的无格式值的一维数组。
-      type: (boolean | string | number)[]
-    - id: name
-      description: 可选。 指定新列的名称。 如果为 Null，将使用默认名称。
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
-      description: ''
-- name: addRow(index, values)
-  uid: ExcelScript!ExcelScript.Table#addRow:member(1)
-  package: ExcelScript!
-  fullName: addRow(index, values)
-  summary: 向表中添加一行。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addRow(index?: number, values?: (boolean | string | number)[]): void;'
-    parameters:
-    - id: index
-      description: 可选。指定新行的相对位置。如果为 NULL 或 -1，将在末尾进行添加。插入的行下方的所有行都会向下移动。从零开始编制索引。
-      type: number
-    - id: values
-      description: 可选。 表格行的无格式值的一维数组。
-      type: (boolean | string | number)[]
-    return:
-      type: void
-      description: ''
-- name: addRows(index, values)
-  uid: ExcelScript!ExcelScript.Table#addRows:member(1)
-  package: ExcelScript!
-  fullName: addRows(index, values)
-  summary: 向表中添加一行或多行。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addRows(index?: number, values?: (boolean | string | number)[][]): void;'
-    parameters:
-    - id: index
-      description: 可选。指定新行的相对位置。如果为 NULL 或 -1，将在末尾进行添加。插入的行下方的所有行都会向下移动。从零开始编制索引。
-      type: number
-    - id: values
-      description: 可选。 未设置格式的表行值的二维数组。
-      type: (boolean | string | number)[][]
-    return:
-      type: void
-      description: ''
-- name: clearFilters()
-  uid: ExcelScript!ExcelScript.Table#clearFilters:member(1)
-  package: ExcelScript!
-  fullName: clearFilters()
-  summary: 清除当前表上应用的所有筛选器。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: convertToRange()
-  uid: ExcelScript!ExcelScript.Table#convertToRange:member(1)
-  package: ExcelScript!
-  fullName: convertToRange()
-  summary: 将表转换为普通单元格区域。 保留所有数据。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'convertToRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.Table#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: 删除表。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: deleteRowsAt(index, count)
-  uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
-  package: ExcelScript!
-  fullName: deleteRowsAt(index, count)
-  summary: 删除指定索引中的指定行数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'deleteRowsAt(index: number, count?: number): void;'
-    parameters:
-    - id: index
-      description: 要删除的行的索引值。 警告：行的索引可能自确定要用于删除的值起移动。
-      type: number
-    - id: count
-      description: 要删除的行数。 默认情况下，将删除一行。 注意：同时删除 1000 多个行可能会导致 Power Automate 超时。
-      type: number
-    return:
-      type: void
-      description: ''
-- name: getAutoFilter()
-  uid: ExcelScript!ExcelScript.Table#getAutoFilter:member(1)
-  package: ExcelScript!
-  fullName: getAutoFilter()
-  summary: 表示 `AutoFilter` table 的对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAutoFilter(): AutoFilter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
-- name: getColumn(key)
-  uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
-  package: ExcelScript!
-  fullName: getColumn(key)
-  summary: 按名称或 ID 获取 column 对象。 如果列不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumn(key: number | string): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: 列名称或 ID。
-      type: number | string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumnById(key)
-  uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
-  package: ExcelScript!
-  fullName: getColumnById(key)
-  summary: 按 ID 获取 column 对象。 如果列不存在，将返回 undefined。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnById(key: number): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: 列 ID。
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumnByName(key)
-  uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
-  package: ExcelScript!
-  fullName: getColumnByName(key)
-  summary: 按 Name 获取 column 对象。 如果列不存在，将返回 undefined。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnByName(key: string): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: 列名称。
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumns()
-  uid: ExcelScript!ExcelScript.Table#getColumns:member(1)
-  package: ExcelScript!
-  fullName: getColumns()
-  summary: 表示表中所有列的集合。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumns(): TableColumn[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />[]
-      description: ''
-- name: getHeaderRowRange()
-  uid: ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)
-  package: ExcelScript!
-  fullName: getHeaderRowRange()
-  summary: 获取与表的标题行相关的 range 对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeaderRowRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getHighlightFirstColumn()
-  uid: ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)
-  package: ExcelScript!
-  fullName: getHighlightFirstColumn()
-  summary: 指定第一列是否包含特殊格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHighlightFirstColumn(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getHighlightLastColumn()
-  uid: ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)
-  package: ExcelScript!
-  fullName: getHighlightLastColumn()
-  summary: 指定最后一列是否包含特殊格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHighlightLastColumn(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Table#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: 返回用于唯一标识指定工作簿中表的值。 即使表被重命名，标识符的值仍保持不变。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLegacyId()
-  uid: ExcelScript!ExcelScript.Table#getLegacyId:member(1)
-  package: ExcelScript!
-  fullName: getLegacyId()
-  summary: 返回数字 ID。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLegacyId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.Table#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: 表的名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPredefinedTableStyle()
-  uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
-  package: ExcelScript!
-  fullName: getPredefinedTableStyle()
-  summary: 代表表格样式的常量值。 可能的值包括："TableStyleLight1"到"TableStyleLight21"、"TableStyleMedium1"到"TableStyleMedium28"、"TableStyleDark1"到"TableStyleDark11"。 还可以指定工作簿中显示的用户定义的自定义样式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPredefinedTableStyle(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.Table#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: 获取与整个表相关的 range 对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRangeBetweenHeaderAndTotal()
-  uid: ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)
-  package: ExcelScript!
-  fullName: getRangeBetweenHeaderAndTotal()
-  summary: 获取与表的数据体相关的 range 对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRangeBetweenHeaderAndTotal(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRowCount()
-  uid: ExcelScript!ExcelScript.Table#getRowCount:member(1)
-  package: ExcelScript!
-  fullName: getRowCount()
-  summary: 获取表格中的行数。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRowCount(): number;'
-    return:
-      type: number
-      description: ''
-- name: getShowBandedColumns()
-  uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
-  package: ExcelScript!
-  fullName: getShowBandedColumns()
-  summary: 指定列是否显示带格式，其中奇数列的突出显示方式与偶数列不同，以便更轻松地阅读表格。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowBandedColumns(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowBandedRows()
-  uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
-  package: ExcelScript!
-  fullName: getShowBandedRows()
-  summary: 指定行是否显示带格式，其中奇数行的突出显示方式与偶数行不同，以便更轻松地读取表。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowBandedRows(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowFilterButton()
-  uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
-  package: ExcelScript!
-  fullName: getShowFilterButton()
-  summary: 指定筛选按钮是否在每个列标题的顶部可见。 仅当 table 中包含标题行时，才允许设定此设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowFilterButton(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowHeaders()
-  uid: ExcelScript!ExcelScript.Table#getShowHeaders:member(1)
-  package: ExcelScript!
-  fullName: getShowHeaders()
-  summary: 指定标题行是否可见。 该值可以设置为显示或删除标头行。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowHeaders(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowTotals()
-  uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
-  package: ExcelScript!
-  fullName: getShowTotals()
-  summary: 指定总计行是否可见。 该值可以设置为显示或删除总计行。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowTotals(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSort()
-  uid: ExcelScript!ExcelScript.Table#getSort:member(1)
-  package: ExcelScript!
-  fullName: getSort()
-  summary: 表示表的排序。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSort(): TableSort;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableSort:interface" />
-      description: ''
-- name: getTotalRowRange()
-  uid: ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)
-  package: ExcelScript!
-  fullName: getTotalRowRange()
-  summary: 获取与表的总计行相关的 range 对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTotalRowRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getWorksheet()
-  uid: ExcelScript!ExcelScript.Table#getWorksheet:member(1)
-  package: ExcelScript!
-  fullName: getWorksheet()
-  summary: 包含当前表格的工作表。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWorksheet(): Worksheet;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
-- name: reapplyFilters()
-  uid: ExcelScript!ExcelScript.Table#reapplyFilters:member(1)
-  package: ExcelScript!
-  fullName: reapplyFilters()
-  summary: 重新应用当前表上的所有筛选器。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'reapplyFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: resize(newRange)
-  uid: ExcelScript!ExcelScript.Table#resize:member(1)
-  package: ExcelScript!
-  fullName: resize(newRange)
-  summary: 将表格调整到新区域。 新区域必须与原始表格区域重叠， (或表格顶端的页眉) 必须在同一行中。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'resize(newRange: Range | string): void;'
-    parameters:
-    - id: newRange
-      description: 用于确定表的新大小的 range 对象或区域地址。
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: void
-      description: ''
-- name: setHighlightFirstColumn(highlightFirstColumn)
-  uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
-  package: ExcelScript!
-  fullName: setHighlightFirstColumn(highlightFirstColumn)
-  summary: 指定第一列是否包含特殊格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHighlightFirstColumn(highlightFirstColumn: boolean): void;'
-    parameters:
-    - id: highlightFirstColumn
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setHighlightLastColumn(highlightLastColumn)
-  uid: ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)
-  package: ExcelScript!
-  fullName: setHighlightLastColumn(highlightLastColumn)
-  summary: 指定最后一列是否包含特殊格式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHighlightLastColumn(highlightLastColumn: boolean): void;'
-    parameters:
-    - id: highlightLastColumn
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.Table#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: 表的名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPredefinedTableStyle(predefinedTableStyle)
-  uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
-  package: ExcelScript!
-  fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 代表表格样式的常量值。 可能的值包括："TableStyleLight1"到"TableStyleLight21"、"TableStyleMedium1"到"TableStyleMedium28"、"TableStyleDark1"到"TableStyleDark11"。 还可以指定工作簿中显示的用户定义的自定义样式。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPredefinedTableStyle(predefinedTableStyle: string): void;'
-    parameters:
-    - id: predefinedTableStyle
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setShowBandedColumns(showBandedColumns)
-  uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
-  package: ExcelScript!
-  fullName: setShowBandedColumns(showBandedColumns)
-  summary: 指定列是否显示带格式，其中奇数列的突出显示方式与偶数列不同，以便更轻松地阅读表格。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowBandedColumns(showBandedColumns: boolean): void;'
-    parameters:
-    - id: showBandedColumns
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowBandedRows(showBandedRows)
-  uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
-  package: ExcelScript!
-  fullName: setShowBandedRows(showBandedRows)
-  summary: 指定行是否显示带格式，其中奇数行的突出显示方式与偶数行不同，以便更轻松地读取表。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowBandedRows(showBandedRows: boolean): void;'
-    parameters:
-    - id: showBandedRows
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowFilterButton(showFilterButton)
-  uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
-  package: ExcelScript!
-  fullName: setShowFilterButton(showFilterButton)
-  summary: 指定筛选按钮是否在每个列标题的顶部可见。 仅当 table 中包含标题行时，才允许设定此设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowFilterButton(showFilterButton: boolean): void;'
-    parameters:
-    - id: showFilterButton
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowHeaders(showHeaders)
-  uid: ExcelScript!ExcelScript.Table#setShowHeaders:member(1)
-  package: ExcelScript!
-  fullName: setShowHeaders(showHeaders)
-  summary: 指定标题行是否可见。 该值可以设置为显示或删除标头行。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowHeaders(showHeaders: boolean): void;'
-    parameters:
-    - id: showHeaders
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowTotals(showTotals)
-  uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
-  package: ExcelScript!
-  fullName: setShowTotals(showTotals)
-  summary: 指定总计行是否可见。 该值可以设置为显示或删除总计行。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowTotals(showTotals: boolean): void;'
-    parameters:
-    - id: showTotals
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 9b5569c566237ce34403752541bc7ebcfc4f4f17
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913340"
+  - name: 'addColumn(index, values, name)'
+    uid: 'ExcelScript!ExcelScript.Table#addColumn:member(1)'
+    package: ExcelScript!
+    fullName: 'addColumn(index, values, name)'
+    summary: 向表中添加新列。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addColumn(
+                    index?: number,
+                    values?: (boolean | string | number)[],
+                    name?: string
+                ): TableColumn;
+      parameters:
+        - id: index
+          description: 可选。指定新列的相对位置。如果为 NULL 或 -1，将在末尾进行添加。索引更高的列将被移到一侧。从零开始编制索引。
+          type: number
+        - id: values
+          description: 可选。 表格列的无格式值的一维数组。
+          type: '(boolean | string | number)[]'
+        - id: name
+          description: 可选。指定新列的名称。如果为 Null，将使用默认名称。
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" />'
+        description: ''
+  - name: 'addRow(index, values)'
+    uid: 'ExcelScript!ExcelScript.Table#addRow:member(1)'
+    package: ExcelScript!
+    fullName: 'addRow(index, values)'
+    summary: 向表中添加一行。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addRow(index?: number, values?: (boolean | string | number)[]): void;'
+      parameters:
+        - id: index
+          description: 可选。指定新行的相对位置。如果为 NULL 或 -1，将在末尾进行添加。插入的行下方的所有行都会向下移动。从零开始编制索引。
+          type: number
+        - id: values
+          description: 可选。 表格行的无格式值的一维数组。
+          type: '(boolean | string | number)[]'
+      return:
+        type: void
+        description: ''
+  - name: 'addRows(index, values)'
+    uid: 'ExcelScript!ExcelScript.Table#addRows:member(1)'
+    package: ExcelScript!
+    fullName: 'addRows(index, values)'
+    summary: 向表中添加一行或多行。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addRows(index?: number, values?: (boolean | string | number)[][]): void;'
+      parameters:
+        - id: index
+          description: 可选。指定新行的相对位置。如果为 NULL 或 -1，将在末尾进行添加。插入的行下方的所有行都会向下移动。从零开始编制索引。
+          type: number
+        - id: values
+          description: 可选。未设置格式的表行值的二维数组。
+          type: '(boolean | string | number)[][]'
+      return:
+        type: void
+        description: ''
+  - name: clearFilters()
+    uid: 'ExcelScript!ExcelScript.Table#clearFilters:member(1)'
+    package: ExcelScript!
+    fullName: clearFilters()
+    summary: 清除当前表上应用的所有筛选器。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: convertToRange()
+    uid: 'ExcelScript!ExcelScript.Table#convertToRange:member(1)'
+    package: ExcelScript!
+    fullName: convertToRange()
+    summary: 将表转换为普通单元格区域。保留所有数据。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'convertToRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.Table#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: 删除表。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'deleteRowsAt(index, count)'
+    uid: 'ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)'
+    package: ExcelScript!
+    fullName: 'deleteRowsAt(index, count)'
+    summary: 删除指定索引中的指定行数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteRowsAt(index: number, count?: number): void;'
+      parameters:
+        - id: index
+          description: 要删除的行的索引值。 警告：行的索引可能自确定要用于删除的值起移动。
+          type: number
+        - id: count
+          description: 要删除的行数。 默认情况下，将删除一行。 注意：同时删除 1000 多个行可能会导致Power Automate超时。
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: getAutoFilter()
+    uid: 'ExcelScript!ExcelScript.Table#getAutoFilter:member(1)'
+    package: ExcelScript!
+    fullName: getAutoFilter()
+    summary: 表示 `AutoFilter` table 的对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAutoFilter(): AutoFilter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />'
+        description: ''
+  - name: getColumn(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumn:member(1)'
+    package: ExcelScript!
+    fullName: getColumn(key)
+    summary: 按名称或 ID 获取 column 对象。 如果列不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumn(key: number | string): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: 列名称或 ID。
+          type: number | string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumnById(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumnById:member(1)'
+    package: ExcelScript!
+    fullName: getColumnById(key)
+    summary: 按 ID 获取 column 对象。 如果列不存在，将返回 undefined。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnById(key: number): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: 列 ID。
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumnByName(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumnByName:member(1)'
+    package: ExcelScript!
+    fullName: getColumnByName(key)
+    summary: 按 Name 获取 column 对象。 如果列不存在，将返回 undefined。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnByName(key: string): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: 列名称。
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumns()
+    uid: 'ExcelScript!ExcelScript.Table#getColumns:member(1)'
+    package: ExcelScript!
+    fullName: getColumns()
+    summary: 表示表中所有列的集合。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumns(): TableColumn[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" />[]'
+        description: ''
+  - name: getHeaderRowRange()
+    uid: 'ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)'
+    package: ExcelScript!
+    fullName: getHeaderRowRange()
+    summary: 获取与表的标题行相关的 range 对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeaderRowRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getHighlightFirstColumn()
+    uid: 'ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)'
+    package: ExcelScript!
+    fullName: getHighlightFirstColumn()
+    summary: 指定第一列是否包含特殊格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHighlightFirstColumn(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getHighlightLastColumn()
+    uid: 'ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)'
+    package: ExcelScript!
+    fullName: getHighlightLastColumn()
+    summary: 指定最后一列是否包含特殊格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHighlightLastColumn(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Table#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 返回用于唯一标识指定工作簿中表的值。 即使表被重命名，标识符的值仍保持不变。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLegacyId()
+    uid: 'ExcelScript!ExcelScript.Table#getLegacyId:member(1)'
+    package: ExcelScript!
+    fullName: getLegacyId()
+    summary: 返回数字 ID。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLegacyId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.Table#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: 表的名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPredefinedTableStyle()
+    uid: 'ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)'
+    package: ExcelScript!
+    fullName: getPredefinedTableStyle()
+    summary: 代表表格样式的常量值。 可能的值包括："TableStyleLight1"到"TableStyleLight21"、"TableStyleMedium1"到"TableStyleMedium28"、"TableStyleDark1"到"TableStyleDark11"。 还可以指定工作簿中显示的用户定义的自定义样式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPredefinedTableStyle(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.Table#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: 获取与整个表相关的 range 对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRangeBetweenHeaderAndTotal()
+    uid: 'ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)'
+    package: ExcelScript!
+    fullName: getRangeBetweenHeaderAndTotal()
+    summary: 获取与表的数据体相关的 range 对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeBetweenHeaderAndTotal(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRowCount()
+    uid: 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
+    package: ExcelScript!
+    fullName: getRowCount()
+    summary: 获取表格中的行数。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowCount(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getShowBandedColumns()
+    uid: 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
+    package: ExcelScript!
+    fullName: getShowBandedColumns()
+    summary: 指定列是否显示带格式，其中奇数列的突出显示方式与偶数列不同，以便更轻松地阅读表格。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowBandedColumns(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowBandedRows()
+    uid: 'ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)'
+    package: ExcelScript!
+    fullName: getShowBandedRows()
+    summary: 指定行是否显示带格式，其中奇数行的突出显示方式与偶数行不同，以便更轻松地读取表。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowBandedRows(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowFilterButton()
+    uid: 'ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)'
+    package: ExcelScript!
+    fullName: getShowFilterButton()
+    summary: 指定筛选按钮是否在每个列标题的顶部可见。 仅当 table 中包含标题行时，才允许设定此设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowFilterButton(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowHeaders()
+    uid: 'ExcelScript!ExcelScript.Table#getShowHeaders:member(1)'
+    package: ExcelScript!
+    fullName: getShowHeaders()
+    summary: 指定标题行是否可见。 该值可以设置为显示或删除标头行。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowHeaders(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowTotals()
+    uid: 'ExcelScript!ExcelScript.Table#getShowTotals:member(1)'
+    package: ExcelScript!
+    fullName: getShowTotals()
+    summary: 指定总计行是否可见。 该值可以设置为显示或删除总计行。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowTotals(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSort()
+    uid: 'ExcelScript!ExcelScript.Table#getSort:member(1)'
+    package: ExcelScript!
+    fullName: getSort()
+    summary: 表示表的排序。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSort(): TableSort;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableSort:interface" />'
+        description: ''
+  - name: getTotalRowRange()
+    uid: 'ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)'
+    package: ExcelScript!
+    fullName: getTotalRowRange()
+    summary: 获取与表的总计行相关的 range 对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTotalRowRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getWorksheet()
+    uid: 'ExcelScript!ExcelScript.Table#getWorksheet:member(1)'
+    package: ExcelScript!
+    fullName: getWorksheet()
+    summary: 包含当前表格的工作表。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWorksheet(): Worksheet;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+        description: ''
+  - name: reapplyFilters()
+    uid: 'ExcelScript!ExcelScript.Table#reapplyFilters:member(1)'
+    package: ExcelScript!
+    fullName: reapplyFilters()
+    summary: 重新应用当前表上的所有筛选器。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reapplyFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: resize(newRange)
+    uid: 'ExcelScript!ExcelScript.Table#resize:member(1)'
+    package: ExcelScript!
+    fullName: resize(newRange)
+    summary: 将表格调整到新区域。 新区域必须与原始表格区域重叠， (或表格顶端的页眉) 必须在同一行中。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resize(newRange: Range | string): void;'
+      parameters:
+        - id: newRange
+          description: 用于确定表的新大小的 range 对象或区域地址。
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: void
+        description: ''
+  - name: setHighlightFirstColumn(highlightFirstColumn)
+    uid: 'ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)'
+    package: ExcelScript!
+    fullName: setHighlightFirstColumn(highlightFirstColumn)
+    summary: 指定第一列是否包含特殊格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHighlightFirstColumn(highlightFirstColumn: boolean): void;'
+      parameters:
+        - id: highlightFirstColumn
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setHighlightLastColumn(highlightLastColumn)
+    uid: 'ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)'
+    package: ExcelScript!
+    fullName: setHighlightLastColumn(highlightLastColumn)
+    summary: 指定最后一列是否包含特殊格式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHighlightLastColumn(highlightLastColumn: boolean): void;'
+      parameters:
+        - id: highlightLastColumn
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.Table#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: 表的名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPredefinedTableStyle(predefinedTableStyle)
+    uid: 'ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)'
+    package: ExcelScript!
+    fullName: setPredefinedTableStyle(predefinedTableStyle)
+    summary: 代表表格样式的常量值。 可能的值包括："TableStyleLight1"到"TableStyleLight21"、"TableStyleMedium1"到"TableStyleMedium28"、"TableStyleDark1"到"TableStyleDark11"。 还可以指定工作簿中显示的用户定义的自定义样式。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPredefinedTableStyle(predefinedTableStyle: string): void;'
+      parameters:
+        - id: predefinedTableStyle
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setShowBandedColumns(showBandedColumns)
+    uid: 'ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)'
+    package: ExcelScript!
+    fullName: setShowBandedColumns(showBandedColumns)
+    summary: 指定列是否显示带格式，其中奇数列的突出显示方式与偶数列不同，以便更轻松地阅读表格。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowBandedColumns(showBandedColumns: boolean): void;'
+      parameters:
+        - id: showBandedColumns
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowBandedRows(showBandedRows)
+    uid: 'ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)'
+    package: ExcelScript!
+    fullName: setShowBandedRows(showBandedRows)
+    summary: 指定行是否显示带格式，其中奇数行的突出显示方式与偶数行不同，以便更轻松地读取表。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowBandedRows(showBandedRows: boolean): void;'
+      parameters:
+        - id: showBandedRows
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowFilterButton(showFilterButton)
+    uid: 'ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)'
+    package: ExcelScript!
+    fullName: setShowFilterButton(showFilterButton)
+    summary: 指定筛选按钮是否在每个列标题的顶部可见。 仅当 table 中包含标题行时，才允许设定此设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowFilterButton(showFilterButton: boolean): void;'
+      parameters:
+        - id: showFilterButton
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowHeaders(showHeaders)
+    uid: 'ExcelScript!ExcelScript.Table#setShowHeaders:member(1)'
+    package: ExcelScript!
+    fullName: setShowHeaders(showHeaders)
+    summary: 指定标题行是否可见。 该值可以设置为显示或删除标头行。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowHeaders(showHeaders: boolean): void;'
+      parameters:
+        - id: showHeaders
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowTotals(showTotals)
+    uid: 'ExcelScript!ExcelScript.Table#setShowTotals:member(1)'
+    package: ExcelScript!
+    fullName: setShowTotals(showTotals)
+    summary: 指定总计行是否可见。 该值可以设置为显示或删除总计行。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowTotals(showTotals: boolean): void;'
+      parameters:
+        - id: showTotals
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

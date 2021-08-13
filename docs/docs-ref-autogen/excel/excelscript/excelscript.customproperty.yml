@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CustomProperty
-uid: ExcelScript!ExcelScript.CustomProperty:interface
+uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
 package: ExcelScript!
 fullName: ExcelScript.CustomProperty
 summary: 表示自定义属性。
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.CustomProperty#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: 删除 custom property 对象。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: 自定义属性的键。 该密钥限制为 Excel 网页版之外的 255 个字符， (在其他平台上自动将大键剪裁为 255) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.CustomProperty#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: 用于自定义属性的值的类型。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): DocumentPropertyType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DocumentPropertyType:enum" />
-      description: ''
-- name: getValue()
-  uid: ExcelScript!ExcelScript.CustomProperty#getValue:member(1)
-  package: ExcelScript!
-  fullName: getValue()
-  summary: 自定义属性的值。 该值限制为 Excel 网页版之外的 255 个字符 (在其他平台上，较大的值将自动剪裁为 255 个字符) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValue(): any;'
-    return:
-      type: any
-      description: ''
-- name: setValue(value)
-  uid: ExcelScript!ExcelScript.CustomProperty#setValue:member(1)
-  package: ExcelScript!
-  fullName: setValue(value)
-  summary: 自定义属性的值。 该值限制为 Excel 网页版之外的 255 个字符 (在其他平台上，较大的值将自动剪裁为 255 个字符) 。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setValue(value: any): void;'
-    parameters:
-    - id: value
-      description: ''
-      type: any
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 816d6f4b2634092596bba7e6f92e5d414be58d7b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914490"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: 删除 custom property 对象。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: 自定义属性的键。 键限制在 255 个字符之外，Excel web 版 (在其他平台上自动将大键剪裁为 255) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: 用于自定义属性的值的类型。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): DocumentPropertyType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DocumentPropertyType:enum" />'
+        description: ''
+  - name: getValue()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getValue:member(1)'
+    package: ExcelScript!
+    fullName: getValue()
+    summary: 自定义属性的值。 该值限制为 255 个字符之外，Excel web 版 (在其他平台上自动将较大的值剪裁为 255) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValue(): any;'
+      return:
+        type: any
+        description: ''
+  - name: setValue(value)
+    uid: 'ExcelScript!ExcelScript.CustomProperty#setValue:member(1)'
+    package: ExcelScript!
+    fullName: setValue(value)
+    summary: 自定义属性的值。 该值限制为 255 个字符之外，Excel web 版 (在其他平台上自动将较大的值剪裁为 255) 。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setValue(value: any): void;'
+      parameters:
+        - id: value
+          description: ''
+          type: any
+      return:
+        type: void
+        description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.NumberFormatInfo
-uid: ExcelScript!ExcelScript.NumberFormatInfo:interface
+uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
 package: ExcelScript!
 fullName: ExcelScript.NumberFormatInfo
 summary: 定义在文化上适合显示数字的格式。 这基于当前系统区域性设置。
@@ -9,36 +9,29 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getNumberDecimalSeparator()
-  uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)
-  package: ExcelScript!
-  fullName: getNumberDecimalSeparator()
-  summary: 获取用作数值的小数分隔符的字符串。 这基于当前系统设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberDecimalSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getNumberGroupSeparator()
-  uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)
-  package: ExcelScript!
-  fullName: getNumberGroupSeparator()
-  summary: 获取用于分隔数字值小数左侧的一组数字的字符串。 这基于当前系统设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberGroupSeparator(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: a789fa3e10f31daa00bcc359f7bfd09f4d87121a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913580"
+  - name: getNumberDecimalSeparator()
+    uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getNumberDecimalSeparator()
+    summary: 获取用作数值的小数分隔符的字符串。 这基于当前系统设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberDecimalSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getNumberGroupSeparator()
+    uid: 'ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getNumberGroupSeparator()
+    summary: 获取用于分隔数字值小数左侧的一组数字的字符串。 这基于当前系统设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberGroupSeparator(): string;'
+      return:
+        type: string
+        description: ''
