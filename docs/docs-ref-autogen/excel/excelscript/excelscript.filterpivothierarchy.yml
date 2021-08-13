@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterPivotHierarchy
-uid: ExcelScript!ExcelScript.FilterPivotHierarchy:interface
+uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
 package: ExcelScript!
 fullName: ExcelScript.FilterPivotHierarchy
 summary: 代表 Excel FilterPivotHierarchy。
@@ -9,156 +9,149 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getEnableMultipleFilterItems()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getEnableMultipleFilterItems:member(1)
-  package: ExcelScript!
-  fullName: getEnableMultipleFilterItems()
-  summary: 确定是否允许多个筛选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEnableMultipleFilterItems(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getFields()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getFields:member(1)
-  package: ExcelScript!
-  fullName: getFields()
-  summary: 返回与 FilterPivotHierarchy 相关联的 PivotFields。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFields(): PivotField[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: FilterPivotHierarchy 的 ID。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: FilterPivotHierarchy 的名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPivotField(name)
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getPivotField:member(1)
-  package: ExcelScript!
-  fullName: getPivotField(name)
-  summary: 按名称获取 PivotField。 如果 PivotField 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotField(name: string): PivotField | undefined;'
-    parameters:
-    - id: name
-      description: 要检索的透视字段的名称。
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: FilterPivotHierarchy 的位置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): number;'
-    return:
-      type: number
-      description: ''
-- name: setEnableMultipleFilterItems(enableMultipleFilterItems)
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#setEnableMultipleFilterItems:member(1)
-  package: ExcelScript!
-  fullName: setEnableMultipleFilterItems(enableMultipleFilterItems)
-  summary: 确定是否允许多个筛选项。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEnableMultipleFilterItems(enableMultipleFilterItems: boolean): void;'
-    parameters:
-    - id: enableMultipleFilterItems
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: FilterPivotHierarchy 的名称。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: FilterPivotHierarchy 的位置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: number): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setToDefault()
-  uid: ExcelScript!ExcelScript.FilterPivotHierarchy#setToDefault:member(1)
-  package: ExcelScript!
-  fullName: setToDefault()
-  summary: 将 FilterPivotHierarchy 重置回其默认值。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setToDefault(): void;'
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 30f67b1e864829c00617a61b69a82eee1ce69f4e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914385"
+  - name: getEnableMultipleFilterItems()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getEnableMultipleFilterItems:member(1)'
+    package: ExcelScript!
+    fullName: getEnableMultipleFilterItems()
+    summary: 确定是否允许多个筛选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEnableMultipleFilterItems(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getFields()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getFields:member(1)'
+    package: ExcelScript!
+    fullName: getFields()
+    summary: 返回与 FilterPivotHierarchy 相关联的 PivotFields。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFields(): PivotField[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: FilterPivotHierarchy 的 ID。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: FilterPivotHierarchy 的名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPivotField(name)
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getPivotField:member(1)'
+    package: ExcelScript!
+    fullName: getPivotField(name)
+    summary: 按名称获取 PivotField。 如果 PivotField 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotField(name: string): PivotField | undefined;'
+      parameters:
+        - id: name
+          description: 要检索的透视字段的名称。
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined'
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: FilterPivotHierarchy 的位置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setEnableMultipleFilterItems(enableMultipleFilterItems)
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#setEnableMultipleFilterItems:member(1)'
+    package: ExcelScript!
+    fullName: setEnableMultipleFilterItems(enableMultipleFilterItems)
+    summary: 确定是否允许多个筛选项。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEnableMultipleFilterItems(enableMultipleFilterItems: boolean): void;'
+      parameters:
+        - id: enableMultipleFilterItems
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: FilterPivotHierarchy 的名称。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: FilterPivotHierarchy 的位置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: number): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setToDefault()
+    uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy#setToDefault:member(1)'
+    package: ExcelScript!
+    fullName: setToDefault()
+    summary: 将 FilterPivotHierarchy 重置回其默认值。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setToDefault(): void;'
+      return:
+        type: void
+        description: ''

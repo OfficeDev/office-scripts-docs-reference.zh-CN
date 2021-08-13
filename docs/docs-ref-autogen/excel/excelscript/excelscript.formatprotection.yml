@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.FormatProtection
-uid: ExcelScript!ExcelScript.FormatProtection:interface
+uid: 'ExcelScript!ExcelScript.FormatProtection:interface'
 package: ExcelScript!
 fullName: ExcelScript.FormatProtection
 summary: 表示对范围对象的格式保护。
@@ -9,70 +9,63 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormulaHidden()
-  uid: ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)
-  package: ExcelScript!
-  fullName: getFormulaHidden()
-  summary: 指定 Excel 是否隐藏区域单元格的公式。 `null`值表示整个区域没有统一公式隐藏设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormulaHidden(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getLocked()
-  uid: ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)
-  package: ExcelScript!
-  fullName: getLocked()
-  summary: 指定 Excel 是否锁定对象中的单元格。 `null`值表示整个区域没有统一锁定设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLocked(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setFormulaHidden(formulaHidden)
-  uid: ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)
-  package: ExcelScript!
-  fullName: setFormulaHidden(formulaHidden)
-  summary: 指定 Excel 是否隐藏区域单元格的公式。 `null`值表示整个区域没有统一公式隐藏设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormulaHidden(formulaHidden: boolean): void;'
-    parameters:
-    - id: formulaHidden
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setLocked(locked)
-  uid: ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)
-  package: ExcelScript!
-  fullName: setLocked(locked)
-  summary: 指定 Excel 是否锁定对象中的单元格。 `null`值表示整个区域没有统一锁定设置。
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLocked(locked: boolean): void;'
-    parameters:
-    - id: locked
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 92a93cd71d6058c3046040ca18d3e0de87fcdb9f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913637"
+  - name: getFormulaHidden()
+    uid: 'ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)'
+    package: ExcelScript!
+    fullName: getFormulaHidden()
+    summary: 指定是否Excel区域单元格的公式。 `null`值表示整个区域没有统一公式隐藏设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormulaHidden(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getLocked()
+    uid: 'ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)'
+    package: ExcelScript!
+    fullName: getLocked()
+    summary: 指定是否Excel对象中的单元格。 `null`值表示整个区域没有统一锁定设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLocked(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setFormulaHidden(formulaHidden)
+    uid: 'ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)'
+    package: ExcelScript!
+    fullName: setFormulaHidden(formulaHidden)
+    summary: 指定是否Excel区域单元格的公式。 `null`值表示整个区域没有统一公式隐藏设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormulaHidden(formulaHidden: boolean): void;'
+      parameters:
+        - id: formulaHidden
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setLocked(locked)
+    uid: 'ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)'
+    package: ExcelScript!
+    fullName: setLocked(locked)
+    summary: 指定是否Excel对象中的单元格。 `null`值表示整个区域没有统一锁定设置。
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLocked(locked: boolean): void;'
+      parameters:
+        - id: locked
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
