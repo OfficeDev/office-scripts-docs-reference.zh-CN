@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeFormat
-uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
+uid: ExcelScript!ExcelScript.RangeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeFormat
 summary: 一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
@@ -9,505 +9,512 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: adjustIndent(amount)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)'
-    package: ExcelScript!
-    fullName: adjustIndent(amount)
-    summary: 调整区域格式的缩进。 缩进值范围为 0 到 250，以字符为单位度量。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'adjustIndent(amount: number): void;'
-      parameters:
-        - id: amount
-          description: 调整当前缩进的字符空间数。 此值应介于 -250 和 250 之间。 **注意**：如果金额将缩进级别提升至 250 以上，则缩进级别保持为 250。 同样，如果缩进量将缩进级别低于 0，则缩进级别将保持 0。
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: autofitColumns()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)'
-    package: ExcelScript!
-    fullName: autofitColumns()
-    summary: 根据列中的当前数据更改当前范围的列宽，以达到最佳宽度。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'autofitColumns(): void;'
-      return:
-        type: void
-        description: ''
-  - name: autofitRows()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)'
-    package: ExcelScript!
-    fullName: autofitRows()
-    summary: 根据列中的当前数据，更改当前范围的行高以达到最佳高度。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'autofitRows(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getAutoIndent()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)'
-    package: ExcelScript!
-    fullName: getAutoIndent()
-    summary: 指定文本对齐方式设置为相等分布时文本是否自动缩进。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAutoIndent(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getBorders()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)'
-    package: ExcelScript!
-    fullName: getBorders()
-    summary: 应用于整个区域的 Border 对象的集合。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getBorders(): RangeBorder[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />[]'
-        description: ''
-  - name: getColumnWidth()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)'
-    package: ExcelScript!
-    fullName: getColumnWidth()
-    summary: 指定范围内所有列的宽度。 如果列宽不统一， `null` 将返回 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getColumnWidth(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getFill()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getFill:member(1)'
-    package: ExcelScript!
-    fullName: getFill()
-    summary: 返回在整个区域内定义的 fill 对象。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFill(): RangeFill;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeFill:interface" />'
-        description: ''
-  - name: getFont()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getFont:member(1)'
-    package: ExcelScript!
-    fullName: getFont()
-    summary: 返回在整个区域内定义的 Font 对象。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFont(): RangeFont;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeFont:interface" />'
-        description: ''
-  - name: getHorizontalAlignment()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: getHorizontalAlignment()
-    summary: 表示指定对象的水平对齐方式。 有关详细信息，请参阅 `ExcelScript.HorizontalAlignment`。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getHorizontalAlignment(): HorizontalAlignment;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />'
-        description: ''
-  - name: getIndentLevel()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)'
-    package: ExcelScript!
-    fullName: getIndentLevel()
-    summary: 0 到 250 之间的一个整数，指示缩进水平。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIndentLevel(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getProtection()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)'
-    package: ExcelScript!
-    fullName: getProtection()
-    summary: 返回某一区域的格式 protection 对象。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getProtection(): FormatProtection;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FormatProtection:interface" />'
-        description: ''
-  - name: getRangeBorder(index)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)'
-    package: ExcelScript!
-    fullName: getRangeBorder(index)
-    summary: 使用其名称获取 border 对象
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
-      parameters:
-        - id: index
-          description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 `ExcelScript.BorderIndex`。
-          type: '<xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />'
-        description: ''
-  - name: getRangeBorderTintAndShade()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: getRangeBorderTintAndShade()
-    summary: 指定使区域边框的颜色变亮或变暗的双精度型值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示整个边框集合没有统一 `tintAndShade` 设置。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRangeBorderTintAndShade(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getReadingOrder()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)'
-    package: ExcelScript!
-    fullName: getReadingOrder()
-    summary: 区域的读取顺序。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getReadingOrder(): ReadingOrder;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />'
-        description: ''
-  - name: getRowHeight()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)'
-    package: ExcelScript!
-    fullName: getRowHeight()
-    summary: 范围中所有行的高度。 如果行高不统一， `null` 将返回 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRowHeight(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getShrinkToFit()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)'
-    package: ExcelScript!
-    fullName: getShrinkToFit()
-    summary: 指定文本是否自动缩小以适应可用列宽。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getShrinkToFit(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getTextOrientation()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)'
-    package: ExcelScript!
-    fullName: getTextOrientation()
-    summary: 区域内所有单元格的文本方向。 文本方向应为 -90 到 90 的整数，或垂直方向文本的 180。 如果范围内的方向不统一，则 `null` 返回 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getUseStandardHeight()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)'
-    package: ExcelScript!
-    fullName: getUseStandardHeight()
-    summary: 确定对象的行 `Range` 高是否等于工作表的标准高度。 如果 `true` 对象的行高等于工作表的标准高度，则 `Range` 返回 。 如果区域包含多个行且行的高度不相同，则返回 `null` 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getUseStandardHeight(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getUseStandardWidth()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)'
-    package: ExcelScript!
-    fullName: getUseStandardWidth()
-    summary: 指定对象的列宽 `Range` 是否等于工作表的标准宽度。 如果 `true` 对象的列宽等于工作表的标准宽度 `Range` ，则返回 。 如果区域包含多个列并且列的高度不相同，则 `null` 返回 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getUseStandardWidth(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getVerticalAlignment()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: getVerticalAlignment()
-    summary: 表示指定对象的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.VerticalAlignment`。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getVerticalAlignment(): VerticalAlignment;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />'
-        description: ''
-  - name: getWrapText()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)'
-    package: ExcelScript!
-    fullName: getWrapText()
-    summary: 指定是否Excel对象中的文本换行。 `null`值指示整个区域没有统一换行设置
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWrapText(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: setAutoIndent(autoIndent)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)'
-    package: ExcelScript!
-    fullName: setAutoIndent(autoIndent)
-    summary: 指定文本对齐方式设置为相等分布时文本是否自动缩进。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setAutoIndent(autoIndent: boolean): void;'
-      parameters:
-        - id: autoIndent
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setColumnWidth(columnWidth)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)'
-    package: ExcelScript!
-    fullName: setColumnWidth(columnWidth)
-    summary: 指定范围内所有列的宽度。 如果列宽不统一， `null` 将返回 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setColumnWidth(columnWidth: number): void;'
-      parameters:
-        - id: columnWidth
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setHorizontalAlignment(horizontalAlignment)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: setHorizontalAlignment(horizontalAlignment)
-    summary: 表示指定对象的水平对齐方式。 有关详细信息，请参阅 `ExcelScript.HorizontalAlignment`。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
-      parameters:
-        - id: horizontalAlignment
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setIndentLevel(indentLevel)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)'
-    package: ExcelScript!
-    fullName: setIndentLevel(indentLevel)
-    summary: 0 到 250 之间的一个整数，指示缩进水平。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setIndentLevel(indentLevel: number): void;'
-      parameters:
-        - id: indentLevel
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-    summary: 指定使区域边框的颜色变亮或变暗的双精度型值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示整个边框集合没有统一 `tintAndShade` 设置。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
-      parameters:
-        - id: rangeBorderTintAndShade
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setReadingOrder(readingOrder)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)'
-    package: ExcelScript!
-    fullName: setReadingOrder(readingOrder)
-    summary: 区域的读取顺序。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
-      parameters:
-        - id: readingOrder
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setRowHeight(rowHeight)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)'
-    package: ExcelScript!
-    fullName: setRowHeight(rowHeight)
-    summary: 范围中所有行的高度。 如果行高不统一， `null` 将返回 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRowHeight(rowHeight: number): void;'
-      parameters:
-        - id: rowHeight
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setShrinkToFit(shrinkToFit)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)'
-    package: ExcelScript!
-    fullName: setShrinkToFit(shrinkToFit)
-    summary: 指定文本是否自动缩小以适应可用列宽。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setShrinkToFit(shrinkToFit: boolean): void;'
-      parameters:
-        - id: shrinkToFit
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setTextOrientation(textOrientation)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)'
-    package: ExcelScript!
-    fullName: setTextOrientation(textOrientation)
-    summary: 区域内所有单元格的文本方向。 文本方向应为 -90 到 90 的整数，或垂直方向文本的 180。 如果范围内的方向不统一，则 `null` 返回 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      parameters:
-        - id: textOrientation
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setUseStandardHeight(useStandardHeight)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)'
-    package: ExcelScript!
-    fullName: setUseStandardHeight(useStandardHeight)
-    summary: 确定对象的行 `Range` 高是否等于工作表的标准高度。 如果 `true` 对象的行高等于工作表的标准高度，则 `Range` 返回 。 如果区域包含多个行且行的高度不相同，则返回 `null` 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setUseStandardHeight(useStandardHeight: boolean): void;'
-      parameters:
-        - id: useStandardHeight
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setUseStandardWidth(useStandardWidth)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)'
-    package: ExcelScript!
-    fullName: setUseStandardWidth(useStandardWidth)
-    summary: 指定对象的列宽 `Range` 是否等于工作表的标准宽度。 如果 `true` 对象的列宽等于工作表的标准宽度 `Range` ，则返回 。 如果区域包含多个列并且列的高度不相同，则 `null` 返回 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setUseStandardWidth(useStandardWidth: boolean): void;'
-      parameters:
-        - id: useStandardWidth
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setVerticalAlignment(verticalAlignment)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: setVerticalAlignment(verticalAlignment)
-    summary: 表示指定对象的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.VerticalAlignment`。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
-      parameters:
-        - id: verticalAlignment
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setWrapText(wrapText)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)'
-    package: ExcelScript!
-    fullName: setWrapText(wrapText)
-    summary: 指定是否Excel对象中的文本换行。 `null`值指示整个区域没有统一换行设置
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setWrapText(wrapText: boolean): void;'
-      parameters:
-        - id: wrapText
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
+- name: adjustIndent(amount)
+  uid: ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)
+  package: ExcelScript!
+  fullName: adjustIndent(amount)
+  summary: 调整区域格式的缩进。 缩进值范围为 0 到 250，以字符为单位度量。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'adjustIndent(amount: number): void;'
+    parameters:
+    - id: amount
+      description: 调整当前缩进的字符空间数。 此值应介于 -250 和 250 之间。 **注意**：如果金额将缩进级别提升至 250 以上，则缩进级别保持为 250。 同样，如果缩进量将缩进级别低于 0，则缩进级别将保持 0。
+      type: number
+    return:
+      type: void
+      description: ''
+- name: autofitColumns()
+  uid: ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)
+  package: ExcelScript!
+  fullName: autofitColumns()
+  summary: 根据列中的当前数据更改当前范围的列宽，以达到最佳宽度。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autofitColumns(): void;'
+    return:
+      type: void
+      description: ''
+- name: autofitRows()
+  uid: ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)
+  package: ExcelScript!
+  fullName: autofitRows()
+  summary: 根据列中的当前数据，更改当前范围的行高以达到最佳高度。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autofitRows(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAutoIndent()
+  uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
+  package: ExcelScript!
+  fullName: getAutoIndent()
+  summary: 指定文本对齐方式设置为相等分布时文本是否自动缩进。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoIndent(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getBorders()
+  uid: ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)
+  package: ExcelScript!
+  fullName: getBorders()
+  summary: 应用于整个区域的 Border 对象的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorders(): RangeBorder[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />[]
+      description: ''
+- name: getColumnWidth()
+  uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
+  package: ExcelScript!
+  fullName: getColumnWidth()
+  summary: 指定范围内所有列的宽度。 如果列宽不统一， `null` 将返回 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.RangeFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: 返回在整个区域内定义的 fill 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): RangeFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFill:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script gives the total row of a table a green color fill.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table in the workbook.\n  let table = workbook.getTables()[0];\n\n  // Get the range for the total row of the table.\n  let totalRange = table.getTotalRowRange();\n\n  // Set the fill color to green.\n  totalRange.getFormat().getFill().setColor(\"green\");\n}\n```"
+- name: getFont()
+  uid: ExcelScript!ExcelScript.RangeFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: 返回在整个区域内定义的 Font 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): RangeFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFont:interface" />
+      description: ''
+- name: getHorizontalAlignment()
+  uid: ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getHorizontalAlignment()
+  summary: 表示指定对象的水平对齐方式。 有关详细信息，请参阅 `ExcelScript.HorizontalAlignment`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHorizontalAlignment(): HorizontalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
+      description: ''
+- name: getIndentLevel()
+  uid: ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)
+  package: ExcelScript!
+  fullName: getIndentLevel()
+  summary: 0 到 250 之间的一个整数，指示缩进水平。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIndentLevel(): number;'
+    return:
+      type: number
+      description: ''
+- name: getProtection()
+  uid: ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)
+  package: ExcelScript!
+  fullName: getProtection()
+  summary: 返回某一区域的格式 protection 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtection(): FormatProtection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FormatProtection:interface" />
+      description: ''
+- name: getRangeBorder(index)
+  uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)
+  package: ExcelScript!
+  fullName: getRangeBorder(index)
+  summary: 使用其名称获取 border 对象
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
+    parameters:
+    - id: index
+      description: 要检索的 border 对象的索引值。 有关详细信息，请参阅 `ExcelScript.BorderIndex`。
+      type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script adds a border around the outside of a range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a range from the current worksheet.\n  let range = workbook.getActiveWorksheet().getRange(\"B2:E15\");\n\n  // Add a border around the whole bounding range.\n  let format = range.getFormat();\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeTop).setStyle(ExcelScript.BorderLineStyle.continuous); // Top border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeBottom).setStyle(ExcelScript.BorderLineStyle.continuous); // Bottom border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeLeft).setStyle(ExcelScript.BorderLineStyle.continuous); // Left border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeRight).setStyle(ExcelScript.BorderLineStyle.continuous); // Right border\n}\n```"
+- name: getRangeBorderTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getRangeBorderTintAndShade()
+  summary: 指定使区域边框的颜色变亮或变暗的双精度型值。 该值介于 -1 和 (最) 和 1 (最亮) ，0 表示原始颜色。 `null`值表示整个边框集合没有统一 `tintAndShade` 设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBorderTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: getReadingOrder()
+  uid: ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)
+  package: ExcelScript!
+  fullName: getReadingOrder()
+  summary: 区域的读取顺序。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadingOrder(): ReadingOrder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />
+      description: ''
+- name: getRowHeight()
+  uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
+  package: ExcelScript!
+  fullName: getRowHeight()
+  summary: 范围中所有行的高度。 如果行高不统一， `null` 将返回 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getShrinkToFit()
+  uid: ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)
+  package: ExcelScript!
+  fullName: getShrinkToFit()
+  summary: 指定文本是否自动缩小以适应可用列宽。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShrinkToFit(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: 区域内所有单元格的文本方向。 文本方向应为 -90 到 90 的整数，或垂直方向文本的 180。 如果范围内的方向不统一，则 `null` 返回 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUseStandardHeight()
+  uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: getUseStandardHeight()
+  summary: 确定对象的行 `Range` 高是否等于工作表的标准高度。 如果 `true` 对象的行高等于工作表的标准高度，则 `Range` 返回 。 如果区域包含多个行且行的高度不相同，则返回 `null` 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseStandardHeight(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getUseStandardWidth()
+  uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: getUseStandardWidth()
+  summary: 指定对象的列宽 `Range` 是否等于工作表的标准宽度。 如果 `true` 对象的列宽等于工作表的标准宽度 `Range` ，则返回 。 如果区域包含多个列并且列的高度不相同，则 `null` 返回 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseStandardWidth(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getVerticalAlignment()
+  uid: ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getVerticalAlignment()
+  summary: 表示指定对象的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.VerticalAlignment`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVerticalAlignment(): VerticalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />
+      description: ''
+- name: getWrapText()
+  uid: ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)
+  package: ExcelScript!
+  fullName: getWrapText()
+  summary: 指定是否Excel对象中的文本换行。 `null`值指示整个区域没有统一换行设置
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWrapText(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setAutoIndent(autoIndent)
+  uid: ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)
+  package: ExcelScript!
+  fullName: setAutoIndent(autoIndent)
+  summary: 指定文本对齐方式设置为相等分布时文本是否自动缩进。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAutoIndent(autoIndent: boolean): void;'
+    parameters:
+    - id: autoIndent
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setColumnWidth(columnWidth)
+  uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
+  package: ExcelScript!
+  fullName: setColumnWidth(columnWidth)
+  summary: 指定范围内所有列的宽度。 如果列宽不统一， `null` 将返回 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColumnWidth(columnWidth: number): void;'
+    parameters:
+    - id: columnWidth
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setHorizontalAlignment(horizontalAlignment)
+  uid: ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setHorizontalAlignment(horizontalAlignment)
+  summary: 表示指定对象的水平对齐方式。 有关详细信息，请参阅 `ExcelScript.HorizontalAlignment`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
+    parameters:
+    - id: horizontalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setIndentLevel(indentLevel)
+  uid: ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)
+  package: ExcelScript!
+  fullName: setIndentLevel(indentLevel)
+  summary: 0 到 250 之间的一个整数，指示缩进水平。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIndentLevel(indentLevel: number): void;'
+    parameters:
+    - id: indentLevel
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+  summary: 指定使区域边框的颜色变亮或变暗的双精度型值。 该值介于 -1 和 (最) 和 1 (最亮) ，0 表示原始颜色。 `null`值表示整个边框集合没有统一 `tintAndShade` 设置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
+    parameters:
+    - id: rangeBorderTintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setReadingOrder(readingOrder)
+  uid: ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)
+  package: ExcelScript!
+  fullName: setReadingOrder(readingOrder)
+  summary: 区域的读取顺序。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
+    parameters:
+    - id: readingOrder
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />
+    return:
+      type: void
+      description: ''
+- name: setRowHeight(rowHeight)
+  uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
+  package: ExcelScript!
+  fullName: setRowHeight(rowHeight)
+  summary: 范围中所有行的高度。 如果行高不统一， `null` 将返回 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRowHeight(rowHeight: number): void;'
+    parameters:
+    - id: rowHeight
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setShrinkToFit(shrinkToFit)
+  uid: ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)
+  package: ExcelScript!
+  fullName: setShrinkToFit(shrinkToFit)
+  summary: 指定文本是否自动缩小以适应可用列宽。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShrinkToFit(shrinkToFit: boolean): void;'
+    parameters:
+    - id: shrinkToFit
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: 区域内所有单元格的文本方向。 文本方向应为 -90 到 90 的整数，或垂直方向文本的 180。 如果范围内的方向不统一，则 `null` 返回 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setUseStandardHeight(useStandardHeight)
+  uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: setUseStandardHeight(useStandardHeight)
+  summary: 确定对象的行 `Range` 高是否等于工作表的标准高度。 如果 `true` 对象的行高等于工作表的标准高度，则 `Range` 返回 。 如果区域包含多个行且行的高度不相同，则返回 `null` 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseStandardHeight(useStandardHeight: boolean): void;'
+    parameters:
+    - id: useStandardHeight
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setUseStandardWidth(useStandardWidth)
+  uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: setUseStandardWidth(useStandardWidth)
+  summary: 指定对象的列宽 `Range` 是否等于工作表的标准宽度。 如果 `true` 对象的列宽等于工作表的标准宽度 `Range` ，则返回 。 如果区域包含多个列并且列的高度不相同，则 `null` 返回 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseStandardWidth(useStandardWidth: boolean): void;'
+    parameters:
+    - id: useStandardWidth
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setVerticalAlignment(verticalAlignment)
+  uid: ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setVerticalAlignment(verticalAlignment)
+  summary: 表示指定对象的垂直对齐方式。 有关详细信息，请参阅 `ExcelScript.VerticalAlignment`。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
+    parameters:
+    - id: verticalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setWrapText(wrapText)
+  uid: ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)
+  package: ExcelScript!
+  fullName: setWrapText(wrapText)
+  summary: 指定是否Excel对象中的文本换行。 `null`值指示整个区域没有统一换行设置
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWrapText(wrapText: boolean): void;'
+    parameters:
+    - id: wrapText
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 571788b608684d394f3bbb12eb82acdb736a4e2e
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003720"

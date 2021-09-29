@@ -326,7 +326,7 @@ methods:
       description: 对象 `Range` ，或表示数据源的范围的字符串地址或名称。 如果地址不包含工作表名称，将使用当前活动的工作表。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，则当此属性设置为 `false`<!-- -->) ，Excel将自动生成页眉，数据向下移动一行。
+      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，则当此属性设置为 `false`<!-- -->) ，Excel将自动生成页眉，将数据向下移动一行。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -381,7 +381,7 @@ methods:
               ): WorksheetCustomProperty;
     parameters:
     - id: key
-      description: '标识自定义属性对象的键。 不区分大小写。该键限制为 255 个字符 (较大的值将导致引发 `InvalidArgument` 错误。) '
+      description: '标识自定义属性对象的键。 不区分大小写。键限制为 255 个字符 (较大的值将导致引发错误 `InvalidArgument` 。) '
       type: string
     - id: value
       description: 此自定义属性的值。
@@ -422,7 +422,7 @@ methods:
               ): Worksheet;
     parameters:
     - id: positionType
-      description: 工作簿中放置新创建的工作表的位置。 默认值为"None"，该值将工作表插入工作表的开头。
+      description: 工作簿中放置新创建的工作表的位置。 默认值为"None"，该值在工作表的开头插入工作表。
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
       description: 确定新创建的工作表的位置的现有工作表。 只有在为 `positionType` "Before"或"After"时，才需要这样做。
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
   fullName: enterTemporaryNamedSheetView()
-  summary: 创建并激活新的临时工作表视图。 关闭应用程序、使用退出方法退出临时视图或切换到其他工作表视图时，将删除临时视图。 如果临时视图存在，也可以将临时工作表视图与空字符串 ("") "。
+  summary: 创建并激活新的临时工作表视图。 关闭应用程序、使用退出方法退出临时视图或切换到其他工作表视图时，将删除临时视图。 如果临时视图存在，也可以将临时工作表视图与空字符串 ("") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -488,7 +488,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script looks through a worksheet and finds cells containing \"No\". \n * Those cells are filled red.\n * Use Range.find instead of Worksheet.findAll when you want to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let noCells = worksheet.findAll(\"No\", { completeMatch: true });\n\n  // Set the fill color to red.\n  noCells.getFormat().getFill().setColor(\"red\");\n}\n```"
 - name: getActiveNamedSheetView()
   uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
   package: ExcelScript!
@@ -891,7 +891,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: 获取 `Range` 从特定行索引和列索引开始并跨越一定数量的行和列的对象。
+  summary: 获取从特定行索引和列索引开始并跨越一定数量的行 `Range` 和列的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1039,7 +1039,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)
   package: ExcelScript!
   fullName: getStandardWidth()
-  summary: 指定工作表中 (列) 列的默认列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+  summary: 指定工作表 (列) 列宽度的标准列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 `null`<!-- -->. 如果工作表可见，但选项卡颜色设置为自动，将返回空字符串。 否则，该属性将设置为 RRGGBB 格式的颜色，例如 \# ("FFA500") 。 设置颜色时，请使用空字符串设置"自动"颜色，否则使用真实颜色。
+  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 `null`<!-- -->. 如果工作表可见，但选项卡颜色设置为自动，将返回空字符串。 否则，该属性将设置为 RRGGBB 格式的颜色 (例如 \# "FFA500") 。 设置颜色时，请使用空字符串设置"自动"颜色，否则使用真实颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1310,7 +1310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)
   package: ExcelScript!
   fullName: setStandardWidth(standardWidth)
-  summary: 指定工作表中 (列) 列的默认列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+  summary: 指定工作表中 (列) 的默认列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 `null`<!-- -->. 如果工作表可见，但选项卡颜色设置为自动，将返回空字符串。 否则，该属性将设置为 RRGGBB 格式的颜色，例如 \# ("FFA500") 。 设置颜色时，请使用空字符串设置"自动"颜色，否则使用真实颜色。
+  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 `null`<!-- -->. 如果工作表可见，但选项卡颜色设置为自动，将返回空字符串。 否则，该属性将设置为 RRGGBB 格式的颜色 (例如 \# "FFA500") 。 设置颜色时，请使用空字符串设置"自动"颜色，否则使用真实颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6abeb2898ae72714b5d8b5d703c43c2c07056a2b
-  ms.sourcegitcommit: b426fa221dc89bd11cd7a2d1204c13a3bf656826
+  ms.openlocfilehash: 26571777e8d9e984b3dea653b3e9e85ed7c41166
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/18/2021
-  ms.locfileid: "58379968"
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003758"
