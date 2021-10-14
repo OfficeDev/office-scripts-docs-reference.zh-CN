@@ -42,7 +42,7 @@ methods:
               ): void;
     parameters:
     - id: destinationRange
-      description: "\"自动填充\"的目标区域。 如果目标区域为 `null`<!-- -->，则基于周围单元格 (填充数据，这是双击 UI 的范围填充句柄或) 。"
+      description: "\"自动填充\"的目标区域。 如果目标区域为 `null`<!-- -->，则基于周围单元格填充数据 (这是双击 UI 的范围填充句柄时的行为) 。"
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
       description: 自动填充的类型。 指定如何根据当前区域的内容填充目标区域。 默认值为"FillDefault"。
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: 获取一个对象，该对象代表区域整行 (例如，如果当前区域代表单元格"B4：E11"，则其为代表行 `GetEntireRow` "4：11") 。
+  summary: 获取一个代表区域整行的对象 (例如，如果当前区域代表单元格"B4：E11"，则其为代表行 `GetEntireRow` "4：11") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: 返回一个 range 对象，该对象包括当前区域以及范围边缘，根据提供的方向。 这与 UI 上键的 Ctrl+Shift+箭头Excel行为Windows匹配。
+  summary: 返回一个 range 对象，该对象包括当前区域以及范围边缘，根据提供的方向。 这与 UI 上键盘上的 Ctrl+Shift+箭头Excel行为Windows匹配。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -479,7 +479,7 @@ methods:
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script makes the font bold on all the contiguous cells between \n * A1 and the bottom of the used range of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get every cell that's used between A1 and the end of the column.\n  // This recreates the Ctrl+Shift+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = firstCell.getExtendedRange(ExcelScript.KeyboardDirection.down);\n\n  // Set the font to bold in that range.\n  firstColumn.getFormat().getFont().setBold(true);\n}\n```"
 - name: getFormat()
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
@@ -497,7 +497,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: 表示用 A1 样式表示法的单元格公式。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示用 A1 样式表示法的单元格公式。 如果区域包含多个单元格，将返回第一 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -510,7 +510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
-  summary: 表示采用 A1 样式表示法的单元格公式，采用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示采用 A1 样式表示法的单元格公式，采用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，将返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -523,7 +523,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
-  summary: 表示 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，将返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -774,7 +774,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 代表Excel单元格区域编号格式代码。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示单元格Excel区域编号格式代码。 如果区域包含多个单元格，将返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -800,7 +800,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
   package: ExcelScript!
   fullName: getNumberFormatCategory()
-  summary: 指定区域第一个单元格的编号 (由 0 的行索引和 0 的列索引表示) 。
+  summary: 指定范围中第一个单元格的编号 (由 0 的行索引和 0 的列索引表示) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -813,7 +813,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: 表示Excel区域（基于用户的语言设置）的单元格编号格式代码。 Excel获取或设置属性时，不会执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都基于系统设置中指定的语言使用本地格式的字符串。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示Excel区域（基于用户的语言设置）的单元格编号格式代码。 Excel获取或设置属性时，不会执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都基于系统设置中指定的语言使用本地格式的字符串。 如果区域包含多个单元格，将返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -839,7 +839,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: 表示Excel用户的语言设置，指定区域的电话号码格式代码。 Excel获取或设置属性时，不会执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都基于系统设置中指定的语言使用本地格式的字符串。
+  summary: 表示Excel用户的语言设置，指定范围的号码格式代码。 Excel获取或设置属性时，不会执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都基于系统设置中指定的语言使用本地格式的字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -902,7 +902,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: 返回一个 range 对象，该对象是数据区域的边缘单元格，对应于提供的方向。 这与 UI 上属性中的 Ctrl+箭头Excel行为Windows匹配。
+  summary: 返回一个 range 对象，该对象是数据区域的边缘单元格，对应于提供的方向。 这与 UI 上按钮的 ctrl+箭头Excel行为Windows匹配。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -921,7 +921,7 @@ methods:
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script adds the value \"Total\" after the end of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the last used cell at the end of the column.\n  // This recreates the Ctrl+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = selectedSheet.getRange(\"A1\").getRangeEdge(ExcelScript.KeyboardDirection.down);\n  let cellAfter = firstColumn.getOffsetRange(1, 0);\n\n  // Set the value of the cell after the current end of the used column to \"Total\".\n  cellAfter.setValue(\"Total\");\n}\n```"
 - name: getResizedRange(deltaRows, deltaColumns)
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
@@ -976,7 +976,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
   package: ExcelScript!
   fullName: getRowHidden()
-  summary: 表示当前区域的所有行是否隐藏。 值为 `true` 隐藏区域内的所有行时。 当 `false` 范围中没有任何行处于隐藏状态时，值为 。 值 `null` 是隐藏某一范围中的某些行，而隐藏同一范围中的其他行时的值。
+  summary: 表示当前区域的所有行是否隐藏。 值为 `true` 隐藏区域内的所有行时。 当 `false` 范围中没有任何行处于隐藏状态时，值为 。 当 `null` 一个范围中的某些行处于隐藏状态，而同一区域的其他行处于隐藏状态时，值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1142,7 +1142,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: 表示指定区域的文本值。 文本值与单元格宽度无关。 在 \# UI 中Excel替换符号不会影响 API 返回的文本值。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示指定区域的文本值。 文本值与单元格宽度无关。 在 \# UI 中Excel替换符号不会影响 API 返回的文本值。 如果区域包含多个单元格，将返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1155,7 +1155,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: 指定区域的文本值。 文本值与单元格宽度无关。 在 UI \# () 替换Excel符号不会影响 API 返回的文本值。
+  summary: 指定区域的文本值。 文本值与单元格宽度无关。 在 ui \# () 替换Excel符号不会影响 API 返回的文本值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1198,7 +1198,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，将返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1211,7 +1211,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
   fullName: getValues()
-  summary: 表示指定区域的原始值。 返回的数据可以是字符串、数字或布尔值。 包含错误的单元格将返回错误字符串。 如果返回的值以加号 ("+") 、减号 ("-") 或等号 ("=") 开头，Excel将此值解释为公式。
+  summary: 表示指定区域的原始值。 返回的数据可以是字符串、数字或布尔值。 包含错误的单元格将返回错误字符串。 如果返回的值以加号 ("+") 、减号 ("-") 或等号 ("=") 开头，Excel 将此值解释为公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1224,7 +1224,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
   package: ExcelScript!
   fullName: getValueType()
-  summary: 表示单元格中数据类型。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示单元格中数据类型。 如果区域包含多个单元格，将返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1297,7 +1297,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: 指定如何按行或列对区域进行分组。 当组选项与区域或属性不同时将引发错误 (即为 `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` true，为 `groupOption` "ByColumns"或 `range.isEntireColumn` true，且为 `groupOption` "ByRows") 。
+      description: 指定如何按行或列对区域进行分组。 当组选项与区域或属性不同时将引发错误 (即为 `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` true，为 `groupOption` "ByColumns"或 `range.isEntireColumn` true，为 `groupOption` "ByRows") 。
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1588,7 +1588,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: 设置Excel单元格的编号格式代码。 如果区域包含多个单元格，则给定区域的每个单元格都将使用输入数据进行更新。
+  summary: 设置单元格Excel区域编号格式代码。 如果区域包含多个单元格，则给定区域的每个单元格都将使用输入数据进行更新。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1673,7 +1673,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
   package: ExcelScript!
   fullName: setRowHidden(rowHidden)
-  summary: 表示当前区域的所有行是否隐藏。 值为 `true` 隐藏区域内的所有行时。 当 `false` 范围中没有任何行处于隐藏状态时，值为 。 值 `null` 是隐藏某一范围中的某些行，而隐藏同一范围中的其他行时的值。
+  summary: 表示当前区域的所有行是否隐藏。 值为 `true` 隐藏区域内的所有行时。 当 `false` 范围中没有任何行处于隐藏状态时，值为 。 当 `null` 一个范围中的某些行处于隐藏状态，而同一区域的其他行处于隐藏状态时，值为 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1707,7 +1707,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: 设置指定区域的原始值。 提供的数据可以是字符串、数字或布尔值。 如果提供的值以加号 ("+") 、减号 ("-") 或等号 ("=") 开头，Excel 将此值解释为公式。
+  summary: 设置指定区域的原始值。 提供的数据可以是字符串、数字或布尔值。 如果提供的值以加号 ("+") 、减 ("-") 或等号 ("=") 开头，Excel 将此值解释为公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1781,9 +1781,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6d238bce547d0bd250e01dde04b04e32173d8bf2
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: e44255d9c8f0023ddc124fd4a84f7583ce094a97
+  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003751"
+  ms.lasthandoff: 10/14/2021
+  ms.locfileid: "60355761"
