@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.AutoFilter
-uid: 'ExcelScript!ExcelScript.AutoFilter:interface'
+uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
 summary: 表示 `AutoFilter` 对象。 AutoFilter 根据单元格内容Excel列的值转换为特定筛选器。
@@ -9,122 +9,129 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: 'apply(range, columnIndex, criteria)'
-    uid: 'ExcelScript!ExcelScript.AutoFilter#apply:member(1)'
-    package: ExcelScript!
-    fullName: 'apply(range, columnIndex, criteria)'
-    summary: 将自动筛选器应用于区域。 如果指定了列索引和筛选条件，则筛选列。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        apply(
-                    range: Range | string,
-                    columnIndex?: number,
-                    criteria?: FilterCriteria
-                ): void;
-      parameters:
-        - id: range
-          description: 将应用自动筛选的范围。
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
-        - id: columnIndex
-          description: 应用自动筛选的从零开始编制的列索引。
-          type: number
-        - id: criteria
-          description: 筛选条件。
-          type: '<xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: clearCriteria()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#clearCriteria:member(1)'
-    package: ExcelScript!
-    fullName: clearCriteria()
-    summary: 清除自动筛选器的筛选条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clearCriteria(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getCriteria()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getCriteria:member(1)'
-    package: ExcelScript!
-    fullName: getCriteria()
-    summary: 在自动筛选区域中保留所有筛选条件的数组。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getCriteria(): FilterCriteria[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />[]'
-        description: ''
-  - name: getEnabled()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)'
-    package: ExcelScript!
-    fullName: getEnabled()
-    summary: 指定是否启用自动筛选。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getEnabled(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getIsDataFiltered()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)'
-    package: ExcelScript!
-    fullName: getIsDataFiltered()
-    summary: 指定自动筛选是否具有筛选条件。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIsDataFiltered(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getRange()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#getRange:member(1)'
-    package: ExcelScript!
-    fullName: getRange()
-    summary: 返回 `Range` 一个对象，该对象代表应用自动筛选的范围。 如果没有与自动筛选关联的对象，则此方法返回其属性设置为 `Range` `isNullObject` 的对象 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: reapply()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#reapply:member(1)'
-    package: ExcelScript!
-    fullName: reapply()
-    summary: 应用当前位于区域上的指定 Autofilter 对象。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'reapply(): void;'
-      return:
-        type: void
-        description: ''
-  - name: remove()
-    uid: 'ExcelScript!ExcelScript.AutoFilter#remove:member(1)'
-    package: ExcelScript!
-    fullName: remove()
-    summary: 删除区域的自动筛选。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'remove(): void;'
-      return:
-        type: void
-        description: ''
+- name: apply(range, columnIndex, criteria)
+  uid: ExcelScript!ExcelScript.AutoFilter#apply:member(1)
+  package: ExcelScript!
+  fullName: apply(range, columnIndex, criteria)
+  summary: 将自动筛选器应用于区域。 如果指定了列索引和筛选条件，则筛选列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      apply(
+                  range: Range | string,
+                  columnIndex?: number,
+                  criteria?: FilterCriteria
+              ): void;
+    parameters:
+    - id: range
+      description: 将应用自动筛选的范围。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: columnIndex
+      description: 应用自动筛选的从零开始编制的列索引。
+      type: number
+    - id: criteria
+      description: 筛选条件。
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
+    return:
+      type: void
+      description: ''
+- name: clearCriteria()
+  uid: ExcelScript!ExcelScript.AutoFilter#clearCriteria:member(1)
+  package: ExcelScript!
+  fullName: clearCriteria()
+  summary: 清除自动筛选的筛选条件及排序状态。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearCriteria(): void;'
+    return:
+      type: void
+      description: ''
+- name: getCriteria()
+  uid: ExcelScript!ExcelScript.AutoFilter#getCriteria:member(1)
+  package: ExcelScript!
+  fullName: getCriteria()
+  summary: 在自动筛选区域中保留所有筛选条件的数组。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCriteria(): FilterCriteria[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />[]
+      description: ''
+- name: getEnabled()
+  uid: ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)
+  package: ExcelScript!
+  fullName: getEnabled()
+  summary: 指定是否启用自动筛选。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEnabled(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsDataFiltered()
+  uid: ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)
+  package: ExcelScript!
+  fullName: getIsDataFiltered()
+  summary: 指定自动筛选是否具有筛选条件。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsDataFiltered(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: 返回 `Range` 一个对象，该对象代表应用自动筛选的范围。 如果没有与自动筛选关联的对象，则此方法返回其属性设置为 `Range` `isNullObject` 的对象 `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: reapply()
+  uid: ExcelScript!ExcelScript.AutoFilter#reapply:member(1)
+  package: ExcelScript!
+  fullName: reapply()
+  summary: 应用当前位于区域上的指定 Autofilter 对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reapply(): void;'
+    return:
+      type: void
+      description: ''
+- name: remove()
+  uid: ExcelScript!ExcelScript.AutoFilter#remove:member(1)
+  package: ExcelScript!
+  fullName: remove()
+  summary: 删除区域的自动筛选。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'remove(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e798066ad83627541c710f23dd17468bc22e9c66
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793350"

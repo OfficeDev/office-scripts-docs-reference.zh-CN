@@ -318,7 +318,7 @@ methods:
       description: 对象 `Range` ，或表示数据源的范围的字符串地址或名称。 如果地址不包含工作表名称，将使用当前活动的工作表。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，例如，当此属性设置为 `false`<!-- -->) ，Excel自动生成页眉，数据向下移动一行。
+      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，例如，当此属性设置为 `false`<!-- -->) ，Excel将自动生成页眉，数据向下移动一行。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -380,6 +380,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
       description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script adds a new worksheet named \"Data\" to the workbook.\n * If a worksheet with that name already exists, the script logs a note.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet already exists.\n  if (workbook.getWorksheet(\"Data\")) {\n    console.log(\"The Data worksheet is already in the workbook.\");\n  } else {\n    // Add a new worksheet.\n    let worksheet = workbook.addWorksheet(\"Data\");\n  }\n}\n```"
+- name: breakAllLinksToLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#breakAllLinksToLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: breakAllLinksToLinkedWorkbooks()
+  summary: 断开指向链接工作簿的所有链接。 链接断开后，引用工作簿链接的任何公式将完全删除，并替换为最近检索到的值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'breakAllLinksToLinkedWorkbooks(): void;'
+    return:
+      type: void
+      description: ''
 - name: getActiveCell()
   uid: ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)
   package: ExcelScript!
@@ -742,6 +755,49 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
       description: ''
+- name: getLinkedWorkbookByUrl(key)
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbookByUrl(key)
+  summary: 按 URL 获取链接工作簿的信息。 如果工作簿不存在，则此函数将返回其属性设置为 `isNullObject``true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbookByUrl(key: string): LinkedWorkbook | undefined;'
+    parameters:
+    - id: key
+      description: 链接工作簿的 URL。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedWorkbook:interface" /> | undefined
+      description: ''
+- name: getLinkedWorkbookRefreshMode()
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookRefreshMode:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbookRefreshMode()
+  summary: 表示工作簿链接的更新模式。 该模式对于工作簿中所有的工作簿链接都相同。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbookRefreshMode(): WorkbookLinksRefreshMode;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum" />
+      description: ''
+- name: getLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbooks()
+  summary: 返回链接工作簿的集合。 在公式中，工作簿链接可用于引用数据 (当前工作簿) 单元格值和名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbooks(): LinkedWorkbook[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedWorkbook:interface" />[]
+      description: ''
 - name: getName()
   uid: ExcelScript!ExcelScript.Workbook#getName:member(1)
   package: ExcelScript!
@@ -776,7 +832,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNames:member(1)
   package: ExcelScript!
   fullName: getNames()
-  summary: 表示工作簿范围的命名项集合， (范围和常量) 。
+  summary: 代表工作簿范围的命名项集合， (范围和常量) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1159,6 +1215,19 @@ methods:
     return:
       type: void
       description: ''
+- name: refreshAllLinksToLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#refreshAllLinksToLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: refreshAllLinksToLinkedWorkbooks()
+  summary: 请求刷新所有工作簿链接。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshAllLinksToLinkedWorkbooks(): void;'
+    return:
+      type: void
+      description: ''
 - name: refreshAllPivotTables()
   uid: ExcelScript!ExcelScript.Workbook#refreshAllPivotTables:member(1)
   package: ExcelScript!
@@ -1277,6 +1346,26 @@ methods:
     return:
       type: void
       description: ''
+- name: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
+  uid: ExcelScript!ExcelScript.Workbook#setLinkedWorkbookRefreshMode:member(1)
+  package: ExcelScript!
+  fullName: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
+  summary: 表示工作簿链接的更新模式。 该模式对于工作簿中所有的工作簿链接都相同。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setLinkedWorkbookRefreshMode(
+                  linkedWorkbookRefreshMode: WorkbookLinksRefreshMode
+              ): void;
+    parameters:
+    - id: linkedWorkbookRefreshMode
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum" />
+    return:
+      type: void
+      description: ''
 - name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
   uid: ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
@@ -1295,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1861d589a81d75380b4f92bccb13376a263cf6b6
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: 6639d3d72f5077f3f49c1ad953085ecd684ef599
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355754"
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793364"
