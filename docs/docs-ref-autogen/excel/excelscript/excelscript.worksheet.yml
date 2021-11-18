@@ -326,7 +326,7 @@ methods:
       description: 对象 `Range` ，或表示数据源的范围的字符串地址或名称。 如果地址不包含工作表名称，将使用当前活动的工作表。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，例如，当此属性设置为 `false`<!-- -->) ，Excel自动生成页眉，数据向下移动一行。
+      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，则当此属性设置为 `false`<!-- -->) ，Excel将自动生成页眉，数据向下移动一行。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -422,7 +422,7 @@ methods:
               ): Worksheet;
     parameters:
     - id: positionType
-      description: 工作簿中放置新创建的工作表的位置。 默认值为"None"，该值将工作表插入工作表的开头。
+      description: 工作簿中放置新创建的工作表的位置。 默认值为"None"，该值在工作表的开头插入工作表。
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
       description: 确定新创建的工作表的位置的现有工作表。 只有在为 `positionType` "Before"或"After"时，才需要这样做。
@@ -539,7 +539,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: 使用图表名称获取图表。 如果存在多个名称相同的图表，将返回第一个图表。 如果图表不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 使用图表名称获取图表。 如果存在多个名称相同的图表，将返回第一个图表。 如果图表不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: 使用 `NamedItem` 对象的名称获取对象。 如果对象不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 使用 `NamedItem` 对象的名称获取对象。 如果对象不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: 获取此工作表后跟的工作表。 如果此工作表后没有工作表，则此方法将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 获取此工作表后跟的工作表。 如果此工作表后没有工作表，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: 按名称获取 PivotTable 对象。 如果数据透视表不存在，则此函数返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 按名称获取 PivotTable 对象。 如果数据透视表不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -844,7 +844,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
   package: ExcelScript!
   fullName: getPrevious(visibleOnly)
-  summary: 获取此工作表之前的工作表。 如果没有以前的工作表，则此方法将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 获取此工作表之前的工作表。 如果没有以前的工作表，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -891,7 +891,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: 获取 `Range` 从特定行索引和列索引开始并跨越一定数量的行和列的对象。
+  summary: 获取从特定行索引和列索引开始并跨越一定数量的行 `Range` 和列的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -996,7 +996,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: 使用其名称或 ID 获取切片器。 如果切片器不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 使用其名称或 ID 获取切片器。 如果切片器不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1039,7 +1039,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)
   package: ExcelScript!
   fullName: getStandardWidth()
-  summary: 指定工作表中 (列) 列宽度的标准列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+  summary: 指定工作表中 (列) 列的默认列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1065,7 +1065,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: 按名称或 ID 获取表。 如果 table 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 按名称或 ID 获取表。 如果表格不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1138,7 +1138,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 按键获取自定义属性对象（不区分大小写）。 如果自定义属性不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1225,7 +1225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
   package: ExcelScript!
   fullName: setEnableCalculation(enableCalculation)
-  summary: 确定是否Excel应重新计算工作表（ 如有必要）。 如此 如果Excel重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
+  summary: 确定是否Excel重新计算工作表（ 如有必要）。 如此 如果Excel重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1310,7 +1310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)
   package: ExcelScript!
   fullName: setStandardWidth(standardWidth)
-  summary: 指定工作表中 (列) 列宽度的标准列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+  summary: 指定工作表中 (列) 列的默认列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d72ac45bf8844897dbdf829fd94f516fbce4bea
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: b57e4675686b008cc43f13043451f1be337f9b23
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355733"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064799"

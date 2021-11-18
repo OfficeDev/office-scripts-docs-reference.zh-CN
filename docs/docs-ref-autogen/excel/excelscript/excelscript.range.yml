@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: 获取一个对象，该对象代表区域整列 (例如，如果当前区域代表单元格"B4：E11"，则它是表示列 `getEntireColumn` "B：E") 。
+  summary: 获取一个对象，该对象代表区域"B4：E11" (例如，如果当前区域代表单元格"B4：E11"，则它是表示列 `getEntireColumn` "B：E") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: 获取一个对象，该对象代表单元格区域整行 (例如，如果当前区域代表单元格"B4：E11"，则其区域表示行 `GetEntireRow` "4：11") 。
+  summary: 获取一个对象，该对象代表 (例如，如果当前区域代表单元格"B4：E11"，则其为表示行 `GetEntireRow` "4：11") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -497,7 +497,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: 表示用 A1 样式表示法的单元格公式。 如果区域包含多个单元格，将返回第一 (0 的行索引和 0 的列索引) 数据。
+  summary: 表示用 A1 样式表示法的单元格公式。 如果区域包含多个单元格，将返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -510,7 +510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
-  summary: 表示采用 A1 样式表示法的单元格公式，采用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，将返回第一 (0 的行索引和 0 的列索引) 数据。
+  summary: 表示采用 A1 样式表示法的单元格公式，采用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，将返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -523,7 +523,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
-  summary: 表示 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -627,7 +627,11 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: 将区域呈现为 base64 编码 png 图像。
+  summary: >-
+    将区域呈现为 base64 编码 png 图像。
+
+
+    **注意**：存在一个已知问题，导致超出单元格宽度的换行文本或文本呈现在同一行上，而无需 `Range.getImage` 换行。 这使得生成的图像不可读，因为文本会溢出整行。 作为一种解决方法，请确保区域数据作为单行适合每个单元格。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -774,7 +778,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 表示单元格Excel区域编号格式代码。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示单元格Excel区域编号格式代码。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -800,7 +804,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
   package: ExcelScript!
   fullName: getNumberFormatCategory()
-  summary: 指定区域第一个单元格的编号格式类别 (0 的行索引和 0 的列索引表示) 。
+  summary: 指定区域第一个单元格的编号 (由 0 的行索引和 0 的列索引表示) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -813,7 +817,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: 表示Excel区域（基于用户的语言设置）的单元格编号格式代码。 Excel获取或设置属性时，不会执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都基于系统设置中指定的语言使用本地格式的字符串。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示Excel区域（基于用户的语言设置）的单元格编号格式代码。 Excel获取或设置属性时，不会执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都基于系统设置中指定的语言使用本地格式的字符串。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -902,7 +906,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: 返回一个 range 对象，该对象是数据区域的边缘单元格，对应于提供的方向。 这与 UI 上控件的 Excel 中的 Ctrl+Windows行为匹配。
+  summary: 返回一个 range 对象，该对象是数据区域的边缘单元格，对应于提供的方向。 这与 UI 上属性中的 Ctrl+箭头Excel行为Windows匹配。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -976,7 +980,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
   package: ExcelScript!
   fullName: getRowHidden()
-  summary: 表示当前区域的所有行是否隐藏。 值为 `true` 隐藏区域内的所有行时。 当 `false` 范围中没有任何行处于隐藏状态时，值为 。 当 `null` 一个范围中的某些行处于隐藏状态，而同一区域的其他行处于隐藏状态时，值为 。
+  summary: 表示当前区域的所有行是否隐藏。 值为 `true` 隐藏区域内的所有行时。 当 `false` 范围中没有任何行处于隐藏状态时，值为 。 值 `null` 是隐藏某一范围中的某些行，而隐藏同一范围中的其他行时的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1142,7 +1146,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: 表示指定区域的文本值。 文本值与单元格宽度无关。 在 \# UI 中Excel替换符号不会影响 API 返回的文本值。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示指定区域的文本值。 文本值与单元格宽度无关。 在 \# UI 中Excel替换符号不会影响 API 返回的文本值。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1155,7 +1159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: 指定区域的文本值。 文本值与单元格宽度无关。 在 () UI 中发生的数字 \# Excel替换不会影响 API 返回的文本值。
+  summary: 指定区域的文本值。 文本值与单元格宽度无关。 在 ui \# () 替换Excel符号不会影响 API 返回的文本值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1198,7 +1202,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，将返回第一 (0 的行索引和 0 的列索引) 数据。
+  summary: 表示指定区域的原始值。 返回的数据可能是字符串、数字，也可能是布尔值。 包含错误的单元格将返回错误字符串。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1224,7 +1228,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
   package: ExcelScript!
   fullName: getValueType()
-  summary: 表示单元格中数据类型。 如果区域包含多个单元格，将返回第一 (0 的行索引和 0 的列索引) 数据。
+  summary: 表示单元格中数据类型。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1673,7 +1677,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
   package: ExcelScript!
   fullName: setRowHidden(rowHidden)
-  summary: 表示当前区域的所有行是否隐藏。 值为 `true` 隐藏区域内的所有行时。 当 `false` 范围中没有任何行处于隐藏状态时，值为 。 当 `null` 一个范围中的某些行处于隐藏状态，而同一区域的其他行处于隐藏状态时，值为 。
+  summary: 表示当前区域的所有行是否隐藏。 值为 `true` 隐藏区域内的所有行时。 当 `false` 范围中没有任何行处于隐藏状态时，值为 。 值 `null` 是隐藏某一范围中的某些行，而隐藏同一范围中的其他行时的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1781,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793378"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064904"

@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: 返回 `Range` 一个对象，该对象代表应用自动筛选的范围。 如果没有与自动筛选关联的对象，则此方法返回其属性设置为 `Range` `isNullObject` 的对象 `true`<!-- -->.
+  summary: 返回 `Range` 一个对象，该对象代表应用自动筛选的范围。 如果没有与 `Range` 自动筛选关联的对象，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e798066ad83627541c710f23dd17468bc22e9c66
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: f600ab01652e0bc2791c8d73018be8df23ec9b54
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793350"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064827"

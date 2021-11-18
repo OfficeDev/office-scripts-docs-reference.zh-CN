@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeAreas
-uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+uid: ExcelScript!ExcelScript.RangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeAreas
 summary: '`RangeAreas` 表示同一工作表中一个或多个矩形区域的集合。'
@@ -9,436 +9,443 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: addConditionalFormat(type)
-    uid: 'ExcelScript!ExcelScript.RangeAreas#addConditionalFormat:member(1)'
-    package: ExcelScript!
-    fullName: addConditionalFormat(type)
-    summary: 将新的条件格式添加到第一/第一优先级的集合。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
-      parameters:
-        - id: type
-          description: 要添加的条件格式的类型。 有关详细信息，请参阅 `ExcelScript.ConditionalFormatType`。
-          type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />'
-        description: ''
-  - name: calculate()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
-    package: ExcelScript!
-    fullName: calculate()
-    summary: 计算 `RangeAreas`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'calculate(): void;'
-      return:
-        type: void
-        description: ''
-  - name: clear(applyTo)
-    uid: 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
-    package: ExcelScript!
-    fullName: clear(applyTo)
-    summary: 清除包含此对象的每个区域的值、格式、填充、边框和其他 `RangeAreas` 属性。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clear(applyTo?: ClearApplyTo): void;'
-      parameters:
-        - id: applyTo
-          description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 `ExcelScript.ClearApplyTo`。 默认值为"All"。
-          type: '<xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: clearAllConditionalFormats()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
-    package: ExcelScript!
-    fullName: clearAllConditionalFormats()
-    summary: 清除当前指定区域中处于活动状态的所有条件格式。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clearAllConditionalFormats(): void;'
-      return:
-        type: void
-        description: ''
-  - name: convertDataTypeToText()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
-    package: ExcelScript!
-    fullName: convertDataTypeToText()
-    summary: 将 数据类型为 `RangeAreas` 的 中所有单元格转换为文本。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'convertDataTypeToText(): void;'
-      return:
-        type: void
-        description: ''
-  - name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
-    package: ExcelScript!
-    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    summary: 将单元格数据或格式从源区域或 `RangeAreas` 当前 `RangeAreas`<!-- -->. 目标 `RangeAreas` 大小可以不同于源区域或 `RangeAreas`<!-- -->. 如果目标小于源，则会自动展开目标。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        copyFrom(
-                    sourceRange: Range | RangeAreas | string,
-                    copyType?: RangeCopyType,
-                    skipBlanks?: boolean,
-                    transpose?: boolean
-                ): void;
-      parameters:
-        - id: sourceRange
-          description: 源区域或 `RangeAreas` 复制源区域。 当源具有多个区域时，必须通过从矩形区域中删除整行或整列来 `RangeAreas` 创建其形式。
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string'
-        - id: copyType
-          description: 要复制的单元格数据或格式的类型。 默认值为"All"。
-          type: '<xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />'
-        - id: skipBlanks
-          description: 如此 如果跳过源区域或空白单元格 `RangeAreas`<!-- -->. 默认值为 false。
-          type: boolean
-        - id: transpose
-          description: 如此 如果转置目标中的单元格 `RangeAreas`<!-- -->. 默认为 false。
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: getAddress()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
-    package: ExcelScript!
-    fullName: getAddress()
-    summary: 以 `RangeAreas` A1 样式返回引用。 地址值将包含单元格区域的每个矩形块的 (名称，例如"Sheet1！A1：B4，Sheet1！D1：D4") 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAddress(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getAddressLocal()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
-    package: ExcelScript!
-    fullName: getAddressLocal()
-    summary: 返回 `RangeAreas` 用户区域设置中的引用。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAddressLocal(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getAreaCount()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getAreaCount:member(1)'
-    package: ExcelScript!
-    fullName: getAreaCount()
-    summary: 返回包含此对象的矩形区域 `RangeAreas` 的数量。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAreaCount(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getAreas()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getAreas:member(1)'
-    package: ExcelScript!
-    fullName: getAreas()
-    summary: 返回包含此对象的矩形区域 `RangeAreas` 的集合。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAreas(): Range[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />[]'
-        description: ''
-  - name: getCellCount()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)'
-    package: ExcelScript!
-    fullName: getCellCount()
-    summary: '返回对象中的单元格数，并汇总所有单个矩形范围的 `RangeAreas` 单元格计数。 如果单元格计数超过 2^31-1 (2,147,483,647)，则返回 -1。'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getCellCount(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getConditionalFormat(id)
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormat:member(1)'
-    package: ExcelScript!
-    fullName: getConditionalFormat(id)
-    summary: 返回给定 ID 的条件格式。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getConditionalFormat(id: string): ConditionalFormat;'
-      parameters:
-        - id: id
-          description: 条件格式的 ID。
-          type: string
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />'
-        description: ''
-  - name: getConditionalFormats()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)'
-    package: ExcelScript!
-    fullName: getConditionalFormats()
-    summary: 返回一组条件格式，这些格式与该对象中任何单元格 `RangeAreas` 相交。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getConditionalFormats(): ConditionalFormat[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]'
-        description: ''
-  - name: getDataValidation()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getDataValidation:member(1)'
-    package: ExcelScript!
-    fullName: getDataValidation()
-    summary: 返回中所有区域的数据验证对象 `RangeAreas`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getDataValidation(): DataValidation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DataValidation:interface" />'
-        description: ''
-  - name: getEntireColumn()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)'
-    package: ExcelScript!
-    fullName: getEntireColumn()
-    summary: 返回一个对象，该对象代表 (例如，如果当前表示单元格 `RangeAreas` `RangeAreas` `RangeAreas` "B4：E11， H2"，则返回 表示列 `RangeAreas` "B：E， H：H") 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getEntireColumn(): RangeAreas;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getEntireRow()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)'
-    package: ExcelScript!
-    fullName: getEntireRow()
-    summary: 返回一个对象，该对象代表 (例如，如果当前代表单元格 `RangeAreas` `RangeAreas` `RangeAreas` "B4：E11"，则返回表示行 `RangeAreas` "4：11") 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getEntireRow(): RangeAreas;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getFormat()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)'
-    package: ExcelScript!
-    fullName: getFormat()
-    summary: 返回一个对象，该对象封装对象中所有范围的字体、填充、边框、 `RangeFormat` 对齐方式和其他 `RangeAreas` 属性。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormat(): RangeFormat;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />'
-        description: ''
-  - name: getIntersection(anotherRange)
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)'
-    package: ExcelScript!
-    fullName: getIntersection(anotherRange)
-    summary: 返回 `RangeAreas` 表示给定区域或 `RangeAreas`<!-- -->. 如果未找到任何交集，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
-      parameters:
-        - id: anotherRange
-          description: 用于确定交 `RangeAreas` 集的范围、对象或地址。
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getIsEntireColumn()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)'
-    package: ExcelScript!
-    fullName: getIsEntireColumn()
-    summary: 指定此对象上的所有区域是否代表整个列 (例如 `RangeAreas` ，"A：C，Q：Z") 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIsEntireColumn(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getIsEntireRow()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)'
-    package: ExcelScript!
-    fullName: getIsEntireRow()
-    summary: 指定此对象上的所有区域是否代表整个行 (例如 `RangeAreas` ，"1：3， 5：7") 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIsEntireRow(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)'
-    package: ExcelScript!
-    fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
-    summary: 返回 `RangeAreas` 由特定行和列偏移移动的对象。 返回的维度 `RangeAreas` 将匹配原始对象。 如果强制在工作表网格边界之外生成的结果 `RangeAreas` ，将引发错误。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        getOffsetRangeAreas(
-                    rowOffset: number,
-                    columnOffset: number
-                ): RangeAreas;
-      parameters:
-        - id: rowOffset
-          description: 正、 (或 0) 偏移的 `RangeAreas` 行数。 正值表示向下偏移，负值表示向上偏移。
-          type: number
-        - id: columnOffset
-          description: 正、 (或 0) 偏移的 `RangeAreas` 列数。 正值表示向右偏移，负值表示向左偏移。
-          type: number
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getPredefinedCellStyle()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)'
-    package: ExcelScript!
-    fullName: getPredefinedCellStyle()
-    summary: 表示此对象中所有范围的 `RangeAreas` 样式。 如果单元格的样式不一致， `null` 将返回 。 对于自定义样式，将返回样式名称。 对于内置样式，将返回表示枚举中的 `BuiltInStyle` 值的字符串。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPredefinedCellStyle(): string;'
-      return:
-        type: string
-        description: ''
-  - name: 'getSpecialCells(cellType, cellValueType)'
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)'
-    package: ExcelScript!
-    fullName: 'getSpecialCells(cellType, cellValueType)'
-    summary: 返回 `RangeAreas` 一个对象，该对象代表与指定类型和值匹配的所有单元格。 如果没有找到与条件匹配的特殊单元格，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        getSpecialCells(
-                    cellType: SpecialCellType,
-                    cellValueType?: SpecialCellValueType
-                ): RangeAreas;
-      parameters:
-        - id: cellType
-          description: 要包含的单元格的类型。
-          type: '<xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />'
-        - id: cellValueType
-          description: If `cellType` 为 `constants` 或 `formulas`<!-- -->，该参数用于确定结果中要包含的单元格类型。 这些值可以组合在一起以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
-          type: '<xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getTables(fullyContained)
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getTables:member(1)'
-    package: ExcelScript!
-    fullName: getTables(fullyContained)
-    summary: 返回与该对象中任何区域重叠的表的范围集合 `RangeAreas` 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTables(fullyContained?: boolean): Table[];'
-      parameters:
-        - id: fullyContained
-          description: If `true`<!-- -->，则仅返回范围边界内完全包含的表。 默认值为 `false`<!-- -->.
-          type: boolean
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Table:interface" />[]'
-        description: ''
-  - name: getUsedRangeAreas(valuesOnly)
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)'
-    package: ExcelScript!
-    fullName: getUsedRangeAreas(valuesOnly)
-    summary: 返回由 `RangeAreas` 对象中各个矩形区域的所有已用区域组成的 `RangeAreas` used。 如果 `RangeAreas`<!-- -->，则此函数将返回其 `isNullObject` 属性设置为 的对象 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
-      parameters:
-        - id: valuesOnly
-          description: 是否仅将具有值的单元格视为已使用的单元格。
-          type: boolean
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getWorksheet()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)'
-    package: ExcelScript!
-    fullName: getWorksheet()
-    summary: 返回当前 `RangeAreas`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWorksheet(): Worksheet;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
-        description: ''
-  - name: setDirty()
-    uid: 'ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)'
-    package: ExcelScript!
-    fullName: setDirty()
-    summary: 设置 `RangeAreas` 在下次重新计算时要重新计算的 。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setDirty(): void;'
-      return:
-        type: void
-        description: ''
-  - name: setPredefinedCellStyle(predefinedCellStyle)
-    uid: 'ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)'
-    package: ExcelScript!
-    fullName: setPredefinedCellStyle(predefinedCellStyle)
-    summary: 表示此对象中所有范围的 `RangeAreas` 样式。 如果单元格的样式不一致， `null` 将返回 。 对于自定义样式，将返回样式名称。 对于内置样式，将返回表示枚举中的 `BuiltInStyle` 值的字符串。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
-      parameters:
-        - id: predefinedCellStyle
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
+- name: addConditionalFormat(type)
+  uid: ExcelScript!ExcelScript.RangeAreas#addConditionalFormat:member(1)
+  package: ExcelScript!
+  fullName: addConditionalFormat(type)
+  summary: 将新的条件格式添加到第一/第一优先级的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+    parameters:
+    - id: type
+      description: 要添加的条件格式的类型。 有关详细信息，请参阅 `ExcelScript.ConditionalFormatType`。
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
+      description: ''
+- name: calculate()
+  uid: ExcelScript!ExcelScript.RangeAreas#calculate:member(1)
+  package: ExcelScript!
+  fullName: calculate()
+  summary: 计算 `RangeAreas`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(): void;'
+    return:
+      type: void
+      description: ''
+- name: clear(applyTo)
+  uid: ExcelScript!ExcelScript.RangeAreas#clear:member(1)
+  package: ExcelScript!
+  fullName: clear(applyTo)
+  summary: 清除包含此对象的每个区域的值、格式、填充、边框和其他 `RangeAreas` 属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(applyTo?: ClearApplyTo): void;'
+    parameters:
+    - id: applyTo
+      description: 可选。 确定清除操作的类型。 有关详细信息，请参阅 `ExcelScript.ClearApplyTo`。 默认值为"All"。
+      type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
+    return:
+      type: void
+      description: ''
+- name: clearAllConditionalFormats()
+  uid: ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)
+  package: ExcelScript!
+  fullName: clearAllConditionalFormats()
+  summary: 清除当前指定区域中处于活动状态的所有条件格式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearAllConditionalFormats(): void;'
+    return:
+      type: void
+      description: ''
+- name: convertDataTypeToText()
+  uid: ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)
+  package: ExcelScript!
+  fullName: convertDataTypeToText()
+  summary: 将 数据类型为 `RangeAreas` 的 中所有单元格转换为文本。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'convertDataTypeToText(): void;'
+    return:
+      type: void
+      description: ''
+- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  uid: ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)
+  package: ExcelScript!
+  fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  summary: 将单元格数据或格式从源区域或 `RangeAreas` 当前 `RangeAreas`<!-- -->. 目标 `RangeAreas` 大小可以不同于源区域或 `RangeAreas`<!-- -->. 如果目标小于源，则会自动展开目标。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copyFrom(
+                  sourceRange: Range | RangeAreas | string,
+                  copyType?: RangeCopyType,
+                  skipBlanks?: boolean,
+                  transpose?: boolean
+              ): void;
+    parameters:
+    - id: sourceRange
+      description: 源区域或 `RangeAreas` 复制源区域。 当源具有多个区域时，必须通过从矩形区域中删除整行或整列来 `RangeAreas` 创建其形式。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
+    - id: copyType
+      description: 要复制的单元格数据或格式的类型。 默认值为"All"。
+      type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
+    - id: skipBlanks
+      description: 如此 如果跳过源区域或空白单元格 `RangeAreas`<!-- -->. 默认为 false。
+      type: boolean
+    - id: transpose
+      description: 如此 如果转置目标中的单元格 `RangeAreas`<!-- -->. 默认为 false。
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: getAddress()
+  uid: ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)
+  package: ExcelScript!
+  fullName: getAddress()
+  summary: 以 `RangeAreas` A1 样式返回引用。 地址值将包含每个单元格矩形块的工作表名称， (例如"Sheet1！A1：B4，Sheet1！D1：D4") 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddress(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAddressLocal()
+  uid: ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)
+  package: ExcelScript!
+  fullName: getAddressLocal()
+  summary: 返回 `RangeAreas` 用户区域设置中的引用。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAddressLocal(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAreaCount()
+  uid: ExcelScript!ExcelScript.RangeAreas#getAreaCount:member(1)
+  package: ExcelScript!
+  fullName: getAreaCount()
+  summary: 返回包含此对象的矩形区域 `RangeAreas` 的数量。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAreaCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getAreas()
+  uid: ExcelScript!ExcelScript.RangeAreas#getAreas:member(1)
+  package: ExcelScript!
+  fullName: getAreas()
+  summary: 返回包含此对象的矩形区域 `RangeAreas` 的集合。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAreas(): Range[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
+      description: ''
+- name: getCellCount()
+  uid: ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)
+  package: ExcelScript!
+  fullName: getCellCount()
+  summary: 返回对象中的单元格数，并汇总所有单个矩形范围的 `RangeAreas` 单元格计数。 如果单元格计数超过 2^31-1 (2,147,483,647)，则返回 -1。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCellCount(): number;'
+    return:
+      type: number
+      description: ''
+- name: getConditionalFormat(id)
+  uid: ExcelScript!ExcelScript.RangeAreas#getConditionalFormat:member(1)
+  package: ExcelScript!
+  fullName: getConditionalFormat(id)
+  summary: 返回给定 ID 的条件格式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConditionalFormat(id: string): ConditionalFormat;'
+    parameters:
+    - id: id
+      description: 条件格式的 ID。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
+      description: ''
+- name: getConditionalFormats()
+  uid: ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)
+  package: ExcelScript!
+  fullName: getConditionalFormats()
+  summary: 返回一组条件格式，这些格式与该对象中任何单元格 `RangeAreas` 相交。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConditionalFormats(): ConditionalFormat[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]
+      description: ''
+- name: getDataValidation()
+  uid: ExcelScript!ExcelScript.RangeAreas#getDataValidation:member(1)
+  package: ExcelScript!
+  fullName: getDataValidation()
+  summary: 返回中所有区域的数据验证对象 `RangeAreas`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataValidation(): DataValidation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidation:interface" />
+      description: ''
+- name: getEntireColumn()
+  uid: ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)
+  package: ExcelScript!
+  fullName: getEntireColumn()
+  summary: 返回一个对象，该对象代表 (例如，如果当前表示单元格 `RangeAreas` `RangeAreas` `RangeAreas` "B4：E11， H2"，则返回表示列 `RangeAreas` "B：E， H：H") 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireColumn(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getEntireRow()
+  uid: ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)
+  package: ExcelScript!
+  fullName: getEntireRow()
+  summary: 返回一个对象，该对象代表 (例如，如果当前表示单元格 `RangeAreas` `RangeAreas` `RangeAreas` "B4：E11"，则返回表示行 `RangeAreas` "4：11") 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireRow(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 返回一个对象，该对象封装对象中所有范围的字体、填充、边框、 `RangeFormat` 对齐方式和其他 `RangeAreas` 属性。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): RangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
+      description: ''
+- name: getIntersection(anotherRange)
+  uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
+  package: ExcelScript!
+  fullName: getIntersection(anotherRange)
+  summary: 返回 `RangeAreas` 表示给定区域或 `RangeAreas`<!-- -->. 如果未找到任何交集，则此函数返回 `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
+    parameters:
+    - id: anotherRange
+      description: 用于确定交 `RangeAreas` 集的范围、对象或地址。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getIsEntireColumn()
+  uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)
+  package: ExcelScript!
+  fullName: getIsEntireColumn()
+  summary: 指定此对象上的所有区域是否代表整个列 (例如 `RangeAreas` ，"A：C，Q：Z") 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEntireColumn(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsEntireRow()
+  uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)
+  package: ExcelScript!
+  fullName: getIsEntireRow()
+  summary: 指定此对象上的所有区域是否表示整个行 (例如 `RangeAreas` ，"1：3， 5：7") 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEntireRow(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getOffsetRangeAreas(rowOffset, columnOffset)
+  uid: ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)
+  package: ExcelScript!
+  fullName: getOffsetRangeAreas(rowOffset, columnOffset)
+  summary: 返回 `RangeAreas` 由特定行和列偏移移动的对象。 返回的维度 `RangeAreas` 将匹配原始对象。 如果强制在工作表网格边界之外生成的结果 `RangeAreas` ，将引发错误。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getOffsetRangeAreas(
+                  rowOffset: number,
+                  columnOffset: number
+              ): RangeAreas;
+    parameters:
+    - id: rowOffset
+      description: 正、 (或 0) 偏移的行 `RangeAreas` 数。 正值表示向下偏移，负值表示向上偏移。
+      type: number
+    - id: columnOffset
+      description: 正、 (或 0 的列数) 偏移的 `RangeAreas` 列数。 正值表示向右偏移，负值表示向左偏移。
+      type: number
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getPredefinedCellStyle()
+  uid: ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: getPredefinedCellStyle()
+  summary: 表示此对象中所有范围的 `RangeAreas` 样式。 如果单元格的样式不一致， `null` 将返回 。 对于自定义样式，将返回样式名称。 对于内置样式，将返回表示枚举中的 `BuiltInStyle` 值的字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPredefinedCellStyle(): string;'
+    return:
+      type: string
+      description: ''
+- name: getSpecialCells(cellType, cellValueType)
+  uid: ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)
+  package: ExcelScript!
+  fullName: getSpecialCells(cellType, cellValueType)
+  summary: 返回 `RangeAreas` 一个对象，该对象代表与指定类型和值匹配的所有单元格。 如果未找到与条件匹配的特殊单元格，则此函数返回 `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getSpecialCells(
+                  cellType: SpecialCellType,
+                  cellValueType?: SpecialCellValueType
+              ): RangeAreas;
+    parameters:
+    - id: cellType
+      description: 要包含的单元格的类型。
+      type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
+    - id: cellValueType
+      description: If `cellType` 为 `constants` 或 `formulas`<!-- -->，该参数用于确定结果中要包含的单元格类型。 这些值可以组合在一起以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
+      type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getTables(fullyContained)
+  uid: ExcelScript!ExcelScript.RangeAreas#getTables:member(1)
+  package: ExcelScript!
+  fullName: getTables(fullyContained)
+  summary: 返回与该对象中任何区域重叠的表的范围集合 `RangeAreas` 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTables(fullyContained?: boolean): Table[];'
+    parameters:
+    - id: fullyContained
+      description: If `true`<!-- -->，则仅返回范围边界内完全包含的表。 默认值为 `false`<!-- -->.
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
+      description: ''
+- name: getUsedRangeAreas(valuesOnly)
+  uid: ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)
+  package: ExcelScript!
+  fullName: getUsedRangeAreas(valuesOnly)
+  summary: 返回由 `RangeAreas` 对象中各个矩形区域的所有已用区域组成的 `RangeAreas` used。 如果 `RangeAreas`<!-- -->，则此函数返回 `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
+    parameters:
+    - id: valuesOnly
+      description: 是否仅将具有值的单元格视为已使用的单元格。
+      type: boolean
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: 返回当前 `RangeAreas`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: setDirty()
+  uid: ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)
+  package: ExcelScript!
+  fullName: setDirty()
+  summary: 设置 `RangeAreas` 在下次重新计算时要重新计算的 。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDirty(): void;'
+    return:
+      type: void
+      description: ''
+- name: setPredefinedCellStyle(predefinedCellStyle)
+  uid: ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)
+  package: ExcelScript!
+  fullName: setPredefinedCellStyle(predefinedCellStyle)
+  summary: 表示此对象中所有范围的 `RangeAreas` 样式。 如果单元格的样式不一致， `null` 将返回 。 对于自定义样式，将返回样式名称。 对于内置样式，将返回表示枚举中的 `BuiltInStyle` 值的字符串。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
+    parameters:
+    - id: predefinedCellStyle
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d2379d59b4a588788b4700e9985267e6ddf6a6d7
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064848"

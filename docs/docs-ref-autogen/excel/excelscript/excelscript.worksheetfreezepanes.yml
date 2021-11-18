@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetFreezePanes
-uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
+uid: ExcelScript!ExcelScript.WorksheetFreezePanes:interface
 package: ExcelScript!
 fullName: ExcelScript.WorksheetFreezePanes
 summary: ''
@@ -9,80 +9,87 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: freezeAt(frozenRange)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
-    package: ExcelScript!
-    fullName: freezeAt(frozenRange)
-    summary: 设置活动工作表视图中的冻结单元格。 提供的范围对应于将在顶部和左侧窗格中冻结的单元格。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeAt(frozenRange: Range | string): void;'
-      parameters:
-        - id: frozenRange
-          description: 一个代表要冻结的单元格或移除所有冻结 `null` 窗格的范围。
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
-      return:
-        type: void
-        description: ''
-  - name: freezeColumns(count)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
-    package: ExcelScript!
-    fullName: freezeColumns(count)
-    summary: 就地冻结工作表的第一列。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeColumns(count?: number): void;'
-      parameters:
-        - id: count
-          description: 要冻结的列数（可选）或零（以解除冻结所有列）
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: freezeRows(count)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
-    package: ExcelScript!
-    fullName: freezeRows(count)
-    summary: 就地冻结工作表的首行。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeRows(count?: number): void;'
-      parameters:
-        - id: count
-          description: 要冻结的行数（可选）或零（以解除冻结所有行）
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: getLocation()
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
-    package: ExcelScript!
-    fullName: getLocation()
-    summary: 获取用于描述活动工作表视图中的冻结单元格的区域。 冻结区域对应于在顶部和左侧窗格中冻结的单元格。 如果没有冻结窗格，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLocation(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: unfreeze()
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
-    package: ExcelScript!
-    fullName: unfreeze()
-    summary: 移除工作表中的所有冻结窗格。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'unfreeze(): void;'
-      return:
-        type: void
-        description: ''
+- name: freezeAt(frozenRange)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
+  package: ExcelScript!
+  fullName: freezeAt(frozenRange)
+  summary: 设置活动工作表视图中的冻结单元格。 提供的范围对应于将在顶部和左侧窗格中冻结的单元格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeAt(frozenRange: Range | string): void;'
+    parameters:
+    - id: frozenRange
+      description: 一个代表要冻结的单元格或移除所有冻结 `null` 窗格的范围。
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: freezeColumns(count)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
+  package: ExcelScript!
+  fullName: freezeColumns(count)
+  summary: 就地冻结工作表的第一列。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeColumns(count?: number): void;'
+    parameters:
+    - id: count
+      description: 要冻结的列数（可选）或零（以解除冻结所有列）
+      type: number
+    return:
+      type: void
+      description: ''
+- name: freezeRows(count)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
+  package: ExcelScript!
+  fullName: freezeRows(count)
+  summary: 就地冻结工作表的首行。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeRows(count?: number): void;'
+    parameters:
+    - id: count
+      description: 要冻结的行数（可选）或零（以解除冻结所有行）
+      type: number
+    return:
+      type: void
+      description: ''
+- name: getLocation()
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
+  package: ExcelScript!
+  fullName: getLocation()
+  summary: 获取用于描述活动工作表视图中的冻结单元格的区域。 冻结区域对应于在顶部和左侧窗格中冻结的单元格。 如果没有冻结窗格，则此函数返回 `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocation(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: unfreeze()
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)
+  package: ExcelScript!
+  fullName: unfreeze()
+  summary: 移除工作表中的所有冻结窗格。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unfreeze(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 98ee21716269e9fcbb26b7cb2623708b083d54df
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064819"
