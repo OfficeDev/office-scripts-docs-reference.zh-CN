@@ -174,7 +174,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script looks through a table column and finds cells marked \"no change\". \n * Those cells have \"no change\" replaced with the value from the cell to the left.\n * This script uses Range.find instead of Worksheet.findAll \n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"March\").getRange();\n\n  // Find all cells with the value \"no change\".\n  let cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  while (cellToOverwrite) {\n    let cellToCopyFrom = cellToOverwrite.getOffsetRange(0,-1);\n    cellToOverwrite.setValue(cellToCopyFrom.getValue());\n    cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script searches through a table column and finds cells marked \"no change\". \n * Those cells have \"no change\" replaced with the value from the cell to the left.\n * This script uses Range.find instead of Worksheet.findAll \n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"March\").getRange();\n\n  // Find all cells with the value \"no change\".\n  let cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  while (cellToOverwrite) {\n    let cellToCopyFrom = cellToOverwrite.getOffsetRange(0,-1);\n    cellToOverwrite.setValue(cellToCopyFrom.getValue());\n    cellToOverwrite = range.find(\"no change\", { completeMatch: true });\n  }\n}\n```"
 - name: flashFill()
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: 获取一个对象，该对象代表区域"B4：E11" (例如，如果当前区域代表单元格"B4：E11"，则它是表示列 `getEntireColumn` "B：E") 。
+  summary: 获取一个对象，该对象代表区域区域整列 (例如，如果当前区域代表单元格"B4：E11"，则其为代表列 `getEntireColumn` "B：E") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: 获取一个对象，该对象代表 (例如，如果当前区域代表单元格"B4：E11"，则其为表示行 `GetEntireRow` "4：11") 。
+  summary: 获取一个对象，该对象代表单元格区域整行 (例如，如果当前区域代表单元格"B4：E11"，则它是表示行 `GetEntireRow` "4：11") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: 返回一个 range 对象，该对象包括当前区域以及范围边缘，根据提供的方向。 这与 UI 上控件中的 Ctrl+Shift+箭头Excel行为Windows匹配。
+  summary: 返回一个 range 对象，该对象包括当前区域以及范围边缘，根据提供的方向。 这与 UI 上键盘上的 Ctrl+Shift+箭头Excel行为Windows匹配。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -497,7 +497,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: 表示用 A1 样式表示法的单元格公式。 如果区域包含多个单元格，将返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示用 A1 样式表示法的单元格公式。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -510,7 +510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
-  summary: 表示采用 A1 样式表示法的单元格公式，采用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，将返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
+  summary: 表示采用 A1 样式表示法的单元格公式，采用用户的语言和数字格式区域设置。 例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -523,7 +523,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
-  summary: 表示 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
+  summary: 表示 R1C1 样式表示法中的单元格公式。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -778,7 +778,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: 表示单元格Excel区域编号格式代码。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
+  summary: 表示单元格Excel区域编号格式代码。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -817,7 +817,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: 表示Excel区域（基于用户的语言设置）的单元格编号格式代码。 Excel获取或设置属性时，不会执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都基于系统设置中指定的语言使用本地格式的字符串。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
+  summary: 表示Excel区域（基于用户的语言设置）的编号格式代码的单元格。 Excel获取或设置属性时，不会执行任何语言或格式 `numberFormatLocal` 强制转换。 任何返回的文本都基于系统设置中指定的语言使用本地格式的字符串。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -930,7 +930,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
   fullName: getResizedRange(deltaRows, deltaColumns)
-  summary: 获取一个与当前对象类似的对象，但其右下角 (或按) 行和列数缩小 `Range` `Range` 。
+  summary: 获取一个与当前对象类似的对象，但其右下角 (或缩小) 行和列 `Range` `Range` 数。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1146,7 +1146,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: 表示指定区域的文本值。 文本值与单元格宽度无关。 在 \# UI 中Excel替换符号不会影响 API 返回的文本值。 如果区域包含多个单元格，则返回第一个单元格 (0 的行索引和 0 的列索引) 数据。
+  summary: 表示指定区域的文本值。 文本值与单元格宽度无关。 在 \# UI 中Excel替换符号不会影响 API 返回的文本值。 如果区域包含多个单元格，则返回第一个单元格 (由 0 的行索引和 0 的列索引) 数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1159,7 +1159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: 指定区域的文本值。 文本值与单元格宽度无关。 在 ui \# () 替换Excel符号不会影响 API 返回的文本值。
+  summary: 指定区域的文本值。 文本值与单元格宽度无关。 在 UI \# () 替换Excel符号不会影响 API 返回的文本值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1215,7 +1215,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
   fullName: getValues()
-  summary: 表示指定区域的原始值。 返回的数据可以是字符串、数字或布尔值。 包含错误的单元格将返回错误字符串。 如果返回的值以加号 ("+") 、减 ("-") 或等号 ("=") 开头，Excel 将此值解释为公式。
+  summary: 表示指定区域的原始值。 返回的数据可以是字符串、数字或布尔值。 包含错误的单元格将返回错误字符串。 如果返回的值以加号 ("+") 、减号 ("-") 或等号 ("=") 开头，Excel 将此值解释为公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1425,7 +1425,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
     return:
       type: number
-      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script looks through a table column and replaces  \n * cells marked \"monthly special\" with \"parsnip\".\n * This script uses Range.replaceAll instead of Worksheet.replaceAll\n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"Vegetable\").getRange();\n  \n  // Change the value of any cells with the value \"monthly special\".\n  range.replaceAll(\"monthly special\", \"parsnip\", {completeMatch: true});\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script searches through a table column and replaces  \n * cells marked \"monthly special\" with \"parsnip\".\n * This script uses Range.replaceAll instead of Worksheet.replaceAll\n * to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range of a table named \"Orders\".\n  let table = workbook.getTable(\"Orders\");\n  let range = table.getColumnByName(\"Vegetable\").getRange();\n  \n  // Change the value of any cells with the value \"monthly special\".\n  range.replaceAll(\"monthly special\", \"parsnip\", {completeMatch: true});\n}\n```"
 - name: select()
   uid: ExcelScript!ExcelScript.Range#select:member(1)
   package: ExcelScript!
@@ -1711,7 +1711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: 设置指定区域的原始值。 提供的数据可以是字符串、数字或布尔值。 如果提供的值以加号 ("+") 、减号 ("-") 或等号 ("=") 开头，Excel 将此值解释为公式。
+  summary: 设置指定区域的原始值。 提供的数据可以是字符串、数字或布尔值。 如果提供的值以加号 ("+") 、减号 ("-") 或等号 ("=") 开头，Excel将此值解释为公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: f53fee1a0c937cb705b0890bc9e783670fcb6e58
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064904"
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240645"
