@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.RangeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeFill
 summary: 表示 range 对象的背景。
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script sets the fill color of the used range to green.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the used range of the current worksheet.\n  let currentSheet = workbook.getActiveWorksheet();\n  let usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeFill object.\n  let fill = usedRange.getFormat().getFill();\n\n  // Set the fill color to green.\n  fill.setColor(\"green\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,12 +21,12 @@ methods:
     content: 'clear(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script removes all fill color and styles from the used range.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the used range of the current worksheet.\n  let currentSheet = workbook.getActiveWorksheet();\n  let usedRange = currentSheet.getUsedRange();\n\n  // Clear the fill from the entire range.\n  usedRange.getFormat().getFill().clear();\n}\n```"
 - name: getColor()
   uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: '表示背景颜色的 HTML 颜色代码，格式为 \# RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") '
+  summary: '\#表示背景颜色的 HTML 颜色代码，格式为 RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
   package: ExcelScript!
   fullName: getPattern()
-  summary: 范围的图案。 有关详细信息，请参阅 `ExcelScript.FillPattern`。 不支持 LinearGradient 和 RectangularGradient。 `null`值表示整个区域没有统一图案设置。
+  summary: 范围的图案。 有关详细信息，请参阅 `ExcelScript.FillPattern`。 不支持 LinearGradient 和 RectangularGradient。 值 `null` 表示整个区域没有统一的图案设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
   package: ExcelScript!
   fullName: getPatternColor()
-  summary: HTML 颜色代码，表示区域图案的颜色，格式为 \# RRGGBB (例如，"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。
+  summary: HTML 颜色 \#代码，表示区域图案的颜色，格式为 RRGGBB (例如，"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: getPatternTintAndShade()
-  summary: 指定使区域填充的图案颜色变亮或变暗的双精度型。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示区域没有统一 `patternTintAndShade` 设置。
+  summary: 指定使区域填充的图案颜色变亮或变暗的双精度型。 该值介于 -1 到 (最暗) 和 1 (最亮) ，0 表示原始颜色。 值 `null` 表示区域没有统一 `patternTintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: 指定使区域填充的颜色变亮或变暗的双精度值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示区域没有统一 `tintAndShade` 设置。
+  summary: 指定使区域填充的颜色变亮或变暗的双精度值。 该值介于 -1 到 (最暗) 和 1 (最亮) ，0 表示原始颜色。 值 `null` 表示区域没有统一 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: '表示背景颜色的 HTML 颜色代码，格式为 \# RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") '
+  summary: '\#表示背景颜色的 HTML 颜色代码，格式为 RRGGBB (例如"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") '
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
   package: ExcelScript!
   fullName: setPattern(pattern)
-  summary: 范围的图案。 有关详细信息，请参阅 `ExcelScript.FillPattern`。 不支持 LinearGradient 和 RectangularGradient。 `null`值表示整个区域没有统一图案设置。
+  summary: 范围的图案。 有关详细信息，请参阅 `ExcelScript.FillPattern`。 不支持 LinearGradient 和 RectangularGradient。 值 `null` 表示整个区域没有统一的图案设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
   package: ExcelScript!
   fullName: setPatternColor(patternColor)
-  summary: HTML 颜色代码，表示区域图案的颜色，格式为 \# RRGGBB (例如，"FFA500") 或作为已命名的 HTML 颜色 (例如"orange") 。
+  summary: HTML 颜色 \#代码，表示区域图案的颜色，格式为 RRGGBB (例如，"FFA500") ，或作为已命名的 HTML 颜色 (例如"orange") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: setPatternTintAndShade(patternTintAndShade)
-  summary: 指定使区域填充的图案颜色变亮或变暗的双精度型。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示区域没有统一 `patternTintAndShade` 设置。
+  summary: 指定使区域填充的图案颜色变亮或变暗的双精度型。 该值介于 -1 到 (最暗) 和 1 (最亮) ，0 表示原始颜色。 值 `null` 表示区域没有统一 `patternTintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: 指定使区域填充的颜色变亮或变暗的双精度值。 该值介于 -1 和 (最) 和 1 (最亮) ，原始颜色为 0。 `null`值表示区域没有统一 `tintAndShade` 设置。
+  summary: 指定使区域填充的颜色变亮或变暗的双精度值。 该值介于 -1 到 (最暗) 和 1 (最亮) ，0 表示原始颜色。 值 `null` 表示区域没有统一 `tintAndShade` 设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 50a9ed8476ce3f2bbcc2d8a3209cec35097a6657
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: a6ffc69ccf2ef802d028fb2df60ca6e4a752c352
+  ms.sourcegitcommit: 95d4c3dc3d1a6a84b10430cfe796f4d883d5dbf4
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003727"
+  ms.lasthandoff: 03/09/2022
+  ms.locfileid: "63391608"
