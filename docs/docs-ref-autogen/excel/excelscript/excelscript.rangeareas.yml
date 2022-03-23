@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.RangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeAreas
 summary: '`RangeAreas` 表示同一工作表中一个或多个矩形区域的集合。'
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -55,7 +55,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 - name: clearAllConditionalFormats()
   uid: ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)
   package: ExcelScript!
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  summary: 将单元格数据或格式从源区域或 `RangeAreas` 当前 `RangeAreas`<!-- -->. 目标 `RangeAreas` 大小可以不同于源区域或 `RangeAreas`<!-- -->. 如果目标小于源，则会自动展开目标。
+  summary: 将单元格数据或格式从源区域或 `RangeAreas` 当前 `RangeAreas`<!-- -->. `RangeAreas`目标大小可以不同于源区域或`RangeAreas`<!-- -->. 如果目标小于源，则会自动展开目标。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,7 +100,7 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: 源区域或 `RangeAreas` 复制源区域。 当源具有多个区域时，必须通过从矩形区域中删除整行或整列来 `RangeAreas` 创建其形式。
+      description: 源区域或 `RangeAreas` 复制源区域。 当源 `RangeAreas` 具有多个区域时，必须通过从矩形区域中删除整行或整列来创建其形式。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
       description: 要复制的单元格数据或格式的类型。 默认值为"All"。
@@ -118,7 +118,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: 以 `RangeAreas` A1 样式返回引用。 地址值将包含每个单元格矩形块的工作表名称， (例如"Sheet1！A1：B4，Sheet1！D1：D4") 。
+  summary: '`RangeAreas`以 A1 样式返回引用。 地址值将包含单元格区域的每个矩形块的工作表 (例如"Sheet1！A1：B4，Sheet1！D1：D4") 。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -131,7 +131,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)
   package: ExcelScript!
   fullName: getAddressLocal()
-  summary: 返回 `RangeAreas` 用户区域设置中的引用。
+  summary: '`RangeAreas`返回用户区域设置中的引用。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)
   package: ExcelScript!
   fullName: getCellCount()
-  summary: 返回对象中的单元格数，并汇总所有单个矩形范围的 `RangeAreas` 单元格计数。 如果单元格计数超过 2^31-1 (2,147,483,647)，则返回 -1。
+  summary: 返回对象中的单元格数 `RangeAreas` ，并汇总所有单个矩形范围的单元格计数。 如果单元格计数超过 2^31-1 (2,147,483,647)，则返回 -1。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -200,7 +200,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
-  summary: 返回一组条件格式，这些格式与该对象中任何单元格 `RangeAreas` 相交。
+  summary: 返回一组条件格式，这些格式与该对象中任何单元格相交 `RangeAreas` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -226,7 +226,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: 返回一个对象，该对象代表 (例如，如果当前表示单元格 `RangeAreas` `RangeAreas` `RangeAreas` "B4：E11， H2"，则返回表示列 `RangeAreas` "B：E， H：H") 。
+  summary: '`RangeAreas` `RangeAreas` `RangeAreas` 返回一个对象，该对象代表 (例如，如果当前表示单元格"B4：E11， H2"`RangeAreas`，则返回表示列"B：E， H：H") 。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,7 +239,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: 返回一个对象，该对象代表 (例如，如果当前表示单元格 `RangeAreas` `RangeAreas` `RangeAreas` "B4：E11"，则返回表示行 `RangeAreas` "4：11") 。
+  summary: '`RangeAreas`返回一个对象`RangeAreas``RangeAreas`，该对象代表 (例如，如果当前表示单元格"B4：E11"`RangeAreas`，则返回表示行"4：11") 。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -252,7 +252,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: 返回一个对象，该对象封装对象中所有范围的字体、填充、边框、 `RangeFormat` 对齐方式和其他 `RangeAreas` 属性。
+  summary: 返回一 `RangeFormat` 个对象，该对象封装对象中所有范围的字体、填充、边框、对齐方式和其他 `RangeAreas` 属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,12 +260,12 @@ methods:
     content: 'getFormat(): RangeFormat;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script finds and highlights all the cells in the current worksheet that contain a formula.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula.\n  const formulaCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas);\n\n  // Add a light blue background to the cells containing formulas.\n  formulaCells.getFormat().getFill().setColor(\"#ADD8E6\");\n}\n```"
 - name: getIntersection(anotherRange)
   uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: 返回 `RangeAreas` 表示给定区域或 `RangeAreas`<!-- -->. 如果未找到任何交集，则此函数返回 `undefined`<!-- -->.
+  summary: '`RangeAreas`返回表示给定区域或`RangeAreas`<!-- -->. 如果未找到任何交集，则此函数返回 `undefined`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -282,7 +282,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)
   package: ExcelScript!
   fullName: getIsEntireColumn()
-  summary: 指定此对象上的所有区域是否代表整个列 (例如 `RangeAreas` ，"A：C，Q：Z") 。
+  summary: 指定此对象上的所有区域 `RangeAreas` 是否代表整个列 (例如，"A：C，Q：Z") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)
   package: ExcelScript!
   fullName: getIsEntireRow()
-  summary: 指定此对象上的所有区域是否表示整个行 (例如 `RangeAreas` ，"1：3， 5：7") 。
+  summary: 指定此对象上的所有 `RangeAreas` 区域是否代表整个行 (例如，"1：3， 5：7") 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)
   package: ExcelScript!
   fullName: getOffsetRangeAreas(rowOffset, columnOffset)
-  summary: 返回 `RangeAreas` 由特定行和列偏移移动的对象。 返回的维度 `RangeAreas` 将匹配原始对象。 如果强制在工作表网格边界之外生成的结果 `RangeAreas` ，将引发错误。
+  summary: 返回由 `RangeAreas` 特定行和列偏移移动的对象。 返回的维度将 `RangeAreas` 匹配原始对象。 如果强制 `RangeAreas` 在工作表网格边界之外生成的结果，将引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,10 +320,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: rowOffset
-      description: 正、 (或 0) 偏移的行 `RangeAreas` 数。 正值表示向下偏移，负值表示向上偏移。
+      description: 正、 (或 0) 偏移 `RangeAreas` 的行数。 正值表示向下偏移，负值表示向上偏移。
       type: number
     - id: columnOffset
-      description: 正、 (或 0 的列数) 偏移的 `RangeAreas` 列数。 正值表示向右偏移，负值表示向左偏移。
+      description: 正、 (或 0 `RangeAreas`) 偏移的列数。 正值表示向右偏移，负值表示向左偏移。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -332,7 +332,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: 表示此对象中所有范围的 `RangeAreas` 样式。 如果单元格的样式不一致， `null` 将返回 。 对于自定义样式，将返回样式名称。 对于内置样式，将返回表示枚举中的 `BuiltInStyle` 值的字符串。
+  summary: 表示此对象中所有范围的 `RangeAreas` 样式。 如果单元格的样式不一致，将 `null` 返回 。 对于自定义样式，将返回样式名称。 对于内置样式，将返回表示枚举中的 `BuiltInStyle` 值的字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -345,7 +345,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: 返回 `RangeAreas` 一个对象，该对象代表与指定类型和值匹配的所有单元格。 如果未找到与条件匹配的特殊单元格，则此函数返回 `undefined`<!-- -->.
+  summary: 返回一 `RangeAreas` 个对象，该对象代表与指定类型和值匹配的所有单元格。 如果未找到与条件匹配的特殊单元格，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
       description: 要包含的单元格的类型。
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: If `cellType` 为 `constants` 或 `formulas`<!-- -->，该参数用于确定结果中要包含的单元格类型。 这些值可以组合在一起以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
+      description: If `cellType` 为 或`constants``formulas`<!-- -->，该参数用于确定结果中要包含的单元格类型。 这些值可以组合在一起以返回多个类型。 默认情况下，将选择所有常量或公式，无论类型如何。
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)
   package: ExcelScript!
   fullName: setDirty()
-  summary: 设置 `RangeAreas` 在下次重新计算时要重新计算的 。
+  summary: '`RangeAreas`设置在下次重新计算时要重新计算的 。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -429,7 +429,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: 表示此对象中所有范围的 `RangeAreas` 样式。 如果单元格的样式不一致， `null` 将返回 。 对于自定义样式，将返回样式名称。 对于内置样式，将返回表示枚举中的 `BuiltInStyle` 值的字符串。
+  summary: 表示此对象中所有范围的 `RangeAreas` 样式。 如果单元格的样式不一致，将 `null` 返回 。 对于自定义样式，将返回样式名称。 对于内置样式，将返回表示枚举中的 `BuiltInStyle` 值的字符串。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -443,9 +443,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d2379d59b4a588788b4700e9985267e6ddf6a6d7
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 61f1c5d9f766f016055f7398b9ba2bada8b22e0d
+  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064848"
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63755968"
