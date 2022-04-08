@@ -42,7 +42,7 @@ methods:
       description: 表示图表的类型。 有关详细信息，请参阅 `ExcelScript.ChartType`。
       type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
     - id: sourceData
-      description: 对应于 `Range` 源数据的对象。
+      description: 与 `Range` 源数据对应的对象。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
       description: 可选。 指定列或行在图表上用作数据系列的方式。 有关详细信息，请参阅 `ExcelScript.ChartSeriesBy`。
@@ -54,7 +54,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addComment:member(1)
   package: ExcelScript!
   fullName: addComment(cellAddress, content, contentType)
-  summary: 使用给定单元格上的给定内容创建新批注。 如果 `InvalidArgument` 提供的范围大于一个单元格，将引发错误。
+  summary: 使用给定单元格上的给定内容创建新批注。 `InvalidArgument`如果提供的区域大于一个单元格，则会引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -67,13 +67,13 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: 将批注添加到的单元格。 它可以是对象 `Range` 或字符串。 如果是字符串，则必须包含完整地址，包括工作表名称。 如果 `InvalidArgument` 提供的范围大于一个单元格，将引发错误。
+      description: 将注释添加到的单元格。 这可以是 `Range` 对象或字符串。 如果是字符串，则必须包含完整地址，包括工作表名称。 `InvalidArgument`如果提供的区域大于一个单元格，则会引发错误。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: 注释的内容。 它可以是字符串或 `CommentRichContent` 对象。 字符串用于纯文本。 `CommentRichContent` 对象允许其他评论功能，例如提及。
+      description: 注释的内容。 这可以是字符串或 `CommentRichContent` 对象。 字符串用于纯文本。 `CommentRichContent` 对象允许其他注释功能，例如提及。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 可选。 注释中包含的内容类型。 默认值为 enum `ContentType.Plain`<!-- -->.
+      description: 可选。 注释中包含的内容类型。 默认值为枚举 `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addGeometricShape:member(1)
   package: ExcelScript!
   fullName: addGeometricShape(geometricShapeType)
-  summary: 将几何形状添加到工作表。 返回一 `Shape` 个代表新形状的对象。
+  summary: 将几何形状添加到工作表。 返回一个代表 `Shape` 新形状的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addGroup:member(1)
   package: ExcelScript!
   fullName: addGroup(values)
-  summary: 在此集合的工作表中对形状的子集进行分组。 返回一 `Shape` 个对象，该对象代表新的形状组。
+  summary: 在此集合的工作表中对形状的子集进行分组。 返回一个 `Shape` 表示新形状组的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addImage:member(1)
   package: ExcelScript!
   fullName: addImage(base64ImageString)
-  summary: 从 base64 编码的字符串创建图像并将其添加到工作表。 `Shape`返回表示新图像的对象。
+  summary: 从 base64 编码的字符串创建图像并将其添加到工作表。 返回表示 `Shape` 新图像的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -141,7 +141,7 @@ methods:
     content: 'addImage(base64ImageString: string): Shape;'
     parameters:
     - id: base64ImageString
-      description: base64 编码的字符串，表示 JPEG 或 PNG 格式的图像。
+      description: 表示 JPEG 或 PNG 格式的图像的 base64 编码字符串。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -150,7 +150,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addLine:member(1)
   package: ExcelScript!
   fullName: addLine(startLeft, startTop, endLeft, endTop, connectorType)
-  summary: 将线条添加到工作表。 返回一 `Shape` 个代表新行的对象。
+  summary: 将线条添加到工作表。 返回表示 `Shape` 新行的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -165,16 +165,16 @@ methods:
               ): Shape;
     parameters:
     - id: startLeft
-      description: 从线条起点到工作表左侧的距离（以点表示）。
+      description: 从行的开头到工作表左侧的距离（以磅为单位）。
       type: number
     - id: startTop
-      description: 从行的起始位置到工作表顶端的距离（以点表示）。
+      description: 从行开始到工作表顶部的距离（以磅为单位）。
       type: number
     - id: endLeft
-      description: 从行的末尾到工作表左侧的距离（以点表示）。
+      description: 从行的末尾到工作表左侧的距离（以磅为单位）。
       type: number
     - id: endTop
-      description: 从行的末尾到工作表顶端的距离（以点表示）。
+      description: 从行的末尾到工作表顶部的距离（以磅为单位）。
       type: number
     - id: connectorType
       description: 表示连接器类型。 有关详细信息，请参阅 `ExcelScript.ConnectorType`。
@@ -205,7 +205,7 @@ methods:
       description: 名称将引用的公式或区域。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: 可选。 与已命名项目关联的注释。
+      description: 可选。 与命名项关联的注释。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: 名称将引用的采用用户区域设置的公式。
       type: string
     - id: comment
-      description: 可选。 与已命名项目关联的注释。
+      description: 可选。 与命名项关联的注释。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -250,7 +250,7 @@ methods:
     content: 'addNamedSheetView(name: string): NamedSheetView;'
     parameters:
     - id: name
-      description: 要创建的工作表视图的名称。 如果提供的名称已存在、为空或为工作表保留的名称，则引发错误。
+      description: 要创建的工作表视图的名称。 如果提供的名称已存在、为空或是工作表保留的名称，则引发错误。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
   package: ExcelScript!
   fullName: addPivotTable(name, source, destination)
-  summary: 添加基于指定源数据的数据透视表，并将其插入到目标区域左上方的单元格中。
+  summary: 根据指定的源数据添加数据透视表，并将其插入目标范围的左上角单元格。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -275,7 +275,7 @@ methods:
       description: 新数据透视表的名称。
       type: string
     - id: source
-      description: 新数据透视表的源数据，可以是区域 (或字符串地址，包括工作表名称) 表。
+      description: 新数据透视表的源数据，可以是范围 (或字符串地址，包括工作表名称) 或表。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
       description: 数据透视表目标区域（工作表中用于放置所生成的报表的区域）左上角的单元格。
@@ -300,13 +300,13 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: 新切片器将基于的数据源。 它可以是对象 `PivotTable` 、对象 `Table` 或字符串。 传递 PivotTable 对象时，数据源是该对象的 `PivotTable` 源。 `Table`传递对象时，数据源即为`Table`对象。 传递字符串时，它将被解释为数据透视表或表的名称或 ID。
+      description: 新切片器将基于的数据源。 它可以是 `PivotTable` 对象、 `Table` 对象或字符串。 传递数据透视表对象时，数据源是对象的 `PivotTable` 源。 `Table`传递对象时，数据源是`Table`对象。 传递字符串时，它将解释为数据透视表或表的名称或 ID。
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: 要筛选的数据源中的字段。 它可以是 `PivotField` 对象、对象 `TableColumn` 、ID `PivotField` 或名称或 ID `TableColumn`<!-- -->.
+      description: 要筛选的数据源中的字段。 它可以是一个 `PivotField` 对象，一个 `TableColumn` 对象，一个 `PivotField` 或名称或 ID 的 ID `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: 可选。 将在其中新建切片器的工作表。 它可以是对象 `Worksheet` 或工作表的名称或 ID。 如果从工作表中检索切片器集合，可以省略此参数。
+      description: 可选。 将在其中创建新切片器的工作表。 它可以是一个 `Worksheet` 对象，也可以是工作表的名称或 ID。 如果从工作表中检索切片器集合，则可以省略此参数。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -326,7 +326,7 @@ methods:
       description: 对象 `Range` ，或表示数据源的范围的字符串地址或名称。 如果地址不包含工作表名称，将使用当前活动的工作表。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，则当此属性设置为 `false`<!-- -->) ，Excel将自动生成页眉，数据向下移动一行。
+      description: 一个布尔值，指示导入的数据是否具有列标签。 如果源不包含标头 (即当此属性设置为 `false`<!-- -->) ，Excel将自动生成标头，并将数据向下移一行。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
@@ -335,7 +335,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)
   package: ExcelScript!
   fullName: addTextBox(text)
-  summary: 使用提供的文本作为内容，将文本框添加到工作表。 返回一 `Shape` 个代表新文本框的对象。
+  summary: 使用提供的文本作为内容，将文本框添加到工作表。 返回一个代表 `Shape` 新文本框的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -343,7 +343,7 @@ methods:
     content: 'addTextBox(text?: string): Shape;'
     parameters:
     - id: text
-      description: 代表将在创建的文本框中显示的文本。
+      description: 表示将在创建的文本框中显示的文本。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -369,7 +369,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: addWorksheetCustomProperty(key, value)
-  summary: 添加映射到提供的键的新自定义属性。 这将用该键覆盖现有的自定义属性。
+  summary: 添加映射到所提供密钥的新自定义属性。 这会用该密钥覆盖现有自定义属性。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -381,7 +381,7 @@ methods:
               ): WorksheetCustomProperty;
     parameters:
     - id: key
-      description: '标识自定义属性对象的键。 不区分大小写。键限制为 255 个字符 (较大的值 `InvalidArgument` 将导致引发错误。) '
+      description: '标识自定义属性对象的键。 这是不区分大小写的。密钥限制为 255 个字符 (较大的值将导致 `InvalidArgument` 引发错误。) '
       type: string
     - id: value
       description: 此自定义属性的值。
@@ -401,7 +401,7 @@ methods:
     content: 'calculate(markAllDirty: boolean): void;'
     parameters:
     - id: markAllDirty
-      description: 如果为 True，则全部标记为脏。
+      description: 如此，将所有标记为脏。
       type: boolean
     return:
       type: void
@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#copy:member(1)
   package: ExcelScript!
   fullName: copy(positionType, relativeTo)
-  summary: 复制工作表，并放置于指定位置。
+  summary: 复制工作表并将其置于指定位置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -422,10 +422,10 @@ methods:
               ): Worksheet;
     parameters:
     - id: positionType
-      description: 工作簿中放置新创建的工作表的位置。 默认值为"None"，该值在工作表的开头插入工作表。
+      description: 用于放置新创建的工作表的工作簿中的位置。 默认值为"None"，它在工作表的开头插入工作表。
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
-      description: 确定新创建的工作表的位置的现有工作表。 只有在为" `positionType` Before"或"After"时，才需要这样做。
+      description: 确定新创建的工作表位置的现有工作表。 仅当 `positionType` 为"Before"或"After"时才需要此值。
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: 从工作簿中删除工作表。 请注意，如果工作表的可见性设置为"VeryHidden"，则删除操作将失败，并出现异常 `InvalidOperation` 。 在删除之前，应首先将其可见性更改为隐藏或可见。
+  summary: 从工作簿中删除工作表。 请注意，如果工作表的可见性设置为"VeryHidden"，则删除操作将失败并出现 `InvalidOperation` 异常。 删除之前，应先将其可见性更改为隐藏或可见。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
   fullName: enterTemporaryNamedSheetView()
-  summary: 创建并激活新的临时工作表视图。 关闭应用程序、使用退出方法退出临时视图或切换到其他工作表视图时，将删除临时视图。 如果临时视图存在，也可以用空字符串 ("") 临时工作表视图。
+  summary: 创建并激活新的临时工作表视图。 关闭应用程序、使用退出方法退出临时视图或切换到其他工作表视图时，将删除临时视图。 如果存在临时视图，则临时工作表视图还可以与空字符串 (") 进行对等。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#exitActiveNamedSheetView:member(1)
   package: ExcelScript!
   fullName: exitActiveNamedSheetView()
-  summary: 退出当前活动的工作表视图。
+  summary: 退出当前活动工作表视图。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
   fullName: findAll(text, criteria)
-  summary: 根据指定的条件查找给定字符串 `RangeAreas` 的所有匹配项，并作为包含一个或多个矩形区域的对象返回。
+  summary: 根据指定的条件查找给定字符串的所有匹配项，并将其作为对象返回，其中包括一个 `RangeAreas` 或多个矩形范围。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -484,7 +484,7 @@ methods:
       description: 要查找的字符串。
       type: string
     - id: criteria
-      description: 其他搜索条件，包括搜索是否需要匹配整个单元格或区分大小写。
+      description: 其他搜索条件，包括搜索是需要匹配整个单元格还是区分大小写。
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -493,7 +493,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
   package: ExcelScript!
   fullName: getActiveNamedSheetView()
-  summary: 获取工作表当前的活动工作表视图。
+  summary: 获取工作表当前活动的工作表视图。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -514,12 +514,12 @@ methods:
     content: 'getAutoFilter(): AutoFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script creates an autoFilter on the worksheet that filters out rows based on column values. \n * The autoFilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: '`Range`基于行号和列号获取包含单个单元格的对象。 单元格可以位于父区域外，只要它保持在工作表网格内即可。'
+  summary: '`Range`根据行号和列号获取包含单个单元格的对象。 只要单元格位于工作表网格内，该单元格就可以超出其父范围的边界。'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -556,7 +556,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCharts:member(1)
   package: ExcelScript!
   fullName: getCharts()
-  summary: 返回属于工作表的图表集合。
+  summary: 返回属于工作表的图表的集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -594,7 +594,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: 批注位于的单元格。 它可以是对象 `Range` 或字符串。 如果是字符串，则必须包含完整地址，包括工作表名称。 如果 `InvalidArgument` 提供的范围大于一个单元格，将引发错误。
+      description: 注释所在的单元格。 这可以是 `Range` 对象或字符串。 如果是字符串，则必须包含完整地址，包括工作表名称。 `InvalidArgument`如果提供的区域大于一个单元格，则会引发错误。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -603,7 +603,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)
   package: ExcelScript!
   fullName: getCommentByReplyId(replyId)
-  summary: 获取给定答复所连接到的批注。
+  summary: 获取给定答复连接到的注释。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -611,7 +611,7 @@ methods:
     content: 'getCommentByReplyId(replyId: string): Comment;'
     parameters:
     - id: replyId
-      description: 批注回复的标识符。
+      description: 注释回复的标识符。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -646,7 +646,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)
   package: ExcelScript!
   fullName: getEnableCalculation()
-  summary: 确定是否Excel应重新计算工作表（ 如有必要）。 如此 如果Excel重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
+  summary: 确定Excel是否应在必要时重新计算工作表。 如此 如果Excel必要时重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -659,7 +659,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)
   package: ExcelScript!
   fullName: getFreezePanes()
-  summary: 获取一个对象，该对象可用于处理工作表上的冻结窗格。
+  summary: 获取可用于在工作表上操作冻结窗格的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: 使用对象 `NamedItem` 的名称获取对象。 如果对象不存在，则此函数返回 `undefined`<!-- -->.
+  summary: '`NamedItem`使用其名称获取对象。 如果对象不存在，则此函数返回 `undefined`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -728,7 +728,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetView:member(1)
   package: ExcelScript!
   fullName: getNamedSheetView(key)
-  summary: 使用工作表视图的名称获取工作表视图。
+  summary: 使用工作表的名称获取工作表视图。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -736,7 +736,7 @@ methods:
     content: 'getNamedSheetView(key: string): NamedSheetView;'
     parameters:
     - id: key
-      description: 工作表视图的区分大小写的名称。 使用空字符串 ("") 获取临时工作表视图（如果存在临时视图）。
+      description: 工作表视图的区分大小写的名称。 如果存在临时视图，请使用空字符串 ("") 获取临时工作表视图。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
@@ -745,7 +745,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetViews:member(1)
   package: ExcelScript!
   fullName: getNamedSheetViews()
-  summary: 返回工作表中呈现的工作表视图的集合。
+  summary: 返回工作表中存在的工作表视图的集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: 获取此工作表后跟的工作表。 如果此工作表后没有工作表，则此方法返回 `undefined`<!-- -->.
+  summary: 获取此工作表后面的工作表。 如果此工作表之后没有工作表，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 可选。 If `true`<!-- -->，仅考虑可见的工作表，并跳过任何隐藏的工作表。
+      description: 可选。 如果 `true`<!-- -->，仅考虑可见的工作表，跳过任何隐藏的工作表。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 可选。 If `true`<!-- -->，仅考虑可见的工作表，并跳过任何隐藏的工作表。
+      description: 可选。 如果 `true`<!-- -->，仅考虑可见的工作表，跳过任何隐藏的工作表。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -874,7 +874,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
   package: ExcelScript!
   fullName: getRange(address)
-  summary: 获取对象 `Range` ，该对象代表由地址或名称指定的单个单元格矩形块。
+  summary: 获取表示 `Range` 由地址或名称指定的单个矩形单元格块的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: 可选。 表示区域地址或名称的字符串。 例如，"A1：B2"。 如果未指定，则返回整个工作表区域。
+      description: 可选。 表示范围的地址或名称的字符串。 例如，"A1：B2"。 如果未指定，则返回整个工作表区域。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -891,7 +891,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: 获取从 `Range` 特定行索引和列索引开始并跨越一定数量的行和列的对象。
+  summary: 获取从 `Range` 特定行索引和列索引开始的对象，并跨越特定数量的行和列。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -905,16 +905,16 @@ methods:
               ): Range;
     parameters:
     - id: startRow
-      description: 起始行 (从零开始) 。
+      description: 启动行 (从零索引) 。
       type: number
     - id: startColumn
-      description: 起始列 (从零开始) 。
+      description: 启动列 (零索引) 。
       type: number
     - id: rowCount
-      description: 要包括在范围中的行数。
+      description: 要包含在范围内的行数。
       type: number
     - id: columnCount
-      description: 要包括在范围中的列数。
+      description: 要包含在范围内的列数。
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -923,7 +923,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges(address)
-  summary: '`RangeAreas`获取表示由地址或名称指定的一个或多个矩形区域块的对象。'
+  summary: 获取表示 `RangeAreas` 由地址或名称指定的一个或多个矩形范围块的对象。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: 可选。 包含以逗号分隔的地址或单个区域的名称的字符串。 例如，"A1：B2， A5：B5"。 如果未指定，则返回整个工作表的 RangeArea 对象。
+      description: 可选。 一个字符串，包含逗号分隔的地址或单个范围的名称。 例如，"A1：B2，A5：B5"。 如果未指定，则返回整个工作表的 RangeArea 对象。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1013,7 +1013,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicers:member(1)
   package: ExcelScript!
   fullName: getSlicers()
-  summary: 返回属于工作表的切片器集合。
+  summary: 返回属于工作表的切片器的集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1039,7 +1039,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getStandardWidth:member(1)
   package: ExcelScript!
   fullName: getStandardWidth()
-  summary: 指定工作表中 (列) 列的默认列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+  summary: 指定工作表中所有列的标准 (默认) 宽度。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 `null`<!-- -->. 如果工作表可见，但选项卡颜色设置为自动，将返回空字符串。 否则，该属性将设置为 \#RRGGBB 格式的颜色，例如 ("FFA500") 。 设置颜色时，请使用空字符串设置"自动"颜色，否则使用真实颜色。
+  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 `null`<!-- -->. 如果工作表可见，但选项卡颜色设置为自动，则返回空字符串。 否则，该属性将设置为颜色，格式 \#为 RRGGBB (，例如"FFA500") 。 设置颜色时，请使用空字符串设置"自动"颜色，否则使用真实颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1065,7 +1065,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: 按名称或 ID 获取表。 如果表格不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 按名称或 ID 获取表。 如果表不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1149,7 +1149,7 @@ methods:
               ): WorksheetCustomProperty | undefined;
     parameters:
     - id: key
-      description: 标识自定义属性对象的键。 不区分大小写。
+      description: 标识自定义属性对象的键。 这是不区分大小写的。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" /> | undefined
@@ -1225,7 +1225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
   package: ExcelScript!
   fullName: setEnableCalculation(enableCalculation)
-  summary: 确定是否Excel应重新计算工作表（ 如有必要）。 如此 如果Excel重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
+  summary: 确定Excel是否应在必要时重新计算工作表。 如此 如果Excel必要时重新计算工作表。 如果 Excel 不重新计算工作表，则该值为 False。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1310,7 +1310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setStandardWidth:member(1)
   package: ExcelScript!
   fullName: setStandardWidth(standardWidth)
-  summary: 指定工作表中 (列) 列的默认列宽。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
+  summary: 指定工作表中所有列的标准 (默认) 宽度。 一个列宽单位等于“常规”样式中一个字符的宽度。 对于比例字体，则使用字符 0（零）的宽度。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 `null`<!-- -->. 如果工作表可见，但选项卡颜色设置为自动，将返回空字符串。 否则，该属性将设置为 \#RRGGBB 格式的颜色，例如 ("FFA500") 。 设置颜色时，请使用空字符串设置"自动"颜色，否则使用真实颜色。
+  summary: 工作表的选项卡颜色。 检索选项卡颜色时，如果工作表不可见，则值将为 `null`<!-- -->. 如果工作表可见，但选项卡颜色设置为自动，则返回空字符串。 否则，该属性将设置为颜色，格式 \#为 RRGGBB (，例如"FFA500") 。 设置颜色时，请使用空字符串设置"自动"颜色，否则使用真实颜色。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: 按大纲级别显示行或列组。 概述组并汇总工作表中的数据列表。 `columnLevels`和 `rowLevels` 参数指定将显示多少级别的大纲。 可接受的参数范围介于 0 和 8 之间。 值 0 不会更改当前显示。 大于当前级别数的值将显示所有级别。
+  summary: 按其大纲级别显示行或列组。 概述工作表中的数据的组和汇总列表。 和`rowLevels``columnLevels`参数指定将显示大纲的级别数。 可接受的参数范围介于 0 和 8 之间。 值 0 不会更改当前显示。 大于当前级别数的值将显示所有级别。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1369,7 +1369,7 @@ methods:
     content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
     parameters:
     - id: rowLevels
-      description: 要显示的分级显示的行级别数。
+      description: 要显示的大纲的行级别数。
       type: number
     - id: columnLevels
       description: 要显示的大纲的列级别数。
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 81c49cac1838a1162ade2933ae19caa11519834d
-  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
+  ms.openlocfilehash: e2f112cd55fb4eef8c72cf1ab283bda7250afd63
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/11/2022
-  ms.locfileid: "63434826"
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715965"
