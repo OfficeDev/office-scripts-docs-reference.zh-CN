@@ -1,80 +1,87 @@
 ### YamlMime:TSType
 name: ExcelScript.TableStyle
-uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+uid: ExcelScript!ExcelScript.TableStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.TableStyle
-summary: 表示表格样式，它按表格的区域定义样式元素。
+summary: 表示一个表样式，它按表的区域定义样式元素。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: delete()
-    uid: 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
-    package: ExcelScript!
-    fullName: delete()
-    summary: 删除表格样式。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: duplicate()
-    uid: 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
-    package: ExcelScript!
-    fullName: duplicate()
-    summary: 使用所有样式元素的副本创建此表格样式的副本。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'duplicate(): TableStyle;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.TableStyle:interface" />'
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: 获取表格样式的名称。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getReadOnly()
-    uid: 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
-    package: ExcelScript!
-    fullName: getReadOnly()
-    summary: 指定此 `TableStyle` 对象是否只读。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getReadOnly(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: 获取表格样式的名称。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.TableStyle#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: 删除表样式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate()
+  uid: ExcelScript!ExcelScript.TableStyle#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate()
+  summary: 使用所有样式元素的副本创建此表样式的副本。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(): TableStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.TableStyle#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: 获取表样式的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getReadOnly()
+  uid: ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)
+  package: ExcelScript!
+  fullName: getReadOnly()
+  summary: 指定此 `TableStyle` 对象是否为只读对象。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadOnly(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.TableStyle#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: 设置表样式的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 5a1830425bb5776fe765c141ac70c3881411d244
+  ms.sourcegitcommit: 5e9cd6fc2480832684fc0dbc264cfcf8e422c735
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 04/20/2022
+  ms.locfileid: "64963524"
