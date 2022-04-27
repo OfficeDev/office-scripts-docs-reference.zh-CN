@@ -3,7 +3,7 @@ name: ExcelScript.Workbook
 uid: ExcelScript!ExcelScript.Workbook:interface
 package: ExcelScript!
 fullName: ExcelScript.Workbook
-summary: Workbook 是顶级对象，其中包含相关的工作簿对象，如工作表、表和范围。
+summary: 工作簿是包含相关工作簿对象（如工作表、表和范围）的顶级对象。
 remarks: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script adds a new worksheet to the workbook, then switches to it.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add a new worksheet with the default name.\n  let worksheet = workbook.addWorksheet();\n\n  // Switch focus to the new worksheet.\n  worksheet.activate();\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -26,10 +26,10 @@ methods:
               ): Binding;
     parameters:
     - id: range
-      description: 要将绑定绑定到的范围。 可能是对象 `Range` 或字符串。 如果是字符串，必须包含完整地址，包括工作表名称
+      description: 要将绑定绑定到的范围。 可以是 `Range` 对象或字符串。 如果是字符串，必须包含完整地址，包括工作表名称
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: bindingType
-      description: 绑定的类型。 请参阅 `ExcelScript.BindingType`<!-- -->.
+      description: 绑定的类型。 看到 `ExcelScript.BindingType`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
     - id: id
       description: 绑定的名称。
@@ -41,7 +41,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addBindingFromNamedItem:member(1)
   package: ExcelScript!
   fullName: addBindingFromNamedItem(name, bindingType, id)
-  summary: 根据工作簿中的命名项添加新的 binding 对象。 如果命名项目引用多个区域， `InvalidReference` 将返回错误。
+  summary: 根据工作簿中的命名项添加新的 binding 对象。 如果命名项引用多个区域， `InvalidReference` 则将返回错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -57,7 +57,7 @@ methods:
       description: 从中创建绑定的名称。
       type: string
     - id: bindingType
-      description: 绑定的类型。 请参阅 `ExcelScript.BindingType`<!-- -->.
+      description: 绑定的类型。 看到 `ExcelScript.BindingType`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
     - id: id
       description: 绑定的名称。
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addBindingFromSelection:member(1)
   package: ExcelScript!
   fullName: addBindingFromSelection(bindingType, id)
-  summary: 根据当前选择的内容添加新的 binding 对象。 如果选定区域有多个区域， `InvalidReference` 将返回错误。
+  summary: 根据当前选择的内容添加新的 binding 对象。 如果所选内容具有多个区域， `InvalidReference` 则将返回错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -77,7 +77,7 @@ methods:
     content: 'addBindingFromSelection(bindingType: BindingType, id: string): Binding;'
     parameters:
     - id: bindingType
-      description: 绑定的类型。 请参阅 `ExcelScript.BindingType`<!-- -->.
+      description: 绑定的类型。 看到 `ExcelScript.BindingType`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
     - id: id
       description: 绑定的名称。
@@ -89,7 +89,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addComment:member(1)
   package: ExcelScript!
   fullName: addComment(cellAddress, content, contentType)
-  summary: 使用给定单元格上的给定内容创建新批注。 如果 `InvalidArgument` 提供的范围大于一个单元格，将引发错误。
+  summary: 使用给定单元格上的给定内容创建新批注。 `InvalidArgument`如果提供的区域大于一个单元格，则会引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -102,13 +102,13 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: 将批注添加到的单元格。 它可以是 `Range` 对象或字符串。 如果是字符串，则必须包含完整地址，包括工作表名称。 如果 `InvalidArgument` 提供的范围大于一个单元格，将引发错误。
+      description: 将注释添加到的单元格。 这可以是 `Range` 对象或字符串。 如果是字符串，则必须包含完整地址，包括工作表名称。 `InvalidArgument`如果提供的区域大于一个单元格，则会引发错误。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: 注释的内容。 它可以是字符串或 `CommentRichContent` 对象。 字符串用于纯文本。 `CommentRichContent` 对象允许其他评论功能，例如提及。
+      description: 注释的内容。 这可以是字符串或 `CommentRichContent` 对象。 字符串用于纯文本。 `CommentRichContent` 对象允许其他注释功能，例如提及。
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: 可选。 注释中包含的内容类型。 默认值为 enum `ContentType.Plain`<!-- -->.
+      description: 可选。 注释中包含的内容类型。 默认值为枚举 `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -153,7 +153,7 @@ methods:
       description: 名称将引用的公式或区域。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: 可选。 与已命名项目关联的注释。
+      description: 可选。 与命名项关联的注释。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -181,7 +181,7 @@ methods:
       description: 名称将引用的采用用户区域设置的公式。
       type: string
     - id: comment
-      description: 可选。 与已命名项目关联的注释。
+      description: 可选。 与命名项关联的注释。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addPivotTable:member(1)
   package: ExcelScript!
   fullName: addPivotTable(name, source, destination)
-  summary: 添加基于指定源数据的数据透视表，并将其插入到目标区域左上方的单元格中。
+  summary: 根据指定的源数据添加数据透视表，并将其插入目标范围的左上角单元格。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -206,7 +206,7 @@ methods:
       description: 新数据透视表的名称。
       type: string
     - id: source
-      description: 新数据透视表的源数据，可以是区域 (或字符串地址，包括工作表名称) 表。
+      description: 新数据透视表的源数据，可以是范围 (或字符串地址，包括工作表名称) 或表。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
       description: 数据透视表目标区域（工作表中用于放置所生成的报表的区域）左上角的单元格。
@@ -218,7 +218,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: addPivotTableStyle(name, makeUniqueName)
-  summary: 创建具有 `PivotTableStyle` 指定名称的空白。
+  summary: 创建具有指定名称的空白 `PivotTableStyle` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -230,10 +230,10 @@ methods:
               ): PivotTableStyle;
     parameters:
     - id: name
-      description: 新数据透视表样式的唯一名称。 如果名称 `InvalidArgument` 已在使用中，将引发错误。
+      description: 新数据透视表样式的唯一名称。 如果名称已在使用中，则会引发 `InvalidArgument` 错误。
       type: string
     - id: makeUniqueName
-      description: 可选。 默认为 `false`<!-- -->. If `true`<!-- -->将数字追加到名称中，以便使其唯一（如果需要）。
+      description: 可选。 默认为 `false`<!-- -->. 如果 `true`<!-- -->，将追加数字到名称，以便使其唯一，如果需要。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
@@ -272,17 +272,17 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: 新切片器将基于的数据源。 它可以是 `PivotTable` 对象、 `Table` 对象或字符串。 传递 PivotTable 对象时，数据源是该对象 `PivotTable` 的源。 传递 `Table` 对象时，数据源即为 `Table` 对象。 传递字符串时，它将被解释为数据透视表或表的名称或 ID。
+      description: 新切片器将基于的数据源。 它可以是 `PivotTable` 对象、 `Table` 对象或字符串。 传递数据透视表对象时，数据源是对象的 `PivotTable` 源。 `Table`传递对象时，数据源是`Table`对象。 传递字符串时，它将解释为数据透视表或表的名称或 ID。
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: 要筛选的数据源中的字段。 它可以是 `PivotField` 对象、 `TableColumn` 对象、ID 或名称 `PivotField` 或 ID `TableColumn`<!-- -->.
+      description: 要筛选的数据源中的字段。 它可以是一个 `PivotField` 对象，一个 `TableColumn` 对象，一个 `PivotField` 或名称或 ID 的 ID `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: 可选。 将在其中新建切片器的工作表。 它可以是 `Worksheet` 对象或工作表的名称或 ID。 如果从工作表中检索切片器集合，可以省略此参数。
+      description: 可选。 将在其中创建新切片器的工作表。 它可以是一个 `Worksheet` 对象，也可以是工作表的名称或 ID。 如果从工作表中检索切片器集合，则可以省略此参数。
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script adds a slicer for an existing PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable named \"Farm Pivot\".\n  const farmPivot = workbook.getPivotTable(\"Farm Pivot\");\n\n  // Create the slicer. \n  // Note that this assumes \"Type\" is already added as a hierarchy to the PivotTable.\n  const fruitSlicer: ExcelScript.Slicer = workbook.addSlicer(\n    farmPivot, /* The table or PivotTale to be sliced. */\n    farmPivot.getHierarchy(\"Type\").getFields()[0] /* What source field to use as the slicer options. */\n  );\n\n  // Select the items to display.\n  fruitSlicer.selectItems([\"Lemon\", \"Lime\"]);\n\n  // Set the left margin of the slicer.\n  fruitSlicer.setLeft(400);\n}\n```"
 - name: addSlicerStyle(name, makeUniqueName)
   uid: ExcelScript!ExcelScript.Workbook#addSlicerStyle:member(1)
   package: ExcelScript!
@@ -295,10 +295,10 @@ methods:
     content: 'addSlicerStyle(name: string, makeUniqueName?: boolean): SlicerStyle;'
     parameters:
     - id: name
-      description: 新切片器样式的唯一名称。 如果名称 `InvalidArgument` 已在使用中，将引发异常。
+      description: 新切片器样式的唯一名称。 `InvalidArgument`如果名称已在使用中，则引发异常。
       type: string
     - id: makeUniqueName
-      description: 可选。 默认为 `false`<!-- -->. If `true`<!-- -->将数字追加到名称中，以便使其唯一（如果需要）。
+      description: 可选。 默认为 `false`<!-- -->. 如果 `true`<!-- -->，将追加数字到名称，以便使其唯一，如果需要。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
@@ -318,16 +318,16 @@ methods:
       description: 对象 `Range` ，或表示数据源的范围的字符串地址或名称。 如果地址不包含工作表名称，将使用当前活动的工作表。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
-      description: 一个布尔值，指示正在导入的数据是否具有列标签。 如果源不包含标题 (，则当此属性设置为 `false`<!-- -->) ，Excel自动生成页眉，数据向下移动一行。
+      description: 一个布尔值，指示导入的数据是否具有列标签。 如果源不包含标头 (即当此属性设置为 `false`<!-- -->) ，Excel将自动生成标头，并将数据向下移一行。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This sample converts the information in the first worksheet\n * into a table with headers.\n*/\nfunction main(workbook: ExcelScript.Workbook) {\n  // This assumes there is one contiguous range in the first worksheet.\n  const dataRange = workbook.getFirstWorksheet().getUsedRange();\n  \n  // Add a table at the workbook level.\n  workbook.addTable(dataRange.getAddress(), true);\n}\n```"
 - name: addTableStyle(name, makeUniqueName)
   uid: ExcelScript!ExcelScript.Workbook#addTableStyle:member(1)
   package: ExcelScript!
   fullName: addTableStyle(name, makeUniqueName)
-  summary: 创建具有 `TableStyle` 指定名称的空白。
+  summary: 创建具有指定名称的空白 `TableStyle` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -335,10 +335,10 @@ methods:
     content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
     parameters:
     - id: name
-      description: 新表格样式的唯一名称。 如果名称 `InvalidArgument` 已在使用中，将引发错误。
+      description: 新表样式的唯一名称。 如果名称已在使用中，则会引发 `InvalidArgument` 错误。
       type: string
     - id: makeUniqueName
-      description: 可选。 默认为 `false`<!-- -->. If `true`<!-- -->将数字追加到名称中，以便使其唯一（如果需要）。
+      description: 可选。 默认为 `false`<!-- -->. 如果 `true`<!-- -->，将追加数字到名称，以便使其唯一，如果需要。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" />
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#addTimelineStyle:member(1)
   package: ExcelScript!
   fullName: addTimelineStyle(name, makeUniqueName)
-  summary: 创建具有 `TimelineStyle` 指定名称的空白。
+  summary: 创建具有指定名称的空白 `TimelineStyle` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,10 +355,10 @@ methods:
     content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
     parameters:
     - id: name
-      description: 新日程表样式的唯一名称。 如果名称 `InvalidArgument` 已在使用中，将引发错误。
+      description: 新时间线样式的唯一名称。 如果名称已在使用中，则会引发 `InvalidArgument` 错误。
       type: string
     - id: makeUniqueName
-      description: 可选。 默认为 `false`<!-- -->. If `true`<!-- -->将数字追加到名称中，以便使其唯一（如果需要）。
+      description: 可选。 默认为 `false`<!-- -->. 如果 `true`<!-- -->，将追加数字到名称，以便使其唯一，如果需要。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
@@ -375,7 +375,7 @@ methods:
     content: 'addWorksheet(name?: string): Worksheet;'
     parameters:
     - id: name
-      description: 可选。 要添加的工作表的名称。 如果指定，该名称应是唯一的。 如果未指定，Excel 将确定新工作表的名称。
+      description: 可选。 要添加的工作表的名称。 如果指定，则名称应是唯一的。 如果未指定，Excel 将确定新工作表的名称。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -384,7 +384,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#breakAllLinksToLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: breakAllLinksToLinkedWorkbooks()
-  summary: 断开指向链接工作簿的所有链接。 链接断开后，引用工作簿链接的任何公式将完全删除，并替换为最近检索到的值。
+  summary: 中断链接工作簿的所有链接。 断开链接后，引用工作簿链接的任何公式都会被完全删除，并替换为最近检索到的值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -449,7 +449,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getApplication:member(1)
   package: ExcelScript!
   fullName: getApplication()
-  summary: 表示Excel工作簿的应用程序实例。
+  summary: 表示包含此工作簿的Excel应用程序实例。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -462,7 +462,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getAutoSave:member(1)
   package: ExcelScript!
   fullName: getAutoSave()
-  summary: 指定工作簿是否位于"自动保存"模式。
+  summary: 指定工作簿是否处于自动保存模式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -518,7 +518,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getChartDataPointTrack:member(1)
   package: ExcelScript!
   fullName: getChartDataPointTrack()
-  summary: 如果工作簿中的所有图表都跟踪它们所附加的实际数据点，则为 True。 假 如果图表跟踪数据点的索引。
+  summary: 如果工作簿中的所有图表都跟踪它们所附加的实际数据点，则为 True。 如果图表跟踪数据点的索引，则为 False。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -556,7 +556,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: 批注位于的单元格。 它可以是 `Range` 对象或字符串。 如果是字符串，则必须包含完整地址，包括工作表名称。 如果 `InvalidArgument` 提供的范围大于一个单元格，将引发错误。
+      description: 注释所在的单元格。 这可以是 `Range` 对象或字符串。 如果是字符串，则必须包含完整地址，包括工作表名称。 `InvalidArgument`如果提供的区域大于一个单元格，则会引发错误。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -565,7 +565,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCommentByReplyId:member(1)
   package: ExcelScript!
   fullName: getCommentByReplyId(replyId)
-  summary: 获取给定答复所连接到的批注。
+  summary: 获取给定答复连接到的注释。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -573,7 +573,7 @@ methods:
     content: 'getCommentByReplyId(replyId: string): Comment;'
     parameters:
     - id: replyId
-      description: 批注回复的标识符。
+      description: 注释回复的标识符。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -582,7 +582,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getComments:member(1)
   package: ExcelScript!
   fullName: getComments()
-  summary: 表示与工作簿关联的注释的集合。
+  summary: 表示与工作簿关联的批注的集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPart(id)
-  summary: 获取基于其 ID 的自定义 XML 部件。 如果 `CustomXmlPart` 不存在 ，则此函数返回 `undefined`<!-- -->.
+  summary: 获取基于其 ID 的自定义 XML 部件。 `CustomXmlPart`如果不存在，则此函数返回`undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -621,7 +621,7 @@ methods:
     content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
     - id: namespaceUri
-      description: 这必须是完全限定的架构 URI;例如，" http://schemas.contoso.com/review/1.0 "。
+      description: 这必须是完全限定的架构 URI;例如，“http://schemas.contoso.com/review/1.0”。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
@@ -651,7 +651,7 @@ methods:
     content: 'getCustomXmlPartsByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
     - id: namespaceUri
-      description: 这必须是完全限定的架构 URI;例如，" http://schemas.contoso.com/review/1.0 "。
+      description: 这必须是完全限定的架构 URI;例如，“http://schemas.contoso.com/review/1.0”。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
@@ -673,7 +673,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getDefaultSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getDefaultSlicerStyle()
-  summary: 获取 `SlicerStyle` 父对象的作用域的默认值。
+  summary: 获取父对象范围的默认 `SlicerStyle` 值。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -686,7 +686,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getDefaultTableStyle:member(1)
   package: ExcelScript!
   fullName: getDefaultTableStyle()
-  summary: 获取父对象范围的默认表格样式。
+  summary: 获取父对象范围的默认表样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -720,7 +720,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 可选。 If `true`<!-- -->，仅考虑可见的工作表，并跳过任何隐藏的工作表。
+      description: 可选。 如果 `true`<!-- -->，仅考虑可见的工作表，跳过任何隐藏的工作表。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -729,7 +729,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)
   package: ExcelScript!
   fullName: getIsDirty()
-  summary: 指定自上次保存工作簿以来是否进行了更改。 如果要关闭修改的工作簿而不保存或提示保存，可以将此属性 `true` 设置为 。
+  summary: 指定自上次保存工作簿以来是否进行了更改。 如果想要关闭修改后的工作簿而不保存工作簿或提示保存它，则可以将此属性 `true` 设置为。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -750,7 +750,7 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: 可选。 If `true`<!-- -->，仅考虑可见的工作表，并跳过任何隐藏的工作表。
+      description: 可选。 如果 `true`<!-- -->，仅考虑可见的工作表，跳过任何隐藏的工作表。
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -759,7 +759,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbookByUrl(key)
-  summary: 按 URL 获取链接工作簿的信息。 如果工作簿不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
+  summary: 按其 URL 获取有关链接工作簿的信息。 如果工作簿不存在，则此函数将返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -776,7 +776,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookRefreshMode:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbookRefreshMode()
-  summary: 表示工作簿链接的更新模式。 该模式对于工作簿中所有的工作簿链接都相同。
+  summary: 表示工作簿链接的更新模式。 工作簿中存在的所有工作簿链接的模式相同。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -789,7 +789,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbooks()
-  summary: 返回链接工作簿的集合。 在公式中，工作簿链接可用于引用数据 (当前工作簿) 单元格值和名称。
+  summary: 返回链接工作簿的集合。 在公式中，工作簿链接可用于引用当前工作簿外部) 的单元格值和名称 (数据。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -815,7 +815,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: 使用 `NamedItem` 对象的名称获取对象。 如果对象不存在，则此函数返回 `undefined`<!-- -->.
+  summary: '`NamedItem`使用其名称获取对象。 如果对象不存在，则此函数返回 `undefined`<!-- -->.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -832,7 +832,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNames:member(1)
   package: ExcelScript!
   fullName: getNames()
-  summary: 表示工作簿范围的命名项集合， (范围和常量) 。
+  summary: 表示 (命名范围和常量) 的工作簿范围命名项的集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -875,7 +875,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: 按 `PivotTableStyle` 名称获取 。 如果 `PivotTableStyle` 不存在 ，则此函数返回 `undefined`<!-- -->.
+  summary: 获取一个 `PivotTableStyle` 按名称。 `PivotTableStyle`如果不存在，则此函数返回`undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -905,7 +905,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle(name)
-  summary: 按 `Style` 名称获取 。
+  summary: 获取一个 `Style` 按名称。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -935,7 +935,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPreviouslySaved:member(1)
   package: ExcelScript!
   fullName: getPreviouslySaved()
-  summary: 指定工作簿是在本地保存还是联机保存。
+  summary: 指定工作簿是已在本地保存还是联机保存。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -974,7 +974,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: 如果 `true` 工作簿以只读模式打开，则返回 。
+  summary: 如果工作簿在只读模式下打开，则返回 `true` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -987,7 +987,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSelectedRange:member(1)
   package: ExcelScript!
   fullName: getSelectedRange()
-  summary: 从工作簿获取当前选定的单个区域。 如果选择了多个区域，此方法将引发错误。
+  summary: 从工作簿中获取当前选定的单个范围。 如果选择了多个范围，则此方法将引发错误。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1000,7 +1000,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSelectedRanges:member(1)
   package: ExcelScript!
   fullName: getSelectedRanges()
-  summary: 从工作簿中获取当前选定的一个或多个区域。 与 `getSelectedRange()`<!-- -->，此方法返回 `RangeAreas` 一个代表所有选定区域的对象。
+  summary: 从工作簿中获取当前选定的一个或多个区域。 与 `getSelectedRange()`<!-- -->，此方法返回一个 `RangeAreas` 对象，该对象表示所有选定区域。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1030,7 +1030,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicers:member(1)
   package: ExcelScript!
   fullName: getSlicers()
-  summary: 表示与工作簿关联的切片器的集合。
+  summary: 表示与工作簿关联的切片器集合。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1043,7 +1043,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: 按 `SlicerStyle` 名称获取 。 如果切片器样式不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 获取一个 `SlicerStyle` 按名称。 如果切片器样式不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1073,7 +1073,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: 按名称或 ID 获取表。 如果表格不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 按名称或 ID 获取表。 如果表不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: 按 `TableStyle` 名称获取 。 如果表格样式不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 获取一个 `TableStyle` 按名称。 如果表样式不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1111,7 +1111,7 @@ methods:
     content: 'getTableStyle(name: string): TableStyle | undefined;'
     parameters:
     - id: name
-      description: 要检索的表格样式的名称。
+      description: 要检索的表样式的名称。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" /> | undefined
@@ -1133,7 +1133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: 按 `TimelineStyle` 名称获取 。 如果时间线样式不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 获取一个 `TimelineStyle` 按名称。 如果时间线样式不存在，则此函数返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1141,7 +1141,7 @@ methods:
     content: 'getTimelineStyle(name: string): TimelineStyle | undefined;'
     parameters:
     - id: name
-      description: 要检索的日程表样式的名称。
+      description: 要检索的时间线样式的名称。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" /> | undefined
@@ -1163,7 +1163,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
   fullName: getUsePrecisionAsDisplayed()
-  summary: 如果此工作簿中的计算仅使用显示的数字精度来完成，则为 True。 将此属性从 切换到 时，数据将永久丢失 `false` 准确性 `true`<!-- -->.
+  summary: 如果此工作簿中的计算仅使用显示的数字精度来完成，则为 True。 将此属性切换 `false` 到 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1219,7 +1219,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#refreshAllLinksToLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: refreshAllLinksToLinkedWorkbooks()
-  summary: 请求刷新所有工作簿链接。
+  summary: 发出请求以刷新所有工作簿链接。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1245,7 +1245,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setChartDataPointTrack:member(1)
   package: ExcelScript!
   fullName: setChartDataPointTrack(chartDataPointTrack)
-  summary: 如果工作簿中的所有图表都跟踪它们所附加的实际数据点，则为 True。 假 如果图表跟踪数据点的索引。
+  summary: 如果工作簿中的所有图表都跟踪它们所附加的实际数据点，则为 True。 如果图表跟踪数据点的索引，则为 False。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1262,7 +1262,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setDefaultPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: setDefaultPivotTableStyle(newDefaultStyle)
-  summary: 设置在父对象范围内使用的默认数据透视表样式。
+  summary: 设置要在父对象的作用域中使用的默认数据透视表样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1273,7 +1273,7 @@ methods:
               ): void;
     parameters:
     - id: newDefaultStyle
-      description: '`PivotTableStyle`应作为新默认值 `PivotTableStyle` 的对象或对象的名称。'
+      description: 应 `PivotTableStyle` 为新默认值的 `PivotTableStyle` 对象或对象的名称。
       type: "<xref uid=\"ExcelScript!ExcelScript.PivotTableStyle:interface\" /> | string\n        "
     return:
       type: void
@@ -1282,7 +1282,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setDefaultSlicerStyle:member(1)
   package: ExcelScript!
   fullName: setDefaultSlicerStyle(newDefaultStyle)
-  summary: 设置在父对象范围内使用的默认切片器样式。
+  summary: 设置要在父对象的作用域中使用的默认切片器样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1290,7 +1290,7 @@ methods:
     content: 'setDefaultSlicerStyle(newDefaultStyle: SlicerStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: '`SlicerStyle`应作为新默认值 `SlicerStyle` 的对象或对象的名称。'
+      description: 应 `SlicerStyle` 为新默认值的 `SlicerStyle` 对象或对象的名称。
       type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" /> | string
     return:
       type: void
@@ -1299,7 +1299,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setDefaultTableStyle:member(1)
   package: ExcelScript!
   fullName: setDefaultTableStyle(newDefaultStyle)
-  summary: 设置在父对象范围内使用的默认表格样式。
+  summary: 设置要在父对象的作用域中使用的默认表样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1307,7 +1307,7 @@ methods:
     content: 'setDefaultTableStyle(newDefaultStyle: TableStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: '`TableStyle`应作为新默认值 `TableStyle` 的对象或对象的名称。'
+      description: 应 `TableStyle` 为新默认值的 `TableStyle` 对象或对象的名称。
       type: <xref uid="ExcelScript!ExcelScript.TableStyle:interface" /> | string
     return:
       type: void
@@ -1316,7 +1316,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setDefaultTimelineStyle:member(1)
   package: ExcelScript!
   fullName: setDefaultTimelineStyle(newDefaultStyle)
-  summary: 设置在父对象范围内使用的默认日程表样式。
+  summary: 设置要在父对象的作用域中使用的默认时间线样式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1324,7 +1324,7 @@ methods:
     content: 'setDefaultTimelineStyle(newDefaultStyle: TimelineStyle | string): void;'
     parameters:
     - id: newDefaultStyle
-      description: '`TimelineStyle`应作为新默认值 `TimelineStyle` 的对象或对象的名称。'
+      description: 应 `TimelineStyle` 为新默认值的 `TimelineStyle` 对象或对象的名称。
       type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" /> | string
     return:
       type: void
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)
   package: ExcelScript!
   fullName: setIsDirty(isDirty)
-  summary: 指定自上次保存工作簿以来是否进行了更改。 如果要关闭修改的工作簿而不保存或提示保存，可以将此属性 `true` 设置为 。
+  summary: 指定自上次保存工作簿以来是否进行了更改。 如果想要关闭修改后的工作簿而不保存工作簿或提示保存它，则可以将此属性 `true` 设置为。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1350,7 +1350,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setLinkedWorkbookRefreshMode:member(1)
   package: ExcelScript!
   fullName: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
-  summary: 表示工作簿链接的更新模式。 该模式对于工作簿中所有的工作簿链接都相同。
+  summary: 表示工作簿链接的更新模式。 工作簿中存在的所有工作簿链接的模式相同。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1370,7 +1370,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
   fullName: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
-  summary: 如果此工作簿中的计算仅使用显示的数字精度来完成，则为 True。 将此属性从 切换到 时，数据将永久丢失 `false` 准确性 `true`<!-- -->.
+  summary: 如果此工作簿中的计算仅使用显示的数字精度来完成，则为 True。 将此属性切换 `false` 到 `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0cf6be7bea44595eb8cdce4d1000268f330f9073
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 52a3ed7e88d6452aa71cd8efd9bcdb459065dd98
+  ms.sourcegitcommit: 62fb657a306ed43211bc29b7e4ee016260dcc810
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240610"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65076878"
