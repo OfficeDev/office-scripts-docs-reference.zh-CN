@@ -1,50 +1,57 @@
 ### YamlMime:TSType
 name: ExcelScript.Image
-uid: 'ExcelScript!ExcelScript.Image:interface'
+uid: ExcelScript!ExcelScript.Image:interface
 package: ExcelScript!
 fullName: ExcelScript.Image
 summary: 表示工作表中的图像。 若要获取相应的 `Shape` 对象，请使用 `Image.shape`<!-- -->.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script transfers an image from one worksheet to another.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the worksheet with the image on it.\n  const firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getFormat()
-    uid: 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
-    package: ExcelScript!
-    fullName: getFormat()
-    summary: 返回图像的格式。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFormat(): PictureFormat;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />'
-        description: ''
-  - name: getId()
-    uid: 'ExcelScript!ExcelScript.Image#getId:member(1)'
-    package: ExcelScript!
-    fullName: getId()
-    summary: 指定图像对象的形状标识符。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getShape()
-    uid: 'ExcelScript!ExcelScript.Image#getShape:member(1)'
-    package: ExcelScript!
-    fullName: getShape()
-    summary: 返回 `Shape` 与图像关联的对象。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getShape(): Shape;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Shape:interface" />'
-        description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.Image#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: 返回图像的格式。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): PictureFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Image#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: 指定图像对象的形状标识符。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getShape()
+  uid: ExcelScript!ExcelScript.Image#getShape:member(1)
+  package: ExcelScript!
+  fullName: getShape()
+  summary: '`Shape`返回与图像关联的对象。'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShape(): Shape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: ca92b050e41c5d5e5e9a82e07f1faed17a6adede
+  ms.sourcegitcommit: 3de53184008ce4f389e84261036465e9dce79b98
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 05/11/2022
+  ms.locfileid: "65305230"
