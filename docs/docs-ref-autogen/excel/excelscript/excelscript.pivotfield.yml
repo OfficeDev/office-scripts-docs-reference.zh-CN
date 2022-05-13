@@ -3,7 +3,7 @@ name: ExcelScript.PivotField
 uid: ExcelScript!ExcelScript.PivotField:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotField
-summary: 代表Excel透视字段。
+summary: 表示 Excel PivotField。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: 设置字段的一个或多个当前 PivotFilter，并应用于该字段。 如果提供的筛选器无效或无法应用，则会引发异常。
+  summary: 设置字段的一个或多个当前数据透视文件，并将其应用到该字段。 如果提供的筛选器无效或无法应用，则会引发异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: 配置的特定 PivotFilter 或包含多个已配置筛选器的 PivotFilters 接口。
+      description: 配置的特定 PivotFilter 或包含多个已配置筛选器的数据透视文件接口。
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: 清除字段的所有筛选器的所有条件。 这将删除对字段的任何活动筛选。
+  summary: 清除所有字段筛选器中的所有条件。 这会删除字段上的任何活动筛选。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: 从字段的给定类型筛选器中清除所有现有条件 (如果当前应用了一个) 。
+  summary: 清除给定类型的字段筛选器中的所有现有条件 (如果当前应用了一个条件) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,7 +60,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
   package: ExcelScript!
   fullName: getFilters()
-  summary: 获取当前应用于字段的所有筛选器。
+  summary: 获取当前在字段上应用的所有筛选器。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: 透视字段的 ID。
+  summary: PivotField 的 ID。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getItems:member(1)
   package: ExcelScript!
   fullName: getItems()
-  summary: 返回与 PivotField 相关联的 PivotFields。
+  summary: 返回与 PivotField 关联的数据透视表。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: 按名称获取 PivotItem。 如果 PivotItem 不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 按名称获取数据透视表。 如果 PivotItem 不存在，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -120,7 +120,7 @@ methods:
     content: 'getPivotItem(name: string): PivotItem | undefined;'
     parameters:
     - id: name
-      description: 要检索的 PivotItem 的名称。
+      description: 要检索的数据透视表的名称。
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
   package: ExcelScript!
   fullName: isFiltered(filterType)
-  summary: 检查字段上是否有已应用的筛选器。
+  summary: 检查字段上是否有任何应用的筛选器。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
     content: 'isFiltered(filterType?: PivotFilterType): boolean;'
     parameters:
     - id: filterType
-      description: 要检查的筛选器类型。 如果未提供类型，此方法将检查是否应用了任何筛选器。
+      description: 要检查的筛选器类型。 如果未提供任何类型，此方法将检查是否应用了任何筛选器。
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: boolean
@@ -231,7 +231,7 @@ methods:
     content: 'sortByLabels(sortBy: SortBy): void;'
     parameters:
     - id: sortBy
-      description: 指定是按升序还是降序进行排序。
+      description: 指定排序是按升序还是降序进行。
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     return:
       type: void
@@ -240,7 +240,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
   package: ExcelScript!
   fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: 按给定范围中的指定值对 PivotField 进行排序。 范围定义当同一 DataPivotHierarchy 中有多个值时将用于排序的特定值。
+  summary: 按给定范围中的指定值对 PivotField 进行排序。 该范围定义当同一 DataPivotHierarchy 中有多个值时，将使用哪些特定值进行排序。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,21 +253,21 @@ methods:
               ): void;
     parameters:
     - id: sortBy
-      description: 指定是按升序还是降序进行排序。
+      description: 指定排序是按升序还是降序进行。
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
-      description: 指定数据轴上用于排序的值层次结构。
+      description: 指定要用于排序的数据轴上的值层次结构。
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: 应用于排序范围的项。 这些项目将成为要排序的行或列的项。 如果使用字符串而不是 PivotItem，则字符串表示 PivotItem 的 ID。 如果除要排序的轴上没有数据层次结构外的其他项，则此关系可能为空。
+      description: 应用于排序范围的项。 这些项将构成要排序的行或列。 如果使用字符串而不是 PivotItem，则字符串表示 PivotItem 的 ID。 如果要排序的轴上除了数据层次结构之外没有其他项，则可以为空。
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0a1b4e3b1fa368d54a066f1ed58dbde60edf99ca
-  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.openlocfilehash: b101e242560b91b8f743585d90e374bd5fbc2851
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/16/2022
-  ms.locfileid: "62857325"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394183"

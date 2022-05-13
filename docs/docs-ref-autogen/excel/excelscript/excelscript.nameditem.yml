@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: 表示单元格区域或值的定义名称。 名称可以是基元命名 (，如以下类型) 、range 对象或对区域的引用所示。 此对象可用于获取与名称相关的 range 对象。
+summary: 表示单元格区域或值的定义名称。 名称可以是基元命名对象 (如下) 、范围对象或对区域的引用所示。 此对象可用于获取与名称相关的 range 对象。
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: 已命名项目的公式。 公式始终以等号 ("=") 。
+  summary: 命名项的公式。 公式始终以等号开头 (“=”) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: 返回与名称相关的 range 对象。 如果命名项的类型不是区域，则此函数返回 `undefined`<!-- -->.
+  summary: 返回与名称相关的 range 对象。 如果命名项的类型不是区域，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 指定名称的范围是工作簿还是特定工作表。 可能的值是：Worksheet、Workbook。
+  summary: 指定名称的作用域是工作簿还是特定工作表。 可能的值为：工作表、工作簿。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: 指定名称的公式返回的值的类型。 有关详细信息，请参阅 `ExcelScript.NamedItemType`。
+  summary: 指定名称公式返回的值的类型。 有关详细信息，请参阅 `ExcelScript.NamedItemType`。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: 返回已命名项的作用域的工作表。 如果项的范围改为工作簿，则此函数返回 `undefined`<!-- -->.
+  summary: 返回命名项的作用域的工作表。 如果项目的作用域改为工作簿，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: 已命名项目的公式。 公式始终以等号 ("=") 。
+  summary: 命名项的公式。 公式始终以等号开头 (“=”) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 182f0fc8a5e12d2bc525d28c22f8c6734abbcffd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064834"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394119"

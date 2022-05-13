@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: 使用指定的自动填充逻辑填充从当前范围到目标范围的范围。 目标范围可以是 `null`<!-- -->，也可以水平或垂直扩展源。 不支持不连续的范围。
+  summary: 使用指定的自动填充逻辑填充从当前范围到目标范围的范围。 目标范围可以 `null` 或可以水平或垂直扩展源范围。 不支持不连续的范围。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -45,7 +45,7 @@ methods:
       description: 自动填充的目标范围。 如果目标范围为 `null`<!-- -->，数据根据周围的单元格填充 (这是双击 UI 的范围填充句柄) 时的行为。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
-      description: 自动填充的类型。 根据当前范围的内容指定如何填充目标范围。 默认值为"FillDefault"。
+      description: 自动填充的类型。 根据当前范围的内容指定如何填充目标范围。 默认值为“FillDefault”。
       type: <xref uid="ExcelScript!ExcelScript.AutoFillType:enum" />
     return:
       type: void
@@ -127,7 +127,7 @@ methods:
       description: 源范围或 `RangeAreas` 要从中复制。 当源 `RangeAreas` 具有多个范围时，必须能够通过从矩形范围中删除完整行或列来创建其窗体。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
-      description: 要复制的单元格数据或格式的类型。 默认值为"All"。
+      description: 要复制的单元格数据或格式的类型。 默认值为“All”。
       type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
     - id: skipBlanks
       description: 如此 如果跳过源区域中的空白单元格。 默认为 false。
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: 根据指定的条件查找给定的字符串。 如果当前范围大于单个单元格，则搜索将限制为该区域，否则搜索将涵盖从该单元格之后开始的整个工作表。 如果没有匹配项，则此函数返回 `undefined`<!-- -->.
+  summary: 根据指定的条件查找给定的字符串。 如果当前范围大于单个单元格，则搜索将限制为该区域，否则搜索将涵盖从该单元格之后开始的整个工作表。 如果没有匹配项，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -212,7 +212,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: 指定 A1 样式的范围引用。 地址值包含工作表引用 (例如"Sheet1！A1：B4") 。
+  summary: 指定 A1 样式的范围引用。 地址值包含工作表引用 (例如“Sheet1！A1：B4“) 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -238,7 +238,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getBoundingRect:member(1)
   package: ExcelScript!
   fullName: getBoundingRect(anotherRange)
-  summary: 获取包含指定区域的最小 range 对象。 例如，" `GetBoundingRect` B2：C5"和"D10：E15"为"B2：E15"。
+  summary: 获取包含指定区域的最小 range 对象。 例如，“ `GetBoundingRect` B2：C5”和“D10：E15”为“B2：E15”。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: 获取一个对象，该对象表示区域 (的整个列，例如，如果当前区域表示单元格"B4：E11"，则该 `getEntireColumn` 对象是表示列"B：E") 的区域。
+  summary: 获取一个对象，该对象表示区域 (的整个列，例如，如果当前区域表示单元格“B4：E11”，则该 `getEntireColumn` 对象是表示列“B：E”) 的区域。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: 获取一个对象，该对象表示区域 (的整行，例如，如果当前区域表示单元格"B4：E11"，则该 `GetEntireRow` 对象是表示行"4：11") 的区域。
+  summary: 获取一个对象，该对象表示区域 (的整行，例如，如果当前区域表示单元格“B4：E11”，则该 `GetEntireRow` 对象是表示行“4：11”) 的区域。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: 获取表示指定区域的矩形交集的 range 对象。 如果未找到交集，则此函数返回 `undefined`<!-- -->.
+  summary: 获取表示指定区域的矩形交集的 range 对象。 如果未找到交集，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -765,7 +765,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: 返回一个 RangeAreas 对象，该对象表示此范围内的合并区域。 请注意，如果此范围内的合并区域计数超过 512，则 API 将无法返回结果。 如果 RangeAreas 不存在，则返回 null 对象。
+  summary: 返回一个 `RangeAreas` 对象，该对象表示此范围内的合并区域。 请注意，如果此范围内的合并区域计数超过 512，则此方法将无法返回结果。 `RangeAreas`如果该对象不存在，则此函数将返回一个对象，其`isNullObject`属性设置为`true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1066,7 +1066,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: 获取一 `RangeAreas` 个或多个区域组成的对象，该对象表示与指定类型和值匹配的所有单元格。 如果找不到特殊单元格，则此函数返回 `undefined`<!-- -->.
+  summary: 获取一 `RangeAreas` 个或多个区域组成的对象，该对象表示与指定类型和值匹配的所有单元格。 如果找不到特殊单元格，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1090,7 +1090,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果范围不是定位单元格或找不到溢出范围，则此函数返回 `undefined`<!-- -->.
+  summary: 获取 Range 对象，它在调用定位单元格时包含溢出区域。 如果范围不是定位单元格或找不到溢出范围，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: 获取包含要溢出到单元格的定位单元格的范围对象。 如果它不是溢出的单元格，或者给定了多个单元格，则此函数返回 `undefined`<!-- -->.
+  summary: 获取包含要溢出到单元格的定位单元格的范围对象。 如果它不是溢出的单元格，或者给定了多个单元格，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1185,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: 返回指定 range 对象的所用区域。 如果区域内没有已用单元格，则此函数返回 `undefined`<!-- -->.
+  summary: 返回指定 range 对象的所用区域。 如果区域内没有已用单元格，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1215,7 +1215,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
   fullName: getValues()
-  summary: 表示指定区域的原始值。 返回的数据可以是字符串、数字或布尔值。 包含错误的单元格将返回错误字符串。 如果返回的值以加 ("+") 、减去 ("-") 或等号 ("=") 开头，Excel将此值解释为公式。
+  summary: 表示指定区域的原始值。 返回的数据可以是字符串、数字或布尔值。 包含错误的单元格将返回错误字符串。 如果返回的值以加 (“+”) 、减去 (“-”) 或等号 (“=”) 开头，Excel将此值解释为公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1301,7 +1301,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: 指定如何按行或列对范围进行分组。 `InvalidArgument`当组选项与范围`isEntireRow`或`isEntireColumn`属性不同时，将引发错误 (即为 true， `range.isEntireRow` `groupOption`为"ByColumns"或`range.isEntireColumn`为 true，`groupOption`并且为"ByRows") 。
+      description: 指定如何按行或列对范围进行分组。 `InvalidArgument`当组选项与范围`isEntireRow`或`isEntireColumn`属性不同时，将引发错误 (即为 true， `range.isEntireRow` `groupOption`为“ByColumns”或`range.isEntireColumn`为 true，`groupOption`并且为“ByRows”) 。
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1711,7 +1711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: 设置指定范围的原始值。 提供的数据可以是字符串、数字或布尔值。 如果提供的值以加号 ("+") 、减去 ("-") 或等号 ("=") 开头，Excel将此值解释为公式。
+  summary: 设置指定范围的原始值。 提供的数据可以是字符串、数字或布尔值。 如果提供的值以加号 (“+”) 、减去 (“-”) 或等号 (“=”) 开头，Excel将此值解释为公式。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d30c738908e33ddb292f08f12814d25c0ce30c9
-  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.openlocfilehash: 131c648e35d13d5d8bc28d44514f8c893b4250d8
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715958"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394147"

@@ -1,127 +1,134 @@
 ### YamlMime:TSType
 name: ExcelScript.RowColumnPivotHierarchy
-uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.RowColumnPivotHierarchy
-summary: 代表 Excel RowColumnPivotHierarchy。
+summary: 表示Excel RowColumnPivotHierarchy。
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getFields()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getFields:member(1)'
-    package: ExcelScript!
-    fullName: getFields()
-    summary: 返回与 RowColumnPivotHierarchy 相关联的 PivotFields。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFields(): PivotField[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]'
-        description: ''
-  - name: getId()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getId:member(1)'
-    package: ExcelScript!
-    fullName: getId()
-    summary: RowColumnPivotHierarchy 的 ID。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: RowColumnPivotHierarchy 的名称。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getPivotField(name)
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)'
-    package: ExcelScript!
-    fullName: getPivotField(name)
-    summary: 按名称获取 PivotField。 如果 PivotField 不存在，则此函数将返回其属性设置为 `isNullObject` 的对象 `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPivotField(name: string): PivotField | undefined;'
-      parameters:
-        - id: name
-          description: 要检索的透视字段的名称。
-          type: string
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined'
-        description: ''
-  - name: getPosition()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPosition:member(1)'
-    package: ExcelScript!
-    fullName: getPosition()
-    summary: RowColumnPivotHierarchy 的位置。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPosition(): number;'
-      return:
-        type: number
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: RowColumnPivotHierarchy 的名称。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setPosition(position)
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#setPosition:member(1)'
-    package: ExcelScript!
-    fullName: setPosition(position)
-    summary: RowColumnPivotHierarchy 的位置。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPosition(position: number): void;'
-      parameters:
-        - id: position
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setToDefault()
-    uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy#setToDefault:member(1)'
-    package: ExcelScript!
-    fullName: setToDefault()
-    summary: 将 RowColumnPivotHierarchy 重置回其默认值。
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setToDefault(): void;'
-      return:
-        type: void
-        description: ''
+- name: getFields()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getFields:member(1)
+  package: ExcelScript!
+  fullName: getFields()
+  summary: 返回与 RowColumnPivotHierarchy 相关联的 PivotFields。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFields(): PivotField[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: RowColumnPivotHierarchy 的 ID。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: RowColumnPivotHierarchy 的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPivotField(name)
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)
+  package: ExcelScript!
+  fullName: getPivotField(name)
+  summary: 按名称获取数据透视字段。 如果 PivotField 不存在，则此方法返回一个对象，其 `isNullObject` 属性设置为 `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotField(name: string): PivotField | undefined;'
+    parameters:
+    - id: name
+      description: 要检索的数据透视字段的名称。
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: RowColumnPivotHierarchy 的位置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): number;'
+    return:
+      type: number
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: RowColumnPivotHierarchy 的名称。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: RowColumnPivotHierarchy 的位置。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: number): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setToDefault()
+  uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#setToDefault:member(1)
+  package: ExcelScript!
+  fullName: setToDefault()
+  summary: 将 RowColumnPivotHierarchy 重置回其默认值。
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setToDefault(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 597c8c3c5fa9221c43f23fdaab92d67f5002cb42
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394217"

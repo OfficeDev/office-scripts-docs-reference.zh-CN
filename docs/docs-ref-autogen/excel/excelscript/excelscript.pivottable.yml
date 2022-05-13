@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: 指定数据透视表是否允许在表中的给定透视字段上应用多个 PivotFilter。
+  summary: 指定数据透视表是否允许在表中的给定数据透视字段上应用多个数据透视文件。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: 按名称获取 DataPivotHierarchy。 如果 DataPivotHierarchy 不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 按名称获取 DataPivotHierarchy。 如果 DataPivotHierarchy 不存在，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: 按名称获取 FilterPivotHierarchy。 如果 FilterPivotHierarchy 不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 按名称获取 FilterPivotHierarchy。 如果 FilterPivotHierarchy 不存在，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: 按名称获取 PivotHierarchy。 如果 PivotHierarchy 不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 按名称获取 PivotHierarchy。 如果 PivotHierarchy 不存在，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此函数返回 `undefined`<!-- -->.
+  summary: 按名称获取 RowColumnPivotHierarchy。 如果 RowColumnPivotHierarchy 不存在，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: 指定数据透视表是否允许在表中的给定透视字段上应用多个 PivotFilter。
+  summary: 指定数据透视表是否允许在表中的给定数据透视字段上应用多个数据透视文件。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: dd8d395e4cc4c09f3443c686bf19c4a441e5c28e
-  ms.sourcegitcommit: b9473966fe37e1ac701719cf9fc4714c572878ca
+  ms.openlocfilehash: fa1e1616bb66cac6a98078b5d73d36f71cedd19d
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/30/2022
-  ms.locfileid: "64536515"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394028"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
   package: ExcelScript!
   fullName: freezeAt(frozenRange)
-  summary: 设置活动工作表视图中的冻结单元格。 提供的范围对应于将在顶部和左侧窗格中冻结的单元格。
+  summary: 设置活动工作表视图中的冻结单元格。 提供的区域对应于将冻结在顶部和最左侧窗格中的单元格。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'freezeAt(frozenRange: Range | string): void;'
     parameters:
     - id: frozenRange
-      description: 一个代表要冻结的单元格或移除所有冻结 `null` 窗格的范围。
+      description: 表示要冻结的单元格或 `null` 删除所有冻结窗格的范围。
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
   package: ExcelScript!
   fullName: freezeColumns(count)
-  summary: 就地冻结工作表的第一列。
+  summary: 冻结工作表的第一列或第一列。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -38,7 +38,7 @@ methods:
     content: 'freezeColumns(count?: number): void;'
     parameters:
     - id: count
-      description: 要冻结的列数（可选）或零（以解除冻结所有列）
+      description: 要冻结的列的可选数目，或取消冻结所有列的零个列数
       type: number
     return:
       type: void
@@ -47,7 +47,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
   package: ExcelScript!
   fullName: freezeRows(count)
-  summary: 就地冻结工作表的首行。
+  summary: 就地冻结工作表的顶行或行。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -55,7 +55,7 @@ methods:
     content: 'freezeRows(count?: number): void;'
     parameters:
     - id: count
-      description: 要冻结的行数（可选）或零（以解除冻结所有行）
+      description: 要冻结的可选行数，或取消冻结所有行的零行数
       type: number
     return:
       type: void
@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: 获取用于描述活动工作表视图中的冻结单元格的区域。 冻结区域对应于在顶部和左侧窗格中冻结的单元格。 如果没有冻结窗格，则此函数返回 `undefined`<!-- -->.
+  summary: 获取用于描述活动工作表视图中的冻结单元格的区域。 冻结范围对应于顶部和最左侧窗格中冻结的单元格。 如果没有冻结窗格，则此方法返回 `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 98ee21716269e9fcbb26b7cb2623708b083d54df
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 805a3dc4b9cb94abb0cdc75c7cb177c0786510d3
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064819"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394135"
