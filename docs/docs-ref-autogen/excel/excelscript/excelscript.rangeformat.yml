@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)
   package: ExcelScript!
   fullName: adjustIndent(amount)
-  summary: 调整区域格式的缩进。 缩进值范围为 0 到 250，以字符为单位度量。
+  summary: 调整范围格式的缩进。 缩进值的范围为 0 到 250，以字符为单位。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'adjustIndent(amount: number): void;'
     parameters:
     - id: amount
-      description: 调整当前缩进的字符空间数。 此值应介于 -250 和 250 之间。 **注意**：如果金额将缩进级别提升至 250 以上，则缩进级别保持为 250。 同样，如果缩进量将缩进级别低于 0，缩进级别将保持 0。
+      description: 调整当前缩进的字符空间数。 此值应介于 -250 和 250 之间。 **注意**：如果金额将缩进级别提高到 250 以上，则缩进级别将保留为 250。 同样，如果金额将缩进级别降低到 0 以下，缩进级别将保持 0。
       type: number
     return:
       type: void
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: 指定文本对齐方式设置为相等分布时文本是否自动缩进。
+  summary: 指定当文本对齐设置为等于分布时，文本是否自动缩进。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
   package: ExcelScript!
   fullName: getColumnWidth()
-  summary: 指定范围内所有列的宽度。 如果列宽不统一，将 `null` 返回 。
+  summary: 指定范围内所有库的宽度。 如果列宽不统一， `null` 将返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: 指定使区域边框的颜色变亮或变暗的双精度型值。 该值介于 -1 到 (最暗) 和 1 (最亮) ，0 表示原始颜色。 值 `null` 表示整个边框集合没有统一 `tintAndShade` 设置。
+  summary: 指定为范围边框使颜色变亮或变暗的双倍值。 值介于 -1 (最深) 和 1 (最亮) 之间，原始颜色为 0。 值 `null` 指示整个边框集合没有统 `tintAndShade` 一设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -203,7 +203,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
   package: ExcelScript!
   fullName: getRowHeight()
-  summary: 范围中所有行的高度。 如果行高不统一，将 `null` 返回 。
+  summary: 区域中所有行的高度。 如果行高度不统一， `null` 则返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,7 +216,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)
   package: ExcelScript!
   fullName: getShrinkToFit()
-  summary: 指定文本是否自动缩小以适应可用列宽。
+  summary: 指定文本是否自动收缩以适应可用的列宽。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: 区域内所有单元格的文本方向。 文本方向应为 -90 到 90 的整数，或垂直方向文本的 180。 如果范围内的方向不统一，则返回 `null` 。
+  summary: 区域内所有单元格的文本方向。 文本方向应为从 -90 到 90 的整数，或垂直方向文本的 180。 如果区域内的方向不统一，则 `null` 返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: getUseStandardHeight()
-  summary: 确定对象的行高 `Range` 是否等于工作表的标准高度。 如果 `true` 对象的行高 `Range` 等于工作表的标准高度，则返回 。 如果 `null` 区域包含多个行且行的高度不相同，则返回 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
+  summary: 确定对象的 `Range` 行高是否等于工作表的标准高度。 如果对象的`Range`行高等于工作表的标准高度，则返回`true`该值。 如果区域包含多个行，并且行高度不相同，则返回 `null` 。 否则返回 `false` 。 注意：此属性仅用于设置为 `true`<!-- -->. 将其设置为 `false` 不起作用。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: getUseStandardWidth()
-  summary: 指定对象的列宽 `Range` 是否等于工作表的标准宽度。 如果 `true` 对象的列宽 `Range` 等于工作表的标准宽度，则返回 。 如果 `null` 区域包含多个列并且列的高度不相同，则返回 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
+  summary: 指定对象的 `Range` 列宽是否等于工作表的标准宽度。 如果对象的`Range`列宽等于工作表的标准宽度，则返回`true`该值。 如果该区域包含多个列，并且列高度不相同，则返回 `null` 该区域。 否则返回 `false` 。 注意：此属性仅用于设置为 `true`<!-- -->. 将其设置为 `false` 不起作用。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -281,7 +281,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)
   package: ExcelScript!
   fullName: getWrapText()
-  summary: 指定是否Excel对象中的文本换行。 值 `null` 指示整个区域没有统一换行设置
+  summary: 指定 Excel 是否在对象中包装文本。 一个 `null` 值指示整个区域没有统一的包装设置
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -294,7 +294,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: 指定文本对齐方式设置为相等分布时文本是否自动缩进。
+  summary: 指定当文本对齐设置为等于分布时，文本是否自动缩进。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
   package: ExcelScript!
   fullName: setColumnWidth(columnWidth)
-  summary: 指定范围内所有列的宽度。 如果列宽不统一，将 `null` 返回 。
+  summary: 指定范围内所有库的宽度。 如果列宽不统一， `null` 将返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -340,7 +340,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script centers the text in a table's header row cells.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table on the current worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const table = currentSheet.getTables()[0];\n\n  // Get the header range.\n  const headerRange = table.getHeaderRowRange();\n\n  // Set the horizontal text alignment to `center`.\n  headerRange.getFormat().setHorizontalAlignment(ExcelScript.HorizontalAlignment.center);\n}\n```"
 - name: setIndentLevel(indentLevel)
   uid: ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)
   package: ExcelScript!
@@ -362,7 +362,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: 指定使区域边框的颜色变亮或变暗的双精度型值。 该值介于 -1 到 (最暗) 和 1 (最亮) ，0 表示原始颜色。 值 `null` 表示整个边框集合没有统一 `tintAndShade` 设置。
+  summary: 指定为范围边框使颜色变亮或变暗的双倍值。 值介于 -1 (最深) 和 1 (最亮) 之间，原始颜色为 0。 值 `null` 指示整个边框集合没有统 `tintAndShade` 一设置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -396,7 +396,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
   package: ExcelScript!
   fullName: setRowHeight(rowHeight)
-  summary: 范围中所有行的高度。 如果行高不统一，将 `null` 返回 。
+  summary: 区域中所有行的高度。 如果行高度不统一， `null` 则返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -413,7 +413,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)
   package: ExcelScript!
   fullName: setShrinkToFit(shrinkToFit)
-  summary: 指定文本是否自动缩小以适应可用列宽。
+  summary: 指定文本是否自动收缩以适应可用的列宽。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -430,7 +430,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: 区域内所有单元格的文本方向。 文本方向应为 -90 到 90 的整数，或垂直方向文本的 180。 如果范围内的方向不统一，则返回 `null` 。
+  summary: 区域内所有单元格的文本方向。 文本方向应为从 -90 到 90 的整数，或垂直方向文本的 180。 如果区域内的方向不统一，则 `null` 返回。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: setUseStandardHeight(useStandardHeight)
-  summary: 确定对象的行高 `Range` 是否等于工作表的标准高度。 如果 `true` 对象的行高 `Range` 等于工作表的标准高度，则返回 。 如果 `null` 区域包含多个行且行的高度不相同，则返回 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
+  summary: 确定对象的 `Range` 行高是否等于工作表的标准高度。 如果对象的`Range`行高等于工作表的标准高度，则返回`true`该值。 如果区域包含多个行，并且行高度不相同，则返回 `null` 。 否则返回 `false` 。 注意：此属性仅用于设置为 `true`<!-- -->. 将其设置为 `false` 不起作用。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: setUseStandardWidth(useStandardWidth)
-  summary: 指定对象的列宽 `Range` 是否等于工作表的标准宽度。 如果 `true` 对象的列宽 `Range` 等于工作表的标准宽度，则返回 。 如果 `null` 区域包含多个列并且列的高度不相同，则返回 。 否则 `false` 返回。 注意：此属性仅用于 `true`<!-- -->. 将设置为 `false` 不起作用。
+  summary: 指定对象的 `Range` 列宽是否等于工作表的标准宽度。 如果对象的`Range`列宽等于工作表的标准宽度，则返回`true`该值。 如果该区域包含多个列，并且列高度不相同，则返回 `null` 该区域。 否则返回 `false` 。 注意：此属性仅用于设置为 `true`<!-- -->. 将其设置为 `false` 不起作用。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -498,7 +498,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)
   package: ExcelScript!
   fullName: setWrapText(wrapText)
-  summary: 指定是否Excel对象中的文本换行。 值 `null` 指示整个区域没有统一换行设置
+  summary: 指定 Excel 是否在对象中包装文本。 一个 `null` 值指示整个区域没有统一的包装设置
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -512,9 +512,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 2e0aa07251e56260c03256716594889b1cf5d0cf
-  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
+  ms.openlocfilehash: 171f133e0fcd79f4a6103a15216faf61949907b7
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/23/2022
-  ms.locfileid: "63755982"
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890556"

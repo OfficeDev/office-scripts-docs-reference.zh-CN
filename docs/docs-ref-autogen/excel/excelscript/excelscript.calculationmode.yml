@@ -1,22 +1,29 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationMode
-uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
+uid: ExcelScript!ExcelScript.CalculationMode:enum
 package: ExcelScript!
 fullName: ExcelScript.CalculationMode
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script recalculates the used range of a specific worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Only recalculate if the calculation mode is not set to automatic.\n  if (workbook.getApplication().getCalculationMode() !== ExcelScript.CalculationMode.automatic) {\n    // Get the used range from a worksheet named \"Monthly Report\".\n    const sheet = workbook.getWorksheet(\"Monthly Report\");\n    const range = sheet.getUsedRange();\n    console.log(`Calculating ${range.getAddress()}`);\n\n    // Force all the used cells in that worksheet to calculate.\n    sheet.getUsedRange().calculate();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: automatic
-    uid: 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
-    package: ExcelScript!
-    summary: 默认重新计算行为，Excel每次更改数据时计算新的公式结果。
-  - name: automaticExceptTables
-    uid: 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
-    package: ExcelScript!
-    summary: 每次更改相关的数据时计算新的公式结果，除非公式位于数据表中。
-  - name: manual
-    uid: 'ExcelScript!ExcelScript.CalculationMode.manual:member'
-    package: ExcelScript!
-    summary: 计算仅在用户或外接程序请求计算时发生。
+- name: automatic
+  uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
+  package: ExcelScript!
+  summary: 默认的重新计算行为：每次更改相关数据时，Excel 都会计算新的公式结果。
+- name: automaticExceptTables
+  uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
+  package: ExcelScript!
+  summary: 每次更改相关数据时计算新的公式结果，除非公式位于数据表中。
+- name: manual
+  uid: ExcelScript!ExcelScript.CalculationMode.manual:member
+  package: ExcelScript!
+  summary: 仅当用户或加载项请求计算时，才会进行计算。
+metadata:
+  ms.openlocfilehash: 79cc9d67dd3288540146a4d56fe712f37607a33b
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890457"
