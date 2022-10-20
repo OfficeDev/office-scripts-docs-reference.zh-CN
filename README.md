@@ -1,6 +1,6 @@
 # <a name="office-scripts-api-reference"></a>Office 脚本 API 参考
 
-欢迎使用 Office 脚本 API 参考文档存储库。 为了获得最佳体验，建议在[Microsoft Docs](https://docs.microsoft.com/javascript/api/office-scripts/overview)上查看此内容。
+欢迎使用 Office 脚本 API 参考文档存储库。 为了获得最佳体验，建议在 [Microsoft Learn](https://learn.microsoft.com/javascript/api/office-scripts/overview) 上查看此内容。
 
 > **注意**：可以在 [OfficeDev/office-scripts-docs](https://github.com/OfficeDev/office-scripts-docs) GitHub 存储库中找到 Office 脚本文档的源文件，包括教程和操作指南。
 
