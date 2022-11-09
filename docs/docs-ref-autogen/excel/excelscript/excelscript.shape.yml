@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#copyTo:member(1)
   package: ExcelScript!
   fullName: copyTo(destinationSheet)
-  summary: 复制并粘贴 `Shape` 对象。 粘贴形状复制到与此形状相同的像素位置。
+  summary: 复制并粘贴 `Shape` 对象。 粘贴的形状将复制到此形状所在的同一像素位置。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
     parameters:
     - id: destinationSheet
-      description: 将形状对象粘贴到的表。 默认值是复制形状的工作表。
+      description: 形状对象将粘贴到的工作表。 默认值为复制形状的工作表。
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)
   package: ExcelScript!
   fullName: getAltTextDescription()
-  summary: 指定对象的替代说明文本 `Shape` 。
+  summary: 指定对象的可选说明文本 `Shape` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)
   package: ExcelScript!
   fullName: getAltTextTitle()
-  summary: 指定对象的备用标题文本 `Shape` 。
+  summary: 指定对象的可选标题文本 `Shape` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
     return:
       type: string
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script creates a star shape with the value from cell A1.\n * It then returns the image as a base64-encoded string. \n * This string would be used as part of a Power Automate flow to add the image elsewhere.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the value of A1 from the worksheet named Sheet1.\n  const sheet = workbook.getWorksheet(\"Sheet1\");\n  const value = sheet.getRange(\"A1\").getValue();\n\n  // Create a Shape object that looks like a 5-pointed star.\n  const star = sheet.addGeometricShape(ExcelScript.GeometricShapeType.star5);\n\n  // Set the text of star and make sure the shape fits the text.\n  const textFrame = star.getTextFrame();\n  textFrame.getTextRange().setText(value.toString());\n  textFrame.setAutoSizeSetting(ExcelScript.ShapeAutoSize.autoSizeShapeToFitText);\n\n  // Return the shape as a PNG image represented by a base64-encoded string.\n  return star.getAsImage(ExcelScript.PictureFormat.png);\n}\n```"
 - name: getConnectionSiteCount()
   uid: ExcelScript!ExcelScript.Shape#getConnectionSiteCount:member(1)
   package: ExcelScript!
@@ -126,7 +126,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: getGeometricShapeType()
-  summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 `ExcelScript.GeometricShapeType`。 如果形状类型不是“GeometricShape”，则返回 `null` 。
+  summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 `ExcelScript.GeometricShapeType`。 `null`如果形状类型不是“GeometricShape”，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -152,7 +152,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: 指定形状的高度（以磅为单位）。 `InvalidArgument`如果设置为负值或零作为输入，则引发异常。
+  summary: 指定形状的高度（以磅为单位）。 `InvalidArgument`使用负值或零作为输入进行设置时引发异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
     content: 'getImage(): Image;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Image:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n* This script transfers an image from one worksheet to another.\n*/\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script transfers an image from one worksheet to another.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
 - name: getImageAsBase64(format)
   uid: ExcelScript!ExcelScript.Shape#getImageAsBase64:member(1)
   package: ExcelScript!
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: getLockAspectRatio()
-  summary: 指定此形状的纵横比是否已锁定。
+  summary: 指定是否锁定此形状的纵横比。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -333,7 +333,7 @@ methods:
     content: 'getTextFrame(): TextFrame;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.TextFrame:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>示例\n\n```TypeScript\n/**\n * This script creates a star shape with the value from cell A1.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the value of A1 from the worksheet named Sheet1.\n  const sheet = workbook.getWorksheet(\"Sheet1\");\n  const value = sheet.getRange(\"A1\").getValue();\n\n  // Create a Shape object that looks like a 5-pointed star.\n  const star = sheet.addGeometricShape(ExcelScript.GeometricShapeType.star5);\n\n  // Set the text of star and make sure the shape fits the text.\n  const textFrame = star.getTextFrame();\n  textFrame.getTextRange().setText(value.toString());\n  textFrame.setAutoSizeSetting(ExcelScript.ShapeAutoSize.autoSizeShapeToFitText);\n}\n```"
 - name: getTop()
   uid: ExcelScript!ExcelScript.Shape#getTop:member(1)
   package: ExcelScript!
@@ -377,7 +377,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: 指定形状的宽度（以磅为单位）。 `InvalidArgument`如果设置为负值或零作为输入，则引发异常。
+  summary: 指定形状的宽度（以磅为单位）。 `InvalidArgument`使用负值或零作为输入进行设置时引发异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -411,7 +411,7 @@ methods:
     content: 'incrementLeft(increment: number): void;'
     parameters:
     - id: increment
-      description: 以磅为单位的增量将水平移动形状。 正值将形状移到右侧，负值将其移到左侧。 如果工作表是从右向左方向的，则会相反：正值会将形状向左移动，负值会将其移到右侧。
+      description: 该增量（以磅为单位）将水平移动形状。 正值将形状向右移动，负值将形状向左移动。 如果工作表从右向左方向，则相反：正值会将形状向左移动，负值会将形状向右移动。
       type: number
     return:
       type: void
@@ -420,7 +420,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#incrementRotation:member(1)
   package: ExcelScript!
   fullName: incrementRotation(increment)
-  summary: 将形状围绕 z 轴旋转特定度数。 使用该 `rotation` 属性设置形状的绝对旋转。
+  summary: 将形状围绕 z 轴旋转特定度数。 `rotation`使用 属性可设置形状的绝对旋转。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -428,7 +428,7 @@ methods:
     content: 'incrementRotation(increment: number): void;'
     parameters:
     - id: increment
-      description: 形状将旋转多少度。 正值顺时针旋转形状，负值逆时针旋转。
+      description: 形状将旋转多少度。 正值顺时针旋转形状，负值逆时针旋转形状。
       type: number
     return:
       type: void
@@ -445,7 +445,7 @@ methods:
     content: 'incrementTop(increment: number): void;'
     parameters:
     - id: increment
-      description: 以磅为单位的增量将垂直移动形状。 正值将形状向下移动，负值将其向上移动。
+      description: 增量（以磅为单位）将垂直移动形状。 正值将形状向下移动，负值将形状向上移动。
       type: number
     return:
       type: void
@@ -470,7 +470,7 @@ methods:
       description: 指定形状调整后的高度与当前或原始高度的比例。
       type: number
     - id: scaleType
-      description: 指定形状是相对于其原始大小还是当前大小进行缩放。 原始大小缩放选项仅适用于图像。
+      description: 指定是相对于其原始大小还是当前大小缩放形状。 原始大小缩放选项仅适用于图像。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
       description: 可选。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。 如果省略，则表示形状的左上角保留其位置。
@@ -498,7 +498,7 @@ methods:
       description: 指定形状调整后的宽度与当前或原始宽度的比例。
       type: number
     - id: scaleType
-      description: 指定形状是相对于其原始大小还是当前大小进行缩放。 原始大小缩放选项仅适用于图像。
+      description: 指定是相对于其原始大小还是当前大小缩放形状。 原始大小缩放选项仅适用于图像。
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
       description: 可选。 指定在缩放形状时，该形状的哪一部分将保持在原有的位置。 如果省略，则表示形状的左上角保留其位置。
@@ -510,7 +510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)
   package: ExcelScript!
   fullName: setAltTextDescription(altTextDescription)
-  summary: 指定对象的替代说明文本 `Shape` 。
+  summary: 指定对象的可选说明文本 `Shape` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -527,7 +527,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)
   package: ExcelScript!
   fullName: setAltTextTitle(altTextTitle)
-  summary: 指定对象的备用标题文本 `Shape` 。
+  summary: 指定对象的可选标题文本 `Shape` 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -544,7 +544,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: setGeometricShapeType(geometricShapeType)
-  summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 `ExcelScript.GeometricShapeType`。 如果形状类型不是“GeometricShape”，则返回 `null` 。
+  summary: 指定此几何形状的几何形状类型。 有关详细信息，请参阅 `ExcelScript.GeometricShapeType`。 `null`如果形状类型不是“GeometricShape”，则返回 。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -561,7 +561,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: 指定形状的高度（以磅为单位）。 `InvalidArgument`如果设置为负值或零作为输入，则引发异常。
+  summary: 指定形状的高度（以磅为单位）。 `InvalidArgument`使用负值或零作为输入进行设置时引发异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: setLockAspectRatio(lockAspectRatio)
-  summary: 指定此形状的纵横比是否已锁定。
+  summary: 指定是否锁定此形状的纵横比。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -697,7 +697,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: 指定形状的宽度（以磅为单位）。 `InvalidArgument`如果设置为负值或零作为输入，则引发异常。
+  summary: 指定形状的宽度（以磅为单位）。 `InvalidArgument`使用负值或零作为输入进行设置时引发异常。
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -722,15 +722,15 @@ methods:
     content: 'setZOrder(position: ShapeZOrder): void;'
     parameters:
     - id: position
-      description: 在 z 顺序堆栈中相对于其他形状移动形状的位置。 有关详细信息，请参阅 `ExcelScript.ShapeZOrder`。
+      description: 相对于其他形状移动 z 顺序堆栈中的形状的位置。 有关详细信息，请参阅 `ExcelScript.ShapeZOrder`。
       type: <xref uid="ExcelScript!ExcelScript.ShapeZOrder:enum" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ada90a41593e16c30239927364f7955501de640c
-  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
+  ms.openlocfilehash: d356ab4daea59de285b386feb91721336650413a
+  ms.sourcegitcommit: bd711a06dd265e3446ede101909916e5d45d7b23
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/13/2022
-  ms.locfileid: "65394210"
+  ms.lasthandoff: 11/09/2022
+  ms.locfileid: "68891375"
